@@ -1,0 +1,18 @@
+{
+  "created_at": "2026-06-23T10:46:21+00:00",
+  "project": "Demo Port Logistics Modernization",
+  "mode": "human_decision_required",
+  "status": "waiting_for_owner",
+  "risk_level": "high",
+  "risk_score": 96,
+  "requires_owner": true,
+  "owner_decision": null,
+  "actions": [
+    "Send approval ticket to human owner before any external commitment.",
+    "Update project file for Demo Port Logistics Modernization with latest communication and evidence.",
+    "Generate daily research brief and attach it to the decision record.",
+    "Draft a short video script for internal/external communication review.",
+    "Wait for approval reply, then write the reply into memory before continuing."
+  ],
+  "result": "Codex paused external action and prepared an owner decision request."
+}

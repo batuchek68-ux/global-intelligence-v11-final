@@ -1,0 +1,54 @@
+version: '3.8'
+
+services:
+  # API Gateway
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8000"
+    environment:
+      - DATABASE_URL=postgresql://user:password@postgres:5432/v11
+      - REDIS_URL=redis://redis:6379
+      - VECTOR_DB_URL=http://weaviate:8080
+      - SECRET_KEY=${SECRET_KEY}
+    depends_on:
+      - postgres
+      - redis
+      - weaviate
+    networks:
+      - v11-network
+
+  # PostgreSQL
+  postgres:
+    image: postgres:15
+    environment:
+      - POSTGRES_DB=v11
+      - POSTGRES_USER=user
+      - POSTGRES_PASSWORD=password
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    networks:
+      - v11-network
+
+  # Redis
+  redis:
+    image: redis:7
+    networks:
+      - v11-network
+
+  # Vector DB
+  weaviate:
+    image: semitechnologies/weaviate:latest
+    environment:
+      - QUERY_DEFAULTS_LIMIT=25
+    networks:
+      - v11-network
+
+volumes:
+  postgres_data:
+
+networks:
+  v11-network:
+    driver: bridge

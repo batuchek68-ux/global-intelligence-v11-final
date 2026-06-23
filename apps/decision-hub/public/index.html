@@ -1,0 +1,529 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Global Intelligence v11 Mission Control</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <aside class="shell-nav">
+    <section class="identity">
+      <div class="signal-mark">v11</div>
+      <div>
+        <h1>Global Intelligence</h1>
+        <p>国际工程贸易 / 科研情报 / 招商引资 / 视频传播 / 项目推进</p>
+      </div>
+    </section>
+
+    <nav class="nav-list" aria-label="主导航">
+      <button class="nav-item active" data-view="overview">作战指挥台</button>
+      <button class="nav-item" data-view="search">情报搜索</button>
+      <button class="nav-item" data-view="briefing">情报简报</button>
+      <button class="nav-item" data-view="project-library">项目库</button>
+      <button class="nav-item" data-view="evidence">证据核验</button>
+      <button class="nav-item" data-view="war-room">行业作战室</button>
+      <button class="nav-item" data-view="team-response">团队答复</button>
+      <button class="nav-item" data-view="project">项目推进</button>
+      <button class="nav-item" data-view="video-center">视频中心</button>
+      <button class="nav-item" data-view="communication">沟通草稿</button>
+      <button class="nav-item" data-view="quality">质量评测</button>
+      <button class="nav-item" data-view="approval">审批队列</button>
+      <button class="nav-item" data-view="diagnostics">AI 自检</button>
+    </nav>
+
+    <section class="ops-note">
+      <strong>主仓库</strong>
+      <span>batuchek68-ux/global-intelligence-v11</span>
+    </section>
+  </aside>
+
+  <main class="workspace">
+    <header class="topbar">
+      <div>
+        <p class="eyebrow">Mission Control</p>
+        <h2 id="viewTitle">作战指挥台</h2>
+      </div>
+      <div class="top-actions">
+        <span id="runtimeBadge" class="runtime-badge">正在连接</span>
+        <button id="refreshAllBtn" class="icon-command" title="刷新">↻</button>
+      </div>
+    </header>
+
+    <section id="haltBanner" class="halt-banner hidden"></section>
+
+    <section id="overview" class="view active">
+      <div class="mission-hero">
+        <div>
+          <p class="eyebrow">Vertical Industry Brain</p>
+          <h3>像一个项目团队一样工作</h3>
+          <p>统一读取项目库、海关知识库、Benchmark、答案评分、情报搜索词、视频中心、老板审批队列和云端验收状态。</p>
+        </div>
+        <div class="mission-status" id="missionStatus">等待数据</div>
+      </div>
+
+      <div class="system-grid">
+        <article class="metric-panel accent-teal">
+          <span>授权状态</span>
+          <strong id="licenseStatus">读取中</strong>
+          <p id="licenseDetail">等待本地服务返回授权状态</p>
+        </article>
+        <article class="metric-panel accent-blue">
+          <span>云端验收</span>
+          <strong id="cloudStatus">读取中</strong>
+          <p id="cloudDetail">同步 GitHub Actions / v11 reports</p>
+        </article>
+        <article class="metric-panel accent-red">
+          <span>重大事项</span>
+          <strong id="approvalCount">0</strong>
+          <p>合同、付款、报价、发布、客户承诺必须人工审批</p>
+        </article>
+      </div>
+
+      <section class="mission-grid">
+        <article class="panel-block">
+          <div class="block-head"><h3>能力证据</h3></div>
+          <div id="capabilityEvidence" class="evidence-grid"></div>
+        </article>
+        <article class="panel-block">
+          <div class="block-head"><h3>项目优先队列</h3></div>
+          <div id="priorityQueue" class="mission-list"></div>
+        </article>
+        <article class="panel-block">
+          <div class="block-head"><h3>搜索与学习词</h3></div>
+          <div id="keywordBank" class="keyword-cloud"></div>
+        </article>
+        <article class="panel-block">
+          <div class="block-head"><h3>云端命令</h3></div>
+          <div class="command-stack">
+            <button id="cloudCheckBtn" class="primary-command">检查云端配置</button>
+            <button id="cloudRunBtn" class="primary-command danger-outline">运行云端验收</button>
+          </div>
+          <pre id="cloudOutput" class="report-surface compact">等待命令执行。</pre>
+        </article>
+      </section>
+
+      <section class="split-layout">
+        <article class="panel-block">
+          <div class="block-head">
+            <h3>老板收件箱</h3>
+            <button id="refreshInboxBtn" class="text-command">刷新</button>
+          </div>
+          <pre id="ownerInbox" class="report-surface">正在读取...</pre>
+        </article>
+        <article class="panel-block">
+          <div class="block-head"><h3>Mission Control 报告</h3></div>
+          <pre id="missionReport" class="report-surface">正在读取作战指挥台...</pre>
+        </article>
+      </section>
+    </section>
+
+    <section id="search" class="view">
+      <section class="work-surface">
+        <div class="surface-head">
+          <div>
+            <h3>多源情报搜索</h3>
+            <p>自动增强国家、区域、EPC、招标、海关、付款、制裁、社交媒体、视频、学术和图书馆关键词。</p>
+          </div>
+          <button id="searchBtn" class="primary-command core-action">执行搜索</button>
+        </div>
+        <label class="field full">
+          <span>问题</span>
+          <input id="searchQuery" value="哈萨克斯坦工程贸易" placeholder="输入国家、项目、行业或风险主题">
+        </label>
+        <div class="source-selector">
+          <label><input type="checkbox" value="bing" checked> Bing</label>
+          <label><input type="checkbox" value="google" checked> Google</label>
+          <label><input type="checkbox" value="yandex" checked> Yandex / 中亚</label>
+          <label><input type="checkbox" value="social" checked> 抖音 / 字节 / Telegram</label>
+          <label><input type="checkbox" value="academic" checked> 学术</label>
+          <label><input type="checkbox" value="library" checked> 图书馆</label>
+        </div>
+      </section>
+      <section id="searchResults" class="intelligence-grid"></section>
+    </section>
+
+    <section id="briefing" class="view">
+      <section class="work-surface">
+        <div class="surface-head">
+          <div>
+            <h3>行业情报简报</h3>
+            <p>按价值、成长性、回报潜力、政治影响、关注度、项目相关性整理每日内部简报，并更新深度搜索词库。</p>
+          </div>
+          <button id="buildBriefingBtn" class="primary-command core-action">生成内部简报</button>
+        </div>
+        <div class="form-grid">
+          <label class="field full">
+            <span>简报主题</span>
+            <input id="briefTopic" value="Kazakhstan engineering trade investment pipeline">
+          </label>
+          <label class="field">
+            <span>国家 / 地区</span>
+            <input id="briefCountry" value="Kazakhstan">
+          </label>
+          <label class="field">
+            <span>行业</span>
+            <input id="briefIndustry" value="logistics">
+          </label>
+          <label class="field full">
+            <span>已收集线索标题</span>
+            <input id="briefItemTitle" value="Government announces logistics tender with high public attention">
+          </label>
+          <label class="field full">
+            <span>线索摘要</span>
+            <textarea id="briefItemSummary" rows="4">Minister policy update, tender, EPC contractor, investment financing and YouTube public attention.</textarea>
+          </label>
+          <label class="field">
+            <span>来源类型</span>
+            <select id="briefItemSource">
+              <option value="government">政府 / 官方</option>
+              <option value="procurement">招标采购</option>
+              <option value="academic">科研 / 图书馆</option>
+              <option value="video">视频</option>
+              <option value="social">社交 / 论坛</option>
+              <option value="unknown">未知</option>
+            </select>
+          </label>
+        </div>
+      </section>
+      <section id="briefingResult" class="analysis-output"></section>
+    </section>
+
+    <section id="project-library" class="view">
+      <section class="work-surface">
+        <div class="surface-head">
+          <div>
+            <h3>招商引资项目库</h3>
+            <p>按在建项目、计划建设项目、待核验证据线索归档，优先保留政府、海关、采购、监管和官方企业证据。</p>
+          </div>
+          <button id="refreshProjectLibraryBtn" class="primary-command core-action">刷新项目库</button>
+        </div>
+      </section>
+      <section id="projectLibrarySummary" class="system-grid"></section>
+      <section id="projectLibraryWatchlist" class="analysis-output"></section>
+      <section id="projectLibraryGroups" class="library-grid"></section>
+    </section>
+
+    <section id="project" class="view">
+      <section class="work-surface">
+        <div class="surface-head">
+          <div>
+            <h3>项目推进与风险判断</h3>
+            <p>把国际贸易、国内协作、会议跟进和内容草稿统一进入 v11 审批边界。</p>
+          </div>
+          <div class="top-actions">
+            <button id="buildTeamExecutionBtn" class="primary-command core-action">生成团队执行包</button>
+            <button id="buildPipelineBtn" class="primary-command core-action">生成项目执行包</button>
+            <button id="analyzeProjectBtn" class="primary-command core-action">分析项目</button>
+          </div>
+        </div>
+        <div class="form-grid">
+          <label class="field">
+            <span>项目名称</span>
+            <input id="projectTitle" value="Kazakhstan EPC Trade Opportunity">
+          </label>
+          <label class="field">
+            <span>国家 / 地区</span>
+            <input id="projectCountry" value="Kazakhstan">
+          </label>
+          <label class="field">
+            <span>金额 USD</span>
+            <input id="projectAmount" type="number" value="120000">
+          </label>
+          <label class="field">
+            <span>阶段</span>
+            <select id="projectStage">
+              <option value="intake">线索进入</option>
+              <option value="meeting">会议跟进</option>
+              <option value="proposal">方案准备</option>
+              <option value="approval">等待审批</option>
+            </select>
+          </label>
+          <label class="field full">
+            <span>最新沟通</span>
+            <textarea id="projectCommunication" rows="4">客户关注 EPC 供货、清关、付款节点和当地合作方风险。</textarea>
+          </label>
+          <label class="field full">
+            <span>风险关键词</span>
+            <input id="projectRisks" value="payment, customs, sanction, contract">
+          </label>
+        </div>
+      </section>
+      <section id="projectResult" class="analysis-output"></section>
+    </section>
+
+    <section id="video-center" class="view">
+      <section class="work-surface">
+        <div class="surface-head">
+          <div>
+            <h3>视频制作中心</h3>
+            <p>围绕项目、国家、行业生成 YouTube、TikTok、抖音、Google Video 搜索词和脚本模板，跟踪优秀视频风格，但所有内容只作为内部草稿。</p>
+          </div>
+          <button id="buildVideoCenterBtn" class="primary-command core-action">生成视频选题包</button>
+        </div>
+        <div class="form-grid">
+          <label class="field full">
+            <span>视频主题</span>
+            <input id="videoTopic" value="Kazakhstan engineering trade investment project">
+          </label>
+          <label class="field">
+            <span>国家 / 地区</span>
+            <input id="videoCountry" value="Kazakhstan">
+          </label>
+          <label class="field">
+            <span>行业</span>
+            <input id="videoIndustry" value="logistics">
+          </label>
+        </div>
+      </section>
+      <section id="videoCenterResult" class="analysis-output"></section>
+    </section>
+
+    <section id="evidence" class="view">
+      <section class="work-surface">
+        <div class="surface-head">
+          <div>
+            <h3>证据核验档案</h3>
+            <p>把搜索到的政府官网、海关、采购、企业、学术或社媒线索粘贴进来，生成证据等级、置信度、下一步核验和阻断动作。</p>
+          </div>
+          <button id="verifyEvidenceBtn" class="primary-command core-action">生成核验档案</button>
+        </div>
+        <div class="form-grid">
+          <label class="field full">
+            <span>待核验结论</span>
+            <input id="evidenceClaim" value="Kazakhstan logistics EPC project owner and customs documents are confirmed">
+          </label>
+          <label class="field">
+            <span>项目</span>
+            <input id="evidenceProject" value="Kazakhstan EPC Trade Opportunity">
+          </label>
+          <label class="field">
+            <span>国家</span>
+            <input id="evidenceCountry" value="Kazakhstan">
+          </label>
+          <label class="field full">
+            <span>证据标题</span>
+            <input id="evidenceTitle" value="Government procurement project page">
+          </label>
+          <label class="field full">
+            <span>证据 URL</span>
+            <input id="evidenceUrl" value="https://goszakup.gov.kz/example-project">
+          </label>
+          <label class="field">
+            <span>来源类型</span>
+            <select id="evidenceSourceType">
+              <option value="government">政府官网</option>
+              <option value="customs">海关</option>
+              <option value="procurement">招标采购</option>
+              <option value="official_company">企业官网</option>
+              <option value="academic">学术/图书馆</option>
+              <option value="reputable_news">权威媒体</option>
+              <option value="social">社交/论坛</option>
+              <option value="video">视频</option>
+              <option value="unknown">未知</option>
+            </select>
+          </label>
+          <label class="field full">
+            <span>摘要 / 片段</span>
+            <textarea id="evidenceSnippet" rows="4">Official procurement page describes project owner, tender status, EPC contractor scope, customs documents and timeline.</textarea>
+          </label>
+        </div>
+      </section>
+      <section id="evidenceResult" class="analysis-output"></section>
+    </section>
+
+    <section id="war-room" class="view">
+      <section class="work-surface">
+        <div class="surface-head">
+          <div>
+            <h3>行业作战室</h3>
+            <p>一次生成搜索确认、证据判断、项目准入、六角色团队分工、视频传播、答案评分、任务板和审批边界，像真实项目团队一样推进。</p>
+          </div>
+          <div class="button-row">
+            <button id="buildWarRoomBtn" class="primary-command core-action">生成作战室工作包</button>
+            <button id="loadWarRoomQueueBtn" class="secondary-command core-action">读取执行队列</button>
+          </div>
+        </div>
+        <div class="form-grid">
+          <label class="field full">
+            <span>作战目标</span>
+            <textarea id="warRoomObjective" rows="4">哈萨克斯坦工程贸易项目：确认海关信息、项目负责人、招商价值、视频传播方案和下一步推进计划</textarea>
+          </label>
+          <label class="field">
+            <span>国家 / 地区</span>
+            <input id="warRoomCountry" value="Kazakhstan">
+          </label>
+          <label class="field">
+            <span>行业</span>
+            <input id="warRoomIndustries" value="infrastructure,logistics,energy">
+          </label>
+          <label class="field full">
+            <span>证据标题</span>
+            <input id="warRoomEvidenceTitle" value="Official procurement and customs reference">
+          </label>
+          <label class="field full">
+            <span>证据 URL</span>
+            <input id="warRoomEvidenceUrl" value="https://goszakup.gov.kz/example-project">
+          </label>
+          <label class="field full">
+            <span>证据摘要</span>
+            <textarea id="warRoomEvidenceSnippet" rows="3">Official source describes project owner, tender status, customs documents, engineering scope and investment opportunity.</textarea>
+          </label>
+        </div>
+      </section>
+      <section id="warRoomResult" class="analysis-output"></section>
+      <section id="warRoomQueueResult" class="analysis-output"></section>
+    </section>
+
+    <section id="team-response" class="view">
+      <section class="work-surface">
+        <div class="surface-head">
+          <div>
+            <h3>团队答复包</h3>
+            <p>让国际贸易、科研情报、招商引资、视频传播、项目经理和风控审批六个岗位一起回答问题，形成可执行结论、证据计划、视频计划、任务板和审批边界。</p>
+          </div>
+          <button id="buildTeamResponseBtn" class="primary-command core-action">生成团队答复包</button>
+        </div>
+        <div class="form-grid">
+          <label class="field full">
+            <span>问题</span>
+            <textarea id="teamResponseQuestion" rows="4">如何确认哈萨克斯坦工程贸易项目的海关信息、项目负责人、招商价值和视频传播方案？</textarea>
+          </label>
+          <label class="field">
+            <span>国家 / 地区</span>
+            <input id="teamResponseCountry" value="Kazakhstan">
+          </label>
+          <label class="field">
+            <span>行业</span>
+            <input id="teamResponseIndustries" value="infrastructure,mining,logistics,energy">
+          </label>
+          <label class="field full">
+            <span>证据标题</span>
+            <input id="teamResponseEvidenceTitle" value="Government procurement and customs reference">
+          </label>
+          <label class="field full">
+            <span>证据 URL</span>
+            <input id="teamResponseEvidenceUrl" value="https://goszakup.gov.kz/example-project">
+          </label>
+          <label class="field full">
+            <span>证据摘要</span>
+            <textarea id="teamResponseEvidenceSnippet" rows="3">Official source mentions project owner, tender status, customs documents and engineering scope.</textarea>
+          </label>
+        </div>
+      </section>
+      <section id="teamResponseResult" class="analysis-output"></section>
+    </section>
+
+    <section id="communication" class="view">
+      <section class="work-surface">
+        <div class="surface-head">
+          <div>
+            <h3>沟通草稿与审批包</h3>
+            <p>微信、企业微信、飞书、邮件、Telegram、LinkedIn、抖音、TikTok、YouTube 只生成草稿和请示，不自动发送。</p>
+          </div>
+          <div class="top-actions">
+            <button id="analyzeCommunicationBtn" class="primary-command core-action">分析风险</button>
+            <button id="draftCommunicationBtn" class="primary-command core-action">生成回复草稿</button>
+          </div>
+        </div>
+        <div class="form-grid">
+          <label class="field">
+            <span>渠道</span>
+            <select id="communicationChannel">
+              <option value="wechat">微信</option>
+              <option value="enterprise_wechat">企业微信</option>
+              <option value="feishu">飞书</option>
+              <option value="email">邮件</option>
+              <option value="telegram">Telegram</option>
+              <option value="linkedin">LinkedIn</option>
+              <option value="douyin">抖音</option>
+              <option value="tiktok">TikTok</option>
+              <option value="youtube">YouTube</option>
+            </select>
+          </label>
+          <label class="field">
+            <span>收件人 / 对象</span>
+            <input id="communicationRecipient" value="partner">
+          </label>
+          <label class="field">
+            <span>受众</span>
+            <select id="communicationAudience">
+              <option value="external">外部</option>
+              <option value="internal">内部</option>
+            </select>
+          </label>
+          <label class="field full">
+            <span>对方消息</span>
+            <textarea id="communicationMessage" rows="5">请确认这个政府项目的开发商、报价、付款条件和交期，我们希望尽快推进合同。</textarea>
+          </label>
+        </div>
+      </section>
+      <section id="communicationResult" class="analysis-output"></section>
+    </section>
+
+    <section id="quality" class="view">
+      <section class="work-surface">
+        <div class="surface-head">
+          <div>
+            <h3>Benchmark 与答案评分</h3>
+            <p>按准确性、证据、可执行性、风险判断、专业深度给回答打分，并对比 v11、豆包、元宝。</p>
+          </div>
+          <div class="top-actions">
+            <button id="buildKnowledgeBtn" class="primary-command core-action">建立行业知识库</button>
+            <button id="buildBenchmarkBtn" class="primary-command core-action">建立 50 题 Benchmark</button>
+            <button id="scoreAnswerBtn" class="primary-command core-action">评分 v11 回答</button>
+            <button id="compareAnswersBtn" class="primary-command core-action">对比三方回答</button>
+          </div>
+        </div>
+        <label class="field full">
+          <span>测试问题</span>
+          <textarea id="qualityQuestion" rows="3">如何确认哈萨克斯坦进口矿山设备的 HS 编码、关税和清关文件？</textarea>
+        </label>
+        <div class="form-grid">
+          <label class="field full">
+            <span>v11 回答</span>
+            <textarea id="qualityV11Answer" rows="5">先收集官方海关或关税数据库链接和日期，再核验 HS code、关税、原产地证、清关文件、进口许可、出口管制和制裁风险；形成步骤清单，报价或交期承诺必须人工审批。</textarea>
+          </label>
+          <label class="field full">
+            <span>豆包回答</span>
+            <textarea id="qualityDoubaoAnswer" rows="4">可以搜索海关网站，查找相关税率，并咨询专业人员。</textarea>
+          </label>
+          <label class="field full">
+            <span>元宝回答</span>
+            <textarea id="qualityYuanbaoAnswer" rows="4">建议查询当地政策和海关要求，准备好进口文件。</textarea>
+          </label>
+        </div>
+      </section>
+      <section id="qualityResult" class="analysis-output"></section>
+    </section>
+
+    <section id="approval" class="view">
+      <section class="work-surface">
+        <div class="surface-head">
+          <div>
+            <h3>人工审批队列</h3>
+            <p>系统只能准备草稿和请示；正式发布、报价、合同、付款必须由人批准。</p>
+          </div>
+          <button id="refreshApprovalBtn" class="text-command">刷新</button>
+        </div>
+      </section>
+      <section id="approvalList" class="approval-stack"></section>
+    </section>
+
+    <section id="diagnostics" class="view">
+      <section class="work-surface">
+        <div class="surface-head">
+          <div>
+            <h3>AI 自检</h3>
+            <p>检查框架、程序、接口、授权、搜索、云端和审计规则；低风险问题默认自修复。</p>
+          </div>
+          <button id="selfCheckBtn" class="primary-command">执行自检</button>
+        </div>
+      </section>
+      <section id="diagnosticGrid" class="diagnostic-grid"></section>
+    </section>
+  </main>
+
+  <script src="/app.js"></script>
+</body>
+</html>

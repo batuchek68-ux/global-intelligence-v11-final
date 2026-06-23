@@ -1,0 +1,197 @@
+{
+  "created_at": "2026-06-23T10:46:19.695255+00:00",
+  "ok": true,
+  "auto_fix": true,
+  "repairs": [],
+  "checks": [
+    {
+      "name": "dir:backend/memory",
+      "ok": true
+    },
+    {
+      "name": "dir:backend/reports",
+      "ok": true
+    },
+    {
+      "name": "dir:backend/comm/outbox",
+      "ok": true
+    },
+    {
+      "name": "dir:backend/workflows",
+      "ok": true
+    },
+    {
+      "name": "dir:backend/services",
+      "ok": true
+    },
+    {
+      "name": "dir:backend/integrations",
+      "ok": true
+    },
+    {
+      "name": "dir:apps/decision-hub/public",
+      "ok": true
+    },
+    {
+      "name": "dir:apps/desktop-cloud-os/src",
+      "ok": true
+    },
+    {
+      "name": "dir:.github/workflows",
+      "ok": true
+    },
+    {
+      "name": "file:AGENTS.md",
+      "ok": true
+    },
+    {
+      "name": "file:README.md",
+      "ok": true
+    },
+    {
+      "name": "file:.github/workflows/cloud_acceptance.yml",
+      "ok": true
+    },
+    {
+      "name": "file:.github/workflows/watchdog.yml",
+      "ok": true
+    },
+    {
+      "name": "file:.github/workflows/codex_autonomous_repair.yml",
+      "ok": true
+    },
+    {
+      "name": "file:backend/services/audit_service.py",
+      "ok": true
+    },
+    {
+      "name": "file:backend/services/evidence_verification_service.py",
+      "ok": true
+    },
+    {
+      "name": "file:backend/services/industry_war_room_service.py",
+      "ok": true
+    },
+    {
+      "name": "file:backend/services/intelligence_center_service.py",
+      "ok": true
+    },
+    {
+      "name": "file:backend/services/knowledge_benchmark_service.py",
+      "ok": true
+    },
+    {
+      "name": "file:backend/services/mission_control_service.py",
+      "ok": true
+    },
+    {
+      "name": "file:backend/services/project_action_board_service.py",
+      "ok": true
+    },
+    {
+      "name": "file:backend/services/project_intelligence_service.py",
+      "ok": true
+    },
+    {
+      "name": "file:backend/services/self_improvement_service.py",
+      "ok": true
+    },
+    {
+      "name": "file:backend/services/social_communication_service.py",
+      "ok": true
+    },
+    {
+      "name": "file:backend/services/team_execution_service.py",
+      "ok": true
+    },
+    {
+      "name": "file:backend/services/team_response_service.py",
+      "ok": true
+    },
+    {
+      "name": "file:backend/services/war_room_execution_queue_service.py",
+      "ok": true
+    },
+    {
+      "name": "file:backend/comm/chat_gateway.py",
+      "ok": true
+    },
+    {
+      "name": "file:backend/integrations/n8n_connector.py",
+      "ok": true
+    },
+    {
+      "name": "file:apps/desktop-cloud-os/scripts/prepare-resources.js",
+      "ok": true
+    },
+    {
+      "name": "secret_scan:no_plaintext_tokens",
+      "ok": true,
+      "evidence": {
+        "ok": true,
+        "scanned": 718,
+        "hits": []
+      }
+    },
+    {
+      "name": "actions:uses_backend_workflows",
+      "ok": true
+    },
+    {
+      "name": "n8n:approval_gate_documented",
+      "ok": true
+    },
+    {
+      "name": "audit:append_service_available",
+      "ok": true
+    },
+    {
+      "name": "evidence_verification:dossier_service_available",
+      "ok": true
+    },
+    {
+      "name": "industry_war_room:vertical_team_package_available",
+      "ok": true
+    },
+    {
+      "name": "intelligence_center:service_available",
+      "ok": true
+    },
+    {
+      "name": "knowledge_benchmark:service_available",
+      "ok": true
+    },
+    {
+      "name": "mission_control:operating_brief_available",
+      "ok": true
+    },
+    {
+      "name": "project_action_board:execution_board_available",
+      "ok": true
+    },
+    {
+      "name": "project_intelligence:library_service_available",
+      "ok": true
+    },
+    {
+      "name": "self_improvement:service_available",
+      "ok": true
+    },
+    {
+      "name": "social_communication:approval_gate_available",
+      "ok": true
+    },
+    {
+      "name": "team_execution:project_team_os_available",
+      "ok": true
+    },
+    {
+      "name": "team_response:team_answer_pack_available",
+      "ok": true
+    },
+    {
+      "name": "war_room_execution:queue_service_available",
+      "ok": true
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Global Intelligence Dashboard</title>
+</head>
+
+<body>
+
+<h1>🧠 Intelligence Dashboard</h1>
+
+<div id="content"></div>
+
+<script>
+fetch("../output/dashboard.json")
+  .then(r => r.json())
+  .then(data => {
+
+    document.getElementById("content").innerHTML = `
+
+      <h2>Top Keywords</h2>
+      <ul>
+        ${data.keywords.map(k => `<li>${k[0]} : ${k[1]}</li>`).join("")}
+      </ul>
+
+      <h2>Topics</h2>
+      <ul>
+        ${data.topics.map(t => `<li>${t.name} : ${t.count}</li>`).join("")}
+      </ul>
+
+      <p>Last Update: ${data.updated_at}</p>
+
+    `;
+  });
+</script>
+
+</body>
+</html>

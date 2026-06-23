@@ -1,0 +1,57 @@
+{
+  "ok": true,
+  "created_at": "2026-06-23T10:46:21.291243+00:00",
+  "overall_score": 80,
+  "verdict": "usable",
+  "dimensions": {
+    "accuracy": {
+      "score": 88,
+      "hits": [
+        "official",
+        "source",
+        "evidence"
+      ],
+      "label": "准确性"
+    },
+    "evidence": {
+      "score": 100,
+      "hits": [
+        "government",
+        "customs",
+        "source"
+      ],
+      "label": "证据"
+    },
+    "actionability": {
+      "score": 58,
+      "hits": [
+        "checklist"
+      ],
+      "label": "可执行性"
+    },
+    "risk_judgment": {
+      "score": 93,
+      "hits": [
+        "risk",
+        "approval",
+        "customs"
+      ],
+      "label": "风险判断"
+    },
+    "professional_depth": {
+      "score": 59,
+      "hits": [
+        "HS code",
+        "tariff"
+      ],
+      "label": "专业深度"
+    }
+  },
+  "recommendations": [
+    "增加官方来源 URL 和发布日期或访问日期。",
+    "区分已核验事实、弱信号、假设和建议。",
+    "把结论转成下一步行动清单。",
+    "明确风险、人工审批边界和阻断动作。",
+    "使用行业术语时说明含义、证据和适用范围。"
+  ]
+}

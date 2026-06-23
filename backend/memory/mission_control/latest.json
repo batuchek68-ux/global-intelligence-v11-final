@@ -1,0 +1,157 @@
+{
+  "ok": true,
+  "created_at": "2026-06-23T10:46:21.807612+00:00",
+  "status": "human_review_required",
+  "mission": "vertical industry intelligence brain plus verified search plus project execution system",
+  "command_center": {
+    "project_count": 2,
+    "case_count": 2,
+    "major_matter_count": 1,
+    "waiting_for_owner": 1,
+    "autonomous_cases": 1
+  },
+  "capability_evidence": {
+    "knowledge_domains": 7,
+    "customs_information_domain": true,
+    "benchmark_questions": 50,
+    "answer_score": 80,
+    "answer_score_verdict": "usable",
+    "intelligence_keywords": 211,
+    "latest_intelligence_brief": "C:\\Users\\Surface\\Documents\\New project\\global-intelligence-v11\\backend\\reports\\intelligence_briefs\\2026-06-23.md",
+    "latest_video_center": "C:\\Users\\Surface\\Documents\\New project\\global-intelligence-v11\\backend\\reports\\video_center\\video_center_2026-06-23.json",
+    "team_execution_reports": 3,
+    "evidence_dossiers": 3,
+    "latest_evidence_status": "partially_supported",
+    "latest_evidence_confidence": 84,
+    "action_boards": 218,
+    "latest_action_board_status": "pending_owner",
+    "latest_action_board_tasks": 6,
+    "team_responses": 4,
+    "latest_team_response_score": 99,
+    "latest_team_response_mode": "team_response_pack",
+    "war_rooms": 2,
+    "latest_war_room_score": 99,
+    "latest_war_room_mode": "industry_war_room",
+    "latest_war_room_roles": 6,
+    "latest_war_room_search_gate": "lead_only",
+    "latest_war_room_promotion_gate": "lead_only",
+    "latest_war_room_external_use": false,
+    "war_room_execution_queues": 13,
+    "latest_war_room_queue_mode": "war_room_execution_queue",
+    "latest_war_room_queue_tasks": 32,
+    "latest_war_room_queue_open": 22,
+    "latest_war_room_queue_blocked": 10,
+    "latest_war_room_queue_approval": 13,
+    "search_source_readiness": {
+      "configured_or_manual_sources": 11,
+      "manual_entry_sources": 11,
+      "missing_configuration": 1
+    },
+    "search_confirmation_gate": {
+      "status": "lead_only",
+      "can_create_confirmed_project_record": false,
+      "required_query_groups": [
+        "customs_trade",
+        "government_confirmation",
+        "procurement_tender"
+      ],
+      "blocked_actions": [
+        "招商引资正式发布",
+        "客户外联",
+        "报价",
+        "合同或付款承诺",
+        "交期或清关承诺",
+        "公开视频发布"
+      ]
+    },
+    "project_library_summary": {
+      "total": 2,
+      "under_construction": 0,
+      "planned": 0,
+      "unconfirmed": 2,
+      "official_ready": 1,
+      "needs_evidence": 1,
+      "promotion_draft_ready": 0,
+      "internal_screening_ready": 0,
+      "lead_only": 1
+    },
+    "promotion_readiness_gate": {
+      "weak_lead_status": "lead_only",
+      "official_project_status": "draft_promotion_ready",
+      "external_use_default": false,
+      "human_approval_required": true,
+      "blocked_actions": [
+        "正式招商发布",
+        "客户或投资人外联",
+        "报价",
+        "合同或付款承诺",
+        "交期或清关承诺",
+        "公开视频发布"
+      ]
+    }
+  },
+  "priority_queue": [
+    {
+      "project": "Demo Port Logistics Modernization",
+      "country": "Indonesia",
+      "risk_level": "high",
+      "triggers": [
+        "customs",
+        "compliance",
+        "payment",
+        "amount>=100000"
+      ],
+      "required_decision": "Decide whether to submit a formal delivery commitment this week.",
+      "blocked_actions": [
+        "external commitment",
+        "formal quotation",
+        "contract or payment approval",
+        "public publishing"
+      ]
+    }
+  ],
+  "autonomous_work": [
+    {
+      "project": "Internal Brief Library Cleanup",
+      "status": "autonomous_executed",
+      "result": "Codex executed the reversible low-risk operating step."
+    }
+  ],
+  "search_and_learning": {
+    "top_keywords": [
+      "Indonesia energy Demo Port Logistics Modernization export control",
+      "Indonesia energy Demo Port Logistics Modernization payment risk",
+      "Indonesia energy Demo Port Logistics Modernization sanctions",
+      "Indonesia infrastructure Demo Port Logistics Modernization AI",
+      "Indonesia infrastructure Demo Port Logistics Modernization Douyin",
+      "Indonesia infrastructure Demo Port Logistics Modernization EIA report",
+      "Indonesia infrastructure Demo Port Logistics Modernization EPC",
+      "Indonesia infrastructure Demo Port Logistics Modernization PPP",
+      "Indonesia infrastructure Demo Port Logistics Modernization ROI",
+      "Indonesia infrastructure Demo Port Logistics Modernization TikTok",
+      "Indonesia infrastructure Demo Port Logistics Modernization YouTube",
+      "Indonesia infrastructure Demo Port Logistics Modernization cabinet"
+    ],
+    "benchmark_targets": [
+      "v11",
+      "Doubao",
+      "Yuanbao"
+    ],
+    "scoring_dimensions": [
+      "accuracy",
+      "evidence",
+      "actionability",
+      "risk_judgment",
+      "professional_depth"
+    ],
+    "search_confirmation_rule": "Search output is a lead until official government, procurement, customs, regulator, or official company evidence is attached.",
+    "promotion_readiness_rule": "Investment-promotion drafts are internal only; external use requires human approval even after official evidence."
+  },
+  "owner_inbox_available": true,
+  "rules": [
+    "This snapshot is internal operating evidence, not an external message.",
+    "Government/customs/project facts require source verification before commitment.",
+    "Formal replies, quotes, payments, contracts, and public posts require human approval.",
+    "n8n can assist workflow routing but must not bypass v11 risk gates."
+  ]
+}

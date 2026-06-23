@@ -1,0 +1,33 @@
+name: 24h Codex Watchdog
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 */6 * * *"
+
+permissions:
+  contents: write
+  actions: read
+
+jobs:
+  watchdog:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Run watchdog
+        run: python workflows/watchdog.py
+      - name: Publish watchdog summary
+        run: |
+          cat reports/watchdog_status.md >> "$GITHUB_STEP_SUMMARY"
+      - name: Persist watchdog state
+        env:
+          STATE_COMMIT_MESSAGE: Persist Codex watchdog state
+        run: python workflows/persist_state.py
+      - name: Upload watchdog report
+        uses: actions/upload-artifact@v4
+        with:
+          name: codex-watchdog-${{ github.run_id }}
+          path: reports/watchdog_status.md

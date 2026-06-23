@@ -1,0 +1,76 @@
+{
+  "ok": false,
+  "stage": "authentication_failed",
+  "repository": "batuchek68-ux/global-intelligence-v11",
+  "branch": "main",
+  "token_source": "environment",
+  "plan": {
+    "connection_check": true,
+    "create_repo": false,
+    "upload": false,
+    "trigger": true
+  },
+  "connection": {
+    "ok": false,
+    "stage": "token",
+    "repository": "batuchek68-ux/global-intelligence-v11",
+    "workflow": "cloud_acceptance.yml",
+    "token_source": "environment",
+    "checks": [
+      {
+        "name": "token",
+        "ok": false,
+        "status": 401,
+        "user": {
+          "login": null,
+          "id": null,
+          "type": null
+        },
+        "details": {
+          "message": "Bad credentials",
+          "documentation_url": "https://docs.github.com/rest",
+          "status": "401"
+        },
+        "scopes": []
+      },
+      {
+        "name": "repository",
+        "ok": false,
+        "status": 401,
+        "private": null,
+        "default_branch": null,
+        "permissions": null,
+        "details": {
+          "message": "Bad credentials",
+          "documentation_url": "https://docs.github.com/rest",
+          "status": "401"
+        }
+      },
+      {
+        "name": "workflow",
+        "ok": false,
+        "status": 401,
+        "workflow": "cloud_acceptance.yml",
+        "state": null,
+        "html_url": null,
+        "details": {
+          "message": "Bad credentials",
+          "documentation_url": "https://docs.github.com/rest",
+          "status": "401"
+        }
+      },
+      {
+        "name": "actions_runs",
+        "ok": false,
+        "status": 401,
+        "latest_run": null,
+        "details": {
+          "message": "Bad credentials",
+          "documentation_url": "https://docs.github.com/rest",
+          "status": "401"
+        }
+      }
+    ]
+  },
+  "reason": "GitHub returned 401 Bad credentials. The token is invalid, expired, revoked, or lacks access. Run with -PromptToken and paste a newly generated token."
+}

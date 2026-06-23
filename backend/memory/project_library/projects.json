@@ -1,0 +1,138 @@
+[
+  {
+    "id": "13648f12a9cbd993",
+    "title": "Official procurement page",
+    "topic": "Kazakhstan engineering trade project customs investment promotion video",
+    "country": "Kazakhstan",
+    "category": "unknown",
+    "category_label": "待确认项目",
+    "status_evidence": [],
+    "confirmation_level": "government_confirmed",
+    "confidence": 90,
+    "government_sources": [
+      {
+        "title": "Official procurement page",
+        "url": "https://goszakup.gov.kz/example-project",
+        "domain": "goszakup.gov.kz",
+        "snippet": "Official source describes owner, tender status, customs documents and engineering scope.",
+        "source_type": "government",
+        "government_confirmed": true,
+        "collected_at": "2026-06-23T10:46:13.802814+00:00"
+      }
+    ],
+    "evidence": [
+      {
+        "title": "Official procurement page",
+        "url": "https://goszakup.gov.kz/example-project",
+        "domain": "goszakup.gov.kz",
+        "snippet": "Official source describes owner, tender status, customs documents and engineering scope.",
+        "source_type": "government",
+        "government_confirmed": true,
+        "collected_at": "2026-06-23T10:46:13.802814+00:00"
+      }
+    ],
+    "stakeholders": {
+      "project_owner": [
+        "Kazakhstan engineering trade project customs investment promotion video Kazakhstan Official procurement page Official source describes owner, tender status, customs documents and engineering scope"
+      ]
+    },
+    "owner_candidates": [
+      "Kazakhstan engineering trade project customs investment promotion video Kazakhstan Official procurement page Official source describes owner, tender status, customs documents and engineering scope"
+    ],
+    "developer_candidates": [],
+    "responsible_person_candidates": [],
+    "risk_flags": [
+      "Human approval required before external outreach, quotation, commitment, or publication.",
+      "Government source confirmation required before investment promotion use."
+    ],
+    "updated_at": "2026-06-23T10:46:13.804812+00:00",
+    "promotion_readiness": {
+      "status": "evidence_review_required",
+      "label": "需补证据",
+      "can_create_lead_record": true,
+      "can_generate_internal_promotion_draft": false,
+      "approved_for_external_use": false,
+      "human_approval_required_for_external_use": true,
+      "allowed_internal_actions": [
+        "保留为内部项目线索",
+        "补充阶段、业主、开发者、海关和采购证据"
+      ],
+      "blocked_actions": [
+        "正式招商发布",
+        "客户或投资人外联",
+        "报价",
+        "合同或付款承诺",
+        "交期或清关承诺",
+        "公开视频发布"
+      ],
+      "missing_requirements": [
+        "项目阶段尚未确认，不能判断为计划建设或在建项目。",
+        "开发者、投资方或承包商候选尚未确认。"
+      ]
+    }
+  },
+  {
+    "id": "43ba37ae6d9d906b",
+    "title": "Daily cycle operating evidence",
+    "topic": "Daily v11 international engineering trade, research intelligence, investment promotion, video, customs, and project execution operating package",
+    "country": "Indonesia",
+    "category": "unknown",
+    "category_label": "待确认项目",
+    "status_evidence": [],
+    "confirmation_level": "unverified_or_secondary",
+    "confidence": 60,
+    "government_sources": [],
+    "evidence": [
+      {
+        "title": "Daily cycle operating evidence",
+        "url": "C:\\Users\\Surface\\Documents\\New project\\global-intelligence-v11\\backend\\memory\\last_run.json",
+        "domain": "",
+        "snippet": "daily operating cycle, project cases, evidence dossiers, action boards, video center, benchmark and owner approval queue",
+        "source_type": "internal",
+        "government_confirmed": false,
+        "collected_at": "2026-06-23T10:46:21.443929+00:00"
+      }
+    ],
+    "stakeholders": {
+      "project_owner": [
+        "Daily v11 international engineering trade, research intelligence, investment promotion, video, customs, and project execution operating package Indonesia Daily cycle operating evidence daily operating cycle, project case"
+      ]
+    },
+    "owner_candidates": [
+      "Daily v11 international engineering trade, research intelligence, investment promotion, video, customs, and project execution operating package Indonesia Daily cycle operating evidence daily operating cycle, project case"
+    ],
+    "developer_candidates": [],
+    "responsible_person_candidates": [],
+    "risk_flags": [
+      "Human approval required before external outreach, quotation, commitment, or publication.",
+      "Government source confirmation required before investment promotion use."
+    ],
+    "updated_at": "2026-06-23T10:46:21.445920+00:00",
+    "promotion_readiness": {
+      "status": "lead_only",
+      "label": "仅线索",
+      "can_create_lead_record": true,
+      "can_generate_internal_promotion_draft": false,
+      "approved_for_external_use": false,
+      "human_approval_required_for_external_use": true,
+      "allowed_internal_actions": [
+        "只允许内部搜索和证据收集",
+        "不得作为招商引资项目使用"
+      ],
+      "blocked_actions": [
+        "正式招商发布",
+        "客户或投资人外联",
+        "报价",
+        "合同或付款承诺",
+        "交期或清关承诺",
+        "公开视频发布"
+      ],
+      "missing_requirements": [
+        "缺少政府、采购、海关、监管或官方企业证据。",
+        "项目阶段尚未确认，不能判断为计划建设或在建项目。",
+        "置信度低于 90，不能进入招商材料草稿。",
+        "开发者、投资方或承包商候选尚未确认。"
+      ]
+    }
+  }
+]

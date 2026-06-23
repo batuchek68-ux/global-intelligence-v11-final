@@ -1,0 +1,958 @@
+{
+  "updated_at": "2026-06-23T10:46:21.184593+00:00",
+  "question_count": 50,
+  "purpose": "用 50 个真实工作问题对比 v11、豆包、元宝的有用性、证据、可执行性、风险控制和专业深度。",
+  "winner_rule": "v11 wins only when it gives clearer evidence, safer risk judgment, and more executable project work than generic assistants.",
+  "questions": [
+    {
+      "id": "v11-benchmark-01",
+      "domain": "customs_information",
+      "question": "如何确认哈萨克斯坦进口矿山设备的 HS 编码、关税和清关文件？",
+      "expected_answer_traits": [
+        "清晰结论",
+        "证据来源和核验要求",
+        "可执行下一步",
+        "风险和人工审批边界",
+        "专业术语和行业深度",
+        "区分已核验事实、弱信号、假设和建议",
+        "必要时生成项目推进包、证据包或沟通草稿"
+      ],
+      "compare_targets": [
+        "v11",
+        "Doubao",
+        "Yuanbao"
+      ]
+    },
+    {
+      "id": "v11-benchmark-02",
+      "domain": "customs_information",
+      "question": "出口到中亚时如何判断是否涉及制裁、军民两用和出口管制？",
+      "expected_answer_traits": [
+        "清晰结论",
+        "证据来源和核验要求",
+        "可执行下一步",
+        "风险和人工审批边界",
+        "专业术语和行业深度",
+        "区分已核验事实、弱信号、假设和建议",
+        "必要时生成项目推进包、证据包或沟通草稿"
+      ],
+      "compare_targets": [
+        "v11",
+        "Doubao",
+        "Yuanbao"
+      ]
+    },
+    {
+      "id": "v11-benchmark-03",
+      "domain": "customs_information",
+      "question": "如何用政府官网确认一个产品是否需要进口许可证？",
+      "expected_answer_traits": [
+        "清晰结论",
+        "证据来源和核验要求",
+        "可执行下一步",
+        "风险和人工审批边界",
+        "专业术语和行业深度",
+        "区分已核验事实、弱信号、假设和建议",
+        "必要时生成项目推进包、证据包或沟通草稿"
+      ],
+      "compare_targets": [
+        "v11",
+        "Doubao",
+        "Yuanbao"
+      ]
+    },
+    {
+      "id": "v11-benchmark-04",
+      "domain": "customs_information",
+      "question": "海关估价、原产地证和付款条件之间有什么风险关系？",
+      "expected_answer_traits": [
+        "清晰结论",
+        "证据来源和核验要求",
+        "可执行下一步",
+        "风险和人工审批边界",
+        "专业术语和行业深度",
+        "区分已核验事实、弱信号、假设和建议",
+        "必要时生成项目推进包、证据包或沟通草稿"
+      ],
+      "compare_targets": [
+        "v11",
+        "Doubao",
+        "Yuanbao"
+      ]
+    },
+    {
+      "id": "v11-benchmark-05",
+      "domain": "customs_information",
+      "question": "如何建立一个国家的海关信息搜索词体系？",
+      "expected_answer_traits": [
+        "清晰结论",
+        "证据来源和核验要求",
+        "可执行下一步",
+        "风险和人工审批边界",
+        "专业术语和行业深度",
+        "区分已核验事实、弱信号、假设和建议",
+        "必要时生成项目推进包、证据包或沟通草稿"
+      ],
+      "compare_targets": [
+        "v11",
+        "Doubao",
+        "Yuanbao"
+      ]
+    },
+    {
+      "id": "v11-benchmark-06",
+      "domain": "international_trade",
+      "question": "EPC 设备贸易中 TT、LC、分期付款风险如何判断？",
+      "expected_answer_traits": [
+        "清晰结论",
+        "证据来源和核验要求",
+        "可执行下一步",
+        "风险和人工审批边界",
+        "专业术语和行业深度",
+        "区分已核验事实、弱信号、假设和建议",
+        "必要时生成项目推进包、证据包或沟通草稿"
+      ],
+      "compare_targets": [
+        "v11",
+        "Doubao",
+        "Yuanbao"
+      ]
+    },
+    {
+      "id": "v11-benchmark-07",
+      "domain": "international_trade",
+      "question": "如何筛选中亚本地代理商并防止付款风险？",
+      "expected_answer_traits": [
+        "清晰结论",
+        "证据来源和核验要求",
+        "可执行下一步",
+        "风险和人工审批边界",
+        "专业术语和行业深度",
+        "区分已核验事实、弱信号、假设和建议",
+        "必要时生成项目推进包、证据包或沟通草稿"
+      ],
+      "compare_targets": [
+        "v11",
+        "Doubao",
+        "Yuanbao"
+      ]
+    },
+    {
+      "id": "v11-benchmark-08",
+      "domain": "international_trade",
+      "question": "Incoterms 如何影响清关、保险和交付责任？",
+      "expected_answer_traits": [
+        "清晰结论",
+        "证据来源和核验要求",
+        "可执行下一步",
+        "风险和人工审批边界",
+        "专业术语和行业深度",
+        "区分已核验事实、弱信号、假设和建议",
+        "必要时生成项目推进包、证据包或沟通草稿"
+      ],
+      "compare_targets": [
+        "v11",
+        "Doubao",
+        "Yuanbao"
+      ]
+    },
+    {
+      "id": "v11-benchmark-09",
+      "domain": "international_trade",
+      "question": "如何做一个跨境供应商尽调清单？",
+      "expected_answer_traits": [
+        "清晰结论",
+        "证据来源和核验要求",
+        "可执行下一步",
+        "风险和人工审批边界",
+        "专业术语和行业深度",
+        "区分已核验事实、弱信号、假设和建议",
+        "必要时生成项目推进包、证据包或沟通草稿"
+      ],
+      "compare_targets": [
+        "v11",
+        "Doubao",
+        "Yuanbao"
+      ]
+    },
+    {
+      "id": "v11-benchmark-10",
+      "domain": "international_trade",
+      "question": "如何判断客户询盘是否真实且值得跟进？",
+      "expected_answer_traits": [
+        "清晰结论",
+        "证据来源和核验要求",
+        "可执行下一步",
+        "风险和人工审批边界",
+        "专业术语和行业深度",
+        "区分已核验事实、弱信号、假设和建议",
+        "必要时生成项目推进包、证据包或沟通草稿"
+      ],
+      "compare_targets": [
+        "v11",
+        "Doubao",
+        "Yuanbao"
+      ]
+    },
+    {
+      "id": "v11-benchmark-11",
+      "domain": "epc_projects",
+      "question": "如何识别在建 EPC 项目的业主、总包和分包机会？",
+      "expected_answer_traits": [
+        "清晰结论",
+        "证据来源和核验要求",
+        "可执行下一步",
+        "风险和人工审批边界",
+        "专业术语和行业深度",
+        "区分已核验事实、弱信号、假设和建议",
+        "必要时生成项目推进包、证据包或沟通草稿"
+      ],
+      "compare_targets": [
+        "v11",
+        "Doubao",
+        "Yuanbao"
+      ]
+    },
+    {
+      "id": "v11-benchmark-12",
+      "domain": "epc_projects",
+      "question": "如何从招标公告反推项目阶段和采购需求？",
+      "expected_answer_traits": [
+        "清晰结论",
+        "证据来源和核验要求",
+        "可执行下一步",
+        "风险和人工审批边界",
+        "专业术语和行业深度",
+        "区分已核验事实、弱信号、假设和建议",
+        "必要时生成项目推进包、证据包或沟通草稿"
+      ],
+      "compare_targets": [
+        "v11",
+        "Doubao",
+        "Yuanbao"
+      ]
+    },
+    {
+      "id": "v11-benchmark-13",
+      "domain": "epc_projects",
+      "question": "FIDIC 合同中哪些条款必须人工审查？",
+      "expected_answer_traits": [
+        "清晰结论",
+        "证据来源和核验要求",
+        "可执行下一步",
+        "风险和人工审批边界",
+        "专业术语和行业深度",
+        "区分已核验事实、弱信号、假设和建议",
+        "必要时生成项目推进包、证据包或沟通草稿"
+      ],
+      "compare_targets": [
+        "v11",
+        "Doubao",
+        "Yuanbao"
+      ]
+    },
+    {
+      "id": "v11-benchmark-14",
+      "domain": "epc_projects",
+      "question": "如何跟踪港口、矿山、物流园区建设项目？",
+      "expected_answer_traits": [
+        "清晰结论",
+        "证据来源和核验要求",
+        "可执行下一步",
+        "风险和人工审批边界",
+        "专业术语和行业深度",
+        "区分已核验事实、弱信号、假设和建议",
+        "必要时生成项目推进包、证据包或沟通草稿"
+      ],
+      "compare_targets": [
+        "v11",
+        "Doubao",
+        "Yuanbao"
+      ]
+    },
+    {
+      "id": "v11-benchmark-15",
+      "domain": "epc_projects",
+      "question": "项目延期时如何判断索赔和沟通风险？",
+      "expected_answer_traits": [
+        "清晰结论",
+        "证据来源和核验要求",
+        "可执行下一步",
+        "风险和人工审批边界",
+        "专业术语和行业深度",
+        "区分已核验事实、弱信号、假设和建议",
+        "必要时生成项目推进包、证据包或沟通草稿"
+      ],
+      "compare_targets": [
+        "v11",
+        "Doubao",
+        "Yuanbao"
+      ]
+    },
+    {
+      "id": "v11-benchmark-16",
+      "domain": "investment_promotion",
+      "question": "如何把一个计划建设项目包装成招商引资材料？",
+      "expected_answer_traits": [
+        "清晰结论",
+        "证据来源和核验要求",
+        "可执行下一步",
+        "风险和人工审批边界",
+        "专业术语和行业深度",
+        "区分已核验事实、弱信号、假设和建议",
+        "必要时生成项目推进包、证据包或沟通草稿"
+      ],
+      "compare_targets": [
+        "v11",
+        "Doubao",
+        "Yuanbao"
+      ]
+    },
+    {
+      "id": "v11-benchmark-17",
+      "domain": "investment_promotion",
+      "question": "如何判断一个工业园区项目是否具有高回报潜力？",
+      "expected_answer_traits": [
+        "清晰结论",
+        "证据来源和核验要求",
+        "可执行下一步",
+        "风险和人工审批边界",
+        "专业术语和行业深度",
+        "区分已核验事实、弱信号、假设和建议",
+        "必要时生成项目推进包、证据包或沟通草稿"
+      ],
+      "compare_targets": [
+        "v11",
+        "Doubao",
+        "Yuanbao"
+      ]
+    },
+    {
+      "id": "v11-benchmark-18",
+      "domain": "investment_promotion",
+      "question": "如何确认项目开发者、投资方和政府主管部门？",
+      "expected_answer_traits": [
+        "清晰结论",
+        "证据来源和核验要求",
+        "可执行下一步",
+        "风险和人工审批边界",
+        "专业术语和行业深度",
+        "区分已核验事实、弱信号、假设和建议",
+        "必要时生成项目推进包、证据包或沟通草稿"
+      ],
+      "compare_targets": [
+        "v11",
+        "Doubao",
+        "Yuanbao"
+      ]
+    },
+    {
+      "id": "v11-benchmark-19",
+      "domain": "investment_promotion",
+      "question": "招商材料中哪些表述不能自动发布？",
+      "expected_answer_traits": [
+        "清晰结论",
+        "证据来源和核验要求",
+        "可执行下一步",
+        "风险和人工审批边界",
+        "专业术语和行业深度",
+        "区分已核验事实、弱信号、假设和建议",
+        "必要时生成项目推进包、证据包或沟通草稿"
+      ],
+      "compare_targets": [
+        "v11",
+        "Doubao",
+        "Yuanbao"
+      ]
+    },
+    {
+      "id": "v11-benchmark-20",
+      "domain": "investment_promotion",
+      "question": "如何按国家生成招商引资可行性报告草稿？",
+      "expected_answer_traits": [
+        "清晰结论",
+        "证据来源和核验要求",
+        "可执行下一步",
+        "风险和人工审批边界",
+        "专业术语和行业深度",
+        "区分已核验事实、弱信号、假设和建议",
+        "必要时生成项目推进包、证据包或沟通草稿"
+      ],
+      "compare_targets": [
+        "v11",
+        "Doubao",
+        "Yuanbao"
+      ]
+    },
+    {
+      "id": "v11-benchmark-21",
+      "domain": "research",
+      "question": "如何同时搜索学术论文、图书馆资料和政府报告？",
+      "expected_answer_traits": [
+        "清晰结论",
+        "证据来源和核验要求",
+        "可执行下一步",
+        "风险和人工审批边界",
+        "专业术语和行业深度",
+        "区分已核验事实、弱信号、假设和建议",
+        "必要时生成项目推进包、证据包或沟通草稿"
+      ],
+      "compare_targets": [
+        "v11",
+        "Doubao",
+        "Yuanbao"
+      ]
+    },
+    {
+      "id": "v11-benchmark-22",
+      "domain": "research",
+      "question": "如何评价一个技术路线是否适合工程项目？",
+      "expected_answer_traits": [
+        "清晰结论",
+        "证据来源和核验要求",
+        "可执行下一步",
+        "风险和人工审批边界",
+        "专业术语和行业深度",
+        "区分已核验事实、弱信号、假设和建议",
+        "必要时生成项目推进包、证据包或沟通草稿"
+      ],
+      "compare_targets": [
+        "v11",
+        "Doubao",
+        "Yuanbao"
+      ]
+    },
+    {
+      "id": "v11-benchmark-23",
+      "domain": "research",
+      "question": "如何把科研资料转成项目决策简报？",
+      "expected_answer_traits": [
+        "清晰结论",
+        "证据来源和核验要求",
+        "可执行下一步",
+        "风险和人工审批边界",
+        "专业术语和行业深度",
+        "区分已核验事实、弱信号、假设和建议",
+        "必要时生成项目推进包、证据包或沟通草稿"
+      ],
+      "compare_targets": [
+        "v11",
+        "Doubao",
+        "Yuanbao"
+      ]
+    },
+    {
+      "id": "v11-benchmark-24",
+      "domain": "research",
+      "question": "如何建立证据等级和引用规则？",
+      "expected_answer_traits": [
+        "清晰结论",
+        "证据来源和核验要求",
+        "可执行下一步",
+        "风险和人工审批边界",
+        "专业术语和行业深度",
+        "区分已核验事实、弱信号、假设和建议",
+        "必要时生成项目推进包、证据包或沟通草稿"
+      ],
+      "compare_targets": [
+        "v11",
+        "Doubao",
+        "Yuanbao"
+      ]
+    },
+    {
+      "id": "v11-benchmark-25",
+      "domain": "research",
+      "question": "如何避免用二手资料做最终判断？",
+      "expected_answer_traits": [
+        "清晰结论",
+        "证据来源和核验要求",
+        "可执行下一步",
+        "风险和人工审批边界",
+        "专业术语和行业深度",
+        "区分已核验事实、弱信号、假设和建议",
+        "必要时生成项目推进包、证据包或沟通草稿"
+      ],
+      "compare_targets": [
+        "v11",
+        "Doubao",
+        "Yuanbao"
+      ]
+    },
+    {
+      "id": "v11-benchmark-26",
+      "domain": "video_media",
+      "question": "如何为哈萨克斯坦工程项目制作短视频脚本？",
+      "expected_answer_traits": [
+        "清晰结论",
+        "证据来源和核验要求",
+        "可执行下一步",
+        "风险和人工审批边界",
+        "专业术语和行业深度",
+        "区分已核验事实、弱信号、假设和建议",
+        "必要时生成项目推进包、证据包或沟通草稿"
+      ],
+      "compare_targets": [
+        "v11",
+        "Doubao",
+        "Yuanbao"
+      ]
+    },
+    {
+      "id": "v11-benchmark-27",
+      "domain": "video_media",
+      "question": "如何跟踪 YouTube、TikTok、抖音同类视频并优化表达？",
+      "expected_answer_traits": [
+        "清晰结论",
+        "证据来源和核验要求",
+        "可执行下一步",
+        "风险和人工审批边界",
+        "专业术语和行业深度",
+        "区分已核验事实、弱信号、假设和建议",
+        "必要时生成项目推进包、证据包或沟通草稿"
+      ],
+      "compare_targets": [
+        "v11",
+        "Doubao",
+        "Yuanbao"
+      ]
+    },
+    {
+      "id": "v11-benchmark-28",
+      "domain": "video_media",
+      "question": "不同国家项目视频风格如何区分？",
+      "expected_answer_traits": [
+        "清晰结论",
+        "证据来源和核验要求",
+        "可执行下一步",
+        "风险和人工审批边界",
+        "专业术语和行业深度",
+        "区分已核验事实、弱信号、假设和建议",
+        "必要时生成项目推进包、证据包或沟通草稿"
+      ],
+      "compare_targets": [
+        "v11",
+        "Doubao",
+        "Yuanbao"
+      ]
+    },
+    {
+      "id": "v11-benchmark-29",
+      "domain": "video_media",
+      "question": "公开视频中哪些内容必须人工审查？",
+      "expected_answer_traits": [
+        "清晰结论",
+        "证据来源和核验要求",
+        "可执行下一步",
+        "风险和人工审批边界",
+        "专业术语和行业深度",
+        "区分已核验事实、弱信号、假设和建议",
+        "必要时生成项目推进包、证据包或沟通草稿"
+      ],
+      "compare_targets": [
+        "v11",
+        "Doubao",
+        "Yuanbao"
+      ]
+    },
+    {
+      "id": "v11-benchmark-30",
+      "domain": "video_media",
+      "question": "如何把项目情报变成 60 秒招商视频？",
+      "expected_answer_traits": [
+        "清晰结论",
+        "证据来源和核验要求",
+        "可执行下一步",
+        "风险和人工审批边界",
+        "专业术语和行业深度",
+        "区分已核验事实、弱信号、假设和建议",
+        "必要时生成项目推进包、证据包或沟通草稿"
+      ],
+      "compare_targets": [
+        "v11",
+        "Doubao",
+        "Yuanbao"
+      ]
+    },
+    {
+      "id": "v11-benchmark-31",
+      "domain": "political_risk",
+      "question": "政策变化如何影响跨境工程贸易？",
+      "expected_answer_traits": [
+        "清晰结论",
+        "证据来源和核验要求",
+        "可执行下一步",
+        "风险和人工审批边界",
+        "专业术语和行业深度",
+        "区分已核验事实、弱信号、假设和建议",
+        "必要时生成项目推进包、证据包或沟通草稿"
+      ],
+      "compare_targets": [
+        "v11",
+        "Doubao",
+        "Yuanbao"
+      ]
+    },
+    {
+      "id": "v11-benchmark-32",
+      "domain": "political_risk",
+      "question": "如何判断政府换届对项目推进的影响？",
+      "expected_answer_traits": [
+        "清晰结论",
+        "证据来源和核验要求",
+        "可执行下一步",
+        "风险和人工审批边界",
+        "专业术语和行业深度",
+        "区分已核验事实、弱信号、假设和建议",
+        "必要时生成项目推进包、证据包或沟通草稿"
+      ],
+      "compare_targets": [
+        "v11",
+        "Doubao",
+        "Yuanbao"
+      ]
+    },
+    {
+      "id": "v11-benchmark-33",
+      "domain": "political_risk",
+      "question": "制裁新闻出现后项目是否应该暂停？",
+      "expected_answer_traits": [
+        "清晰结论",
+        "证据来源和核验要求",
+        "可执行下一步",
+        "风险和人工审批边界",
+        "专业术语和行业深度",
+        "区分已核验事实、弱信号、假设和建议",
+        "必要时生成项目推进包、证据包或沟通草稿"
+      ],
+      "compare_targets": [
+        "v11",
+        "Doubao",
+        "Yuanbao"
+      ]
+    },
+    {
+      "id": "v11-benchmark-34",
+      "domain": "political_risk",
+      "question": "如何跟踪中亚政治风险和论坛关注度？",
+      "expected_answer_traits": [
+        "清晰结论",
+        "证据来源和核验要求",
+        "可执行下一步",
+        "风险和人工审批边界",
+        "专业术语和行业深度",
+        "区分已核验事实、弱信号、假设和建议",
+        "必要时生成项目推进包、证据包或沟通草稿"
+      ],
+      "compare_targets": [
+        "v11",
+        "Doubao",
+        "Yuanbao"
+      ]
+    },
+    {
+      "id": "v11-benchmark-35",
+      "domain": "political_risk",
+      "question": "哪些政治风险必须进入老板收件箱？",
+      "expected_answer_traits": [
+        "清晰结论",
+        "证据来源和核验要求",
+        "可执行下一步",
+        "风险和人工审批边界",
+        "专业术语和行业深度",
+        "区分已核验事实、弱信号、假设和建议",
+        "必要时生成项目推进包、证据包或沟通草稿"
+      ],
+      "compare_targets": [
+        "v11",
+        "Doubao",
+        "Yuanbao"
+      ]
+    },
+    {
+      "id": "v11-benchmark-36",
+      "domain": "customs_information",
+      "question": "如何确认设备是否能进入保税仓或临时进口？",
+      "expected_answer_traits": [
+        "清晰结论",
+        "证据来源和核验要求",
+        "可执行下一步",
+        "风险和人工审批边界",
+        "专业术语和行业深度",
+        "区分已核验事实、弱信号、假设和建议",
+        "必要时生成项目推进包、证据包或沟通草稿"
+      ],
+      "compare_targets": [
+        "v11",
+        "Doubao",
+        "Yuanbao"
+      ]
+    },
+    {
+      "id": "v11-benchmark-37",
+      "domain": "international_trade",
+      "question": "如何设计不承诺价格的客户回复草稿？",
+      "expected_answer_traits": [
+        "清晰结论",
+        "证据来源和核验要求",
+        "可执行下一步",
+        "风险和人工审批边界",
+        "专业术语和行业深度",
+        "区分已核验事实、弱信号、假设和建议",
+        "必要时生成项目推进包、证据包或沟通草稿"
+      ],
+      "compare_targets": [
+        "v11",
+        "Doubao",
+        "Yuanbao"
+      ]
+    },
+    {
+      "id": "v11-benchmark-38",
+      "domain": "epc_projects",
+      "question": "如何对比两个 EPC 项目的优先级？",
+      "expected_answer_traits": [
+        "清晰结论",
+        "证据来源和核验要求",
+        "可执行下一步",
+        "风险和人工审批边界",
+        "专业术语和行业深度",
+        "区分已核验事实、弱信号、假设和建议",
+        "必要时生成项目推进包、证据包或沟通草稿"
+      ],
+      "compare_targets": [
+        "v11",
+        "Doubao",
+        "Yuanbao"
+      ]
+    },
+    {
+      "id": "v11-benchmark-39",
+      "domain": "investment_promotion",
+      "question": "如何判断一个项目是否适合中国企业参与？",
+      "expected_answer_traits": [
+        "清晰结论",
+        "证据来源和核验要求",
+        "可执行下一步",
+        "风险和人工审批边界",
+        "专业术语和行业深度",
+        "区分已核验事实、弱信号、假设和建议",
+        "必要时生成项目推进包、证据包或沟通草稿"
+      ],
+      "compare_targets": [
+        "v11",
+        "Doubao",
+        "Yuanbao"
+      ]
+    },
+    {
+      "id": "v11-benchmark-40",
+      "domain": "research",
+      "question": "如何把论文结论转成可执行工程建议？",
+      "expected_answer_traits": [
+        "清晰结论",
+        "证据来源和核验要求",
+        "可执行下一步",
+        "风险和人工审批边界",
+        "专业术语和行业深度",
+        "区分已核验事实、弱信号、假设和建议",
+        "必要时生成项目推进包、证据包或沟通草稿"
+      ],
+      "compare_targets": [
+        "v11",
+        "Doubao",
+        "Yuanbao"
+      ]
+    },
+    {
+      "id": "v11-benchmark-41",
+      "domain": "video_media",
+      "question": "如何从爆款视频提取可学习但不抄袭的结构？",
+      "expected_answer_traits": [
+        "清晰结论",
+        "证据来源和核验要求",
+        "可执行下一步",
+        "风险和人工审批边界",
+        "专业术语和行业深度",
+        "区分已核验事实、弱信号、假设和建议",
+        "必要时生成项目推进包、证据包或沟通草稿"
+      ],
+      "compare_targets": [
+        "v11",
+        "Doubao",
+        "Yuanbao"
+      ]
+    },
+    {
+      "id": "v11-benchmark-42",
+      "domain": "political_risk",
+      "question": "如何建立政治风险预警关键词？",
+      "expected_answer_traits": [
+        "清晰结论",
+        "证据来源和核验要求",
+        "可执行下一步",
+        "风险和人工审批边界",
+        "专业术语和行业深度",
+        "区分已核验事实、弱信号、假设和建议",
+        "必要时生成项目推进包、证据包或沟通草稿"
+      ],
+      "compare_targets": [
+        "v11",
+        "Doubao",
+        "Yuanbao"
+      ]
+    },
+    {
+      "id": "v11-benchmark-43",
+      "domain": "customs_information",
+      "question": "如何核验清关代理给出的税费估算？",
+      "expected_answer_traits": [
+        "清晰结论",
+        "证据来源和核验要求",
+        "可执行下一步",
+        "风险和人工审批边界",
+        "专业术语和行业深度",
+        "区分已核验事实、弱信号、假设和建议",
+        "必要时生成项目推进包、证据包或沟通草稿"
+      ],
+      "compare_targets": [
+        "v11",
+        "Doubao",
+        "Yuanbao"
+      ]
+    },
+    {
+      "id": "v11-benchmark-44",
+      "domain": "international_trade",
+      "question": "如何建立客户、供应商、代理商三方风控表？",
+      "expected_answer_traits": [
+        "清晰结论",
+        "证据来源和核验要求",
+        "可执行下一步",
+        "风险和人工审批边界",
+        "专业术语和行业深度",
+        "区分已核验事实、弱信号、假设和建议",
+        "必要时生成项目推进包、证据包或沟通草稿"
+      ],
+      "compare_targets": [
+        "v11",
+        "Doubao",
+        "Yuanbao"
+      ]
+    },
+    {
+      "id": "v11-benchmark-45",
+      "domain": "epc_projects",
+      "question": "如何用政府采购平台跟踪项目招标变更？",
+      "expected_answer_traits": [
+        "清晰结论",
+        "证据来源和核验要求",
+        "可执行下一步",
+        "风险和人工审批边界",
+        "专业术语和行业深度",
+        "区分已核验事实、弱信号、假设和建议",
+        "必要时生成项目推进包、证据包或沟通草稿"
+      ],
+      "compare_targets": [
+        "v11",
+        "Doubao",
+        "Yuanbao"
+      ]
+    },
+    {
+      "id": "v11-benchmark-46",
+      "domain": "investment_promotion",
+      "question": "如何写一页纸项目投资摘要？",
+      "expected_answer_traits": [
+        "清晰结论",
+        "证据来源和核验要求",
+        "可执行下一步",
+        "风险和人工审批边界",
+        "专业术语和行业深度",
+        "区分已核验事实、弱信号、假设和建议",
+        "必要时生成项目推进包、证据包或沟通草稿"
+      ],
+      "compare_targets": [
+        "v11",
+        "Doubao",
+        "Yuanbao"
+      ]
+    },
+    {
+      "id": "v11-benchmark-47",
+      "domain": "research",
+      "question": "如何建立行业知识库并持续更新？",
+      "expected_answer_traits": [
+        "清晰结论",
+        "证据来源和核验要求",
+        "可执行下一步",
+        "风险和人工审批边界",
+        "专业术语和行业深度",
+        "区分已核验事实、弱信号、假设和建议",
+        "必要时生成项目推进包、证据包或沟通草稿"
+      ],
+      "compare_targets": [
+        "v11",
+        "Doubao",
+        "Yuanbao"
+      ]
+    },
+    {
+      "id": "v11-benchmark-48",
+      "domain": "video_media",
+      "question": "如何根据国家文化调整视频开场和字幕？",
+      "expected_answer_traits": [
+        "清晰结论",
+        "证据来源和核验要求",
+        "可执行下一步",
+        "风险和人工审批边界",
+        "专业术语和行业深度",
+        "区分已核验事实、弱信号、假设和建议",
+        "必要时生成项目推进包、证据包或沟通草稿"
+      ],
+      "compare_targets": [
+        "v11",
+        "Doubao",
+        "Yuanbao"
+      ]
+    },
+    {
+      "id": "v11-benchmark-49",
+      "domain": "political_risk",
+      "question": "如何判断项目是否受国际关系影响？",
+      "expected_answer_traits": [
+        "清晰结论",
+        "证据来源和核验要求",
+        "可执行下一步",
+        "风险和人工审批边界",
+        "专业术语和行业深度",
+        "区分已核验事实、弱信号、假设和建议",
+        "必要时生成项目推进包、证据包或沟通草稿"
+      ],
+      "compare_targets": [
+        "v11",
+        "Doubao",
+        "Yuanbao"
+      ]
+    },
+    {
+      "id": "v11-benchmark-50",
+      "domain": "customs_information",
+      "question": "如何生成海关信息可核验报告草稿？",
+      "expected_answer_traits": [
+        "清晰结论",
+        "证据来源和核验要求",
+        "可执行下一步",
+        "风险和人工审批边界",
+        "专业术语和行业深度",
+        "区分已核验事实、弱信号、假设和建议",
+        "必要时生成项目推进包、证据包或沟通草稿"
+      ],
+      "compare_targets": [
+        "v11",
+        "Doubao",
+        "Yuanbao"
+      ]
+    }
+  ]
+}

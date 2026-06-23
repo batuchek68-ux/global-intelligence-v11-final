@@ -1,0 +1,9 @@
+{
+  "channel": "wechat",
+  "recipient": "owner",
+  "message": "Draft reply",
+  "context": {},
+  "status": "draft_not_approved_for_sending",
+  "approval_required": true,
+  "safety_rule": "Draft -> Self Review -> Policy Check -> Human Approval -> Send"
+}

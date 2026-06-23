@@ -1,0 +1,176 @@
+{
+  "name": "Codex AI 获客工作流",
+  "nodes": [
+    {
+      "parameters": {
+        "trigger": "manual"
+      },
+      "name": "Manual Trigger",
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [250, 300]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "http://localhost:8000/v1/query",
+        "authentication": "headerAuth",
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "X-Org-ID",
+              "value": "org_demo_001"
+            }
+          ]
+        },
+        "sendBody": true,
+        "bodyParameters": {
+          "parameters": [
+            {
+              "name": "query",
+              "value": "找出科技行业增长最快的公司"
+            },
+            {
+              "name": "user_id",
+              "value": "user_001"
+            },
+            {
+              "name": "metadata",
+              "value": "={{ {\"source\": \"n8n\", \"workflow_id\": $json.workflow_id} }}"
+            }
+          ]
+        }
+      },
+      "name": "调用 Codex AI v11",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.1,
+      "position": [550, 300],
+      "credentials": {
+        "httpBasicAuth": "basic_auth_creds"
+      }
+    },
+    {
+      "parameters": {
+        "assignments": [
+          {
+            "name": "execution_id",
+            "value": "={{ $json.execution_id }}"
+          },
+          {
+            "name": "insights",
+            "value": "={{ $json.result }}"
+          },
+          {
+            "name": "confidence",
+            "value": "={{ $json.result.confidence_score }}"
+          }
+        ]
+      },
+      "name": "提取结果",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 1,
+      "position": [850, 300]
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "rules": [
+            {
+              "value1": "={{ $json.confidence }}",
+              "value2": 0.7,
+              "operation": ">="
+            }
+          ]
+        }
+      },
+      "name": "检查信心度",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 1,
+      "position": [1150, 300]
+    },
+    {
+      "parameters": {
+        "resource": "message",
+        "operation": "send",
+        "channel": "sales-channel",
+        "text": "🎯 Codex AI 发现新商机\n\n执行ID: {{ $json.execution_id }}\n信心度: {{ $json.confidence }}\n\n洞察摘要:\n{{ $json.insights.summary }}\n\n关键发现:\n{{ $json.insights.key_findings.join('\\n') }}"
+      },
+      "name": "发送 Slack 通知",
+      "type": "n8n-nodes-base.slack",
+      "typeVersion": 1,
+      "position": [1450, 200]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "postgresql://db:5432/v11",
+        "requestMethod": "query",
+        "query": "INSERT INTO insights (org_id, execution_id, query, result, confidence, created_at) VALUES ($1, $2, $3, $4, $5, NOW())",
+        "queryParameters": [
+          "org_demo_001",
+          "={{ $json.execution_id }}",
+          "找出科技行业增长最快的公司",
+          "={{ JSON.stringify($json.insights) }}",
+          "={{ $json.confidence }}"
+        ]
+      },
+      "name": "保存到数据库",
+      "type": "n8n-nodes-base.postgres",
+      "typeVersion": 1,
+      "position": [1450, 400]
+    }
+  ],
+  "connections": {
+    "Manual Trigger": {
+      "main": [
+        [
+          {
+            "node": "调用 Codex AI v11",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "调用 Codex AI v11": {
+      "main": [
+        [
+          {
+            "node": "提取结果",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "提取结果": {
+      "main": [
+        [
+          {
+            "node": "检查信心度",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "检查信心度": {
+      "main": [
+        [
+          {
+            "node": "发送 Slack 通知",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "保存到数据库",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  }
+}

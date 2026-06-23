@@ -1,0 +1,8 @@
+{
+  "created_at": "2026-06-21T08:06:00+00:00",
+  "source": "local-receipt-simulation",
+  "project": "Demo Port Logistics Modernization",
+  "decision": "revise",
+  "notes": "continue only after customs broker confirms date",
+  "ticket_path": "C:\\Users\\Surface\\Documents\\智慧情报分析平台\\02_源代码\\international-trade-ai\\comm\\outbox\\demo-port-logistics-modernization.json"
+}

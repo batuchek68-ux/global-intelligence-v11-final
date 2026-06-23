@@ -1,0 +1,9 @@
+cloud.local.json
+cloud.env.ps1
+.env
+.env.*
+__pycache__/
+.pytest_cache/
+*.pyc
+*.log
+dist/

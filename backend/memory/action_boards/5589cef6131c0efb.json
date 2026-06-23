@@ -1,0 +1,129 @@
+{
+  "ok": true,
+  "id": "5589cef6131c0efb",
+  "created_at": "2026-06-23T04:51:06.754988+00:00",
+  "project": "Internal Brief Library Cleanup",
+  "country": "Internal",
+  "stage": "internal organization",
+  "risk_gate": {
+    "blocked": true,
+    "status": "evidence_review_required",
+    "risk_level": "low",
+    "risk_score": 20,
+    "reasons": [
+      "evidence status: partially_supported"
+    ],
+    "blocked_actions": [
+      "external commitment",
+      "formal quotation",
+      "contract or payment approval",
+      "public publishing",
+      "customer delivery promise"
+    ]
+  },
+  "evidence": {
+    "status": "partially_supported",
+    "confidence": 84,
+    "dossier_id": "45c6eabe5fc2ba53"
+  },
+  "summary": {
+    "task_count": 6,
+    "blocked_count": 3,
+    "open_count": 3
+  },
+  "tasks": [
+    {
+      "id": "5589cef6131c0efb-trade",
+      "role": "trade_lead",
+      "role_label": "International trade lead",
+      "title": "Verify customs, HS/tariff, payment terms, Incoterms, and logistics route.",
+      "status": "open",
+      "risk_gate": "human_review_required",
+      "evidence_needed": [
+        "customs authority URL",
+        "tariff/HS evidence",
+        "payment term proof",
+        "logistics route proof"
+      ],
+      "output": "internal_draft"
+    },
+    {
+      "id": "5589cef6131c0efb-research",
+      "role": "research_analyst",
+      "role_label": "Research intelligence analyst",
+      "title": "Collect government, procurement, academic, and library evidence; grade each source.",
+      "status": "open",
+      "risk_gate": "evidence_required",
+      "evidence_needed": [
+        "government page",
+        "procurement page",
+        "paper/library source",
+        "source date"
+      ],
+      "output": "internal_draft"
+    },
+    {
+      "id": "5589cef6131c0efb-investment",
+      "role": "investment_promotion_lead",
+      "role_label": "Investment promotion lead",
+      "title": "Map owner, developer, investor candidates, incentive policy, and project packaging gaps.",
+      "status": "blocked",
+      "risk_gate": "blocked_before_external_use",
+      "evidence_needed": [
+        "official project owner proof",
+        "developer/investor proof",
+        "investment agency source"
+      ],
+      "output": "internal_draft"
+    },
+    {
+      "id": "5589cef6131c0efb-video",
+      "role": "video_media_producer",
+      "role_label": "Video and media producer",
+      "title": "Draft country-style video concept based on verified facts and comparable platform examples.",
+      "status": "blocked",
+      "risk_gate": "human_approval_before_publish",
+      "evidence_needed": [
+        "platform search links",
+        "country style notes",
+        "verified project facts"
+      ],
+      "output": "internal_draft"
+    },
+    {
+      "id": "5589cef6131c0efb-pm",
+      "role": "project_manager",
+      "role_label": "Project execution manager",
+      "title": "Prepare meeting agenda, owner decision queue, deadlines, and next internal follow-up.",
+      "status": "open",
+      "risk_gate": "owner_queue",
+      "evidence_needed": [
+        "meeting record",
+        "task owner",
+        "deadline",
+        "decision log"
+      ],
+      "output": "internal_draft"
+    },
+    {
+      "id": "5589cef6131c0efb-risk",
+      "role": "risk_approval_officer",
+      "role_label": "Risk and approval officer",
+      "title": "Keep formal outreach, quotation, payment, contract, and public publishing blocked until approval.",
+      "status": "pending_owner",
+      "risk_gate": "active",
+      "evidence_needed": [
+        "approval ticket",
+        "risk trigger",
+        "human decision",
+        "audit log line"
+      ],
+      "output": "internal_draft"
+    }
+  ],
+  "rules": [
+    "This board is internal execution control, not approval to contact customers.",
+    "External messages, quotations, contracts, payments, delivery promises, and public posts require human approval.",
+    "Official evidence is required before investment promotion or project confirmation."
+  ]
+}

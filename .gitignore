@@ -1,0 +1,16 @@
+.env
+.env.*
+!.env.example
+__pycache__/
+.pytest_cache/
+*.pyc
+*.log
+dist/
+node_modules/
+backend/dist/
+backend/.pytest_cache/
+apps/desktop-cloud-os/dist/
+apps/desktop-cloud-os/node_modules/
+apps/desktop-cloud-os/build-resources/
+apps/desktop-cloud-os/work/
+work/

@@ -1,0 +1,47 @@
+name: GitHub Cloud Acceptance
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  actions: read
+  issues: write
+
+jobs:
+  cloud-acceptance:
+    runs-on: ubuntu-latest
+    env:
+      OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+      BING_SEARCH_KEY: ${{ secrets.BING_SEARCH_KEY }}
+      WECHAT_WEBHOOK_URL: ${{ secrets.WECHAT_WEBHOOK_URL }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Preflight check
+        run: python workflows/preflight_check.py
+      - name: Run tests
+        run: python -m unittest discover -s tests
+      - name: Run daily operating cycle
+        run: python workflows/daily_job.py
+      - name: Run watchdog
+        run: python workflows/watchdog.py
+      - name: Run cloud acceptance
+        run: python workflows/cloud_acceptance.py
+      - name: Persist acceptance evidence
+        env:
+          STATE_COMMIT_MESSAGE: Persist GitHub cloud acceptance evidence
+        run: python workflows/persist_state.py
+      - name: Upload acceptance artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: github-cloud-acceptance-${{ github.run_id }}
+          path: |
+            reports/cloud_acceptance.md
+            reports/cloud_acceptance.json
+            reports/headquarters_status.md
+            reports/owner_inbox.md
+            reports/watchdog_status.md
+            memory/

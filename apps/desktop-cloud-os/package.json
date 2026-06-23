@@ -1,0 +1,59 @@
+{
+  "name": "desktop-cloud-os",
+  "version": "0.1.0",
+  "description": "Desktop shell for the Global Intelligence v11 Cloud OS.",
+  "main": "src/main.js",
+  "private": true,
+  "scripts": {
+    "start": "electron .",
+    "prepare:resources": "node scripts/prepare-resources.js",
+    "dist": "npm run prepare:resources && electron-builder --win --x64",
+    "pack": "npm run prepare:resources && electron-builder --dir --win --x64"
+  },
+  "devDependencies": {
+    "electron": "^31.7.7",
+    "electron-builder": "^24.13.3"
+  },
+  "build": {
+    "appId": "com.internationaltrade.cloudos",
+    "productName": "Global Intelligence v11",
+    "directories": {
+      "output": "dist"
+    },
+    "files": [
+      "src/**/*",
+      "assets/**/*",
+      "package.json"
+    ],
+    "extraResources": [
+      {
+        "from": "build-resources/decision-hub",
+        "to": "decision-hub",
+        "filter": [
+          "**/*"
+        ]
+      },
+      {
+        "from": "build-resources/backend",
+        "to": "backend",
+        "filter": [
+          "**/*"
+        ]
+      }
+    ],
+    "win": {
+      "signAndEditExecutable": false,
+      "icon": "assets/cloud-os.ico",
+      "target": [
+        "nsis",
+        "portable"
+      ]
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true
+    }
+  }
+}

@@ -1,0 +1,336 @@
+{
+  "ok": true,
+  "created_at": "2026-06-23T10:46:22.749061+00:00",
+  "repository": "local",
+  "run_id": "local",
+  "command_model": {
+    "github": "cloud AI headquarters",
+    "codex": "24h autonomous executive",
+    "owner": "decides only major matters"
+  },
+  "summary": {
+    "projects": 2,
+    "cases": 2,
+    "major_matters": 1,
+    "resolved_major_matters": 0,
+    "waiting_for_owner": 1,
+    "autonomous_cases": 1,
+    "execution_logs": 2,
+    "knowledge_domains": 7,
+    "customs_information_domain": true,
+    "benchmark_questions": 50,
+    "answer_score": 80,
+    "intelligence_keywords": 211,
+    "intelligence_briefs": 1,
+    "video_center_files": 1,
+    "team_execution_reports": 3,
+    "evidence_dossiers": 3,
+    "latest_evidence_status": "partially_supported",
+    "action_boards": 218,
+    "latest_action_board_status": "pending_owner",
+    "team_responses": 4,
+    "latest_team_response_score": 99,
+    "war_rooms": 2,
+    "war_room_execution_queues": 13,
+    "latest_war_room_queue_tasks": 32,
+    "latest_war_room_queue_blocked": 10,
+    "latest_war_room_score": 99,
+    "latest_war_room_mode": "industry_war_room",
+    "search_source_entries": 11,
+    "search_confirmation_gate": "lead_only",
+    "project_library_total": 2,
+    "promotion_draft_ready": 0,
+    "promotion_gate_weak_lead": "lead_only",
+    "promotion_gate_official_project": "draft_promotion_ready",
+    "war_room_score": 99,
+    "war_room_roles": 6,
+    "mission_control_status": "human_review_required"
+  },
+  "checks": [
+    {
+      "name": "file:.github/workflows/international_trade_ops.yml",
+      "ok": true,
+      "evidence": ".github/workflows/international_trade_ops.yml"
+    },
+    {
+      "name": "file:.github/workflows/owner_decision.yml",
+      "ok": true,
+      "evidence": ".github/workflows/owner_decision.yml"
+    },
+    {
+      "name": "file:.github/workflows/watchdog.yml",
+      "ok": true,
+      "evidence": ".github/workflows/watchdog.yml"
+    },
+    {
+      "name": "file:.github/workflows/cloud_acceptance.yml",
+      "ok": true,
+      "evidence": ".github/workflows/cloud_acceptance.yml"
+    },
+    {
+      "name": "file:.github/workflows/codex_autonomous_repair.yml",
+      "ok": true,
+      "evidence": ".github/workflows/codex_autonomous_repair.yml"
+    },
+    {
+      "name": "file:reports/headquarters_status.md",
+      "ok": true,
+      "evidence": "reports/headquarters_status.md"
+    },
+    {
+      "name": "file:reports/owner_inbox.md",
+      "ok": true,
+      "evidence": "reports/owner_inbox.md"
+    },
+    {
+      "name": "file:reports/watchdog_status.md",
+      "ok": true,
+      "evidence": "reports/watchdog_status.md"
+    },
+    {
+      "name": "file:memory/last_run.json",
+      "ok": true,
+      "evidence": "memory/last_run.json"
+    },
+    {
+      "name": "file:memory/knowledge_base/industry_knowledge.json",
+      "ok": true,
+      "evidence": "memory/knowledge_base/industry_knowledge.json"
+    },
+    {
+      "name": "file:memory/benchmark/v11_benchmark_50.json",
+      "ok": true,
+      "evidence": "memory/benchmark/v11_benchmark_50.json"
+    },
+    {
+      "name": "file:memory/evidence/latest.json",
+      "ok": true,
+      "evidence": "memory/evidence/latest.json"
+    },
+    {
+      "name": "file:reports/evidence/latest.md",
+      "ok": true,
+      "evidence": "reports/evidence/latest.md"
+    },
+    {
+      "name": "file:memory/action_boards/latest.json",
+      "ok": true,
+      "evidence": "memory/action_boards/latest.json"
+    },
+    {
+      "name": "file:reports/action_boards/latest.md",
+      "ok": true,
+      "evidence": "reports/action_boards/latest.md"
+    },
+    {
+      "name": "file:memory/team_responses/latest.json",
+      "ok": true,
+      "evidence": "memory/team_responses/latest.json"
+    },
+    {
+      "name": "file:reports/team_responses/latest.md",
+      "ok": true,
+      "evidence": "reports/team_responses/latest.md"
+    },
+    {
+      "name": "file:memory/war_room/latest.json",
+      "ok": true,
+      "evidence": "memory/war_room/latest.json"
+    },
+    {
+      "name": "file:reports/war_room/latest.md",
+      "ok": true,
+      "evidence": "reports/war_room/latest.md"
+    },
+    {
+      "name": "file:memory/war_room_execution/latest.json",
+      "ok": true,
+      "evidence": "memory/war_room_execution/latest.json"
+    },
+    {
+      "name": "file:reports/war_room_execution/latest.md",
+      "ok": true,
+      "evidence": "reports/war_room_execution/latest.md"
+    },
+    {
+      "name": "file:memory/intelligence/keyword_bank.json",
+      "ok": true,
+      "evidence": "memory/intelligence/keyword_bank.json"
+    },
+    {
+      "name": "file:memory/mission_control/latest.json",
+      "ok": true,
+      "evidence": "memory/mission_control/latest.json"
+    },
+    {
+      "name": "file:reports/mission_control/latest.md",
+      "ok": true,
+      "evidence": "reports/mission_control/latest.md"
+    },
+    {
+      "name": "file:services/industry_war_room_service.py",
+      "ok": true,
+      "evidence": "services/industry_war_room_service.py"
+    },
+    {
+      "name": "file:reports/benchmark/daily_answer_score.json",
+      "ok": true,
+      "evidence": "reports/benchmark/daily_answer_score.json"
+    },
+    {
+      "name": "text:.github/workflows/international_trade_ops.yml:python workflows/daily_job.py",
+      "ok": true,
+      "evidence": ".github/workflows/international_trade_ops.yml"
+    },
+    {
+      "name": "text:.github/workflows/international_trade_ops.yml:python workflows/persist_state.py",
+      "ok": true,
+      "evidence": ".github/workflows/international_trade_ops.yml"
+    },
+    {
+      "name": "text:.github/workflows/owner_decision.yml:issue_comment",
+      "ok": true,
+      "evidence": ".github/workflows/owner_decision.yml"
+    },
+    {
+      "name": "text:.github/workflows/owner_decision.yml:python workflows/resolve_major_matter.py",
+      "ok": true,
+      "evidence": ".github/workflows/owner_decision.yml"
+    },
+    {
+      "name": "text:.github/workflows/watchdog.yml:python workflows/persist_state.py",
+      "ok": true,
+      "evidence": ".github/workflows/watchdog.yml"
+    },
+    {
+      "name": "text:.github/workflows/cloud_acceptance.yml:python workflows/cloud_acceptance.py",
+      "ok": true,
+      "evidence": ".github/workflows/cloud_acceptance.yml"
+    },
+    {
+      "name": "text:.github/workflows/codex_autonomous_repair.yml:python workflows/autonomous_repair.py",
+      "ok": true,
+      "evidence": ".github/workflows/codex_autonomous_repair.yml"
+    },
+    {
+      "name": "text:reports/headquarters_status.md:Execution status",
+      "ok": true,
+      "evidence": "reports/headquarters_status.md"
+    },
+    {
+      "name": "text:reports/owner_inbox.md:Owner Inbox",
+      "ok": true,
+      "evidence": "reports/owner_inbox.md"
+    },
+    {
+      "name": "text:reports/watchdog_status.md:24h Codex Watchdog",
+      "ok": true,
+      "evidence": "reports/watchdog_status.md"
+    },
+    {
+      "name": "last_run:projects_scanned",
+      "ok": true,
+      "evidence": "project_count=2"
+    },
+    {
+      "name": "last_run:cases_created",
+      "ok": true,
+      "evidence": "case_count=2, cases=2"
+    },
+    {
+      "name": "execution_logs:one_per_case",
+      "ok": true,
+      "evidence": "execution_logs=2, cases=2"
+    },
+    {
+      "name": "owner_boundary:major_matters_identified",
+      "ok": true,
+      "evidence": "major_matter_count=1, waiting_for_owner=1"
+    },
+    {
+      "name": "owner_boundary:resolved_or_waiting",
+      "ok": true,
+      "evidence": "major=1, resolved=0, waiting=1"
+    },
+    {
+      "name": "codex_autonomy:autonomous_cases_recorded",
+      "ok": true,
+      "evidence": "autonomous_cases=1"
+    },
+    {
+      "name": "real_work:business_flows_generated",
+      "ok": true,
+      "evidence": "business_flow_reports=2"
+    },
+    {
+      "name": "v11_knowledge:domains_and_customs",
+      "ok": true,
+      "evidence": "domains=7, customs=True"
+    },
+    {
+      "name": "v11_benchmark:50_questions",
+      "ok": true,
+      "evidence": "question_count=50"
+    },
+    {
+      "name": "v11_answer_scorer:daily_quality_score",
+      "ok": true,
+      "evidence": "overall_score=80, verdict=usable"
+    },
+    {
+      "name": "v11_intelligence:keyword_bank_and_brief",
+      "ok": true,
+      "evidence": "keywords=211, briefs=1"
+    },
+    {
+      "name": "v11_video:center_generated",
+      "ok": true,
+      "evidence": "video_files=1, platform_searches=120"
+    },
+    {
+      "name": "v11_team_execution:packages_generated",
+      "ok": true,
+      "evidence": "team_reports=3, team_memory=3, cases=2"
+    },
+    {
+      "name": "v11_evidence:verification_dossiers",
+      "ok": true,
+      "evidence": "evidence_json=4, evidence_reports=4, latest_status=partially_supported"
+    },
+    {
+      "name": "v11_action_board:execution_tasks",
+      "ok": true,
+      "evidence": "action_json=219, action_reports=219, latest_tasks=6, latest_status=pending_owner"
+    },
+    {
+      "name": "v11_team_response:team_answer_pack",
+      "ok": true,
+      "evidence": "team_response_json=5, score=99, roles=6"
+    },
+    {
+      "name": "v11_search:source_readiness_and_confirmation_gate",
+      "ok": true,
+      "evidence": "sources=11, manual=11, gate=lead_only, required=customs_trade,government_confirmation,procurement_tender, blocked=6"
+    },
+    {
+      "name": "v11_project:promotion_readiness_gate",
+      "ok": true,
+      "evidence": "weak=lead_only, official=draft_promotion_ready, external=False, library_total=2, draft_ready=0, lead_only=1"
+    },
+    {
+      "name": "v11_war_room:vertical_team_operating_package",
+      "ok": true,
+      "evidence": "latest=industry_war_room, saved_json=2, saved_reports=2, mode=industry_war_room, search_gate=lead_only, promotion=lead_only, roles=6, video=12, score=99"
+    },
+    {
+      "name": "v11_war_room_execution:queue_tracks_work",
+      "ok": true,
+      "evidence": "queues=13, reports=13, mode=war_room_execution_queue, tasks=32, open=22, blocked=10, approval=13"
+    },
+    {
+      "name": "v11_mission_control:operating_brief",
+      "ok": true,
+      "evidence": "status=human_review_required, benchmark=50, customs=True, evidence=3, boards=218, responses=4, war_rooms=2, queues=13, queue_tasks=32, war_score=99, search_gate=lead_only, promotion_gate=draft_promotion_ready"
+    }
+  ]
+}

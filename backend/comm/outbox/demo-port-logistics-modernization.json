@@ -1,0 +1,18 @@
+{
+  "created_at": "2026-06-22T17:54:02+00:00",
+  "channel": "wechat_or_enterprise_wechat",
+  "status": "waiting",
+  "project": "Demo Port Logistics Modernization",
+  "country": "Indonesia",
+  "counterparty": "Port Authority Demo",
+  "risk_level": "high",
+  "risk_score": 96,
+  "triggers": [
+    "customs",
+    "compliance",
+    "payment",
+    "amount>=100000"
+  ],
+  "question": "Approve next step for Demo Port Logistics Modernization? Create an approval ticket before external commitment, payment, contract change, or public communication.",
+  "reply_expected": "approve / reject / revise with conditions"
+}

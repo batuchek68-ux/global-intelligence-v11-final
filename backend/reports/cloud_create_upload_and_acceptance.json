@@ -1,0 +1,5 @@
+{
+  "ok": false,
+  "stage": "configuration",
+  "reason": "Set GITHUB_TOKEN or GH_TOKEN, and GITHUB_REPOSITORY or --repository owner/name."
+}

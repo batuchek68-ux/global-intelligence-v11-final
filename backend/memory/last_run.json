@@ -1,0 +1,465 @@
+{
+  "created_at": "2026-06-23T10:46:21+00:00",
+  "project_count": 2,
+  "case_count": 2,
+  "approval_count": 1,
+  "major_matter_count": 1,
+  "resolved_major_matter_count": 0,
+  "v11_capabilities": {
+    "knowledge_base": {
+      "path": "C:\\Users\\Surface\\Documents\\New project\\global-intelligence-v11\\backend\\memory\\knowledge_base\\industry_knowledge.json",
+      "domain_count": 7,
+      "has_customs_information": true
+    },
+    "benchmark": {
+      "path": "C:\\Users\\Surface\\Documents\\New project\\global-intelligence-v11\\backend\\memory\\benchmark\\v11_benchmark_50.json",
+      "question_count": 50,
+      "compare_targets": [
+        "v11",
+        "Doubao",
+        "Yuanbao"
+      ]
+    },
+    "answer_scoring": {
+      "path": "C:\\Users\\Surface\\Documents\\New project\\global-intelligence-v11\\backend\\reports\\benchmark\\daily_answer_score.json",
+      "overall_score": 80,
+      "verdict": "usable"
+    },
+    "intelligence_brief": {
+      "path": "C:\\Users\\Surface\\Documents\\New project\\global-intelligence-v11\\backend\\reports\\intelligence_briefs\\2026-06-23.md",
+      "category_count": 9,
+      "keyword_bank_path": "C:\\Users\\Surface\\Documents\\New project\\global-intelligence-v11\\backend\\memory\\intelligence\\keyword_bank.json"
+    },
+    "video_center": {
+      "path": "C:\\Users\\Surface\\Documents\\New project\\global-intelligence-v11\\backend\\reports\\video_center\\video_center_2026-06-23.json",
+      "keyword_count": 80,
+      "platform_search_count": 120
+    },
+    "team_execution": {
+      "package_count": 2,
+      "packages": [
+        {
+          "id": "c64fe893deddda22",
+          "objective": "Demo Port Logistics Modernization international engineering trade and intelligence execution",
+          "risk": {
+            "risk_level": "medium",
+            "signals": [],
+            "official_evidence_count": 0,
+            "needs_human_approval": false,
+            "blocked_actions": []
+          },
+          "deliverable_count": 6,
+          "role_count": 6
+        },
+        {
+          "id": "34b3ae73f65d4d44",
+          "objective": "Internal Brief Library Cleanup international engineering trade and intelligence execution",
+          "risk": {
+            "risk_level": "medium",
+            "signals": [],
+            "official_evidence_count": 0,
+            "needs_human_approval": false,
+            "blocked_actions": []
+          },
+          "deliverable_count": 6,
+          "role_count": 6
+        }
+      ]
+    },
+    "evidence_verification": {
+      "dossier_count": 4,
+      "latest_path": "C:\\Users\\Surface\\Documents\\New project\\global-intelligence-v11\\backend\\memory\\evidence\\latest.json"
+    },
+    "action_boards": {
+      "board_count": 218,
+      "latest_path": "C:\\Users\\Surface\\Documents\\New project\\global-intelligence-v11\\backend\\memory\\action_boards\\latest.json"
+    },
+    "team_response": {
+      "latest_path": "C:\\Users\\Surface\\Documents\\New project\\global-intelligence-v11\\backend\\memory\\team_responses\\8eb2321dfa13a563.json",
+      "report_path": "C:\\Users\\Surface\\Documents\\New project\\global-intelligence-v11\\backend\\reports\\team_responses\\8eb2321dfa13a563.md",
+      "overall_score": 99,
+      "human_approval_required": true
+    },
+    "war_room": {
+      "latest_path": "C:\\Users\\Surface\\Documents\\New project\\global-intelligence-v11\\backend\\memory\\war_room\\569853a813106b1b.json",
+      "report_path": "C:\\Users\\Surface\\Documents\\New project\\global-intelligence-v11\\backend\\reports\\war_room\\569853a813106b1b.md",
+      "execution_queue_path": "C:\\Users\\Surface\\Documents\\New project\\global-intelligence-v11\\backend\\memory\\war_room_execution\\76b9f777d7508af4.json",
+      "execution_queue_report_path": "C:\\Users\\Surface\\Documents\\New project\\global-intelligence-v11\\backend\\reports\\war_room_execution\\76b9f777d7508af4.md",
+      "execution_queue_tasks": 32,
+      "execution_queue_blocked": 10,
+      "overall_score": 99,
+      "role_count": 6,
+      "search_gate": "lead_only",
+      "promotion_readiness": "lead_only",
+      "external_use_allowed": false
+    },
+    "mission_control": {
+      "report_path": "C:\\Users\\Surface\\Documents\\New project\\global-intelligence-v11\\backend\\reports\\mission_control\\latest.md",
+      "json_path": "C:\\Users\\Surface\\Documents\\New project\\global-intelligence-v11\\backend\\memory\\mission_control\\latest.json",
+      "status": "human_review_required",
+      "waiting_for_owner": 1
+    }
+  },
+  "cases": [
+    {
+      "created_at": "2026-06-23T10:46:21+00:00",
+      "project": {
+        "path": "C:\\Users\\Surface\\Documents\\New project\\global-intelligence-v11\\backend\\projects\\active\\demo-port-logistics.md",
+        "title": "Demo Port Logistics Modernization",
+        "country": "Indonesia",
+        "counterparty": "Port Authority Demo",
+        "amount": 250000.0,
+        "stage": "proposal review",
+        "latest_communication": "Client asked whether we can commit to delivery dates before customs and payment terms are clarified.",
+        "risks": [
+          "payment",
+          "customs",
+          "compliance",
+          "customer promise"
+        ],
+        "next_decision": "Decide whether to submit a formal delivery commitment this week."
+      },
+      "judgment": {
+        "level": "high",
+        "score": 96,
+        "triggers": [
+          "customs",
+          "compliance",
+          "payment",
+          "amount>=100000"
+        ],
+        "recommendation": "Create an approval ticket before external commitment, payment, contract change, or public communication.",
+        "needs_approval": true
+      },
+      "actions": [
+        "Send approval ticket to human owner before any external commitment.",
+        "Update project file for Demo Port Logistics Modernization with latest communication and evidence.",
+        "Generate daily research brief and attach it to the decision record.",
+        "Draft a short video script for internal/external communication review.",
+        "Wait for approval reply, then write the reply into memory before continuing."
+      ],
+      "brief_path": "C:\\Users\\Surface\\Documents\\New project\\global-intelligence-v11\\backend\\research\\briefs\\demo-port-logistics-modernization.md",
+      "video_path": "C:\\Users\\Surface\\Documents\\New project\\global-intelligence-v11\\backend\\media\\drafts\\demo-port-logistics-modernization.md",
+      "outbox_path": "C:\\Users\\Surface\\Documents\\New project\\global-intelligence-v11\\backend\\comm\\outbox\\demo-port-logistics-modernization.json",
+      "classification": {
+        "created_at": "2026-06-23T10:46:21+00:00",
+        "project": "Demo Port Logistics Modernization",
+        "mode": "human_decision_required",
+        "is_major_matter": true,
+        "owner_action": "Human owner decides; Codex waits or drafts alternatives only.",
+        "codex_role": "24h autonomous executive",
+        "github_role": "cloud AI headquarters",
+        "decision_boundary": {
+          "codex_can_do": [
+            "collect evidence",
+            "draft briefs",
+            "draft video scripts",
+            "prepare replies",
+            "record memory",
+            "run scheduled checks"
+          ],
+          "owner_must_decide": [
+            "contract commitment",
+            "payment or guarantee",
+            "external publishing",
+            "customer promise",
+            "compliance exception",
+            "high-risk project direction"
+          ]
+        }
+      },
+      "business_flow": {
+        "created_at": "2026-06-23T10:46:20+00:00",
+        "project": "Demo Port Logistics Modernization",
+        "real_work_coverage": {
+          "international_trade": [
+            "market intelligence",
+            "counterparty and owner tracking",
+            "EPC/tender/procurement opportunity watch",
+            "customs/logistics/payment/compliance risk list"
+          ],
+          "domestic_project_coordination": [
+            "internal task assignment",
+            "supplier and partner follow-up",
+            "evidence collection",
+            "owner decision queue"
+          ],
+          "meeting_followup": {
+            "channels": [
+              "WeChat",
+              "QQ Meeting"
+            ],
+            "status": "draft_only",
+            "agenda": [
+              "Confirm current stage for Demo Port Logistics Modernization",
+              "Confirm owner/customer decision maker and contact window",
+              "Collect missing contract, logistics, customs, and payment evidence",
+              "Assign next follow-up owner and deadline"
+            ],
+            "minutes_template": [
+              "Participants:",
+              "Key facts confirmed:",
+              "Open risks:",
+              "Decisions made by human owner:",
+              "Next follow-up time:"
+            ]
+          },
+          "content_operations": {
+            "status": "draft_not_approved_for_publishing",
+            "platforms": [
+              "Douyin",
+              "Video Channel",
+              "TikTok",
+              "YouTube"
+            ],
+            "publishing_rule": "Draft -> self review -> policy check -> human approval -> publish",
+            "draft_topics": [
+              "Indonesia engineering trade update",
+              "EPC project risk and opportunity",
+              "Customs, logistics, payment, and compliance watch"
+            ],
+            "blocked_without_human_approval": true
+          }
+        },
+        "automation_boundary": {
+          "autonomous": [
+            "prepare draft reply",
+            "prepare meeting agenda and minutes template",
+            "prepare video script and platform checklist",
+            "prepare risk brief and owner inbox item"
+          ],
+          "human_required": [
+            "send customer commitment",
+            "publish public video",
+            "confirm price or delivery date",
+            "sign contract or approve payment"
+          ]
+        }
+      },
+      "business_flow_path": "C:\\Users\\Surface\\Documents\\New project\\global-intelligence-v11\\backend\\reports\\business_flows\\demo-port-logistics-modernization.md",
+      "business_flow_json_path": "C:\\Users\\Surface\\Documents\\New project\\global-intelligence-v11\\backend\\reports\\business_flows\\demo-port-logistics-modernization.json",
+      "evidence_dossier_id": "8292910b19c4dd94",
+      "team_execution_package_id": "c64fe893deddda22",
+      "execution": {
+        "created_at": "2026-06-23T10:46:21+00:00",
+        "project": "Demo Port Logistics Modernization",
+        "mode": "human_decision_required",
+        "status": "waiting_for_owner",
+        "risk_level": "high",
+        "risk_score": 96,
+        "requires_owner": true,
+        "owner_decision": null,
+        "actions": [
+          "Send approval ticket to human owner before any external commitment.",
+          "Update project file for Demo Port Logistics Modernization with latest communication and evidence.",
+          "Generate daily research brief and attach it to the decision record.",
+          "Draft a short video script for internal/external communication review.",
+          "Wait for approval reply, then write the reply into memory before continuing."
+        ],
+        "result": "Codex paused external action and prepared an owner decision request."
+      },
+      "execution_log_path": "C:\\Users\\Surface\\Documents\\New project\\global-intelligence-v11\\backend\\memory\\execution_logs\\demo-port-logistics-modernization.json",
+      "operator_log_path": "C:\\Users\\Surface\\Documents\\New project\\global-intelligence-v11\\backend\\memory\\operator_logs\\demo-port-logistics-modernization.md",
+      "owner_decision": null,
+      "notifications": {
+        "enterprise_wechat": {
+          "sent": false,
+          "reason": "approval already waiting"
+        },
+        "feishu": {
+          "sent": false,
+          "reason": "approval already waiting"
+        },
+        "email": {
+          "sent": false,
+          "reason": "approval already waiting"
+        }
+      },
+      "webhook": {
+        "sent": false,
+        "reason": "approval already waiting"
+      },
+      "github_issue": {
+        "created": false,
+        "reason": "approval already waiting"
+      },
+      "action_board_id": "9f3551ab2d5bd226",
+      "action_board_path": "C:\\Users\\Surface\\Documents\\New project\\global-intelligence-v11\\backend\\reports\\action_boards\\9f3551ab2d5bd226.md"
+    },
+    {
+      "created_at": "2026-06-23T10:46:21+00:00",
+      "project": {
+        "path": "C:\\Users\\Surface\\Documents\\New project\\global-intelligence-v11\\backend\\projects\\active\\internal-brief-library.md",
+        "title": "Internal Brief Library Cleanup",
+        "country": "Internal",
+        "counterparty": "Operations Team",
+        "amount": 500.0,
+        "stage": "internal organization",
+        "latest_communication": "Team confirmed this is an internal reversible cleanup of research notes and brief tags.",
+        "risks": [
+          "none"
+        ],
+        "next_decision": "Let Codex organize notes, draft summaries, and record the result."
+      },
+      "judgment": {
+        "level": "low",
+        "score": 20,
+        "triggers": [],
+        "recommendation": "Proceed with a small reversible next step and keep the learning record updated.",
+        "needs_approval": false
+      },
+      "actions": [
+        "Update project file for Internal Brief Library Cleanup with latest communication and evidence.",
+        "Generate daily research brief and attach it to the decision record.",
+        "Draft a short video script for internal/external communication review.",
+        "Execute a reversible pilot step and record result in memory."
+      ],
+      "brief_path": "C:\\Users\\Surface\\Documents\\New project\\global-intelligence-v11\\backend\\research\\briefs\\internal-brief-library-cleanup.md",
+      "video_path": "C:\\Users\\Surface\\Documents\\New project\\global-intelligence-v11\\backend\\media\\drafts\\internal-brief-library-cleanup.md",
+      "outbox_path": null,
+      "classification": {
+        "created_at": "2026-06-23T10:46:21+00:00",
+        "project": "Internal Brief Library Cleanup",
+        "mode": "autonomous_execution",
+        "is_major_matter": false,
+        "owner_action": "No owner decision needed; Codex executes reversible next step and records outcome.",
+        "codex_role": "24h autonomous executive",
+        "github_role": "cloud AI headquarters",
+        "decision_boundary": {
+          "codex_can_do": [
+            "collect evidence",
+            "draft briefs",
+            "draft video scripts",
+            "prepare replies",
+            "record memory",
+            "run scheduled checks"
+          ],
+          "owner_must_decide": [
+            "contract commitment",
+            "payment or guarantee",
+            "external publishing",
+            "customer promise",
+            "compliance exception",
+            "high-risk project direction"
+          ]
+        }
+      },
+      "business_flow": {
+        "created_at": "2026-06-23T10:46:21+00:00",
+        "project": "Internal Brief Library Cleanup",
+        "real_work_coverage": {
+          "international_trade": [
+            "market intelligence",
+            "counterparty and owner tracking",
+            "EPC/tender/procurement opportunity watch",
+            "customs/logistics/payment/compliance risk list"
+          ],
+          "domestic_project_coordination": [
+            "internal task assignment",
+            "supplier and partner follow-up",
+            "evidence collection",
+            "owner decision queue"
+          ],
+          "meeting_followup": {
+            "channels": [
+              "WeChat",
+              "QQ Meeting"
+            ],
+            "status": "draft_only",
+            "agenda": [
+              "Confirm current stage for Internal Brief Library Cleanup",
+              "Confirm owner/customer decision maker and contact window",
+              "Collect missing contract, logistics, customs, and payment evidence",
+              "Assign next follow-up owner and deadline"
+            ],
+            "minutes_template": [
+              "Participants:",
+              "Key facts confirmed:",
+              "Open risks:",
+              "Decisions made by human owner:",
+              "Next follow-up time:"
+            ]
+          },
+          "content_operations": {
+            "status": "draft_not_approved_for_publishing",
+            "platforms": [
+              "Douyin",
+              "Video Channel",
+              "TikTok",
+              "YouTube"
+            ],
+            "publishing_rule": "Draft -> self review -> policy check -> human approval -> publish",
+            "draft_topics": [
+              "Internal engineering trade update",
+              "EPC project risk and opportunity",
+              "Customs, logistics, payment, and compliance watch"
+            ],
+            "blocked_without_human_approval": false
+          }
+        },
+        "automation_boundary": {
+          "autonomous": [
+            "prepare draft reply",
+            "prepare meeting agenda and minutes template",
+            "prepare video script and platform checklist",
+            "prepare risk brief and owner inbox item"
+          ],
+          "human_required": [
+            "send customer commitment",
+            "publish public video",
+            "confirm price or delivery date",
+            "sign contract or approve payment"
+          ]
+        }
+      },
+      "business_flow_path": "C:\\Users\\Surface\\Documents\\New project\\global-intelligence-v11\\backend\\reports\\business_flows\\internal-brief-library-cleanup.md",
+      "business_flow_json_path": "C:\\Users\\Surface\\Documents\\New project\\global-intelligence-v11\\backend\\reports\\business_flows\\internal-brief-library-cleanup.json",
+      "evidence_dossier_id": "45c6eabe5fc2ba53",
+      "team_execution_package_id": "34b3ae73f65d4d44",
+      "execution": {
+        "created_at": "2026-06-23T10:46:21+00:00",
+        "project": "Internal Brief Library Cleanup",
+        "mode": "autonomous_execution",
+        "status": "autonomous_executed",
+        "risk_level": "low",
+        "risk_score": 20,
+        "requires_owner": false,
+        "owner_decision": null,
+        "actions": [
+          "Update project file for Internal Brief Library Cleanup with latest communication and evidence.",
+          "Generate daily research brief and attach it to the decision record.",
+          "Draft a short video script for internal/external communication review.",
+          "Execute a reversible pilot step and record result in memory."
+        ],
+        "result": "Codex executed the reversible low-risk operating step."
+      },
+      "execution_log_path": "C:\\Users\\Surface\\Documents\\New project\\global-intelligence-v11\\backend\\memory\\execution_logs\\internal-brief-library-cleanup.json",
+      "operator_log_path": "C:\\Users\\Surface\\Documents\\New project\\global-intelligence-v11\\backend\\memory\\operator_logs\\internal-brief-library-cleanup.md",
+      "owner_decision": null,
+      "notifications": {
+        "enterprise_wechat": {
+          "sent": false,
+          "reason": "approval not needed"
+        },
+        "feishu": {
+          "sent": false,
+          "reason": "approval not needed"
+        },
+        "email": {
+          "sent": false,
+          "reason": "approval not needed"
+        }
+      },
+      "webhook": {
+        "sent": false,
+        "reason": "approval not needed"
+      },
+      "github_issue": {
+        "created": false,
+        "reason": "approval not needed"
+      },
+      "action_board_id": "7b520fbf29f507b5",
+      "action_board_path": "C:\\Users\\Surface\\Documents\\New project\\global-intelligence-v11\\backend\\reports\\action_boards\\7b520fbf29f507b5.md"
+    }
+  ]
+}

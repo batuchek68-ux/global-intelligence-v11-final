@@ -1,0 +1,407 @@
+{
+  "ok": false,
+  "created_at": "2026-06-23T15:03:39.545781+00:00",
+  "stage": "remote_acceptance",
+  "local_ready": true,
+  "cloud_ready": true,
+  "missing": [],
+  "environment": {
+    "token_configured": true,
+    "token_source": "environment",
+    "repository_configured": true,
+    "repository": "batuchek68-ux/global-intelligence-v11",
+    "local_config": {
+      "exists": false,
+      "path": "cloud.local.json"
+    }
+  },
+  "token_source": "environment",
+  "local_config": {
+    "exists": false,
+    "path": "cloud.local.json"
+  },
+  "next_command": ".\\run-cloud-test.cmd -Upload",
+  "interactive_command": "powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\\setup-cloud-test.ps1",
+  "root_check_command": ".\\check-cloud-config-from-root.cmd",
+  "root_next_command": ".\\run-cloud-test-from-root.cmd -Upload",
+  "root_interactive_command": ".\\setup-cloud-test-from-root.cmd",
+  "token_setup_doc": "docs/github-token-setup.md",
+  "completion_evidence_required": [
+    "reports/cloud_run.json has ok: true and stage: accepted",
+    "reports/cloud_acceptance_remote.json has ok: true and conclusion: success",
+    "GitHub Actions run URL is present",
+    "remote reports/cloud_acceptance.md says PASS"
+  ],
+  "preflight": {
+    "ok": true
+  },
+  "connection_check": {
+    "exists": true,
+    "path": "reports/cloud_connection_check.json",
+    "data": {
+      "ok": true,
+      "stage": "ready",
+      "repository": "batuchek68-ux/global-intelligence-v11",
+      "workflow": "cloud_acceptance.yml",
+      "token_source": "environment",
+      "checks": [
+        {
+          "name": "token",
+          "ok": true,
+          "status": 200,
+          "user": {
+            "login": "batuchek68-ux",
+            "id": 293273344,
+            "type": "User"
+          },
+          "details": null,
+          "scopes": []
+        },
+        {
+          "name": "repository",
+          "ok": true,
+          "status": 200,
+          "private": false,
+          "default_branch": "main",
+          "permissions": {
+            "admin": true,
+            "maintain": true,
+            "push": true,
+            "triage": true,
+            "pull": true
+          },
+          "details": null
+        },
+        {
+          "name": "workflow",
+          "ok": true,
+          "status": 200,
+          "workflow": "cloud_acceptance.yml",
+          "state": "active",
+          "html_url": "https://github.com/batuchek68-ux/global-intelligence-v11/blob/main/.github/workflows/cloud_acceptance.yml",
+          "details": null
+        },
+        {
+          "name": "actions_runs",
+          "ok": true,
+          "status": 200,
+          "latest_run": {
+            "id": 28023701260,
+            "name": "Global Intelligence Pipeline",
+            "node_id": "WFR_kwLOS7RVI88AAAAGhle_DA",
+            "head_branch": "main",
+            "head_sha": "567bcb183685af3944be43402415386c6a53b2a2",
+            "path": ".github/workflows/ai.yml",
+            "display_title": "Global Intelligence Pipeline",
+            "run_number": 27,
+            "event": "schedule",
+            "status": "completed",
+            "conclusion": "failure",
+            "workflow_id": 296271163,
+            "check_suite_id": 75561171280,
+            "check_suite_node_id": "CS_kwDOS7RVI88AAAARl8v5UA",
+            "url": "https://api.github.com/repos/batuchek68-ux/global-intelligence-v11/actions/runs/28023701260",
+            "html_url": "https://github.com/batuchek68-ux/global-intelligence-v11/actions/runs/28023701260",
+            "pull_requests": [],
+            "created_at": "2026-06-23T11:43:48Z",
+            "updated_at": "2026-06-23T11:44:05Z",
+            "actor": {
+              "login": "batuchek68-ux",
+              "id": 293273344,
+              "node_id": "U_kgDOEXr_AA",
+              "avatar_url": "https://avatars.githubusercontent.com/u/293273344?v=4",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/batuchek68-ux",
+              "html_url": "https://github.com/batuchek68-ux",
+              "followers_url": "https://api.github.com/users/batuchek68-ux/followers",
+              "following_url": "https://api.github.com/users/batuchek68-ux/following{/other_user}",
+              "gists_url": "https://api.github.com/users/batuchek68-ux/gists{/gist_id}",
+              "starred_url": "https://api.github.com/users/batuchek68-ux/starred{/owner}{/repo}",
+              "subscriptions_url": "https://api.github.com/users/batuchek68-ux/subscriptions",
+              "organizations_url": "https://api.github.com/users/batuchek68-ux/orgs",
+              "repos_url": "https://api.github.com/users/batuchek68-ux/repos",
+              "events_url": "https://api.github.com/users/batuchek68-ux/events{/privacy}",
+              "received_events_url": "https://api.github.com/users/batuchek68-ux/received_events",
+              "type": "User",
+              "user_view_type": "public",
+              "site_admin": false
+            },
+            "run_attempt": 1,
+            "referenced_workflows": [],
+            "run_started_at": "2026-06-23T11:43:48Z",
+            "triggering_actor": {
+              "login": "batuchek68-ux",
+              "id": 293273344,
+              "node_id": "U_kgDOEXr_AA",
+              "avatar_url": "https://avatars.githubusercontent.com/u/293273344?v=4",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/batuchek68-ux",
+              "html_url": "https://github.com/batuchek68-ux",
+              "followers_url": "https://api.github.com/users/batuchek68-ux/followers",
+              "following_url": "https://api.github.com/users/batuchek68-ux/following{/other_user}",
+              "gists_url": "https://api.github.com/users/batuchek68-ux/gists{/gist_id}",
+              "starred_url": "https://api.github.com/users/batuchek68-ux/starred{/owner}{/repo}",
+              "subscriptions_url": "https://api.github.com/users/batuchek68-ux/subscriptions",
+              "organizations_url": "https://api.github.com/users/batuchek68-ux/orgs",
+              "repos_url": "https://api.github.com/users/batuchek68-ux/repos",
+              "events_url": "https://api.github.com/users/batuchek68-ux/events{/privacy}",
+              "received_events_url": "https://api.github.com/users/batuchek68-ux/received_events",
+              "type": "User",
+              "user_view_type": "public",
+              "site_admin": false
+            },
+            "jobs_url": "https://api.github.com/repos/batuchek68-ux/global-intelligence-v11/actions/runs/28023701260/jobs",
+            "logs_url": "https://api.github.com/repos/batuchek68-ux/global-intelligence-v11/actions/runs/28023701260/logs",
+            "check_suite_url": "https://api.github.com/repos/batuchek68-ux/global-intelligence-v11/check-suites/75561171280",
+            "artifacts_url": "https://api.github.com/repos/batuchek68-ux/global-intelligence-v11/actions/runs/28023701260/artifacts",
+            "cancel_url": "https://api.github.com/repos/batuchek68-ux/global-intelligence-v11/actions/runs/28023701260/cancel",
+            "rerun_url": "https://api.github.com/repos/batuchek68-ux/global-intelligence-v11/actions/runs/28023701260/rerun",
+            "previous_attempt_url": null,
+            "workflow_url": "https://api.github.com/repos/batuchek68-ux/global-intelligence-v11/actions/workflows/296271163",
+            "head_commit": {
+              "id": "567bcb183685af3944be43402415386c6a53b2a2",
+              "tree_id": "0c382c385f28a14dfefcd5440a44a298234c0663",
+              "message": "Upload International Trade AI cloud headquarters: memory/action_boards/30a00a802ed0f28c.json",
+              "timestamp": "2026-06-23T11:34:29Z",
+              "author": {
+                "name": "batuchek68-ux",
+                "email": "batuchek68@gmail.com"
+              },
+              "committer": {
+                "name": "batuchek68-ux",
+                "email": "batuchek68@gmail.com"
+              }
+            },
+            "repository": {
+              "id": 1270109475,
+              "node_id": "R_kgDOS7RVIw",
+              "name": "global-intelligence-v11",
+              "full_name": "batuchek68-ux/global-intelligence-v11",
+              "private": false,
+              "owner": {
+                "login": "batuchek68-ux",
+                "id": 293273344,
+                "node_id": "U_kgDOEXr_AA",
+                "avatar_url": "https://avatars.githubusercontent.com/u/293273344?v=4",
+                "gravatar_id": "",
+                "url": "https://api.github.com/users/batuchek68-ux",
+                "html_url": "https://github.com/batuchek68-ux",
+                "followers_url": "https://api.github.com/users/batuchek68-ux/followers",
+                "following_url": "https://api.github.com/users/batuchek68-ux/following{/other_user}",
+                "gists_url": "https://api.github.com/users/batuchek68-ux/gists{/gist_id}",
+                "starred_url": "https://api.github.com/users/batuchek68-ux/starred{/owner}{/repo}",
+                "subscriptions_url": "https://api.github.com/users/batuchek68-ux/subscriptions",
+                "organizations_url": "https://api.github.com/users/batuchek68-ux/orgs",
+                "repos_url": "https://api.github.com/users/batuchek68-ux/repos",
+                "events_url": "https://api.github.com/users/batuchek68-ux/events{/privacy}",
+                "received_events_url": "https://api.github.com/users/batuchek68-ux/received_events",
+                "type": "User",
+                "user_view_type": "public",
+                "site_admin": false
+              },
+              "html_url": "https://github.com/batuchek68-ux/global-intelligence-v11",
+              "description": null,
+              "fork": false,
+              "url": "https://api.github.com/repos/batuchek68-ux/global-intelligence-v11",
+              "forks_url": "https://api.github.com/repos/batuchek68-ux/global-intelligence-v11/forks",
+              "keys_url": "https://api.github.com/repos/batuchek68-ux/global-intelligence-v11/keys{/key_id}",
+              "collaborators_url": "https://api.github.com/repos/batuchek68-ux/global-intelligence-v11/collaborators{/collaborator}",
+              "teams_url": "https://api.github.com/repos/batuchek68-ux/global-intelligence-v11/teams",
+              "hooks_url": "https://api.github.com/repos/batuchek68-ux/global-intelligence-v11/hooks",
+              "issue_events_url": "https://api.github.com/repos/batuchek68-ux/global-intelligence-v11/issues/events{/number}",
+              "events_url": "https://api.github.com/repos/batuchek68-ux/global-intelligence-v11/events",
+              "assignees_url": "https://api.github.com/repos/batuchek68-ux/global-intelligence-v11/assignees{/user}",
+              "branches_url": "https://api.github.com/repos/batuchek68-ux/global-intelligence-v11/branches{/branch}",
+              "tags_url": "https://api.github.com/repos/batuchek68-ux/global-intelligence-v11/tags",
+              "blobs_url": "https://api.github.com/repos/batuchek68-ux/global-intelligence-v11/git/blobs{/sha}",
+              "git_tags_url": "https://api.github.com/repos/batuchek68-ux/global-intelligence-v11/git/tags{/sha}",
+              "git_refs_url": "https://api.github.com/repos/batuchek68-ux/global-intelligence-v11/git/refs{/sha}",
+              "trees_url": "https://api.github.com/repos/batuchek68-ux/global-intelligence-v11/git/trees{/sha}",
+              "statuses_url": "https://api.github.com/repos/batuchek68-ux/global-intelligence-v11/statuses/{sha}",
+              "languages_url": "https://api.github.com/repos/batuchek68-ux/global-intelligence-v11/languages",
+              "stargazers_url": "https://api.github.com/repos/batuchek68-ux/global-intelligence-v11/stargazers",
+              "contributors_url": "https://api.github.com/repos/batuchek68-ux/global-intelligence-v11/contributors",
+              "subscribers_url": "https://api.github.com/repos/batuchek68-ux/global-intelligence-v11/subscribers",
+              "subscription_url": "https://api.github.com/repos/batuchek68-ux/global-intelligence-v11/subscription",
+              "commits_url": "https://api.github.com/repos/batuchek68-ux/global-intelligence-v11/commits{/sha}",
+              "git_commits_url": "https://api.github.com/repos/batuchek68-ux/global-intelligence-v11/git/commits{/sha}",
+              "comments_url": "https://api.github.com/repos/batuchek68-ux/global-intelligence-v11/comments{/number}",
+              "issue_comment_url": "https://api.github.com/repos/batuchek68-ux/global-intelligence-v11/issues/comments{/number}",
+              "contents_url": "https://api.github.com/repos/batuchek68-ux/global-intelligence-v11/contents/{+path}",
+              "compare_url": "https://api.github.com/repos/batuchek68-ux/global-intelligence-v11/compare/{base}...{head}",
+              "merges_url": "https://api.github.com/repos/batuchek68-ux/global-intelligence-v11/merges",
+              "archive_url": "https://api.github.com/repos/batuchek68-ux/global-intelligence-v11/{archive_format}{/ref}",
+              "downloads_url": "https://api.github.com/repos/batuchek68-ux/global-intelligence-v11/downloads",
+              "issues_url": "https://api.github.com/repos/batuchek68-ux/global-intelligence-v11/issues{/number}",
+              "pulls_url": "https://api.github.com/repos/batuchek68-ux/global-intelligence-v11/pulls{/number}",
+              "milestones_url": "https://api.github.com/repos/batuchek68-ux/global-intelligence-v11/milestones{/number}",
+              "notifications_url": "https://api.github.com/repos/batuchek68-ux/global-intelligence-v11/notifications{?since,all,participating}",
+              "labels_url": "https://api.github.com/repos/batuchek68-ux/global-intelligence-v11/labels{/name}",
+              "releases_url": "https://api.github.com/repos/batuchek68-ux/global-intelligence-v11/releases{/id}",
+              "deployments_url": "https://api.github.com/repos/batuchek68-ux/global-intelligence-v11/deployments"
+            },
+            "head_repository": {
+              "id": 1270109475,
+              "node_id": "R_kgDOS7RVIw",
+              "name": "global-intelligence-v11",
+              "full_name": "batuchek68-ux/global-intelligence-v11",
+              "private": false,
+              "owner": {
+                "login": "batuchek68-ux",
+                "id": 293273344,
+                "node_id": "U_kgDOEXr_AA",
+                "avatar_url": "https://avatars.githubusercontent.com/u/293273344?v=4",
+                "gravatar_id": "",
+                "url": "https://api.github.com/users/batuchek68-ux",
+                "html_url": "https://github.com/batuchek68-ux",
+                "followers_url": "https://api.github.com/users/batuchek68-ux/followers",
+                "following_url": "https://api.github.com/users/batuchek68-ux/following{/other_user}",
+                "gists_url": "https://api.github.com/users/batuchek68-ux/gists{/gist_id}",
+                "starred_url": "https://api.github.com/users/batuchek68-ux/starred{/owner}{/repo}",
+                "subscriptions_url": "https://api.github.com/users/batuchek68-ux/subscriptions",
+                "organizations_url": "https://api.github.com/users/batuchek68-ux/orgs",
+                "repos_url": "https://api.github.com/users/batuchek68-ux/repos",
+                "events_url": "https://api.github.com/users/batuchek68-ux/events{/privacy}",
+                "received_events_url": "https://api.github.com/users/batuchek68-ux/received_events",
+                "type": "User",
+                "user_view_type": "public",
+                "site_admin": false
+              },
+              "html_url": "https://github.com/batuchek68-ux/global-intelligence-v11",
+              "description": null,
+              "fork": false,
+              "url": "https://api.github.com/repos/batuchek68-ux/global-intelligence-v11",
+              "forks_url": "https://api.github.com/repos/batuchek68-ux/global-intelligence-v11/forks",
+              "keys_url": "https://api.github.com/repos/batuchek68-ux/global-intelligence-v11/keys{/key_id}",
+              "collaborators_url": "https://api.github.com/repos/batuchek68-ux/global-intelligence-v11/collaborators{/collaborator}",
+              "teams_url": "https://api.github.com/repos/batuchek68-ux/global-intelligence-v11/teams",
+              "hooks_url": "https://api.github.com/repos/batuchek68-ux/global-intelligence-v11/hooks",
+              "issue_events_url": "https://api.github.com/repos/batuchek68-ux/global-intelligence-v11/issues/events{/number}",
+              "events_url": "https://api.github.com/repos/batuchek68-ux/global-intelligence-v11/events",
+              "assignees_url": "https://api.github.com/repos/batuchek68-ux/global-intelligence-v11/assignees{/user}",
+              "branches_url": "https://api.github.com/repos/batuchek68-ux/global-intelligence-v11/branches{/branch}",
+              "tags_url": "https://api.github.com/repos/batuchek68-ux/global-intelligence-v11/tags",
+              "blobs_url": "https://api.github.com/repos/batuchek68-ux/global-intelligence-v11/git/blobs{/sha}",
+              "git_tags_url": "https://api.github.com/repos/batuchek68-ux/global-intelligence-v11/git/tags{/sha}",
+              "git_refs_url": "https://api.github.com/repos/batuchek68-ux/global-intelligence-v11/git/refs{/sha}",
+              "trees_url": "https://api.github.com/repos/batuchek68-ux/global-intelligence-v11/git/trees{/sha}",
+              "statuses_url": "https://api.github.com/repos/batuchek68-ux/global-intelligence-v11/statuses/{sha}",
+              "languages_url": "https://api.github.com/repos/batuchek68-ux/global-intelligence-v11/languages",
+              "stargazers_url": "https://api.github.com/repos/batuchek68-ux/global-intelligence-v11/stargazers",
+              "contributors_url": "https://api.github.com/repos/batuchek68-ux/global-intelligence-v11/contributors",
+              "subscribers_url": "https://api.github.com/repos/batuchek68-ux/global-intelligence-v11/subscribers",
+              "subscription_url": "https://api.github.com/repos/batuchek68-ux/global-intelligence-v11/subscription",
+              "commits_url": "https://api.github.com/repos/batuchek68-ux/global-intelligence-v11/commits{/sha}",
+              "git_commits_url": "https://api.github.com/repos/batuchek68-ux/global-intelligence-v11/git/commits{/sha}",
+              "comments_url": "https://api.github.com/repos/batuchek68-ux/global-intelligence-v11/comments{/number}",
+              "issue_comment_url": "https://api.github.com/repos/batuchek68-ux/global-intelligence-v11/issues/comments{/number}",
+              "contents_url": "https://api.github.com/repos/batuchek68-ux/global-intelligence-v11/contents/{+path}",
+              "compare_url": "https://api.github.com/repos/batuchek68-ux/global-intelligence-v11/compare/{base}...{head}",
+              "merges_url": "https://api.github.com/repos/batuchek68-ux/global-intelligence-v11/merges",
+              "archive_url": "https://api.github.com/repos/batuchek68-ux/global-intelligence-v11/{archive_format}{/ref}",
+              "downloads_url": "https://api.github.com/repos/batuchek68-ux/global-intelligence-v11/downloads",
+              "issues_url": "https://api.github.com/repos/batuchek68-ux/global-intelligence-v11/issues{/number}",
+              "pulls_url": "https://api.github.com/repos/batuchek68-ux/global-intelligence-v11/pulls{/number}",
+              "milestones_url": "https://api.github.com/repos/batuchek68-ux/global-intelligence-v11/milestones{/number}",
+              "notifications_url": "https://api.github.com/repos/batuchek68-ux/global-intelligence-v11/notifications{?since,all,participating}",
+              "labels_url": "https://api.github.com/repos/batuchek68-ux/global-intelligence-v11/labels{/name}",
+              "releases_url": "https://api.github.com/repos/batuchek68-ux/global-intelligence-v11/releases{/id}",
+              "deployments_url": "https://api.github.com/repos/batuchek68-ux/global-intelligence-v11/deployments"
+            }
+          },
+          "details": null
+        }
+      ]
+    }
+  },
+  "cloud_run": {
+    "exists": true,
+    "path": "reports/cloud_run.json",
+    "data": {
+      "ok": false,
+      "stage": "authentication_failed",
+      "repository": "batuchek68-ux/global-intelligence-v11",
+      "branch": "main",
+      "token_source": "environment",
+      "plan": {
+        "connection_check": true,
+        "create_repo": false,
+        "upload": false,
+        "trigger": true
+      },
+      "connection": {
+        "ok": false,
+        "stage": "token",
+        "repository": "batuchek68-ux/global-intelligence-v11",
+        "workflow": "cloud_acceptance.yml",
+        "token_source": "environment",
+        "checks": [
+          {
+            "name": "token",
+            "ok": false,
+            "status": 401,
+            "user": {
+              "login": null,
+              "id": null,
+              "type": null
+            },
+            "details": {
+              "message": "Bad credentials",
+              "documentation_url": "https://docs.github.com/rest",
+              "status": "401"
+            },
+            "scopes": []
+          },
+          {
+            "name": "repository",
+            "ok": false,
+            "status": 401,
+            "private": null,
+            "default_branch": null,
+            "permissions": null,
+            "details": {
+              "message": "Bad credentials",
+              "documentation_url": "https://docs.github.com/rest",
+              "status": "401"
+            }
+          },
+          {
+            "name": "workflow",
+            "ok": false,
+            "status": 401,
+            "workflow": "cloud_acceptance.yml",
+            "state": null,
+            "html_url": null,
+            "details": {
+              "message": "Bad credentials",
+              "documentation_url": "https://docs.github.com/rest",
+              "status": "401"
+            }
+          },
+          {
+            "name": "actions_runs",
+            "ok": false,
+            "status": 401,
+            "latest_run": null,
+            "details": {
+              "message": "Bad credentials",
+              "documentation_url": "https://docs.github.com/rest",
+              "status": "401"
+            }
+          }
+        ]
+      },
+      "reason": "GitHub returned 401 Bad credentials. The token is invalid, expired, revoked, or lacks access. Run with -PromptToken and paste a newly generated token."
+    }
+  },
+  "remote_acceptance": {
+    "exists": true,
+    "path": "reports/cloud_acceptance_remote.json",
+    "data": {
+      "ok": false,
+      "stage": "configuration",
+      "reason": "Set GITHUB_TOKEN or GH_TOKEN, and GITHUB_REPOSITORY or --repository owner/name."
+    }
+  },
+  "cloud_run_acceptance": {}
+}

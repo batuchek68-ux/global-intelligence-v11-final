@@ -1,0 +1,56 @@
+name: Owner Decision Handler
+
+on:
+  issue_comment:
+    types: [created]
+  workflow_dispatch:
+    inputs:
+      project:
+        description: "Project name to resolve"
+        required: true
+      reply:
+        description: "approve / reject / revise with conditions"
+        required: true
+      issue_number:
+        description: "Optional issue number for receipt comment"
+        required: false
+
+permissions:
+  contents: write
+  actions: read
+  issues: write
+
+jobs:
+  resolve-major-matter:
+    if: >-
+      github.event_name == 'workflow_dispatch' ||
+      startsWith(github.event.comment.body, '/approve') ||
+      startsWith(github.event.comment.body, '/reject') ||
+      startsWith(github.event.comment.body, '/revise')
+    runs-on: ubuntu-latest
+    env:
+      MAJOR_MATTER_PROJECT: ${{ github.event.inputs.project || github.event.issue.title }}
+      OWNER_REPLY: ${{ github.event.inputs.reply || github.event.comment.body }}
+      OWNER_REPLY_SOURCE: ${{ github.event_name }}
+      OWNER_REPLY_ISSUE_NUMBER: ${{ github.event.inputs.issue_number || github.event.issue.number }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Preflight check
+        run: python workflows/preflight_check.py
+      - name: Run tests
+        run: python -m unittest discover -s tests
+      - name: Resolve major matter
+        run: python workflows/resolve_major_matter.py
+      - name: Persist owner decision state
+        run: python workflows/persist_state.py
+      - name: Upload decision artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: owner-decision-${{ github.run_id }}
+          path: |
+            memory/decisions/
+            memory/continuations/
+            comm/outbox/
