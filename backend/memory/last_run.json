@@ -1,5 +1,5 @@
 {
-  "created_at": "2026-06-23T10:46:21+00:00",
+  "created_at": "2026-06-24T12:39:51+00:00",
   "project_count": 2,
   "case_count": 2,
   "approval_count": 1,
@@ -7,12 +7,12 @@
   "resolved_major_matter_count": 0,
   "v11_capabilities": {
     "knowledge_base": {
-      "path": "C:\\Users\\Surface\\Documents\\New project\\global-intelligence-v11\\backend\\memory\\knowledge_base\\industry_knowledge.json",
+      "path": "/home/runner/work/global-intelligence-v11-final/global-intelligence-v11-final/backend/memory/knowledge_base/industry_knowledge.json",
       "domain_count": 7,
       "has_customs_information": true
     },
     "benchmark": {
-      "path": "C:\\Users\\Surface\\Documents\\New project\\global-intelligence-v11\\backend\\memory\\benchmark\\v11_benchmark_50.json",
+      "path": "/home/runner/work/global-intelligence-v11-final/global-intelligence-v11-final/backend/memory/benchmark/v11_benchmark_50.json",
       "question_count": 50,
       "compare_targets": [
         "v11",
@@ -21,17 +21,17 @@
       ]
     },
     "answer_scoring": {
-      "path": "C:\\Users\\Surface\\Documents\\New project\\global-intelligence-v11\\backend\\reports\\benchmark\\daily_answer_score.json",
+      "path": "/home/runner/work/global-intelligence-v11-final/global-intelligence-v11-final/backend/reports/benchmark/daily_answer_score.json",
       "overall_score": 80,
       "verdict": "usable"
     },
     "intelligence_brief": {
-      "path": "C:\\Users\\Surface\\Documents\\New project\\global-intelligence-v11\\backend\\reports\\intelligence_briefs\\2026-06-23.md",
+      "path": "/home/runner/work/global-intelligence-v11-final/global-intelligence-v11-final/backend/reports/intelligence_briefs/2026-06-24.md",
       "category_count": 9,
-      "keyword_bank_path": "C:\\Users\\Surface\\Documents\\New project\\global-intelligence-v11\\backend\\memory\\intelligence\\keyword_bank.json"
+      "keyword_bank_path": "/home/runner/work/global-intelligence-v11-final/global-intelligence-v11-final/backend/memory/intelligence/keyword_bank.json"
     },
     "video_center": {
-      "path": "C:\\Users\\Surface\\Documents\\New project\\global-intelligence-v11\\backend\\reports\\video_center\\video_center_2026-06-23.json",
+      "path": "/home/runner/work/global-intelligence-v11-final/global-intelligence-v11-final/backend/reports/video_center/video_center_2026-06-24.json",
       "keyword_count": 80,
       "platform_search_count": 120
     },
@@ -68,23 +68,23 @@
     },
     "evidence_verification": {
       "dossier_count": 4,
-      "latest_path": "C:\\Users\\Surface\\Documents\\New project\\global-intelligence-v11\\backend\\memory\\evidence\\latest.json"
+      "latest_path": "/home/runner/work/global-intelligence-v11-final/global-intelligence-v11-final/backend/memory/evidence/latest.json"
     },
     "action_boards": {
-      "board_count": 218,
-      "latest_path": "C:\\Users\\Surface\\Documents\\New project\\global-intelligence-v11\\backend\\memory\\action_boards\\latest.json"
+      "board_count": 237,
+      "latest_path": "/home/runner/work/global-intelligence-v11-final/global-intelligence-v11-final/backend/memory/action_boards/latest.json"
     },
     "team_response": {
-      "latest_path": "C:\\Users\\Surface\\Documents\\New project\\global-intelligence-v11\\backend\\memory\\team_responses\\8eb2321dfa13a563.json",
-      "report_path": "C:\\Users\\Surface\\Documents\\New project\\global-intelligence-v11\\backend\\reports\\team_responses\\8eb2321dfa13a563.md",
+      "latest_path": "/home/runner/work/global-intelligence-v11-final/global-intelligence-v11-final/backend/memory/team_responses/1db73dadea9735ab.json",
+      "report_path": "/home/runner/work/global-intelligence-v11-final/global-intelligence-v11-final/backend/reports/team_responses/1db73dadea9735ab.md",
       "overall_score": 99,
       "human_approval_required": true
     },
     "war_room": {
-      "latest_path": "C:\\Users\\Surface\\Documents\\New project\\global-intelligence-v11\\backend\\memory\\war_room\\569853a813106b1b.json",
-      "report_path": "C:\\Users\\Surface\\Documents\\New project\\global-intelligence-v11\\backend\\reports\\war_room\\569853a813106b1b.md",
-      "execution_queue_path": "C:\\Users\\Surface\\Documents\\New project\\global-intelligence-v11\\backend\\memory\\war_room_execution\\76b9f777d7508af4.json",
-      "execution_queue_report_path": "C:\\Users\\Surface\\Documents\\New project\\global-intelligence-v11\\backend\\reports\\war_room_execution\\76b9f777d7508af4.md",
+      "latest_path": "/home/runner/work/global-intelligence-v11-final/global-intelligence-v11-final/backend/memory/war_room/f7349eda7cc96819.json",
+      "report_path": "/home/runner/work/global-intelligence-v11-final/global-intelligence-v11-final/backend/reports/war_room/f7349eda7cc96819.md",
+      "execution_queue_path": "/home/runner/work/global-intelligence-v11-final/global-intelligence-v11-final/backend/memory/war_room_execution/1a1079af999da403.json",
+      "execution_queue_report_path": "/home/runner/work/global-intelligence-v11-final/global-intelligence-v11-final/backend/reports/war_room_execution/1a1079af999da403.md",
       "execution_queue_tasks": 32,
       "execution_queue_blocked": 10,
       "overall_score": 99,
@@ -94,17 +94,17 @@
       "external_use_allowed": false
     },
     "mission_control": {
-      "report_path": "C:\\Users\\Surface\\Documents\\New project\\global-intelligence-v11\\backend\\reports\\mission_control\\latest.md",
-      "json_path": "C:\\Users\\Surface\\Documents\\New project\\global-intelligence-v11\\backend\\memory\\mission_control\\latest.json",
+      "report_path": "/home/runner/work/global-intelligence-v11-final/global-intelligence-v11-final/backend/reports/mission_control/latest.md",
+      "json_path": "/home/runner/work/global-intelligence-v11-final/global-intelligence-v11-final/backend/memory/mission_control/latest.json",
       "status": "human_review_required",
       "waiting_for_owner": 1
     }
   },
   "cases": [
     {
-      "created_at": "2026-06-23T10:46:21+00:00",
+      "created_at": "2026-06-24T12:39:51+00:00",
       "project": {
-        "path": "C:\\Users\\Surface\\Documents\\New project\\global-intelligence-v11\\backend\\projects\\active\\demo-port-logistics.md",
+        "path": "/home/runner/work/global-intelligence-v11-final/global-intelligence-v11-final/backend/projects/active/demo-port-logistics.md",
         "title": "Demo Port Logistics Modernization",
         "country": "Indonesia",
         "counterparty": "Port Authority Demo",
@@ -138,11 +138,11 @@
         "Draft a short video script for internal/external communication review.",
         "Wait for approval reply, then write the reply into memory before continuing."
       ],
-      "brief_path": "C:\\Users\\Surface\\Documents\\New project\\global-intelligence-v11\\backend\\research\\briefs\\demo-port-logistics-modernization.md",
-      "video_path": "C:\\Users\\Surface\\Documents\\New project\\global-intelligence-v11\\backend\\media\\drafts\\demo-port-logistics-modernization.md",
-      "outbox_path": "C:\\Users\\Surface\\Documents\\New project\\global-intelligence-v11\\backend\\comm\\outbox\\demo-port-logistics-modernization.json",
+      "brief_path": "/home/runner/work/global-intelligence-v11-final/global-intelligence-v11-final/backend/research/briefs/demo-port-logistics-modernization.md",
+      "video_path": "/home/runner/work/global-intelligence-v11-final/global-intelligence-v11-final/backend/media/drafts/demo-port-logistics-modernization.md",
+      "outbox_path": "/home/runner/work/global-intelligence-v11-final/global-intelligence-v11-final/backend/comm/outbox/demo-port-logistics-modernization.json",
       "classification": {
-        "created_at": "2026-06-23T10:46:21+00:00",
+        "created_at": "2026-06-24T12:39:51+00:00",
         "project": "Demo Port Logistics Modernization",
         "mode": "human_decision_required",
         "is_major_matter": true,
@@ -169,7 +169,7 @@
         }
       },
       "business_flow": {
-        "created_at": "2026-06-23T10:46:20+00:00",
+        "created_at": "2026-06-24T12:39:51+00:00",
         "project": "Demo Port Logistics Modernization",
         "real_work_coverage": {
           "international_trade": [
@@ -236,12 +236,12 @@
           ]
         }
       },
-      "business_flow_path": "C:\\Users\\Surface\\Documents\\New project\\global-intelligence-v11\\backend\\reports\\business_flows\\demo-port-logistics-modernization.md",
-      "business_flow_json_path": "C:\\Users\\Surface\\Documents\\New project\\global-intelligence-v11\\backend\\reports\\business_flows\\demo-port-logistics-modernization.json",
+      "business_flow_path": "/home/runner/work/global-intelligence-v11-final/global-intelligence-v11-final/backend/reports/business_flows/demo-port-logistics-modernization.md",
+      "business_flow_json_path": "/home/runner/work/global-intelligence-v11-final/global-intelligence-v11-final/backend/reports/business_flows/demo-port-logistics-modernization.json",
       "evidence_dossier_id": "8292910b19c4dd94",
       "team_execution_package_id": "c64fe893deddda22",
       "execution": {
-        "created_at": "2026-06-23T10:46:21+00:00",
+        "created_at": "2026-06-24T12:39:51+00:00",
         "project": "Demo Port Logistics Modernization",
         "mode": "human_decision_required",
         "status": "waiting_for_owner",
@@ -258,8 +258,8 @@
         ],
         "result": "Codex paused external action and prepared an owner decision request."
       },
-      "execution_log_path": "C:\\Users\\Surface\\Documents\\New project\\global-intelligence-v11\\backend\\memory\\execution_logs\\demo-port-logistics-modernization.json",
-      "operator_log_path": "C:\\Users\\Surface\\Documents\\New project\\global-intelligence-v11\\backend\\memory\\operator_logs\\demo-port-logistics-modernization.md",
+      "execution_log_path": "/home/runner/work/global-intelligence-v11-final/global-intelligence-v11-final/backend/memory/execution_logs/demo-port-logistics-modernization.json",
+      "operator_log_path": "/home/runner/work/global-intelligence-v11-final/global-intelligence-v11-final/backend/memory/operator_logs/demo-port-logistics-modernization.md",
       "owner_decision": null,
       "notifications": {
         "enterprise_wechat": {
@@ -283,13 +283,13 @@
         "created": false,
         "reason": "approval already waiting"
       },
-      "action_board_id": "9f3551ab2d5bd226",
-      "action_board_path": "C:\\Users\\Surface\\Documents\\New project\\global-intelligence-v11\\backend\\reports\\action_boards\\9f3551ab2d5bd226.md"
+      "action_board_id": "37a5a130ef608fe3",
+      "action_board_path": "/home/runner/work/global-intelligence-v11-final/global-intelligence-v11-final/backend/reports/action_boards/37a5a130ef608fe3.md"
     },
     {
-      "created_at": "2026-06-23T10:46:21+00:00",
+      "created_at": "2026-06-24T12:39:51+00:00",
       "project": {
-        "path": "C:\\Users\\Surface\\Documents\\New project\\global-intelligence-v11\\backend\\projects\\active\\internal-brief-library.md",
+        "path": "/home/runner/work/global-intelligence-v11-final/global-intelligence-v11-final/backend/projects/active/internal-brief-library.md",
         "title": "Internal Brief Library Cleanup",
         "country": "Internal",
         "counterparty": "Operations Team",
@@ -314,11 +314,11 @@
         "Draft a short video script for internal/external communication review.",
         "Execute a reversible pilot step and record result in memory."
       ],
-      "brief_path": "C:\\Users\\Surface\\Documents\\New project\\global-intelligence-v11\\backend\\research\\briefs\\internal-brief-library-cleanup.md",
-      "video_path": "C:\\Users\\Surface\\Documents\\New project\\global-intelligence-v11\\backend\\media\\drafts\\internal-brief-library-cleanup.md",
+      "brief_path": "/home/runner/work/global-intelligence-v11-final/global-intelligence-v11-final/backend/research/briefs/internal-brief-library-cleanup.md",
+      "video_path": "/home/runner/work/global-intelligence-v11-final/global-intelligence-v11-final/backend/media/drafts/internal-brief-library-cleanup.md",
       "outbox_path": null,
       "classification": {
-        "created_at": "2026-06-23T10:46:21+00:00",
+        "created_at": "2026-06-24T12:39:51+00:00",
         "project": "Internal Brief Library Cleanup",
         "mode": "autonomous_execution",
         "is_major_matter": false,
@@ -345,7 +345,7 @@
         }
       },
       "business_flow": {
-        "created_at": "2026-06-23T10:46:21+00:00",
+        "created_at": "2026-06-24T12:39:51+00:00",
         "project": "Internal Brief Library Cleanup",
         "real_work_coverage": {
           "international_trade": [
@@ -412,12 +412,12 @@
           ]
         }
       },
-      "business_flow_path": "C:\\Users\\Surface\\Documents\\New project\\global-intelligence-v11\\backend\\reports\\business_flows\\internal-brief-library-cleanup.md",
-      "business_flow_json_path": "C:\\Users\\Surface\\Documents\\New project\\global-intelligence-v11\\backend\\reports\\business_flows\\internal-brief-library-cleanup.json",
+      "business_flow_path": "/home/runner/work/global-intelligence-v11-final/global-intelligence-v11-final/backend/reports/business_flows/internal-brief-library-cleanup.md",
+      "business_flow_json_path": "/home/runner/work/global-intelligence-v11-final/global-intelligence-v11-final/backend/reports/business_flows/internal-brief-library-cleanup.json",
       "evidence_dossier_id": "45c6eabe5fc2ba53",
       "team_execution_package_id": "34b3ae73f65d4d44",
       "execution": {
-        "created_at": "2026-06-23T10:46:21+00:00",
+        "created_at": "2026-06-24T12:39:51+00:00",
         "project": "Internal Brief Library Cleanup",
         "mode": "autonomous_execution",
         "status": "autonomous_executed",
@@ -433,8 +433,8 @@
         ],
         "result": "Codex executed the reversible low-risk operating step."
       },
-      "execution_log_path": "C:\\Users\\Surface\\Documents\\New project\\global-intelligence-v11\\backend\\memory\\execution_logs\\internal-brief-library-cleanup.json",
-      "operator_log_path": "C:\\Users\\Surface\\Documents\\New project\\global-intelligence-v11\\backend\\memory\\operator_logs\\internal-brief-library-cleanup.md",
+      "execution_log_path": "/home/runner/work/global-intelligence-v11-final/global-intelligence-v11-final/backend/memory/execution_logs/internal-brief-library-cleanup.json",
+      "operator_log_path": "/home/runner/work/global-intelligence-v11-final/global-intelligence-v11-final/backend/memory/operator_logs/internal-brief-library-cleanup.md",
       "owner_decision": null,
       "notifications": {
         "enterprise_wechat": {
@@ -458,8 +458,8 @@
         "created": false,
         "reason": "approval not needed"
       },
-      "action_board_id": "7b520fbf29f507b5",
-      "action_board_path": "C:\\Users\\Surface\\Documents\\New project\\global-intelligence-v11\\backend\\reports\\action_boards\\7b520fbf29f507b5.md"
+      "action_board_id": "66731e3a80d821d3",
+      "action_board_path": "/home/runner/work/global-intelligence-v11-final/global-intelligence-v11-final/backend/reports/action_boards/66731e3a80d821d3.md"
     }
   ]
 }
