@@ -1,7 +1,7 @@
 {
   "ok": true,
   "id": "460ee44011666823",
-  "created_at": "2026-06-24T12:36:19.704347+00:00",
+  "created_at": "2026-06-24T12:39:50.681904+00:00",
   "mode": "industry_war_room",
   "objective": "Kazakhstan engineering trade project customs investment promotion video",
   "country": "Kazakhstan",
@@ -286,7 +286,7 @@
           "snippet": "Official source describes owner, tender status, customs documents and engineering scope.",
           "source_type": "government",
           "government_confirmed": true,
-          "collected_at": "2026-06-24T12:36:19.679357+00:00"
+          "collected_at": "2026-06-24T12:39:50.656908+00:00"
         }
       ],
       "evidence": [
@@ -297,7 +297,7 @@
           "snippet": "Official source describes owner, tender status, customs documents and engineering scope.",
           "source_type": "government",
           "government_confirmed": true,
-          "collected_at": "2026-06-24T12:36:19.679357+00:00"
+          "collected_at": "2026-06-24T12:39:50.656908+00:00"
         }
       ],
       "stakeholders": {
@@ -314,7 +314,7 @@
         "Human approval required before external outreach, quotation, commitment, or publication.",
         "Government source confirmation required before investment promotion use."
       ],
-      "updated_at": "2026-06-24T12:36:19.679924+00:00",
+      "updated_at": "2026-06-24T12:39:50.657410+00:00",
       "promotion_readiness": {
         "status": "evidence_review_required",
         "label": "需补证据",
@@ -427,7 +427,7 @@
     ],
     "quality_score": {
       "ok": true,
-      "created_at": "2026-06-24T12:36:19.703031+00:00",
+      "created_at": "2026-06-24T12:39:50.680711+00:00",
       "overall_score": 99,
       "verdict": "excellent",
       "dimensions": {
@@ -864,7 +864,7 @@
     },
     "tasks": [
       {
-        "id": "6ec70bbef6a141c3-trade",
+        "id": "d3e300840faac293-trade",
         "role": "trade_lead",
         "role_label": "International trade lead",
         "title": "Verify customs, HS/tariff, payment terms, Incoterms, and logistics route.",
@@ -879,7 +879,7 @@
         "output": "internal_draft"
       },
       {
-        "id": "6ec70bbef6a141c3-research",
+        "id": "d3e300840faac293-research",
         "role": "research_analyst",
         "role_label": "Research intelligence analyst",
         "title": "Collect government, procurement, academic, and library evidence; grade each source.",
@@ -894,7 +894,7 @@
         "output": "internal_draft"
       },
       {
-        "id": "6ec70bbef6a141c3-investment",
+        "id": "d3e300840faac293-investment",
         "role": "investment_promotion_lead",
         "role_label": "Investment promotion lead",
         "title": "Map owner, developer, investor candidates, incentive policy, and project packaging gaps.",
@@ -908,7 +908,7 @@
         "output": "internal_draft"
       },
       {
-        "id": "6ec70bbef6a141c3-video",
+        "id": "d3e300840faac293-video",
         "role": "video_media_producer",
         "role_label": "Video and media producer",
         "title": "Draft country-style video concept based on verified facts and comparable platform examples.",
@@ -922,7 +922,7 @@
         "output": "internal_draft"
       },
       {
-        "id": "6ec70bbef6a141c3-pm",
+        "id": "d3e300840faac293-pm",
         "role": "project_manager",
         "role_label": "Project execution manager",
         "title": "Prepare meeting agenda, owner decision queue, deadlines, and next internal follow-up.",
@@ -937,7 +937,7 @@
         "output": "internal_draft"
       },
       {
-        "id": "6ec70bbef6a141c3-risk",
+        "id": "d3e300840faac293-risk",
         "role": "risk_approval_officer",
         "role_label": "Risk and approval officer",
         "title": "Keep formal outreach, quotation, payment, contract, and public publishing blocked until approval.",
@@ -955,7 +955,7 @@
   },
   "quality_score": {
     "ok": true,
-    "created_at": "2026-06-24T12:36:19.704343+00:00",
+    "created_at": "2026-06-24T12:39:50.681900+00:00",
     "overall_score": 99,
     "verdict": "excellent",
     "dimensions": {
@@ -1046,7 +1046,7 @@
   },
   "operating_rule": "v11 works as a vertical industry project team: evidence, search verification, execution, media draft, score, and approval gate in one package.",
   "execution_queue": {
-    "id": "9afe4ab536387808",
+    "id": "90e7e6d773b8e078",
     "summary": {
       "task_count": 31,
       "open_count": 22,
@@ -1056,7 +1056,7 @@
     },
     "tasks": [
       {
-        "id": "9afe4ab536387808-01",
+        "id": "90e7e6d773b8e078-01",
         "role": "research_analyst",
         "task": "Run and record source evidence for query: Kazakhstan engineering trade project customs investment promotion video Kazakhstan official government site:gov.kz",
         "source": "search_confirmation.government_confirmation",
@@ -1074,7 +1074,7 @@
         "output": "evidence_record"
       },
       {
-        "id": "9afe4ab536387808-02",
+        "id": "90e7e6d773b8e078-02",
         "role": "research_analyst",
         "task": "Run and record source evidence for query: Kazakhstan engineering trade project customs investment promotion video Kazakhstan official government site:primeminister.kz",
         "source": "search_confirmation.government_confirmation",
@@ -1092,7 +1092,7 @@
         "output": "evidence_record"
       },
       {
-        "id": "9afe4ab536387808-03",
+        "id": "90e7e6d773b8e078-03",
         "role": "research_analyst",
         "task": "Run and record source evidence for query: Kazakhstan engineering trade project customs investment promotion video Kazakhstan official government site:invest.gov.kz",
         "source": "search_confirmation.government_confirmation",
@@ -1110,7 +1110,7 @@
         "output": "evidence_record"
       },
       {
-        "id": "9afe4ab536387808-04",
+        "id": "90e7e6d773b8e078-04",
         "role": "research_analyst",
         "task": "Run and record source evidence for query: Kazakhstan engineering trade project customs investment promotion video Kazakhstan official government site:adilet.zan.kz",
         "source": "search_confirmation.government_confirmation",
@@ -1128,7 +1128,7 @@
         "output": "evidence_record"
       },
       {
-        "id": "9afe4ab536387808-05",
+        "id": "90e7e6d773b8e078-05",
         "role": "research_analyst",
         "task": "Run and record source evidence for query: Kazakhstan engineering trade project customs investment promotion video Kazakhstan ministry site:gov.kz",
         "source": "search_confirmation.government_confirmation",
@@ -1146,7 +1146,7 @@
         "output": "evidence_record"
       },
       {
-        "id": "9afe4ab536387808-06",
+        "id": "90e7e6d773b8e078-06",
         "role": "research_analyst",
         "task": "Run and record source evidence for query: Kazakhstan engineering trade project customs investment promotion video Kazakhstan ministry site:primeminister.kz",
         "source": "search_confirmation.government_confirmation",
@@ -1164,7 +1164,7 @@
         "output": "evidence_record"
       },
       {
-        "id": "9afe4ab536387808-07",
+        "id": "90e7e6d773b8e078-07",
         "role": "research_analyst",
         "task": "Run and record source evidence for query: Kazakhstan engineering trade project customs investment promotion video Kazakhstan ministry site:invest.gov.kz",
         "source": "search_confirmation.government_confirmation",
@@ -1182,7 +1182,7 @@
         "output": "evidence_record"
       },
       {
-        "id": "9afe4ab536387808-08",
+        "id": "90e7e6d773b8e078-08",
         "role": "research_analyst",
         "task": "Run and record source evidence for query: Kazakhstan engineering trade project customs investment promotion video Kazakhstan ministry site:adilet.zan.kz",
         "source": "search_confirmation.government_confirmation",
@@ -1200,7 +1200,7 @@
         "output": "evidence_record"
       },
       {
-        "id": "9afe4ab536387808-09",
+        "id": "90e7e6d773b8e078-09",
         "role": "project_manager",
         "task": "Open official government and procurement search URLs from the highest priority plan.",
         "source": "project_execution.next_actions",
@@ -1227,7 +1227,7 @@
         "output": "project_followup_item"
       },
       {
-        "id": "9afe4ab536387808-10",
+        "id": "90e7e6d773b8e078-10",
         "role": "project_manager",
         "task": "Attach official evidence with title, URL, snippet, source_type, and source date.",
         "source": "project_execution.next_actions",
@@ -1254,7 +1254,7 @@
         "output": "project_followup_item"
       },
       {
-        "id": "9afe4ab536387808-11",
+        "id": "90e7e6d773b8e078-11",
         "role": "project_manager",
         "task": "Confirm project owner, developer, responsible office/person, tender status, and customs impact.",
         "source": "project_execution.next_actions",
@@ -1281,7 +1281,7 @@
         "output": "project_followup_item"
       },
       {
-        "id": "9afe4ab536387808-12",
+        "id": "90e7e6d773b8e078-12",
         "role": "project_manager",
         "task": "Use the action board for team task assignment.",
         "source": "project_execution.next_actions",
