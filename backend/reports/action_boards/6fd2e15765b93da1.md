@@ -1,12 +1,12 @@
-# Project Action Board: Daily cycle operating evidence
+# Project Action Board: Internal Brief Library Cleanup
 
 DRAFT - internal execution board, not approved for external sending
 
-- Country: Indonesia
-- Stage: unknown
-- Risk status: pending_owner
+- Country: Internal
+- Stage: internal organization
+- Risk status: evidence_review_required
 - Blocked: True
-- Evidence: weak_signal_only (37)
+- Evidence: partially_supported (84)
 
 ## Tasks
 
