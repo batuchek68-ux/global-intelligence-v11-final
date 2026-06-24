@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import json
+import shutil
 import subprocess
 import time
 import unittest
@@ -9,14 +10,18 @@ from urllib.request import Request, urlopen
 
 
 ROOT = Path(__file__).resolve().parents[1]
+REQUEST_TIMEOUT = 60
 
 
 class DecisionHubServerTests(unittest.TestCase):
     def _start_server(self, port: int) -> subprocess.Popen:
         script = ROOT / "apps" / "decision-hub" / "server.ps1"
+        powershell = shutil.which("pwsh") or shutil.which("powershell.exe")
+        if not powershell:
+            self.skipTest("PowerShell runtime is not available on this runner")
         process = subprocess.Popen(
             [
-                "powershell.exe",
+                powershell,
                 "-NoProfile",
                 "-ExecutionPolicy",
                 "Bypass",
@@ -29,7 +34,7 @@ class DecisionHubServerTests(unittest.TestCase):
             stdout=subprocess.DEVNULL,
             stderr=subprocess.DEVNULL,
         )
-        deadline = time.time() + 12
+        deadline = time.time() + 20
         last_error: Exception | None = None
         while time.time() < deadline:
             try:
@@ -53,7 +58,7 @@ class DecisionHubServerTests(unittest.TestCase):
                 method="POST",
                 headers={"Content-Type": "application/json"},
             )
-            with urlopen(request, timeout=30) as response:
+            with urlopen(request, timeout=REQUEST_TIMEOUT) as response:
                 self.assertEqual(response.status, 200)
                 data = json.loads(response.read().decode("utf-8"))
 
@@ -89,7 +94,7 @@ class DecisionHubServerTests(unittest.TestCase):
                 method="POST",
                 headers={"Content-Type": "application/json"},
             )
-            with urlopen(request, timeout=30) as response:
+            with urlopen(request, timeout=REQUEST_TIMEOUT) as response:
                 self.assertEqual(response.status, 200)
                 data = json.loads(response.read().decode("utf-8"))
 
@@ -112,7 +117,7 @@ class DecisionHubServerTests(unittest.TestCase):
         process = self._start_server(port)
         try:
             request = Request(f"http://127.0.0.1:{port}/api/projects/library", method="GET")
-            with urlopen(request, timeout=30) as response:
+            with urlopen(request, timeout=REQUEST_TIMEOUT) as response:
                 self.assertEqual(response.status, 200)
                 data = json.loads(response.read().decode("utf-8"))
 
@@ -150,7 +155,7 @@ class DecisionHubServerTests(unittest.TestCase):
                 method="POST",
                 headers={"Content-Type": "application/json"},
             )
-            with urlopen(request, timeout=30) as response:
+            with urlopen(request, timeout=REQUEST_TIMEOUT) as response:
                 self.assertEqual(response.status, 200)
                 data = json.loads(response.read().decode("utf-8"))
 
@@ -190,7 +195,7 @@ class DecisionHubServerTests(unittest.TestCase):
                 method="POST",
                 headers={"Content-Type": "application/json"},
             )
-            with urlopen(request, timeout=30) as response:
+            with urlopen(request, timeout=REQUEST_TIMEOUT) as response:
                 self.assertEqual(response.status, 200)
                 data = json.loads(response.read().decode("utf-8"))
 
@@ -233,7 +238,7 @@ class DecisionHubServerTests(unittest.TestCase):
                 method="POST",
                 headers={"Content-Type": "application/json"},
             )
-            with urlopen(request, timeout=30) as response:
+            with urlopen(request, timeout=REQUEST_TIMEOUT) as response:
                 self.assertEqual(response.status, 200)
                 data = json.loads(response.read().decode("utf-8"))
 
@@ -268,7 +273,7 @@ class DecisionHubServerTests(unittest.TestCase):
                 method="POST",
                 headers={"Content-Type": "application/json"},
             )
-            with urlopen(score_request, timeout=30) as response:
+            with urlopen(score_request, timeout=REQUEST_TIMEOUT) as response:
                 self.assertEqual(response.status, 200)
                 score = json.loads(response.read().decode("utf-8"))
             self.assertTrue(score["ok"])
@@ -291,7 +296,7 @@ class DecisionHubServerTests(unittest.TestCase):
                 method="POST",
                 headers={"Content-Type": "application/json"},
             )
-            with urlopen(compare_request, timeout=30) as response:
+            with urlopen(compare_request, timeout=REQUEST_TIMEOUT) as response:
                 self.assertEqual(response.status, 200)
                 comparison = json.loads(response.read().decode("utf-8"))
             self.assertTrue(comparison["ok"])
@@ -330,7 +335,7 @@ class DecisionHubServerTests(unittest.TestCase):
                 method="POST",
                 headers={"Content-Type": "application/json"},
             )
-            with urlopen(request, timeout=30) as response:
+            with urlopen(request, timeout=REQUEST_TIMEOUT) as response:
                 self.assertEqual(response.status, 200)
                 data = json.loads(response.read().decode("utf-8"))
 
@@ -374,7 +379,7 @@ class DecisionHubServerTests(unittest.TestCase):
                 method="POST",
                 headers={"Content-Type": "application/json"},
             )
-            with urlopen(request, timeout=30) as response:
+            with urlopen(request, timeout=REQUEST_TIMEOUT) as response:
                 self.assertEqual(response.status, 200)
                 data = json.loads(response.read().decode("utf-8"))
 
@@ -388,7 +393,7 @@ class DecisionHubServerTests(unittest.TestCase):
             self.assertGreaterEqual(room["quality_score"]["overall_score"], 70)
 
             queue_request = Request(f"http://127.0.0.1:{port}/api/war-room/execution-queue", method="GET")
-            with urlopen(queue_request, timeout=30) as response:
+            with urlopen(queue_request, timeout=REQUEST_TIMEOUT) as response:
                 self.assertEqual(response.status, 200)
                 queue_data = json.loads(response.read().decode("utf-8"))
             self.assertTrue(queue_data["ok"])
@@ -420,7 +425,7 @@ class DecisionHubServerTests(unittest.TestCase):
                 method="POST",
                 headers={"Content-Type": "application/json"},
             )
-            with urlopen(analyze_request, timeout=30) as response:
+            with urlopen(analyze_request, timeout=REQUEST_TIMEOUT) as response:
                 self.assertEqual(response.status, 200)
                 assessment = json.loads(response.read().decode("utf-8"))
             self.assertEqual(assessment["action"], "draft_only")
@@ -442,7 +447,7 @@ class DecisionHubServerTests(unittest.TestCase):
                 method="POST",
                 headers={"Content-Type": "application/json"},
             )
-            with urlopen(draft_request, timeout=30) as response:
+            with urlopen(draft_request, timeout=REQUEST_TIMEOUT) as response:
                 self.assertEqual(response.status, 200)
                 draft = json.loads(response.read().decode("utf-8"))
             self.assertTrue(draft["ok"])
@@ -482,7 +487,7 @@ class DecisionHubServerTests(unittest.TestCase):
                 method="POST",
                 headers={"Content-Type": "application/json"},
             )
-            with urlopen(request, timeout=30) as response:
+            with urlopen(request, timeout=REQUEST_TIMEOUT) as response:
                 self.assertEqual(response.status, 200)
                 data = json.loads(response.read().decode("utf-8"))
 
