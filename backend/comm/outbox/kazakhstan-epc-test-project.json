@@ -1,0 +1,7 @@
+﻿{
+  "project": "Kazakhstan EPC test project",
+  "status": "pending",
+  "channel": "owner_decision",
+  "approval_required": true,
+  "summary": "Demo owner approval ticket for workflow validation."
+}
