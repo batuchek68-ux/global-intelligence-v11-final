@@ -1,36 +1,32 @@
 {
   "ok": true,
-  "id": "f7349eda7cc96819",
-  "created_at": "2026-06-24T12:39:51.954201+00:00",
-  "question": "Daily v11 international engineering trade, research intelligence, investment promotion, video, customs, and project execution operating package",
-  "country": "Indonesia",
+  "id": "460ee44011666823",
+  "created_at": "2026-06-24T15:25:27.003977+00:00",
+  "question": "Kazakhstan engineering trade project customs investment promotion video",
+  "country": "Kazakhstan",
   "industries": [
     "infrastructure",
-    "mining",
-    "logistics",
-    "energy",
-    "customs",
-    "investment"
+    "logistics"
   ],
   "mode": "team_response_pack",
-  "executive_answer": "结论: 目前只能作为线索；必须先补政府、海关、采购、监管或官方企业证据。\n问题: Daily v11 international engineering trade, research intelligence, investment promotion, video, customs, and project execution operating package\n国家/地区: Indonesia\n证据状态: weak_signal_only；置信度 37；官方证据 0 条。\n任务状态: pending_owner；需要处理 6 项任务；阻断 3 项高风险动作。\n执行清单: 先查官方 source URL 和 source date，再核验 government/customs/procurement evidence；随后形成 next step checklist、risk approval gate、项目库记录和可行性草稿。\n专业判断: 海关问题必须核验 HS code、tariff、customs valuation、certificate of origin、import license；EPC 项目必须核验 owner、developer、contractor、FIDIC/contract risk 和 tender status。\n风险边界: payment、contract、sanction、export control、customs、quotation、delivery promise、public publishing 必须 approval 后才能对外使用。",
+  "executive_answer": "结论: 可以作为内部推进依据；对外使用仍需要人工审批。\n问题: Kazakhstan engineering trade project customs investment promotion video\n国家/地区: Kazakhstan\n证据状态: officially_supported；置信度 98；官方证据 1 条。\n任务状态: pending_owner；需要处理 6 项任务；阻断 3 项高风险动作。\n执行清单: 先查官方 source URL 和 source date，再核验 government/customs/procurement evidence；随后形成 next step checklist、risk approval gate、项目库记录和可行性草稿。\n专业判断: 海关问题必须核验 HS code、tariff、customs valuation、certificate of origin、import license；EPC 项目必须核验 owner、developer、contractor、FIDIC/contract risk 和 tender status。\n风险边界: payment、contract、sanction、export control、customs、quotation、delivery promise、public publishing 必须 approval 后才能对外使用。",
   "evidence_status": {
-    "verification_status": "weak_signal_only",
-    "confidence": 37,
+    "verification_status": "officially_supported",
+    "confidence": 98,
     "requires_human_review": true,
-    "official_sources": 0
+    "official_sources": 1
   },
   "team_roles": [
     {
       "role": "trade_lead",
       "label": "国际贸易负责人",
-      "contribution": "先核验 Indonesia 官方海关 source URL/date、HS code、tariff、customs valuation、Incoterms、payment risk 和物流路径；未核验前不承诺价格、交期或清关结果。",
+      "contribution": "先核验 Kazakhstan 官方海关 source URL/date、HS code、tariff、customs valuation、Incoterms、payment risk 和物流路径；未核验前不承诺价格、交期或清关结果。",
       "next_step": "收集海关官网、官方税则、清关文件、银行付款条件证据，并形成可执行 checklist。"
     },
     {
       "role": "research_analyst",
       "label": "科研情报分析",
-      "contribution": "优先搜索 official government、procurement、academic paper、library report 来源；第一条官方检索式: Daily v11 international engineering trade, research intelligence, investment promotion, video, customs, and project execution operating package Central Asia EPC site:gov.kz",
+      "contribution": "优先搜索 official government、procurement、academic paper、library report 来源；第一条官方检索式: Kazakhstan engineering trade project customs investment promotion video Kazakhstan EPC site:gov.kz",
       "next_step": "把证据分为政府/采购/企业/媒体/社交五级，记录 citation、URL、source date、relevance note。"
     },
     {
@@ -63,82 +59,82 @@
     "official_queries": [
       {
         "intent": "government_confirmation",
-        "query": "Daily v11 international engineering trade, research intelligence, investment promotion, video, customs, and project execution operating package Central Asia EPC site:gov.kz",
+        "query": "Kazakhstan engineering trade project customs investment promotion video Kazakhstan EPC site:gov.kz",
         "priority": "highest",
         "urls": {
-          "google": "https://www.google.com/search?q=Daily+v11+international+engineering+trade%2C+research+intelligence%2C+investment+promotion%2C+video%2C+customs%2C+and+project+execution+operating+package+Central+Asia+EPC+site%3Agov.kz",
-          "yandex": "https://yandex.com/search/?text=Daily+v11+international+engineering+trade%2C+research+intelligence%2C+investment+promotion%2C+video%2C+customs%2C+and+project+execution+operating+package+Central+Asia+EPC+site%3Agov.kz",
-          "bing": "https://www.bing.com/search?q=Daily+v11+international+engineering+trade%2C+research+intelligence%2C+investment+promotion%2C+video%2C+customs%2C+and+project+execution+operating+package+Central+Asia+EPC+site%3Agov.kz"
+          "google": "https://www.google.com/search?q=Kazakhstan+engineering+trade+project+customs+investment+promotion+video+Kazakhstan+EPC+site%3Agov.kz",
+          "yandex": "https://yandex.com/search/?text=Kazakhstan+engineering+trade+project+customs+investment+promotion+video+Kazakhstan+EPC+site%3Agov.kz",
+          "bing": "https://www.bing.com/search?q=Kazakhstan+engineering+trade+project+customs+investment+promotion+video+Kazakhstan+EPC+site%3Agov.kz"
         }
       },
       {
         "intent": "government_confirmation",
-        "query": "Daily v11 international engineering trade, research intelligence, investment promotion, video, customs, and project execution operating package Central Asia EPC site:gov.uz",
+        "query": "Kazakhstan engineering trade project customs investment promotion video Kazakhstan EPC site:primeminister.kz",
         "priority": "highest",
         "urls": {
-          "google": "https://www.google.com/search?q=Daily+v11+international+engineering+trade%2C+research+intelligence%2C+investment+promotion%2C+video%2C+customs%2C+and+project+execution+operating+package+Central+Asia+EPC+site%3Agov.uz",
-          "yandex": "https://yandex.com/search/?text=Daily+v11+international+engineering+trade%2C+research+intelligence%2C+investment+promotion%2C+video%2C+customs%2C+and+project+execution+operating+package+Central+Asia+EPC+site%3Agov.uz",
-          "bing": "https://www.bing.com/search?q=Daily+v11+international+engineering+trade%2C+research+intelligence%2C+investment+promotion%2C+video%2C+customs%2C+and+project+execution+operating+package+Central+Asia+EPC+site%3Agov.uz"
+          "google": "https://www.google.com/search?q=Kazakhstan+engineering+trade+project+customs+investment+promotion+video+Kazakhstan+EPC+site%3Aprimeminister.kz",
+          "yandex": "https://yandex.com/search/?text=Kazakhstan+engineering+trade+project+customs+investment+promotion+video+Kazakhstan+EPC+site%3Aprimeminister.kz",
+          "bing": "https://www.bing.com/search?q=Kazakhstan+engineering+trade+project+customs+investment+promotion+video+Kazakhstan+EPC+site%3Aprimeminister.kz"
         }
       },
       {
         "intent": "government_confirmation",
-        "query": "Daily v11 international engineering trade, research intelligence, investment promotion, video, customs, and project execution operating package Central Asia EPC site:gov.kg",
+        "query": "Kazakhstan engineering trade project customs investment promotion video Kazakhstan EPC site:invest.gov.kz",
         "priority": "highest",
         "urls": {
-          "google": "https://www.google.com/search?q=Daily+v11+international+engineering+trade%2C+research+intelligence%2C+investment+promotion%2C+video%2C+customs%2C+and+project+execution+operating+package+Central+Asia+EPC+site%3Agov.kg",
-          "yandex": "https://yandex.com/search/?text=Daily+v11+international+engineering+trade%2C+research+intelligence%2C+investment+promotion%2C+video%2C+customs%2C+and+project+execution+operating+package+Central+Asia+EPC+site%3Agov.kg",
-          "bing": "https://www.bing.com/search?q=Daily+v11+international+engineering+trade%2C+research+intelligence%2C+investment+promotion%2C+video%2C+customs%2C+and+project+execution+operating+package+Central+Asia+EPC+site%3Agov.kg"
+          "google": "https://www.google.com/search?q=Kazakhstan+engineering+trade+project+customs+investment+promotion+video+Kazakhstan+EPC+site%3Ainvest.gov.kz",
+          "yandex": "https://yandex.com/search/?text=Kazakhstan+engineering+trade+project+customs+investment+promotion+video+Kazakhstan+EPC+site%3Ainvest.gov.kz",
+          "bing": "https://www.bing.com/search?q=Kazakhstan+engineering+trade+project+customs+investment+promotion+video+Kazakhstan+EPC+site%3Ainvest.gov.kz"
         }
       },
       {
         "intent": "government_confirmation",
-        "query": "Daily v11 international engineering trade, research intelligence, investment promotion, video, customs, and project execution operating package Central Asia EPC site:gov.tm",
+        "query": "Kazakhstan engineering trade project customs investment promotion video Kazakhstan EPC site:adilet.zan.kz",
         "priority": "highest",
         "urls": {
-          "google": "https://www.google.com/search?q=Daily+v11+international+engineering+trade%2C+research+intelligence%2C+investment+promotion%2C+video%2C+customs%2C+and+project+execution+operating+package+Central+Asia+EPC+site%3Agov.tm",
-          "yandex": "https://yandex.com/search/?text=Daily+v11+international+engineering+trade%2C+research+intelligence%2C+investment+promotion%2C+video%2C+customs%2C+and+project+execution+operating+package+Central+Asia+EPC+site%3Agov.tm",
-          "bing": "https://www.bing.com/search?q=Daily+v11+international+engineering+trade%2C+research+intelligence%2C+investment+promotion%2C+video%2C+customs%2C+and+project+execution+operating+package+Central+Asia+EPC+site%3Agov.tm"
+          "google": "https://www.google.com/search?q=Kazakhstan+engineering+trade+project+customs+investment+promotion+video+Kazakhstan+EPC+site%3Aadilet.zan.kz",
+          "yandex": "https://yandex.com/search/?text=Kazakhstan+engineering+trade+project+customs+investment+promotion+video+Kazakhstan+EPC+site%3Aadilet.zan.kz",
+          "bing": "https://www.bing.com/search?q=Kazakhstan+engineering+trade+project+customs+investment+promotion+video+Kazakhstan+EPC+site%3Aadilet.zan.kz"
         }
       },
       {
         "intent": "government_confirmation",
-        "query": "Daily v11 international engineering trade, research intelligence, investment promotion, video, customs, and project execution operating package Central Asia engineering procurement construction site:gov.kz",
+        "query": "Kazakhstan engineering trade project customs investment promotion video Kazakhstan engineering procurement construction site:gov.kz",
         "priority": "highest",
         "urls": {
-          "google": "https://www.google.com/search?q=Daily+v11+international+engineering+trade%2C+research+intelligence%2C+investment+promotion%2C+video%2C+customs%2C+and+project+execution+operating+package+Central+Asia+engineering+procurement+construction+site%3Agov.kz",
-          "yandex": "https://yandex.com/search/?text=Daily+v11+international+engineering+trade%2C+research+intelligence%2C+investment+promotion%2C+video%2C+customs%2C+and+project+execution+operating+package+Central+Asia+engineering+procurement+construction+site%3Agov.kz",
-          "bing": "https://www.bing.com/search?q=Daily+v11+international+engineering+trade%2C+research+intelligence%2C+investment+promotion%2C+video%2C+customs%2C+and+project+execution+operating+package+Central+Asia+engineering+procurement+construction+site%3Agov.kz"
+          "google": "https://www.google.com/search?q=Kazakhstan+engineering+trade+project+customs+investment+promotion+video+Kazakhstan+engineering+procurement+construction+site%3Agov.kz",
+          "yandex": "https://yandex.com/search/?text=Kazakhstan+engineering+trade+project+customs+investment+promotion+video+Kazakhstan+engineering+procurement+construction+site%3Agov.kz",
+          "bing": "https://www.bing.com/search?q=Kazakhstan+engineering+trade+project+customs+investment+promotion+video+Kazakhstan+engineering+procurement+construction+site%3Agov.kz"
         }
       },
       {
         "intent": "government_confirmation",
-        "query": "Daily v11 international engineering trade, research intelligence, investment promotion, video, customs, and project execution operating package Central Asia engineering procurement construction site:gov.uz",
+        "query": "Kazakhstan engineering trade project customs investment promotion video Kazakhstan engineering procurement construction site:primeminister.kz",
         "priority": "highest",
         "urls": {
-          "google": "https://www.google.com/search?q=Daily+v11+international+engineering+trade%2C+research+intelligence%2C+investment+promotion%2C+video%2C+customs%2C+and+project+execution+operating+package+Central+Asia+engineering+procurement+construction+site%3Agov.uz",
-          "yandex": "https://yandex.com/search/?text=Daily+v11+international+engineering+trade%2C+research+intelligence%2C+investment+promotion%2C+video%2C+customs%2C+and+project+execution+operating+package+Central+Asia+engineering+procurement+construction+site%3Agov.uz",
-          "bing": "https://www.bing.com/search?q=Daily+v11+international+engineering+trade%2C+research+intelligence%2C+investment+promotion%2C+video%2C+customs%2C+and+project+execution+operating+package+Central+Asia+engineering+procurement+construction+site%3Agov.uz"
+          "google": "https://www.google.com/search?q=Kazakhstan+engineering+trade+project+customs+investment+promotion+video+Kazakhstan+engineering+procurement+construction+site%3Aprimeminister.kz",
+          "yandex": "https://yandex.com/search/?text=Kazakhstan+engineering+trade+project+customs+investment+promotion+video+Kazakhstan+engineering+procurement+construction+site%3Aprimeminister.kz",
+          "bing": "https://www.bing.com/search?q=Kazakhstan+engineering+trade+project+customs+investment+promotion+video+Kazakhstan+engineering+procurement+construction+site%3Aprimeminister.kz"
         }
       },
       {
         "intent": "government_confirmation",
-        "query": "Daily v11 international engineering trade, research intelligence, investment promotion, video, customs, and project execution operating package Central Asia engineering procurement construction site:gov.kg",
+        "query": "Kazakhstan engineering trade project customs investment promotion video Kazakhstan engineering procurement construction site:invest.gov.kz",
         "priority": "highest",
         "urls": {
-          "google": "https://www.google.com/search?q=Daily+v11+international+engineering+trade%2C+research+intelligence%2C+investment+promotion%2C+video%2C+customs%2C+and+project+execution+operating+package+Central+Asia+engineering+procurement+construction+site%3Agov.kg",
-          "yandex": "https://yandex.com/search/?text=Daily+v11+international+engineering+trade%2C+research+intelligence%2C+investment+promotion%2C+video%2C+customs%2C+and+project+execution+operating+package+Central+Asia+engineering+procurement+construction+site%3Agov.kg",
-          "bing": "https://www.bing.com/search?q=Daily+v11+international+engineering+trade%2C+research+intelligence%2C+investment+promotion%2C+video%2C+customs%2C+and+project+execution+operating+package+Central+Asia+engineering+procurement+construction+site%3Agov.kg"
+          "google": "https://www.google.com/search?q=Kazakhstan+engineering+trade+project+customs+investment+promotion+video+Kazakhstan+engineering+procurement+construction+site%3Ainvest.gov.kz",
+          "yandex": "https://yandex.com/search/?text=Kazakhstan+engineering+trade+project+customs+investment+promotion+video+Kazakhstan+engineering+procurement+construction+site%3Ainvest.gov.kz",
+          "bing": "https://www.bing.com/search?q=Kazakhstan+engineering+trade+project+customs+investment+promotion+video+Kazakhstan+engineering+procurement+construction+site%3Ainvest.gov.kz"
         }
       },
       {
         "intent": "government_confirmation",
-        "query": "Daily v11 international engineering trade, research intelligence, investment promotion, video, customs, and project execution operating package Central Asia engineering procurement construction site:gov.tm",
+        "query": "Kazakhstan engineering trade project customs investment promotion video Kazakhstan engineering procurement construction site:adilet.zan.kz",
         "priority": "highest",
         "urls": {
-          "google": "https://www.google.com/search?q=Daily+v11+international+engineering+trade%2C+research+intelligence%2C+investment+promotion%2C+video%2C+customs%2C+and+project+execution+operating+package+Central+Asia+engineering+procurement+construction+site%3Agov.tm",
-          "yandex": "https://yandex.com/search/?text=Daily+v11+international+engineering+trade%2C+research+intelligence%2C+investment+promotion%2C+video%2C+customs%2C+and+project+execution+operating+package+Central+Asia+engineering+procurement+construction+site%3Agov.tm",
-          "bing": "https://www.bing.com/search?q=Daily+v11+international+engineering+trade%2C+research+intelligence%2C+investment+promotion%2C+video%2C+customs%2C+and+project+execution+operating+package+Central+Asia+engineering+procurement+construction+site%3Agov.tm"
+          "google": "https://www.google.com/search?q=Kazakhstan+engineering+trade+project+customs+investment+promotion+video+Kazakhstan+engineering+procurement+construction+site%3Aadilet.zan.kz",
+          "yandex": "https://yandex.com/search/?text=Kazakhstan+engineering+trade+project+customs+investment+promotion+video+Kazakhstan+engineering+procurement+construction+site%3Aadilet.zan.kz",
+          "bing": "https://www.bing.com/search?q=Kazakhstan+engineering+trade+project+customs+investment+promotion+video+Kazakhstan+engineering+procurement+construction+site%3Aadilet.zan.kz"
         }
       }
     ],
@@ -146,47 +142,47 @@
       {
         "id": "project_pipeline",
         "label": "Project pipeline",
-        "first_search_term": "Indonesia infrastructure Daily v11 international engineering trade, research intelligence, investment promotion, video, customs, and project execution operating package planned project"
+        "first_search_term": "Kazakhstan infrastructure Kazakhstan engineering trade project customs investment promotion video planned project"
       },
       {
         "id": "political_impact",
         "label": "Political and policy impact",
-        "first_search_term": "Indonesia infrastructure Daily v11 international engineering trade, research intelligence, investment promotion, video, customs, and project execution operating package government policy"
+        "first_search_term": "Kazakhstan infrastructure Kazakhstan engineering trade project customs investment promotion video government policy"
       },
       {
         "id": "investment_value",
         "label": "High value and high return",
-        "first_search_term": "Indonesia infrastructure Daily v11 international engineering trade, research intelligence, investment promotion, video, customs, and project execution operating package investment project"
+        "first_search_term": "Kazakhstan infrastructure Kazakhstan engineering trade project customs investment promotion video investment project"
       },
       {
         "id": "growth_sector",
         "label": "Growth sectors",
-        "first_search_term": "Indonesia infrastructure Daily v11 international engineering trade, research intelligence, investment promotion, video, customs, and project execution operating package renewable energy"
+        "first_search_term": "Kazakhstan infrastructure Kazakhstan engineering trade project customs investment promotion video renewable energy"
       },
       {
         "id": "procurement_trade",
         "label": "Procurement and trade",
-        "first_search_term": "Indonesia infrastructure Daily v11 international engineering trade, research intelligence, investment promotion, video, customs, and project execution operating package public tender"
+        "first_search_term": "Kazakhstan infrastructure Kazakhstan engineering trade project customs investment promotion video public tender"
       },
       {
         "id": "risk_compliance",
         "label": "Risk and compliance",
-        "first_search_term": "Indonesia infrastructure Daily v11 international engineering trade, research intelligence, investment promotion, video, customs, and project execution operating package sanctions"
+        "first_search_term": "Kazakhstan infrastructure Kazakhstan engineering trade project customs investment promotion video sanctions"
       },
       {
         "id": "forums_social",
         "label": "Forums, chats, and social attention",
-        "first_search_term": "Indonesia infrastructure Daily v11 international engineering trade, research intelligence, investment promotion, video, customs, and project execution operating package forum"
+        "first_search_term": "Kazakhstan infrastructure Kazakhstan engineering trade project customs investment promotion video forum"
       },
       {
         "id": "video_intelligence",
         "label": "Video intelligence and production",
-        "first_search_term": "Indonesia infrastructure Daily v11 international engineering trade, research intelligence, investment promotion, video, customs, and project execution operating package YouTube"
+        "first_search_term": "Kazakhstan infrastructure Kazakhstan engineering trade project customs investment promotion video YouTube"
       },
       {
         "id": "research_library",
         "label": "Research and library",
-        "first_search_term": "Indonesia infrastructure Daily v11 international engineering trade, research intelligence, investment promotion, video, customs, and project execution operating package paper"
+        "first_search_term": "Kazakhstan infrastructure Kazakhstan engineering trade project customs investment promotion video paper"
       }
     ]
   },
@@ -194,63 +190,63 @@
     "platform_searches": [
       {
         "platform": "YouTube",
-        "keyword": "Indonesia infrastructure Daily v11 international engineering trade, research intelligence, investment promotion, video, customs, and project execution operating package case study short video",
-        "url": "https://www.youtube.com/results?search_query=Indonesia+infrastructure+Daily+v11+international+engineering+trade%2C+research+intelligence%2C+investment+promotion%2C+video%2C+customs%2C+and+project+execution+operating+package+case+study+short+video"
+        "keyword": "Kazakhstan infrastructure Kazakhstan engineering trade project customs investment promotion video case study short video",
+        "url": "https://www.youtube.com/results?search_query=Kazakhstan+infrastructure+Kazakhstan+engineering+trade+project+customs+investment+promotion+video+case+study+short+video"
       },
       {
         "platform": "TikTok",
-        "keyword": "Indonesia infrastructure Daily v11 international engineering trade, research intelligence, investment promotion, video, customs, and project execution operating package case study short video",
-        "url": "https://www.tiktok.com/search?q=Indonesia+infrastructure+Daily+v11+international+engineering+trade%2C+research+intelligence%2C+investment+promotion%2C+video%2C+customs%2C+and+project+execution+operating+package+case+study+short+video"
+        "keyword": "Kazakhstan infrastructure Kazakhstan engineering trade project customs investment promotion video case study short video",
+        "url": "https://www.tiktok.com/search?q=Kazakhstan+infrastructure+Kazakhstan+engineering+trade+project+customs+investment+promotion+video+case+study+short+video"
       },
       {
         "platform": "Douyin",
-        "keyword": "Indonesia infrastructure Daily v11 international engineering trade, research intelligence, investment promotion, video, customs, and project execution operating package case study short video",
-        "url": "https://www.douyin.com/search/Indonesia+infrastructure+Daily+v11+international+engineering+trade%2C+research+intelligence%2C+investment+promotion%2C+video%2C+customs%2C+and+project+execution+operating+package+case+study+short+video"
+        "keyword": "Kazakhstan infrastructure Kazakhstan engineering trade project customs investment promotion video case study short video",
+        "url": "https://www.douyin.com/search/Kazakhstan+infrastructure+Kazakhstan+engineering+trade+project+customs+investment+promotion+video+case+study+short+video"
       },
       {
         "platform": "Google Video",
-        "keyword": "Indonesia infrastructure Daily v11 international engineering trade, research intelligence, investment promotion, video, customs, and project execution operating package case study short video",
-        "url": "https://www.google.com/search?q=Indonesia+infrastructure+Daily+v11+international+engineering+trade%2C+research+intelligence%2C+investment+promotion%2C+video%2C+customs%2C+and+project+execution+operating+package+case+study+short+video+video"
+        "keyword": "Kazakhstan infrastructure Kazakhstan engineering trade project customs investment promotion video case study short video",
+        "url": "https://www.google.com/search?q=Kazakhstan+infrastructure+Kazakhstan+engineering+trade+project+customs+investment+promotion+video+case+study+short+video+video"
       },
       {
         "platform": "YouTube",
-        "keyword": "Indonesia infrastructure Daily v11 international engineering trade, research intelligence, investment promotion, video, customs, and project execution operating package project progress short video",
-        "url": "https://www.youtube.com/results?search_query=Indonesia+infrastructure+Daily+v11+international+engineering+trade%2C+research+intelligence%2C+investment+promotion%2C+video%2C+customs%2C+and+project+execution+operating+package+project+progress+short+video"
+        "keyword": "Kazakhstan infrastructure Kazakhstan engineering trade project customs investment promotion video project progress short video",
+        "url": "https://www.youtube.com/results?search_query=Kazakhstan+infrastructure+Kazakhstan+engineering+trade+project+customs+investment+promotion+video+project+progress+short+video"
       },
       {
         "platform": "TikTok",
-        "keyword": "Indonesia infrastructure Daily v11 international engineering trade, research intelligence, investment promotion, video, customs, and project execution operating package project progress short video",
-        "url": "https://www.tiktok.com/search?q=Indonesia+infrastructure+Daily+v11+international+engineering+trade%2C+research+intelligence%2C+investment+promotion%2C+video%2C+customs%2C+and+project+execution+operating+package+project+progress+short+video"
+        "keyword": "Kazakhstan infrastructure Kazakhstan engineering trade project customs investment promotion video project progress short video",
+        "url": "https://www.tiktok.com/search?q=Kazakhstan+infrastructure+Kazakhstan+engineering+trade+project+customs+investment+promotion+video+project+progress+short+video"
       },
       {
         "platform": "Douyin",
-        "keyword": "Indonesia infrastructure Daily v11 international engineering trade, research intelligence, investment promotion, video, customs, and project execution operating package project progress short video",
-        "url": "https://www.douyin.com/search/Indonesia+infrastructure+Daily+v11+international+engineering+trade%2C+research+intelligence%2C+investment+promotion%2C+video%2C+customs%2C+and+project+execution+operating+package+project+progress+short+video"
+        "keyword": "Kazakhstan infrastructure Kazakhstan engineering trade project customs investment promotion video project progress short video",
+        "url": "https://www.douyin.com/search/Kazakhstan+infrastructure+Kazakhstan+engineering+trade+project+customs+investment+promotion+video+project+progress+short+video"
       },
       {
         "platform": "Google Video",
-        "keyword": "Indonesia infrastructure Daily v11 international engineering trade, research intelligence, investment promotion, video, customs, and project execution operating package project progress short video",
-        "url": "https://www.google.com/search?q=Indonesia+infrastructure+Daily+v11+international+engineering+trade%2C+research+intelligence%2C+investment+promotion%2C+video%2C+customs%2C+and+project+execution+operating+package+project+progress+short+video+video"
+        "keyword": "Kazakhstan infrastructure Kazakhstan engineering trade project customs investment promotion video project progress short video",
+        "url": "https://www.google.com/search?q=Kazakhstan+infrastructure+Kazakhstan+engineering+trade+project+customs+investment+promotion+video+project+progress+short+video+video"
       },
       {
         "platform": "YouTube",
-        "keyword": "Indonesia infrastructure Daily v11 international engineering trade, research intelligence, investment promotion, video, customs, and project execution operating package factory proof short video",
-        "url": "https://www.youtube.com/results?search_query=Indonesia+infrastructure+Daily+v11+international+engineering+trade%2C+research+intelligence%2C+investment+promotion%2C+video%2C+customs%2C+and+project+execution+operating+package+factory+proof+short+video"
+        "keyword": "Kazakhstan infrastructure Kazakhstan engineering trade project customs investment promotion video factory proof short video",
+        "url": "https://www.youtube.com/results?search_query=Kazakhstan+infrastructure+Kazakhstan+engineering+trade+project+customs+investment+promotion+video+factory+proof+short+video"
       },
       {
         "platform": "TikTok",
-        "keyword": "Indonesia infrastructure Daily v11 international engineering trade, research intelligence, investment promotion, video, customs, and project execution operating package factory proof short video",
-        "url": "https://www.tiktok.com/search?q=Indonesia+infrastructure+Daily+v11+international+engineering+trade%2C+research+intelligence%2C+investment+promotion%2C+video%2C+customs%2C+and+project+execution+operating+package+factory+proof+short+video"
+        "keyword": "Kazakhstan infrastructure Kazakhstan engineering trade project customs investment promotion video factory proof short video",
+        "url": "https://www.tiktok.com/search?q=Kazakhstan+infrastructure+Kazakhstan+engineering+trade+project+customs+investment+promotion+video+factory+proof+short+video"
       },
       {
         "platform": "Douyin",
-        "keyword": "Indonesia infrastructure Daily v11 international engineering trade, research intelligence, investment promotion, video, customs, and project execution operating package factory proof short video",
-        "url": "https://www.douyin.com/search/Indonesia+infrastructure+Daily+v11+international+engineering+trade%2C+research+intelligence%2C+investment+promotion%2C+video%2C+customs%2C+and+project+execution+operating+package+factory+proof+short+video"
+        "keyword": "Kazakhstan infrastructure Kazakhstan engineering trade project customs investment promotion video factory proof short video",
+        "url": "https://www.douyin.com/search/Kazakhstan+infrastructure+Kazakhstan+engineering+trade+project+customs+investment+promotion+video+factory+proof+short+video"
       },
       {
         "platform": "Google Video",
-        "keyword": "Indonesia infrastructure Daily v11 international engineering trade, research intelligence, investment promotion, video, customs, and project execution operating package factory proof short video",
-        "url": "https://www.google.com/search?q=Indonesia+infrastructure+Daily+v11+international+engineering+trade%2C+research+intelligence%2C+investment+promotion%2C+video%2C+customs%2C+and+project+execution+operating+package+factory+proof+short+video+video"
+        "keyword": "Kazakhstan infrastructure Kazakhstan engineering trade project customs investment promotion video factory proof short video",
+        "url": "https://www.google.com/search?q=Kazakhstan+infrastructure+Kazakhstan+engineering+trade+project+customs+investment+promotion+video+factory+proof+short+video+video"
       }
     ],
     "script_templates": [
@@ -291,10 +287,10 @@
       "blocked": true,
       "status": "pending_owner",
       "risk_level": "high",
-      "risk_score": 63,
+      "risk_score": 50,
       "reasons": [
         "major matter: Approve external use only after evidence and risk review.",
-        "evidence status: weak_signal_only"
+        "evidence status: officially_supported"
       ],
       "blocked_actions": [
         "external commitment",
@@ -311,7 +307,7 @@
     },
     "tasks": [
       {
-        "id": "4d5caf431db24cc2-trade",
+        "id": "39e7218f059c8016-trade",
         "role": "trade_lead",
         "role_label": "International trade lead",
         "title": "Verify customs, HS/tariff, payment terms, Incoterms, and logistics route.",
@@ -326,7 +322,7 @@
         "output": "internal_draft"
       },
       {
-        "id": "4d5caf431db24cc2-research",
+        "id": "39e7218f059c8016-research",
         "role": "research_analyst",
         "role_label": "Research intelligence analyst",
         "title": "Collect government, procurement, academic, and library evidence; grade each source.",
@@ -341,7 +337,7 @@
         "output": "internal_draft"
       },
       {
-        "id": "4d5caf431db24cc2-investment",
+        "id": "39e7218f059c8016-investment",
         "role": "investment_promotion_lead",
         "role_label": "Investment promotion lead",
         "title": "Map owner, developer, investor candidates, incentive policy, and project packaging gaps.",
@@ -355,7 +351,7 @@
         "output": "internal_draft"
       },
       {
-        "id": "4d5caf431db24cc2-video",
+        "id": "39e7218f059c8016-video",
         "role": "video_media_producer",
         "role_label": "Video and media producer",
         "title": "Draft country-style video concept based on verified facts and comparable platform examples.",
@@ -369,7 +365,7 @@
         "output": "internal_draft"
       },
       {
-        "id": "4d5caf431db24cc2-pm",
+        "id": "39e7218f059c8016-pm",
         "role": "project_manager",
         "role_label": "Project execution manager",
         "title": "Prepare meeting agenda, owner decision queue, deadlines, and next internal follow-up.",
@@ -384,7 +380,7 @@
         "output": "internal_draft"
       },
       {
-        "id": "4d5caf431db24cc2-risk",
+        "id": "39e7218f059c8016-risk",
         "role": "risk_approval_officer",
         "role_label": "Risk and approval officer",
         "title": "Keep formal outreach, quotation, payment, contract, and public publishing blocked until approval.",
@@ -402,7 +398,7 @@
   },
   "quality_score": {
     "ok": true,
-    "created_at": "2026-06-24T12:39:51.954197+00:00",
+    "created_at": "2026-06-24T15:25:27.003974+00:00",
     "overall_score": 99,
     "verdict": "excellent",
     "dimensions": {

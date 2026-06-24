@@ -1,7 +1,11 @@
 {
   "project": "Kazakhstan EPC test project",
-  "status": "pending",
+  "status": "resolved",
   "channel": "owner_decision",
   "approval_required": true,
-  "summary": "Demo owner approval ticket for workflow validation."
+  "summary": "Demo owner approval ticket for workflow validation.",
+  "owner_decision": "approve",
+  "owner_notes": "",
+  "resolved_at": "2026-06-24T15:25:27+00:00",
+  "source": "workflow_dispatch"
 }

@@ -17,7 +17,7 @@
         "snippet": "Official source describes owner, tender status, customs documents and engineering scope.",
         "source_type": "government",
         "government_confirmed": true,
-        "collected_at": "2026-06-24T12:39:50.656908+00:00"
+        "collected_at": "2026-06-24T15:25:26.988642+00:00"
       }
     ],
     "evidence": [
@@ -28,7 +28,7 @@
         "snippet": "Official source describes owner, tender status, customs documents and engineering scope.",
         "source_type": "government",
         "government_confirmed": true,
-        "collected_at": "2026-06-24T12:39:50.656908+00:00"
+        "collected_at": "2026-06-24T15:25:26.988642+00:00"
       }
     ],
     "stakeholders": {
@@ -45,7 +45,7 @@
       "Human approval required before external outreach, quotation, commitment, or publication.",
       "Government source confirmation required before investment promotion use."
     ],
-    "updated_at": "2026-06-24T12:39:50.657410+00:00",
+    "updated_at": "2026-06-24T15:25:26.989004+00:00",
     "promotion_readiness": {
       "status": "evidence_review_required",
       "label": "需补证据",
@@ -85,12 +85,12 @@
     "evidence": [
       {
         "title": "Daily cycle operating evidence",
-        "url": "/home/runner/work/global-intelligence-v11-final/global-intelligence-v11-final/backend/memory/last_run.json",
+        "url": "/tmp/tmposd677wu/memory/last_run.json",
         "domain": "",
         "snippet": "daily operating cycle, project cases, evidence dossiers, action boards, video center, benchmark and owner approval queue",
         "source_type": "internal",
         "government_confirmed": false,
-        "collected_at": "2026-06-24T12:39:51.903769+00:00"
+        "collected_at": "2026-06-24T15:24:43.635260+00:00"
       }
     ],
     "stakeholders": {
@@ -107,7 +107,7 @@
       "Human approval required before external outreach, quotation, commitment, or publication.",
       "Government source confirmation required before investment promotion use."
     ],
-    "updated_at": "2026-06-24T12:39:51.904176+00:00",
+    "updated_at": "2026-06-24T15:24:43.635565+00:00",
     "promotion_readiness": {
       "status": "lead_only",
       "label": "仅线索",
