@@ -1,12 +1,12 @@
-# Project Action Board: Daily cycle operating evidence
+# Project Action Board: 哈萨克斯坦工程贸易
 
 DRAFT - internal execution board, not approved for external sending
 
-- Country: Indonesia
-- Stage: unknown
+- Country: Kazakhstan
+- Stage: unconfirmed_pipeline
 - Risk status: pending_owner
 - Blocked: True
-- Evidence: weak_signal_only (37)
+- Evidence: unverified (0)
 
 ## Tasks
 

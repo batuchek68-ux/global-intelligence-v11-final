@@ -1,13 +1,13 @@
-# v11 Team Response Pack: Daily v11 international engineering trade, research intelligence, investment promotion, video, customs, and project execution operating package
+# v11 Team Response Pack: How should v11 operate today as an international engineering trade, research intelligence, investment promotion, video, and project execution team?
 
 DRAFT - internal team response, not approved for external sending
 
 ## Executive Answer
 
 结论: 目前只能作为线索；必须先补政府、海关、采购、监管或官方企业证据。
-问题: Daily v11 international engineering trade, research intelligence, investment promotion, video, customs, and project execution operating package
+问题: How should v11 operate today as an international engineering trade, research intelligence, investment promotion, video, and project execution team?
 国家/地区: Indonesia
-证据状态: weak_signal_only；置信度 37；官方证据 0 条。
+证据状态: weak_signal_only；置信度 36；官方证据 0 条。
 任务状态: pending_owner；需要处理 6 项任务；阻断 3 项高风险动作。
 执行清单: 先查官方 source URL 和 source date，再核验 government/customs/procurement evidence；随后形成 next step checklist、risk approval gate、项目库记录和可行性草稿。
 专业判断: 海关问题必须核验 HS code、tariff、customs valuation、certificate of origin、import license；EPC 项目必须核验 owner、developer、contractor、FIDIC/contract risk 和 tender status。
@@ -20,7 +20,7 @@ DRAFT - internal team response, not approved for external sending
 - Next step: 收集海关官网、官方税则、清关文件、银行付款条件证据，并形成可执行 checklist。
 
 ### 科研情报分析
-- Contribution: 优先搜索 official government、procurement、academic paper、library report 来源；第一条官方检索式: Daily v11 international engineering trade, research intelligence, investment promotion, video, customs, and project execution operating package Central Asia EPC site:gov.kz
+- Contribution: 优先搜索 official government、procurement、academic paper、library report 来源；第一条官方检索式: How should v11 operate today as an international engineering trade, research intelligence, investment promotion, video, and project execution team? Central Asia EPC site:gov.kz
 - Next step: 把证据分为政府/采购/企业/媒体/社交五级，记录 citation、URL、source date、relevance note。
 
 ### 招商引资负责人

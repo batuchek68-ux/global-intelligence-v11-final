@@ -1,6 +1,6 @@
 # GitHub Cloud AI Headquarters Status
 
-Generated: 2026-06-23T10:46:21+00:00
+Generated: 2026-06-24T12:33:44+00:00
 
 ## Command Model
 
@@ -26,7 +26,7 @@ Generated: 2026-06-23T10:46:21+00:00
 - Risk: high (96/100)
 - Triggers: customs, compliance, payment, amount>=100000
 - Execution status: waiting_for_owner
-- Real work flow: `C:\Users\Surface\Documents\New project\global-intelligence-v11\backend\reports\business_flows\demo-port-logistics-modernization.md`
+- Real work flow: `/home/runner/work/global-intelligence-v11-final/global-intelligence-v11-final/backend/reports/business_flows/demo-port-logistics-modernization.md`
 - Decision needed: Create an approval ticket before external commitment, payment, contract change, or public communication.
 - Reply: `/approve ...`, `/reject ...`, or `/revise ...`
 - Next Codex action: Wait for approval reply, then write the reply into memory before continuing.
@@ -44,5 +44,5 @@ None.
 - Risk: low (20/100)
 - Triggers: none
 - Execution status: autonomous_executed
-- Real work flow: `C:\Users\Surface\Documents\New project\global-intelligence-v11\backend\reports\business_flows\internal-brief-library-cleanup.md`
+- Real work flow: `/home/runner/work/global-intelligence-v11-final/global-intelligence-v11-final/backend/reports/business_flows/internal-brief-library-cleanup.md`
 - Next Codex action: Execute a reversible pilot step and record result in memory.
