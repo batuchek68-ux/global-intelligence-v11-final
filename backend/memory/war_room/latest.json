@@ -1,7 +1,7 @@
 {
   "ok": true,
   "id": "f7349eda7cc96819",
-  "created_at": "2026-06-24T12:33:44.387704+00:00",
+  "created_at": "2026-06-24T12:36:21.111118+00:00",
   "mode": "industry_war_room",
   "objective": "Daily v11 international engineering trade, research intelligence, investment promotion, video, customs, and project execution operating package",
   "country": "Indonesia",
@@ -291,7 +291,7 @@
           "snippet": "daily operating cycle, project cases, evidence dossiers, action boards, video center, benchmark and owner approval queue",
           "source_type": "internal",
           "government_confirmed": false,
-          "collected_at": "2026-06-24T12:33:44.337972+00:00"
+          "collected_at": "2026-06-24T12:36:21.059962+00:00"
         }
       ],
       "stakeholders": {
@@ -308,7 +308,7 @@
         "Human approval required before external outreach, quotation, commitment, or publication.",
         "Government source confirmation required before investment promotion use."
       ],
-      "updated_at": "2026-06-24T12:33:44.338401+00:00",
+      "updated_at": "2026-06-24T12:36:21.060437+00:00",
       "promotion_readiness": {
         "status": "lead_only",
         "label": "仅线索",
@@ -425,7 +425,7 @@
     ],
     "quality_score": {
       "ok": true,
-      "created_at": "2026-06-24T12:33:44.386519+00:00",
+      "created_at": "2026-06-24T12:36:21.109567+00:00",
       "overall_score": 99,
       "verdict": "excellent",
       "dimensions": {
@@ -850,7 +850,7 @@
     },
     "tasks": [
       {
-        "id": "dfe40a7b73063a0d-trade",
+        "id": "b2853f548506f345-trade",
         "role": "trade_lead",
         "role_label": "International trade lead",
         "title": "Verify customs, HS/tariff, payment terms, Incoterms, and logistics route.",
@@ -865,7 +865,7 @@
         "output": "internal_draft"
       },
       {
-        "id": "dfe40a7b73063a0d-research",
+        "id": "b2853f548506f345-research",
         "role": "research_analyst",
         "role_label": "Research intelligence analyst",
         "title": "Collect government, procurement, academic, and library evidence; grade each source.",
@@ -880,7 +880,7 @@
         "output": "internal_draft"
       },
       {
-        "id": "dfe40a7b73063a0d-investment",
+        "id": "b2853f548506f345-investment",
         "role": "investment_promotion_lead",
         "role_label": "Investment promotion lead",
         "title": "Map owner, developer, investor candidates, incentive policy, and project packaging gaps.",
@@ -894,7 +894,7 @@
         "output": "internal_draft"
       },
       {
-        "id": "dfe40a7b73063a0d-video",
+        "id": "b2853f548506f345-video",
         "role": "video_media_producer",
         "role_label": "Video and media producer",
         "title": "Draft country-style video concept based on verified facts and comparable platform examples.",
@@ -908,7 +908,7 @@
         "output": "internal_draft"
       },
       {
-        "id": "dfe40a7b73063a0d-pm",
+        "id": "b2853f548506f345-pm",
         "role": "project_manager",
         "role_label": "Project execution manager",
         "title": "Prepare meeting agenda, owner decision queue, deadlines, and next internal follow-up.",
@@ -923,7 +923,7 @@
         "output": "internal_draft"
       },
       {
-        "id": "dfe40a7b73063a0d-risk",
+        "id": "b2853f548506f345-risk",
         "role": "risk_approval_officer",
         "role_label": "Risk and approval officer",
         "title": "Keep formal outreach, quotation, payment, contract, and public publishing blocked until approval.",
@@ -941,7 +941,7 @@
   },
   "quality_score": {
     "ok": true,
-    "created_at": "2026-06-24T12:33:44.387700+00:00",
+    "created_at": "2026-06-24T12:36:21.111113+00:00",
     "overall_score": 99,
     "verdict": "excellent",
     "dimensions": {
@@ -1031,7 +1031,7 @@
   },
   "operating_rule": "v11 works as a vertical industry project team: evidence, search verification, execution, media draft, score, and approval gate in one package.",
   "execution_queue": {
-    "id": "40eb55bc3df94424",
+    "id": "9f1dd1a4b124c6f0",
     "summary": {
       "task_count": 32,
       "open_count": 22,
@@ -1041,7 +1041,7 @@
     },
     "tasks": [
       {
-        "id": "40eb55bc3df94424-01",
+        "id": "9f1dd1a4b124c6f0-01",
         "role": "research_analyst",
         "task": "Run and record source evidence for query: Daily v11 international engineering trade, research intelligence, investment promotion, video, customs, and project execution operating package Central Asia official government site:gov.kz",
         "source": "search_confirmation.government_confirmation",
@@ -1059,7 +1059,7 @@
         "output": "evidence_record"
       },
       {
-        "id": "40eb55bc3df94424-02",
+        "id": "9f1dd1a4b124c6f0-02",
         "role": "research_analyst",
         "task": "Run and record source evidence for query: Daily v11 international engineering trade, research intelligence, investment promotion, video, customs, and project execution operating package Central Asia official government site:gov.uz",
         "source": "search_confirmation.government_confirmation",
@@ -1077,7 +1077,7 @@
         "output": "evidence_record"
       },
       {
-        "id": "40eb55bc3df94424-03",
+        "id": "9f1dd1a4b124c6f0-03",
         "role": "research_analyst",
         "task": "Run and record source evidence for query: Daily v11 international engineering trade, research intelligence, investment promotion, video, customs, and project execution operating package Central Asia official government site:gov.kg",
         "source": "search_confirmation.government_confirmation",
@@ -1095,7 +1095,7 @@
         "output": "evidence_record"
       },
       {
-        "id": "40eb55bc3df94424-04",
+        "id": "9f1dd1a4b124c6f0-04",
         "role": "research_analyst",
         "task": "Run and record source evidence for query: Daily v11 international engineering trade, research intelligence, investment promotion, video, customs, and project execution operating package Central Asia official government site:tajinvest.tj",
         "source": "search_confirmation.government_confirmation",
@@ -1113,7 +1113,7 @@
         "output": "evidence_record"
       },
       {
-        "id": "40eb55bc3df94424-05",
+        "id": "9f1dd1a4b124c6f0-05",
         "role": "research_analyst",
         "task": "Run and record source evidence for query: Daily v11 international engineering trade, research intelligence, investment promotion, video, customs, and project execution operating package Central Asia ministry site:gov.kz",
         "source": "search_confirmation.government_confirmation",
@@ -1131,7 +1131,7 @@
         "output": "evidence_record"
       },
       {
-        "id": "40eb55bc3df94424-06",
+        "id": "9f1dd1a4b124c6f0-06",
         "role": "research_analyst",
         "task": "Run and record source evidence for query: Daily v11 international engineering trade, research intelligence, investment promotion, video, customs, and project execution operating package Central Asia ministry site:gov.uz",
         "source": "search_confirmation.government_confirmation",
@@ -1149,7 +1149,7 @@
         "output": "evidence_record"
       },
       {
-        "id": "40eb55bc3df94424-07",
+        "id": "9f1dd1a4b124c6f0-07",
         "role": "research_analyst",
         "task": "Run and record source evidence for query: Daily v11 international engineering trade, research intelligence, investment promotion, video, customs, and project execution operating package Central Asia ministry site:gov.kg",
         "source": "search_confirmation.government_confirmation",
@@ -1167,7 +1167,7 @@
         "output": "evidence_record"
       },
       {
-        "id": "40eb55bc3df94424-08",
+        "id": "9f1dd1a4b124c6f0-08",
         "role": "research_analyst",
         "task": "Run and record source evidence for query: Daily v11 international engineering trade, research intelligence, investment promotion, video, customs, and project execution operating package Central Asia ministry site:tajinvest.tj",
         "source": "search_confirmation.government_confirmation",
@@ -1185,7 +1185,7 @@
         "output": "evidence_record"
       },
       {
-        "id": "40eb55bc3df94424-09",
+        "id": "9f1dd1a4b124c6f0-09",
         "role": "risk_approval_officer",
         "task": "Upgrade evidence from lead-only or partial support to official confirmation before project confirmation.",
         "source": "evidence.verification_status",
@@ -1212,7 +1212,7 @@
         "output": "evidence_gap_report"
       },
       {
-        "id": "40eb55bc3df94424-10",
+        "id": "9f1dd1a4b124c6f0-10",
         "role": "project_manager",
         "task": "Open official government and procurement search URLs from the highest priority plan.",
         "source": "project_execution.next_actions",
@@ -1239,7 +1239,7 @@
         "output": "project_followup_item"
       },
       {
-        "id": "40eb55bc3df94424-11",
+        "id": "9f1dd1a4b124c6f0-11",
         "role": "project_manager",
         "task": "Attach official evidence with title, URL, snippet, source_type, and source date.",
         "source": "project_execution.next_actions",
@@ -1266,7 +1266,7 @@
         "output": "project_followup_item"
       },
       {
-        "id": "40eb55bc3df94424-12",
+        "id": "9f1dd1a4b124c6f0-12",
         "role": "project_manager",
         "task": "Confirm project owner, developer, responsible office/person, tender status, and customs impact.",
         "source": "project_execution.next_actions",
