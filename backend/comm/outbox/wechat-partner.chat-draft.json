@@ -1,0 +1,53 @@
+{
+  "channel": "wechat",
+  "recipient": "partner",
+  "message": "DRAFT - Not approved for sending\nChannel: wechat\nTone: 简短、礼貌、关系友好、不做正式承诺\n\n拟回复:\n您好，信息已收到。我们会先核验项目官方来源、业主/开发商、招标或采购状态、海关与合规风险，再整理下一步沟通清单。\n目前还缺少官方证据，不能把项目、价格、交期或合作承诺作为正式结论。\n在完成内部证据核验和人工审批前，我们不能正式承诺报价、付款条件、交期、合同条款或公开发布内容。\n如您方便，请先补充项目官网链接、招标/采购编号、负责人信息和关键时间节点，我们会按证据清单推进。",
+  "context": {
+    "inbound_message": "请确认这个政府项目的开发商、报价、付款条件和交期，我们希望尽快推进合同。",
+    "assessment": {
+      "authorized": true,
+      "risk_level": "high",
+      "confidence": 58,
+      "action": "draft_only",
+      "needs_human_approval": true,
+      "reasons": [
+        "High-risk terms detected: 合同, 报价, 付款, 交期",
+        "Official, customs, or procurement evidence is required before factual project claims.",
+        "External communication is not authorized for sending."
+      ],
+      "tone": "简短、礼貌、关系友好、不做正式承诺",
+      "official_evidence_count": 0,
+      "boundary": "The system may draft and analyze; sending requires explicit human approval and channel authorization."
+    },
+    "internal_review": {
+      "channel": "wechat",
+      "risk_level": "high",
+      "confidence": 58,
+      "team_judgment": [
+        "商务负责人: 先确认对方诉求、项目背景、付款和交付边界，不承诺价格或交期。",
+        "情报负责人: 补充官方项目、业主、开发商、招标、海关和政策证据。",
+        "项目经理: 把沟通转成会议议程、责任人、截止时间和下一步任务。",
+        "风控负责人: 合同、报价、付款、制裁、出口管制、公开视频发布全部进入人工审批。"
+      ],
+      "inbound_summary": "请确认这个政府项目的开发商、报价、付款条件和交期，我们希望尽快推进合同。",
+      "reasons": [
+        "High-risk terms detected: 合同, 报价, 付款, 交期",
+        "Official, customs, or procurement evidence is required before factual project claims.",
+        "External communication is not authorized for sending."
+      ]
+    },
+    "approval_checklist": [
+      "确认是否已经完成人工审批并允许对外发送，而不只是生成草稿。",
+      "确认项目事实是否已有官方/海关/采购/企业证据支持。",
+      "确认回复中没有报价、付款、交期、合同、法律、制裁或出口管制承诺。",
+      "确认公开视频、社交平台、微信/飞书/邮件内容已由负责人批准。"
+    ],
+    "authorization": {
+      "scope": "draft_only"
+    },
+    "evidence": []
+  },
+  "status": "draft_not_approved_for_sending",
+  "approval_required": true,
+  "safety_rule": "Draft -> Self Review -> Policy Check -> Human Approval -> Send"
+}
