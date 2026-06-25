@@ -88,3 +88,8 @@ GitHub Actions call scripts in `backend/workflows`:
 - `owner_decision.yml`
 
 All cloud evidence is written under `backend/reports` and `backend/memory`.
+
+## v11-Only Execution Boundary
+
+`global-intelligence-v11` is now the execution trunk. The older wisdom-platform workspace may be used only as a reference library for proven ideas and migration material. New modules, tests, cloud workflows, desktop delivery, search intelligence, project-library rules, audit records, and license behavior must be implemented in this repository and must follow v11 APIs and risk gates.
+
