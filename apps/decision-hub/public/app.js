@@ -449,6 +449,11 @@ function renderSearch(data = {}) {
   const readiness = data.source_readiness || {};
   const confirmationGate = data.project_confirmation_gate || execution.project_confirmation_gate || {};
   const backendSources = data.sources || [];
+  const expansion = data.search_expansion || {};
+  const sourceStatus = data.source_status || [];
+  const resultCategories = data.result_categories || {};
+  const candidateProjects = data.candidate_projects || resultCategories.projects || [];
+  const briefDraft = data.project_brief_draft || {};
   const sourceGroups = results.length ? results : backendSources.map((source) => ({
     source: source.source,
     ok: source.status !== "missing_configuration",
@@ -473,6 +478,95 @@ function renderSearch(data = {}) {
         <h4>阻断动作</h4>
         <ul class="risk-list">
           ${(execution.blocked_actions || []).map((item) => `<li>${escapeHtml(item)}</li>`).join("")}
+        </ul>
+      </article>
+    `
+    : "";
+
+  const expansionTerms = [
+    ...(expansion.chinese_terms || []),
+    ...(expansion.english_terms || []),
+    ...(expansion.russian_terms || []),
+    ...(expansion.industry_terms || []),
+    ...(expansion.risk_terms || []),
+  ];
+  const expansionHtml = expansionTerms.length
+    ? `
+      <article class="source-panel">
+        <h3>增强搜索词 <span class="badge">${escapeHtml(expansion.region_key || "region")}</span></h3>
+        <div class="keyword-cloud">
+          ${expansionTerms.slice(0, 32).map((term) => `<span>${escapeHtml(term)}</span>`).join("")}
+        </div>
+        ${(expansion.project_stage_terms || []).length ? `<p class="meta">项目阶段词: ${(expansion.project_stage_terms || []).map(escapeHtml).join(" / ")}</p>` : ""}
+        ${(expansion.platform_terms || []).length ? `<p class="meta">平台词: ${(expansion.platform_terms || []).map(escapeHtml).join(" / ")}</p>` : ""}
+      </article>
+    `
+    : "";
+
+  const sourceStatusHtml = sourceStatus.length
+    ? `
+      <article class="source-panel">
+        <h3>搜索源明细 <span class="badge">${sourceStatus.length} 个来源</span></h3>
+        ${sourceStatus.slice(0, 14).map((item) => `
+          <div class="result-row">
+            <strong>${escapeHtml(item.source)}</strong>
+            <p class="meta">${escapeHtml(item.status)} / ${escapeHtml(item.result_count ?? 0)} 条</p>
+            <p class="muted">${escapeHtml(item.reason)}</p>
+            <p class="muted">${escapeHtml(item.next_action)}</p>
+          </div>
+        `).join("")}
+      </article>
+    `
+    : "";
+
+  const categoryHtml = Object.keys(resultCategories).length
+    ? `
+      <article class="source-panel">
+        <h3>结果分类 <span class="badge">第一阶段</span></h3>
+        <div class="pipeline-grid">
+          ${Object.entries(resultCategories).map(([name, items]) => `
+            <div class="pipeline-card">
+              <span>${escapeHtml(name)}</span>
+              <strong>${escapeHtml(Array.isArray(items) ? items.length : 0)}</strong>
+              <p>${name === "official_sources" ? "优先补官方证据" : "按需下钻查看"}</p>
+            </div>
+          `).join("")}
+        </div>
+      </article>
+    `
+    : "";
+
+  const candidateHtml = candidateProjects.length
+    ? `
+      <article class="source-panel">
+        <h3>候选项目 <span class="badge">${candidateProjects.length} 条</span></h3>
+        ${candidateProjects.slice(0, 6).map((project) => `
+          <div class="result-row">
+            <strong>${escapeHtml(project.project_name || project.title || "未命名候选项目")}</strong>
+            <p class="meta">${escapeHtml(project.country || "")} / ${escapeHtml(project.sector || "")} / ${escapeHtml(project.stage_label || project.stage || "")}</p>
+            <p class="muted">官方来源: ${escapeHtml(project.official_source_status || project.confirmation_level || "待核验")} / 置信度: ${escapeHtml(project.confidence ?? 0)}</p>
+            <p class="muted">业主: ${escapeHtml(project.owner || "待官方证据确认")} / 开发者: ${escapeHtml(project.developer || "待官方证据确认")}</p>
+            ${(project.risk_flags || []).length ? `<ul class="risk-list">${project.risk_flags.map((item) => `<li>${escapeHtml(item)}</li>`).join("")}</ul>` : ""}
+          </div>
+        `).join("")}
+      </article>
+    `
+    : "";
+
+  const briefHtml = briefDraft.status
+    ? `
+      <article class="source-panel execution-panel">
+        <h3>项目简报草稿 <span class="badge">${escapeHtml(briefDraft.status)}</span></h3>
+        <p class="meta">${escapeHtml(briefDraft.summary || "")}</p>
+        <div class="pipeline-grid">
+          <div class="pipeline-card"><span>增强词</span><strong>${escapeHtml(briefDraft.enhanced_query_count ?? 0)}</strong><p>用于深度检索。</p></div>
+          <div class="pipeline-card"><span>候选项目</span><strong>${escapeHtml((briefDraft.candidate_projects || []).length)}</strong><p>未确认线索。</p></div>
+          <div class="pipeline-card"><span>官方状态</span><strong>${escapeHtml(briefDraft.official_source_status || "lead_only")}</strong><p>先补官方证据。</p></div>
+        </div>
+        <p class="muted">${escapeHtml(briefDraft.risk_notice || "")}</p>
+        <h4>下一步</h4>
+        <ul class="action-list">
+          ${(briefDraft.next_actions || []).map((item) => `<li>${escapeHtml(item)}</li>`).join("")}
         </ul>
       </article>
     `
@@ -550,7 +644,7 @@ function renderSearch(data = {}) {
       }).join("")
     : `<p class="empty">没有结果。请检查搜索源配置或稍后重试。</p>`;
 
-  qs("#searchResults").innerHTML = readinessHtml + gateHtml + executionHtml + planHtml + groupsHtml;
+  qs("#searchResults").innerHTML = expansionHtml + sourceStatusHtml + categoryHtml + candidateHtml + briefHtml + readinessHtml + gateHtml + executionHtml + planHtml + groupsHtml;
 }
 
 function evidencePayload() {

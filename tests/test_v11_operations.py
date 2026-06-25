@@ -169,6 +169,19 @@ class V11OperationsTests(unittest.TestCase):
         ):
             self.assertIn(endpoint, script)
 
+        for search_marker in (
+            "search_expansion",
+            "source_status",
+            "result_categories",
+            "candidate_projects",
+            "project_brief_draft",
+            "增强搜索词",
+            "搜索源明细",
+            "候选项目",
+            "项目简报草稿",
+        ):
+            self.assertIn(search_marker, script)
+
     def test_api_strict_license_blocks_core_endpoints(self) -> None:
         env = {
             "CLOUD_OS_REQUIRE_LICENSE": "1",
