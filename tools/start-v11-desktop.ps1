@@ -78,6 +78,12 @@ function Start-HiddenProcess {
   return $process
 }
 
+function New-EncodedPowerShellArguments {
+  param([string]$Command)
+  $encoded = [Convert]::ToBase64String([System.Text.Encoding]::Unicode.GetBytes($Command))
+  return @("-NoProfile", "-ExecutionPolicy", "Bypass", "-EncodedCommand", $encoded)
+}
+
 function Select-DecisionHubPort {
   param([int]$PreferredPort, [int]$FallbackStartPort, [int]$FallbackEndPort)
 
@@ -112,12 +118,8 @@ if (Test-HttpOk $ApiHealth) {
   Write-Host "Starting v11 API: $ApiUrl" -ForegroundColor Cyan
   $apiLog = Join-Path $LogDir "v11-api.log"
   $apiErr = Join-Path $LogDir "v11-api.err.log"
-  Start-HiddenProcess -FilePath "powershell.exe" -WorkingDirectory $Root -Arguments @(
-    "-NoProfile",
-    "-ExecutionPolicy", "Bypass",
-    "-Command",
-    "python -m uvicorn backend.api.main:app --host 127.0.0.1 --port $ApiPort *> '$apiLog' 2> '$apiErr'"
-  ) | Out-Null
+  $apiCommand = "python -m uvicorn backend.api.main:app --host 127.0.0.1 --port $ApiPort *> '$apiLog' 2> '$apiErr'"
+  Start-HiddenProcess -FilePath "powershell.exe" -WorkingDirectory $Root -Arguments (New-EncodedPowerShellArguments $apiCommand) | Out-Null
   if (!(Wait-HttpOk $ApiHealth 45)) {
     throw "v11 API did not become healthy within 45 seconds. Check $apiLog and $apiErr"
   }
@@ -136,12 +138,8 @@ if ($hubSelection.AlreadyRunning) {
   $hubRoot = Join-Path $Root "apps\decision-hub"
   $hubLog = Join-Path $LogDir "decision-hub-$HubPort.log"
   $hubErr = Join-Path $LogDir "decision-hub-$HubPort.err.log"
-  Start-HiddenProcess -FilePath "powershell.exe" -WorkingDirectory $hubRoot -Arguments @(
-    "-NoProfile",
-    "-ExecutionPolicy", "Bypass",
-    "-Command",
-    "& '.\server.ps1' -Port $HubPort *> '$hubLog' 2> '$hubErr'"
-  ) | Out-Null
+  $hubCommand = "& '.\server.ps1' -Port $HubPort *> '$hubLog' 2> '$hubErr'"
+  Start-HiddenProcess -FilePath "powershell.exe" -WorkingDirectory $hubRoot -Arguments (New-EncodedPowerShellArguments $hubCommand) | Out-Null
   if (!(Wait-HttpOk $HubHealth 30)) {
     throw "Decision Hub did not start within 30 seconds. Check $hubLog and $hubErr"
   }
