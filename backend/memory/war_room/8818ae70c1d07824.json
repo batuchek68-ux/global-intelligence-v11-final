@@ -1,7 +1,7 @@
 {
   "ok": true,
   "id": "8818ae70c1d07824",
-  "created_at": "2026-06-25T07:59:36.794361+00:00",
+  "created_at": "2026-06-25T10:22:24.685525+00:00",
   "mode": "industry_war_room",
   "objective": "哈萨克斯坦工程贸易项目：确认海关信息、项目负责人、招商价值、视频传播方案和下一步推进计划",
   "country": "Kazakhstan",
@@ -288,7 +288,7 @@
           "snippet": "Official source describes project owner, tender status, customs documents, engineering scope and investment opportunity.",
           "source_type": "government",
           "government_confirmed": true,
-          "collected_at": "2026-06-25T07:59:36.252068+00:00"
+          "collected_at": "2026-06-25T10:22:24.270525+00:00"
         }
       ],
       "evidence": [
@@ -299,7 +299,7 @@
           "snippet": "Official source describes project owner, tender status, customs documents, engineering scope and investment opportunity.",
           "source_type": "government",
           "government_confirmed": true,
-          "collected_at": "2026-06-25T07:59:36.252068+00:00"
+          "collected_at": "2026-06-25T10:22:24.270525+00:00"
         }
       ],
       "stakeholders": {
@@ -321,7 +321,7 @@
         "Human approval required before external outreach, quotation, commitment, or publication.",
         "Government source confirmation required before investment promotion use."
       ],
-      "updated_at": "2026-06-25T07:59:36.258062+00:00",
+      "updated_at": "2026-06-25T10:22:24.279526+00:00",
       "official_source_status": "official_procurement_supported",
       "project_record_status": "candidate_project",
       "verified_project_allowed": false,
@@ -389,6 +389,7 @@
           "Collect missing stage, owner, developer, customs, and procurement evidence"
         ],
         "blocked_actions": [
+          "正式招商发布",
           "formal investment-promotion publication",
           "customer or investor outreach",
           "quotation",
@@ -417,6 +418,7 @@
         "Collect missing stage, owner, developer, customs, and procurement evidence"
       ],
       "blocked_actions": [
+        "正式招商发布",
         "formal investment-promotion publication",
         "customer or investor outreach",
         "quotation",
@@ -495,7 +497,7 @@
     ],
     "quality_score": {
       "ok": true,
-      "created_at": "2026-06-25T07:59:36.778358+00:00",
+      "created_at": "2026-06-25T10:22:24.668531+00:00",
       "overall_score": 99,
       "verdict": "excellent",
       "dimensions": {
@@ -932,7 +934,7 @@
     },
     "tasks": [
       {
-        "id": "142def0321686381-trade",
+        "id": "e7fc690cec5c4608-trade",
         "role": "trade_lead",
         "role_label": "International trade lead",
         "title": "Verify customs, HS/tariff, payment terms, Incoterms, and logistics route.",
@@ -947,7 +949,7 @@
         "output": "internal_draft"
       },
       {
-        "id": "142def0321686381-research",
+        "id": "e7fc690cec5c4608-research",
         "role": "research_analyst",
         "role_label": "Research intelligence analyst",
         "title": "Collect government, procurement, academic, and library evidence; grade each source.",
@@ -962,7 +964,7 @@
         "output": "internal_draft"
       },
       {
-        "id": "142def0321686381-investment",
+        "id": "e7fc690cec5c4608-investment",
         "role": "investment_promotion_lead",
         "role_label": "Investment promotion lead",
         "title": "Map owner, developer, investor candidates, incentive policy, and project packaging gaps.",
@@ -976,7 +978,7 @@
         "output": "internal_draft"
       },
       {
-        "id": "142def0321686381-video",
+        "id": "e7fc690cec5c4608-video",
         "role": "video_media_producer",
         "role_label": "Video and media producer",
         "title": "Draft country-style video concept based on verified facts and comparable platform examples.",
@@ -990,7 +992,7 @@
         "output": "internal_draft"
       },
       {
-        "id": "142def0321686381-pm",
+        "id": "e7fc690cec5c4608-pm",
         "role": "project_manager",
         "role_label": "Project execution manager",
         "title": "Prepare meeting agenda, owner decision queue, deadlines, and next internal follow-up.",
@@ -1005,7 +1007,7 @@
         "output": "internal_draft"
       },
       {
-        "id": "142def0321686381-risk",
+        "id": "e7fc690cec5c4608-risk",
         "role": "risk_approval_officer",
         "role_label": "Risk and approval officer",
         "title": "Keep formal outreach, quotation, payment, contract, and public publishing blocked until approval.",
@@ -1023,7 +1025,7 @@
   },
   "quality_score": {
     "ok": true,
-    "created_at": "2026-06-25T07:59:36.794361+00:00",
+    "created_at": "2026-06-25T10:22:24.685525+00:00",
     "overall_score": 99,
     "verdict": "excellent",
     "dimensions": {
@@ -1114,7 +1116,7 @@
   },
   "operating_rule": "v11 works as a vertical industry project team: evidence, search verification, execution, media draft, score, and approval gate in one package.",
   "execution_queue": {
-    "id": "c07452f6afe165df",
+    "id": "bac3f120c1db4ec0",
     "summary": {
       "task_count": 31,
       "open_count": 22,
@@ -1124,7 +1126,7 @@
     },
     "tasks": [
       {
-        "id": "c07452f6afe165df-01",
+        "id": "bac3f120c1db4ec0-01",
         "role": "research_analyst",
         "task": "Run and record source evidence for query: 哈萨克斯坦工程贸易项目：确认海关信息、项目负责人、招商价值、视频传播方案和下一步推进计划 Kazakhstan official government site:gov.kz",
         "source": "search_confirmation.government_confirmation",
@@ -1142,7 +1144,7 @@
         "output": "evidence_record"
       },
       {
-        "id": "c07452f6afe165df-02",
+        "id": "bac3f120c1db4ec0-02",
         "role": "research_analyst",
         "task": "Run and record source evidence for query: 哈萨克斯坦工程贸易项目：确认海关信息、项目负责人、招商价值、视频传播方案和下一步推进计划 Kazakhstan official government site:primeminister.kz",
         "source": "search_confirmation.government_confirmation",
@@ -1160,7 +1162,7 @@
         "output": "evidence_record"
       },
       {
-        "id": "c07452f6afe165df-03",
+        "id": "bac3f120c1db4ec0-03",
         "role": "research_analyst",
         "task": "Run and record source evidence for query: 哈萨克斯坦工程贸易项目：确认海关信息、项目负责人、招商价值、视频传播方案和下一步推进计划 Kazakhstan official government site:invest.gov.kz",
         "source": "search_confirmation.government_confirmation",
@@ -1178,7 +1180,7 @@
         "output": "evidence_record"
       },
       {
-        "id": "c07452f6afe165df-04",
+        "id": "bac3f120c1db4ec0-04",
         "role": "research_analyst",
         "task": "Run and record source evidence for query: 哈萨克斯坦工程贸易项目：确认海关信息、项目负责人、招商价值、视频传播方案和下一步推进计划 Kazakhstan official government site:adilet.zan.kz",
         "source": "search_confirmation.government_confirmation",
@@ -1196,7 +1198,7 @@
         "output": "evidence_record"
       },
       {
-        "id": "c07452f6afe165df-05",
+        "id": "bac3f120c1db4ec0-05",
         "role": "research_analyst",
         "task": "Run and record source evidence for query: 哈萨克斯坦工程贸易项目：确认海关信息、项目负责人、招商价值、视频传播方案和下一步推进计划 Kazakhstan ministry site:gov.kz",
         "source": "search_confirmation.government_confirmation",
@@ -1214,7 +1216,7 @@
         "output": "evidence_record"
       },
       {
-        "id": "c07452f6afe165df-06",
+        "id": "bac3f120c1db4ec0-06",
         "role": "research_analyst",
         "task": "Run and record source evidence for query: 哈萨克斯坦工程贸易项目：确认海关信息、项目负责人、招商价值、视频传播方案和下一步推进计划 Kazakhstan ministry site:primeminister.kz",
         "source": "search_confirmation.government_confirmation",
@@ -1232,7 +1234,7 @@
         "output": "evidence_record"
       },
       {
-        "id": "c07452f6afe165df-07",
+        "id": "bac3f120c1db4ec0-07",
         "role": "research_analyst",
         "task": "Run and record source evidence for query: 哈萨克斯坦工程贸易项目：确认海关信息、项目负责人、招商价值、视频传播方案和下一步推进计划 Kazakhstan ministry site:invest.gov.kz",
         "source": "search_confirmation.government_confirmation",
@@ -1250,7 +1252,7 @@
         "output": "evidence_record"
       },
       {
-        "id": "c07452f6afe165df-08",
+        "id": "bac3f120c1db4ec0-08",
         "role": "research_analyst",
         "task": "Run and record source evidence for query: 哈萨克斯坦工程贸易项目：确认海关信息、项目负责人、招商价值、视频传播方案和下一步推进计划 Kazakhstan ministry site:adilet.zan.kz",
         "source": "search_confirmation.government_confirmation",
@@ -1268,7 +1270,7 @@
         "output": "evidence_record"
       },
       {
-        "id": "c07452f6afe165df-09",
+        "id": "bac3f120c1db4ec0-09",
         "role": "project_manager",
         "task": "Open official government and procurement search URLs from the highest priority plan.",
         "source": "project_execution.next_actions",
@@ -1295,7 +1297,7 @@
         "output": "project_followup_item"
       },
       {
-        "id": "c07452f6afe165df-10",
+        "id": "bac3f120c1db4ec0-10",
         "role": "project_manager",
         "task": "Attach official evidence with title, URL, snippet, source_type, and source date.",
         "source": "project_execution.next_actions",
@@ -1322,7 +1324,7 @@
         "output": "project_followup_item"
       },
       {
-        "id": "c07452f6afe165df-11",
+        "id": "bac3f120c1db4ec0-11",
         "role": "project_manager",
         "task": "Confirm project owner, developer, responsible office/person, tender status, and customs impact.",
         "source": "project_execution.next_actions",
@@ -1349,7 +1351,7 @@
         "output": "project_followup_item"
       },
       {
-        "id": "c07452f6afe165df-12",
+        "id": "bac3f120c1db4ec0-12",
         "role": "project_manager",
         "task": "Use the action board for team task assignment.",
         "source": "project_execution.next_actions",
