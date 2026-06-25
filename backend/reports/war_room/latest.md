@@ -1,14 +1,14 @@
-# v11 Industry War Room: Daily v11 international engineering trade, research intelligence, investment promotion, video, customs, and project execution operating package
+# v11 Industry War Room: 哈萨克斯坦工程贸易项目：确认海关信息、项目负责人、招商价值、视频传播方案和下一步推进计划
 
 DRAFT - internal operating package, not approved for external sending
 
 ## Executive Synthesis
 
 DRAFT - internal operating synthesis, not approved for external sending
-Objective: Daily v11 international engineering trade, research intelligence, investment promotion, video, customs, and project execution operating package
-Evidence status: weak_signal_only; confidence=37; official_sources=0.
+Objective: 哈萨克斯坦工程贸易项目：确认海关信息、项目负责人、招商价值、视频传播方案和下一步推进计划
+Evidence status: officially_supported; confidence=98; official_sources=1.
 Search confirmation gate: lead_only; confirmed_project_allowed=False.
-Promotion readiness: lead_only; internal_draft=False; external_use=False.
+Promotion readiness: evidence_review_required; internal_draft=False; external_use=False.
 Team answer quality: 99.
 Decision: treat unverified material as leads only. Build official evidence first, then project record, then internal promotion draft, then human approval before any external action.
 
@@ -19,7 +19,7 @@ Decision: treat unverified material as leads only. Build official evidence first
 
 ## Project Execution
 
-- Promotion readiness: lead_only
+- Promotion readiness: evidence_review_required
 - External use approved: False
 
 ## Team Roles
@@ -42,30 +42,30 @@ Decision: treat unverified material as leads only. Build official evidence first
 
 ## Execution Queue
 
-- Tasks: 32; open=22; blocked=10; approval=13
-- dad2ee0d5c723530-01: research_analyst | open | Run and record source evidence for query: Daily v11 international engineering trade, research intelligence, investment promotion, video, customs, and project execution operating package Central Asia official government site:gov.kz
-- dad2ee0d5c723530-02: research_analyst | open | Run and record source evidence for query: Daily v11 international engineering trade, research intelligence, investment promotion, video, customs, and project execution operating package Central Asia official government site:gov.uz
-- dad2ee0d5c723530-03: research_analyst | open | Run and record source evidence for query: Daily v11 international engineering trade, research intelligence, investment promotion, video, customs, and project execution operating package Central Asia official government site:gov.kg
-- dad2ee0d5c723530-04: research_analyst | open | Run and record source evidence for query: Daily v11 international engineering trade, research intelligence, investment promotion, video, customs, and project execution operating package Central Asia official government site:tajinvest.tj
-- dad2ee0d5c723530-05: research_analyst | open | Run and record source evidence for query: Daily v11 international engineering trade, research intelligence, investment promotion, video, customs, and project execution operating package Central Asia ministry site:gov.kz
-- dad2ee0d5c723530-06: research_analyst | open | Run and record source evidence for query: Daily v11 international engineering trade, research intelligence, investment promotion, video, customs, and project execution operating package Central Asia ministry site:gov.uz
-- dad2ee0d5c723530-07: research_analyst | open | Run and record source evidence for query: Daily v11 international engineering trade, research intelligence, investment promotion, video, customs, and project execution operating package Central Asia ministry site:gov.kg
-- dad2ee0d5c723530-08: research_analyst | open | Run and record source evidence for query: Daily v11 international engineering trade, research intelligence, investment promotion, video, customs, and project execution operating package Central Asia ministry site:tajinvest.tj
-- dad2ee0d5c723530-09: risk_approval_officer | blocked | Upgrade evidence from lead-only or partial support to official confirmation before project confirmation.
-- dad2ee0d5c723530-10: project_manager | open | Open official government and procurement search URLs from the highest priority plan.
-- dad2ee0d5c723530-11: project_manager | open | Attach official evidence with title, URL, snippet, source_type, and source date.
-- dad2ee0d5c723530-12: project_manager | open | Confirm project owner, developer, responsible office/person, tender status, and customs impact.
+- Tasks: 31; open=22; blocked=9; approval=12
+- c07452f6afe165df-01: research_analyst | open | Run and record source evidence for query: 哈萨克斯坦工程贸易项目：确认海关信息、项目负责人、招商价值、视频传播方案和下一步推进计划 Kazakhstan official government site:gov.kz
+- c07452f6afe165df-02: research_analyst | open | Run and record source evidence for query: 哈萨克斯坦工程贸易项目：确认海关信息、项目负责人、招商价值、视频传播方案和下一步推进计划 Kazakhstan official government site:primeminister.kz
+- c07452f6afe165df-03: research_analyst | open | Run and record source evidence for query: 哈萨克斯坦工程贸易项目：确认海关信息、项目负责人、招商价值、视频传播方案和下一步推进计划 Kazakhstan official government site:invest.gov.kz
+- c07452f6afe165df-04: research_analyst | open | Run and record source evidence for query: 哈萨克斯坦工程贸易项目：确认海关信息、项目负责人、招商价值、视频传播方案和下一步推进计划 Kazakhstan official government site:adilet.zan.kz
+- c07452f6afe165df-05: research_analyst | open | Run and record source evidence for query: 哈萨克斯坦工程贸易项目：确认海关信息、项目负责人、招商价值、视频传播方案和下一步推进计划 Kazakhstan ministry site:gov.kz
+- c07452f6afe165df-06: research_analyst | open | Run and record source evidence for query: 哈萨克斯坦工程贸易项目：确认海关信息、项目负责人、招商价值、视频传播方案和下一步推进计划 Kazakhstan ministry site:primeminister.kz
+- c07452f6afe165df-07: research_analyst | open | Run and record source evidence for query: 哈萨克斯坦工程贸易项目：确认海关信息、项目负责人、招商价值、视频传播方案和下一步推进计划 Kazakhstan ministry site:invest.gov.kz
+- c07452f6afe165df-08: research_analyst | open | Run and record source evidence for query: 哈萨克斯坦工程贸易项目：确认海关信息、项目负责人、招商价值、视频传播方案和下一步推进计划 Kazakhstan ministry site:adilet.zan.kz
+- c07452f6afe165df-09: project_manager | open | Open official government and procurement search URLs from the highest priority plan.
+- c07452f6afe165df-10: project_manager | open | Attach official evidence with title, URL, snippet, source_type, and source date.
+- c07452f6afe165df-11: project_manager | open | Confirm project owner, developer, responsible office/person, tender status, and customs impact.
+- c07452f6afe165df-12: project_manager | open | Use the action board for team task assignment.
 
 ## Video Center
 
-- YouTube: Indonesia infrastructure Daily v11 international engineering trade, research intelligence, investment promotion, video, customs, and project execution operating package case study short video
-- TikTok: Indonesia infrastructure Daily v11 international engineering trade, research intelligence, investment promotion, video, customs, and project execution operating package case study short video
-- Douyin: Indonesia infrastructure Daily v11 international engineering trade, research intelligence, investment promotion, video, customs, and project execution operating package case study short video
-- Google Video: Indonesia infrastructure Daily v11 international engineering trade, research intelligence, investment promotion, video, customs, and project execution operating package case study short video
-- YouTube: Indonesia infrastructure Daily v11 international engineering trade, research intelligence, investment promotion, video, customs, and project execution operating package project progress short video
-- TikTok: Indonesia infrastructure Daily v11 international engineering trade, research intelligence, investment promotion, video, customs, and project execution operating package project progress short video
-- Douyin: Indonesia infrastructure Daily v11 international engineering trade, research intelligence, investment promotion, video, customs, and project execution operating package project progress short video
-- Google Video: Indonesia infrastructure Daily v11 international engineering trade, research intelligence, investment promotion, video, customs, and project execution operating package project progress short video
+- YouTube: Kazakhstan infrastructure 哈萨克斯坦工程贸易项目：确认海关信息、项目负责人、招商价值、视频传播方案和下一步推进计划 case study short video
+- TikTok: Kazakhstan infrastructure 哈萨克斯坦工程贸易项目：确认海关信息、项目负责人、招商价值、视频传播方案和下一步推进计划 case study short video
+- Douyin: Kazakhstan infrastructure 哈萨克斯坦工程贸易项目：确认海关信息、项目负责人、招商价值、视频传播方案和下一步推进计划 case study short video
+- Google Video: Kazakhstan infrastructure 哈萨克斯坦工程贸易项目：确认海关信息、项目负责人、招商价值、视频传播方案和下一步推进计划 case study short video
+- YouTube: Kazakhstan infrastructure 哈萨克斯坦工程贸易项目：确认海关信息、项目负责人、招商价值、视频传播方案和下一步推进计划 project progress short video
+- TikTok: Kazakhstan infrastructure 哈萨克斯坦工程贸易项目：确认海关信息、项目负责人、招商价值、视频传播方案和下一步推进计划 project progress short video
+- Douyin: Kazakhstan infrastructure 哈萨克斯坦工程贸易项目：确认海关信息、项目负责人、招商价值、视频传播方案和下一步推进计划 project progress short video
+- Google Video: Kazakhstan infrastructure 哈萨克斯坦工程贸易项目：确认海关信息、项目负责人、招商价值、视频传播方案和下一步推进计划 project progress short video
 
 ## Quality
 
