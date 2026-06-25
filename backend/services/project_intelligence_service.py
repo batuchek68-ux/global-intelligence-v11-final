@@ -356,14 +356,28 @@ def assess_promotion_readiness(record: dict[str, Any]) -> dict[str, Any]:
     """Classify whether a project can move from lead to investment-promotion work."""
     confidence = int(record.get("confidence") or 0)
     category = str(record.get("category") or "")
-    has_official = bool(record.get("government_sources"))
-    has_owner = bool(record.get("owner_candidates"))
-    has_developer = bool(record.get("developer_candidates"))
+    confirmation_level = str(record.get("confirmation_level") or "")
     gate = record.get("candidate_to_verified_gate") or {}
     if not isinstance(gate, dict):
         gate = {}
-    verified_project_allowed = bool(gate.get("verified_project_allowed"))
     official_source_status = str(gate.get("official_source_status") or record.get("official_source_status") or "")
+    has_official = (
+        bool(record.get("government_sources"))
+        or confirmation_level == "government_confirmed"
+        or official_source_status
+        in {"official_government_supported", "official_procurement_supported", "verified_project"}
+    )
+    has_owner = bool(record.get("owner_candidates"))
+    has_developer = bool(record.get("developer_candidates"))
+    verified_project_allowed = bool(gate.get("verified_project_allowed"))
+    if not verified_project_allowed:
+        verified_project_allowed = (
+            has_official
+            and confidence >= 90
+            and category in {"planned", "under_construction"}
+            and has_owner
+            and has_developer
+        )
     reasons: list[str] = []
 
     if not has_official:
