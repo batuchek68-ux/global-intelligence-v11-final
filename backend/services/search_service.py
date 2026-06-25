@@ -253,6 +253,147 @@ def build_search_execution_brief(query: str, enriched: dict[str, Any], project_q
     }
 
 
+def build_search_expansion(query: str, enriched: dict[str, Any]) -> dict[str, Any]:
+    region = enriched.get("region_key") or "central_asia"
+    zh_terms = [
+        "\u54c8\u8428\u514b\u65af\u5766 \u5de5\u7a0b \u62db\u6807",
+        "\u54c8\u8428\u514b\u65af\u5766 EPC \u9879\u76ee",
+        "\u54c8\u8428\u514b\u65af\u5766 \u57fa\u7840\u8bbe\u65bd \u6295\u8d44",
+        "\u54c8\u8428\u514b\u65af\u5766 \u5728\u5efa\u9879\u76ee",
+        "\u54c8\u8428\u514b\u65af\u5766 \u8ba1\u5212\u5efa\u8bbe\u9879\u76ee",
+    ]
+    en_terms = [
+        "Kazakhstan EPC project",
+        "Kazakhstan infrastructure tender",
+        "Kazakhstan public procurement engineering",
+        "Kazakhstan mining infrastructure",
+        "Kazakhstan logistics project owner developer",
+        "Central Asia EPC opportunity",
+    ]
+    ru_terms = [
+        "\u041a\u0430\u0437\u0430\u0445\u0441\u0442\u0430\u043d \u0438\u043d\u0444\u0440\u0430\u0441\u0442\u0440\u0443\u043a\u0442\u0443\u0440\u043d\u044b\u0439 \u043f\u0440\u043e\u0435\u043a\u0442",
+        "\u041a\u0430\u0437\u0430\u0445\u0441\u0442\u0430\u043d \u0442\u0435\u043d\u0434\u0435\u0440 \u0441\u0442\u0440\u043e\u0438\u0442\u0435\u043b\u044c\u0441\u0442\u0432\u043e",
+        "\u041a\u0430\u0437\u0430\u0445\u0441\u0442\u0430\u043d EPC \u043f\u043e\u0434\u0440\u044f\u0434\u0447\u0438\u043a",
+    ]
+    return {
+        "original_query": query,
+        "region_key": region,
+        "chinese_terms": zh_terms,
+        "english_terms": en_terms,
+        "russian_terms": ru_terms,
+        "industry_terms": [
+            "EPC",
+            "public tender",
+            "mining infrastructure",
+            "railway logistics",
+            "port logistics",
+            "industrial park",
+        ],
+        "risk_terms": ["sanctions compliance", "export control", "customs clearance", "payment risk"],
+        "project_stage_terms": ["planned project", "under construction", "tender announced", "contract awarded"],
+        "platform_terms": ["government website", "procurement portal", "YouTube", "TikTok", "Douyin", "Telegram"],
+        "all_terms": list(dict.fromkeys((enriched.get("queries") or [])[:12] + zh_terms + en_terms + ru_terms)),
+    }
+
+
+def build_source_status(sources: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    status_rows = []
+    for source in sources:
+        status = str(source.get("status") or "unknown")
+        if status == "configured":
+            reason = source.get("note") or "Source is configured; live adapter may fetch results at runtime."
+            next_action = "Run live adapter and attach returned evidence before confirming facts."
+        elif status == "manual_search_url":
+            reason = "Manual search URL is available. No live API result has been collected yet."
+            next_action = "Open the URL, collect official title/url/date/snippet, then verify evidence."
+        elif status == "missing_configuration":
+            reason = source.get("reason") or "Missing configuration."
+            next_action = "Configure the required key or use the provided manual search URLs."
+        else:
+            reason = source.get("reason") or "Source status is not classified."
+            next_action = "Review source adapter status before relying on results."
+        status_rows.append(
+            {
+                "source": source.get("source"),
+                "status": status,
+                "result_count": len(source.get("results") or []),
+                "reason": reason,
+                "next_action": next_action,
+            }
+        )
+    return status_rows
+
+
+def build_candidate_projects(query: str, enriched: dict[str, Any], project_queries: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    official_queries = [item for item in project_queries if item.get("intent") == "government_confirmation"][:3]
+    tender_queries = [item for item in project_queries if item.get("intent") == "procurement_tender"][:3]
+    return [
+        {
+            "project_name": f"{query} - planned project lead",
+            "country": "Kazakhstan" if enriched.get("region_key") == "kazakhstan" else "Central Asia",
+            "sector": "engineering trade / infrastructure",
+            "stage": "candidate_planned",
+            "stage_label": "\u8ba1\u5212\u5efa\u8bbe\u5019\u9009\u9879\u76ee",
+            "official_source_status": "not_verified_search_plan_only",
+            "owner": "unknown_until_official_evidence_attached",
+            "developer": "unknown_until_official_evidence_attached",
+            "confidence": 30,
+            "risk_flags": [
+                "Search plan only; do not treat as a confirmed project.",
+                "Government or procurement evidence is required before investment-promotion use.",
+            ],
+            "next_actions": official_queries + tender_queries,
+        }
+    ]
+
+
+def build_result_categories(
+    sources: list[dict[str, Any]],
+    project_queries: list[dict[str, Any]],
+    candidate_projects: list[dict[str, Any]],
+) -> dict[str, Any]:
+    return {
+        "projects": candidate_projects,
+        "official_sources": [item for item in project_queries if item.get("intent") == "government_confirmation"][:8],
+        "tenders": [item for item in project_queries if item.get("intent") == "procurement_tender"][:8],
+        "risks": [item for item in project_queries if item.get("intent") == "customs_trade"][:8],
+        "background": [item for item in project_queries if item.get("intent") == "project_development_intelligence"][:8],
+        "social_video": [item for item in sources if item.get("source_type") in {"social_signal", "video_signal"}],
+        "research": [item for item in sources if item.get("source_type") in {"academic", "library"}],
+    }
+
+
+def build_project_brief_draft(
+    query: str,
+    search_expansion: dict[str, Any],
+    source_status: list[dict[str, Any]],
+    candidate_projects: list[dict[str, Any]],
+    confirmation_gate: dict[str, Any],
+) -> dict[str, Any]:
+    missing = [item for item in source_status if item["status"] == "missing_configuration"]
+    return {
+        "title": f"Search intelligence brief draft: {query}",
+        "status": "draft_not_approved_for_external_use",
+        "search_topic": query,
+        "summary": "Search expansion and source readiness are prepared. Candidate projects remain leads until official evidence is attached.",
+        "enhanced_query_count": len(search_expansion.get("all_terms") or []),
+        "source_summary": {
+            "total": len(source_status),
+            "missing_configuration": len(missing),
+            "manual_sources": len([item for item in source_status if item["status"] == "manual_search_url"]),
+        },
+        "candidate_projects": candidate_projects,
+        "official_source_status": confirmation_gate.get("status"),
+        "risk_notice": "Do not publish, quote, outreach, or create confirmed project records before official evidence and human approval.",
+        "next_actions": [
+            "Open government and procurement search URLs first.",
+            "Attach official evidence items with title, URL, date, and snippet.",
+            "Verify project stage, owner, developer, tender status, customs impact, and risk flags.",
+            "Generate feasibility report only as an internal draft until evidence is sufficient.",
+        ],
+    }
+
+
 def multi_source_search(query: str) -> dict[str, Any]:
     enriched = enrich_query(query)
     primary_query = enriched["queries"][0] if enriched["queries"] else query
@@ -297,12 +438,28 @@ def multi_source_search(query: str) -> dict[str, Any]:
     )
 
     execution_brief = build_search_execution_brief(query, enriched, project_queries)
+    search_expansion = build_search_expansion(query, enriched)
+    source_status = build_source_status(sources)
+    candidate_projects = build_candidate_projects(query, enriched, project_queries)
+    result_categories = build_result_categories(sources, project_queries, candidate_projects)
+    project_brief_draft = build_project_brief_draft(
+        query,
+        search_expansion,
+        source_status,
+        candidate_projects,
+        execution_brief["project_confirmation_gate"],
+    )
     return {
         "ok": True,
         "query": query,
+        "search_expansion": search_expansion,
         "enrichment": enriched,
+        "source_status": source_status,
         "source_readiness": build_source_readiness(sources),
+        "result_categories": result_categories,
+        "candidate_projects": candidate_projects,
         "project_search_plan": project_queries,
+        "project_brief_draft": project_brief_draft,
         "evidence_execution_brief": execution_brief,
         "project_confirmation_gate": execution_brief["project_confirmation_gate"],
         "sources": sources,

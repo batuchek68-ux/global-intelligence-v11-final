@@ -1145,6 +1145,21 @@ class V11OperationsTests(unittest.TestCase):
         self.assertIn("project_confirmation_gate", search_data["evidence_execution_brief"])
         self.assertIn("Attach collected official evidence", " ".join(search_data["evidence_execution_brief"]["project_execution"]["next_actions"]))
         self.assertIn("报价", search_data["evidence_execution_brief"]["blocked_actions"])
+        self.assertIn("search_expansion", search_data)
+        self.assertIn("source_status", search_data)
+        self.assertIn("result_categories", search_data)
+        self.assertIn("candidate_projects", search_data)
+        self.assertIn("project_brief_draft", search_data)
+        self.assertIn("Kazakhstan EPC project", search_data["search_expansion"]["english_terms"])
+        self.assertTrue(search_data["search_expansion"]["russian_terms"])
+        self.assertTrue(any(item["source"] == "Bing" for item in search_data["source_status"]))
+        self.assertTrue(all("reason" in item and "next_action" in item for item in search_data["source_status"]))
+        self.assertIn("official_sources", search_data["result_categories"])
+        self.assertIn("social_video", search_data["result_categories"])
+        self.assertTrue(search_data["candidate_projects"])
+        self.assertEqual(search_data["candidate_projects"][0]["official_source_status"], "not_verified_search_plan_only")
+        self.assertEqual(search_data["project_brief_draft"]["status"], "draft_not_approved_for_external_use")
+        self.assertIn("official evidence", search_data["project_brief_draft"]["risk_notice"])
 
         with tempfile.TemporaryDirectory() as temp:
             env = {
