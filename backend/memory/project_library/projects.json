@@ -17,7 +17,7 @@
         "snippet": "Official source describes owner, tender status, customs documents and engineering scope.",
         "source_type": "government",
         "government_confirmed": true,
-        "collected_at": "2026-06-25T09:13:34.532920+00:00"
+        "collected_at": "2026-06-25T11:17:48.585328+00:00"
       }
     ],
     "evidence": [
@@ -28,7 +28,7 @@
         "snippet": "Official source describes owner, tender status, customs documents and engineering scope.",
         "source_type": "government",
         "government_confirmed": true,
-        "collected_at": "2026-06-25T09:13:34.532920+00:00"
+        "collected_at": "2026-06-25T11:17:48.585328+00:00"
       }
     ],
     "stakeholders": {
@@ -45,7 +45,7 @@
       "Human approval required before external outreach, quotation, commitment, or publication.",
       "Government source confirmation required before investment promotion use."
     ],
-    "updated_at": "2026-06-25T09:13:34.534918+00:00",
+    "updated_at": "2026-06-25T11:17:48.585851+00:00",
     "official_source_status": "official_procurement_supported",
     "project_record_status": "candidate_project",
     "verified_project_allowed": false,
@@ -113,6 +113,7 @@
         "Collect missing stage, owner, developer, customs, and procurement evidence"
       ],
       "blocked_actions": [
+        "正式招商发布",
         "formal investment-promotion publication",
         "customer or investor outreach",
         "quotation",
@@ -143,12 +144,12 @@
     "evidence": [
       {
         "title": "Daily cycle operating evidence",
-        "url": "C:\\Users\\Surface\\AppData\\Local\\Temp\\tmp2in3layz\\memory\\last_run.json",
+        "url": "/home/runner/work/global-intelligence-v11-final/global-intelligence-v11-final/backend/memory/last_run.json",
         "domain": "",
         "snippet": "daily operating cycle, project cases, evidence dossiers, action boards, video center, benchmark and owner approval queue",
         "source_type": "internal",
         "government_confirmed": false,
-        "collected_at": "2026-06-25T09:15:23.611317+00:00"
+        "collected_at": "2026-06-25T11:17:49.759418+00:00"
       }
     ],
     "stakeholders": {
@@ -165,7 +166,7 @@
       "Human approval required before external outreach, quotation, commitment, or publication.",
       "Government source confirmation required before investment promotion use."
     ],
-    "updated_at": "2026-06-25T09:15:23.613318+00:00",
+    "updated_at": "2026-06-25T11:17:49.759831+00:00",
     "official_source_status": "candidate_unverified",
     "project_record_status": "candidate_project",
     "verified_project_allowed": false,
@@ -235,6 +236,7 @@
         "Do not use as an investment-promotion project"
       ],
       "blocked_actions": [
+        "正式招商发布",
         "formal investment-promotion publication",
         "customer or investor outreach",
         "quotation",
