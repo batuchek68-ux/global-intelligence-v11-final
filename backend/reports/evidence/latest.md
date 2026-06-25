@@ -2,7 +2,7 @@
 
 DRAFT - internal verification record, not approved for external sending
 
-- Project: Kazakhstan logistics hub
+- Project: Kazakhstan EPC Trade Opportunity
 - Country: Kazakhstan
 - Status: officially_supported
 - Confidence: 98
@@ -18,7 +18,7 @@ DRAFT - internal verification record, not approved for external sending
 
 ## Evidence Items
 
-- T1 | 100 | Official procurement | Government procurement project page
+- T1 | 100 | Official government | Government procurement project page
   https://goszakup.gov.kz/example-project
 
 ## Next Verification Steps
