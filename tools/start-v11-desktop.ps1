@@ -2,6 +2,7 @@ param(
   [int]$ApiPort = 8000,
   [int]$HubPort = 8787,
   [int]$FallbackHubPort = 8788,
+  [int]$MaxFallbackHubPort = 8799,
   [switch]$NoOpen
 )
 
@@ -43,6 +44,32 @@ function Test-PortListening {
   }
 }
 
+function Select-DecisionHubPort {
+  param([int]$PreferredPort, [int]$FallbackStartPort, [int]$FallbackEndPort)
+
+  $preferredUrl = "http://127.0.0.1:$PreferredPort/"
+  if (Test-HttpOk $preferredUrl) {
+    return @{ Port = $PreferredPort; Url = $preferredUrl; AlreadyRunning = $true }
+  }
+  if (!(Test-PortListening $PreferredPort)) {
+    return @{ Port = $PreferredPort; Url = $preferredUrl; AlreadyRunning = $false }
+  }
+
+  Write-Host "Decision Hub port $PreferredPort is occupied but not responding. Looking for a free fallback port." -ForegroundColor Yellow
+  for ($port = $FallbackStartPort; $port -le $FallbackEndPort; $port++) {
+    $url = "http://127.0.0.1:$port/"
+    if (Test-HttpOk $url) {
+      return @{ Port = $port; Url = $url; AlreadyRunning = $true }
+    }
+    if (!(Test-PortListening $port)) {
+      return @{ Port = $port; Url = $url; AlreadyRunning = $false }
+    }
+    Write-Host "Decision Hub fallback port $port is occupied but not responding. Trying next port." -ForegroundColor Yellow
+  }
+
+  throw "No available Decision Hub port found in $FallbackStartPort-$FallbackEndPort."
+}
+
 Set-Location $Root
 
 if (Test-HttpOk $ApiHealth) {
@@ -63,34 +90,28 @@ if (Test-HttpOk $ApiHealth) {
   Write-Host "v11 API is healthy: $ApiUrl" -ForegroundColor Green
 }
 
-if (Test-HttpOk $HubHealth) {
+$hubSelection = Select-DecisionHubPort $HubPort $FallbackHubPort $MaxFallbackHubPort
+$HubPort = [int]$hubSelection.Port
+$HubUrl = [string]$hubSelection.Url
+$HubHealth = $HubUrl
+
+if ($hubSelection.AlreadyRunning) {
   Write-Host "Decision Hub is already running: $HubUrl" -ForegroundColor Green
 } else {
-  if (Test-PortListening $HubPort) {
-    Write-Host "Decision Hub port $HubPort is occupied but not responding. Trying fallback port $FallbackHubPort." -ForegroundColor Yellow
-    $HubPort = $FallbackHubPort
-    $HubUrl = "http://127.0.0.1:$HubPort/"
-    $HubHealth = $HubUrl
+  Write-Host "Starting Decision Hub: $HubUrl" -ForegroundColor Cyan
+  $hubRoot = Join-Path $Root "apps\decision-hub"
+  $hubLog = Join-Path $LogDir "decision-hub-$HubPort.log"
+  $hubErr = Join-Path $LogDir "decision-hub-$HubPort.err.log"
+  Start-Process -FilePath "powershell.exe" -WindowStyle Hidden -WorkingDirectory $hubRoot -ArgumentList @(
+    "-NoProfile",
+    "-ExecutionPolicy", "Bypass",
+    "-File", ".\server.ps1",
+    "-Port", "$HubPort"
+  ) -RedirectStandardOutput $hubLog -RedirectStandardError $hubErr | Out-Null
+  if (!(Wait-HttpOk $HubHealth 30)) {
+    throw "Decision Hub did not start within 30 seconds. Check $hubLog and $hubErr"
   }
-
-  if (Test-HttpOk $HubHealth) {
-    Write-Host "Decision Hub is already running: $HubUrl" -ForegroundColor Green
-  } else {
-    Write-Host "Starting Decision Hub: $HubUrl" -ForegroundColor Cyan
-    $hubRoot = Join-Path $Root "apps\decision-hub"
-    $hubLog = Join-Path $LogDir "decision-hub-$HubPort.log"
-    $hubErr = Join-Path $LogDir "decision-hub-$HubPort.err.log"
-    Start-Process -FilePath "powershell.exe" -WindowStyle Hidden -WorkingDirectory $hubRoot -ArgumentList @(
-      "-NoProfile",
-      "-ExecutionPolicy", "Bypass",
-      "-File", ".\server.ps1",
-      "-Port", "$HubPort"
-    ) -RedirectStandardOutput $hubLog -RedirectStandardError $hubErr | Out-Null
-    if (!(Wait-HttpOk $HubHealth 30)) {
-      throw "Decision Hub did not start within 30 seconds. Check $hubLog and $hubErr"
-    }
-    Write-Host "Decision Hub is ready: $HubUrl" -ForegroundColor Green
-  }
+  Write-Host "Decision Hub is ready: $HubUrl" -ForegroundColor Green
 }
 
 if (!$NoOpen) {
