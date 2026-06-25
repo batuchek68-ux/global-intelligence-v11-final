@@ -1,8 +1,8 @@
 {
   "ok": true,
-  "id": "1d37bb889c185474",
-  "created_at": "2026-06-25T09:15:49.205557+00:00",
-  "project": "Kazakhstan logistics hub",
+  "id": "74ecebe840eb6d0f",
+  "created_at": "2026-06-25T10:21:47.821554+00:00",
+  "project": "Kazakhstan EPC Trade Opportunity",
   "country": "Kazakhstan",
   "claim": "Kazakhstan logistics EPC project owner and customs documents are confirmed",
   "verification_status": "officially_supported",
@@ -23,16 +23,16 @@
       "title": "Government procurement project page",
       "url": "https://goszakup.gov.kz/example-project",
       "domain": "goszakup.gov.kz",
-      "source_type": "procurement",
-      "source_label": "Official procurement",
+      "source_type": "government",
+      "source_label": "Official government",
       "tier": 1,
       "score": 100,
-      "snippet": "Official procurement page describes project owner, EPC contractor scope and customs documents.",
+      "snippet": "Official procurement page describes project owner, tender status, EPC contractor scope, customs documents and timeline.",
       "high_risk_hits": [
         "contract",
         "customs"
       ],
-      "collected_at": "2026-06-25T09:15:49.205557+00:00"
+      "collected_at": "2026-06-25T10:21:47.820555+00:00"
     }
   ],
   "decision_rule": "Official government/customs/procurement evidence is required before project confirmation, investment promotion, quotation, customer commitment, or public publishing.",
