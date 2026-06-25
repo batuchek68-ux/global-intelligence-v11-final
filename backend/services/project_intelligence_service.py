@@ -81,6 +81,21 @@ ROLE_PATTERNS = {
     "contact_person": ["project manager", "contact person", "responsible person", "负责人", "联系人"],
 }
 
+
+TIER1_SOURCE_TYPES = {"government", "customs", "procurement", "regulator", "official", "gov"}
+TIER2_SOURCE_TYPES = {"official_company", "company", "academic", "library"}
+WEAK_SIGNAL_SOURCE_TYPES = {"social", "social_signal", "video", "video_signal", "forum"}
+PROCUREMENT_HINTS = ("procurement", "tender", "goszakup", "bid", "award", "contract award")
+OFFICIAL_SOURCE_STATUSES = {
+    "search_plan_only",
+    "candidate_unverified",
+    "official_government_supported",
+    "official_procurement_supported",
+    "official_company_supported",
+    "verified_project",
+    "weak_signal_only",
+}
+
 def _now_iso() -> str:
     return datetime.now(timezone.utc).isoformat()
 
@@ -228,58 +243,172 @@ def _normalize_evidence_items(evidence_items: list[dict[str, Any]], country: str
     return normalized
 
 
+def _source_type(item: dict[str, Any]) -> str:
+    return str(item.get("source_type") or item.get("source") or "").strip().lower()
+
+
+def _is_procurement_source(item: dict[str, Any]) -> bool:
+    source_type = _source_type(item)
+    combined = " ".join(
+        str(item.get(field) or "") for field in ("url", "domain", "title", "snippet")
+    ).lower()
+    return source_type == "procurement" or any(hint.lower() in combined for hint in PROCUREMENT_HINTS)
+
+
+def _build_evidence_grade_summary(evidence: list[dict[str, Any]]) -> dict[str, Any]:
+    tier1: list[dict[str, Any]] = []
+    tier2: list[dict[str, Any]] = []
+    weak: list[dict[str, Any]] = []
+    unknown: list[dict[str, Any]] = []
+    by_source_type: dict[str, int] = {}
+
+    for item in evidence:
+        source_type = _source_type(item) or "unknown"
+        by_source_type[source_type] = by_source_type.get(source_type, 0) + 1
+        if item.get("government_confirmed") or source_type in TIER1_SOURCE_TYPES or _is_procurement_source(item):
+            tier1.append(item)
+        elif source_type in TIER2_SOURCE_TYPES:
+            tier2.append(item)
+        elif source_type in WEAK_SIGNAL_SOURCE_TYPES:
+            weak.append(item)
+        else:
+            unknown.append(item)
+
+    return {
+        "tier1_official_sources": len(tier1),
+        "tier2_supporting_sources": len(tier2),
+        "weak_signal_sources": len(weak),
+        "unknown_sources": len(unknown),
+        "by_source_type": by_source_type,
+        "rules": {
+            "tier1": "Government, customs, regulator, or official procurement evidence can confirm the project when stage and stakeholders are also present.",
+            "tier2": "Official company or academic evidence can support screening but cannot verify a project by itself.",
+            "weak": "Social, forum, and video sources are attention signals only and never verify a project.",
+        },
+    }
+
+
+def build_candidate_to_verified_gate(record: dict[str, Any]) -> dict[str, Any]:
+    evidence = [item for item in record.get("evidence") or [] if isinstance(item, dict)]
+    category = str(record.get("category") or "")
+    confidence = int(record.get("confidence") or 0)
+    owner_candidates = [item for item in record.get("owner_candidates") or [] if item]
+    developer_candidates = [item for item in record.get("developer_candidates") or [] if item]
+    tier1_sources = [
+        item
+        for item in evidence
+        if item.get("government_confirmed") or _source_type(item) in TIER1_SOURCE_TYPES or _is_procurement_source(item)
+    ]
+    procurement_sources = [item for item in tier1_sources if _is_procurement_source(item)]
+    tier2_sources = [item for item in evidence if _source_type(item) in TIER2_SOURCE_TYPES]
+    weak_sources = [item for item in evidence if _source_type(item) in WEAK_SIGNAL_SOURCE_TYPES]
+
+    missing: list[str] = []
+    if not tier1_sources:
+        missing.append("Missing Tier 1 official government, procurement, customs, regulator, or authority evidence.")
+    if category not in {"planned", "under_construction"}:
+        missing.append("Project stage must be planned or under_construction.")
+    if confidence < 90:
+        missing.append("Project confidence is below 90.")
+    if not owner_candidates:
+        missing.append("Owner or responsible authority candidate is missing.")
+    if not developer_candidates:
+        missing.append("Developer, investor, or contractor candidate is missing.")
+
+    verified_project_allowed = not missing
+    if verified_project_allowed:
+        official_source_status = "verified_project"
+    elif procurement_sources:
+        official_source_status = "official_procurement_supported"
+    elif tier1_sources:
+        official_source_status = "official_government_supported"
+    elif tier2_sources:
+        official_source_status = "official_company_supported"
+    elif weak_sources:
+        official_source_status = "weak_signal_only"
+    else:
+        official_source_status = "candidate_unverified"
+
+    return {
+        "status": "verified_project" if verified_project_allowed else "candidate_project",
+        "verified_project_allowed": verified_project_allowed,
+        "official_source_status": official_source_status,
+        "required_before_verified_project": [
+            "At least one Tier 1 official government, procurement, customs, regulator, or authority source is required.",
+            "Project stage must be planned or under_construction.",
+            "Confidence must be 90 or higher.",
+            "Owner or responsible authority candidate must be identified.",
+            "Developer, investor, or contractor candidate must be identified.",
+            "External promotion, quotation, publication, outreach, and commitment still require human approval.",
+        ],
+        "missing_requirements": missing,
+        "evidence_grade_summary": _build_evidence_grade_summary(evidence),
+        "evidence_rules": {
+            "government_official": "Tier 1: confirms project existence, stage, authority, and public authorization facts.",
+            "procurement_official": "Tier 1: confirms tender, procurement, award, EPC, or contractor status.",
+            "official_company": "Tier 2: supports developer or investor screening, but cannot verify a project alone.",
+            "social_video_forum": "Tier 4: attention and lead signal only; never confirms project facts.",
+        },
+        "human_approval_required_for_external_use": True,
+    }
+
 def assess_promotion_readiness(record: dict[str, Any]) -> dict[str, Any]:
     """Classify whether a project can move from lead to investment-promotion work."""
-    confirmation = str(record.get("confirmation_level") or "")
     confidence = int(record.get("confidence") or 0)
     category = str(record.get("category") or "")
     has_official = bool(record.get("government_sources"))
     has_owner = bool(record.get("owner_candidates"))
     has_developer = bool(record.get("developer_candidates"))
+    gate = record.get("candidate_to_verified_gate") or {}
+    if not isinstance(gate, dict):
+        gate = {}
+    verified_project_allowed = bool(gate.get("verified_project_allowed"))
+    official_source_status = str(gate.get("official_source_status") or record.get("official_source_status") or "")
     reasons: list[str] = []
 
     if not has_official:
-        reasons.append("缺少政府、采购、海关、监管或官方企业证据。")
+        reasons.append("Missing Tier 1 official government, procurement, customs, regulator, or authority evidence.")
     if category not in {"planned", "under_construction"}:
-        reasons.append("项目阶段尚未确认，不能判断为计划建设或在建项目。")
+        reasons.append("Project stage is not confirmed as planned or under_construction.")
     if confidence < 90:
-        reasons.append("置信度低于 90，不能进入招商材料草稿。")
+        reasons.append("Confidence is below 90.")
     if not has_owner:
-        reasons.append("业主或主管部门候选尚未确认。")
+        reasons.append("Owner or responsible authority candidate is missing.")
     if not has_developer:
-        reasons.append("开发者、投资方或承包商候选尚未确认。")
+        reasons.append("Developer, investor, or contractor candidate is missing.")
+    reasons.extend(item for item in (gate.get("missing_requirements") or []) if item not in reasons)
 
-    if confirmation == "government_confirmed" and confidence >= 90 and category in {"planned", "under_construction"}:
+    if verified_project_allowed and confidence >= 90 and category in {"planned", "under_construction"}:
         if has_owner and has_developer:
             status = "draft_promotion_ready"
-            label = "可生成招商草稿"
+            label = "Internal promotion draft ready"
             allowed_internal_actions = [
-                "生成内部招商引资草稿",
-                "生成可行性报告草稿",
-                "进入高价值项目关注清单",
-                "准备人工审批包",
+                "Generate internal investment-promotion draft",
+                "Generate internal feasibility report draft",
+                "Add to high-value project watchlist",
+                "Prepare human approval package",
             ]
         else:
             status = "internal_screening_ready"
-            label = "可内部筛选"
+            label = "Internal screening ready"
             allowed_internal_actions = [
-                "进入项目库内部筛选",
-                "继续补业主、开发者、投资方和负责人证据",
-                "生成内部尽调任务板",
+                "Add to internal project-library screening queue",
+                "Collect more owner, developer, investor, and contact evidence",
+                "Generate internal due-diligence action board",
             ]
-    elif confirmation == "government_confirmed":
+    elif official_source_status in {"official_government_supported", "official_procurement_supported", "official_company_supported"}:
         status = "evidence_review_required"
-        label = "需补证据"
+        label = "Evidence review required"
         allowed_internal_actions = [
-            "保留为内部项目线索",
-            "补充阶段、业主、开发者、海关和采购证据",
+            "Keep as an internal project lead",
+            "Collect missing stage, owner, developer, customs, and procurement evidence",
         ]
     else:
         status = "lead_only"
-        label = "仅线索"
+        label = "Lead only"
         allowed_internal_actions = [
-            "只允许内部搜索和证据收集",
-            "不得作为招商引资项目使用",
+            "Internal search and evidence collection only",
+            "Do not use as an investment-promotion project",
         ]
 
     return {
@@ -291,16 +420,17 @@ def assess_promotion_readiness(record: dict[str, Any]) -> dict[str, Any]:
         "human_approval_required_for_external_use": True,
         "allowed_internal_actions": allowed_internal_actions,
         "blocked_actions": [
-            "正式招商发布",
-            "客户或投资人外联",
-            "报价",
-            "合同或付款承诺",
-            "交期或清关承诺",
-            "公开视频发布",
+            "formal investment-promotion publication",
+            "customer or investor outreach",
+            "quotation",
+            "contract or payment commitment",
+            "delivery or customs-clearance commitment",
+            "public video publishing",
         ],
         "missing_requirements": reasons,
+        "official_source_status": official_source_status or "candidate_unverified",
+        "verified_project_allowed": verified_project_allowed,
     }
-
 
 def build_project_record(topic: str, country: str, evidence_items: list[dict[str, Any]]) -> dict[str, Any]:
     evidence = _normalize_evidence_items(evidence_items, country)
@@ -337,6 +467,12 @@ def build_project_record(topic: str, country: str, evidence_items: list[dict[str
         ],
         "updated_at": _now_iso(),
     }
+    gate = build_candidate_to_verified_gate(record)
+    record["official_source_status"] = gate["official_source_status"]
+    record["project_record_status"] = gate["status"]
+    record["verified_project_allowed"] = gate["verified_project_allowed"]
+    record["candidate_to_verified_gate"] = gate
+    record["evidence_grade_summary"] = gate["evidence_grade_summary"]
     record["promotion_readiness"] = assess_promotion_readiness(record)
     return record
 
