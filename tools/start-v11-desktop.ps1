@@ -32,6 +32,15 @@ function Wait-HttpOk {
   }
   return $false
 }
+function Test-PortListening {
+  param([int]$Port)
+  try {
+    $connection = Get-NetTCPConnection -LocalPort $Port -State Listen -ErrorAction SilentlyContinue | Select-Object -First 1
+    return $null -ne $connection
+  } catch {
+    return $false
+  }
+}
 
 Set-Location $Root
 
@@ -53,7 +62,7 @@ if (Test-HttpOk $ApiHealth) {
   Write-Host "v11 API is healthy: $ApiUrl" -ForegroundColor Green
 }
 
-if (Test-HttpOk $HubHealth) {
+if ((Test-HttpOk $HubHealth) -or (Test-PortListening $HubPort)) {
   Write-Host "Decision Hub is already running: $HubUrl" -ForegroundColor Green
 } else {
   Write-Host "Starting Decision Hub: $HubUrl" -ForegroundColor Cyan
@@ -66,7 +75,7 @@ if (Test-HttpOk $HubHealth) {
     "-File", ".\server.ps1",
     "-Port", "$HubPort"
   ) -RedirectStandardOutput $hubLog -RedirectStandardError $hubErr | Out-Null
-  if (!(Wait-HttpOk $HubHealth 30)) {
+  if (!(Wait-HttpOk $HubHealth 30) -and !(Test-PortListening $HubPort)) {
     throw "Decision Hub did not start within 30 seconds. Check $hubLog and $hubErr"
   }
   Write-Host "Decision Hub is ready: $HubUrl" -ForegroundColor Green
