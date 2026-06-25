@@ -2341,7 +2341,7 @@ try {
   while ($true) {
     $client = $listener.AcceptTcpClient()
     try {
-      $client.ReceiveTimeout = 10000
+      $client.ReceiveTimeout = 2000
       $client.SendTimeout = 10000
       $stream = $client.GetStream()
       $request = Read-HttpRequest $stream
