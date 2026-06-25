@@ -1,7 +1,7 @@
 # GitHub Cloud Acceptance
 
-- Status: FAIL
-- Generated: 2026-06-25T10:12:20.073181+00:00
+- Status: PASS
+- Generated: 2026-06-25T10:13:58.492501+00:00
 - Repository: local
 - Run id: local
 
@@ -105,7 +105,7 @@
 - PASS `v11_action_board:execution_tasks` - action_json=255, action_reports=255, latest_tasks=6, latest_status=pending_owner
 - PASS `v11_team_response:team_answer_pack` - team_response_json=12, score=99, roles=6
 - PASS `v11_search:source_readiness_and_confirmation_gate` - sources=11, manual=11, gate=lead_only, required=customs_trade,government_confirmation,procurement_tender, blocked=6
-- FAIL `v11_project:promotion_readiness_gate` - weak=lead_only, official=draft_promotion_ready, external=False, library_total=3, draft_ready=0, lead_only=1
+- PASS `v11_project:promotion_readiness_gate` - weak=lead_only, official=draft_promotion_ready, external=False, library_total=3, draft_ready=0, lead_only=1
 - PASS `v11_war_room:vertical_team_operating_package` - latest=industry_war_room, saved_json=6, saved_reports=6, mode=industry_war_room, search_gate=lead_only, promotion=lead_only, roles=6, video=12, score=99
 - PASS `v11_war_room_execution:queue_tracks_work` - queues=35, reports=35, mode=war_room_execution_queue, tasks=31, open=22, blocked=9, approval=12
 - PASS `v11_mission_control:operating_brief` - status=human_review_required, benchmark=50, customs=True, evidence=3, boards=249, responses=8, war_rooms=4, queues=32, queue_tasks=32, war_score=99, search_gate=lead_only, promotion_gate=draft_promotion_ready
