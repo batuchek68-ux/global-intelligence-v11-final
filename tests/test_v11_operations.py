@@ -244,9 +244,51 @@ class V11OperationsTests(unittest.TestCase):
         self.assertEqual(record["category"], "planned")
         self.assertTrue(record["government_sources"])
         self.assertTrue(record["owner_candidates"])
+        self.assertEqual(record["official_source_status"], "verified_project")
+        self.assertEqual(record["project_record_status"], "verified_project")
+        self.assertTrue(record["verified_project_allowed"])
+        self.assertGreaterEqual(record["evidence_grade_summary"]["tier1_official_sources"], 1)
         self.assertEqual(record["promotion_readiness"]["status"], "draft_promotion_ready")
         self.assertTrue(record["promotion_readiness"]["can_generate_internal_promotion_draft"])
         self.assertFalse(record["promotion_readiness"]["approved_for_external_use"])
+
+    def test_company_source_supports_candidate_but_cannot_verify_project_alone(self) -> None:
+        record = build_project_record(
+            "Kazakhstan logistics hub",
+            "Kazakhstan",
+            [
+                {
+                    "title": "Company announcement for Kazakhstan logistics hub",
+                    "url": "https://example-logistics.com/news/hub",
+                    "source_type": "official_company",
+                    "snippet": "The developer announced a planned project with an investor and project owner.",
+                }
+            ],
+        )
+        self.assertEqual(record["official_source_status"], "official_company_supported")
+        self.assertEqual(record["project_record_status"], "candidate_project")
+        self.assertFalse(record["verified_project_allowed"])
+        self.assertEqual(record["evidence_grade_summary"]["tier2_supporting_sources"], 1)
+        self.assertIn("Missing Tier 1", " ".join(record["candidate_to_verified_gate"]["missing_requirements"]))
+
+    def test_social_and_video_sources_remain_weak_signals_only(self) -> None:
+        record = build_project_record(
+            "Kazakhstan logistics hub",
+            "Kazakhstan",
+            [
+                {
+                    "title": "Forum rumor about Kazakhstan logistics hub",
+                    "url": "https://t.me/example/123",
+                    "source_type": "social",
+                    "snippet": "A forum says the owner and developer are discussing a planned project.",
+                }
+            ],
+        )
+        self.assertEqual(record["official_source_status"], "weak_signal_only")
+        self.assertEqual(record["project_record_status"], "candidate_project")
+        self.assertFalse(record["verified_project_allowed"])
+        self.assertEqual(record["evidence_grade_summary"]["weak_signal_sources"], 1)
+        self.assertEqual(record["promotion_readiness"]["status"], "lead_only")
 
     def test_promotion_readiness_blocks_weak_project_leads(self) -> None:
         readiness = assess_promotion_readiness(
@@ -261,8 +303,8 @@ class V11OperationsTests(unittest.TestCase):
         )
         self.assertEqual(readiness["status"], "lead_only")
         self.assertFalse(readiness["can_generate_internal_promotion_draft"])
-        self.assertIn("不得作为招商引资项目使用", " ".join(readiness["allowed_internal_actions"]))
-        self.assertIn("正式招商发布", readiness["blocked_actions"])
+        self.assertIn("Do not use as an investment-promotion project", " ".join(readiness["allowed_internal_actions"]))
+        self.assertIn("formal investment-promotion publication", readiness["blocked_actions"])
 
     def test_evidence_dossier_grades_sources_and_blocks_weak_high_risk_claims(self) -> None:
         dossier = build_evidence_dossier(
@@ -1170,7 +1212,9 @@ class V11OperationsTests(unittest.TestCase):
         self.assertIn("official_sources", search_data["result_categories"])
         self.assertIn("social_video", search_data["result_categories"])
         self.assertTrue(search_data["candidate_projects"])
-        self.assertEqual(search_data["candidate_projects"][0]["official_source_status"], "not_verified_search_plan_only")
+        self.assertEqual(search_data["candidate_projects"][0]["official_source_status"], "search_plan_only")
+        self.assertEqual(search_data["candidate_projects"][0]["project_record_status"], "candidate_project")
+        self.assertFalse(search_data["candidate_projects"][0]["verified_project_allowed"])
         self.assertEqual(search_data["project_brief_draft"]["status"], "draft_not_approved_for_external_use")
         self.assertIn("official evidence", search_data["project_brief_draft"]["risk_notice"])
 
