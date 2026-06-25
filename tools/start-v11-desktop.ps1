@@ -1,6 +1,6 @@
 param(
   [int]$ApiPort = 8000,
-  [int]$HubPort = 8787,
+  [int]$HubPort = 8787,`r`n  [int]$FallbackHubPort = 8788,
   [switch]$NoOpen
 )
 
@@ -62,23 +62,34 @@ if (Test-HttpOk $ApiHealth) {
   Write-Host "v11 API is healthy: $ApiUrl" -ForegroundColor Green
 }
 
-if ((Test-HttpOk $HubHealth) -or (Test-PortListening $HubPort)) {
+if (Test-HttpOk $HubHealth) {
   Write-Host "Decision Hub is already running: $HubUrl" -ForegroundColor Green
 } else {
-  Write-Host "Starting Decision Hub: $HubUrl" -ForegroundColor Cyan
-  $hubRoot = Join-Path $Root "apps\decision-hub"
-  $hubLog = Join-Path $LogDir "decision-hub.log"
-  $hubErr = Join-Path $LogDir "decision-hub.err.log"
-  Start-Process -FilePath "powershell.exe" -WindowStyle Hidden -WorkingDirectory $hubRoot -ArgumentList @(
-    "-NoProfile",
-    "-ExecutionPolicy", "Bypass",
-    "-File", ".\server.ps1",
-    "-Port", "$HubPort"
-  ) -RedirectStandardOutput $hubLog -RedirectStandardError $hubErr | Out-Null
-  if (!(Wait-HttpOk $HubHealth 30) -and !(Test-PortListening $HubPort)) {
-    throw "Decision Hub did not start within 30 seconds. Check $hubLog and $hubErr"
+  if (Test-PortListening $HubPort) {
+    Write-Host "Decision Hub port $HubPort is occupied but not responding. Trying fallback port $FallbackHubPort." -ForegroundColor Yellow
+    $HubPort = $FallbackHubPort
+    $HubUrl = "http://127.0.0.1:$HubPort/"
+    $HubHealth = $HubUrl
   }
-  Write-Host "Decision Hub is ready: $HubUrl" -ForegroundColor Green
+
+  if (Test-HttpOk $HubHealth) {
+    Write-Host "Decision Hub is already running: $HubUrl" -ForegroundColor Green
+  } else {
+    Write-Host "Starting Decision Hub: $HubUrl" -ForegroundColor Cyan
+    $hubRoot = Join-Path $Root "apps\decision-hub"
+    $hubLog = Join-Path $LogDir "decision-hub-$HubPort.log"
+    $hubErr = Join-Path $LogDir "decision-hub-$HubPort.err.log"
+    Start-Process -FilePath "powershell.exe" -WindowStyle Hidden -WorkingDirectory $hubRoot -ArgumentList @(
+      "-NoProfile",
+      "-ExecutionPolicy", "Bypass",
+      "-File", ".\server.ps1",
+      "-Port", "$HubPort"
+    ) -RedirectStandardOutput $hubLog -RedirectStandardError $hubErr | Out-Null
+    if (!(Wait-HttpOk $HubHealth 30)) {
+      throw "Decision Hub did not start within 30 seconds. Check $hubLog and $hubErr"
+    }
+    Write-Host "Decision Hub is ready: $HubUrl" -ForegroundColor Green
+  }
 }
 
 if (!$NoOpen) {
