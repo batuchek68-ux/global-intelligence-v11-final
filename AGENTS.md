@@ -302,3 +302,24 @@ API 修改还必须验证：
 - 是否可能泄露 token、webhook、license key？
 
 只要任何一项不确定，就先查证；查证后仍不确定，就请示。
+
+## v11-Only Execution Boundary
+
+The old local wisdom-platform workspace is now a reference source only. Codex may inspect it to borrow proven ideas, scripts, UI patterns, runbooks, or operational lessons, but it must not be treated as the active product trunk.
+
+All new implementation, module routing, API contracts, desktop integration, cloud workflows, tests, audit records, and delivery decisions must be executed inside this v11 repository:
+
+```text
+C:\Users\Surface\Documents\New project\global-intelligence-v11
+batuchek68-ux/global-intelligence-v11-final
+```
+
+Rules:
+
+- Do not run new work from `legacy wisdom-platform workspace` unless the user explicitly asks for legacy inspection or migration.
+- Do not copy the old platform over v11 as a bulk replacement.
+- When borrowing from the old platform, migrate only the needed capability into the matching v11 module.
+- v11 modules are authoritative: `backend/api`, `backend/services`, `backend/workflows`, `backend/comm`, `backend/memory`, and `apps/*`.
+- Desktop, search, project library, GitHub Actions, n8n, license checks, audit logs, and owner approval must follow v11 rules and v11 risk gates.
+- Any conflict between old-platform behavior and v11 behavior must be resolved in favor of v11.
+
