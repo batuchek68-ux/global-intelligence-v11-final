@@ -1,7 +1,7 @@
 # GitHub Cloud Acceptance
 
 - Status: FAIL
-- Generated: 2026-06-25T09:15:22.844839+00:00
+- Generated: 2026-06-25T10:12:20.073181+00:00
 - Repository: local
 - Run id: local
 
@@ -30,7 +30,7 @@
 - team_execution_reports: 3
 - evidence_dossiers: 3
 - latest_evidence_status: officially_supported
-- action_boards: 253
+- action_boards: 254
 - latest_action_board_status: pending_owner
 - team_responses: 11
 - latest_team_response_score: 99
@@ -45,7 +45,7 @@
 - project_library_total: 3
 - promotion_draft_ready: 0
 - promotion_gate_weak_lead: lead_only
-- promotion_gate_official_project: lead_only
+- promotion_gate_official_project: draft_promotion_ready
 - war_room_score: 99
 - war_room_roles: 6
 - mission_control_status: human_review_required
@@ -102,10 +102,10 @@
 - PASS `v11_video:center_generated` - video_files=3, platform_searches=120
 - PASS `v11_team_execution:packages_generated` - team_reports=3, team_memory=3, cases=2
 - PASS `v11_evidence:verification_dossiers` - evidence_json=4, evidence_reports=4, latest_status=officially_supported
-- PASS `v11_action_board:execution_tasks` - action_json=254, action_reports=254, latest_tasks=6, latest_status=pending_owner
+- PASS `v11_action_board:execution_tasks` - action_json=255, action_reports=255, latest_tasks=6, latest_status=pending_owner
 - PASS `v11_team_response:team_answer_pack` - team_response_json=12, score=99, roles=6
 - PASS `v11_search:source_readiness_and_confirmation_gate` - sources=11, manual=11, gate=lead_only, required=customs_trade,government_confirmation,procurement_tender, blocked=6
-- FAIL `v11_project:promotion_readiness_gate` - weak=lead_only, official=lead_only, external=False, library_total=3, draft_ready=0, lead_only=1
+- FAIL `v11_project:promotion_readiness_gate` - weak=lead_only, official=draft_promotion_ready, external=False, library_total=3, draft_ready=0, lead_only=1
 - PASS `v11_war_room:vertical_team_operating_package` - latest=industry_war_room, saved_json=6, saved_reports=6, mode=industry_war_room, search_gate=lead_only, promotion=lead_only, roles=6, video=12, score=99
 - PASS `v11_war_room_execution:queue_tracks_work` - queues=35, reports=35, mode=war_room_execution_queue, tasks=31, open=22, blocked=9, approval=12
 - PASS `v11_mission_control:operating_brief` - status=human_review_required, benchmark=50, customs=True, evidence=3, boards=249, responses=8, war_rooms=4, queues=32, queue_tasks=32, war_score=99, search_gate=lead_only, promotion_gate=draft_promotion_ready
