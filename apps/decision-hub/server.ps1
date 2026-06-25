@@ -528,6 +528,35 @@ function Get-V11SearchPlan {
   }
 
   return @{
+    search_expansion = @{
+      original_query = $Query
+      region_key = $region
+      chinese_terms = @(
+        "哈萨克斯坦 工程 招标",
+        "哈萨克斯坦 EPC 项目",
+        "哈萨克斯坦 基础设施 投资",
+        "哈萨克斯坦 在建项目",
+        "哈萨克斯坦 计划建设项目"
+      )
+      english_terms = @(
+        "Kazakhstan EPC project",
+        "Kazakhstan infrastructure tender",
+        "Kazakhstan public procurement engineering",
+        "Kazakhstan mining infrastructure",
+        "Kazakhstan logistics project owner developer",
+        "Central Asia EPC opportunity"
+      )
+      russian_terms = @(
+        "Казахстан инфраструктурный проект",
+        "Казахстан тендер строительство",
+        "Казахстан EPC подрядчик"
+      )
+      industry_terms = @("EPC", "public tender", "mining infrastructure", "railway logistics", "port logistics", "industrial park")
+      risk_terms = @("sanctions compliance", "export control", "customs clearance", "payment risk")
+      project_stage_terms = @("planned project", "under construction", "tender announced", "contract awarded")
+      platform_terms = @("government website", "procurement portal", "YouTube", "TikTok", "Douyin", "Telegram")
+      all_terms = @($enhanced.web, $enhanced.google, $enhanced.regional, $enhanced.social, $enhanced.academic, $enhanced.library)
+    }
     enrichment = @{
       original = $Query
       base = $base
@@ -1957,10 +1986,72 @@ function Handle-ApiRequest {
       @{ source = $_.source; reason = $_.error }
     })
     $manualCount = @($results | Where-Object { $_.items -and @($_.items).Count -gt 0 }).Count
+    $sourceStatus = @($results | ForEach-Object {
+      $status = if ($_.ok) { "configured" } elseif ("$($_.error)" -match "Missing environment variable|configuration") { "missing_configuration" } else { "unavailable_or_limited" }
+      $reason = if ($_.ok) { "Source returned results or fallback entries." } else { "$($_.error)" }
+      $nextAction = if ($status -eq "missing_configuration") { "Configure the required key or use manual search URLs." } else { "Review returned items and attach official evidence before confirmation." }
+      @{
+        source = $_.source
+        status = $status
+        result_count = @($_.items).Count
+        reason = $reason
+        next_action = $nextAction
+      }
+    })
+    $candidateProjects = @(
+      @{
+        project_name = "$query - planned project lead"
+        country = if ($v11Plan.evidence_execution_brief.region -eq "Kazakhstan") { "Kazakhstan" } else { "Central Asia" }
+        sector = "engineering trade / infrastructure"
+        stage = "candidate_planned"
+        stage_label = "计划建设候选项目"
+        official_source_status = "not_verified_search_plan_only"
+        owner = "待官方证据确认"
+        developer = "待官方证据确认"
+        confidence = 30
+        risk_flags = @(
+          "Search plan only; do not treat as a confirmed project.",
+          "Government or procurement evidence is required before investment-promotion use."
+        )
+        next_actions = @($v11Plan.project_search_plan | Where-Object { $_.intent -in @("government_confirmation", "procurement_tender") } | Select-Object -First 6)
+      }
+    )
+    $resultCategories = @{
+      projects = $candidateProjects
+      official_sources = @($v11Plan.project_search_plan | Where-Object { $_.intent -eq "government_confirmation" } | Select-Object -First 8)
+      tenders = @($v11Plan.project_search_plan | Where-Object { $_.intent -eq "procurement_tender" } | Select-Object -First 8)
+      risks = @($v11Plan.project_search_plan | Where-Object { $_.intent -eq "customs_trade" } | Select-Object -First 8)
+      background = @($v11Plan.project_search_plan | Where-Object { $_.intent -eq "stakeholders" } | Select-Object -First 8)
+      social_video = @($results | Where-Object { $_.source -in @("social", "yandex") })
+      research = @($results | Where-Object { $_.source -in @("academic", "library") })
+    }
+    $briefDraft = @{
+      title = "Search intelligence brief draft: $query"
+      status = "draft_not_approved_for_external_use"
+      search_topic = $query
+      summary = "Search expansion and source readiness are prepared. Candidate projects remain leads until official evidence is attached."
+      enhanced_query_count = @($v11Plan.search_expansion.all_terms).Count
+      source_summary = @{
+        total = $sourceStatus.Count
+        missing_configuration = @($sourceStatus | Where-Object { $_.status -eq "missing_configuration" }).Count
+        manual_sources = $manualCount
+      }
+      candidate_projects = $candidateProjects
+      official_source_status = $v11Plan.project_confirmation_gate.status
+      risk_notice = "Do not publish, quote, outreach, or create confirmed project records before official evidence and human approval."
+      next_actions = @(
+        "Open government and procurement search URLs first.",
+        "Attach official evidence items with title, URL, date, and snippet.",
+        "Verify project stage, owner, developer, tender status, customs impact, and risk flags.",
+        "Generate feasibility report only as an internal draft until evidence is sufficient."
+      )
+    }
     return New-JsonResponse @{
       ok = $true
       query = $query
+      search_expansion = $v11Plan.search_expansion
       enrichment = $v11Plan.enrichment
+      source_status = $sourceStatus
       source_readiness = @{
         ok = $missingConfig.Count -eq 0
         configured_count = $results.Count
@@ -1969,7 +2060,10 @@ function Handle-ApiRequest {
         missing_configuration = $missingConfig
         explanation = "Live API keys improve automation, but official/manual search URLs still require evidence verification before confirmation."
       }
+      result_categories = $resultCategories
+      candidate_projects = $candidateProjects
       project_search_plan = $v11Plan.project_search_plan
+      project_brief_draft = $briefDraft
       project_confirmation_gate = $v11Plan.project_confirmation_gate
       evidence_execution_brief = $v11Plan.evidence_execution_brief
       project_library_rule = $v11Plan.project_library_rule
