@@ -1,12 +1,29 @@
 # Cloud Test Status
 
 - Status: BLOCKED
-- Stage: `remote_acceptance`
+- Stage: `configuration`
 - Local ready: `True`
-- Cloud config ready: `True`
+- Cloud config ready: `False`
 
 ## Missing
-- None
+- `GITHUB_TOKEN or GH_TOKEN`
+- `GITHUB_REPOSITORY`
+
+## Connection Check Details
+
+Missing from connection check:
+- `GITHUB_TOKEN or GH_TOKEN`
+- `GITHUB_REPOSITORY or cloud.local.json repository`
+
+Token handling: Token is read from environment or prompt only; do not save it to files.
+
+Root commands:
+
+```powershell
+.\check-cloud-config-from-root.cmd
+.\setup-cloud-test-from-root.cmd
+.\run-cloud-test-from-root.cmd -Upload
+```
 
 ## Next Commands
 
