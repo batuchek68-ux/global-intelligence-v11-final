@@ -1,6 +1,6 @@
 {
-  "ok": false,
-  "created_at": "2026-06-25T10:12:20.073181+00:00",
+  "ok": true,
+  "created_at": "2026-06-25T10:13:58.492501+00:00",
   "repository": "local",
   "run_id": "local",
   "command_model": {
@@ -314,7 +314,7 @@
     },
     {
       "name": "v11_project:promotion_readiness_gate",
-      "ok": false,
+      "ok": true,
       "evidence": "weak=lead_only, official=draft_promotion_ready, external=False, library_total=3, draft_ready=0, lead_only=1"
     },
     {
