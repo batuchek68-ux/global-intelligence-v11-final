@@ -36,12 +36,46 @@ function Wait-HttpOk {
 }
 function Test-PortListening {
   param([int]$Port)
+  $client = [System.Net.Sockets.TcpClient]::new()
   try {
-    $connection = Get-NetTCPConnection -LocalPort $Port -State Listen -ErrorAction SilentlyContinue | Select-Object -First 1
-    return $null -ne $connection
+    $connect = $client.BeginConnect("127.0.0.1", $Port, $null, $null)
+    if (!$connect.AsyncWaitHandle.WaitOne(500, $false)) {
+      return $false
+    }
+    $client.EndConnect($connect)
+    return $true
   } catch {
     return $false
+  } finally {
+    $client.Close()
   }
+}
+
+function Start-HiddenProcess {
+  param(
+    [string]$FilePath,
+    [string]$WorkingDirectory,
+    [string[]]$Arguments
+  )
+
+  $startInfo = [System.Diagnostics.ProcessStartInfo]::new()
+  $startInfo.FileName = $FilePath
+  $startInfo.WorkingDirectory = $WorkingDirectory
+  $startInfo.Arguments = (($Arguments | ForEach-Object {
+    if ($_ -match '[\s"`]') {
+      '"' + ($_ -replace '"', '\"') + '"'
+    } else {
+      $_
+    }
+  }) -join " ")
+  $startInfo.UseShellExecute = $false
+  $startInfo.CreateNoWindow = $true
+  $startInfo.WindowStyle = [System.Diagnostics.ProcessWindowStyle]::Hidden
+
+  $process = [System.Diagnostics.Process]::new()
+  $process.StartInfo = $startInfo
+  [void]$process.Start()
+  return $process
 }
 
 function Select-DecisionHubPort {
@@ -78,7 +112,7 @@ if (Test-HttpOk $ApiHealth) {
   Write-Host "Starting v11 API: $ApiUrl" -ForegroundColor Cyan
   $apiLog = Join-Path $LogDir "v11-api.log"
   $apiErr = Join-Path $LogDir "v11-api.err.log"
-  Start-Process -FilePath "powershell.exe" -WindowStyle Hidden -WorkingDirectory $Root -ArgumentList @(
+  Start-HiddenProcess -FilePath "powershell.exe" -WorkingDirectory $Root -Arguments @(
     "-NoProfile",
     "-ExecutionPolicy", "Bypass",
     "-Command",
@@ -102,12 +136,12 @@ if ($hubSelection.AlreadyRunning) {
   $hubRoot = Join-Path $Root "apps\decision-hub"
   $hubLog = Join-Path $LogDir "decision-hub-$HubPort.log"
   $hubErr = Join-Path $LogDir "decision-hub-$HubPort.err.log"
-  Start-Process -FilePath "powershell.exe" -WindowStyle Hidden -WorkingDirectory $hubRoot -ArgumentList @(
+  Start-HiddenProcess -FilePath "powershell.exe" -WorkingDirectory $hubRoot -Arguments @(
     "-NoProfile",
     "-ExecutionPolicy", "Bypass",
-    "-File", ".\server.ps1",
-    "-Port", "$HubPort"
-  ) -RedirectStandardOutput $hubLog -RedirectStandardError $hubErr | Out-Null
+    "-Command",
+    "& '.\server.ps1' -Port $HubPort *> '$hubLog' 2> '$hubErr'"
+  ) | Out-Null
   if (!(Wait-HttpOk $HubHealth 30)) {
     throw "Decision Hub did not start within 30 seconds. Check $hubLog and $hubErr"
   }
