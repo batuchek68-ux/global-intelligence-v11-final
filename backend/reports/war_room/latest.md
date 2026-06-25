@@ -1,11 +1,11 @@
-# v11 Industry War Room: Kazakhstan engineering trade project customs investment promotion video
+# v11 Industry War Room: 哈萨克斯坦工程贸易项目：确认海关信息、项目负责人、招商价值、视频传播方案和下一步推进计划
 
 DRAFT - internal operating package, not approved for external sending
 
 ## Executive Synthesis
 
 DRAFT - internal operating synthesis, not approved for external sending
-Objective: Kazakhstan engineering trade project customs investment promotion video
+Objective: 哈萨克斯坦工程贸易项目：确认海关信息、项目负责人、招商价值、视频传播方案和下一步推进计划
 Evidence status: officially_supported; confidence=98; official_sources=1.
 Search confirmation gate: lead_only; confirmed_project_allowed=False.
 Promotion readiness: evidence_review_required; internal_draft=False; external_use=False.
@@ -43,29 +43,29 @@ Decision: treat unverified material as leads only. Build official evidence first
 ## Execution Queue
 
 - Tasks: 31; open=22; blocked=9; approval=12
-- dbcf84d370b6a5dc-01: research_analyst | open | Run and record source evidence for query: Kazakhstan engineering trade project customs investment promotion video Kazakhstan official government site:gov.kz
-- dbcf84d370b6a5dc-02: research_analyst | open | Run and record source evidence for query: Kazakhstan engineering trade project customs investment promotion video Kazakhstan official government site:primeminister.kz
-- dbcf84d370b6a5dc-03: research_analyst | open | Run and record source evidence for query: Kazakhstan engineering trade project customs investment promotion video Kazakhstan official government site:invest.gov.kz
-- dbcf84d370b6a5dc-04: research_analyst | open | Run and record source evidence for query: Kazakhstan engineering trade project customs investment promotion video Kazakhstan official government site:adilet.zan.kz
-- dbcf84d370b6a5dc-05: research_analyst | open | Run and record source evidence for query: Kazakhstan engineering trade project customs investment promotion video Kazakhstan ministry site:gov.kz
-- dbcf84d370b6a5dc-06: research_analyst | open | Run and record source evidence for query: Kazakhstan engineering trade project customs investment promotion video Kazakhstan ministry site:primeminister.kz
-- dbcf84d370b6a5dc-07: research_analyst | open | Run and record source evidence for query: Kazakhstan engineering trade project customs investment promotion video Kazakhstan ministry site:invest.gov.kz
-- dbcf84d370b6a5dc-08: research_analyst | open | Run and record source evidence for query: Kazakhstan engineering trade project customs investment promotion video Kazakhstan ministry site:adilet.zan.kz
-- dbcf84d370b6a5dc-09: project_manager | open | Open official government and procurement search URLs from the highest priority plan.
-- dbcf84d370b6a5dc-10: project_manager | open | Attach official evidence with title, URL, snippet, source_type, and source date.
-- dbcf84d370b6a5dc-11: project_manager | open | Confirm project owner, developer, responsible office/person, tender status, and customs impact.
-- dbcf84d370b6a5dc-12: project_manager | open | Use the action board for team task assignment.
+- bac3f120c1db4ec0-01: research_analyst | open | Run and record source evidence for query: 哈萨克斯坦工程贸易项目：确认海关信息、项目负责人、招商价值、视频传播方案和下一步推进计划 Kazakhstan official government site:gov.kz
+- bac3f120c1db4ec0-02: research_analyst | open | Run and record source evidence for query: 哈萨克斯坦工程贸易项目：确认海关信息、项目负责人、招商价值、视频传播方案和下一步推进计划 Kazakhstan official government site:primeminister.kz
+- bac3f120c1db4ec0-03: research_analyst | open | Run and record source evidence for query: 哈萨克斯坦工程贸易项目：确认海关信息、项目负责人、招商价值、视频传播方案和下一步推进计划 Kazakhstan official government site:invest.gov.kz
+- bac3f120c1db4ec0-04: research_analyst | open | Run and record source evidence for query: 哈萨克斯坦工程贸易项目：确认海关信息、项目负责人、招商价值、视频传播方案和下一步推进计划 Kazakhstan official government site:adilet.zan.kz
+- bac3f120c1db4ec0-05: research_analyst | open | Run and record source evidence for query: 哈萨克斯坦工程贸易项目：确认海关信息、项目负责人、招商价值、视频传播方案和下一步推进计划 Kazakhstan ministry site:gov.kz
+- bac3f120c1db4ec0-06: research_analyst | open | Run and record source evidence for query: 哈萨克斯坦工程贸易项目：确认海关信息、项目负责人、招商价值、视频传播方案和下一步推进计划 Kazakhstan ministry site:primeminister.kz
+- bac3f120c1db4ec0-07: research_analyst | open | Run and record source evidence for query: 哈萨克斯坦工程贸易项目：确认海关信息、项目负责人、招商价值、视频传播方案和下一步推进计划 Kazakhstan ministry site:invest.gov.kz
+- bac3f120c1db4ec0-08: research_analyst | open | Run and record source evidence for query: 哈萨克斯坦工程贸易项目：确认海关信息、项目负责人、招商价值、视频传播方案和下一步推进计划 Kazakhstan ministry site:adilet.zan.kz
+- bac3f120c1db4ec0-09: project_manager | open | Open official government and procurement search URLs from the highest priority plan.
+- bac3f120c1db4ec0-10: project_manager | open | Attach official evidence with title, URL, snippet, source_type, and source date.
+- bac3f120c1db4ec0-11: project_manager | open | Confirm project owner, developer, responsible office/person, tender status, and customs impact.
+- bac3f120c1db4ec0-12: project_manager | open | Use the action board for team task assignment.
 
 ## Video Center
 
-- YouTube: Kazakhstan infrastructure Kazakhstan engineering trade project customs investment promotion video case study short video
-- TikTok: Kazakhstan infrastructure Kazakhstan engineering trade project customs investment promotion video case study short video
-- Douyin: Kazakhstan infrastructure Kazakhstan engineering trade project customs investment promotion video case study short video
-- Google Video: Kazakhstan infrastructure Kazakhstan engineering trade project customs investment promotion video case study short video
-- YouTube: Kazakhstan infrastructure Kazakhstan engineering trade project customs investment promotion video project progress short video
-- TikTok: Kazakhstan infrastructure Kazakhstan engineering trade project customs investment promotion video project progress short video
-- Douyin: Kazakhstan infrastructure Kazakhstan engineering trade project customs investment promotion video project progress short video
-- Google Video: Kazakhstan infrastructure Kazakhstan engineering trade project customs investment promotion video project progress short video
+- YouTube: Kazakhstan infrastructure 哈萨克斯坦工程贸易项目：确认海关信息、项目负责人、招商价值、视频传播方案和下一步推进计划 case study short video
+- TikTok: Kazakhstan infrastructure 哈萨克斯坦工程贸易项目：确认海关信息、项目负责人、招商价值、视频传播方案和下一步推进计划 case study short video
+- Douyin: Kazakhstan infrastructure 哈萨克斯坦工程贸易项目：确认海关信息、项目负责人、招商价值、视频传播方案和下一步推进计划 case study short video
+- Google Video: Kazakhstan infrastructure 哈萨克斯坦工程贸易项目：确认海关信息、项目负责人、招商价值、视频传播方案和下一步推进计划 case study short video
+- YouTube: Kazakhstan infrastructure 哈萨克斯坦工程贸易项目：确认海关信息、项目负责人、招商价值、视频传播方案和下一步推进计划 project progress short video
+- TikTok: Kazakhstan infrastructure 哈萨克斯坦工程贸易项目：确认海关信息、项目负责人、招商价值、视频传播方案和下一步推进计划 project progress short video
+- Douyin: Kazakhstan infrastructure 哈萨克斯坦工程贸易项目：确认海关信息、项目负责人、招商价值、视频传播方案和下一步推进计划 project progress short video
+- Google Video: Kazakhstan infrastructure 哈萨克斯坦工程贸易项目：确认海关信息、项目负责人、招商价值、视频传播方案和下一步推进计划 project progress short video
 
 ## Quality
 
