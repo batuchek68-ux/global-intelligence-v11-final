@@ -10,7 +10,7 @@ npm install
 npm start
 ```
 
-The desktop shell starts `..\decision-hub\server.ps1 -Port 8787` and opens `http://127.0.0.1:8787/`.
+The desktop shell starts the v11 Decision Hub bridge and opens `http://127.0.0.1:8787/`. It must use v11 APIs and must not depend on the old legacy wisdom-platform workspace at runtime.
 
 ## Enterprise license variables
 
@@ -32,3 +32,8 @@ npm run dist
 ```
 
 The installer and portable build are written to `dist/`.
+
+## v11 Runtime Boundary
+
+This desktop package belongs to v11. The old `legacy wisdom-platform workspace` desktop code can be inspected as migration reference only. Runtime paths, packaging, API calls, license checks, cloud status, and owner approval flows must stay inside `global-intelligence-v11`.
+
