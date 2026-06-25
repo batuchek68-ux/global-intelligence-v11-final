@@ -1,6 +1,7 @@
 param(
   [int]$ApiPort = 8000,
-  [int]$HubPort = 8787,`r`n  [int]$FallbackHubPort = 8788,
+  [int]$HubPort = 8787,
+  [int]$FallbackHubPort = 8788,
   [switch]$NoOpen
 )
 
