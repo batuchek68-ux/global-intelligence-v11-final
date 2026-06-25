@@ -1,12 +1,12 @@
-# Project Action Board: Daily cycle operating evidence
+# Project Action Board: Official procurement and customs reference
 
 DRAFT - internal execution board, not approved for external sending
 
-- Country: Indonesia
+- Country: Kazakhstan
 - Stage: unknown
 - Risk status: pending_owner
 - Blocked: True
-- Evidence: weak_signal_only (37)
+- Evidence: officially_supported (98)
 
 ## Tasks
 
