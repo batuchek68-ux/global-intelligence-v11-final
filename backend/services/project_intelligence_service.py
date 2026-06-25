@@ -434,6 +434,7 @@ def assess_promotion_readiness(record: dict[str, Any]) -> dict[str, Any]:
         "human_approval_required_for_external_use": True,
         "allowed_internal_actions": allowed_internal_actions,
         "blocked_actions": [
+            "正式招商发布",
             "formal investment-promotion publication",
             "customer or investor outreach",
             "quotation",
@@ -561,6 +562,8 @@ def _summarize_project_library(projects: list[dict[str, Any]], path: Path) -> di
             readiness = assess_promotion_readiness(project)
             project["promotion_readiness"] = readiness
         status = str(readiness.get("status") or "lead_only")
+        if readiness.get("can_generate_internal_promotion_draft") is True:
+            status = "draft_promotion_ready"
         promotion_buckets.setdefault(status, []).append(project)
 
     return {
