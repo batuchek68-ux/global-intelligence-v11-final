@@ -1,16 +1,15 @@
 {
   "ok": true,
-  "id": "8818ae70c1d07824",
-  "created_at": "2026-06-25T07:59:36.778358+00:00",
-  "question": "哈萨克斯坦工程贸易项目：确认海关信息、项目负责人、招商价值、视频传播方案和下一步推进计划",
+  "id": "6fc5da5c0a650222",
+  "created_at": "2026-06-25T09:13:34.772192+00:00",
+  "question": "Kazakhstan engineering trade project customs investment promotion video",
   "country": "Kazakhstan",
   "industries": [
     "infrastructure",
-    "logistics",
-    "energy"
+    "logistics"
   ],
   "mode": "team_response_pack",
-  "executive_answer": "结论: 可以作为内部推进依据；对外使用仍需要人工审批。\n问题: 哈萨克斯坦工程贸易项目：确认海关信息、项目负责人、招商价值、视频传播方案和下一步推进计划\n国家/地区: Kazakhstan\n证据状态: officially_supported；置信度 98；官方证据 1 条。\n任务状态: pending_owner；需要处理 6 项任务；阻断 3 项高风险动作。\n执行清单: 先查官方 source URL 和 source date，再核验 government/customs/procurement evidence；随后形成 next step checklist、risk approval gate、项目库记录和可行性草稿。\n专业判断: 海关问题必须核验 HS code、tariff、customs valuation、certificate of origin、import license；EPC 项目必须核验 owner、developer、contractor、FIDIC/contract risk 和 tender status。\n风险边界: payment、contract、sanction、export control、customs、quotation、delivery promise、public publishing 必须 approval 后才能对外使用。",
+  "executive_answer": "结论: 可以作为内部推进依据；对外使用仍需要人工审批。\n问题: Kazakhstan engineering trade project customs investment promotion video\n国家/地区: Kazakhstan\n证据状态: officially_supported；置信度 98；官方证据 1 条。\n任务状态: pending_owner；需要处理 6 项任务；阻断 3 项高风险动作。\n执行清单: 先查官方 source URL 和 source date，再核验 government/customs/procurement evidence；随后形成 next step checklist、risk approval gate、项目库记录和可行性草稿。\n专业判断: 海关问题必须核验 HS code、tariff、customs valuation、certificate of origin、import license；EPC 项目必须核验 owner、developer、contractor、FIDIC/contract risk 和 tender status。\n风险边界: payment、contract、sanction、export control、customs、quotation、delivery promise、public publishing 必须 approval 后才能对外使用。",
   "evidence_status": {
     "verification_status": "officially_supported",
     "confidence": 98,
@@ -27,7 +26,7 @@
     {
       "role": "research_analyst",
       "label": "科研情报分析",
-      "contribution": "优先搜索 official government、procurement、academic paper、library report 来源；第一条官方检索式: 哈萨克斯坦工程贸易项目：确认海关信息、项目负责人、招商价值、视频传播方案和下一步推进计划 Kazakhstan EPC site:gov.kz",
+      "contribution": "优先搜索 official government、procurement、academic paper、library report 来源；第一条官方检索式: Kazakhstan engineering trade project customs investment promotion video Kazakhstan EPC site:gov.kz",
       "next_step": "把证据分为政府/采购/企业/媒体/社交五级，记录 citation、URL、source date、relevance note。"
     },
     {
@@ -60,82 +59,82 @@
     "official_queries": [
       {
         "intent": "government_confirmation",
-        "query": "哈萨克斯坦工程贸易项目：确认海关信息、项目负责人、招商价值、视频传播方案和下一步推进计划 Kazakhstan EPC site:gov.kz",
+        "query": "Kazakhstan engineering trade project customs investment promotion video Kazakhstan EPC site:gov.kz",
         "priority": "highest",
         "urls": {
-          "google": "https://www.google.com/search?q=%E5%93%88%E8%90%A8%E5%85%8B%E6%96%AF%E5%9D%A6%E5%B7%A5%E7%A8%8B%E8%B4%B8%E6%98%93%E9%A1%B9%E7%9B%AE%EF%BC%9A%E7%A1%AE%E8%AE%A4%E6%B5%B7%E5%85%B3%E4%BF%A1%E6%81%AF%E3%80%81%E9%A1%B9%E7%9B%AE%E8%B4%9F%E8%B4%A3%E4%BA%BA%E3%80%81%E6%8B%9B%E5%95%86%E4%BB%B7%E5%80%BC%E3%80%81%E8%A7%86%E9%A2%91%E4%BC%A0%E6%92%AD%E6%96%B9%E6%A1%88%E5%92%8C%E4%B8%8B%E4%B8%80%E6%AD%A5%E6%8E%A8%E8%BF%9B%E8%AE%A1%E5%88%92+Kazakhstan+EPC+site%3Agov.kz",
-          "yandex": "https://yandex.com/search/?text=%E5%93%88%E8%90%A8%E5%85%8B%E6%96%AF%E5%9D%A6%E5%B7%A5%E7%A8%8B%E8%B4%B8%E6%98%93%E9%A1%B9%E7%9B%AE%EF%BC%9A%E7%A1%AE%E8%AE%A4%E6%B5%B7%E5%85%B3%E4%BF%A1%E6%81%AF%E3%80%81%E9%A1%B9%E7%9B%AE%E8%B4%9F%E8%B4%A3%E4%BA%BA%E3%80%81%E6%8B%9B%E5%95%86%E4%BB%B7%E5%80%BC%E3%80%81%E8%A7%86%E9%A2%91%E4%BC%A0%E6%92%AD%E6%96%B9%E6%A1%88%E5%92%8C%E4%B8%8B%E4%B8%80%E6%AD%A5%E6%8E%A8%E8%BF%9B%E8%AE%A1%E5%88%92+Kazakhstan+EPC+site%3Agov.kz",
-          "bing": "https://www.bing.com/search?q=%E5%93%88%E8%90%A8%E5%85%8B%E6%96%AF%E5%9D%A6%E5%B7%A5%E7%A8%8B%E8%B4%B8%E6%98%93%E9%A1%B9%E7%9B%AE%EF%BC%9A%E7%A1%AE%E8%AE%A4%E6%B5%B7%E5%85%B3%E4%BF%A1%E6%81%AF%E3%80%81%E9%A1%B9%E7%9B%AE%E8%B4%9F%E8%B4%A3%E4%BA%BA%E3%80%81%E6%8B%9B%E5%95%86%E4%BB%B7%E5%80%BC%E3%80%81%E8%A7%86%E9%A2%91%E4%BC%A0%E6%92%AD%E6%96%B9%E6%A1%88%E5%92%8C%E4%B8%8B%E4%B8%80%E6%AD%A5%E6%8E%A8%E8%BF%9B%E8%AE%A1%E5%88%92+Kazakhstan+EPC+site%3Agov.kz"
+          "google": "https://www.google.com/search?q=Kazakhstan+engineering+trade+project+customs+investment+promotion+video+Kazakhstan+EPC+site%3Agov.kz",
+          "yandex": "https://yandex.com/search/?text=Kazakhstan+engineering+trade+project+customs+investment+promotion+video+Kazakhstan+EPC+site%3Agov.kz",
+          "bing": "https://www.bing.com/search?q=Kazakhstan+engineering+trade+project+customs+investment+promotion+video+Kazakhstan+EPC+site%3Agov.kz"
         }
       },
       {
         "intent": "government_confirmation",
-        "query": "哈萨克斯坦工程贸易项目：确认海关信息、项目负责人、招商价值、视频传播方案和下一步推进计划 Kazakhstan EPC site:primeminister.kz",
+        "query": "Kazakhstan engineering trade project customs investment promotion video Kazakhstan EPC site:primeminister.kz",
         "priority": "highest",
         "urls": {
-          "google": "https://www.google.com/search?q=%E5%93%88%E8%90%A8%E5%85%8B%E6%96%AF%E5%9D%A6%E5%B7%A5%E7%A8%8B%E8%B4%B8%E6%98%93%E9%A1%B9%E7%9B%AE%EF%BC%9A%E7%A1%AE%E8%AE%A4%E6%B5%B7%E5%85%B3%E4%BF%A1%E6%81%AF%E3%80%81%E9%A1%B9%E7%9B%AE%E8%B4%9F%E8%B4%A3%E4%BA%BA%E3%80%81%E6%8B%9B%E5%95%86%E4%BB%B7%E5%80%BC%E3%80%81%E8%A7%86%E9%A2%91%E4%BC%A0%E6%92%AD%E6%96%B9%E6%A1%88%E5%92%8C%E4%B8%8B%E4%B8%80%E6%AD%A5%E6%8E%A8%E8%BF%9B%E8%AE%A1%E5%88%92+Kazakhstan+EPC+site%3Aprimeminister.kz",
-          "yandex": "https://yandex.com/search/?text=%E5%93%88%E8%90%A8%E5%85%8B%E6%96%AF%E5%9D%A6%E5%B7%A5%E7%A8%8B%E8%B4%B8%E6%98%93%E9%A1%B9%E7%9B%AE%EF%BC%9A%E7%A1%AE%E8%AE%A4%E6%B5%B7%E5%85%B3%E4%BF%A1%E6%81%AF%E3%80%81%E9%A1%B9%E7%9B%AE%E8%B4%9F%E8%B4%A3%E4%BA%BA%E3%80%81%E6%8B%9B%E5%95%86%E4%BB%B7%E5%80%BC%E3%80%81%E8%A7%86%E9%A2%91%E4%BC%A0%E6%92%AD%E6%96%B9%E6%A1%88%E5%92%8C%E4%B8%8B%E4%B8%80%E6%AD%A5%E6%8E%A8%E8%BF%9B%E8%AE%A1%E5%88%92+Kazakhstan+EPC+site%3Aprimeminister.kz",
-          "bing": "https://www.bing.com/search?q=%E5%93%88%E8%90%A8%E5%85%8B%E6%96%AF%E5%9D%A6%E5%B7%A5%E7%A8%8B%E8%B4%B8%E6%98%93%E9%A1%B9%E7%9B%AE%EF%BC%9A%E7%A1%AE%E8%AE%A4%E6%B5%B7%E5%85%B3%E4%BF%A1%E6%81%AF%E3%80%81%E9%A1%B9%E7%9B%AE%E8%B4%9F%E8%B4%A3%E4%BA%BA%E3%80%81%E6%8B%9B%E5%95%86%E4%BB%B7%E5%80%BC%E3%80%81%E8%A7%86%E9%A2%91%E4%BC%A0%E6%92%AD%E6%96%B9%E6%A1%88%E5%92%8C%E4%B8%8B%E4%B8%80%E6%AD%A5%E6%8E%A8%E8%BF%9B%E8%AE%A1%E5%88%92+Kazakhstan+EPC+site%3Aprimeminister.kz"
+          "google": "https://www.google.com/search?q=Kazakhstan+engineering+trade+project+customs+investment+promotion+video+Kazakhstan+EPC+site%3Aprimeminister.kz",
+          "yandex": "https://yandex.com/search/?text=Kazakhstan+engineering+trade+project+customs+investment+promotion+video+Kazakhstan+EPC+site%3Aprimeminister.kz",
+          "bing": "https://www.bing.com/search?q=Kazakhstan+engineering+trade+project+customs+investment+promotion+video+Kazakhstan+EPC+site%3Aprimeminister.kz"
         }
       },
       {
         "intent": "government_confirmation",
-        "query": "哈萨克斯坦工程贸易项目：确认海关信息、项目负责人、招商价值、视频传播方案和下一步推进计划 Kazakhstan EPC site:invest.gov.kz",
+        "query": "Kazakhstan engineering trade project customs investment promotion video Kazakhstan EPC site:invest.gov.kz",
         "priority": "highest",
         "urls": {
-          "google": "https://www.google.com/search?q=%E5%93%88%E8%90%A8%E5%85%8B%E6%96%AF%E5%9D%A6%E5%B7%A5%E7%A8%8B%E8%B4%B8%E6%98%93%E9%A1%B9%E7%9B%AE%EF%BC%9A%E7%A1%AE%E8%AE%A4%E6%B5%B7%E5%85%B3%E4%BF%A1%E6%81%AF%E3%80%81%E9%A1%B9%E7%9B%AE%E8%B4%9F%E8%B4%A3%E4%BA%BA%E3%80%81%E6%8B%9B%E5%95%86%E4%BB%B7%E5%80%BC%E3%80%81%E8%A7%86%E9%A2%91%E4%BC%A0%E6%92%AD%E6%96%B9%E6%A1%88%E5%92%8C%E4%B8%8B%E4%B8%80%E6%AD%A5%E6%8E%A8%E8%BF%9B%E8%AE%A1%E5%88%92+Kazakhstan+EPC+site%3Ainvest.gov.kz",
-          "yandex": "https://yandex.com/search/?text=%E5%93%88%E8%90%A8%E5%85%8B%E6%96%AF%E5%9D%A6%E5%B7%A5%E7%A8%8B%E8%B4%B8%E6%98%93%E9%A1%B9%E7%9B%AE%EF%BC%9A%E7%A1%AE%E8%AE%A4%E6%B5%B7%E5%85%B3%E4%BF%A1%E6%81%AF%E3%80%81%E9%A1%B9%E7%9B%AE%E8%B4%9F%E8%B4%A3%E4%BA%BA%E3%80%81%E6%8B%9B%E5%95%86%E4%BB%B7%E5%80%BC%E3%80%81%E8%A7%86%E9%A2%91%E4%BC%A0%E6%92%AD%E6%96%B9%E6%A1%88%E5%92%8C%E4%B8%8B%E4%B8%80%E6%AD%A5%E6%8E%A8%E8%BF%9B%E8%AE%A1%E5%88%92+Kazakhstan+EPC+site%3Ainvest.gov.kz",
-          "bing": "https://www.bing.com/search?q=%E5%93%88%E8%90%A8%E5%85%8B%E6%96%AF%E5%9D%A6%E5%B7%A5%E7%A8%8B%E8%B4%B8%E6%98%93%E9%A1%B9%E7%9B%AE%EF%BC%9A%E7%A1%AE%E8%AE%A4%E6%B5%B7%E5%85%B3%E4%BF%A1%E6%81%AF%E3%80%81%E9%A1%B9%E7%9B%AE%E8%B4%9F%E8%B4%A3%E4%BA%BA%E3%80%81%E6%8B%9B%E5%95%86%E4%BB%B7%E5%80%BC%E3%80%81%E8%A7%86%E9%A2%91%E4%BC%A0%E6%92%AD%E6%96%B9%E6%A1%88%E5%92%8C%E4%B8%8B%E4%B8%80%E6%AD%A5%E6%8E%A8%E8%BF%9B%E8%AE%A1%E5%88%92+Kazakhstan+EPC+site%3Ainvest.gov.kz"
+          "google": "https://www.google.com/search?q=Kazakhstan+engineering+trade+project+customs+investment+promotion+video+Kazakhstan+EPC+site%3Ainvest.gov.kz",
+          "yandex": "https://yandex.com/search/?text=Kazakhstan+engineering+trade+project+customs+investment+promotion+video+Kazakhstan+EPC+site%3Ainvest.gov.kz",
+          "bing": "https://www.bing.com/search?q=Kazakhstan+engineering+trade+project+customs+investment+promotion+video+Kazakhstan+EPC+site%3Ainvest.gov.kz"
         }
       },
       {
         "intent": "government_confirmation",
-        "query": "哈萨克斯坦工程贸易项目：确认海关信息、项目负责人、招商价值、视频传播方案和下一步推进计划 Kazakhstan EPC site:adilet.zan.kz",
+        "query": "Kazakhstan engineering trade project customs investment promotion video Kazakhstan EPC site:adilet.zan.kz",
         "priority": "highest",
         "urls": {
-          "google": "https://www.google.com/search?q=%E5%93%88%E8%90%A8%E5%85%8B%E6%96%AF%E5%9D%A6%E5%B7%A5%E7%A8%8B%E8%B4%B8%E6%98%93%E9%A1%B9%E7%9B%AE%EF%BC%9A%E7%A1%AE%E8%AE%A4%E6%B5%B7%E5%85%B3%E4%BF%A1%E6%81%AF%E3%80%81%E9%A1%B9%E7%9B%AE%E8%B4%9F%E8%B4%A3%E4%BA%BA%E3%80%81%E6%8B%9B%E5%95%86%E4%BB%B7%E5%80%BC%E3%80%81%E8%A7%86%E9%A2%91%E4%BC%A0%E6%92%AD%E6%96%B9%E6%A1%88%E5%92%8C%E4%B8%8B%E4%B8%80%E6%AD%A5%E6%8E%A8%E8%BF%9B%E8%AE%A1%E5%88%92+Kazakhstan+EPC+site%3Aadilet.zan.kz",
-          "yandex": "https://yandex.com/search/?text=%E5%93%88%E8%90%A8%E5%85%8B%E6%96%AF%E5%9D%A6%E5%B7%A5%E7%A8%8B%E8%B4%B8%E6%98%93%E9%A1%B9%E7%9B%AE%EF%BC%9A%E7%A1%AE%E8%AE%A4%E6%B5%B7%E5%85%B3%E4%BF%A1%E6%81%AF%E3%80%81%E9%A1%B9%E7%9B%AE%E8%B4%9F%E8%B4%A3%E4%BA%BA%E3%80%81%E6%8B%9B%E5%95%86%E4%BB%B7%E5%80%BC%E3%80%81%E8%A7%86%E9%A2%91%E4%BC%A0%E6%92%AD%E6%96%B9%E6%A1%88%E5%92%8C%E4%B8%8B%E4%B8%80%E6%AD%A5%E6%8E%A8%E8%BF%9B%E8%AE%A1%E5%88%92+Kazakhstan+EPC+site%3Aadilet.zan.kz",
-          "bing": "https://www.bing.com/search?q=%E5%93%88%E8%90%A8%E5%85%8B%E6%96%AF%E5%9D%A6%E5%B7%A5%E7%A8%8B%E8%B4%B8%E6%98%93%E9%A1%B9%E7%9B%AE%EF%BC%9A%E7%A1%AE%E8%AE%A4%E6%B5%B7%E5%85%B3%E4%BF%A1%E6%81%AF%E3%80%81%E9%A1%B9%E7%9B%AE%E8%B4%9F%E8%B4%A3%E4%BA%BA%E3%80%81%E6%8B%9B%E5%95%86%E4%BB%B7%E5%80%BC%E3%80%81%E8%A7%86%E9%A2%91%E4%BC%A0%E6%92%AD%E6%96%B9%E6%A1%88%E5%92%8C%E4%B8%8B%E4%B8%80%E6%AD%A5%E6%8E%A8%E8%BF%9B%E8%AE%A1%E5%88%92+Kazakhstan+EPC+site%3Aadilet.zan.kz"
+          "google": "https://www.google.com/search?q=Kazakhstan+engineering+trade+project+customs+investment+promotion+video+Kazakhstan+EPC+site%3Aadilet.zan.kz",
+          "yandex": "https://yandex.com/search/?text=Kazakhstan+engineering+trade+project+customs+investment+promotion+video+Kazakhstan+EPC+site%3Aadilet.zan.kz",
+          "bing": "https://www.bing.com/search?q=Kazakhstan+engineering+trade+project+customs+investment+promotion+video+Kazakhstan+EPC+site%3Aadilet.zan.kz"
         }
       },
       {
         "intent": "government_confirmation",
-        "query": "哈萨克斯坦工程贸易项目：确认海关信息、项目负责人、招商价值、视频传播方案和下一步推进计划 Kazakhstan engineering procurement construction site:gov.kz",
+        "query": "Kazakhstan engineering trade project customs investment promotion video Kazakhstan engineering procurement construction site:gov.kz",
         "priority": "highest",
         "urls": {
-          "google": "https://www.google.com/search?q=%E5%93%88%E8%90%A8%E5%85%8B%E6%96%AF%E5%9D%A6%E5%B7%A5%E7%A8%8B%E8%B4%B8%E6%98%93%E9%A1%B9%E7%9B%AE%EF%BC%9A%E7%A1%AE%E8%AE%A4%E6%B5%B7%E5%85%B3%E4%BF%A1%E6%81%AF%E3%80%81%E9%A1%B9%E7%9B%AE%E8%B4%9F%E8%B4%A3%E4%BA%BA%E3%80%81%E6%8B%9B%E5%95%86%E4%BB%B7%E5%80%BC%E3%80%81%E8%A7%86%E9%A2%91%E4%BC%A0%E6%92%AD%E6%96%B9%E6%A1%88%E5%92%8C%E4%B8%8B%E4%B8%80%E6%AD%A5%E6%8E%A8%E8%BF%9B%E8%AE%A1%E5%88%92+Kazakhstan+engineering+procurement+construction+site%3Agov.kz",
-          "yandex": "https://yandex.com/search/?text=%E5%93%88%E8%90%A8%E5%85%8B%E6%96%AF%E5%9D%A6%E5%B7%A5%E7%A8%8B%E8%B4%B8%E6%98%93%E9%A1%B9%E7%9B%AE%EF%BC%9A%E7%A1%AE%E8%AE%A4%E6%B5%B7%E5%85%B3%E4%BF%A1%E6%81%AF%E3%80%81%E9%A1%B9%E7%9B%AE%E8%B4%9F%E8%B4%A3%E4%BA%BA%E3%80%81%E6%8B%9B%E5%95%86%E4%BB%B7%E5%80%BC%E3%80%81%E8%A7%86%E9%A2%91%E4%BC%A0%E6%92%AD%E6%96%B9%E6%A1%88%E5%92%8C%E4%B8%8B%E4%B8%80%E6%AD%A5%E6%8E%A8%E8%BF%9B%E8%AE%A1%E5%88%92+Kazakhstan+engineering+procurement+construction+site%3Agov.kz",
-          "bing": "https://www.bing.com/search?q=%E5%93%88%E8%90%A8%E5%85%8B%E6%96%AF%E5%9D%A6%E5%B7%A5%E7%A8%8B%E8%B4%B8%E6%98%93%E9%A1%B9%E7%9B%AE%EF%BC%9A%E7%A1%AE%E8%AE%A4%E6%B5%B7%E5%85%B3%E4%BF%A1%E6%81%AF%E3%80%81%E9%A1%B9%E7%9B%AE%E8%B4%9F%E8%B4%A3%E4%BA%BA%E3%80%81%E6%8B%9B%E5%95%86%E4%BB%B7%E5%80%BC%E3%80%81%E8%A7%86%E9%A2%91%E4%BC%A0%E6%92%AD%E6%96%B9%E6%A1%88%E5%92%8C%E4%B8%8B%E4%B8%80%E6%AD%A5%E6%8E%A8%E8%BF%9B%E8%AE%A1%E5%88%92+Kazakhstan+engineering+procurement+construction+site%3Agov.kz"
+          "google": "https://www.google.com/search?q=Kazakhstan+engineering+trade+project+customs+investment+promotion+video+Kazakhstan+engineering+procurement+construction+site%3Agov.kz",
+          "yandex": "https://yandex.com/search/?text=Kazakhstan+engineering+trade+project+customs+investment+promotion+video+Kazakhstan+engineering+procurement+construction+site%3Agov.kz",
+          "bing": "https://www.bing.com/search?q=Kazakhstan+engineering+trade+project+customs+investment+promotion+video+Kazakhstan+engineering+procurement+construction+site%3Agov.kz"
         }
       },
       {
         "intent": "government_confirmation",
-        "query": "哈萨克斯坦工程贸易项目：确认海关信息、项目负责人、招商价值、视频传播方案和下一步推进计划 Kazakhstan engineering procurement construction site:primeminister.kz",
+        "query": "Kazakhstan engineering trade project customs investment promotion video Kazakhstan engineering procurement construction site:primeminister.kz",
         "priority": "highest",
         "urls": {
-          "google": "https://www.google.com/search?q=%E5%93%88%E8%90%A8%E5%85%8B%E6%96%AF%E5%9D%A6%E5%B7%A5%E7%A8%8B%E8%B4%B8%E6%98%93%E9%A1%B9%E7%9B%AE%EF%BC%9A%E7%A1%AE%E8%AE%A4%E6%B5%B7%E5%85%B3%E4%BF%A1%E6%81%AF%E3%80%81%E9%A1%B9%E7%9B%AE%E8%B4%9F%E8%B4%A3%E4%BA%BA%E3%80%81%E6%8B%9B%E5%95%86%E4%BB%B7%E5%80%BC%E3%80%81%E8%A7%86%E9%A2%91%E4%BC%A0%E6%92%AD%E6%96%B9%E6%A1%88%E5%92%8C%E4%B8%8B%E4%B8%80%E6%AD%A5%E6%8E%A8%E8%BF%9B%E8%AE%A1%E5%88%92+Kazakhstan+engineering+procurement+construction+site%3Aprimeminister.kz",
-          "yandex": "https://yandex.com/search/?text=%E5%93%88%E8%90%A8%E5%85%8B%E6%96%AF%E5%9D%A6%E5%B7%A5%E7%A8%8B%E8%B4%B8%E6%98%93%E9%A1%B9%E7%9B%AE%EF%BC%9A%E7%A1%AE%E8%AE%A4%E6%B5%B7%E5%85%B3%E4%BF%A1%E6%81%AF%E3%80%81%E9%A1%B9%E7%9B%AE%E8%B4%9F%E8%B4%A3%E4%BA%BA%E3%80%81%E6%8B%9B%E5%95%86%E4%BB%B7%E5%80%BC%E3%80%81%E8%A7%86%E9%A2%91%E4%BC%A0%E6%92%AD%E6%96%B9%E6%A1%88%E5%92%8C%E4%B8%8B%E4%B8%80%E6%AD%A5%E6%8E%A8%E8%BF%9B%E8%AE%A1%E5%88%92+Kazakhstan+engineering+procurement+construction+site%3Aprimeminister.kz",
-          "bing": "https://www.bing.com/search?q=%E5%93%88%E8%90%A8%E5%85%8B%E6%96%AF%E5%9D%A6%E5%B7%A5%E7%A8%8B%E8%B4%B8%E6%98%93%E9%A1%B9%E7%9B%AE%EF%BC%9A%E7%A1%AE%E8%AE%A4%E6%B5%B7%E5%85%B3%E4%BF%A1%E6%81%AF%E3%80%81%E9%A1%B9%E7%9B%AE%E8%B4%9F%E8%B4%A3%E4%BA%BA%E3%80%81%E6%8B%9B%E5%95%86%E4%BB%B7%E5%80%BC%E3%80%81%E8%A7%86%E9%A2%91%E4%BC%A0%E6%92%AD%E6%96%B9%E6%A1%88%E5%92%8C%E4%B8%8B%E4%B8%80%E6%AD%A5%E6%8E%A8%E8%BF%9B%E8%AE%A1%E5%88%92+Kazakhstan+engineering+procurement+construction+site%3Aprimeminister.kz"
+          "google": "https://www.google.com/search?q=Kazakhstan+engineering+trade+project+customs+investment+promotion+video+Kazakhstan+engineering+procurement+construction+site%3Aprimeminister.kz",
+          "yandex": "https://yandex.com/search/?text=Kazakhstan+engineering+trade+project+customs+investment+promotion+video+Kazakhstan+engineering+procurement+construction+site%3Aprimeminister.kz",
+          "bing": "https://www.bing.com/search?q=Kazakhstan+engineering+trade+project+customs+investment+promotion+video+Kazakhstan+engineering+procurement+construction+site%3Aprimeminister.kz"
         }
       },
       {
         "intent": "government_confirmation",
-        "query": "哈萨克斯坦工程贸易项目：确认海关信息、项目负责人、招商价值、视频传播方案和下一步推进计划 Kazakhstan engineering procurement construction site:invest.gov.kz",
+        "query": "Kazakhstan engineering trade project customs investment promotion video Kazakhstan engineering procurement construction site:invest.gov.kz",
         "priority": "highest",
         "urls": {
-          "google": "https://www.google.com/search?q=%E5%93%88%E8%90%A8%E5%85%8B%E6%96%AF%E5%9D%A6%E5%B7%A5%E7%A8%8B%E8%B4%B8%E6%98%93%E9%A1%B9%E7%9B%AE%EF%BC%9A%E7%A1%AE%E8%AE%A4%E6%B5%B7%E5%85%B3%E4%BF%A1%E6%81%AF%E3%80%81%E9%A1%B9%E7%9B%AE%E8%B4%9F%E8%B4%A3%E4%BA%BA%E3%80%81%E6%8B%9B%E5%95%86%E4%BB%B7%E5%80%BC%E3%80%81%E8%A7%86%E9%A2%91%E4%BC%A0%E6%92%AD%E6%96%B9%E6%A1%88%E5%92%8C%E4%B8%8B%E4%B8%80%E6%AD%A5%E6%8E%A8%E8%BF%9B%E8%AE%A1%E5%88%92+Kazakhstan+engineering+procurement+construction+site%3Ainvest.gov.kz",
-          "yandex": "https://yandex.com/search/?text=%E5%93%88%E8%90%A8%E5%85%8B%E6%96%AF%E5%9D%A6%E5%B7%A5%E7%A8%8B%E8%B4%B8%E6%98%93%E9%A1%B9%E7%9B%AE%EF%BC%9A%E7%A1%AE%E8%AE%A4%E6%B5%B7%E5%85%B3%E4%BF%A1%E6%81%AF%E3%80%81%E9%A1%B9%E7%9B%AE%E8%B4%9F%E8%B4%A3%E4%BA%BA%E3%80%81%E6%8B%9B%E5%95%86%E4%BB%B7%E5%80%BC%E3%80%81%E8%A7%86%E9%A2%91%E4%BC%A0%E6%92%AD%E6%96%B9%E6%A1%88%E5%92%8C%E4%B8%8B%E4%B8%80%E6%AD%A5%E6%8E%A8%E8%BF%9B%E8%AE%A1%E5%88%92+Kazakhstan+engineering+procurement+construction+site%3Ainvest.gov.kz",
-          "bing": "https://www.bing.com/search?q=%E5%93%88%E8%90%A8%E5%85%8B%E6%96%AF%E5%9D%A6%E5%B7%A5%E7%A8%8B%E8%B4%B8%E6%98%93%E9%A1%B9%E7%9B%AE%EF%BC%9A%E7%A1%AE%E8%AE%A4%E6%B5%B7%E5%85%B3%E4%BF%A1%E6%81%AF%E3%80%81%E9%A1%B9%E7%9B%AE%E8%B4%9F%E8%B4%A3%E4%BA%BA%E3%80%81%E6%8B%9B%E5%95%86%E4%BB%B7%E5%80%BC%E3%80%81%E8%A7%86%E9%A2%91%E4%BC%A0%E6%92%AD%E6%96%B9%E6%A1%88%E5%92%8C%E4%B8%8B%E4%B8%80%E6%AD%A5%E6%8E%A8%E8%BF%9B%E8%AE%A1%E5%88%92+Kazakhstan+engineering+procurement+construction+site%3Ainvest.gov.kz"
+          "google": "https://www.google.com/search?q=Kazakhstan+engineering+trade+project+customs+investment+promotion+video+Kazakhstan+engineering+procurement+construction+site%3Ainvest.gov.kz",
+          "yandex": "https://yandex.com/search/?text=Kazakhstan+engineering+trade+project+customs+investment+promotion+video+Kazakhstan+engineering+procurement+construction+site%3Ainvest.gov.kz",
+          "bing": "https://www.bing.com/search?q=Kazakhstan+engineering+trade+project+customs+investment+promotion+video+Kazakhstan+engineering+procurement+construction+site%3Ainvest.gov.kz"
         }
       },
       {
         "intent": "government_confirmation",
-        "query": "哈萨克斯坦工程贸易项目：确认海关信息、项目负责人、招商价值、视频传播方案和下一步推进计划 Kazakhstan engineering procurement construction site:adilet.zan.kz",
+        "query": "Kazakhstan engineering trade project customs investment promotion video Kazakhstan engineering procurement construction site:adilet.zan.kz",
         "priority": "highest",
         "urls": {
-          "google": "https://www.google.com/search?q=%E5%93%88%E8%90%A8%E5%85%8B%E6%96%AF%E5%9D%A6%E5%B7%A5%E7%A8%8B%E8%B4%B8%E6%98%93%E9%A1%B9%E7%9B%AE%EF%BC%9A%E7%A1%AE%E8%AE%A4%E6%B5%B7%E5%85%B3%E4%BF%A1%E6%81%AF%E3%80%81%E9%A1%B9%E7%9B%AE%E8%B4%9F%E8%B4%A3%E4%BA%BA%E3%80%81%E6%8B%9B%E5%95%86%E4%BB%B7%E5%80%BC%E3%80%81%E8%A7%86%E9%A2%91%E4%BC%A0%E6%92%AD%E6%96%B9%E6%A1%88%E5%92%8C%E4%B8%8B%E4%B8%80%E6%AD%A5%E6%8E%A8%E8%BF%9B%E8%AE%A1%E5%88%92+Kazakhstan+engineering+procurement+construction+site%3Aadilet.zan.kz",
-          "yandex": "https://yandex.com/search/?text=%E5%93%88%E8%90%A8%E5%85%8B%E6%96%AF%E5%9D%A6%E5%B7%A5%E7%A8%8B%E8%B4%B8%E6%98%93%E9%A1%B9%E7%9B%AE%EF%BC%9A%E7%A1%AE%E8%AE%A4%E6%B5%B7%E5%85%B3%E4%BF%A1%E6%81%AF%E3%80%81%E9%A1%B9%E7%9B%AE%E8%B4%9F%E8%B4%A3%E4%BA%BA%E3%80%81%E6%8B%9B%E5%95%86%E4%BB%B7%E5%80%BC%E3%80%81%E8%A7%86%E9%A2%91%E4%BC%A0%E6%92%AD%E6%96%B9%E6%A1%88%E5%92%8C%E4%B8%8B%E4%B8%80%E6%AD%A5%E6%8E%A8%E8%BF%9B%E8%AE%A1%E5%88%92+Kazakhstan+engineering+procurement+construction+site%3Aadilet.zan.kz",
-          "bing": "https://www.bing.com/search?q=%E5%93%88%E8%90%A8%E5%85%8B%E6%96%AF%E5%9D%A6%E5%B7%A5%E7%A8%8B%E8%B4%B8%E6%98%93%E9%A1%B9%E7%9B%AE%EF%BC%9A%E7%A1%AE%E8%AE%A4%E6%B5%B7%E5%85%B3%E4%BF%A1%E6%81%AF%E3%80%81%E9%A1%B9%E7%9B%AE%E8%B4%9F%E8%B4%A3%E4%BA%BA%E3%80%81%E6%8B%9B%E5%95%86%E4%BB%B7%E5%80%BC%E3%80%81%E8%A7%86%E9%A2%91%E4%BC%A0%E6%92%AD%E6%96%B9%E6%A1%88%E5%92%8C%E4%B8%8B%E4%B8%80%E6%AD%A5%E6%8E%A8%E8%BF%9B%E8%AE%A1%E5%88%92+Kazakhstan+engineering+procurement+construction+site%3Aadilet.zan.kz"
+          "google": "https://www.google.com/search?q=Kazakhstan+engineering+trade+project+customs+investment+promotion+video+Kazakhstan+engineering+procurement+construction+site%3Aadilet.zan.kz",
+          "yandex": "https://yandex.com/search/?text=Kazakhstan+engineering+trade+project+customs+investment+promotion+video+Kazakhstan+engineering+procurement+construction+site%3Aadilet.zan.kz",
+          "bing": "https://www.bing.com/search?q=Kazakhstan+engineering+trade+project+customs+investment+promotion+video+Kazakhstan+engineering+procurement+construction+site%3Aadilet.zan.kz"
         }
       }
     ],
@@ -143,47 +142,47 @@
       {
         "id": "project_pipeline",
         "label": "Project pipeline",
-        "first_search_term": "Kazakhstan infrastructure 哈萨克斯坦工程贸易项目：确认海关信息、项目负责人、招商价值、视频传播方案和下一步推进计划 planned project"
+        "first_search_term": "Kazakhstan infrastructure Kazakhstan engineering trade project customs investment promotion video planned project"
       },
       {
         "id": "political_impact",
         "label": "Political and policy impact",
-        "first_search_term": "Kazakhstan infrastructure 哈萨克斯坦工程贸易项目：确认海关信息、项目负责人、招商价值、视频传播方案和下一步推进计划 government policy"
+        "first_search_term": "Kazakhstan infrastructure Kazakhstan engineering trade project customs investment promotion video government policy"
       },
       {
         "id": "investment_value",
         "label": "High value and high return",
-        "first_search_term": "Kazakhstan infrastructure 哈萨克斯坦工程贸易项目：确认海关信息、项目负责人、招商价值、视频传播方案和下一步推进计划 investment project"
+        "first_search_term": "Kazakhstan infrastructure Kazakhstan engineering trade project customs investment promotion video investment project"
       },
       {
         "id": "growth_sector",
         "label": "Growth sectors",
-        "first_search_term": "Kazakhstan infrastructure 哈萨克斯坦工程贸易项目：确认海关信息、项目负责人、招商价值、视频传播方案和下一步推进计划 renewable energy"
+        "first_search_term": "Kazakhstan infrastructure Kazakhstan engineering trade project customs investment promotion video renewable energy"
       },
       {
         "id": "procurement_trade",
         "label": "Procurement and trade",
-        "first_search_term": "Kazakhstan infrastructure 哈萨克斯坦工程贸易项目：确认海关信息、项目负责人、招商价值、视频传播方案和下一步推进计划 public tender"
+        "first_search_term": "Kazakhstan infrastructure Kazakhstan engineering trade project customs investment promotion video public tender"
       },
       {
         "id": "risk_compliance",
         "label": "Risk and compliance",
-        "first_search_term": "Kazakhstan infrastructure 哈萨克斯坦工程贸易项目：确认海关信息、项目负责人、招商价值、视频传播方案和下一步推进计划 sanctions"
+        "first_search_term": "Kazakhstan infrastructure Kazakhstan engineering trade project customs investment promotion video sanctions"
       },
       {
         "id": "forums_social",
         "label": "Forums, chats, and social attention",
-        "first_search_term": "Kazakhstan infrastructure 哈萨克斯坦工程贸易项目：确认海关信息、项目负责人、招商价值、视频传播方案和下一步推进计划 forum"
+        "first_search_term": "Kazakhstan infrastructure Kazakhstan engineering trade project customs investment promotion video forum"
       },
       {
         "id": "video_intelligence",
         "label": "Video intelligence and production",
-        "first_search_term": "Kazakhstan infrastructure 哈萨克斯坦工程贸易项目：确认海关信息、项目负责人、招商价值、视频传播方案和下一步推进计划 YouTube"
+        "first_search_term": "Kazakhstan infrastructure Kazakhstan engineering trade project customs investment promotion video YouTube"
       },
       {
         "id": "research_library",
         "label": "Research and library",
-        "first_search_term": "Kazakhstan infrastructure 哈萨克斯坦工程贸易项目：确认海关信息、项目负责人、招商价值、视频传播方案和下一步推进计划 paper"
+        "first_search_term": "Kazakhstan infrastructure Kazakhstan engineering trade project customs investment promotion video paper"
       }
     ]
   },
@@ -191,63 +190,63 @@
     "platform_searches": [
       {
         "platform": "YouTube",
-        "keyword": "Kazakhstan infrastructure 哈萨克斯坦工程贸易项目：确认海关信息、项目负责人、招商价值、视频传播方案和下一步推进计划 case study short video",
-        "url": "https://www.youtube.com/results?search_query=Kazakhstan+infrastructure+%E5%93%88%E8%90%A8%E5%85%8B%E6%96%AF%E5%9D%A6%E5%B7%A5%E7%A8%8B%E8%B4%B8%E6%98%93%E9%A1%B9%E7%9B%AE%EF%BC%9A%E7%A1%AE%E8%AE%A4%E6%B5%B7%E5%85%B3%E4%BF%A1%E6%81%AF%E3%80%81%E9%A1%B9%E7%9B%AE%E8%B4%9F%E8%B4%A3%E4%BA%BA%E3%80%81%E6%8B%9B%E5%95%86%E4%BB%B7%E5%80%BC%E3%80%81%E8%A7%86%E9%A2%91%E4%BC%A0%E6%92%AD%E6%96%B9%E6%A1%88%E5%92%8C%E4%B8%8B%E4%B8%80%E6%AD%A5%E6%8E%A8%E8%BF%9B%E8%AE%A1%E5%88%92+case+study+short+video"
+        "keyword": "Kazakhstan infrastructure Kazakhstan engineering trade project customs investment promotion video case study short video",
+        "url": "https://www.youtube.com/results?search_query=Kazakhstan+infrastructure+Kazakhstan+engineering+trade+project+customs+investment+promotion+video+case+study+short+video"
       },
       {
         "platform": "TikTok",
-        "keyword": "Kazakhstan infrastructure 哈萨克斯坦工程贸易项目：确认海关信息、项目负责人、招商价值、视频传播方案和下一步推进计划 case study short video",
-        "url": "https://www.tiktok.com/search?q=Kazakhstan+infrastructure+%E5%93%88%E8%90%A8%E5%85%8B%E6%96%AF%E5%9D%A6%E5%B7%A5%E7%A8%8B%E8%B4%B8%E6%98%93%E9%A1%B9%E7%9B%AE%EF%BC%9A%E7%A1%AE%E8%AE%A4%E6%B5%B7%E5%85%B3%E4%BF%A1%E6%81%AF%E3%80%81%E9%A1%B9%E7%9B%AE%E8%B4%9F%E8%B4%A3%E4%BA%BA%E3%80%81%E6%8B%9B%E5%95%86%E4%BB%B7%E5%80%BC%E3%80%81%E8%A7%86%E9%A2%91%E4%BC%A0%E6%92%AD%E6%96%B9%E6%A1%88%E5%92%8C%E4%B8%8B%E4%B8%80%E6%AD%A5%E6%8E%A8%E8%BF%9B%E8%AE%A1%E5%88%92+case+study+short+video"
+        "keyword": "Kazakhstan infrastructure Kazakhstan engineering trade project customs investment promotion video case study short video",
+        "url": "https://www.tiktok.com/search?q=Kazakhstan+infrastructure+Kazakhstan+engineering+trade+project+customs+investment+promotion+video+case+study+short+video"
       },
       {
         "platform": "Douyin",
-        "keyword": "Kazakhstan infrastructure 哈萨克斯坦工程贸易项目：确认海关信息、项目负责人、招商价值、视频传播方案和下一步推进计划 case study short video",
-        "url": "https://www.douyin.com/search/Kazakhstan+infrastructure+%E5%93%88%E8%90%A8%E5%85%8B%E6%96%AF%E5%9D%A6%E5%B7%A5%E7%A8%8B%E8%B4%B8%E6%98%93%E9%A1%B9%E7%9B%AE%EF%BC%9A%E7%A1%AE%E8%AE%A4%E6%B5%B7%E5%85%B3%E4%BF%A1%E6%81%AF%E3%80%81%E9%A1%B9%E7%9B%AE%E8%B4%9F%E8%B4%A3%E4%BA%BA%E3%80%81%E6%8B%9B%E5%95%86%E4%BB%B7%E5%80%BC%E3%80%81%E8%A7%86%E9%A2%91%E4%BC%A0%E6%92%AD%E6%96%B9%E6%A1%88%E5%92%8C%E4%B8%8B%E4%B8%80%E6%AD%A5%E6%8E%A8%E8%BF%9B%E8%AE%A1%E5%88%92+case+study+short+video"
+        "keyword": "Kazakhstan infrastructure Kazakhstan engineering trade project customs investment promotion video case study short video",
+        "url": "https://www.douyin.com/search/Kazakhstan+infrastructure+Kazakhstan+engineering+trade+project+customs+investment+promotion+video+case+study+short+video"
       },
       {
         "platform": "Google Video",
-        "keyword": "Kazakhstan infrastructure 哈萨克斯坦工程贸易项目：确认海关信息、项目负责人、招商价值、视频传播方案和下一步推进计划 case study short video",
-        "url": "https://www.google.com/search?q=Kazakhstan+infrastructure+%E5%93%88%E8%90%A8%E5%85%8B%E6%96%AF%E5%9D%A6%E5%B7%A5%E7%A8%8B%E8%B4%B8%E6%98%93%E9%A1%B9%E7%9B%AE%EF%BC%9A%E7%A1%AE%E8%AE%A4%E6%B5%B7%E5%85%B3%E4%BF%A1%E6%81%AF%E3%80%81%E9%A1%B9%E7%9B%AE%E8%B4%9F%E8%B4%A3%E4%BA%BA%E3%80%81%E6%8B%9B%E5%95%86%E4%BB%B7%E5%80%BC%E3%80%81%E8%A7%86%E9%A2%91%E4%BC%A0%E6%92%AD%E6%96%B9%E6%A1%88%E5%92%8C%E4%B8%8B%E4%B8%80%E6%AD%A5%E6%8E%A8%E8%BF%9B%E8%AE%A1%E5%88%92+case+study+short+video+video"
+        "keyword": "Kazakhstan infrastructure Kazakhstan engineering trade project customs investment promotion video case study short video",
+        "url": "https://www.google.com/search?q=Kazakhstan+infrastructure+Kazakhstan+engineering+trade+project+customs+investment+promotion+video+case+study+short+video+video"
       },
       {
         "platform": "YouTube",
-        "keyword": "Kazakhstan infrastructure 哈萨克斯坦工程贸易项目：确认海关信息、项目负责人、招商价值、视频传播方案和下一步推进计划 project progress short video",
-        "url": "https://www.youtube.com/results?search_query=Kazakhstan+infrastructure+%E5%93%88%E8%90%A8%E5%85%8B%E6%96%AF%E5%9D%A6%E5%B7%A5%E7%A8%8B%E8%B4%B8%E6%98%93%E9%A1%B9%E7%9B%AE%EF%BC%9A%E7%A1%AE%E8%AE%A4%E6%B5%B7%E5%85%B3%E4%BF%A1%E6%81%AF%E3%80%81%E9%A1%B9%E7%9B%AE%E8%B4%9F%E8%B4%A3%E4%BA%BA%E3%80%81%E6%8B%9B%E5%95%86%E4%BB%B7%E5%80%BC%E3%80%81%E8%A7%86%E9%A2%91%E4%BC%A0%E6%92%AD%E6%96%B9%E6%A1%88%E5%92%8C%E4%B8%8B%E4%B8%80%E6%AD%A5%E6%8E%A8%E8%BF%9B%E8%AE%A1%E5%88%92+project+progress+short+video"
+        "keyword": "Kazakhstan infrastructure Kazakhstan engineering trade project customs investment promotion video project progress short video",
+        "url": "https://www.youtube.com/results?search_query=Kazakhstan+infrastructure+Kazakhstan+engineering+trade+project+customs+investment+promotion+video+project+progress+short+video"
       },
       {
         "platform": "TikTok",
-        "keyword": "Kazakhstan infrastructure 哈萨克斯坦工程贸易项目：确认海关信息、项目负责人、招商价值、视频传播方案和下一步推进计划 project progress short video",
-        "url": "https://www.tiktok.com/search?q=Kazakhstan+infrastructure+%E5%93%88%E8%90%A8%E5%85%8B%E6%96%AF%E5%9D%A6%E5%B7%A5%E7%A8%8B%E8%B4%B8%E6%98%93%E9%A1%B9%E7%9B%AE%EF%BC%9A%E7%A1%AE%E8%AE%A4%E6%B5%B7%E5%85%B3%E4%BF%A1%E6%81%AF%E3%80%81%E9%A1%B9%E7%9B%AE%E8%B4%9F%E8%B4%A3%E4%BA%BA%E3%80%81%E6%8B%9B%E5%95%86%E4%BB%B7%E5%80%BC%E3%80%81%E8%A7%86%E9%A2%91%E4%BC%A0%E6%92%AD%E6%96%B9%E6%A1%88%E5%92%8C%E4%B8%8B%E4%B8%80%E6%AD%A5%E6%8E%A8%E8%BF%9B%E8%AE%A1%E5%88%92+project+progress+short+video"
+        "keyword": "Kazakhstan infrastructure Kazakhstan engineering trade project customs investment promotion video project progress short video",
+        "url": "https://www.tiktok.com/search?q=Kazakhstan+infrastructure+Kazakhstan+engineering+trade+project+customs+investment+promotion+video+project+progress+short+video"
       },
       {
         "platform": "Douyin",
-        "keyword": "Kazakhstan infrastructure 哈萨克斯坦工程贸易项目：确认海关信息、项目负责人、招商价值、视频传播方案和下一步推进计划 project progress short video",
-        "url": "https://www.douyin.com/search/Kazakhstan+infrastructure+%E5%93%88%E8%90%A8%E5%85%8B%E6%96%AF%E5%9D%A6%E5%B7%A5%E7%A8%8B%E8%B4%B8%E6%98%93%E9%A1%B9%E7%9B%AE%EF%BC%9A%E7%A1%AE%E8%AE%A4%E6%B5%B7%E5%85%B3%E4%BF%A1%E6%81%AF%E3%80%81%E9%A1%B9%E7%9B%AE%E8%B4%9F%E8%B4%A3%E4%BA%BA%E3%80%81%E6%8B%9B%E5%95%86%E4%BB%B7%E5%80%BC%E3%80%81%E8%A7%86%E9%A2%91%E4%BC%A0%E6%92%AD%E6%96%B9%E6%A1%88%E5%92%8C%E4%B8%8B%E4%B8%80%E6%AD%A5%E6%8E%A8%E8%BF%9B%E8%AE%A1%E5%88%92+project+progress+short+video"
+        "keyword": "Kazakhstan infrastructure Kazakhstan engineering trade project customs investment promotion video project progress short video",
+        "url": "https://www.douyin.com/search/Kazakhstan+infrastructure+Kazakhstan+engineering+trade+project+customs+investment+promotion+video+project+progress+short+video"
       },
       {
         "platform": "Google Video",
-        "keyword": "Kazakhstan infrastructure 哈萨克斯坦工程贸易项目：确认海关信息、项目负责人、招商价值、视频传播方案和下一步推进计划 project progress short video",
-        "url": "https://www.google.com/search?q=Kazakhstan+infrastructure+%E5%93%88%E8%90%A8%E5%85%8B%E6%96%AF%E5%9D%A6%E5%B7%A5%E7%A8%8B%E8%B4%B8%E6%98%93%E9%A1%B9%E7%9B%AE%EF%BC%9A%E7%A1%AE%E8%AE%A4%E6%B5%B7%E5%85%B3%E4%BF%A1%E6%81%AF%E3%80%81%E9%A1%B9%E7%9B%AE%E8%B4%9F%E8%B4%A3%E4%BA%BA%E3%80%81%E6%8B%9B%E5%95%86%E4%BB%B7%E5%80%BC%E3%80%81%E8%A7%86%E9%A2%91%E4%BC%A0%E6%92%AD%E6%96%B9%E6%A1%88%E5%92%8C%E4%B8%8B%E4%B8%80%E6%AD%A5%E6%8E%A8%E8%BF%9B%E8%AE%A1%E5%88%92+project+progress+short+video+video"
+        "keyword": "Kazakhstan infrastructure Kazakhstan engineering trade project customs investment promotion video project progress short video",
+        "url": "https://www.google.com/search?q=Kazakhstan+infrastructure+Kazakhstan+engineering+trade+project+customs+investment+promotion+video+project+progress+short+video+video"
       },
       {
         "platform": "YouTube",
-        "keyword": "Kazakhstan infrastructure 哈萨克斯坦工程贸易项目：确认海关信息、项目负责人、招商价值、视频传播方案和下一步推进计划 factory proof short video",
-        "url": "https://www.youtube.com/results?search_query=Kazakhstan+infrastructure+%E5%93%88%E8%90%A8%E5%85%8B%E6%96%AF%E5%9D%A6%E5%B7%A5%E7%A8%8B%E8%B4%B8%E6%98%93%E9%A1%B9%E7%9B%AE%EF%BC%9A%E7%A1%AE%E8%AE%A4%E6%B5%B7%E5%85%B3%E4%BF%A1%E6%81%AF%E3%80%81%E9%A1%B9%E7%9B%AE%E8%B4%9F%E8%B4%A3%E4%BA%BA%E3%80%81%E6%8B%9B%E5%95%86%E4%BB%B7%E5%80%BC%E3%80%81%E8%A7%86%E9%A2%91%E4%BC%A0%E6%92%AD%E6%96%B9%E6%A1%88%E5%92%8C%E4%B8%8B%E4%B8%80%E6%AD%A5%E6%8E%A8%E8%BF%9B%E8%AE%A1%E5%88%92+factory+proof+short+video"
+        "keyword": "Kazakhstan infrastructure Kazakhstan engineering trade project customs investment promotion video factory proof short video",
+        "url": "https://www.youtube.com/results?search_query=Kazakhstan+infrastructure+Kazakhstan+engineering+trade+project+customs+investment+promotion+video+factory+proof+short+video"
       },
       {
         "platform": "TikTok",
-        "keyword": "Kazakhstan infrastructure 哈萨克斯坦工程贸易项目：确认海关信息、项目负责人、招商价值、视频传播方案和下一步推进计划 factory proof short video",
-        "url": "https://www.tiktok.com/search?q=Kazakhstan+infrastructure+%E5%93%88%E8%90%A8%E5%85%8B%E6%96%AF%E5%9D%A6%E5%B7%A5%E7%A8%8B%E8%B4%B8%E6%98%93%E9%A1%B9%E7%9B%AE%EF%BC%9A%E7%A1%AE%E8%AE%A4%E6%B5%B7%E5%85%B3%E4%BF%A1%E6%81%AF%E3%80%81%E9%A1%B9%E7%9B%AE%E8%B4%9F%E8%B4%A3%E4%BA%BA%E3%80%81%E6%8B%9B%E5%95%86%E4%BB%B7%E5%80%BC%E3%80%81%E8%A7%86%E9%A2%91%E4%BC%A0%E6%92%AD%E6%96%B9%E6%A1%88%E5%92%8C%E4%B8%8B%E4%B8%80%E6%AD%A5%E6%8E%A8%E8%BF%9B%E8%AE%A1%E5%88%92+factory+proof+short+video"
+        "keyword": "Kazakhstan infrastructure Kazakhstan engineering trade project customs investment promotion video factory proof short video",
+        "url": "https://www.tiktok.com/search?q=Kazakhstan+infrastructure+Kazakhstan+engineering+trade+project+customs+investment+promotion+video+factory+proof+short+video"
       },
       {
         "platform": "Douyin",
-        "keyword": "Kazakhstan infrastructure 哈萨克斯坦工程贸易项目：确认海关信息、项目负责人、招商价值、视频传播方案和下一步推进计划 factory proof short video",
-        "url": "https://www.douyin.com/search/Kazakhstan+infrastructure+%E5%93%88%E8%90%A8%E5%85%8B%E6%96%AF%E5%9D%A6%E5%B7%A5%E7%A8%8B%E8%B4%B8%E6%98%93%E9%A1%B9%E7%9B%AE%EF%BC%9A%E7%A1%AE%E8%AE%A4%E6%B5%B7%E5%85%B3%E4%BF%A1%E6%81%AF%E3%80%81%E9%A1%B9%E7%9B%AE%E8%B4%9F%E8%B4%A3%E4%BA%BA%E3%80%81%E6%8B%9B%E5%95%86%E4%BB%B7%E5%80%BC%E3%80%81%E8%A7%86%E9%A2%91%E4%BC%A0%E6%92%AD%E6%96%B9%E6%A1%88%E5%92%8C%E4%B8%8B%E4%B8%80%E6%AD%A5%E6%8E%A8%E8%BF%9B%E8%AE%A1%E5%88%92+factory+proof+short+video"
+        "keyword": "Kazakhstan infrastructure Kazakhstan engineering trade project customs investment promotion video factory proof short video",
+        "url": "https://www.douyin.com/search/Kazakhstan+infrastructure+Kazakhstan+engineering+trade+project+customs+investment+promotion+video+factory+proof+short+video"
       },
       {
         "platform": "Google Video",
-        "keyword": "Kazakhstan infrastructure 哈萨克斯坦工程贸易项目：确认海关信息、项目负责人、招商价值、视频传播方案和下一步推进计划 factory proof short video",
-        "url": "https://www.google.com/search?q=Kazakhstan+infrastructure+%E5%93%88%E8%90%A8%E5%85%8B%E6%96%AF%E5%9D%A6%E5%B7%A5%E7%A8%8B%E8%B4%B8%E6%98%93%E9%A1%B9%E7%9B%AE%EF%BC%9A%E7%A1%AE%E8%AE%A4%E6%B5%B7%E5%85%B3%E4%BF%A1%E6%81%AF%E3%80%81%E9%A1%B9%E7%9B%AE%E8%B4%9F%E8%B4%A3%E4%BA%BA%E3%80%81%E6%8B%9B%E5%95%86%E4%BB%B7%E5%80%BC%E3%80%81%E8%A7%86%E9%A2%91%E4%BC%A0%E6%92%AD%E6%96%B9%E6%A1%88%E5%92%8C%E4%B8%8B%E4%B8%80%E6%AD%A5%E6%8E%A8%E8%BF%9B%E8%AE%A1%E5%88%92+factory+proof+short+video+video"
+        "keyword": "Kazakhstan infrastructure Kazakhstan engineering trade project customs investment promotion video factory proof short video",
+        "url": "https://www.google.com/search?q=Kazakhstan+infrastructure+Kazakhstan+engineering+trade+project+customs+investment+promotion+video+factory+proof+short+video+video"
       }
     ],
     "script_templates": [
@@ -308,7 +307,7 @@
     },
     "tasks": [
       {
-        "id": "8eb44114c355d51a-trade",
+        "id": "dd52749f5c49c44b-trade",
         "role": "trade_lead",
         "role_label": "International trade lead",
         "title": "Verify customs, HS/tariff, payment terms, Incoterms, and logistics route.",
@@ -323,7 +322,7 @@
         "output": "internal_draft"
       },
       {
-        "id": "8eb44114c355d51a-research",
+        "id": "dd52749f5c49c44b-research",
         "role": "research_analyst",
         "role_label": "Research intelligence analyst",
         "title": "Collect government, procurement, academic, and library evidence; grade each source.",
@@ -338,7 +337,7 @@
         "output": "internal_draft"
       },
       {
-        "id": "8eb44114c355d51a-investment",
+        "id": "dd52749f5c49c44b-investment",
         "role": "investment_promotion_lead",
         "role_label": "Investment promotion lead",
         "title": "Map owner, developer, investor candidates, incentive policy, and project packaging gaps.",
@@ -352,7 +351,7 @@
         "output": "internal_draft"
       },
       {
-        "id": "8eb44114c355d51a-video",
+        "id": "dd52749f5c49c44b-video",
         "role": "video_media_producer",
         "role_label": "Video and media producer",
         "title": "Draft country-style video concept based on verified facts and comparable platform examples.",
@@ -366,7 +365,7 @@
         "output": "internal_draft"
       },
       {
-        "id": "8eb44114c355d51a-pm",
+        "id": "dd52749f5c49c44b-pm",
         "role": "project_manager",
         "role_label": "Project execution manager",
         "title": "Prepare meeting agenda, owner decision queue, deadlines, and next internal follow-up.",
@@ -381,7 +380,7 @@
         "output": "internal_draft"
       },
       {
-        "id": "8eb44114c355d51a-risk",
+        "id": "dd52749f5c49c44b-risk",
         "role": "risk_approval_officer",
         "role_label": "Risk and approval officer",
         "title": "Keep formal outreach, quotation, payment, contract, and public publishing blocked until approval.",
@@ -399,7 +398,7 @@
   },
   "quality_score": {
     "ok": true,
-    "created_at": "2026-06-25T07:59:36.778358+00:00",
+    "created_at": "2026-06-25T09:13:34.772192+00:00",
     "overall_score": 99,
     "verdict": "excellent",
     "dimensions": {
