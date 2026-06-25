@@ -1,12 +1,12 @@
-# Project Action Board: 哈萨克斯坦工程贸易
+# Project Action Board: Official procurement and customs reference
 
 DRAFT - internal execution board, not approved for external sending
 
 - Country: Kazakhstan
-- Stage: unconfirmed_pipeline
+- Stage: unknown
 - Risk status: pending_owner
 - Blocked: True
-- Evidence: unverified (0)
+- Evidence: officially_supported (98)
 
 ## Tasks
 
