@@ -274,7 +274,7 @@
         "snippet": "Official source describes project owner, tender status, customs documents, engineering scope and investment opportunity.",
         "source_type": "government",
         "government_confirmed": true,
-        "collected_at": "2026-06-25T10:22:24.270525+00:00"
+        "collected_at": "2026-06-26T01:26:49.837219+00:00"
       }
     ],
     "evidence": [
@@ -285,7 +285,7 @@
         "snippet": "Official source describes project owner, tender status, customs documents, engineering scope and investment opportunity.",
         "source_type": "government",
         "government_confirmed": true,
-        "collected_at": "2026-06-25T10:22:24.270525+00:00"
+        "collected_at": "2026-06-26T01:26:49.837219+00:00"
       }
     ],
     "stakeholders": {
@@ -307,7 +307,7 @@
       "Human approval required before external outreach, quotation, commitment, or publication.",
       "Government source confirmation required before investment promotion use."
     ],
-    "updated_at": "2026-06-25T10:22:24.279526+00:00",
+    "updated_at": "2026-06-26T01:26:49.838222+00:00",
     "official_source_status": "official_procurement_supported",
     "project_record_status": "candidate_project",
     "verified_project_allowed": false,
