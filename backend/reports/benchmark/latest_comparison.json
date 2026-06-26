@@ -1,66 +1,70 @@
 {
   "ok": true,
-  "created_at": "2026-06-25T19:30:46.261854+00:00",
-  "question": "如何确认进口设备海关信息？",
+  "created_at": "2026-06-26T01:29:55.535988+00:00",
+  "question": "如何确认哈萨克斯坦进口矿山设备的 HS 编码、关税和清关文件？",
   "ranked": [
     {
       "name": "v11",
-      "score": 78,
+      "score": 74,
       "verdict": "usable"
     },
     {
-      "name": "generic",
-      "score": 42,
+      "name": "Doubao",
+      "score": 47,
+      "verdict": "needs_improvement"
+    },
+    {
+      "name": "Yuanbao",
+      "score": 47,
       "verdict": "needs_improvement"
     }
   ],
   "scores": {
     "v11": {
       "ok": true,
-      "created_at": "2026-06-25T19:30:46.261788+00:00",
-      "overall_score": 78,
+      "created_at": "2026-06-26T01:29:55.535988+00:00",
+      "overall_score": 74,
       "verdict": "usable",
       "dimensions": {
         "accuracy": {
           "score": 68,
           "hits": [
-            "official",
-            "date"
+            "官方",
+            "核验"
           ],
           "label": "准确性"
         },
         "evidence": {
-          "score": 85,
+          "score": 71,
           "hits": [
-            "url",
-            "customs",
-            "海关"
+            "海关",
+            "链接"
           ],
           "label": "证据"
         },
         "actionability": {
           "score": 71,
           "hits": [
-            "next step",
-            "checklist"
+            "步骤",
+            "清单"
           ],
           "label": "可执行性"
         },
         "risk_judgment": {
-          "score": 93,
+          "score": 100,
           "hits": [
-            "risk",
-            "approval",
-            "customs"
+            "风险",
+            "审批",
+            "制裁",
+            "出口管制"
           ],
           "label": "风险判断"
         },
         "professional_depth": {
-          "score": 71,
+          "score": 59,
           "hits": [
             "HS code",
-            "tariff",
-            "customs valuation"
+            "关税"
           ],
           "label": "专业深度"
         }
@@ -73,10 +77,10 @@
         "使用行业术语时说明含义、证据和适用范围。"
       ]
     },
-    "generic": {
+    "Doubao": {
       "ok": true,
-      "created_at": "2026-06-25T19:30:46.261810+00:00",
-      "overall_score": 42,
+      "created_at": "2026-06-26T01:29:55.535988+00:00",
+      "overall_score": 47,
       "verdict": "needs_improvement",
       "dimensions": {
         "accuracy": {
@@ -102,8 +106,57 @@
           "label": "风险判断"
         },
         "professional_depth": {
-          "score": 35,
+          "score": 59,
+          "hits": [
+            "专业",
+            "关税"
+          ],
+          "label": "专业深度"
+        }
+      },
+      "recommendations": [
+        "增加官方来源 URL 和发布日期或访问日期。",
+        "区分已核验事实、弱信号、假设和建议。",
+        "把结论转成下一步行动清单。",
+        "明确风险、人工审批边界和阻断动作。",
+        "使用行业术语时说明含义、证据和适用范围。"
+      ]
+    },
+    "Yuanbao": {
+      "ok": true,
+      "created_at": "2026-06-26T01:29:55.535988+00:00",
+      "overall_score": 47,
+      "verdict": "needs_improvement",
+      "dimensions": {
+        "accuracy": {
+          "score": 40,
           "hits": [],
+          "label": "准确性"
+        },
+        "evidence": {
+          "score": 56,
+          "hits": [
+            "海关"
+          ],
+          "label": "证据"
+        },
+        "actionability": {
+          "score": 52,
+          "hits": [
+            "建议"
+          ],
+          "label": "可执行性"
+        },
+        "risk_judgment": {
+          "score": 42,
+          "hits": [],
+          "label": "风险判断"
+        },
+        "professional_depth": {
+          "score": 47,
+          "hits": [
+            "关税"
+          ],
           "label": "专业深度"
         }
       },
