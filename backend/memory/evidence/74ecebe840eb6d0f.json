@@ -1,7 +1,7 @@
 {
   "ok": true,
   "id": "74ecebe840eb6d0f",
-  "created_at": "2026-06-25T10:21:47.821554+00:00",
+  "created_at": "2026-06-26T01:26:11.037887+00:00",
   "project": "Kazakhstan EPC Trade Opportunity",
   "country": "Kazakhstan",
   "claim": "Kazakhstan logistics EPC project owner and customs documents are confirmed",
@@ -32,7 +32,7 @@
         "contract",
         "customs"
       ],
-      "collected_at": "2026-06-25T10:21:47.820555+00:00"
+      "collected_at": "2026-06-26T01:26:11.036795+00:00"
     }
   ],
   "decision_rule": "Official government/customs/procurement evidence is required before project confirmation, investment promotion, quotation, customer commitment, or public publishing.",
