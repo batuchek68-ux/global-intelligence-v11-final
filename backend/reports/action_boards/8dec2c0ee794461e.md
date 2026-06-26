@@ -1,12 +1,12 @@
-# Project Action Board: Daily cycle operating evidence
+# Project Action Board: Demo Port Logistics Modernization
 
 DRAFT - internal execution board, not approved for external sending
 
 - Country: Indonesia
-- Stage: unknown
+- Stage: proposal review
 - Risk status: pending_owner
 - Blocked: True
-- Evidence: weak_signal_only (37)
+- Evidence: officially_supported (98)
 
 ## Tasks
 
