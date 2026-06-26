@@ -1,0 +1,249 @@
+# v11 War Room Execution Queue: 哈萨克斯坦工程贸易项目：确认海关信息、项目负责人、招商价值、视频传播方案和下一步推进计划
+
+DRAFT - internal execution queue, not approved for external sending
+
+- Country: Kazakhstan
+- Tasks: 31
+- Open: 22
+- Blocked: 9
+- Evidence required: 9
+- Approval required: 12
+
+## Queue
+
+### e175e7f7aec0aef2-01 | research_analyst
+- Status: open
+- Risk gate: evidence_required
+- Source: search_confirmation.government_confirmation
+- Task: Run and record source evidence for query: 哈萨克斯坦工程贸易项目：确认海关信息、项目负责人、招商价值、视频传播方案和下一步推进计划 Kazakhstan official government site:gov.kz
+- Evidence needed: official URL; source date; source type; relevant excerpt; confidence note
+
+### e175e7f7aec0aef2-02 | research_analyst
+- Status: open
+- Risk gate: evidence_required
+- Source: search_confirmation.government_confirmation
+- Task: Run and record source evidence for query: 哈萨克斯坦工程贸易项目：确认海关信息、项目负责人、招商价值、视频传播方案和下一步推进计划 Kazakhstan official government site:primeminister.kz
+- Evidence needed: official URL; source date; source type; relevant excerpt; confidence note
+
+### e175e7f7aec0aef2-03 | research_analyst
+- Status: open
+- Risk gate: evidence_required
+- Source: search_confirmation.government_confirmation
+- Task: Run and record source evidence for query: 哈萨克斯坦工程贸易项目：确认海关信息、项目负责人、招商价值、视频传播方案和下一步推进计划 Kazakhstan official government site:invest.gov.kz
+- Evidence needed: official URL; source date; source type; relevant excerpt; confidence note
+
+### e175e7f7aec0aef2-04 | research_analyst
+- Status: open
+- Risk gate: evidence_required
+- Source: search_confirmation.government_confirmation
+- Task: Run and record source evidence for query: 哈萨克斯坦工程贸易项目：确认海关信息、项目负责人、招商价值、视频传播方案和下一步推进计划 Kazakhstan official government site:adilet.zan.kz
+- Evidence needed: official URL; source date; source type; relevant excerpt; confidence note
+
+### e175e7f7aec0aef2-05 | research_analyst
+- Status: open
+- Risk gate: evidence_required
+- Source: search_confirmation.government_confirmation
+- Task: Run and record source evidence for query: 哈萨克斯坦工程贸易项目：确认海关信息、项目负责人、招商价值、视频传播方案和下一步推进计划 Kazakhstan ministry site:gov.kz
+- Evidence needed: official URL; source date; source type; relevant excerpt; confidence note
+
+### e175e7f7aec0aef2-06 | research_analyst
+- Status: open
+- Risk gate: evidence_required
+- Source: search_confirmation.government_confirmation
+- Task: Run and record source evidence for query: 哈萨克斯坦工程贸易项目：确认海关信息、项目负责人、招商价值、视频传播方案和下一步推进计划 Kazakhstan ministry site:primeminister.kz
+- Evidence needed: official URL; source date; source type; relevant excerpt; confidence note
+
+### e175e7f7aec0aef2-07 | research_analyst
+- Status: open
+- Risk gate: evidence_required
+- Source: search_confirmation.government_confirmation
+- Task: Run and record source evidence for query: 哈萨克斯坦工程贸易项目：确认海关信息、项目负责人、招商价值、视频传播方案和下一步推进计划 Kazakhstan ministry site:invest.gov.kz
+- Evidence needed: official URL; source date; source type; relevant excerpt; confidence note
+
+### e175e7f7aec0aef2-08 | research_analyst
+- Status: open
+- Risk gate: evidence_required
+- Source: search_confirmation.government_confirmation
+- Task: Run and record source evidence for query: 哈萨克斯坦工程贸易项目：确认海关信息、项目负责人、招商价值、视频传播方案和下一步推进计划 Kazakhstan ministry site:adilet.zan.kz
+- Evidence needed: official URL; source date; source type; relevant excerpt; confidence note
+
+### e175e7f7aec0aef2-09 | project_manager
+- Status: open
+- Risk gate: owner_review
+- Source: project_execution.next_actions
+- Task: Open official government and procurement search URLs from the highest priority plan.
+- Evidence needed: task owner; deadline; source link; decision log
+- Blocked actions: contract or payment approval; contract or payment commitment; delivery or customs commitment; external outreach; formal investment promotion publication; formal outreach; investment promotion publication; public video publication; quotation
+
+### e175e7f7aec0aef2-10 | project_manager
+- Status: open
+- Risk gate: owner_review
+- Source: project_execution.next_actions
+- Task: Attach official evidence with title, URL, snippet, source_type, and source date.
+- Evidence needed: task owner; deadline; source link; decision log
+- Blocked actions: contract or payment approval; contract or payment commitment; delivery or customs commitment; external outreach; formal investment promotion publication; formal outreach; investment promotion publication; public video publication; quotation
+
+### e175e7f7aec0aef2-11 | project_manager
+- Status: open
+- Risk gate: owner_review
+- Source: project_execution.next_actions
+- Task: Confirm project owner, developer, responsible office/person, tender status, and customs impact.
+- Evidence needed: task owner; deadline; source link; decision log
+- Blocked actions: contract or payment approval; contract or payment commitment; delivery or customs commitment; external outreach; formal investment promotion publication; formal outreach; investment promotion publication; public video publication; quotation
+
+### e175e7f7aec0aef2-12 | project_manager
+- Status: open
+- Risk gate: owner_review
+- Source: project_execution.next_actions
+- Task: Use the action board for team task assignment.
+- Evidence needed: task owner; deadline; source link; decision log
+- Blocked actions: contract or payment approval; contract or payment commitment; delivery or customs commitment; external outreach; formal investment promotion publication; formal outreach; investment promotion publication; public video publication; quotation
+
+### e175e7f7aec0aef2-13 | project_manager
+- Status: open
+- Risk gate: owner_review
+- Source: project_execution.next_actions
+- Task: Request human approval before any external message or publication.
+- Evidence needed: task owner; deadline; source link; decision log
+- Blocked actions: contract or payment approval; contract or payment commitment; delivery or customs commitment; external outreach; formal investment promotion publication; formal outreach; investment promotion publication; public video publication; quotation
+
+### e175e7f7aec0aef2-14 | trade_lead
+- Status: open
+- Risk gate: standard_review
+- Source: team.roles.next_step
+- Task: 收集海关官网、官方税则、清关文件、银行付款条件证据，并形成可执行 checklist。
+- Evidence needed: role output; review note; risk boundary
+
+### e175e7f7aec0aef2-15 | research_analyst
+- Status: open
+- Risk gate: standard_review
+- Source: team.roles.next_step
+- Task: 把证据分为政府/采购/企业/媒体/社交五级，记录 citation、URL、source date、relevance note。
+- Evidence needed: role output; review note; risk boundary
+
+### e175e7f7aec0aef2-16 | investment_promotion_lead
+- Status: open
+- Risk gate: standard_review
+- Source: team.roles.next_step
+- Task: 建立 owner/developer/investor/government authority 四类名单，并标注 evidence level。
+- Evidence needed: role output; review note; risk boundary
+
+### e175e7f7aec0aef2-17 | video_media_producer
+- Status: open
+- Risk gate: standard_review
+- Source: team.roles.next_step
+- Task: 生成 60 秒项目机会脚本、风险解释脚本和平台关键词，等待人工审批。
+- Evidence needed: role output; review note; risk boundary
+
+### e175e7f7aec0aef2-18 | project_manager
+- Status: open
+- Risk gate: standard_review
+- Source: team.roles.next_step
+- Task: 安排责任人、截止时间、会议议程、decision log 和复盘记录。
+- Evidence needed: role output; review note; risk boundary
+
+### e175e7f7aec0aef2-19 | risk_approval_officer
+- Status: open
+- Risk gate: standard_review
+- Source: team.roles.next_step
+- Task: 把高风险事项写入老板收件箱，审批前保持 DRAFT - Not approved for sending。
+- Evidence needed: role output; review note; risk boundary
+
+### e175e7f7aec0aef2-20 | trade_lead
+- Status: open
+- Risk gate: human_review_required
+- Source: action_board.tasks
+- Task: Verify customs, HS/tariff, payment terms, Incoterms, and logistics route.
+- Evidence needed: customs authority URL; tariff/HS evidence; payment term proof; logistics route proof
+
+### e175e7f7aec0aef2-21 | research_analyst
+- Status: open
+- Risk gate: evidence_required
+- Source: action_board.tasks
+- Task: Collect government, procurement, academic, and library evidence; grade each source.
+- Evidence needed: government page; procurement page; paper/library source; source date
+
+### e175e7f7aec0aef2-22 | investment_promotion_lead
+- Status: blocked
+- Risk gate: blocked_before_external_use
+- Source: action_board.tasks
+- Task: Map owner, developer, investor candidates, incentive policy, and project packaging gaps.
+- Evidence needed: official project owner proof; developer/investor proof; investment agency source
+- Blocked actions: contract or payment approval; contract or payment commitment; delivery or customs commitment; external outreach; formal investment promotion publication; formal outreach; investment promotion publication; public video publication; quotation
+
+### e175e7f7aec0aef2-23 | video_media_producer
+- Status: blocked
+- Risk gate: human_approval_before_publish
+- Source: action_board.tasks
+- Task: Draft country-style video concept based on verified facts and comparable platform examples.
+- Evidence needed: platform search links; country style notes; verified project facts
+- Blocked actions: contract or payment approval; contract or payment commitment; delivery or customs commitment; external outreach; formal investment promotion publication; formal outreach; investment promotion publication; public video publication; quotation
+
+### e175e7f7aec0aef2-24 | project_manager
+- Status: open
+- Risk gate: owner_queue
+- Source: action_board.tasks
+- Task: Prepare meeting agenda, owner decision queue, deadlines, and next internal follow-up.
+- Evidence needed: meeting record; task owner; deadline; decision log
+
+### e175e7f7aec0aef2-25 | risk_approval_officer
+- Status: pending_owner
+- Risk gate: active
+- Source: action_board.tasks
+- Task: Keep formal outreach, quotation, payment, contract, and public publishing blocked until approval.
+- Evidence needed: approval ticket; risk trigger; human decision; audit log line
+- Blocked actions: contract or payment approval; contract or payment commitment; delivery or customs commitment; external outreach; formal investment promotion publication; formal outreach; investment promotion publication; public video publication; quotation
+
+### e175e7f7aec0aef2-26 | video_media_producer
+- Status: blocked
+- Risk gate: blocked_before_external_use
+- Source: video_center.platform_searches
+- Task: Study platform examples and draft original video angle for YouTube: Kazakhstan infrastructure 哈萨克斯坦工程贸易项目：确认海关信息、项目负责人、招商价值、视频传播方案和下一步推进计划 case study short video
+- Evidence needed: reference links; style notes; original script outline; approval boundary
+- Blocked actions: contract or payment approval; contract or payment commitment; delivery or customs commitment; external outreach; formal investment promotion publication; formal outreach; investment promotion publication; public publishing; public video publication; quotation; unapproved outreach
+
+### e175e7f7aec0aef2-27 | video_media_producer
+- Status: blocked
+- Risk gate: blocked_before_external_use
+- Source: video_center.platform_searches
+- Task: Study platform examples and draft original video angle for TikTok: Kazakhstan infrastructure 哈萨克斯坦工程贸易项目：确认海关信息、项目负责人、招商价值、视频传播方案和下一步推进计划 case study short video
+- Evidence needed: reference links; style notes; original script outline; approval boundary
+- Blocked actions: contract or payment approval; contract or payment commitment; delivery or customs commitment; external outreach; formal investment promotion publication; formal outreach; investment promotion publication; public publishing; public video publication; quotation; unapproved outreach
+
+### e175e7f7aec0aef2-28 | video_media_producer
+- Status: blocked
+- Risk gate: blocked_before_external_use
+- Source: video_center.platform_searches
+- Task: Study platform examples and draft original video angle for Douyin: Kazakhstan infrastructure 哈萨克斯坦工程贸易项目：确认海关信息、项目负责人、招商价值、视频传播方案和下一步推进计划 case study short video
+- Evidence needed: reference links; style notes; original script outline; approval boundary
+- Blocked actions: contract or payment approval; contract or payment commitment; delivery or customs commitment; external outreach; formal investment promotion publication; formal outreach; investment promotion publication; public publishing; public video publication; quotation; unapproved outreach
+
+### e175e7f7aec0aef2-29 | video_media_producer
+- Status: blocked
+- Risk gate: blocked_before_external_use
+- Source: video_center.platform_searches
+- Task: Study platform examples and draft original video angle for Google Video: Kazakhstan infrastructure 哈萨克斯坦工程贸易项目：确认海关信息、项目负责人、招商价值、视频传播方案和下一步推进计划 case study short video
+- Evidence needed: reference links; style notes; original script outline; approval boundary
+- Blocked actions: contract or payment approval; contract or payment commitment; delivery or customs commitment; external outreach; formal investment promotion publication; formal outreach; investment promotion publication; public publishing; public video publication; quotation; unapproved outreach
+
+### e175e7f7aec0aef2-30 | video_media_producer
+- Status: blocked
+- Risk gate: blocked_before_external_use
+- Source: video_center.platform_searches
+- Task: Study platform examples and draft original video angle for YouTube: Kazakhstan infrastructure 哈萨克斯坦工程贸易项目：确认海关信息、项目负责人、招商价值、视频传播方案和下一步推进计划 project progress short video
+- Evidence needed: reference links; style notes; original script outline; approval boundary
+- Blocked actions: contract or payment approval; contract or payment commitment; delivery or customs commitment; external outreach; formal investment promotion publication; formal outreach; investment promotion publication; public publishing; public video publication; quotation; unapproved outreach
+
+### e175e7f7aec0aef2-31 | video_media_producer
+- Status: blocked
+- Risk gate: blocked_before_external_use
+- Source: video_center.platform_searches
+- Task: Study platform examples and draft original video angle for TikTok: Kazakhstan infrastructure 哈萨克斯坦工程贸易项目：确认海关信息、项目负责人、招商价值、视频传播方案和下一步推进计划 project progress short video
+- Evidence needed: reference links; style notes; original script outline; approval boundary
+- Blocked actions: contract or payment approval; contract or payment commitment; delivery or customs commitment; external outreach; formal investment promotion publication; formal outreach; investment promotion publication; public publishing; public video publication; quotation; unapproved outreach
+
+## Rules
+
+- Queue items are internal execution controls, not permission to contact external parties.
+- Official evidence is required before project confirmation, investment promotion, customs conclusions, or feasibility claims.
+- External replies, quotation, payment, contract, customer commitment, and public publishing require human approval.
