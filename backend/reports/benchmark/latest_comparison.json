@@ -1,6 +1,6 @@
 {
   "ok": true,
-  "created_at": "2026-06-27T02:11:00.699058+00:00",
+  "created_at": "2026-06-27T02:38:45.375023+00:00",
   "question": "如何确认进口设备海关信息？",
   "ranked": [
     {
@@ -9,7 +9,12 @@
       "verdict": "usable"
     },
     {
-      "name": "generic",
+      "name": "Doubao",
+      "score": 48,
+      "verdict": "needs_improvement"
+    },
+    {
+      "name": "Yuanbao",
       "score": 42,
       "verdict": "needs_improvement"
     }
@@ -17,7 +22,7 @@
   "scores": {
     "v11": {
       "ok": true,
-      "created_at": "2026-06-27T02:11:00.699058+00:00",
+      "created_at": "2026-06-27T02:38:45.373590+00:00",
       "overall_score": 78,
       "verdict": "usable",
       "dimensions": {
@@ -73,9 +78,54 @@
         "使用行业术语时说明含义、证据和适用范围。"
       ]
     },
-    "generic": {
+    "Doubao": {
       "ok": true,
-      "created_at": "2026-06-27T02:11:00.699058+00:00",
+      "created_at": "2026-06-27T02:38:45.373590+00:00",
+      "overall_score": 48,
+      "verdict": "needs_improvement",
+      "dimensions": {
+        "accuracy": {
+          "score": 40,
+          "hits": [],
+          "label": "准确性"
+        },
+        "evidence": {
+          "score": 71,
+          "hits": [
+            "customs",
+            "海关"
+          ],
+          "label": "证据"
+        },
+        "actionability": {
+          "score": 38,
+          "hits": [],
+          "label": "可执行性"
+        },
+        "risk_judgment": {
+          "score": 56,
+          "hits": [
+            "customs"
+          ],
+          "label": "风险判断"
+        },
+        "professional_depth": {
+          "score": 35,
+          "hits": [],
+          "label": "专业深度"
+        }
+      },
+      "recommendations": [
+        "增加官方来源 URL 和发布日期或访问日期。",
+        "区分已核验事实、弱信号、假设和建议。",
+        "把结论转成下一步行动清单。",
+        "明确风险、人工审批边界和阻断动作。",
+        "使用行业术语时说明含义、证据和适用范围。"
+      ]
+    },
+    "Yuanbao": {
+      "ok": true,
+      "created_at": "2026-06-27T02:38:45.373590+00:00",
       "overall_score": 42,
       "verdict": "needs_improvement",
       "dimensions": {
