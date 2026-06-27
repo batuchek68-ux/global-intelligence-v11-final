@@ -1,0 +1,702 @@
+{
+  "ok": true,
+  "id": "44d0222561e1cb4e",
+  "created_at": "2026-06-27T02:39:23.605767+00:00",
+  "mode": "war_room_execution_queue",
+  "war_room_id": "7118e1fe9b7e2116",
+  "objective": "Kazakhstan engineering trade project customs investment promotion video",
+  "country": "Kazakhstan",
+  "summary": {
+    "task_count": 31,
+    "open_count": 22,
+    "blocked_count": 9,
+    "evidence_required_count": 9,
+    "approval_required_count": 12
+  },
+  "tasks": [
+    {
+      "id": "44d0222561e1cb4e-01",
+      "role": "research_analyst",
+      "task": "Run and record source evidence for query: Kazakhstan engineering trade project customs investment promotion video Kazakhstan official government site:gov.kz",
+      "source": "search_confirmation.government_confirmation",
+      "evidence_needed": [
+        "official URL",
+        "source date",
+        "source type",
+        "relevant excerpt",
+        "confidence note"
+      ],
+      "status": "open",
+      "risk_gate": "evidence_required",
+      "blocked_actions": [],
+      "human_approval_required": false,
+      "output": "evidence_record"
+    },
+    {
+      "id": "44d0222561e1cb4e-02",
+      "role": "research_analyst",
+      "task": "Run and record source evidence for query: Kazakhstan engineering trade project customs investment promotion video Kazakhstan official government site:primeminister.kz",
+      "source": "search_confirmation.government_confirmation",
+      "evidence_needed": [
+        "official URL",
+        "source date",
+        "source type",
+        "relevant excerpt",
+        "confidence note"
+      ],
+      "status": "open",
+      "risk_gate": "evidence_required",
+      "blocked_actions": [],
+      "human_approval_required": false,
+      "output": "evidence_record"
+    },
+    {
+      "id": "44d0222561e1cb4e-03",
+      "role": "research_analyst",
+      "task": "Run and record source evidence for query: Kazakhstan engineering trade project customs investment promotion video Kazakhstan official government site:invest.gov.kz",
+      "source": "search_confirmation.government_confirmation",
+      "evidence_needed": [
+        "official URL",
+        "source date",
+        "source type",
+        "relevant excerpt",
+        "confidence note"
+      ],
+      "status": "open",
+      "risk_gate": "evidence_required",
+      "blocked_actions": [],
+      "human_approval_required": false,
+      "output": "evidence_record"
+    },
+    {
+      "id": "44d0222561e1cb4e-04",
+      "role": "research_analyst",
+      "task": "Run and record source evidence for query: Kazakhstan engineering trade project customs investment promotion video Kazakhstan official government site:adilet.zan.kz",
+      "source": "search_confirmation.government_confirmation",
+      "evidence_needed": [
+        "official URL",
+        "source date",
+        "source type",
+        "relevant excerpt",
+        "confidence note"
+      ],
+      "status": "open",
+      "risk_gate": "evidence_required",
+      "blocked_actions": [],
+      "human_approval_required": false,
+      "output": "evidence_record"
+    },
+    {
+      "id": "44d0222561e1cb4e-05",
+      "role": "research_analyst",
+      "task": "Run and record source evidence for query: Kazakhstan engineering trade project customs investment promotion video Kazakhstan ministry site:gov.kz",
+      "source": "search_confirmation.government_confirmation",
+      "evidence_needed": [
+        "official URL",
+        "source date",
+        "source type",
+        "relevant excerpt",
+        "confidence note"
+      ],
+      "status": "open",
+      "risk_gate": "evidence_required",
+      "blocked_actions": [],
+      "human_approval_required": false,
+      "output": "evidence_record"
+    },
+    {
+      "id": "44d0222561e1cb4e-06",
+      "role": "research_analyst",
+      "task": "Run and record source evidence for query: Kazakhstan engineering trade project customs investment promotion video Kazakhstan ministry site:primeminister.kz",
+      "source": "search_confirmation.government_confirmation",
+      "evidence_needed": [
+        "official URL",
+        "source date",
+        "source type",
+        "relevant excerpt",
+        "confidence note"
+      ],
+      "status": "open",
+      "risk_gate": "evidence_required",
+      "blocked_actions": [],
+      "human_approval_required": false,
+      "output": "evidence_record"
+    },
+    {
+      "id": "44d0222561e1cb4e-07",
+      "role": "research_analyst",
+      "task": "Run and record source evidence for query: Kazakhstan engineering trade project customs investment promotion video Kazakhstan ministry site:invest.gov.kz",
+      "source": "search_confirmation.government_confirmation",
+      "evidence_needed": [
+        "official URL",
+        "source date",
+        "source type",
+        "relevant excerpt",
+        "confidence note"
+      ],
+      "status": "open",
+      "risk_gate": "evidence_required",
+      "blocked_actions": [],
+      "human_approval_required": false,
+      "output": "evidence_record"
+    },
+    {
+      "id": "44d0222561e1cb4e-08",
+      "role": "research_analyst",
+      "task": "Run and record source evidence for query: Kazakhstan engineering trade project customs investment promotion video Kazakhstan ministry site:adilet.zan.kz",
+      "source": "search_confirmation.government_confirmation",
+      "evidence_needed": [
+        "official URL",
+        "source date",
+        "source type",
+        "relevant excerpt",
+        "confidence note"
+      ],
+      "status": "open",
+      "risk_gate": "evidence_required",
+      "blocked_actions": [],
+      "human_approval_required": false,
+      "output": "evidence_record"
+    },
+    {
+      "id": "44d0222561e1cb4e-09",
+      "role": "project_manager",
+      "task": "Open official government and procurement search URLs from the highest priority plan.",
+      "source": "project_execution.next_actions",
+      "evidence_needed": [
+        "task owner",
+        "deadline",
+        "source link",
+        "decision log"
+      ],
+      "status": "open",
+      "risk_gate": "owner_review",
+      "blocked_actions": [
+        "contract or payment approval",
+        "contract or payment commitment",
+        "delivery or customs commitment",
+        "external outreach",
+        "formal investment promotion publication",
+        "formal outreach",
+        "investment promotion publication",
+        "public video publication",
+        "quotation"
+      ],
+      "human_approval_required": true,
+      "output": "project_followup_item"
+    },
+    {
+      "id": "44d0222561e1cb4e-10",
+      "role": "project_manager",
+      "task": "Attach official evidence with title, URL, snippet, source_type, and source date.",
+      "source": "project_execution.next_actions",
+      "evidence_needed": [
+        "task owner",
+        "deadline",
+        "source link",
+        "decision log"
+      ],
+      "status": "open",
+      "risk_gate": "owner_review",
+      "blocked_actions": [
+        "contract or payment approval",
+        "contract or payment commitment",
+        "delivery or customs commitment",
+        "external outreach",
+        "formal investment promotion publication",
+        "formal outreach",
+        "investment promotion publication",
+        "public video publication",
+        "quotation"
+      ],
+      "human_approval_required": true,
+      "output": "project_followup_item"
+    },
+    {
+      "id": "44d0222561e1cb4e-11",
+      "role": "project_manager",
+      "task": "Confirm project owner, developer, responsible office/person, tender status, and customs impact.",
+      "source": "project_execution.next_actions",
+      "evidence_needed": [
+        "task owner",
+        "deadline",
+        "source link",
+        "decision log"
+      ],
+      "status": "open",
+      "risk_gate": "owner_review",
+      "blocked_actions": [
+        "contract or payment approval",
+        "contract or payment commitment",
+        "delivery or customs commitment",
+        "external outreach",
+        "formal investment promotion publication",
+        "formal outreach",
+        "investment promotion publication",
+        "public video publication",
+        "quotation"
+      ],
+      "human_approval_required": true,
+      "output": "project_followup_item"
+    },
+    {
+      "id": "44d0222561e1cb4e-12",
+      "role": "project_manager",
+      "task": "Use the action board for team task assignment.",
+      "source": "project_execution.next_actions",
+      "evidence_needed": [
+        "task owner",
+        "deadline",
+        "source link",
+        "decision log"
+      ],
+      "status": "open",
+      "risk_gate": "owner_review",
+      "blocked_actions": [
+        "contract or payment approval",
+        "contract or payment commitment",
+        "delivery or customs commitment",
+        "external outreach",
+        "formal investment promotion publication",
+        "formal outreach",
+        "investment promotion publication",
+        "public video publication",
+        "quotation"
+      ],
+      "human_approval_required": true,
+      "output": "project_followup_item"
+    },
+    {
+      "id": "44d0222561e1cb4e-13",
+      "role": "project_manager",
+      "task": "Request human approval before any external message or publication.",
+      "source": "project_execution.next_actions",
+      "evidence_needed": [
+        "task owner",
+        "deadline",
+        "source link",
+        "decision log"
+      ],
+      "status": "open",
+      "risk_gate": "owner_review",
+      "blocked_actions": [
+        "contract or payment approval",
+        "contract or payment commitment",
+        "delivery or customs commitment",
+        "external outreach",
+        "formal investment promotion publication",
+        "formal outreach",
+        "investment promotion publication",
+        "public video publication",
+        "quotation"
+      ],
+      "human_approval_required": true,
+      "output": "project_followup_item"
+    },
+    {
+      "id": "44d0222561e1cb4e-14",
+      "role": "trade_lead",
+      "task": "收集海关官网、官方税则、清关文件、银行付款条件证据，并形成可执行 checklist。",
+      "source": "team.roles.next_step",
+      "evidence_needed": [
+        "role output",
+        "review note",
+        "risk boundary"
+      ],
+      "status": "open",
+      "risk_gate": "standard_review",
+      "blocked_actions": [],
+      "human_approval_required": false,
+      "output": "role_work_product"
+    },
+    {
+      "id": "44d0222561e1cb4e-15",
+      "role": "research_analyst",
+      "task": "把证据分为政府/采购/企业/媒体/社交五级，记录 citation、URL、source date、relevance note。",
+      "source": "team.roles.next_step",
+      "evidence_needed": [
+        "role output",
+        "review note",
+        "risk boundary"
+      ],
+      "status": "open",
+      "risk_gate": "standard_review",
+      "blocked_actions": [],
+      "human_approval_required": false,
+      "output": "role_work_product"
+    },
+    {
+      "id": "44d0222561e1cb4e-16",
+      "role": "investment_promotion_lead",
+      "task": "建立 owner/developer/investor/government authority 四类名单，并标注 evidence level。",
+      "source": "team.roles.next_step",
+      "evidence_needed": [
+        "role output",
+        "review note",
+        "risk boundary"
+      ],
+      "status": "open",
+      "risk_gate": "standard_review",
+      "blocked_actions": [],
+      "human_approval_required": false,
+      "output": "role_work_product"
+    },
+    {
+      "id": "44d0222561e1cb4e-17",
+      "role": "video_media_producer",
+      "task": "生成 60 秒项目机会脚本、风险解释脚本和平台关键词，等待人工审批。",
+      "source": "team.roles.next_step",
+      "evidence_needed": [
+        "role output",
+        "review note",
+        "risk boundary"
+      ],
+      "status": "open",
+      "risk_gate": "standard_review",
+      "blocked_actions": [],
+      "human_approval_required": false,
+      "output": "role_work_product"
+    },
+    {
+      "id": "44d0222561e1cb4e-18",
+      "role": "project_manager",
+      "task": "安排责任人、截止时间、会议议程、decision log 和复盘记录。",
+      "source": "team.roles.next_step",
+      "evidence_needed": [
+        "role output",
+        "review note",
+        "risk boundary"
+      ],
+      "status": "open",
+      "risk_gate": "standard_review",
+      "blocked_actions": [],
+      "human_approval_required": false,
+      "output": "role_work_product"
+    },
+    {
+      "id": "44d0222561e1cb4e-19",
+      "role": "risk_approval_officer",
+      "task": "把高风险事项写入老板收件箱，审批前保持 DRAFT - Not approved for sending。",
+      "source": "team.roles.next_step",
+      "evidence_needed": [
+        "role output",
+        "review note",
+        "risk boundary"
+      ],
+      "status": "open",
+      "risk_gate": "standard_review",
+      "blocked_actions": [],
+      "human_approval_required": false,
+      "output": "role_work_product"
+    },
+    {
+      "id": "44d0222561e1cb4e-20",
+      "role": "trade_lead",
+      "task": "Verify customs, HS/tariff, payment terms, Incoterms, and logistics route.",
+      "source": "action_board.tasks",
+      "evidence_needed": [
+        "customs authority URL",
+        "tariff/HS evidence",
+        "payment term proof",
+        "logistics route proof"
+      ],
+      "status": "open",
+      "risk_gate": "human_review_required",
+      "blocked_actions": [],
+      "human_approval_required": false,
+      "output": "internal_draft"
+    },
+    {
+      "id": "44d0222561e1cb4e-21",
+      "role": "research_analyst",
+      "task": "Collect government, procurement, academic, and library evidence; grade each source.",
+      "source": "action_board.tasks",
+      "evidence_needed": [
+        "government page",
+        "procurement page",
+        "paper/library source",
+        "source date"
+      ],
+      "status": "open",
+      "risk_gate": "evidence_required",
+      "blocked_actions": [],
+      "human_approval_required": false,
+      "output": "internal_draft"
+    },
+    {
+      "id": "44d0222561e1cb4e-22",
+      "role": "investment_promotion_lead",
+      "task": "Map owner, developer, investor candidates, incentive policy, and project packaging gaps.",
+      "source": "action_board.tasks",
+      "evidence_needed": [
+        "official project owner proof",
+        "developer/investor proof",
+        "investment agency source"
+      ],
+      "status": "blocked",
+      "risk_gate": "blocked_before_external_use",
+      "blocked_actions": [
+        "contract or payment approval",
+        "contract or payment commitment",
+        "delivery or customs commitment",
+        "external outreach",
+        "formal investment promotion publication",
+        "formal outreach",
+        "investment promotion publication",
+        "public video publication",
+        "quotation"
+      ],
+      "human_approval_required": true,
+      "output": "internal_draft"
+    },
+    {
+      "id": "44d0222561e1cb4e-23",
+      "role": "video_media_producer",
+      "task": "Draft country-style video concept based on verified facts and comparable platform examples.",
+      "source": "action_board.tasks",
+      "evidence_needed": [
+        "platform search links",
+        "country style notes",
+        "verified project facts"
+      ],
+      "status": "blocked",
+      "risk_gate": "human_approval_before_publish",
+      "blocked_actions": [
+        "contract or payment approval",
+        "contract or payment commitment",
+        "delivery or customs commitment",
+        "external outreach",
+        "formal investment promotion publication",
+        "formal outreach",
+        "investment promotion publication",
+        "public video publication",
+        "quotation"
+      ],
+      "human_approval_required": false,
+      "output": "internal_draft"
+    },
+    {
+      "id": "44d0222561e1cb4e-24",
+      "role": "project_manager",
+      "task": "Prepare meeting agenda, owner decision queue, deadlines, and next internal follow-up.",
+      "source": "action_board.tasks",
+      "evidence_needed": [
+        "meeting record",
+        "task owner",
+        "deadline",
+        "decision log"
+      ],
+      "status": "open",
+      "risk_gate": "owner_queue",
+      "blocked_actions": [],
+      "human_approval_required": false,
+      "output": "internal_draft"
+    },
+    {
+      "id": "44d0222561e1cb4e-25",
+      "role": "risk_approval_officer",
+      "task": "Keep formal outreach, quotation, payment, contract, and public publishing blocked until approval.",
+      "source": "action_board.tasks",
+      "evidence_needed": [
+        "approval ticket",
+        "risk trigger",
+        "human decision",
+        "audit log line"
+      ],
+      "status": "pending_owner",
+      "risk_gate": "active",
+      "blocked_actions": [
+        "contract or payment approval",
+        "contract or payment commitment",
+        "delivery or customs commitment",
+        "external outreach",
+        "formal investment promotion publication",
+        "formal outreach",
+        "investment promotion publication",
+        "public video publication",
+        "quotation"
+      ],
+      "human_approval_required": false,
+      "output": "internal_draft"
+    },
+    {
+      "id": "44d0222561e1cb4e-26",
+      "role": "video_media_producer",
+      "task": "Study platform examples and draft original video angle for YouTube: Kazakhstan infrastructure Kazakhstan engineering trade project customs investment promotion video case study short video",
+      "source": "video_center.platform_searches",
+      "evidence_needed": [
+        "reference links",
+        "style notes",
+        "original script outline",
+        "approval boundary"
+      ],
+      "status": "blocked",
+      "risk_gate": "blocked_before_external_use",
+      "blocked_actions": [
+        "public publishing",
+        "unapproved outreach",
+        "contract or payment approval",
+        "contract or payment commitment",
+        "delivery or customs commitment",
+        "external outreach",
+        "formal investment promotion publication",
+        "formal outreach",
+        "investment promotion publication",
+        "public video publication",
+        "quotation"
+      ],
+      "human_approval_required": true,
+      "output": "draft_video_brief"
+    },
+    {
+      "id": "44d0222561e1cb4e-27",
+      "role": "video_media_producer",
+      "task": "Study platform examples and draft original video angle for TikTok: Kazakhstan infrastructure Kazakhstan engineering trade project customs investment promotion video case study short video",
+      "source": "video_center.platform_searches",
+      "evidence_needed": [
+        "reference links",
+        "style notes",
+        "original script outline",
+        "approval boundary"
+      ],
+      "status": "blocked",
+      "risk_gate": "blocked_before_external_use",
+      "blocked_actions": [
+        "public publishing",
+        "unapproved outreach",
+        "contract or payment approval",
+        "contract or payment commitment",
+        "delivery or customs commitment",
+        "external outreach",
+        "formal investment promotion publication",
+        "formal outreach",
+        "investment promotion publication",
+        "public video publication",
+        "quotation"
+      ],
+      "human_approval_required": true,
+      "output": "draft_video_brief"
+    },
+    {
+      "id": "44d0222561e1cb4e-28",
+      "role": "video_media_producer",
+      "task": "Study platform examples and draft original video angle for Douyin: Kazakhstan infrastructure Kazakhstan engineering trade project customs investment promotion video case study short video",
+      "source": "video_center.platform_searches",
+      "evidence_needed": [
+        "reference links",
+        "style notes",
+        "original script outline",
+        "approval boundary"
+      ],
+      "status": "blocked",
+      "risk_gate": "blocked_before_external_use",
+      "blocked_actions": [
+        "public publishing",
+        "unapproved outreach",
+        "contract or payment approval",
+        "contract or payment commitment",
+        "delivery or customs commitment",
+        "external outreach",
+        "formal investment promotion publication",
+        "formal outreach",
+        "investment promotion publication",
+        "public video publication",
+        "quotation"
+      ],
+      "human_approval_required": true,
+      "output": "draft_video_brief"
+    },
+    {
+      "id": "44d0222561e1cb4e-29",
+      "role": "video_media_producer",
+      "task": "Study platform examples and draft original video angle for Google Video: Kazakhstan infrastructure Kazakhstan engineering trade project customs investment promotion video case study short video",
+      "source": "video_center.platform_searches",
+      "evidence_needed": [
+        "reference links",
+        "style notes",
+        "original script outline",
+        "approval boundary"
+      ],
+      "status": "blocked",
+      "risk_gate": "blocked_before_external_use",
+      "blocked_actions": [
+        "public publishing",
+        "unapproved outreach",
+        "contract or payment approval",
+        "contract or payment commitment",
+        "delivery or customs commitment",
+        "external outreach",
+        "formal investment promotion publication",
+        "formal outreach",
+        "investment promotion publication",
+        "public video publication",
+        "quotation"
+      ],
+      "human_approval_required": true,
+      "output": "draft_video_brief"
+    },
+    {
+      "id": "44d0222561e1cb4e-30",
+      "role": "video_media_producer",
+      "task": "Study platform examples and draft original video angle for YouTube: Kazakhstan infrastructure Kazakhstan engineering trade project customs investment promotion video project progress short video",
+      "source": "video_center.platform_searches",
+      "evidence_needed": [
+        "reference links",
+        "style notes",
+        "original script outline",
+        "approval boundary"
+      ],
+      "status": "blocked",
+      "risk_gate": "blocked_before_external_use",
+      "blocked_actions": [
+        "public publishing",
+        "unapproved outreach",
+        "contract or payment approval",
+        "contract or payment commitment",
+        "delivery or customs commitment",
+        "external outreach",
+        "formal investment promotion publication",
+        "formal outreach",
+        "investment promotion publication",
+        "public video publication",
+        "quotation"
+      ],
+      "human_approval_required": true,
+      "output": "draft_video_brief"
+    },
+    {
+      "id": "44d0222561e1cb4e-31",
+      "role": "video_media_producer",
+      "task": "Study platform examples and draft original video angle for TikTok: Kazakhstan infrastructure Kazakhstan engineering trade project customs investment promotion video project progress short video",
+      "source": "video_center.platform_searches",
+      "evidence_needed": [
+        "reference links",
+        "style notes",
+        "original script outline",
+        "approval boundary"
+      ],
+      "status": "blocked",
+      "risk_gate": "blocked_before_external_use",
+      "blocked_actions": [
+        "public publishing",
+        "unapproved outreach",
+        "contract or payment approval",
+        "contract or payment commitment",
+        "delivery or customs commitment",
+        "external outreach",
+        "formal investment promotion publication",
+        "formal outreach",
+        "investment promotion publication",
+        "public video publication",
+        "quotation"
+      ],
+      "human_approval_required": true,
+      "output": "draft_video_brief"
+    }
+  ],
+  "rules": [
+    "Queue items are internal execution controls, not permission to contact external parties.",
+    "Official evidence is required before project confirmation, investment promotion, customs conclusions, or feasibility claims.",
+    "External replies, quotation, payment, contract, customer commitment, and public publishing require human approval."
+  ]
+}
