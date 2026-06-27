@@ -1,6 +1,6 @@
 {
-  "ok": false,
-  "created_at": "2026-06-27T01:46:53.713057+00:00",
+  "ok": true,
+  "created_at": "2026-06-27T02:03:09.637999+00:00",
   "repository": "local",
   "run_id": "local",
   "command_model": {
@@ -20,18 +20,18 @@
     "customs_information_domain": true,
     "benchmark_questions": 50,
     "answer_score": 80,
-    "intelligence_keywords": 52,
+    "intelligence_keywords": 211,
     "intelligence_briefs": 5,
     "video_center_files": 5,
     "team_execution_reports": 4,
     "evidence_dossiers": 4,
     "latest_evidence_status": "officially_supported",
-    "action_boards": 298,
+    "action_boards": 307,
     "latest_action_board_status": "pending_owner",
-    "team_responses": 22,
+    "team_responses": 24,
     "latest_team_response_score": 99,
-    "war_rooms": 11,
-    "war_room_execution_queues": 62,
+    "war_rooms": 12,
+    "war_room_execution_queues": 69,
     "latest_war_room_queue_tasks": 32,
     "latest_war_room_queue_blocked": 10,
     "latest_war_room_score": 99,
@@ -178,14 +178,14 @@
       "evidence": "reports/benchmark/daily_answer_score.json"
     },
     {
-      "name": "text:.github/workflows/international_trade_ops.yml:python workflows/daily_job.py",
-      "ok": false,
-      "evidence": "missing text: python workflows/daily_job.py"
+      "name": "text:.github/workflows/international_trade_ops.yml:python backend/workflows/daily_job.py",
+      "ok": true,
+      "evidence": ".github/workflows/international_trade_ops.yml"
     },
     {
-      "name": "text:.github/workflows/international_trade_ops.yml:python workflows/persist_state.py",
-      "ok": false,
-      "evidence": "missing text: python workflows/persist_state.py"
+      "name": "text:.github/workflows/international_trade_ops.yml:python backend/workflows/persist_state.py",
+      "ok": true,
+      "evidence": ".github/workflows/international_trade_ops.yml"
     },
     {
       "name": "text:.github/workflows/owner_decision.yml:issue_comment",
@@ -193,22 +193,22 @@
       "evidence": ".github/workflows/owner_decision.yml"
     },
     {
-      "name": "text:.github/workflows/owner_decision.yml:python workflows/resolve_major_matter.py",
+      "name": "text:.github/workflows/owner_decision.yml:python backend/workflows/resolve_major_matter.py",
       "ok": true,
       "evidence": ".github/workflows/owner_decision.yml"
     },
     {
-      "name": "text:.github/workflows/watchdog.yml:python workflows/persist_state.py",
+      "name": "text:.github/workflows/watchdog.yml:python backend/workflows/persist_state.py",
       "ok": true,
       "evidence": ".github/workflows/watchdog.yml"
     },
     {
-      "name": "text:.github/workflows/cloud_acceptance.yml:python workflows/cloud_acceptance.py",
+      "name": "text:.github/workflows/cloud_acceptance.yml:python backend/workflows/cloud_acceptance.py",
       "ok": true,
       "evidence": ".github/workflows/cloud_acceptance.yml"
     },
     {
-      "name": "text:.github/workflows/codex_autonomous_repair.yml:python workflows/autonomous_repair.py",
+      "name": "text:.github/workflows/codex_autonomous_repair.yml:python backend/workflows/autonomous_repair.py",
       "ok": true,
       "evidence": ".github/workflows/codex_autonomous_repair.yml"
     },
@@ -280,7 +280,7 @@
     {
       "name": "v11_intelligence:keyword_bank_and_brief",
       "ok": true,
-      "evidence": "keywords=52, briefs=5"
+      "evidence": "keywords=211, briefs=5"
     },
     {
       "name": "v11_video:center_generated",
@@ -300,12 +300,12 @@
     {
       "name": "v11_action_board:execution_tasks",
       "ok": true,
-      "evidence": "action_json=299, action_reports=299, latest_tasks=6, latest_status=pending_owner"
+      "evidence": "action_json=308, action_reports=308, latest_tasks=6, latest_status=pending_owner"
     },
     {
       "name": "v11_team_response:team_answer_pack",
       "ok": true,
-      "evidence": "team_response_json=23, score=99, roles=6"
+      "evidence": "team_response_json=25, score=99, roles=6"
     },
     {
       "name": "v11_search:source_readiness_and_confirmation_gate",
@@ -320,17 +320,17 @@
     {
       "name": "v11_war_room:vertical_team_operating_package",
       "ok": true,
-      "evidence": "latest=industry_war_room, saved_json=11, saved_reports=11, mode=industry_war_room, search_gate=lead_only, promotion=lead_only, roles=6, video=12, score=99"
+      "evidence": "latest=industry_war_room, saved_json=12, saved_reports=12, mode=industry_war_room, search_gate=lead_only, promotion=lead_only, roles=6, video=12, score=99"
     },
     {
       "name": "v11_war_room_execution:queue_tracks_work",
       "ok": true,
-      "evidence": "queues=62, reports=62, mode=war_room_execution_queue, tasks=32, open=22, blocked=10, approval=13"
+      "evidence": "queues=69, reports=69, mode=war_room_execution_queue, tasks=32, open=22, blocked=10, approval=13"
     },
     {
       "name": "v11_mission_control:operating_brief",
       "ok": true,
-      "evidence": "status=human_review_required, benchmark=50, customs=True, evidence=4, boards=298, responses=22, war_rooms=11, queues=61, queue_tasks=31, war_score=99, search_gate=lead_only, promotion_gate=draft_promotion_ready"
+      "evidence": "status=human_review_required, benchmark=50, customs=True, evidence=4, boards=307, responses=24, war_rooms=12, queues=68, queue_tasks=31, war_score=99, search_gate=lead_only, promotion_gate=draft_promotion_ready"
     }
   ]
 }
