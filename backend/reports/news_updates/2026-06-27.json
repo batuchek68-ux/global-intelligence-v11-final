@@ -1,0 +1,42 @@
+{
+  "generated_at": "2026-06-27T01:56:39+00:00",
+  "date": "2026-06-27",
+  "draft_notice": "DRAFT - Not approved for sending",
+  "source_status": {
+    "live_fetch": false,
+    "reason": "No authorized live news/customs/customs-data API is configured",
+    "allowed_sources": [
+      "official public pages",
+      "subscribed data APIs",
+      "approved search APIs"
+    ],
+    "blocked_sources": [
+      "unauthorized access",
+      "paywall bypass",
+      "website vulnerability exploitation"
+    ]
+  },
+  "project_count": 5,
+  "customs_port_count": 5,
+  "focus_sectors": [
+    "Kazakhstan five-year and ten-year government plans",
+    "mining development and large mine logistics",
+    "metallurgy, smelter and steel plant equipment",
+    "thermal power stations and coal handling systems",
+    "wagon tipplers, stackers, reclaimers, conveyors and unloading lines",
+    "Aktau and Kuryk Caspian port construction and cargo handling",
+    "oil refining and petrochemical modernization",
+    "Xinjiang border port customs and freight monitoring",
+    "agricultural machinery, agricultural drones, organic and liquid fertilizer"
+  ],
+  "artifacts": {
+    "daily_log": "C:\\Users\\Surface\\Documents\\New project\\global-intelligence-v11\\backend\\reports\\daily_logs\\2026-06-27.md",
+    "news_update_markdown": "C:\\Users\\Surface\\Documents\\New project\\global-intelligence-v11\\backend\\reports\\news_updates\\2026-06-27.md",
+    "news_update_json": "C:\\Users\\Surface\\Documents\\New project\\global-intelligence-v11\\backend\\reports\\news_updates\\2026-06-27.json",
+    "project_library_report": "C:\\Users\\Surface\\Documents\\New project\\global-intelligence-v11\\backend\\reports\\project_library\\2026-06-27.md",
+    "project_library_database": "C:\\Users\\Surface\\Documents\\New project\\global-intelligence-v11\\backend\\projects\\library\\kazakhstan_xinjiang_projects.json",
+    "customs_watch": "C:\\Users\\Surface\\Documents\\New project\\global-intelligence-v11\\backend\\memory\\monitoring\\customs_watch\\2026-06-27.json",
+    "latest_summary": "C:\\Users\\Surface\\Documents\\New project\\global-intelligence-v11\\backend\\memory\\monitoring\\kazakhstan_xinjiang_daily.json",
+    "overview_report": "C:\\Users\\Surface\\Documents\\New project\\global-intelligence-v11\\backend\\reports\\kazakhstan_xinjiang_monitoring.md"
+  }
+}
