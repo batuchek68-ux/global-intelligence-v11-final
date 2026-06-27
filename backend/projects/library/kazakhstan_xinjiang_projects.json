@@ -1,0 +1,101 @@
+{
+  "generated_at": "2026-06-27T01:56:39+00:00",
+  "draft_notice": "DRAFT - Not approved for sending",
+  "source_status": {
+    "live_fetch": false,
+    "reason": "No authorized live news/customs/customs-data API is configured",
+    "allowed_sources": [
+      "official public pages",
+      "subscribed data APIs",
+      "approved search APIs"
+    ],
+    "blocked_sources": [
+      "unauthorized access",
+      "paywall bypass",
+      "website vulnerability exploitation"
+    ]
+  },
+  "projects": [
+    {
+      "id": "KZ-MIN-001",
+      "name": "Kazakhstan mining development and ore logistics watch",
+      "country": "Kazakhstan",
+      "sector": "mining",
+      "status": "screening",
+      "opportunity_signal": "Track mine expansion, crushing, hauling, loading, unloading and railway/port links.",
+      "feasibility_gate": "Requires official owner, license, reserve, transport route and capex evidence.",
+      "human_approval_required": true,
+      "updated_at": "2026-06-27T01:56:39+00:00"
+    },
+    {
+      "id": "KZ-MET-001",
+      "name": "Kazakhstan metallurgy and smelter modernization watch",
+      "country": "Kazakhstan",
+      "sector": "metallurgy",
+      "status": "screening",
+      "opportunity_signal": "Monitor furnace, raw-material handling, environmental retrofit and steel plant equipment demand.",
+      "feasibility_gate": "Requires official investment plan, plant owner confirmation and technical scope.",
+      "human_approval_required": true,
+      "updated_at": "2026-06-27T01:56:39+00:00"
+    },
+    {
+      "id": "KZ-PWR-001",
+      "name": "Kazakhstan thermal power and coal handling watch",
+      "country": "Kazakhstan",
+      "sector": "power",
+      "status": "screening",
+      "opportunity_signal": "Watch generation capacity, coal mine feedstock, wagon tippler, stacker and conveyor packages.",
+      "feasibility_gate": "Requires government energy plan, fuel supply route, EPC model and emissions constraints.",
+      "human_approval_required": true,
+      "updated_at": "2026-06-27T01:56:39+00:00"
+    },
+    {
+      "id": "KZ-CAS-001",
+      "name": "Caspian Sea port construction and bulk cargo handling watch",
+      "country": "Kazakhstan",
+      "sector": "ports",
+      "status": "screening",
+      "opportunity_signal": "Track Aktau/Kuryk quay, storage yard, lifting, transport and ore loading projects.",
+      "feasibility_gate": "Requires port authority source, financing plan, cargo forecast and sanction/compliance check.",
+      "human_approval_required": true,
+      "updated_at": "2026-06-27T01:56:39+00:00"
+    },
+    {
+      "id": "KZ-OIL-001",
+      "name": "Kazakhstan oil refining and petrochemical modernization watch",
+      "country": "Kazakhstan",
+      "sector": "oil_refining",
+      "status": "screening",
+      "opportunity_signal": "Monitor refinery upgrade, utilities, storage, loading and environmental equipment packages.",
+      "feasibility_gate": "Requires owner announcement, tender evidence, sanctions screen and payment route review.",
+      "human_approval_required": true,
+      "updated_at": "2026-06-27T01:56:39+00:00"
+    }
+  ],
+  "customs_watch_fields": [
+    "date_period",
+    "port",
+    "customs_district",
+    "trade_mode",
+    "logistics_mode",
+    "hs_code",
+    "commodity",
+    "quantity",
+    "value",
+    "unit_price",
+    "quality_or_grade",
+    "origin",
+    "destination",
+    "source_url",
+    "confidence",
+    "opportunity_signal",
+    "risk_signal"
+  ],
+  "focus_ports": [
+    "Alashankou port",
+    "Horgos port",
+    "Jeminay port",
+    "Yili Prefecture border ports",
+    "southern Xinjiang ports"
+  ]
+}
