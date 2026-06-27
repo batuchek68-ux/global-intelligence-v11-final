@@ -1,14 +1,14 @@
-# v11 Industry War Room: Kazakhstan engineering trade project customs investment promotion video
+# v11 Industry War Room: Daily v11 international engineering trade, research intelligence, investment promotion, video, customs, and project execution operating package
 
 DRAFT - internal operating package, not approved for external sending
 
 ## Executive Synthesis
 
 DRAFT - internal operating synthesis, not approved for external sending
-Objective: Kazakhstan engineering trade project customs investment promotion video
-Evidence status: officially_supported; confidence=98; official_sources=1.
+Objective: Daily v11 international engineering trade, research intelligence, investment promotion, video, customs, and project execution operating package
+Evidence status: weak_signal_only; confidence=37; official_sources=0.
 Search confirmation gate: lead_only; confirmed_project_allowed=False.
-Promotion readiness: evidence_review_required; internal_draft=False; external_use=False.
+Promotion readiness: lead_only; internal_draft=False; external_use=False.
 Team answer quality: 99.
 Decision: treat unverified material as leads only. Build official evidence first, then project record, then internal promotion draft, then human approval before any external action.
 
@@ -19,7 +19,7 @@ Decision: treat unverified material as leads only. Build official evidence first
 
 ## Project Execution
 
-- Promotion readiness: evidence_review_required
+- Promotion readiness: lead_only
 - External use approved: False
 
 ## Team Roles
@@ -42,30 +42,30 @@ Decision: treat unverified material as leads only. Build official evidence first
 
 ## Execution Queue
 
-- Tasks: 31; open=22; blocked=9; approval=12
-- 751d3273067b1f14-01: research_analyst | open | Run and record source evidence for query: Kazakhstan engineering trade project customs investment promotion video Kazakhstan official government site:gov.kz
-- 751d3273067b1f14-02: research_analyst | open | Run and record source evidence for query: Kazakhstan engineering trade project customs investment promotion video Kazakhstan official government site:primeminister.kz
-- 751d3273067b1f14-03: research_analyst | open | Run and record source evidence for query: Kazakhstan engineering trade project customs investment promotion video Kazakhstan official government site:invest.gov.kz
-- 751d3273067b1f14-04: research_analyst | open | Run and record source evidence for query: Kazakhstan engineering trade project customs investment promotion video Kazakhstan official government site:adilet.zan.kz
-- 751d3273067b1f14-05: research_analyst | open | Run and record source evidence for query: Kazakhstan engineering trade project customs investment promotion video Kazakhstan ministry site:gov.kz
-- 751d3273067b1f14-06: research_analyst | open | Run and record source evidence for query: Kazakhstan engineering trade project customs investment promotion video Kazakhstan ministry site:primeminister.kz
-- 751d3273067b1f14-07: research_analyst | open | Run and record source evidence for query: Kazakhstan engineering trade project customs investment promotion video Kazakhstan ministry site:invest.gov.kz
-- 751d3273067b1f14-08: research_analyst | open | Run and record source evidence for query: Kazakhstan engineering trade project customs investment promotion video Kazakhstan ministry site:adilet.zan.kz
-- 751d3273067b1f14-09: project_manager | open | Open official government and procurement search URLs from the highest priority plan.
-- 751d3273067b1f14-10: project_manager | open | Attach official evidence with title, URL, snippet, source_type, and source date.
-- 751d3273067b1f14-11: project_manager | open | Confirm project owner, developer, responsible office/person, tender status, and customs impact.
-- 751d3273067b1f14-12: project_manager | open | Use the action board for team task assignment.
+- Tasks: 32; open=22; blocked=10; approval=13
+- 86de661e88ee3be0-01: research_analyst | open | Run and record source evidence for query: Daily v11 international engineering trade, research intelligence, investment promotion, video, customs, and project execution operating package Central Asia official government site:gov.kz
+- 86de661e88ee3be0-02: research_analyst | open | Run and record source evidence for query: Daily v11 international engineering trade, research intelligence, investment promotion, video, customs, and project execution operating package Central Asia official government site:gov.uz
+- 86de661e88ee3be0-03: research_analyst | open | Run and record source evidence for query: Daily v11 international engineering trade, research intelligence, investment promotion, video, customs, and project execution operating package Central Asia official government site:gov.kg
+- 86de661e88ee3be0-04: research_analyst | open | Run and record source evidence for query: Daily v11 international engineering trade, research intelligence, investment promotion, video, customs, and project execution operating package Central Asia official government site:tajinvest.tj
+- 86de661e88ee3be0-05: research_analyst | open | Run and record source evidence for query: Daily v11 international engineering trade, research intelligence, investment promotion, video, customs, and project execution operating package Central Asia ministry site:gov.kz
+- 86de661e88ee3be0-06: research_analyst | open | Run and record source evidence for query: Daily v11 international engineering trade, research intelligence, investment promotion, video, customs, and project execution operating package Central Asia ministry site:gov.uz
+- 86de661e88ee3be0-07: research_analyst | open | Run and record source evidence for query: Daily v11 international engineering trade, research intelligence, investment promotion, video, customs, and project execution operating package Central Asia ministry site:gov.kg
+- 86de661e88ee3be0-08: research_analyst | open | Run and record source evidence for query: Daily v11 international engineering trade, research intelligence, investment promotion, video, customs, and project execution operating package Central Asia ministry site:tajinvest.tj
+- 86de661e88ee3be0-09: risk_approval_officer | blocked | Upgrade evidence from lead-only or partial support to official confirmation before project confirmation.
+- 86de661e88ee3be0-10: project_manager | open | Open official government and procurement search URLs from the highest priority plan.
+- 86de661e88ee3be0-11: project_manager | open | Attach official evidence with title, URL, snippet, source_type, and source date.
+- 86de661e88ee3be0-12: project_manager | open | Confirm project owner, developer, responsible office/person, tender status, and customs impact.
 
 ## Video Center
 
-- YouTube: Kazakhstan infrastructure Kazakhstan engineering trade project customs investment promotion video case study short video
-- TikTok: Kazakhstan infrastructure Kazakhstan engineering trade project customs investment promotion video case study short video
-- Douyin: Kazakhstan infrastructure Kazakhstan engineering trade project customs investment promotion video case study short video
-- Google Video: Kazakhstan infrastructure Kazakhstan engineering trade project customs investment promotion video case study short video
-- YouTube: Kazakhstan infrastructure Kazakhstan engineering trade project customs investment promotion video project progress short video
-- TikTok: Kazakhstan infrastructure Kazakhstan engineering trade project customs investment promotion video project progress short video
-- Douyin: Kazakhstan infrastructure Kazakhstan engineering trade project customs investment promotion video project progress short video
-- Google Video: Kazakhstan infrastructure Kazakhstan engineering trade project customs investment promotion video project progress short video
+- YouTube: Indonesia infrastructure Daily v11 international engineering trade, research intelligence, investment promotion, video, customs, and project execution operating package case study short video
+- TikTok: Indonesia infrastructure Daily v11 international engineering trade, research intelligence, investment promotion, video, customs, and project execution operating package case study short video
+- Douyin: Indonesia infrastructure Daily v11 international engineering trade, research intelligence, investment promotion, video, customs, and project execution operating package case study short video
+- Google Video: Indonesia infrastructure Daily v11 international engineering trade, research intelligence, investment promotion, video, customs, and project execution operating package case study short video
+- YouTube: Indonesia infrastructure Daily v11 international engineering trade, research intelligence, investment promotion, video, customs, and project execution operating package project progress short video
+- TikTok: Indonesia infrastructure Daily v11 international engineering trade, research intelligence, investment promotion, video, customs, and project execution operating package project progress short video
+- Douyin: Indonesia infrastructure Daily v11 international engineering trade, research intelligence, investment promotion, video, customs, and project execution operating package project progress short video
+- Google Video: Indonesia infrastructure Daily v11 international engineering trade, research intelligence, investment promotion, video, customs, and project execution operating package project progress short video
 
 ## Quality
 
