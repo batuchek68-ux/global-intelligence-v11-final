@@ -395,22 +395,22 @@ class OperatingCycleTests(unittest.TestCase):
     def test_watchdog_workflow_persists_state(self) -> None:
         workflow = (RELEASE_ROOT / ".github" / "workflows" / "watchdog.yml").read_text(encoding="utf-8")
         self.assertIn("contents: write", workflow)
-        self.assertIn("python workflows/persist_state.py", workflow)
+        self.assertIn("python backend/workflows/persist_state.py", workflow)
 
     def test_cloud_acceptance_workflow_runs_full_chain(self) -> None:
         workflow = (RELEASE_ROOT / ".github" / "workflows" / "cloud_acceptance.yml").read_text(encoding="utf-8")
-        self.assertIn("python workflows/preflight_check.py", workflow)
+        self.assertIn("python backend/workflows/preflight_check.py", workflow)
         self.assertIn("python -m unittest discover -s tests", workflow)
-        self.assertIn("python workflows/daily_job.py", workflow)
-        self.assertIn("python workflows/watchdog.py", workflow)
-        self.assertIn("python workflows/cloud_acceptance.py", workflow)
-        self.assertIn("python workflows/persist_state.py", workflow)
+        self.assertIn("python backend/workflows/daily_job.py", workflow)
+        self.assertIn("python backend/workflows/watchdog.py", workflow)
+        self.assertIn("python backend/workflows/cloud_acceptance.py", workflow)
+        self.assertIn("python backend/workflows/persist_state.py", workflow)
 
     def test_codex_autonomous_repair_workflow_exists(self) -> None:
         workflow = (RELEASE_ROOT / ".github" / "workflows" / "codex_autonomous_repair.yml").read_text(encoding="utf-8")
         self.assertIn("Codex Autonomous Repair", workflow)
-        self.assertIn("python workflows/autonomous_repair.py", workflow)
-        self.assertIn("python workflows/persist_state.py", workflow)
+        self.assertIn("python backend/workflows/autonomous_repair.py", workflow)
+        self.assertIn("python backend/workflows/persist_state.py", workflow)
 
     def test_business_flow_covers_real_work_channels(self) -> None:
         project = Project(path="demo.md", title="Demo Trade Project", country="Kazakhstan")
