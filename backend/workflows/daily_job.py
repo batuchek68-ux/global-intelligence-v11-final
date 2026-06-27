@@ -26,6 +26,7 @@ from core.project_loader import load_active_projects
 from core.report import build_headquarters_report, build_owner_inbox
 from core.storage import ensure_dirs, read_json, safe_slug, write_json, write_text
 from intelligence.brief_generator import build_research_brief
+from intelligence.kazakhstan_xinjiang_monitor import build_monitoring_summary
 from backend.services.evidence_verification_service import verify_claim
 from backend.services.industry_war_room_service import build_industry_war_room
 from backend.services.intelligence_center_service import (
@@ -254,6 +255,8 @@ def _run_daily_cycle(projects: list | None = None) -> dict:
         persist=True,
     )
 
+    monitoring_summary = build_monitoring_summary(ROOT)
+
     summary = {
         "created_at": now_iso(),
         "project_count": len(projects),
@@ -261,6 +264,7 @@ def _run_daily_cycle(projects: list | None = None) -> dict:
         "approval_count": sum(1 for item in cases if item["judgment"]["needs_approval"]),
         "major_matter_count": sum(1 for item in cases if item["classification"]["is_major_matter"]),
         "resolved_major_matter_count": sum(1 for item in cases if item.get("owner_decision")),
+        "monitoring": monitoring_summary,
         "v11_capabilities": {
             "knowledge_base": {
                 "path": knowledge_base["path"],
