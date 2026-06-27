@@ -38,6 +38,7 @@ from core.operator import classify_matter
 from core.planner import plan_actions
 from core.report import build_headquarters_report, build_owner_inbox
 from comm.notification import approval_message, notify_major_matter
+from intelligence.kazakhstan_xinjiang_monitor import build_monitoring_summary
 
 
 class OperatingCycleTests(unittest.TestCase):
@@ -168,6 +169,10 @@ class OperatingCycleTests(unittest.TestCase):
                 self.assertTrue((temp_root / "reports" / "war_room" / "latest.md").is_file())
                 self.assertTrue((temp_root / "memory" / "intelligence" / "keyword_bank.json").is_file())
                 self.assertTrue((temp_root / "reports" / "benchmark" / "daily_answer_score.json").is_file())
+                self.assertIn("monitoring", summary)
+                self.assertTrue((temp_root / "projects" / "library" / "kazakhstan_xinjiang_projects.json").is_file())
+                self.assertTrue((temp_root / "memory" / "monitoring" / "kazakhstan_xinjiang_daily.json").is_file())
+                self.assertTrue((temp_root / "reports" / "kazakhstan_xinjiang_monitoring.md").is_file())
                 self.assertGreater(len(list((temp_root / "reports" / "team_execution").glob("*.md"))), 0)
                 self.assertGreater(len(list((temp_root / "reports" / "intelligence_briefs").glob("*.md"))), 0)
                 self.assertGreater(len(list((temp_root / "reports" / "video_center").glob("*.json"))), 0)
@@ -239,6 +244,24 @@ class OperatingCycleTests(unittest.TestCase):
         self.assertIn("memory", STATE_PATHS)
         self.assertIn("reports", STATE_PATHS)
         self.assertIn("comm/outbox", STATE_PATHS)
+        self.assertIn("projects/library", STATE_PATHS)
+
+    def test_kazakhstan_xinjiang_monitor_writes_daily_artifacts(self) -> None:
+        with tempfile.TemporaryDirectory() as temp_dir:
+            temp_root = Path(temp_dir)
+            summary = build_monitoring_summary(temp_root)
+            self.assertEqual(summary["project_count"], 5)
+            self.assertFalse(summary["source_status"]["live_fetch"])
+            self.assertTrue((temp_root / "reports" / "daily_logs" / f"{summary['date']}.md").is_file())
+            self.assertTrue((temp_root / "reports" / "news_updates" / f"{summary['date']}.json").is_file())
+            self.assertTrue((temp_root / "reports" / "project_library" / f"{summary['date']}.md").is_file())
+            self.assertTrue((temp_root / "projects" / "library" / "kazakhstan_xinjiang_projects.json").is_file())
+            self.assertTrue((temp_root / "memory" / "monitoring" / "customs_watch" / f"{summary['date']}.json").is_file())
+            self.assertIn("DRAFT - Not approved for sending", (temp_root / "reports" / "news_updates" / f"{summary['date']}.md").read_text(encoding="utf-8"))
+
+    def test_international_trade_workflow_uploads_project_library(self) -> None:
+        workflow = (RELEASE_ROOT / ".github" / "workflows" / "international_trade_ops.yml").read_text(encoding="utf-8")
+        self.assertIn("backend/projects/library/", workflow)
 
     def test_persist_state_pushes_to_github_ref_name(self) -> None:
         original_env = os.environ.get("GITHUB_REF_NAME")
