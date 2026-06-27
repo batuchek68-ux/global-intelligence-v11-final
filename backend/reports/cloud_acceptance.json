@@ -1,6 +1,6 @@
 {
   "ok": false,
-  "created_at": "2026-06-27T01:44:38.179916+00:00",
+  "created_at": "2026-06-27T01:46:53.713057+00:00",
   "repository": "local",
   "run_id": "local",
   "command_model": {
@@ -26,12 +26,12 @@
     "team_execution_reports": 4,
     "evidence_dossiers": 4,
     "latest_evidence_status": "officially_supported",
-    "action_boards": 296,
+    "action_boards": 298,
     "latest_action_board_status": "pending_owner",
     "team_responses": 22,
     "latest_team_response_score": 99,
     "war_rooms": 11,
-    "war_room_execution_queues": 60,
+    "war_room_execution_queues": 62,
     "latest_war_room_queue_tasks": 32,
     "latest_war_room_queue_blocked": 10,
     "latest_war_room_score": 99,
@@ -300,7 +300,7 @@
     {
       "name": "v11_action_board:execution_tasks",
       "ok": true,
-      "evidence": "action_json=297, action_reports=297, latest_tasks=6, latest_status=pending_owner"
+      "evidence": "action_json=299, action_reports=299, latest_tasks=6, latest_status=pending_owner"
     },
     {
       "name": "v11_team_response:team_answer_pack",
@@ -325,12 +325,12 @@
     {
       "name": "v11_war_room_execution:queue_tracks_work",
       "ok": true,
-      "evidence": "queues=60, reports=60, mode=war_room_execution_queue, tasks=32, open=22, blocked=10, approval=13"
+      "evidence": "queues=62, reports=62, mode=war_room_execution_queue, tasks=32, open=22, blocked=10, approval=13"
     },
     {
       "name": "v11_mission_control:operating_brief",
       "ok": true,
-      "evidence": "status=human_review_required, benchmark=50, customs=True, evidence=4, boards=296, responses=22, war_rooms=11, queues=59, queue_tasks=31, war_score=99, search_gate=lead_only, promotion_gate=draft_promotion_ready"
+      "evidence": "status=human_review_required, benchmark=50, customs=True, evidence=4, boards=298, responses=22, war_rooms=11, queues=61, queue_tasks=31, war_score=99, search_gate=lead_only, promotion_gate=draft_promotion_ready"
     }
   ]
 }
