@@ -1,11 +1,1 @@
-{
-  "decisions": [],
-  "approvals": [],
-  "feedback": [],
-  "learning": {
-    "acceptedPatterns": [],
-    "rejectedPatterns": [],
-    "notes": [],
-    "updatedAt": null
-  }
-}
+﻿{"decisions":{"id":"88382b1c-8a26-4028-92f4-2c811648e500","criteria":[{"name":"收益","weight":4},{"name":"风险","weight":5},{"name":"可逆性","weight":4}],"title":"Kazakhstan EPC Trade Opportunity","type":"project","context":"Kazakhstan intake 客户关注 EPC 供货、清关、付款节点和当地合作方风险。 payment customs sanction contract","analysis":{"confidence":"medium","ranked":[{"evidence":"速度快","score":60,"name":"直接全面推进","risk":"不可逆、对外承诺风险高"},{"evidence":"可验证、低成本、可回滚","score":50,"name":"分阶段推进","risk":"推进速度较慢"}],"rationale":["Scoring considers benefit, risk, cost, reversibility, and evidence strength.","High-impact or irreversible items enter the approval flow.","Your reply is written to the learning record for future decisions."],"recommendation":"Choose '直接全面推进' and move forward with a small verifiable step plus a rollback point.","askNeeded":true},"options":[{"name":"分阶段推进","evidence":"可验证、低成本、可回滚","risk":"推进速度较慢"},{"name":"直接全面推进","evidence":"速度快","risk":"不可逆、对外承诺风险高"}],"createdAt":"2026-06-27T10:33:14.8500035+08:00"},"approvals":{"id":"01e4ef8a-d8a3-4b1e-9842-73297408970d","repliedAt":null,"createdAt":"2026-06-27T10:33:14.8685263+08:00","decisionId":"88382b1c-8a26-4028-92f4-2c811648e500","question":"Approve this recommendation: Choose '直接全面推进' and move forward with a small verifiable step plus a rollback point.","status":"waiting","recommendation":"Choose '直接全面推进' and move forward with a small verifiable step plus a rollback point."},"feedback":[],"learning":{"acceptedPatterns":[],"rejectedPatterns":[],"notes":[],"updatedAt":null}}
