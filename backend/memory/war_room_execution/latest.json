@@ -1,7 +1,7 @@
 {
   "ok": true,
-  "id": "612ecba972838e9e",
-  "created_at": "2026-06-27T02:02:05.609931+00:00",
+  "id": "bbc4121e834405c3",
+  "created_at": "2026-06-27T02:11:00.304953+00:00",
   "mode": "war_room_execution_queue",
   "war_room_id": "7118e1fe9b7e2116",
   "objective": "Kazakhstan engineering trade project customs investment promotion video",
@@ -15,7 +15,7 @@
   },
   "tasks": [
     {
-      "id": "612ecba972838e9e-01",
+      "id": "bbc4121e834405c3-01",
       "role": "research_analyst",
       "task": "Run and record source evidence for query: Kazakhstan engineering trade project customs investment promotion video Kazakhstan official government site:gov.kz",
       "source": "search_confirmation.government_confirmation",
@@ -33,7 +33,7 @@
       "output": "evidence_record"
     },
     {
-      "id": "612ecba972838e9e-02",
+      "id": "bbc4121e834405c3-02",
       "role": "research_analyst",
       "task": "Run and record source evidence for query: Kazakhstan engineering trade project customs investment promotion video Kazakhstan official government site:primeminister.kz",
       "source": "search_confirmation.government_confirmation",
@@ -51,7 +51,7 @@
       "output": "evidence_record"
     },
     {
-      "id": "612ecba972838e9e-03",
+      "id": "bbc4121e834405c3-03",
       "role": "research_analyst",
       "task": "Run and record source evidence for query: Kazakhstan engineering trade project customs investment promotion video Kazakhstan official government site:invest.gov.kz",
       "source": "search_confirmation.government_confirmation",
@@ -69,7 +69,7 @@
       "output": "evidence_record"
     },
     {
-      "id": "612ecba972838e9e-04",
+      "id": "bbc4121e834405c3-04",
       "role": "research_analyst",
       "task": "Run and record source evidence for query: Kazakhstan engineering trade project customs investment promotion video Kazakhstan official government site:adilet.zan.kz",
       "source": "search_confirmation.government_confirmation",
@@ -87,7 +87,7 @@
       "output": "evidence_record"
     },
     {
-      "id": "612ecba972838e9e-05",
+      "id": "bbc4121e834405c3-05",
       "role": "research_analyst",
       "task": "Run and record source evidence for query: Kazakhstan engineering trade project customs investment promotion video Kazakhstan ministry site:gov.kz",
       "source": "search_confirmation.government_confirmation",
@@ -105,7 +105,7 @@
       "output": "evidence_record"
     },
     {
-      "id": "612ecba972838e9e-06",
+      "id": "bbc4121e834405c3-06",
       "role": "research_analyst",
       "task": "Run and record source evidence for query: Kazakhstan engineering trade project customs investment promotion video Kazakhstan ministry site:primeminister.kz",
       "source": "search_confirmation.government_confirmation",
@@ -123,7 +123,7 @@
       "output": "evidence_record"
     },
     {
-      "id": "612ecba972838e9e-07",
+      "id": "bbc4121e834405c3-07",
       "role": "research_analyst",
       "task": "Run and record source evidence for query: Kazakhstan engineering trade project customs investment promotion video Kazakhstan ministry site:invest.gov.kz",
       "source": "search_confirmation.government_confirmation",
@@ -141,7 +141,7 @@
       "output": "evidence_record"
     },
     {
-      "id": "612ecba972838e9e-08",
+      "id": "bbc4121e834405c3-08",
       "role": "research_analyst",
       "task": "Run and record source evidence for query: Kazakhstan engineering trade project customs investment promotion video Kazakhstan ministry site:adilet.zan.kz",
       "source": "search_confirmation.government_confirmation",
@@ -159,7 +159,7 @@
       "output": "evidence_record"
     },
     {
-      "id": "612ecba972838e9e-09",
+      "id": "bbc4121e834405c3-09",
       "role": "risk_approval_officer",
       "task": "Upgrade evidence from lead-only or partial support to official confirmation before project confirmation.",
       "source": "evidence.verification_status",
@@ -186,7 +186,7 @@
       "output": "evidence_gap_report"
     },
     {
-      "id": "612ecba972838e9e-10",
+      "id": "bbc4121e834405c3-10",
       "role": "project_manager",
       "task": "Open official government and procurement search URLs from the highest priority plan.",
       "source": "project_execution.next_actions",
@@ -213,7 +213,7 @@
       "output": "project_followup_item"
     },
     {
-      "id": "612ecba972838e9e-11",
+      "id": "bbc4121e834405c3-11",
       "role": "project_manager",
       "task": "Attach official evidence with title, URL, snippet, source_type, and source date.",
       "source": "project_execution.next_actions",
@@ -240,7 +240,7 @@
       "output": "project_followup_item"
     },
     {
-      "id": "612ecba972838e9e-12",
+      "id": "bbc4121e834405c3-12",
       "role": "project_manager",
       "task": "Confirm project owner, developer, responsible office/person, tender status, and customs impact.",
       "source": "project_execution.next_actions",
@@ -267,7 +267,7 @@
       "output": "project_followup_item"
     },
     {
-      "id": "612ecba972838e9e-13",
+      "id": "bbc4121e834405c3-13",
       "role": "project_manager",
       "task": "Use the action board for team task assignment.",
       "source": "project_execution.next_actions",
@@ -294,7 +294,7 @@
       "output": "project_followup_item"
     },
     {
-      "id": "612ecba972838e9e-14",
+      "id": "bbc4121e834405c3-14",
       "role": "project_manager",
       "task": "Request human approval before any external message or publication.",
       "source": "project_execution.next_actions",
@@ -321,7 +321,7 @@
       "output": "project_followup_item"
     },
     {
-      "id": "612ecba972838e9e-15",
+      "id": "bbc4121e834405c3-15",
       "role": "trade_lead",
       "task": "收集海关官网、官方税则、清关文件、银行付款条件证据，并形成可执行 checklist。",
       "source": "team.roles.next_step",
@@ -337,7 +337,7 @@
       "output": "role_work_product"
     },
     {
-      "id": "612ecba972838e9e-16",
+      "id": "bbc4121e834405c3-16",
       "role": "research_analyst",
       "task": "把证据分为政府/采购/企业/媒体/社交五级，记录 citation、URL、source date、relevance note。",
       "source": "team.roles.next_step",
@@ -353,7 +353,7 @@
       "output": "role_work_product"
     },
     {
-      "id": "612ecba972838e9e-17",
+      "id": "bbc4121e834405c3-17",
       "role": "investment_promotion_lead",
       "task": "建立 owner/developer/investor/government authority 四类名单，并标注 evidence level。",
       "source": "team.roles.next_step",
@@ -369,7 +369,7 @@
       "output": "role_work_product"
     },
     {
-      "id": "612ecba972838e9e-18",
+      "id": "bbc4121e834405c3-18",
       "role": "video_media_producer",
       "task": "生成 60 秒项目机会脚本、风险解释脚本和平台关键词，等待人工审批。",
       "source": "team.roles.next_step",
@@ -385,7 +385,7 @@
       "output": "role_work_product"
     },
     {
-      "id": "612ecba972838e9e-19",
+      "id": "bbc4121e834405c3-19",
       "role": "project_manager",
       "task": "安排责任人、截止时间、会议议程、decision log 和复盘记录。",
       "source": "team.roles.next_step",
@@ -401,7 +401,7 @@
       "output": "role_work_product"
     },
     {
-      "id": "612ecba972838e9e-20",
+      "id": "bbc4121e834405c3-20",
       "role": "risk_approval_officer",
       "task": "把高风险事项写入老板收件箱，审批前保持 DRAFT - Not approved for sending。",
       "source": "team.roles.next_step",
@@ -417,7 +417,7 @@
       "output": "role_work_product"
     },
     {
-      "id": "612ecba972838e9e-21",
+      "id": "bbc4121e834405c3-21",
       "role": "trade_lead",
       "task": "Verify customs, HS/tariff, payment terms, Incoterms, and logistics route.",
       "source": "action_board.tasks",
@@ -434,7 +434,7 @@
       "output": "internal_draft"
     },
     {
-      "id": "612ecba972838e9e-22",
+      "id": "bbc4121e834405c3-22",
       "role": "research_analyst",
       "task": "Collect government, procurement, academic, and library evidence; grade each source.",
       "source": "action_board.tasks",
@@ -451,7 +451,7 @@
       "output": "internal_draft"
     },
     {
-      "id": "612ecba972838e9e-23",
+      "id": "bbc4121e834405c3-23",
       "role": "investment_promotion_lead",
       "task": "Map owner, developer, investor candidates, incentive policy, and project packaging gaps.",
       "source": "action_board.tasks",
@@ -477,7 +477,7 @@
       "output": "internal_draft"
     },
     {
-      "id": "612ecba972838e9e-24",
+      "id": "bbc4121e834405c3-24",
       "role": "video_media_producer",
       "task": "Draft country-style video concept based on verified facts and comparable platform examples.",
       "source": "action_board.tasks",
@@ -503,7 +503,7 @@
       "output": "internal_draft"
     },
     {
-      "id": "612ecba972838e9e-25",
+      "id": "bbc4121e834405c3-25",
       "role": "project_manager",
       "task": "Prepare meeting agenda, owner decision queue, deadlines, and next internal follow-up.",
       "source": "action_board.tasks",
@@ -520,7 +520,7 @@
       "output": "internal_draft"
     },
     {
-      "id": "612ecba972838e9e-26",
+      "id": "bbc4121e834405c3-26",
       "role": "risk_approval_officer",
       "task": "Keep formal outreach, quotation, payment, contract, and public publishing blocked until approval.",
       "source": "action_board.tasks",
@@ -547,7 +547,7 @@
       "output": "internal_draft"
     },
     {
-      "id": "612ecba972838e9e-27",
+      "id": "bbc4121e834405c3-27",
       "role": "video_media_producer",
       "task": "Study platform examples and draft original video angle for YouTube: Kazakhstan infrastructure Kazakhstan engineering trade project customs investment promotion video case study short video",
       "source": "video_center.platform_searches",
@@ -576,7 +576,7 @@
       "output": "draft_video_brief"
     },
     {
-      "id": "612ecba972838e9e-28",
+      "id": "bbc4121e834405c3-28",
       "role": "video_media_producer",
       "task": "Study platform examples and draft original video angle for TikTok: Kazakhstan infrastructure Kazakhstan engineering trade project customs investment promotion video case study short video",
       "source": "video_center.platform_searches",
@@ -605,7 +605,7 @@
       "output": "draft_video_brief"
     },
     {
-      "id": "612ecba972838e9e-29",
+      "id": "bbc4121e834405c3-29",
       "role": "video_media_producer",
       "task": "Study platform examples and draft original video angle for Douyin: Kazakhstan infrastructure Kazakhstan engineering trade project customs investment promotion video case study short video",
       "source": "video_center.platform_searches",
@@ -634,7 +634,7 @@
       "output": "draft_video_brief"
     },
     {
-      "id": "612ecba972838e9e-30",
+      "id": "bbc4121e834405c3-30",
       "role": "video_media_producer",
       "task": "Study platform examples and draft original video angle for Google Video: Kazakhstan infrastructure Kazakhstan engineering trade project customs investment promotion video case study short video",
       "source": "video_center.platform_searches",
@@ -663,7 +663,7 @@
       "output": "draft_video_brief"
     },
     {
-      "id": "612ecba972838e9e-31",
+      "id": "bbc4121e834405c3-31",
       "role": "video_media_producer",
       "task": "Study platform examples and draft original video angle for YouTube: Kazakhstan infrastructure Kazakhstan engineering trade project customs investment promotion video project progress short video",
       "source": "video_center.platform_searches",
@@ -692,7 +692,7 @@
       "output": "draft_video_brief"
     },
     {
-      "id": "612ecba972838e9e-32",
+      "id": "bbc4121e834405c3-32",
       "role": "video_media_producer",
       "task": "Study platform examples and draft original video angle for TikTok: Kazakhstan infrastructure Kazakhstan engineering trade project customs investment promotion video project progress short video",
       "source": "video_center.platform_searches",
