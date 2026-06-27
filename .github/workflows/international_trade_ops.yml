@@ -62,4 +62,5 @@ jobs:
             backend/research/briefs/
             backend/media/drafts/
             backend/comm/outbox/
+            backend/projects/library/
             backend/reports/
