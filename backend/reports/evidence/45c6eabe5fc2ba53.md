@@ -19,7 +19,7 @@ DRAFT - internal verification record, not approved for external sending
 ## Evidence Items
 
 - T2 | 86 | Academic or library | Internal Brief Library Cleanup
-  /home/runner/work/global-intelligence-v11-final/global-intelligence-v11-final/backend/projects/active/internal-brief-library.md
+  C:\Users\Surface\Documents\New project\global-intelligence-v11\backend\projects\active\internal-brief-library.md
 
 ## Next Verification Steps
 
