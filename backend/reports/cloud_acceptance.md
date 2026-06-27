@@ -1,7 +1,7 @@
 # GitHub Cloud Acceptance
 
-- Status: FAIL
-- Generated: 2026-06-27T01:46:53.713057+00:00
+- Status: PASS
+- Generated: 2026-06-27T02:03:09.637999+00:00
 - Repository: local
 - Run id: local
 
@@ -24,18 +24,18 @@
 - customs_information_domain: True
 - benchmark_questions: 50
 - answer_score: 80
-- intelligence_keywords: 52
+- intelligence_keywords: 211
 - intelligence_briefs: 5
 - video_center_files: 5
 - team_execution_reports: 4
 - evidence_dossiers: 4
 - latest_evidence_status: officially_supported
-- action_boards: 298
+- action_boards: 307
 - latest_action_board_status: pending_owner
-- team_responses: 22
+- team_responses: 24
 - latest_team_response_score: 99
-- war_rooms: 11
-- war_room_execution_queues: 62
+- war_rooms: 12
+- war_room_execution_queues: 69
 - latest_war_room_queue_tasks: 32
 - latest_war_room_queue_blocked: 10
 - latest_war_room_score: 99
@@ -78,13 +78,13 @@
 - PASS `file:reports/mission_control/latest.md` - reports/mission_control/latest.md
 - PASS `file:services/industry_war_room_service.py` - services/industry_war_room_service.py
 - PASS `file:reports/benchmark/daily_answer_score.json` - reports/benchmark/daily_answer_score.json
-- FAIL `text:.github/workflows/international_trade_ops.yml:python workflows/daily_job.py` - missing text: python workflows/daily_job.py
-- FAIL `text:.github/workflows/international_trade_ops.yml:python workflows/persist_state.py` - missing text: python workflows/persist_state.py
+- PASS `text:.github/workflows/international_trade_ops.yml:python backend/workflows/daily_job.py` - .github/workflows/international_trade_ops.yml
+- PASS `text:.github/workflows/international_trade_ops.yml:python backend/workflows/persist_state.py` - .github/workflows/international_trade_ops.yml
 - PASS `text:.github/workflows/owner_decision.yml:issue_comment` - .github/workflows/owner_decision.yml
-- PASS `text:.github/workflows/owner_decision.yml:python workflows/resolve_major_matter.py` - .github/workflows/owner_decision.yml
-- PASS `text:.github/workflows/watchdog.yml:python workflows/persist_state.py` - .github/workflows/watchdog.yml
-- PASS `text:.github/workflows/cloud_acceptance.yml:python workflows/cloud_acceptance.py` - .github/workflows/cloud_acceptance.yml
-- PASS `text:.github/workflows/codex_autonomous_repair.yml:python workflows/autonomous_repair.py` - .github/workflows/codex_autonomous_repair.yml
+- PASS `text:.github/workflows/owner_decision.yml:python backend/workflows/resolve_major_matter.py` - .github/workflows/owner_decision.yml
+- PASS `text:.github/workflows/watchdog.yml:python backend/workflows/persist_state.py` - .github/workflows/watchdog.yml
+- PASS `text:.github/workflows/cloud_acceptance.yml:python backend/workflows/cloud_acceptance.py` - .github/workflows/cloud_acceptance.yml
+- PASS `text:.github/workflows/codex_autonomous_repair.yml:python backend/workflows/autonomous_repair.py` - .github/workflows/codex_autonomous_repair.yml
 - PASS `text:reports/headquarters_status.md:Execution status` - reports/headquarters_status.md
 - PASS `text:reports/owner_inbox.md:Owner Inbox` - reports/owner_inbox.md
 - PASS `text:reports/watchdog_status.md:24h Codex Watchdog` - reports/watchdog_status.md
@@ -98,14 +98,14 @@
 - PASS `v11_knowledge:domains_and_customs` - domains=7, customs=True
 - PASS `v11_benchmark:50_questions` - question_count=50
 - PASS `v11_answer_scorer:daily_quality_score` - overall_score=80, verdict=usable
-- PASS `v11_intelligence:keyword_bank_and_brief` - keywords=52, briefs=5
+- PASS `v11_intelligence:keyword_bank_and_brief` - keywords=211, briefs=5
 - PASS `v11_video:center_generated` - video_files=5, platform_searches=120
 - PASS `v11_team_execution:packages_generated` - team_reports=4, team_memory=4, cases=2
 - PASS `v11_evidence:verification_dossiers` - evidence_json=5, evidence_reports=5, latest_status=officially_supported
-- PASS `v11_action_board:execution_tasks` - action_json=299, action_reports=299, latest_tasks=6, latest_status=pending_owner
-- PASS `v11_team_response:team_answer_pack` - team_response_json=23, score=99, roles=6
+- PASS `v11_action_board:execution_tasks` - action_json=308, action_reports=308, latest_tasks=6, latest_status=pending_owner
+- PASS `v11_team_response:team_answer_pack` - team_response_json=25, score=99, roles=6
 - PASS `v11_search:source_readiness_and_confirmation_gate` - sources=11, manual=11, gate=lead_only, required=customs_trade,government_confirmation,procurement_tender, blocked=6
 - PASS `v11_project:promotion_readiness_gate` - weak=lead_only, official=draft_promotion_ready, external=False, library_total=3, draft_ready=0, lead_only=1
-- PASS `v11_war_room:vertical_team_operating_package` - latest=industry_war_room, saved_json=11, saved_reports=11, mode=industry_war_room, search_gate=lead_only, promotion=lead_only, roles=6, video=12, score=99
-- PASS `v11_war_room_execution:queue_tracks_work` - queues=62, reports=62, mode=war_room_execution_queue, tasks=32, open=22, blocked=10, approval=13
-- PASS `v11_mission_control:operating_brief` - status=human_review_required, benchmark=50, customs=True, evidence=4, boards=298, responses=22, war_rooms=11, queues=61, queue_tasks=31, war_score=99, search_gate=lead_only, promotion_gate=draft_promotion_ready
+- PASS `v11_war_room:vertical_team_operating_package` - latest=industry_war_room, saved_json=12, saved_reports=12, mode=industry_war_room, search_gate=lead_only, promotion=lead_only, roles=6, video=12, score=99
+- PASS `v11_war_room_execution:queue_tracks_work` - queues=69, reports=69, mode=war_room_execution_queue, tasks=32, open=22, blocked=10, approval=13
+- PASS `v11_mission_control:operating_brief` - status=human_review_required, benchmark=50, customs=True, evidence=4, boards=307, responses=24, war_rooms=12, queues=68, queue_tasks=31, war_score=99, search_gate=lead_only, promotion_gate=draft_promotion_ready
