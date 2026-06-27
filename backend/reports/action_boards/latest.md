@@ -1,12 +1,12 @@
-# Project Action Board: Kazakhstan EPC Trade Opportunity
+# Project Action Board: Daily cycle operating evidence
 
 DRAFT - internal execution board, not approved for external sending
 
-- Country: Kazakhstan
-- Stage: unconfirmed_pipeline
+- Country: Indonesia
+- Stage: unknown
 - Risk status: pending_owner
 - Blocked: True
-- Evidence: unverified (0)
+- Evidence: weak_signal_only (37)
 
 ## Tasks
 
