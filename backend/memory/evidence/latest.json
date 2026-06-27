@@ -1,60 +1,58 @@
 {
   "ok": true,
-  "id": "1d37bb889c185474",
-  "created_at": "2026-06-27T02:37:38.187722+00:00",
-  "project": "Kazakhstan logistics hub",
-  "country": "Kazakhstan",
-  "claim": "Kazakhstan logistics EPC project owner and customs documents are confirmed",
-  "verification_status": "officially_supported",
-  "confidence": 98,
+  "id": "45c6eabe5fc2ba53",
+  "created_at": "2026-06-27T09:36:09.181858+00:00",
+  "project": "Internal Brief Library Cleanup",
+  "country": "Internal",
+  "claim": "Internal Brief Library Cleanup project status, stakeholders, customs and trade risk",
+  "verification_status": "partially_supported",
+  "confidence": 84,
   "requires_human_review": true,
   "summary": {
     "total_evidence": 1,
-    "official_sources": 1,
-    "tier2_sources": 0,
+    "official_sources": 0,
+    "tier2_sources": 1,
     "weak_signals": 0,
     "high_risk_terms": [
-      "contract",
       "customs"
     ]
   },
   "evidence": [
     {
-      "title": "Government procurement project page",
-      "url": "https://goszakup.gov.kz/example-project",
-      "domain": "goszakup.gov.kz",
-      "source_type": "procurement",
-      "source_label": "Official procurement",
-      "tier": 1,
-      "score": 100,
-      "snippet": "Official procurement page describes project owner, EPC contractor scope and customs documents.",
+      "title": "Internal Brief Library Cleanup",
+      "url": "/home/runner/work/global-intelligence-v11-final/global-intelligence-v11-final/backend/projects/active/internal-brief-library.md",
+      "domain": "",
+      "source_type": "academic",
+      "source_label": "Academic or library",
+      "tier": 2,
+      "score": 86,
+      "snippet": "Team confirmed this is an internal reversible cleanup of research notes and brief tags.",
       "high_risk_hits": [
-        "contract",
         "customs"
       ],
-      "collected_at": "2026-06-27T02:37:38.187722+00:00"
+      "collected_at": "2026-06-27T09:36:09+00:00"
     }
   ],
   "decision_rule": "Official government/customs/procurement evidence is required before project confirmation, investment promotion, quotation, customer commitment, or public publishing.",
   "next_verification_steps": [
     {
       "source": "government",
-      "query": "Kazakhstan Kazakhstan logistics EPC project owner and customs documents are confirmed official government project owner",
+      "query": "Internal Internal Brief Library Cleanup project status, stakeholders, customs and trade risk official government project owner",
       "reason": "Confirm project existence, owner, authority, and status from official pages."
     },
     {
       "source": "customs",
-      "query": "Kazakhstan customs HS code tariff import documents Kazakhstan logistics EPC project owner and customs documents are confirmed",
+      "query": "Internal customs HS code tariff import documents Internal Brief Library Cleanup project status, stakeholders, customs and trade risk",
       "reason": "Confirm customs, tariff, import license, clearance documents, and export-control assumptions."
     },
     {
       "source": "procurement",
-      "query": "Kazakhstan Kazakhstan logistics EPC project owner and customs documents are confirmed tender procurement EPC contractor",
+      "query": "Internal Internal Brief Library Cleanup project status, stakeholders, customs and trade risk tender procurement EPC contractor",
       "reason": "Confirm procurement stage, award, contractor, and deadlines."
     },
     {
       "source": "company",
-      "query": "Kazakhstan logistics EPC project owner and customs documents are confirmed developer investor official announcement",
+      "query": "Internal Brief Library Cleanup project status, stakeholders, customs and trade risk developer investor official announcement",
       "reason": "Cross-check developer/investor facts with official company disclosures."
     },
     {
