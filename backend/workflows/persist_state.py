@@ -11,6 +11,7 @@ STATE_PATHS = [
     "memory",
     "reports",
     "comm/outbox",
+    "projects/library",
     "research/briefs",
     "media/drafts",
 ]
