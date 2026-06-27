@@ -17,7 +17,7 @@
         "snippet": "Official source describes owner, tender status, customs documents and engineering scope.",
         "source_type": "government",
         "government_confirmed": true,
-        "collected_at": "2026-06-27T01:48:21.525747+00:00"
+        "collected_at": "2026-06-27T01:58:09.576886+00:00"
       }
     ],
     "evidence": [
@@ -28,7 +28,7 @@
         "snippet": "Official source describes owner, tender status, customs documents and engineering scope.",
         "source_type": "government",
         "government_confirmed": true,
-        "collected_at": "2026-06-27T01:48:21.525747+00:00"
+        "collected_at": "2026-06-27T01:58:09.576886+00:00"
       }
     ],
     "stakeholders": {
@@ -45,7 +45,7 @@
       "Human approval required before external outreach, quotation, commitment, or publication.",
       "Government source confirmation required before investment promotion use."
     ],
-    "updated_at": "2026-06-27T01:48:21.527746+00:00",
+    "updated_at": "2026-06-27T01:58:09.577867+00:00",
     "official_source_status": "official_procurement_supported",
     "project_record_status": "candidate_project",
     "verified_project_allowed": false,
@@ -144,12 +144,12 @@
     "evidence": [
       {
         "title": "Daily cycle operating evidence",
-        "url": "C:\\Users\\Surface\\AppData\\Local\\Temp\\tmpavvq9751\\memory\\last_run.json",
+        "url": "C:\\Users\\Surface\\AppData\\Local\\Temp\\tmpvn7uswao\\memory\\last_run.json",
         "domain": "",
         "snippet": "daily operating cycle, project cases, evidence dossiers, action boards, video center, benchmark and owner approval queue",
         "source_type": "internal",
         "government_confirmed": false,
-        "collected_at": "2026-06-27T01:46:54.778189+00:00"
+        "collected_at": "2026-06-27T01:56:40.968917+00:00"
       }
     ],
     "stakeholders": {
@@ -166,7 +166,7 @@
       "Human approval required before external outreach, quotation, commitment, or publication.",
       "Government source confirmation required before investment promotion use."
     ],
-    "updated_at": "2026-06-27T01:46:54.783191+00:00",
+    "updated_at": "2026-06-27T01:56:40.969917+00:00",
     "official_source_status": "candidate_unverified",
     "project_record_status": "candidate_project",
     "verified_project_allowed": false,
