@@ -38,19 +38,23 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
+      - name: Install runtime dependencies
+        run: python -m pip install -r requirements.txt
+      - name: v11 system integrity
+        run: python backend/workflows/system_integrity.py
       - name: Preflight check
-        run: python workflows/preflight_check.py
+        run: python backend/workflows/preflight_check.py
       - name: Run tests
         run: python -m unittest discover -s tests
       - name: Resolve major matter
-        run: python workflows/resolve_major_matter.py
+        run: python backend/workflows/resolve_major_matter.py
       - name: Persist owner decision state
-        run: python workflows/persist_state.py
+        run: python backend/workflows/persist_state.py
       - name: Upload decision artifacts
         uses: actions/upload-artifact@v4
         with:
           name: owner-decision-${{ github.run_id }}
           path: |
-            memory/decisions/
-            memory/continuations/
-            comm/outbox/
+            backend/memory/decisions/
+            backend/memory/continuations/
+            backend/comm/outbox/
