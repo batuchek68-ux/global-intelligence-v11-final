@@ -37,25 +37,30 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
+      - name: Install runtime dependencies
+        run: python -m pip install -r requirements.txt
+      - name: v11 system integrity
+        run: python backend/workflows/system_integrity.py
       - name: Preflight check
-        run: python workflows/preflight_check.py
+        run: python backend/workflows/preflight_check.py
       - name: Ensure GitHub labels
-        run: python workflows/ensure_labels.py
+        run: python backend/workflows/ensure_labels.py
       - name: Run tests
         run: python -m unittest discover -s tests
       - name: Run daily operating cycle
-        run: python workflows/daily_job.py
+        run: python backend/workflows/daily_job.py
       - name: Publish headquarters summary
-        run: python workflows/publish_summary.py
+        run: python backend/workflows/publish_summary.py
       - name: Persist operating state
-        run: python workflows/persist_state.py
+        run: python backend/workflows/persist_state.py
       - name: Upload operating artifacts
         uses: actions/upload-artifact@v4
         with:
           name: international-trade-ai-${{ github.run_id }}
           path: |
-            memory/
-            research/briefs/
-            media/drafts/
-            comm/outbox/
-            reports/
+            backend/memory/
+            backend/research/briefs/
+            backend/media/drafts/
+            backend/comm/outbox/
+            backend/projects/library/
+            backend/reports/
