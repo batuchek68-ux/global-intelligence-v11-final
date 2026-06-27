@@ -1,7 +1,7 @@
 {
   "ok": true,
   "id": "4b37bdc35895dc4c",
-  "created_at": "2026-06-26T01:28:35.760808+00:00",
+  "created_at": "2026-06-27T02:32:18.531937+00:00",
   "objective": "Kazakhstan EPC Trade Opportunity 客户关注 EPC 供货、清关、付款节点和当地合作方风险。",
   "country": "Kazakhstan",
   "industries": [
@@ -4322,7 +4322,7 @@
   },
   "answer_quality_model": {
     "ok": true,
-    "created_at": "2026-06-26T01:28:35.760808+00:00",
+    "created_at": "2026-06-27T02:32:18.530936+00:00",
     "overall_score": 62,
     "verdict": "needs_improvement",
     "dimensions": {
