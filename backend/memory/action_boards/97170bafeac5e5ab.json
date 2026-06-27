@@ -1,0 +1,130 @@
+{
+  "ok": true,
+  "id": "97170bafeac5e5ab",
+  "created_at": "2026-06-27T01:47:51.648279+00:00",
+  "project": "哈萨克斯坦工程贸易",
+  "country": "Kazakhstan",
+  "stage": "unconfirmed_pipeline",
+  "risk_gate": {
+    "blocked": true,
+    "status": "pending_owner",
+    "risk_level": "high",
+    "risk_score": 90,
+    "reasons": [
+      "major matter: Approve evidence-based outreach or continue research?",
+      "evidence status: unverified"
+    ],
+    "blocked_actions": [
+      "external commitment",
+      "formal quotation",
+      "contract or payment approval",
+      "public publishing",
+      "customer delivery promise"
+    ]
+  },
+  "evidence": {
+    "status": "unverified",
+    "confidence": 0,
+    "dossier_id": "9f4fcabe30e3facc"
+  },
+  "summary": {
+    "task_count": 6,
+    "blocked_count": 3,
+    "open_count": 3
+  },
+  "tasks": [
+    {
+      "id": "97170bafeac5e5ab-trade",
+      "role": "trade_lead",
+      "role_label": "International trade lead",
+      "title": "Verify customs, HS/tariff, payment terms, Incoterms, and logistics route.",
+      "status": "open",
+      "risk_gate": "human_review_required",
+      "evidence_needed": [
+        "customs authority URL",
+        "tariff/HS evidence",
+        "payment term proof",
+        "logistics route proof"
+      ],
+      "output": "internal_draft"
+    },
+    {
+      "id": "97170bafeac5e5ab-research",
+      "role": "research_analyst",
+      "role_label": "Research intelligence analyst",
+      "title": "Collect government, procurement, academic, and library evidence; grade each source.",
+      "status": "open",
+      "risk_gate": "evidence_required",
+      "evidence_needed": [
+        "government page",
+        "procurement page",
+        "paper/library source",
+        "source date"
+      ],
+      "output": "internal_draft"
+    },
+    {
+      "id": "97170bafeac5e5ab-investment",
+      "role": "investment_promotion_lead",
+      "role_label": "Investment promotion lead",
+      "title": "Map owner, developer, investor candidates, incentive policy, and project packaging gaps.",
+      "status": "blocked",
+      "risk_gate": "blocked_before_external_use",
+      "evidence_needed": [
+        "official project owner proof",
+        "developer/investor proof",
+        "investment agency source"
+      ],
+      "output": "internal_draft"
+    },
+    {
+      "id": "97170bafeac5e5ab-video",
+      "role": "video_media_producer",
+      "role_label": "Video and media producer",
+      "title": "Draft country-style video concept based on verified facts and comparable platform examples.",
+      "status": "blocked",
+      "risk_gate": "human_approval_before_publish",
+      "evidence_needed": [
+        "platform search links",
+        "country style notes",
+        "verified project facts"
+      ],
+      "output": "internal_draft"
+    },
+    {
+      "id": "97170bafeac5e5ab-pm",
+      "role": "project_manager",
+      "role_label": "Project execution manager",
+      "title": "Prepare meeting agenda, owner decision queue, deadlines, and next internal follow-up.",
+      "status": "open",
+      "risk_gate": "owner_queue",
+      "evidence_needed": [
+        "meeting record",
+        "task owner",
+        "deadline",
+        "decision log"
+      ],
+      "output": "internal_draft"
+    },
+    {
+      "id": "97170bafeac5e5ab-risk",
+      "role": "risk_approval_officer",
+      "role_label": "Risk and approval officer",
+      "title": "Keep formal outreach, quotation, payment, contract, and public publishing blocked until approval.",
+      "status": "pending_owner",
+      "risk_gate": "active",
+      "evidence_needed": [
+        "approval ticket",
+        "risk trigger",
+        "human decision",
+        "audit log line"
+      ],
+      "output": "internal_draft"
+    }
+  ],
+  "rules": [
+    "This board is internal execution control, not approval to contact customers.",
+    "External messages, quotations, contracts, payments, delivery promises, and public posts require human approval.",
+    "Official evidence is required before investment promotion or project confirmation."
+  ]
+}
