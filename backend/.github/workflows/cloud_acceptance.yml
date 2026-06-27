@@ -20,28 +20,34 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
+      - name: Install runtime dependencies
+        run: python -m pip install -r requirements.txt
+      - name: v11 system integrity
+        run: python backend/workflows/system_integrity.py
       - name: Preflight check
-        run: python workflows/preflight_check.py
+        run: python backend/workflows/preflight_check.py
       - name: Run tests
         run: python -m unittest discover -s tests
       - name: Run daily operating cycle
-        run: python workflows/daily_job.py
+        run: python backend/workflows/daily_job.py
       - name: Run watchdog
-        run: python workflows/watchdog.py
+        run: python backend/workflows/watchdog.py
       - name: Run cloud acceptance
-        run: python workflows/cloud_acceptance.py
+        run: python backend/workflows/cloud_acceptance.py
       - name: Persist acceptance evidence
         env:
           STATE_COMMIT_MESSAGE: Persist GitHub cloud acceptance evidence
-        run: python workflows/persist_state.py
+        run: python backend/workflows/persist_state.py
       - name: Upload acceptance artifacts
         uses: actions/upload-artifact@v4
         with:
           name: github-cloud-acceptance-${{ github.run_id }}
           path: |
-            reports/cloud_acceptance.md
-            reports/cloud_acceptance.json
-            reports/headquarters_status.md
-            reports/owner_inbox.md
-            reports/watchdog_status.md
-            memory/
+            backend/reports/cloud_acceptance.md
+            backend/reports/cloud_acceptance.json
+            backend/reports/headquarters_status.md
+            backend/reports/owner_inbox.md
+            backend/reports/watchdog_status.md
+            backend/reports/system_integrity.md
+            backend/reports/system_integrity.json
+            backend/memory/
