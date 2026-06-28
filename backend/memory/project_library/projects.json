@@ -144,12 +144,12 @@
     "evidence": [
       {
         "title": "Daily cycle operating evidence",
-        "url": "/home/runner/work/global-intelligence-v11-final/global-intelligence-v11-final/backend/memory/last_run.json",
+        "url": "C:\\Users\\Surface\\AppData\\Local\\Temp\\tmpyypnvf3u\\memory\\last_run.json",
         "domain": "",
         "snippet": "daily operating cycle, project cases, evidence dossiers, action boards, video center, benchmark and owner approval queue",
         "source_type": "internal",
         "government_confirmed": false,
-        "collected_at": "2026-06-27T09:36:09.239782+00:00"
+        "collected_at": "2026-06-28T00:22:10.105382+00:00"
       }
     ],
     "stakeholders": {
@@ -166,7 +166,7 @@
       "Human approval required before external outreach, quotation, commitment, or publication.",
       "Government source confirmation required before investment promotion use."
     ],
-    "updated_at": "2026-06-27T09:36:09.240103+00:00",
+    "updated_at": "2026-06-28T00:22:10.107382+00:00",
     "official_source_status": "candidate_unverified",
     "project_record_status": "candidate_project",
     "verified_project_allowed": false,
