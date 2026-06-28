@@ -1,8 +1,8 @@
 {
   "ok": true,
-  "created_at": "2026-06-27T09:36:09.384550+00:00",
-  "repository": "batuchek68-ux/global-intelligence-v11-final",
-  "run_id": "28285353073",
+  "created_at": "2026-06-28T00:22:08.574051+00:00",
+  "repository": "local",
+  "run_id": "local",
   "command_model": {
     "github": "cloud AI headquarters",
     "codex": "24h autonomous executive",
@@ -22,7 +22,7 @@
     "answer_score": 80,
     "intelligence_keywords": 211,
     "intelligence_briefs": 5,
-    "video_center_files": 5,
+    "video_center_files": 6,
     "team_execution_reports": 4,
     "evidence_dossiers": 4,
     "latest_evidence_status": "partially_supported",
@@ -285,7 +285,7 @@
     {
       "name": "v11_video:center_generated",
       "ok": true,
-      "evidence": "video_files=5, platform_searches=120"
+      "evidence": "video_files=6, platform_searches=120"
     },
     {
       "name": "v11_team_execution:packages_generated",
