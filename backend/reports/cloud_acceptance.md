@@ -1,9 +1,9 @@
 # GitHub Cloud Acceptance
 
 - Status: PASS
-- Generated: 2026-06-27T09:36:09.384550+00:00
-- Repository: batuchek68-ux/global-intelligence-v11-final
-- Run id: 28285353073
+- Generated: 2026-06-28T00:22:08.574051+00:00
+- Repository: local
+- Run id: local
 
 ## Command Model
 
@@ -26,7 +26,7 @@
 - answer_score: 80
 - intelligence_keywords: 211
 - intelligence_briefs: 5
-- video_center_files: 5
+- video_center_files: 6
 - team_execution_reports: 4
 - evidence_dossiers: 4
 - latest_evidence_status: partially_supported
@@ -99,7 +99,7 @@
 - PASS `v11_benchmark:50_questions` - question_count=50
 - PASS `v11_answer_scorer:daily_quality_score` - overall_score=80, verdict=usable
 - PASS `v11_intelligence:keyword_bank_and_brief` - keywords=211, briefs=5
-- PASS `v11_video:center_generated` - video_files=5, platform_searches=120
+- PASS `v11_video:center_generated` - video_files=6, platform_searches=120
 - PASS `v11_team_execution:packages_generated` - team_reports=4, team_memory=4, cases=2
 - PASS `v11_evidence:verification_dossiers` - evidence_json=5, evidence_reports=5, latest_status=partially_supported
 - PASS `v11_action_board:execution_tasks` - action_json=323, action_reports=323, latest_tasks=6, latest_status=pending_owner
