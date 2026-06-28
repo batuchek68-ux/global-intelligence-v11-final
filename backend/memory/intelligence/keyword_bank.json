@@ -1,1271 +1,1483 @@
 {
+<<<<<<< HEAD
   "updated_at": "2026-06-28T07:11:54.280634+00:00",
+=======
+  "updated_at": "2026-06-27T22:40:26.504979+00:00",
+>>>>>>> 6c3cee6037368e1da5126e64a4b2ce1017471c8b
   "keywords": [
     {
       "keyword": "Indonesia energy Demo Port Logistics Modernization export control",
       "category": "risk_compliance",
       "label": "Risk and compliance",
-      "updated_at": "2026-06-27T09:36:09.212508+00:00"
+      "updated_at": "2026-06-27T22:40:26.504862+00:00"
     },
     {
       "keyword": "Indonesia energy Demo Port Logistics Modernization payment risk",
       "category": "risk_compliance",
       "label": "Risk and compliance",
-      "updated_at": "2026-06-27T09:36:09.212509+00:00"
+      "updated_at": "2026-06-27T22:40:26.504864+00:00"
     },
     {
       "keyword": "Indonesia energy Demo Port Logistics Modernization sanctions",
       "category": "risk_compliance",
       "label": "Risk and compliance",
-      "updated_at": "2026-06-27T09:36:09.212507+00:00"
+      "updated_at": "2026-06-27T22:40:26.504860+00:00"
     },
     {
       "keyword": "Indonesia infrastructure Demo Port Logistics Modernization AI",
       "category": "growth_sector",
       "label": "Growth sectors",
-      "updated_at": "2026-06-27T09:36:09.212428+00:00"
+      "updated_at": "2026-06-27T22:40:26.504755+00:00"
     },
     {
       "keyword": "Indonesia infrastructure Demo Port Logistics Modernization Douyin",
       "category": "video_intelligence",
       "label": "Video intelligence and production",
-      "updated_at": "2026-06-27T09:36:09.212540+00:00"
+      "updated_at": "2026-06-27T22:40:26.504901+00:00"
     },
     {
       "keyword": "Indonesia infrastructure Demo Port Logistics Modernization EIA report",
       "category": "research_library",
       "label": "Research and library",
-      "updated_at": "2026-06-27T09:36:09.212586+00:00"
+      "updated_at": "2026-06-27T22:40:26.504957+00:00"
     },
     {
       "keyword": "Indonesia infrastructure Demo Port Logistics Modernization EPC",
       "category": "project_pipeline",
       "label": "Project pipeline",
-      "updated_at": "2026-06-27T09:36:09.212350+00:00"
+      "updated_at": "2026-06-27T22:40:26.504658+00:00"
     },
     {
       "keyword": "Indonesia infrastructure Demo Port Logistics Modernization PPP",
       "category": "investment_value",
       "label": "High value and high return",
-      "updated_at": "2026-06-27T09:36:09.212403+00:00"
+      "updated_at": "2026-06-27T22:40:26.504723+00:00"
     },
     {
       "keyword": "Indonesia infrastructure Demo Port Logistics Modernization ROI",
       "category": "investment_value",
       "label": "High value and high return",
-      "updated_at": "2026-06-27T09:36:09.212401+00:00"
+      "updated_at": "2026-06-27T22:40:26.504722+00:00"
     },
     {
       "keyword": "Indonesia infrastructure Demo Port Logistics Modernization TikTok",
       "category": "video_intelligence",
       "label": "Video intelligence and production",
-      "updated_at": "2026-06-27T09:36:09.212539+00:00"
+      "updated_at": "2026-06-27T22:40:26.504900+00:00"
     },
     {
       "keyword": "Indonesia infrastructure Demo Port Logistics Modernization YouTube",
       "category": "video_intelligence",
       "label": "Video intelligence and production",
-      "updated_at": "2026-06-27T09:36:09.212537+00:00"
+      "updated_at": "2026-06-27T22:40:26.504898+00:00"
     },
     {
       "keyword": "Indonesia infrastructure Demo Port Logistics Modernization cabinet",
       "category": "political_impact",
       "label": "Political and policy impact",
-      "updated_at": "2026-06-27T09:36:09.212375+00:00"
+      "updated_at": "2026-06-27T22:40:26.504690+00:00"
     },
     {
       "keyword": "Indonesia infrastructure Demo Port Logistics Modernization case video",
       "category": "video_intelligence",
       "label": "Video intelligence and production",
-      "updated_at": "2026-06-27T09:36:09.212544+00:00"
+      "updated_at": "2026-06-27T22:40:26.504906+00:00"
     },
     {
       "keyword": "Indonesia infrastructure Demo Port Logistics Modernization contract dispute",
       "category": "risk_compliance",
       "label": "Risk and compliance",
-      "updated_at": "2026-06-27T09:36:09.212477+00:00"
+      "updated_at": "2026-06-27T22:40:26.504839+00:00"
     },
     {
       "keyword": "Indonesia infrastructure Demo Port Logistics Modernization customs",
       "category": "procurement_trade",
       "label": "Procurement and trade",
-      "updated_at": "2026-06-27T09:36:09.212453+00:00"
+      "updated_at": "2026-06-27T22:40:26.504806+00:00"
     },
     {
       "keyword": "Indonesia infrastructure Demo Port Logistics Modernization customs risk",
       "category": "risk_compliance",
       "label": "Risk and compliance",
-      "updated_at": "2026-06-27T09:36:09.212479+00:00"
+      "updated_at": "2026-06-27T22:40:26.504841+00:00"
     },
     {
       "keyword": "Indonesia infrastructure Demo Port Logistics Modernization data center",
       "category": "growth_sector",
       "label": "Growth sectors",
-      "updated_at": "2026-06-27T09:36:09.212429+00:00"
+      "updated_at": "2026-06-27T22:40:26.504757+00:00"
     },
     {
       "keyword": "Indonesia infrastructure Demo Port Logistics Modernization dataset",
       "category": "research_library",
       "label": "Research and library",
-      "updated_at": "2026-06-27T09:36:09.212581+00:00"
+      "updated_at": "2026-06-27T22:40:26.504950+00:00"
     },
     {
       "keyword": "Indonesia infrastructure Demo Port Logistics Modernization developer",
       "category": "project_pipeline",
       "label": "Project pipeline",
-      "updated_at": "2026-06-27T09:36:09.212353+00:00"
+      "updated_at": "2026-06-27T22:40:26.504662+00:00"
     },
     {
       "keyword": "Indonesia infrastructure Demo Port Logistics Modernization election",
       "category": "political_impact",
       "label": "Political and policy impact",
-      "updated_at": "2026-06-27T09:36:09.212374+00:00"
+      "updated_at": "2026-06-27T22:40:26.504688+00:00"
     },
     {
       "keyword": "Indonesia infrastructure Demo Port Logistics Modernization export control",
       "category": "risk_compliance",
       "label": "Risk and compliance",
-      "updated_at": "2026-06-27T09:36:09.212475+00:00"
+      "updated_at": "2026-06-27T22:40:26.504835+00:00"
     },
     {
       "keyword": "Indonesia infrastructure Demo Port Logistics Modernization feasibility study",
       "category": "research_library",
       "label": "Research and library",
-      "updated_at": "2026-06-27T09:36:09.212585+00:00"
+      "updated_at": "2026-06-27T22:40:26.504955+00:00"
     },
     {
       "keyword": "Indonesia infrastructure Demo Port Logistics Modernization financing",
       "category": "investment_value",
       "label": "High value and high return",
-      "updated_at": "2026-06-27T09:36:09.212400+00:00"
+      "updated_at": "2026-06-27T22:40:26.504720+00:00"
     },
     {
       "keyword": "Indonesia infrastructure Demo Port Logistics Modernization forum",
       "category": "forums_social",
       "label": "Forums, chats, and social attention",
-      "updated_at": "2026-06-27T09:36:09.212511+00:00"
+      "updated_at": "2026-06-27T22:40:26.504866+00:00"
     },
     {
       "keyword": "Indonesia infrastructure Demo Port Logistics Modernization government policy",
       "category": "political_impact",
       "label": "Political and policy impact",
-      "updated_at": "2026-06-27T09:36:09.212372+00:00"
+      "updated_at": "2026-06-27T22:40:26.504686+00:00"
     },
     {
       "keyword": "Indonesia infrastructure Demo Port Logistics Modernization industrial park",
       "category": "investment_value",
       "label": "High value and high return",
-      "updated_at": "2026-06-27T09:36:09.212404+00:00"
+      "updated_at": "2026-06-27T22:40:26.504725+00:00"
     },
     {
       "keyword": "Indonesia infrastructure Demo Port Logistics Modernization infrastructure",
       "category": "growth_sector",
       "label": "Growth sectors",
-      "updated_at": "2026-06-27T09:36:09.212430+00:00"
+      "updated_at": "2026-06-27T22:40:26.504759+00:00"
     },
     {
       "keyword": "Indonesia infrastructure Demo Port Logistics Modernization investment project",
       "category": "investment_value",
       "label": "High value and high return",
-      "updated_at": "2026-06-27T09:36:09.212399+00:00"
+      "updated_at": "2026-06-27T22:40:26.504718+00:00"
     },
     {
       "keyword": "Indonesia infrastructure Demo Port Logistics Modernization library",
       "category": "research_library",
       "label": "Research and library",
-      "updated_at": "2026-06-27T09:36:09.212582+00:00"
+      "updated_at": "2026-06-27T22:40:26.504951+00:00"
     },
     {
       "keyword": "Indonesia infrastructure Demo Port Logistics Modernization linkedin",
       "category": "forums_social",
       "label": "Forums, chats, and social attention",
-      "updated_at": "2026-06-27T09:36:09.212519+00:00"
+      "updated_at": "2026-06-27T22:40:26.504875+00:00"
     },
     {
       "keyword": "Indonesia infrastructure Demo Port Logistics Modernization local partner",
       "category": "procurement_trade",
       "label": "Procurement and trade",
-      "updated_at": "2026-06-27T09:36:09.212455+00:00"
+      "updated_at": "2026-06-27T22:40:26.504809+00:00"
     },
     {
       "keyword": "Indonesia infrastructure Demo Port Logistics Modernization logistics",
       "category": "growth_sector",
       "label": "Growth sectors",
-      "updated_at": "2026-06-27T09:36:09.212427+00:00"
+      "updated_at": "2026-06-27T22:40:26.504754+00:00"
     },
     {
       "keyword": "Indonesia infrastructure Demo Port Logistics Modernization mining",
       "category": "growth_sector",
       "label": "Growth sectors",
-      "updated_at": "2026-06-27T09:36:09.212425+00:00"
+      "updated_at": "2026-06-27T22:40:26.504752+00:00"
     },
     {
       "keyword": "Indonesia infrastructure Demo Port Logistics Modernization paper",
       "category": "research_library",
       "label": "Research and library",
-      "updated_at": "2026-06-27T09:36:09.212579+00:00"
+      "updated_at": "2026-06-27T22:40:26.504948+00:00"
     },
     {
       "keyword": "Indonesia infrastructure Demo Port Logistics Modernization payment risk",
       "category": "risk_compliance",
       "label": "Risk and compliance",
-      "updated_at": "2026-06-27T09:36:09.212476+00:00"
+      "updated_at": "2026-06-27T22:40:26.504837+00:00"
     },
     {
       "keyword": "Indonesia infrastructure Demo Port Logistics Modernization planned project",
       "category": "project_pipeline",
       "label": "Project pipeline",
-      "updated_at": "2026-06-27T09:36:09.212337+00:00"
+      "updated_at": "2026-06-27T22:40:26.504647+00:00"
     },
     {
       "keyword": "Indonesia infrastructure Demo Port Logistics Modernization procurement",
       "category": "procurement_trade",
       "label": "Procurement and trade",
-      "updated_at": "2026-06-27T09:36:09.212450+00:00"
+      "updated_at": "2026-06-27T22:40:26.504784+00:00"
     },
     {
       "keyword": "Indonesia infrastructure Demo Port Logistics Modernization project owner",
       "category": "project_pipeline",
       "label": "Project pipeline",
-      "updated_at": "2026-06-27T09:36:09.212351+00:00"
+      "updated_at": "2026-06-27T22:40:26.504660+00:00"
     },
     {
       "keyword": "Indonesia infrastructure Demo Port Logistics Modernization public hearing",
       "category": "political_impact",
       "label": "Political and policy impact",
-      "updated_at": "2026-06-27T09:36:09.212378+00:00"
+      "updated_at": "2026-06-27T22:40:26.504693+00:00"
     },
     {
       "keyword": "Indonesia infrastructure Demo Port Logistics Modernization public tender",
       "category": "procurement_trade",
       "label": "Procurement and trade",
-      "updated_at": "2026-06-27T09:36:09.212449+00:00"
+      "updated_at": "2026-06-27T22:40:26.504782+00:00"
     },
     {
       "keyword": "Indonesia infrastructure Demo Port Logistics Modernization qq group",
       "category": "forums_social",
       "label": "Forums, chats, and social attention",
-      "updated_at": "2026-06-27T09:36:09.212517+00:00"
+      "updated_at": "2026-06-27T22:40:26.504873+00:00"
     },
     {
       "keyword": "Indonesia infrastructure Demo Port Logistics Modernization reddit",
       "category": "forums_social",
       "label": "Forums, chats, and social attention",
-      "updated_at": "2026-06-27T09:36:09.212514+00:00"
+      "updated_at": "2026-06-27T22:40:26.504870+00:00"
     },
     {
       "keyword": "Indonesia infrastructure Demo Port Logistics Modernization regulation",
       "category": "political_impact",
       "label": "Political and policy impact",
-      "updated_at": "2026-06-27T09:36:09.212380+00:00"
+      "updated_at": "2026-06-27T22:40:26.504695+00:00"
     },
     {
       "keyword": "Indonesia infrastructure Demo Port Logistics Modernization renewable energy",
       "category": "growth_sector",
       "label": "Growth sectors",
-      "updated_at": "2026-06-27T09:36:09.212424+00:00"
+      "updated_at": "2026-06-27T22:40:26.504750+00:00"
     },
     {
       "keyword": "Indonesia infrastructure Demo Port Logistics Modernization sanctions",
       "category": "risk_compliance",
       "label": "Risk and compliance",
-      "updated_at": "2026-06-27T09:36:09.212473+00:00"
+      "updated_at": "2026-06-27T22:40:26.504833+00:00"
     },
     {
       "keyword": "Indonesia infrastructure Demo Port Logistics Modernization short video",
       "category": "video_intelligence",
       "label": "Video intelligence and production",
-      "updated_at": "2026-06-27T09:36:09.212543+00:00"
+      "updated_at": "2026-06-27T22:40:26.504905+00:00"
     },
     {
       "keyword": "Indonesia infrastructure Demo Port Logistics Modernization special economic zone",
       "category": "investment_value",
       "label": "High value and high return",
-      "updated_at": "2026-06-27T09:36:09.212406+00:00"
+      "updated_at": "2026-06-27T22:40:26.504727+00:00"
     },
     {
       "keyword": "Indonesia infrastructure Demo Port Logistics Modernization supplier",
       "category": "procurement_trade",
       "label": "Procurement and trade",
-      "updated_at": "2026-06-27T09:36:09.212451+00:00"
+      "updated_at": "2026-06-27T22:40:26.504804+00:00"
     },
     {
       "keyword": "Indonesia infrastructure Demo Port Logistics Modernization tariff",
       "category": "procurement_trade",
       "label": "Procurement and trade",
-      "updated_at": "2026-06-27T09:36:09.212454+00:00"
+      "updated_at": "2026-06-27T22:40:26.504808+00:00"
     },
     {
       "keyword": "Indonesia infrastructure Demo Port Logistics Modernization telegram",
       "category": "forums_social",
       "label": "Forums, chats, and social attention",
-      "updated_at": "2026-06-27T09:36:09.212513+00:00"
+      "updated_at": "2026-06-27T22:40:26.504868+00:00"
     },
     {
       "keyword": "Indonesia infrastructure Demo Port Logistics Modernization tender",
       "category": "project_pipeline",
       "label": "Project pipeline",
-      "updated_at": "2026-06-27T09:36:09.212348+00:00"
+      "updated_at": "2026-06-27T22:40:26.504656+00:00"
     },
     {
       "keyword": "Indonesia infrastructure Demo Port Logistics Modernization think tank",
       "category": "research_library",
       "label": "Research and library",
-      "updated_at": "2026-06-27T09:36:09.212584+00:00"
+      "updated_at": "2026-06-27T22:40:26.504953+00:00"
     },
     {
       "keyword": "Indonesia infrastructure Demo Port Logistics Modernization under construction",
       "category": "project_pipeline",
       "label": "Project pipeline",
-      "updated_at": "2026-06-27T09:36:09.212346+00:00"
+      "updated_at": "2026-06-27T22:40:26.504653+00:00"
     },
     {
       "keyword": "Indonesia infrastructure Demo Port Logistics Modernization video channel",
       "category": "video_intelligence",
       "label": "Video intelligence and production",
-      "updated_at": "2026-06-27T09:36:09.212542+00:00"
+      "updated_at": "2026-06-27T22:40:26.504903+00:00"
     },
     {
       "keyword": "Indonesia infrastructure Demo Port Logistics Modernization wechat",
       "category": "forums_social",
       "label": "Forums, chats, and social attention",
-      "updated_at": "2026-06-27T09:36:09.212516+00:00"
+      "updated_at": "2026-06-27T22:40:26.504871+00:00"
     },
     {
       "keyword": "Indonesia logistics Demo Port Logistics Modernization AI",
       "category": "growth_sector",
       "label": "Growth sectors",
-      "updated_at": "2026-06-27T09:36:09.212444+00:00"
+      "updated_at": "2026-06-27T22:40:26.504777+00:00"
     },
     {
       "keyword": "Indonesia logistics Demo Port Logistics Modernization Douyin",
       "category": "video_intelligence",
       "label": "Video intelligence and production",
-      "updated_at": "2026-06-27T09:36:09.212573+00:00"
+      "updated_at": "2026-06-27T22:40:26.504940+00:00"
     },
     {
       "keyword": "Indonesia logistics Demo Port Logistics Modernization EIA report",
       "category": "research_library",
       "label": "Research and library",
-      "updated_at": "2026-06-27T09:36:09.212604+00:00"
+      "updated_at": "2026-06-27T22:40:26.504977+00:00"
     },
     {
       "keyword": "Indonesia logistics Demo Port Logistics Modernization EPC",
       "category": "project_pipeline",
       "label": "Project pipeline",
-      "updated_at": "2026-06-27T09:36:09.212367+00:00"
+      "updated_at": "2026-06-27T22:40:26.504680+00:00"
     },
     {
       "keyword": "Indonesia logistics Demo Port Logistics Modernization PPP",
       "category": "investment_value",
       "label": "High value and high return",
-      "updated_at": "2026-06-27T09:36:09.212419+00:00"
+      "updated_at": "2026-06-27T22:40:26.504745+00:00"
     },
     {
       "keyword": "Indonesia logistics Demo Port Logistics Modernization ROI",
       "category": "investment_value",
       "label": "High value and high return",
-      "updated_at": "2026-06-27T09:36:09.212418+00:00"
+      "updated_at": "2026-06-27T22:40:26.504743+00:00"
     },
     {
       "keyword": "Indonesia logistics Demo Port Logistics Modernization TikTok",
       "category": "video_intelligence",
       "label": "Video intelligence and production",
-      "updated_at": "2026-06-27T09:36:09.212572+00:00"
+      "updated_at": "2026-06-27T22:40:26.504939+00:00"
     },
     {
       "keyword": "Indonesia logistics Demo Port Logistics Modernization YouTube",
       "category": "video_intelligence",
       "label": "Video intelligence and production",
-      "updated_at": "2026-06-27T09:36:09.212570+00:00"
+      "updated_at": "2026-06-27T22:40:26.504936+00:00"
     },
     {
       "keyword": "Indonesia logistics Demo Port Logistics Modernization cabinet",
       "category": "political_impact",
       "label": "Political and policy impact",
-      "updated_at": "2026-06-27T09:36:09.212393+00:00"
+      "updated_at": "2026-06-27T22:40:26.504710+00:00"
     },
     {
       "keyword": "Indonesia logistics Demo Port Logistics Modernization case video",
       "category": "video_intelligence",
       "label": "Video intelligence and production",
-      "updated_at": "2026-06-27T09:36:09.212578+00:00"
+      "updated_at": "2026-06-27T22:40:26.504946+00:00"
     },
     {
       "keyword": "Indonesia logistics Demo Port Logistics Modernization contract dispute",
       "category": "risk_compliance",
       "label": "Risk and compliance",
-      "updated_at": "2026-06-27T09:36:09.212504+00:00"
+      "updated_at": "2026-06-27T22:40:26.504857+00:00"
     },
     {
       "keyword": "Indonesia logistics Demo Port Logistics Modernization customs",
       "category": "procurement_trade",
       "label": "Procurement and trade",
-      "updated_at": "2026-06-27T09:36:09.212469+00:00"
+      "updated_at": "2026-06-27T22:40:26.504828+00:00"
     },
     {
       "keyword": "Indonesia logistics Demo Port Logistics Modernization customs risk",
       "category": "risk_compliance",
       "label": "Risk and compliance",
-      "updated_at": "2026-06-27T09:36:09.212505+00:00"
+      "updated_at": "2026-06-27T22:40:26.504859+00:00"
     },
     {
       "keyword": "Indonesia logistics Demo Port Logistics Modernization data center",
       "category": "growth_sector",
       "label": "Growth sectors",
-      "updated_at": "2026-06-27T09:36:09.212446+00:00"
+      "updated_at": "2026-06-27T22:40:26.504778+00:00"
     },
     {
       "keyword": "Indonesia logistics Demo Port Logistics Modernization dataset",
       "category": "research_library",
       "label": "Research and library",
-      "updated_at": "2026-06-27T09:36:09.212598+00:00"
+      "updated_at": "2026-06-27T22:40:26.504971+00:00"
     },
     {
       "keyword": "Indonesia logistics Demo Port Logistics Modernization developer",
       "category": "project_pipeline",
       "label": "Project pipeline",
-      "updated_at": "2026-06-27T09:36:09.212370+00:00"
+      "updated_at": "2026-06-27T22:40:26.504684+00:00"
     },
     {
       "keyword": "Indonesia logistics Demo Port Logistics Modernization election",
       "category": "political_impact",
       "label": "Political and policy impact",
-      "updated_at": "2026-06-27T09:36:09.212391+00:00"
+      "updated_at": "2026-06-27T22:40:26.504709+00:00"
     },
     {
       "keyword": "Indonesia logistics Demo Port Logistics Modernization export control",
       "category": "risk_compliance",
       "label": "Risk and compliance",
-      "updated_at": "2026-06-27T09:36:09.212501+00:00"
+      "updated_at": "2026-06-27T22:40:26.504854+00:00"
     },
     {
       "keyword": "Indonesia logistics Demo Port Logistics Modernization feasibility study",
       "category": "research_library",
       "label": "Research and library",
-      "updated_at": "2026-06-27T09:36:09.212602+00:00"
+      "updated_at": "2026-06-27T22:40:26.504976+00:00"
     },
     {
       "keyword": "Indonesia logistics Demo Port Logistics Modernization financing",
       "category": "investment_value",
       "label": "High value and high return",
-      "updated_at": "2026-06-27T09:36:09.212417+00:00"
+      "updated_at": "2026-06-27T22:40:26.504741+00:00"
     },
     {
       "keyword": "Indonesia logistics Demo Port Logistics Modernization forum",
       "category": "forums_social",
       "label": "Forums, chats, and social attention",
-      "updated_at": "2026-06-27T09:36:09.212529+00:00"
+      "updated_at": "2026-06-27T22:40:26.504887+00:00"
     },
     {
       "keyword": "Indonesia logistics Demo Port Logistics Modernization government policy",
       "category": "political_impact",
       "label": "Political and policy impact",
-      "updated_at": "2026-06-27T09:36:09.212390+00:00"
+      "updated_at": "2026-06-27T22:40:26.504707+00:00"
     },
     {
       "keyword": "Indonesia logistics Demo Port Logistics Modernization industrial park",
       "category": "investment_value",
       "label": "High value and high return",
-      "updated_at": "2026-06-27T09:36:09.212421+00:00"
+      "updated_at": "2026-06-27T22:40:26.504747+00:00"
     },
     {
       "keyword": "Indonesia logistics Demo Port Logistics Modernization infrastructure",
       "category": "growth_sector",
       "label": "Growth sectors",
-      "updated_at": "2026-06-27T09:36:09.212447+00:00"
+      "updated_at": "2026-06-27T22:40:26.504780+00:00"
     },
     {
       "keyword": "Indonesia logistics Demo Port Logistics Modernization investment project",
       "category": "investment_value",
       "label": "High value and high return",
-      "updated_at": "2026-06-27T09:36:09.212415+00:00"
+      "updated_at": "2026-06-27T22:40:26.504739+00:00"
     },
     {
       "keyword": "Indonesia logistics Demo Port Logistics Modernization library",
       "category": "research_library",
       "label": "Research and library",
-      "updated_at": "2026-06-27T09:36:09.212599+00:00"
+      "updated_at": "2026-06-27T22:40:26.504972+00:00"
     },
     {
       "keyword": "Indonesia logistics Demo Port Logistics Modernization linkedin",
       "category": "forums_social",
       "label": "Forums, chats, and social attention",
-      "updated_at": "2026-06-27T09:36:09.212536+00:00"
+      "updated_at": "2026-06-27T22:40:26.504896+00:00"
     },
     {
       "keyword": "Indonesia logistics Demo Port Logistics Modernization local partner",
       "category": "procurement_trade",
       "label": "Procurement and trade",
-      "updated_at": "2026-06-27T09:36:09.212471+00:00"
+      "updated_at": "2026-06-27T22:40:26.504831+00:00"
     },
     {
       "keyword": "Indonesia logistics Demo Port Logistics Modernization logistics",
       "category": "growth_sector",
       "label": "Growth sectors",
-      "updated_at": "2026-06-27T09:36:09.212443+00:00"
+      "updated_at": "2026-06-27T22:40:26.504775+00:00"
     },
     {
       "keyword": "Indonesia logistics Demo Port Logistics Modernization mining",
       "category": "growth_sector",
       "label": "Growth sectors",
-      "updated_at": "2026-06-27T09:36:09.212441+00:00"
+      "updated_at": "2026-06-27T22:40:26.504773+00:00"
     },
     {
       "keyword": "Indonesia logistics Demo Port Logistics Modernization paper",
       "category": "research_library",
       "label": "Research and library",
-      "updated_at": "2026-06-27T09:36:09.212597+00:00"
+      "updated_at": "2026-06-27T22:40:26.504969+00:00"
     },
     {
       "keyword": "Indonesia logistics Demo Port Logistics Modernization payment risk",
       "category": "risk_compliance",
       "label": "Risk and compliance",
-      "updated_at": "2026-06-27T09:36:09.212503+00:00"
+      "updated_at": "2026-06-27T22:40:26.504855+00:00"
     },
     {
       "keyword": "Indonesia logistics Demo Port Logistics Modernization planned project",
       "category": "project_pipeline",
       "label": "Project pipeline",
-      "updated_at": "2026-06-27T09:36:09.212363+00:00"
+      "updated_at": "2026-06-27T22:40:26.504674+00:00"
     },
     {
       "keyword": "Indonesia logistics Demo Port Logistics Modernization procurement",
       "category": "procurement_trade",
       "label": "Procurement and trade",
-      "updated_at": "2026-06-27T09:36:09.212466+00:00"
+      "updated_at": "2026-06-27T22:40:26.504824+00:00"
     },
     {
       "keyword": "Indonesia logistics Demo Port Logistics Modernization project owner",
       "category": "project_pipeline",
       "label": "Project pipeline",
-      "updated_at": "2026-06-27T09:36:09.212369+00:00"
+      "updated_at": "2026-06-27T22:40:26.504682+00:00"
     },
     {
       "keyword": "Indonesia logistics Demo Port Logistics Modernization public hearing",
       "category": "political_impact",
       "label": "Political and policy impact",
-      "updated_at": "2026-06-27T09:36:09.212395+00:00"
+      "updated_at": "2026-06-27T22:40:26.504714+00:00"
     },
     {
       "keyword": "Indonesia logistics Demo Port Logistics Modernization public tender",
       "category": "procurement_trade",
       "label": "Procurement and trade",
-      "updated_at": "2026-06-27T09:36:09.212465+00:00"
+      "updated_at": "2026-06-27T22:40:26.504822+00:00"
     },
     {
       "keyword": "Indonesia logistics Demo Port Logistics Modernization qq group",
       "category": "forums_social",
       "label": "Forums, chats, and social attention",
-      "updated_at": "2026-06-27T09:36:09.212534+00:00"
+      "updated_at": "2026-06-27T22:40:26.504894+00:00"
     },
     {
       "keyword": "Indonesia logistics Demo Port Logistics Modernization reddit",
       "category": "forums_social",
       "label": "Forums, chats, and social attention",
-      "updated_at": "2026-06-27T09:36:09.212532+00:00"
+      "updated_at": "2026-06-27T22:40:26.504891+00:00"
     },
     {
       "keyword": "Indonesia logistics Demo Port Logistics Modernization regulation",
       "category": "political_impact",
       "label": "Political and policy impact",
-      "updated_at": "2026-06-27T09:36:09.212397+00:00"
+      "updated_at": "2026-06-27T22:40:26.504716+00:00"
     },
     {
       "keyword": "Indonesia logistics Demo Port Logistics Modernization renewable energy",
       "category": "growth_sector",
       "label": "Growth sectors",
-      "updated_at": "2026-06-27T09:36:09.212440+00:00"
+      "updated_at": "2026-06-27T22:40:26.504771+00:00"
     },
     {
       "keyword": "Indonesia logistics Demo Port Logistics Modernization sanctions",
       "category": "risk_compliance",
       "label": "Risk and compliance",
-      "updated_at": "2026-06-27T09:36:09.212499+00:00"
+      "updated_at": "2026-06-27T22:40:26.504852+00:00"
     },
     {
       "keyword": "Indonesia logistics Demo Port Logistics Modernization short video",
       "category": "video_intelligence",
       "label": "Video intelligence and production",
-      "updated_at": "2026-06-27T09:36:09.212576+00:00"
+      "updated_at": "2026-06-27T22:40:26.504944+00:00"
     },
     {
       "keyword": "Indonesia logistics Demo Port Logistics Modernization special economic zone",
       "category": "investment_value",
       "label": "High value and high return",
-      "updated_at": "2026-06-27T09:36:09.212422+00:00"
+      "updated_at": "2026-06-27T22:40:26.504748+00:00"
     },
     {
       "keyword": "Indonesia logistics Demo Port Logistics Modernization supplier",
       "category": "procurement_trade",
       "label": "Procurement and trade",
-      "updated_at": "2026-06-27T09:36:09.212467+00:00"
+      "updated_at": "2026-06-27T22:40:26.504826+00:00"
     },
     {
       "keyword": "Indonesia logistics Demo Port Logistics Modernization tariff",
       "category": "procurement_trade",
       "label": "Procurement and trade",
-      "updated_at": "2026-06-27T09:36:09.212470+00:00"
+      "updated_at": "2026-06-27T22:40:26.504829+00:00"
     },
     {
       "keyword": "Indonesia logistics Demo Port Logistics Modernization telegram",
       "category": "forums_social",
       "label": "Forums, chats, and social attention",
-      "updated_at": "2026-06-27T09:36:09.212530+00:00"
+      "updated_at": "2026-06-27T22:40:26.504889+00:00"
     },
     {
       "keyword": "Indonesia logistics Demo Port Logistics Modernization tender",
       "category": "project_pipeline",
       "label": "Project pipeline",
-      "updated_at": "2026-06-27T09:36:09.212366+00:00"
+      "updated_at": "2026-06-27T22:40:26.504678+00:00"
     },
     {
       "keyword": "Indonesia logistics Demo Port Logistics Modernization think tank",
       "category": "research_library",
       "label": "Research and library",
-      "updated_at": "2026-06-27T09:36:09.212601+00:00"
+      "updated_at": "2026-06-27T22:40:26.504974+00:00"
     },
     {
       "keyword": "Indonesia logistics Demo Port Logistics Modernization under construction",
       "category": "project_pipeline",
       "label": "Project pipeline",
-      "updated_at": "2026-06-27T09:36:09.212364+00:00"
+      "updated_at": "2026-06-27T22:40:26.504676+00:00"
     },
     {
       "keyword": "Indonesia logistics Demo Port Logistics Modernization video channel",
       "category": "video_intelligence",
       "label": "Video intelligence and production",
-      "updated_at": "2026-06-27T09:36:09.212575+00:00"
+      "updated_at": "2026-06-27T22:40:26.504942+00:00"
     },
     {
       "keyword": "Indonesia logistics Demo Port Logistics Modernization wechat",
       "category": "forums_social",
       "label": "Forums, chats, and social attention",
-      "updated_at": "2026-06-27T09:36:09.212533+00:00"
+      "updated_at": "2026-06-27T22:40:26.504892+00:00"
     },
     {
       "keyword": "Indonesia mining Demo Port Logistics Modernization AI",
       "category": "growth_sector",
       "label": "Growth sectors",
-      "updated_at": "2026-06-27T09:36:09.212436+00:00"
+      "updated_at": "2026-06-27T22:40:26.504766+00:00"
     },
     {
       "keyword": "Indonesia mining Demo Port Logistics Modernization Douyin",
       "category": "video_intelligence",
       "label": "Video intelligence and production",
-      "updated_at": "2026-06-27T09:36:09.212549+00:00"
+      "updated_at": "2026-06-27T22:40:26.504912+00:00"
     },
     {
       "keyword": "Indonesia mining Demo Port Logistics Modernization EIA report",
       "category": "research_library",
       "label": "Research and library",
-      "updated_at": "2026-06-27T09:36:09.212595+00:00"
+      "updated_at": "2026-06-27T22:40:26.504967+00:00"
     },
     {
       "keyword": "Indonesia mining Demo Port Logistics Modernization EPC",
       "category": "project_pipeline",
       "label": "Project pipeline",
-      "updated_at": "2026-06-27T09:36:09.212359+00:00"
+      "updated_at": "2026-06-27T22:40:26.504669+00:00"
     },
     {
       "keyword": "Indonesia mining Demo Port Logistics Modernization PPP",
       "category": "investment_value",
       "label": "High value and high return",
-      "updated_at": "2026-06-27T09:36:09.212411+00:00"
+      "updated_at": "2026-06-27T22:40:26.504734+00:00"
     },
     {
       "keyword": "Indonesia mining Demo Port Logistics Modernization ROI",
       "category": "investment_value",
       "label": "High value and high return",
-      "updated_at": "2026-06-27T09:36:09.212410+00:00"
+      "updated_at": "2026-06-27T22:40:26.504732+00:00"
     },
     {
       "keyword": "Indonesia mining Demo Port Logistics Modernization TikTok",
       "category": "video_intelligence",
       "label": "Video intelligence and production",
-      "updated_at": "2026-06-27T09:36:09.212548+00:00"
+      "updated_at": "2026-06-27T22:40:26.504910+00:00"
     },
     {
       "keyword": "Indonesia mining Demo Port Logistics Modernization YouTube",
       "category": "video_intelligence",
       "label": "Video intelligence and production",
-      "updated_at": "2026-06-27T09:36:09.212546+00:00"
+      "updated_at": "2026-06-27T22:40:26.504908+00:00"
     },
     {
       "keyword": "Indonesia mining Demo Port Logistics Modernization cabinet",
       "category": "political_impact",
       "label": "Political and policy impact",
-      "updated_at": "2026-06-27T09:36:09.212384+00:00"
+      "updated_at": "2026-06-27T22:40:26.504700+00:00"
     },
     {
       "keyword": "Indonesia mining Demo Port Logistics Modernization case video",
       "category": "video_intelligence",
       "label": "Video intelligence and production",
-      "updated_at": "2026-06-27T09:36:09.212554+00:00"
+      "updated_at": "2026-06-27T22:40:26.504917+00:00"
     },
     {
       "keyword": "Indonesia mining Demo Port Logistics Modernization contract dispute",
       "category": "risk_compliance",
       "label": "Risk and compliance",
-      "updated_at": "2026-06-27T09:36:09.212497+00:00"
+      "updated_at": "2026-06-27T22:40:26.504848+00:00"
     },
     {
       "keyword": "Indonesia mining Demo Port Logistics Modernization customs",
       "category": "procurement_trade",
       "label": "Procurement and trade",
-      "updated_at": "2026-06-27T09:36:09.212461+00:00"
+      "updated_at": "2026-06-27T22:40:26.504817+00:00"
     },
     {
       "keyword": "Indonesia mining Demo Port Logistics Modernization customs risk",
       "category": "risk_compliance",
       "label": "Risk and compliance",
-      "updated_at": "2026-06-27T09:36:09.212498+00:00"
+      "updated_at": "2026-06-27T22:40:26.504850+00:00"
     },
     {
       "keyword": "Indonesia mining Demo Port Logistics Modernization data center",
       "category": "growth_sector",
       "label": "Growth sectors",
-      "updated_at": "2026-06-27T09:36:09.212437+00:00"
+      "updated_at": "2026-06-27T22:40:26.504768+00:00"
     },
     {
       "keyword": "Indonesia mining Demo Port Logistics Modernization dataset",
       "category": "research_library",
       "label": "Research and library",
-      "updated_at": "2026-06-27T09:36:09.212589+00:00"
+      "updated_at": "2026-06-27T22:40:26.504960+00:00"
     },
     {
       "keyword": "Indonesia mining Demo Port Logistics Modernization developer",
       "category": "project_pipeline",
       "label": "Project pipeline",
-      "updated_at": "2026-06-27T09:36:09.212362+00:00"
+      "updated_at": "2026-06-27T22:40:26.504672+00:00"
     },
     {
       "keyword": "Indonesia mining Demo Port Logistics Modernization election",
       "category": "political_impact",
       "label": "Political and policy impact",
-      "updated_at": "2026-06-27T09:36:09.212383+00:00"
+      "updated_at": "2026-06-27T22:40:26.504698+00:00"
     },
     {
       "keyword": "Indonesia mining Demo Port Logistics Modernization export control",
       "category": "risk_compliance",
       "label": "Risk and compliance",
-      "updated_at": "2026-06-27T09:36:09.212482+00:00"
+      "updated_at": "2026-06-27T22:40:26.504844+00:00"
     },
     {
       "keyword": "Indonesia mining Demo Port Logistics Modernization feasibility study",
       "category": "research_library",
       "label": "Research and library",
-      "updated_at": "2026-06-27T09:36:09.212594+00:00"
+      "updated_at": "2026-06-27T22:40:26.504965+00:00"
     },
     {
       "keyword": "Indonesia mining Demo Port Logistics Modernization financing",
       "category": "investment_value",
       "label": "High value and high return",
-      "updated_at": "2026-06-27T09:36:09.212408+00:00"
+      "updated_at": "2026-06-27T22:40:26.504730+00:00"
     },
     {
       "keyword": "Indonesia mining Demo Port Logistics Modernization forum",
       "category": "forums_social",
       "label": "Forums, chats, and social attention",
-      "updated_at": "2026-06-27T09:36:09.212520+00:00"
+      "updated_at": "2026-06-27T22:40:26.504877+00:00"
     },
     {
       "keyword": "Indonesia mining Demo Port Logistics Modernization government policy",
       "category": "political_impact",
       "label": "Political and policy impact",
-      "updated_at": "2026-06-27T09:36:09.212381+00:00"
+      "updated_at": "2026-06-27T22:40:26.504697+00:00"
     },
     {
       "keyword": "Indonesia mining Demo Port Logistics Modernization industrial park",
       "category": "investment_value",
       "label": "High value and high return",
-      "updated_at": "2026-06-27T09:36:09.212412+00:00"
+      "updated_at": "2026-06-27T22:40:26.504736+00:00"
     },
     {
       "keyword": "Indonesia mining Demo Port Logistics Modernization infrastructure",
       "category": "growth_sector",
       "label": "Growth sectors",
-      "updated_at": "2026-06-27T09:36:09.212438+00:00"
+      "updated_at": "2026-06-27T22:40:26.504769+00:00"
     },
     {
       "keyword": "Indonesia mining Demo Port Logistics Modernization investment project",
       "category": "investment_value",
       "label": "High value and high return",
-      "updated_at": "2026-06-27T09:36:09.212407+00:00"
+      "updated_at": "2026-06-27T22:40:26.504729+00:00"
     },
     {
       "keyword": "Indonesia mining Demo Port Logistics Modernization library",
       "category": "research_library",
       "label": "Research and library",
-      "updated_at": "2026-06-27T09:36:09.212591+00:00"
+      "updated_at": "2026-06-27T22:40:26.504962+00:00"
     },
     {
       "keyword": "Indonesia mining Demo Port Logistics Modernization linkedin",
       "category": "forums_social",
       "label": "Forums, chats, and social attention",
-      "updated_at": "2026-06-27T09:36:09.212528+00:00"
+      "updated_at": "2026-06-27T22:40:26.504886+00:00"
     },
     {
       "keyword": "Indonesia mining Demo Port Logistics Modernization local partner",
       "category": "procurement_trade",
       "label": "Procurement and trade",
-      "updated_at": "2026-06-27T09:36:09.212463+00:00"
+      "updated_at": "2026-06-27T22:40:26.504821+00:00"
     },
     {
       "keyword": "Indonesia mining Demo Port Logistics Modernization logistics",
       "category": "growth_sector",
       "label": "Growth sectors",
-      "updated_at": "2026-06-27T09:36:09.212434+00:00"
+      "updated_at": "2026-06-27T22:40:26.504764+00:00"
     },
     {
       "keyword": "Indonesia mining Demo Port Logistics Modernization mining",
       "category": "growth_sector",
       "label": "Growth sectors",
-      "updated_at": "2026-06-27T09:36:09.212433+00:00"
+      "updated_at": "2026-06-27T22:40:26.504762+00:00"
     },
     {
       "keyword": "Indonesia mining Demo Port Logistics Modernization paper",
       "category": "research_library",
       "label": "Research and library",
-      "updated_at": "2026-06-27T09:36:09.212588+00:00"
+      "updated_at": "2026-06-27T22:40:26.504958+00:00"
     },
     {
       "keyword": "Indonesia mining Demo Port Logistics Modernization payment risk",
       "category": "risk_compliance",
       "label": "Risk and compliance",
-      "updated_at": "2026-06-27T09:36:09.212495+00:00"
+      "updated_at": "2026-06-27T22:40:26.504846+00:00"
     },
     {
       "keyword": "Indonesia mining Demo Port Logistics Modernization planned project",
       "category": "project_pipeline",
       "label": "Project pipeline",
-      "updated_at": "2026-06-27T09:36:09.212355+00:00"
+      "updated_at": "2026-06-27T22:40:26.504664+00:00"
     },
     {
       "keyword": "Indonesia mining Demo Port Logistics Modernization procurement",
       "category": "procurement_trade",
       "label": "Procurement and trade",
-      "updated_at": "2026-06-27T09:36:09.212458+00:00"
+      "updated_at": "2026-06-27T22:40:26.504813+00:00"
     },
     {
       "keyword": "Indonesia mining Demo Port Logistics Modernization project owner",
       "category": "project_pipeline",
       "label": "Project pipeline",
-      "updated_at": "2026-06-27T09:36:09.212360+00:00"
+      "updated_at": "2026-06-27T22:40:26.504671+00:00"
     },
     {
       "keyword": "Indonesia mining Demo Port Logistics Modernization public hearing",
       "category": "political_impact",
       "label": "Political and policy impact",
-      "updated_at": "2026-06-27T09:36:09.212387+00:00"
+      "updated_at": "2026-06-27T22:40:26.504703+00:00"
     },
     {
       "keyword": "Indonesia mining Demo Port Logistics Modernization public tender",
       "category": "procurement_trade",
       "label": "Procurement and trade",
-      "updated_at": "2026-06-27T09:36:09.212457+00:00"
+      "updated_at": "2026-06-27T22:40:26.504811+00:00"
     },
     {
       "keyword": "Indonesia mining Demo Port Logistics Modernization qq group",
       "category": "forums_social",
       "label": "Forums, chats, and social attention",
-      "updated_at": "2026-06-27T09:36:09.212526+00:00"
+      "updated_at": "2026-06-27T22:40:26.504884+00:00"
     },
     {
       "keyword": "Indonesia mining Demo Port Logistics Modernization reddit",
       "category": "forums_social",
       "label": "Forums, chats, and social attention",
-      "updated_at": "2026-06-27T09:36:09.212523+00:00"
+      "updated_at": "2026-06-27T22:40:26.504880+00:00"
     },
     {
       "keyword": "Indonesia mining Demo Port Logistics Modernization regulation",
       "category": "political_impact",
       "label": "Political and policy impact",
-      "updated_at": "2026-06-27T09:36:09.212388+00:00"
+      "updated_at": "2026-06-27T22:40:26.504705+00:00"
     },
     {
       "keyword": "Indonesia mining Demo Port Logistics Modernization renewable energy",
       "category": "growth_sector",
       "label": "Growth sectors",
-      "updated_at": "2026-06-27T09:36:09.212432+00:00"
+      "updated_at": "2026-06-27T22:40:26.504761+00:00"
     },
     {
       "keyword": "Indonesia mining Demo Port Logistics Modernization sanctions",
       "category": "risk_compliance",
       "label": "Risk and compliance",
-      "updated_at": "2026-06-27T09:36:09.212480+00:00"
+      "updated_at": "2026-06-27T22:40:26.504842+00:00"
     },
     {
       "keyword": "Indonesia mining Demo Port Logistics Modernization short video",
       "category": "video_intelligence",
       "label": "Video intelligence and production",
-      "updated_at": "2026-06-27T09:36:09.212552+00:00"
+      "updated_at": "2026-06-27T22:40:26.504915+00:00"
     },
     {
       "keyword": "Indonesia mining Demo Port Logistics Modernization special economic zone",
       "category": "investment_value",
       "label": "High value and high return",
-      "updated_at": "2026-06-27T09:36:09.212414+00:00"
+      "updated_at": "2026-06-27T22:40:26.504738+00:00"
     },
     {
       "keyword": "Indonesia mining Demo Port Logistics Modernization supplier",
       "category": "procurement_trade",
       "label": "Procurement and trade",
-      "updated_at": "2026-06-27T09:36:09.212459+00:00"
+      "updated_at": "2026-06-27T22:40:26.504815+00:00"
     },
     {
       "keyword": "Indonesia mining Demo Port Logistics Modernization tariff",
       "category": "procurement_trade",
       "label": "Procurement and trade",
-      "updated_at": "2026-06-27T09:36:09.212462+00:00"
+      "updated_at": "2026-06-27T22:40:26.504819+00:00"
     },
     {
       "keyword": "Indonesia mining Demo Port Logistics Modernization telegram",
       "category": "forums_social",
       "label": "Forums, chats, and social attention",
-      "updated_at": "2026-06-27T09:36:09.212522+00:00"
+      "updated_at": "2026-06-27T22:40:26.504878+00:00"
     },
     {
       "keyword": "Indonesia mining Demo Port Logistics Modernization tender",
       "category": "project_pipeline",
       "label": "Project pipeline",
-      "updated_at": "2026-06-27T09:36:09.212358+00:00"
+      "updated_at": "2026-06-27T22:40:26.504667+00:00"
     },
     {
       "keyword": "Indonesia mining Demo Port Logistics Modernization think tank",
       "category": "research_library",
       "label": "Research and library",
-      "updated_at": "2026-06-27T09:36:09.212593+00:00"
+      "updated_at": "2026-06-27T22:40:26.504964+00:00"
     },
     {
       "keyword": "Indonesia mining Demo Port Logistics Modernization under construction",
       "category": "project_pipeline",
       "label": "Project pipeline",
-      "updated_at": "2026-06-27T09:36:09.212356+00:00"
+      "updated_at": "2026-06-27T22:40:26.504666+00:00"
     },
     {
       "keyword": "Indonesia mining Demo Port Logistics Modernization video channel",
       "category": "video_intelligence",
       "label": "Video intelligence and production",
-      "updated_at": "2026-06-27T09:36:09.212550+00:00"
+      "updated_at": "2026-06-27T22:40:26.504913+00:00"
     },
     {
       "keyword": "Indonesia mining Demo Port Logistics Modernization wechat",
       "category": "forums_social",
       "label": "Forums, chats, and social attention",
-      "updated_at": "2026-06-27T09:36:09.212525+00:00"
+      "updated_at": "2026-06-27T22:40:26.504882+00:00"
     },
     {
       "keyword": "None None Kazakhstan engineering trade investment pipeline AI",
       "category": "growth_sector",
       "label": "Growth sectors",
+<<<<<<< HEAD
       "updated_at": "2026-06-28T07:11:54.280634+00:00"
+=======
+      "updated_at": "2026-06-27T22:40:00.289289+00:00"
+>>>>>>> 6c3cee6037368e1da5126e64a4b2ce1017471c8b
     },
     {
       "keyword": "None None Kazakhstan engineering trade investment pipeline Douyin",
       "category": "video_intelligence",
       "label": "Video intelligence and production",
+<<<<<<< HEAD
       "updated_at": "2026-06-28T07:11:54.280634+00:00"
+=======
+      "updated_at": "2026-06-27T22:40:00.289333+00:00"
+>>>>>>> 6c3cee6037368e1da5126e64a4b2ce1017471c8b
     },
     {
       "keyword": "None None Kazakhstan engineering trade investment pipeline EIA report",
       "category": "research_library",
       "label": "Research and library",
+<<<<<<< HEAD
       "updated_at": "2026-06-28T07:11:54.280634+00:00"
+=======
+      "updated_at": "2026-06-27T22:40:00.289349+00:00"
+>>>>>>> 6c3cee6037368e1da5126e64a4b2ce1017471c8b
     },
     {
       "keyword": "None None Kazakhstan engineering trade investment pipeline EPC",
       "category": "project_pipeline",
       "label": "Project pipeline",
+<<<<<<< HEAD
       "updated_at": "2026-06-28T07:11:54.280634+00:00"
+=======
+      "updated_at": "2026-06-27T22:40:00.289251+00:00"
+>>>>>>> 6c3cee6037368e1da5126e64a4b2ce1017471c8b
     },
     {
       "keyword": "None None Kazakhstan engineering trade investment pipeline PPP",
       "category": "investment_value",
       "label": "High value and high return",
+<<<<<<< HEAD
       "updated_at": "2026-06-28T07:11:54.280634+00:00"
+=======
+      "updated_at": "2026-06-27T22:40:00.289278+00:00"
+>>>>>>> 6c3cee6037368e1da5126e64a4b2ce1017471c8b
     },
     {
       "keyword": "None None Kazakhstan engineering trade investment pipeline ROI",
       "category": "investment_value",
       "label": "High value and high return",
+<<<<<<< HEAD
       "updated_at": "2026-06-28T07:11:54.280634+00:00"
+=======
+      "updated_at": "2026-06-27T22:40:00.289276+00:00"
+>>>>>>> 6c3cee6037368e1da5126e64a4b2ce1017471c8b
     },
     {
       "keyword": "None None Kazakhstan engineering trade investment pipeline TikTok",
       "category": "video_intelligence",
       "label": "Video intelligence and production",
+<<<<<<< HEAD
       "updated_at": "2026-06-28T07:11:54.280634+00:00"
+=======
+      "updated_at": "2026-06-27T22:40:00.289331+00:00"
+>>>>>>> 6c3cee6037368e1da5126e64a4b2ce1017471c8b
     },
     {
       "keyword": "None None Kazakhstan engineering trade investment pipeline YouTube",
       "category": "video_intelligence",
       "label": "Video intelligence and production",
+<<<<<<< HEAD
       "updated_at": "2026-06-28T07:11:54.280634+00:00"
+=======
+      "updated_at": "2026-06-27T22:40:00.289329+00:00"
+>>>>>>> 6c3cee6037368e1da5126e64a4b2ce1017471c8b
     },
     {
       "keyword": "None None Kazakhstan engineering trade investment pipeline cabinet",
       "category": "political_impact",
       "label": "Political and policy impact",
+<<<<<<< HEAD
       "updated_at": "2026-06-28T07:11:54.280634+00:00"
+=======
+      "updated_at": "2026-06-27T22:40:00.289263+00:00"
+>>>>>>> 6c3cee6037368e1da5126e64a4b2ce1017471c8b
     },
     {
       "keyword": "None None Kazakhstan engineering trade investment pipeline case video",
       "category": "video_intelligence",
       "label": "Video intelligence and production",
+<<<<<<< HEAD
       "updated_at": "2026-06-28T07:11:54.280634+00:00"
+=======
+      "updated_at": "2026-06-27T22:40:00.289338+00:00"
+>>>>>>> 6c3cee6037368e1da5126e64a4b2ce1017471c8b
     },
     {
       "keyword": "None None Kazakhstan engineering trade investment pipeline contract dispute",
       "category": "risk_compliance",
       "label": "Risk and compliance",
+<<<<<<< HEAD
       "updated_at": "2026-06-28T07:11:54.280634+00:00"
+=======
+      "updated_at": "2026-06-27T22:40:00.289313+00:00"
+>>>>>>> 6c3cee6037368e1da5126e64a4b2ce1017471c8b
     },
     {
       "keyword": "None None Kazakhstan engineering trade investment pipeline customs",
       "category": "procurement_trade",
       "label": "Procurement and trade",
+<<<<<<< HEAD
       "updated_at": "2026-06-28T07:11:54.280634+00:00"
+=======
+      "updated_at": "2026-06-27T22:40:00.289301+00:00"
+>>>>>>> 6c3cee6037368e1da5126e64a4b2ce1017471c8b
     },
     {
       "keyword": "None None Kazakhstan engineering trade investment pipeline customs risk",
       "category": "risk_compliance",
       "label": "Risk and compliance",
+<<<<<<< HEAD
       "updated_at": "2026-06-28T07:11:54.280634+00:00"
+=======
+      "updated_at": "2026-06-27T22:40:00.289315+00:00"
+>>>>>>> 6c3cee6037368e1da5126e64a4b2ce1017471c8b
     },
     {
       "keyword": "None None Kazakhstan engineering trade investment pipeline data center",
       "category": "growth_sector",
       "label": "Growth sectors",
+<<<<<<< HEAD
       "updated_at": "2026-06-28T07:11:54.280634+00:00"
+=======
+      "updated_at": "2026-06-27T22:40:00.289291+00:00"
+>>>>>>> 6c3cee6037368e1da5126e64a4b2ce1017471c8b
     },
     {
       "keyword": "None None Kazakhstan engineering trade investment pipeline dataset",
       "category": "research_library",
       "label": "Research and library",
+<<<<<<< HEAD
       "updated_at": "2026-06-28T07:11:54.280634+00:00"
+=======
+      "updated_at": "2026-06-27T22:40:00.289342+00:00"
+>>>>>>> 6c3cee6037368e1da5126e64a4b2ce1017471c8b
     },
     {
       "keyword": "None None Kazakhstan engineering trade investment pipeline developer",
       "category": "project_pipeline",
       "label": "Project pipeline",
+<<<<<<< HEAD
       "updated_at": "2026-06-28T07:11:54.280634+00:00"
+=======
+      "updated_at": "2026-06-27T22:40:00.289254+00:00"
+>>>>>>> 6c3cee6037368e1da5126e64a4b2ce1017471c8b
     },
     {
       "keyword": "None None Kazakhstan engineering trade investment pipeline election",
       "category": "political_impact",
       "label": "Political and policy impact",
+<<<<<<< HEAD
       "updated_at": "2026-06-28T07:11:54.280634+00:00"
+=======
+      "updated_at": "2026-06-27T22:40:00.289261+00:00"
+>>>>>>> 6c3cee6037368e1da5126e64a4b2ce1017471c8b
     },
     {
       "keyword": "None None Kazakhstan engineering trade investment pipeline export control",
       "category": "risk_compliance",
       "label": "Risk and compliance",
+<<<<<<< HEAD
       "updated_at": "2026-06-28T07:11:54.280634+00:00"
+=======
+      "updated_at": "2026-06-27T22:40:00.289309+00:00"
+>>>>>>> 6c3cee6037368e1da5126e64a4b2ce1017471c8b
     },
     {
       "keyword": "None None Kazakhstan engineering trade investment pipeline feasibility study",
       "category": "research_library",
       "label": "Research and library",
+<<<<<<< HEAD
       "updated_at": "2026-06-28T07:11:54.280634+00:00"
+=======
+      "updated_at": "2026-06-27T22:40:00.289347+00:00"
+>>>>>>> 6c3cee6037368e1da5126e64a4b2ce1017471c8b
     },
     {
       "keyword": "None None Kazakhstan engineering trade investment pipeline financing",
       "category": "investment_value",
       "label": "High value and high return",
+<<<<<<< HEAD
       "updated_at": "2026-06-28T07:11:54.280634+00:00"
+=======
+      "updated_at": "2026-06-27T22:40:00.289275+00:00"
+>>>>>>> 6c3cee6037368e1da5126e64a4b2ce1017471c8b
     },
     {
       "keyword": "None None Kazakhstan engineering trade investment pipeline forum",
       "category": "forums_social",
       "label": "Forums, chats, and social attention",
+<<<<<<< HEAD
       "updated_at": "2026-06-28T07:11:54.280634+00:00"
+=======
+      "updated_at": "2026-06-27T22:40:00.289317+00:00"
+>>>>>>> 6c3cee6037368e1da5126e64a4b2ce1017471c8b
     },
     {
       "keyword": "None None Kazakhstan engineering trade investment pipeline government policy",
       "category": "political_impact",
       "label": "Political and policy impact",
+<<<<<<< HEAD
       "updated_at": "2026-06-28T07:11:54.280634+00:00"
+=======
+      "updated_at": "2026-06-27T22:40:00.289257+00:00"
+>>>>>>> 6c3cee6037368e1da5126e64a4b2ce1017471c8b
     },
     {
       "keyword": "None None Kazakhstan engineering trade investment pipeline industrial park",
       "category": "investment_value",
       "label": "High value and high return",
+<<<<<<< HEAD
       "updated_at": "2026-06-28T07:11:54.280634+00:00"
+=======
+      "updated_at": "2026-06-27T22:40:00.289280+00:00"
+>>>>>>> 6c3cee6037368e1da5126e64a4b2ce1017471c8b
     },
     {
       "keyword": "None None Kazakhstan engineering trade investment pipeline infrastructure",
       "category": "growth_sector",
       "label": "Growth sectors",
+<<<<<<< HEAD
       "updated_at": "2026-06-28T07:11:54.280634+00:00"
+=======
+      "updated_at": "2026-06-27T22:40:00.289292+00:00"
+>>>>>>> 6c3cee6037368e1da5126e64a4b2ce1017471c8b
     },
     {
       "keyword": "None None Kazakhstan engineering trade investment pipeline investment project",
       "category": "investment_value",
       "label": "High value and high return",
+<<<<<<< HEAD
       "updated_at": "2026-06-28T07:11:54.280634+00:00"
+=======
+      "updated_at": "2026-06-27T22:40:00.289273+00:00"
+>>>>>>> 6c3cee6037368e1da5126e64a4b2ce1017471c8b
     },
     {
       "keyword": "None None Kazakhstan engineering trade investment pipeline library",
       "category": "research_library",
       "label": "Research and library",
+<<<<<<< HEAD
       "updated_at": "2026-06-28T07:11:54.280634+00:00"
+=======
+      "updated_at": "2026-06-27T22:40:00.289344+00:00"
+>>>>>>> 6c3cee6037368e1da5126e64a4b2ce1017471c8b
     },
     {
       "keyword": "None None Kazakhstan engineering trade investment pipeline linkedin",
       "category": "forums_social",
       "label": "Forums, chats, and social attention",
+<<<<<<< HEAD
       "updated_at": "2026-06-28T07:11:54.280634+00:00"
+=======
+      "updated_at": "2026-06-27T22:40:00.289327+00:00"
+>>>>>>> 6c3cee6037368e1da5126e64a4b2ce1017471c8b
     },
     {
       "keyword": "None None Kazakhstan engineering trade investment pipeline local partner",
       "category": "procurement_trade",
       "label": "Procurement and trade",
+<<<<<<< HEAD
       "updated_at": "2026-06-28T07:11:54.280634+00:00"
+=======
+      "updated_at": "2026-06-27T22:40:00.289305+00:00"
+>>>>>>> 6c3cee6037368e1da5126e64a4b2ce1017471c8b
     },
     {
       "keyword": "None None Kazakhstan engineering trade investment pipeline logistics",
       "category": "growth_sector",
       "label": "Growth sectors",
+<<<<<<< HEAD
       "updated_at": "2026-06-28T07:11:54.280634+00:00"
+=======
+      "updated_at": "2026-06-27T22:40:00.289287+00:00"
+>>>>>>> 6c3cee6037368e1da5126e64a4b2ce1017471c8b
     },
     {
       "keyword": "None None Kazakhstan engineering trade investment pipeline mining",
       "category": "growth_sector",
       "label": "Growth sectors",
+<<<<<<< HEAD
       "updated_at": "2026-06-28T07:11:54.280634+00:00"
+=======
+      "updated_at": "2026-06-27T22:40:00.289285+00:00"
+>>>>>>> 6c3cee6037368e1da5126e64a4b2ce1017471c8b
     },
     {
       "keyword": "None None Kazakhstan engineering trade investment pipeline paper",
       "category": "research_library",
       "label": "Research and library",
+<<<<<<< HEAD
       "updated_at": "2026-06-28T07:11:54.280634+00:00"
+=======
+      "updated_at": "2026-06-27T22:40:00.289340+00:00"
+>>>>>>> 6c3cee6037368e1da5126e64a4b2ce1017471c8b
     },
     {
       "keyword": "None None Kazakhstan engineering trade investment pipeline payment risk",
       "category": "risk_compliance",
       "label": "Risk and compliance",
+<<<<<<< HEAD
       "updated_at": "2026-06-28T07:11:54.280634+00:00"
+=======
+      "updated_at": "2026-06-27T22:40:00.289311+00:00"
+>>>>>>> 6c3cee6037368e1da5126e64a4b2ce1017471c8b
     },
     {
       "keyword": "None None Kazakhstan engineering trade investment pipeline planned project",
       "category": "project_pipeline",
       "label": "Project pipeline",
+<<<<<<< HEAD
       "updated_at": "2026-06-28T07:11:54.280634+00:00"
+=======
+      "updated_at": "2026-06-27T22:40:00.289239+00:00"
+>>>>>>> 6c3cee6037368e1da5126e64a4b2ce1017471c8b
     },
     {
       "keyword": "None None Kazakhstan engineering trade investment pipeline procurement",
       "category": "procurement_trade",
       "label": "Procurement and trade",
+<<<<<<< HEAD
       "updated_at": "2026-06-28T07:11:54.280634+00:00"
+=======
+      "updated_at": "2026-06-27T22:40:00.289296+00:00"
+>>>>>>> 6c3cee6037368e1da5126e64a4b2ce1017471c8b
     },
     {
       "keyword": "None None Kazakhstan engineering trade investment pipeline project owner",
       "category": "project_pipeline",
       "label": "Project pipeline",
+<<<<<<< HEAD
       "updated_at": "2026-06-28T07:11:54.280634+00:00"
+=======
+      "updated_at": "2026-06-27T22:40:00.289252+00:00"
+>>>>>>> 6c3cee6037368e1da5126e64a4b2ce1017471c8b
     },
     {
       "keyword": "None None Kazakhstan engineering trade investment pipeline public hearing",
       "category": "political_impact",
       "label": "Political and policy impact",
+<<<<<<< HEAD
       "updated_at": "2026-06-28T07:11:54.280634+00:00"
+=======
+      "updated_at": "2026-06-27T22:40:00.289267+00:00"
+>>>>>>> 6c3cee6037368e1da5126e64a4b2ce1017471c8b
     },
     {
       "keyword": "None None Kazakhstan engineering trade investment pipeline public tender",
       "category": "procurement_trade",
       "label": "Procurement and trade",
+<<<<<<< HEAD
       "updated_at": "2026-06-28T07:11:54.280634+00:00"
+=======
+      "updated_at": "2026-06-27T22:40:00.289294+00:00"
+>>>>>>> 6c3cee6037368e1da5126e64a4b2ce1017471c8b
     },
     {
       "keyword": "None None Kazakhstan engineering trade investment pipeline qq group",
       "category": "forums_social",
       "label": "Forums, chats, and social attention",
+<<<<<<< HEAD
       "updated_at": "2026-06-28T07:11:54.280634+00:00"
+=======
+      "updated_at": "2026-06-27T22:40:00.289326+00:00"
+>>>>>>> 6c3cee6037368e1da5126e64a4b2ce1017471c8b
     },
     {
       "keyword": "None None Kazakhstan engineering trade investment pipeline reddit",
       "category": "forums_social",
       "label": "Forums, chats, and social attention",
+<<<<<<< HEAD
       "updated_at": "2026-06-28T07:11:54.280634+00:00"
+=======
+      "updated_at": "2026-06-27T22:40:00.289320+00:00"
+>>>>>>> 6c3cee6037368e1da5126e64a4b2ce1017471c8b
     },
     {
       "keyword": "None None Kazakhstan engineering trade investment pipeline regulation",
       "category": "political_impact",
       "label": "Political and policy impact",
+<<<<<<< HEAD
       "updated_at": "2026-06-28T07:11:54.280634+00:00"
+=======
+      "updated_at": "2026-06-27T22:40:00.289268+00:00"
+>>>>>>> 6c3cee6037368e1da5126e64a4b2ce1017471c8b
     },
     {
       "keyword": "None None Kazakhstan engineering trade investment pipeline renewable energy",
       "category": "growth_sector",
       "label": "Growth sectors",
+<<<<<<< HEAD
       "updated_at": "2026-06-28T07:11:54.280634+00:00"
+=======
+      "updated_at": "2026-06-27T22:40:00.289284+00:00"
+>>>>>>> 6c3cee6037368e1da5126e64a4b2ce1017471c8b
     },
     {
       "keyword": "None None Kazakhstan engineering trade investment pipeline sanctions",
       "category": "risk_compliance",
       "label": "Risk and compliance",
+<<<<<<< HEAD
       "updated_at": "2026-06-28T07:11:54.280634+00:00"
+=======
+      "updated_at": "2026-06-27T22:40:00.289307+00:00"
+>>>>>>> 6c3cee6037368e1da5126e64a4b2ce1017471c8b
     },
     {
       "keyword": "None None Kazakhstan engineering trade investment pipeline short video",
       "category": "video_intelligence",
       "label": "Video intelligence and production",
+<<<<<<< HEAD
       "updated_at": "2026-06-28T07:11:54.280634+00:00"
+=======
+      "updated_at": "2026-06-27T22:40:00.289336+00:00"
+>>>>>>> 6c3cee6037368e1da5126e64a4b2ce1017471c8b
     },
     {
       "keyword": "None None Kazakhstan engineering trade investment pipeline special economic zone",
       "category": "investment_value",
       "label": "High value and high return",
+<<<<<<< HEAD
       "updated_at": "2026-06-28T07:11:54.280634+00:00"
+=======
+      "updated_at": "2026-06-27T22:40:00.289282+00:00"
+>>>>>>> 6c3cee6037368e1da5126e64a4b2ce1017471c8b
     },
     {
       "keyword": "None None Kazakhstan engineering trade investment pipeline supplier",
       "category": "procurement_trade",
       "label": "Procurement and trade",
+<<<<<<< HEAD
       "updated_at": "2026-06-28T07:11:54.280634+00:00"
+=======
+      "updated_at": "2026-06-27T22:40:00.289298+00:00"
+>>>>>>> 6c3cee6037368e1da5126e64a4b2ce1017471c8b
     },
     {
       "keyword": "None None Kazakhstan engineering trade investment pipeline tariff",
       "category": "procurement_trade",
       "label": "Procurement and trade",
+<<<<<<< HEAD
       "updated_at": "2026-06-28T07:11:54.280634+00:00"
+=======
+      "updated_at": "2026-06-27T22:40:00.289303+00:00"
+>>>>>>> 6c3cee6037368e1da5126e64a4b2ce1017471c8b
     },
     {
       "keyword": "None None Kazakhstan engineering trade investment pipeline telegram",
       "category": "forums_social",
       "label": "Forums, chats, and social attention",
+<<<<<<< HEAD
       "updated_at": "2026-06-28T07:11:54.280634+00:00"
+=======
+      "updated_at": "2026-06-27T22:40:00.289319+00:00"
+>>>>>>> 6c3cee6037368e1da5126e64a4b2ce1017471c8b
     },
     {
       "keyword": "None None Kazakhstan engineering trade investment pipeline tender",
       "category": "project_pipeline",
       "label": "Project pipeline",
+<<<<<<< HEAD
       "updated_at": "2026-06-28T07:11:54.280634+00:00"
+=======
+      "updated_at": "2026-06-27T22:40:00.289248+00:00"
+>>>>>>> 6c3cee6037368e1da5126e64a4b2ce1017471c8b
     },
     {
       "keyword": "None None Kazakhstan engineering trade investment pipeline think tank",
       "category": "research_library",
       "label": "Research and library",
+<<<<<<< HEAD
       "updated_at": "2026-06-28T07:11:54.280634+00:00"
+=======
+      "updated_at": "2026-06-27T22:40:00.289345+00:00"
+>>>>>>> 6c3cee6037368e1da5126e64a4b2ce1017471c8b
     },
     {
       "keyword": "None None Kazakhstan engineering trade investment pipeline under construction",
       "category": "project_pipeline",
       "label": "Project pipeline",
+<<<<<<< HEAD
       "updated_at": "2026-06-28T07:11:54.280634+00:00"
+=======
+      "updated_at": "2026-06-27T22:40:00.289245+00:00"
+>>>>>>> 6c3cee6037368e1da5126e64a4b2ce1017471c8b
     },
     {
       "keyword": "None None Kazakhstan engineering trade investment pipeline video channel",
       "category": "video_intelligence",
       "label": "Video intelligence and production",
+<<<<<<< HEAD
       "updated_at": "2026-06-28T07:11:54.280634+00:00"
+=======
+      "updated_at": "2026-06-27T22:40:00.289335+00:00"
+>>>>>>> 6c3cee6037368e1da5126e64a4b2ce1017471c8b
     },
     {
       "keyword": "None None Kazakhstan engineering trade investment pipeline wechat",
       "category": "forums_social",
       "label": "Forums, chats, and social attention",
+<<<<<<< HEAD
       "updated_at": "2026-06-28T07:11:54.280634+00:00"
+=======
+      "updated_at": "2026-06-27T22:40:00.289322+00:00"
+>>>>>>> 6c3cee6037368e1da5126e64a4b2ce1017471c8b
     }
   ]
 }
