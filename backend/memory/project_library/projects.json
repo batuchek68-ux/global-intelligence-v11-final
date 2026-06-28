@@ -1,136 +1,5 @@
 [
   {
-    "id": "13648f12a9cbd993",
-    "title": "Official procurement page",
-    "topic": "Kazakhstan engineering trade project customs investment promotion video",
-    "country": "Kazakhstan",
-    "category": "unknown",
-    "category_label": "待确认项目",
-    "status_evidence": [],
-    "confirmation_level": "government_confirmed",
-    "confidence": 90,
-    "government_sources": [
-      {
-        "title": "Official procurement page",
-        "url": "https://goszakup.gov.kz/example-project",
-        "domain": "goszakup.gov.kz",
-        "snippet": "Official source describes owner, tender status, customs documents and engineering scope.",
-        "source_type": "government",
-        "government_confirmed": true,
-        "collected_at": "2026-06-27T22:40:25.195570+00:00"
-      }
-    ],
-    "evidence": [
-      {
-        "title": "Official procurement page",
-        "url": "https://goszakup.gov.kz/example-project",
-        "domain": "goszakup.gov.kz",
-        "snippet": "Official source describes owner, tender status, customs documents and engineering scope.",
-        "source_type": "government",
-        "government_confirmed": true,
-        "collected_at": "2026-06-27T22:40:25.195570+00:00"
-      }
-    ],
-    "stakeholders": {
-      "project_owner": [
-        "Kazakhstan engineering trade project customs investment promotion video Kazakhstan Official procurement page Official source describes owner, tender status, customs documents and engineering scope"
-      ]
-    },
-    "owner_candidates": [
-      "Kazakhstan engineering trade project customs investment promotion video Kazakhstan Official procurement page Official source describes owner, tender status, customs documents and engineering scope"
-    ],
-    "developer_candidates": [],
-    "responsible_person_candidates": [],
-    "risk_flags": [
-      "Human approval required before external outreach, quotation, commitment, or publication.",
-      "Government source confirmation required before investment promotion use."
-    ],
-    "updated_at": "2026-06-27T22:40:25.196111+00:00",
-    "official_source_status": "official_procurement_supported",
-    "project_record_status": "candidate_project",
-    "verified_project_allowed": false,
-    "candidate_to_verified_gate": {
-      "status": "candidate_project",
-      "verified_project_allowed": false,
-      "official_source_status": "official_procurement_supported",
-      "required_before_verified_project": [
-        "At least one Tier 1 official government, procurement, customs, regulator, or authority source is required.",
-        "Project stage must be planned or under_construction.",
-        "Confidence must be 90 or higher.",
-        "Owner or responsible authority candidate must be identified.",
-        "Developer, investor, or contractor candidate must be identified.",
-        "External promotion, quotation, publication, outreach, and commitment still require human approval."
-      ],
-      "missing_requirements": [
-        "Project stage must be planned or under_construction.",
-        "Developer, investor, or contractor candidate is missing."
-      ],
-      "evidence_grade_summary": {
-        "tier1_official_sources": 1,
-        "tier2_supporting_sources": 0,
-        "weak_signal_sources": 0,
-        "unknown_sources": 0,
-        "by_source_type": {
-          "government": 1
-        },
-        "rules": {
-          "tier1": "Government, customs, regulator, or official procurement evidence can confirm the project when stage and stakeholders are also present.",
-          "tier2": "Official company or academic evidence can support screening but cannot verify a project by itself.",
-          "weak": "Social, forum, and video sources are attention signals only and never verify a project."
-        }
-      },
-      "evidence_rules": {
-        "government_official": "Tier 1: confirms project existence, stage, authority, and public authorization facts.",
-        "procurement_official": "Tier 1: confirms tender, procurement, award, EPC, or contractor status.",
-        "official_company": "Tier 2: supports developer or investor screening, but cannot verify a project alone.",
-        "social_video_forum": "Tier 4: attention and lead signal only; never confirms project facts."
-      },
-      "human_approval_required_for_external_use": true
-    },
-    "evidence_grade_summary": {
-      "tier1_official_sources": 1,
-      "tier2_supporting_sources": 0,
-      "weak_signal_sources": 0,
-      "unknown_sources": 0,
-      "by_source_type": {
-        "government": 1
-      },
-      "rules": {
-        "tier1": "Government, customs, regulator, or official procurement evidence can confirm the project when stage and stakeholders are also present.",
-        "tier2": "Official company or academic evidence can support screening but cannot verify a project by itself.",
-        "weak": "Social, forum, and video sources are attention signals only and never verify a project."
-      }
-    },
-    "promotion_readiness": {
-      "status": "evidence_review_required",
-      "label": "Evidence review required",
-      "can_create_lead_record": true,
-      "can_generate_internal_promotion_draft": false,
-      "approved_for_external_use": false,
-      "human_approval_required_for_external_use": true,
-      "allowed_internal_actions": [
-        "Keep as an internal project lead",
-        "Collect missing stage, owner, developer, customs, and procurement evidence"
-      ],
-      "blocked_actions": [
-        "正式招商发布",
-        "formal investment-promotion publication",
-        "customer or investor outreach",
-        "quotation",
-        "contract or payment commitment",
-        "delivery or customs-clearance commitment",
-        "public video publishing"
-      ],
-      "missing_requirements": [
-        "Project stage is not confirmed as planned or under_construction.",
-        "Developer, investor, or contractor candidate is missing.",
-        "Project stage must be planned or under_construction."
-      ],
-      "official_source_status": "official_procurement_supported",
-      "verified_project_allowed": false
-    }
-  },
-  {
     "id": "43ba37ae6d9d906b",
     "title": "Daily cycle operating evidence",
     "topic": "Daily v11 international engineering trade, research intelligence, investment promotion, video, customs, and project execution operating package",
@@ -144,16 +13,12 @@
     "evidence": [
       {
         "title": "Daily cycle operating evidence",
-        "url": "C:\\Users\\Surface\\AppData\\Local\\Temp\\tmpyypnvf3u\\memory\\last_run.json",
+        "url": "/home/runner/work/global-intelligence-v11-final/global-intelligence-v11-final/backend/memory/last_run.json",
         "domain": "",
         "snippet": "daily operating cycle, project cases, evidence dossiers, action boards, video center, benchmark and owner approval queue",
         "source_type": "internal",
         "government_confirmed": false,
-<<<<<<< HEAD
-        "collected_at": "2026-06-28T00:22:10.105382+00:00"
-=======
-        "collected_at": "2026-06-27T22:40:26.537507+00:00"
->>>>>>> 6c3cee6037368e1da5126e64a4b2ce1017471c8b
+        "collected_at": "2026-06-28T10:17:41.335695+00:00"
       }
     ],
     "stakeholders": {
@@ -170,11 +35,7 @@
       "Human approval required before external outreach, quotation, commitment, or publication.",
       "Government source confirmation required before investment promotion use."
     ],
-<<<<<<< HEAD
-    "updated_at": "2026-06-28T00:22:10.107382+00:00",
-=======
-    "updated_at": "2026-06-27T22:40:26.537971+00:00",
->>>>>>> 6c3cee6037368e1da5126e64a4b2ce1017471c8b
+    "updated_at": "2026-06-28T10:17:41.336152+00:00",
     "official_source_status": "candidate_unverified",
     "project_record_status": "candidate_project",
     "verified_project_allowed": false,
@@ -265,9 +126,9 @@
     }
   },
   {
-    "id": "5bc9221e8403ce1f",
-    "title": "Official procurement and customs reference",
-    "topic": "哈萨克斯坦工程贸易项目：确认海关信息、项目负责人、招商价值、视频传播方案和下一步推进计划",
+    "id": "13648f12a9cbd993",
+    "title": "Official procurement page",
+    "topic": "Kazakhstan engineering trade project customs investment promotion video",
     "country": "Kazakhstan",
     "category": "unknown",
     "category_label": "待确认项目",
@@ -276,46 +137,41 @@
     "confidence": 90,
     "government_sources": [
       {
-        "title": "Official procurement and customs reference",
+        "title": "Official procurement page",
         "url": "https://goszakup.gov.kz/example-project",
         "domain": "goszakup.gov.kz",
-        "snippet": "Official source describes project owner, tender status, customs documents, engineering scope and investment opportunity.",
+        "snippet": "Official source describes owner, tender status, customs documents and engineering scope.",
         "source_type": "government",
         "government_confirmed": true,
-        "collected_at": "2026-06-26T01:26:49.837219+00:00"
+        "collected_at": "2026-06-28T10:17:40.048603+00:00"
       }
     ],
     "evidence": [
       {
-        "title": "Official procurement and customs reference",
+        "title": "Official procurement page",
         "url": "https://goszakup.gov.kz/example-project",
         "domain": "goszakup.gov.kz",
-        "snippet": "Official source describes project owner, tender status, customs documents, engineering scope and investment opportunity.",
+        "snippet": "Official source describes owner, tender status, customs documents and engineering scope.",
         "source_type": "government",
         "government_confirmed": true,
-        "collected_at": "2026-06-26T01:26:49.837219+00:00"
+        "collected_at": "2026-06-28T10:17:40.048603+00:00"
       }
     ],
     "stakeholders": {
       "project_owner": [
-        "哈萨克斯坦工程贸易项目：确认海关信息、项目负责人、招商价值、视频传播方案和下一步推进计划 Kazakhstan Official procurement and customs reference Official source describes project owner, tender status, customs documents, engineering scope and investment opportunity"
-      ],
-      "contact_person": [
-        "哈萨克斯坦工程贸易项目：确认海关信息、项目负责人、招商价值、视频传播方案和下一步推进计划 Kazakhstan Official procurement and customs reference Official source describes project owner, tender status, customs documents, engineering scope and investment opportunity"
+        "Kazakhstan engineering trade project customs investment promotion video Kazakhstan Official procurement page Official source describes owner, tender status, customs documents and engineering scope"
       ]
     },
     "owner_candidates": [
-      "哈萨克斯坦工程贸易项目：确认海关信息、项目负责人、招商价值、视频传播方案和下一步推进计划 Kazakhstan Official procurement and customs reference Official source describes project owner, tender status, customs documents, engineering scope and investment opportunity"
+      "Kazakhstan engineering trade project customs investment promotion video Kazakhstan Official procurement page Official source describes owner, tender status, customs documents and engineering scope"
     ],
     "developer_candidates": [],
-    "responsible_person_candidates": [
-      "哈萨克斯坦工程贸易项目：确认海关信息、项目负责人、招商价值、视频传播方案和下一步推进计划 Kazakhstan Official procurement and customs reference Official source describes project owner, tender status, customs documents, engineering scope and investment opportunity"
-    ],
+    "responsible_person_candidates": [],
     "risk_flags": [
       "Human approval required before external outreach, quotation, commitment, or publication.",
       "Government source confirmation required before investment promotion use."
     ],
-    "updated_at": "2026-06-26T01:26:49.838222+00:00",
+    "updated_at": "2026-06-28T10:17:40.049155+00:00",
     "official_source_status": "official_procurement_supported",
     "project_record_status": "candidate_project",
     "verified_project_allowed": false,
