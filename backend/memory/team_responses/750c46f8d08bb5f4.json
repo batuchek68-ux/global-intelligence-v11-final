@@ -1,0 +1,495 @@
+{
+  "ok": true,
+  "id": "750c46f8d08bb5f4",
+  "created_at": "2026-06-30T11:33:42.785241+00:00",
+  "question": "How should v11 operate today as an international engineering trade, research intelligence, investment promotion, video, and project execution team?",
+  "country": "Indonesia",
+  "industries": [
+    "infrastructure",
+    "mining",
+    "logistics",
+    "energy",
+    "customs",
+    "investment"
+  ],
+  "mode": "team_response_pack",
+  "executive_answer": "结论: 目前只能作为线索；必须先补政府、海关、采购、监管或官方企业证据。\n问题: How should v11 operate today as an international engineering trade, research intelligence, investment promotion, video, and project execution team?\n国家/地区: Indonesia\n证据状态: weak_signal_only；置信度 36；官方证据 0 条。\n任务状态: pending_owner；需要处理 6 项任务；阻断 3 项高风险动作。\n执行清单: 先查官方 source URL 和 source date，再核验 government/customs/procurement evidence；随后形成 next step checklist、risk approval gate、项目库记录和可行性草稿。\n专业判断: 海关问题必须核验 HS code、tariff、customs valuation、certificate of origin、import license；EPC 项目必须核验 owner、developer、contractor、FIDIC/contract risk 和 tender status。\n风险边界: payment、contract、sanction、export control、customs、quotation、delivery promise、public publishing 必须 approval 后才能对外使用。",
+  "evidence_status": {
+    "verification_status": "weak_signal_only",
+    "confidence": 36,
+    "requires_human_review": true,
+    "official_sources": 0
+  },
+  "team_roles": [
+    {
+      "role": "trade_lead",
+      "label": "国际贸易负责人",
+      "contribution": "先核验 Indonesia 官方海关 source URL/date、HS code、tariff、customs valuation、Incoterms、payment risk 和物流路径；未核验前不承诺价格、交期或清关结果。",
+      "next_step": "收集海关官网、官方税则、清关文件、银行付款条件证据，并形成可执行 checklist。"
+    },
+    {
+      "role": "research_analyst",
+      "label": "科研情报分析",
+      "contribution": "优先搜索 official government、procurement、academic paper、library report 来源；第一条官方检索式: How should v11 operate today as an international engineering trade, research intelligence, investment promotion, video, and project execution team? Central Asia EPC site:gov.kz",
+      "next_step": "把证据分为政府/采购/企业/媒体/社交五级，记录 citation、URL、source date、relevance note。"
+    },
+    {
+      "role": "investment_promotion_lead",
+      "label": "招商引资负责人",
+      "contribution": "只有在项目业主、developer、investor、government authority、ROI、PPP/incentive 被官方证据确认后，才能形成招商材料草稿。",
+      "next_step": "建立 owner/developer/investor/government authority 四类名单，并标注 evidence level。"
+    },
+    {
+      "role": "video_media_producer",
+      "label": "视频传播负责人",
+      "contribution": "视频只做内部草稿，参考 YouTube 等平台的节奏、国家风格和证据镜头，不复制内容，不发布未经审批的承诺。",
+      "next_step": "生成 60 秒项目机会脚本、风险解释脚本和平台关键词，等待人工审批。"
+    },
+    {
+      "role": "project_manager",
+      "label": "项目经理",
+      "contribution": "任务板已生成 6 项，阻断 3 项；每项都要有 owner、deadline、evidence、next step。",
+      "next_step": "安排责任人、截止时间、会议议程、decision log 和复盘记录。"
+    },
+    {
+      "role": "risk_approval_officer",
+      "label": "风控审批负责人",
+      "contribution": "正式外联、quotation、contract、payment、sanction/export control、delivery promise、public publishing 全部进入 approval gate。",
+      "next_step": "把高风险事项写入老板收件箱，审批前保持 DRAFT - Not approved for sending。",
+      "blocked": true
+    }
+  ],
+  "search_plan": {
+    "official_queries": [
+      {
+        "intent": "government_confirmation",
+        "query": "How should v11 operate today as an international engineering trade, research intelligence, investment promotion, video, and project execution team? Central Asia EPC site:gov.kz",
+        "priority": "highest",
+        "urls": {
+          "google": "https://www.google.com/search?q=How+should+v11+operate+today+as+an+international+engineering+trade%2C+research+intelligence%2C+investment+promotion%2C+video%2C+and+project+execution+team%3F+Central+Asia+EPC+site%3Agov.kz",
+          "yandex": "https://yandex.com/search/?text=How+should+v11+operate+today+as+an+international+engineering+trade%2C+research+intelligence%2C+investment+promotion%2C+video%2C+and+project+execution+team%3F+Central+Asia+EPC+site%3Agov.kz",
+          "bing": "https://www.bing.com/search?q=How+should+v11+operate+today+as+an+international+engineering+trade%2C+research+intelligence%2C+investment+promotion%2C+video%2C+and+project+execution+team%3F+Central+Asia+EPC+site%3Agov.kz"
+        }
+      },
+      {
+        "intent": "government_confirmation",
+        "query": "How should v11 operate today as an international engineering trade, research intelligence, investment promotion, video, and project execution team? Central Asia EPC site:gov.uz",
+        "priority": "highest",
+        "urls": {
+          "google": "https://www.google.com/search?q=How+should+v11+operate+today+as+an+international+engineering+trade%2C+research+intelligence%2C+investment+promotion%2C+video%2C+and+project+execution+team%3F+Central+Asia+EPC+site%3Agov.uz",
+          "yandex": "https://yandex.com/search/?text=How+should+v11+operate+today+as+an+international+engineering+trade%2C+research+intelligence%2C+investment+promotion%2C+video%2C+and+project+execution+team%3F+Central+Asia+EPC+site%3Agov.uz",
+          "bing": "https://www.bing.com/search?q=How+should+v11+operate+today+as+an+international+engineering+trade%2C+research+intelligence%2C+investment+promotion%2C+video%2C+and+project+execution+team%3F+Central+Asia+EPC+site%3Agov.uz"
+        }
+      },
+      {
+        "intent": "government_confirmation",
+        "query": "How should v11 operate today as an international engineering trade, research intelligence, investment promotion, video, and project execution team? Central Asia EPC site:gov.kg",
+        "priority": "highest",
+        "urls": {
+          "google": "https://www.google.com/search?q=How+should+v11+operate+today+as+an+international+engineering+trade%2C+research+intelligence%2C+investment+promotion%2C+video%2C+and+project+execution+team%3F+Central+Asia+EPC+site%3Agov.kg",
+          "yandex": "https://yandex.com/search/?text=How+should+v11+operate+today+as+an+international+engineering+trade%2C+research+intelligence%2C+investment+promotion%2C+video%2C+and+project+execution+team%3F+Central+Asia+EPC+site%3Agov.kg",
+          "bing": "https://www.bing.com/search?q=How+should+v11+operate+today+as+an+international+engineering+trade%2C+research+intelligence%2C+investment+promotion%2C+video%2C+and+project+execution+team%3F+Central+Asia+EPC+site%3Agov.kg"
+        }
+      },
+      {
+        "intent": "government_confirmation",
+        "query": "How should v11 operate today as an international engineering trade, research intelligence, investment promotion, video, and project execution team? Central Asia EPC site:gov.tm",
+        "priority": "highest",
+        "urls": {
+          "google": "https://www.google.com/search?q=How+should+v11+operate+today+as+an+international+engineering+trade%2C+research+intelligence%2C+investment+promotion%2C+video%2C+and+project+execution+team%3F+Central+Asia+EPC+site%3Agov.tm",
+          "yandex": "https://yandex.com/search/?text=How+should+v11+operate+today+as+an+international+engineering+trade%2C+research+intelligence%2C+investment+promotion%2C+video%2C+and+project+execution+team%3F+Central+Asia+EPC+site%3Agov.tm",
+          "bing": "https://www.bing.com/search?q=How+should+v11+operate+today+as+an+international+engineering+trade%2C+research+intelligence%2C+investment+promotion%2C+video%2C+and+project+execution+team%3F+Central+Asia+EPC+site%3Agov.tm"
+        }
+      },
+      {
+        "intent": "government_confirmation",
+        "query": "How should v11 operate today as an international engineering trade, research intelligence, investment promotion, video, and project execution team? Central Asia engineering procurement construction site:gov.kz",
+        "priority": "highest",
+        "urls": {
+          "google": "https://www.google.com/search?q=How+should+v11+operate+today+as+an+international+engineering+trade%2C+research+intelligence%2C+investment+promotion%2C+video%2C+and+project+execution+team%3F+Central+Asia+engineering+procurement+construction+site%3Agov.kz",
+          "yandex": "https://yandex.com/search/?text=How+should+v11+operate+today+as+an+international+engineering+trade%2C+research+intelligence%2C+investment+promotion%2C+video%2C+and+project+execution+team%3F+Central+Asia+engineering+procurement+construction+site%3Agov.kz",
+          "bing": "https://www.bing.com/search?q=How+should+v11+operate+today+as+an+international+engineering+trade%2C+research+intelligence%2C+investment+promotion%2C+video%2C+and+project+execution+team%3F+Central+Asia+engineering+procurement+construction+site%3Agov.kz"
+        }
+      },
+      {
+        "intent": "government_confirmation",
+        "query": "How should v11 operate today as an international engineering trade, research intelligence, investment promotion, video, and project execution team? Central Asia engineering procurement construction site:gov.uz",
+        "priority": "highest",
+        "urls": {
+          "google": "https://www.google.com/search?q=How+should+v11+operate+today+as+an+international+engineering+trade%2C+research+intelligence%2C+investment+promotion%2C+video%2C+and+project+execution+team%3F+Central+Asia+engineering+procurement+construction+site%3Agov.uz",
+          "yandex": "https://yandex.com/search/?text=How+should+v11+operate+today+as+an+international+engineering+trade%2C+research+intelligence%2C+investment+promotion%2C+video%2C+and+project+execution+team%3F+Central+Asia+engineering+procurement+construction+site%3Agov.uz",
+          "bing": "https://www.bing.com/search?q=How+should+v11+operate+today+as+an+international+engineering+trade%2C+research+intelligence%2C+investment+promotion%2C+video%2C+and+project+execution+team%3F+Central+Asia+engineering+procurement+construction+site%3Agov.uz"
+        }
+      },
+      {
+        "intent": "government_confirmation",
+        "query": "How should v11 operate today as an international engineering trade, research intelligence, investment promotion, video, and project execution team? Central Asia engineering procurement construction site:gov.kg",
+        "priority": "highest",
+        "urls": {
+          "google": "https://www.google.com/search?q=How+should+v11+operate+today+as+an+international+engineering+trade%2C+research+intelligence%2C+investment+promotion%2C+video%2C+and+project+execution+team%3F+Central+Asia+engineering+procurement+construction+site%3Agov.kg",
+          "yandex": "https://yandex.com/search/?text=How+should+v11+operate+today+as+an+international+engineering+trade%2C+research+intelligence%2C+investment+promotion%2C+video%2C+and+project+execution+team%3F+Central+Asia+engineering+procurement+construction+site%3Agov.kg",
+          "bing": "https://www.bing.com/search?q=How+should+v11+operate+today+as+an+international+engineering+trade%2C+research+intelligence%2C+investment+promotion%2C+video%2C+and+project+execution+team%3F+Central+Asia+engineering+procurement+construction+site%3Agov.kg"
+        }
+      },
+      {
+        "intent": "government_confirmation",
+        "query": "How should v11 operate today as an international engineering trade, research intelligence, investment promotion, video, and project execution team? Central Asia engineering procurement construction site:gov.tm",
+        "priority": "highest",
+        "urls": {
+          "google": "https://www.google.com/search?q=How+should+v11+operate+today+as+an+international+engineering+trade%2C+research+intelligence%2C+investment+promotion%2C+video%2C+and+project+execution+team%3F+Central+Asia+engineering+procurement+construction+site%3Agov.tm",
+          "yandex": "https://yandex.com/search/?text=How+should+v11+operate+today+as+an+international+engineering+trade%2C+research+intelligence%2C+investment+promotion%2C+video%2C+and+project+execution+team%3F+Central+Asia+engineering+procurement+construction+site%3Agov.tm",
+          "bing": "https://www.bing.com/search?q=How+should+v11+operate+today+as+an+international+engineering+trade%2C+research+intelligence%2C+investment+promotion%2C+video%2C+and+project+execution+team%3F+Central+Asia+engineering+procurement+construction+site%3Agov.tm"
+        }
+      }
+    ],
+    "intelligence_categories": [
+      {
+        "id": "project_pipeline",
+        "label": "Project pipeline",
+        "first_search_term": "Indonesia infrastructure How should v11 operate today as an international engineering trade, research intelligence, investment promotion, video, and project execution team? planned project"
+      },
+      {
+        "id": "political_impact",
+        "label": "Political and policy impact",
+        "first_search_term": "Indonesia infrastructure How should v11 operate today as an international engineering trade, research intelligence, investment promotion, video, and project execution team? government policy"
+      },
+      {
+        "id": "investment_value",
+        "label": "High value and high return",
+        "first_search_term": "Indonesia infrastructure How should v11 operate today as an international engineering trade, research intelligence, investment promotion, video, and project execution team? investment project"
+      },
+      {
+        "id": "growth_sector",
+        "label": "Growth sectors",
+        "first_search_term": "Indonesia infrastructure How should v11 operate today as an international engineering trade, research intelligence, investment promotion, video, and project execution team? renewable energy"
+      },
+      {
+        "id": "procurement_trade",
+        "label": "Procurement and trade",
+        "first_search_term": "Indonesia infrastructure How should v11 operate today as an international engineering trade, research intelligence, investment promotion, video, and project execution team? public tender"
+      },
+      {
+        "id": "risk_compliance",
+        "label": "Risk and compliance",
+        "first_search_term": "Indonesia infrastructure How should v11 operate today as an international engineering trade, research intelligence, investment promotion, video, and project execution team? sanctions"
+      },
+      {
+        "id": "forums_social",
+        "label": "Forums, chats, and social attention",
+        "first_search_term": "Indonesia infrastructure How should v11 operate today as an international engineering trade, research intelligence, investment promotion, video, and project execution team? forum"
+      },
+      {
+        "id": "video_intelligence",
+        "label": "Video intelligence and production",
+        "first_search_term": "Indonesia infrastructure How should v11 operate today as an international engineering trade, research intelligence, investment promotion, video, and project execution team? YouTube"
+      },
+      {
+        "id": "research_library",
+        "label": "Research and library",
+        "first_search_term": "Indonesia infrastructure How should v11 operate today as an international engineering trade, research intelligence, investment promotion, video, and project execution team? paper"
+      }
+    ]
+  },
+  "video_plan": {
+    "platform_searches": [
+      {
+        "platform": "YouTube",
+        "keyword": "Indonesia infrastructure How should v11 operate today as an international engineering trade, research intelligence, investment promotion, video, and project execution team? case study short video",
+        "url": "https://www.youtube.com/results?search_query=Indonesia+infrastructure+How+should+v11+operate+today+as+an+international+engineering+trade%2C+research+intelligence%2C+investment+promotion%2C+video%2C+and+project+execution+team%3F+case+study+short+video"
+      },
+      {
+        "platform": "TikTok",
+        "keyword": "Indonesia infrastructure How should v11 operate today as an international engineering trade, research intelligence, investment promotion, video, and project execution team? case study short video",
+        "url": "https://www.tiktok.com/search?q=Indonesia+infrastructure+How+should+v11+operate+today+as+an+international+engineering+trade%2C+research+intelligence%2C+investment+promotion%2C+video%2C+and+project+execution+team%3F+case+study+short+video"
+      },
+      {
+        "platform": "Douyin",
+        "keyword": "Indonesia infrastructure How should v11 operate today as an international engineering trade, research intelligence, investment promotion, video, and project execution team? case study short video",
+        "url": "https://www.douyin.com/search/Indonesia+infrastructure+How+should+v11+operate+today+as+an+international+engineering+trade%2C+research+intelligence%2C+investment+promotion%2C+video%2C+and+project+execution+team%3F+case+study+short+video"
+      },
+      {
+        "platform": "Google Video",
+        "keyword": "Indonesia infrastructure How should v11 operate today as an international engineering trade, research intelligence, investment promotion, video, and project execution team? case study short video",
+        "url": "https://www.google.com/search?q=Indonesia+infrastructure+How+should+v11+operate+today+as+an+international+engineering+trade%2C+research+intelligence%2C+investment+promotion%2C+video%2C+and+project+execution+team%3F+case+study+short+video+video"
+      },
+      {
+        "platform": "YouTube",
+        "keyword": "Indonesia infrastructure How should v11 operate today as an international engineering trade, research intelligence, investment promotion, video, and project execution team? project progress short video",
+        "url": "https://www.youtube.com/results?search_query=Indonesia+infrastructure+How+should+v11+operate+today+as+an+international+engineering+trade%2C+research+intelligence%2C+investment+promotion%2C+video%2C+and+project+execution+team%3F+project+progress+short+video"
+      },
+      {
+        "platform": "TikTok",
+        "keyword": "Indonesia infrastructure How should v11 operate today as an international engineering trade, research intelligence, investment promotion, video, and project execution team? project progress short video",
+        "url": "https://www.tiktok.com/search?q=Indonesia+infrastructure+How+should+v11+operate+today+as+an+international+engineering+trade%2C+research+intelligence%2C+investment+promotion%2C+video%2C+and+project+execution+team%3F+project+progress+short+video"
+      },
+      {
+        "platform": "Douyin",
+        "keyword": "Indonesia infrastructure How should v11 operate today as an international engineering trade, research intelligence, investment promotion, video, and project execution team? project progress short video",
+        "url": "https://www.douyin.com/search/Indonesia+infrastructure+How+should+v11+operate+today+as+an+international+engineering+trade%2C+research+intelligence%2C+investment+promotion%2C+video%2C+and+project+execution+team%3F+project+progress+short+video"
+      },
+      {
+        "platform": "Google Video",
+        "keyword": "Indonesia infrastructure How should v11 operate today as an international engineering trade, research intelligence, investment promotion, video, and project execution team? project progress short video",
+        "url": "https://www.google.com/search?q=Indonesia+infrastructure+How+should+v11+operate+today+as+an+international+engineering+trade%2C+research+intelligence%2C+investment+promotion%2C+video%2C+and+project+execution+team%3F+project+progress+short+video+video"
+      },
+      {
+        "platform": "YouTube",
+        "keyword": "Indonesia infrastructure How should v11 operate today as an international engineering trade, research intelligence, investment promotion, video, and project execution team? factory proof short video",
+        "url": "https://www.youtube.com/results?search_query=Indonesia+infrastructure+How+should+v11+operate+today+as+an+international+engineering+trade%2C+research+intelligence%2C+investment+promotion%2C+video%2C+and+project+execution+team%3F+factory+proof+short+video"
+      },
+      {
+        "platform": "TikTok",
+        "keyword": "Indonesia infrastructure How should v11 operate today as an international engineering trade, research intelligence, investment promotion, video, and project execution team? factory proof short video",
+        "url": "https://www.tiktok.com/search?q=Indonesia+infrastructure+How+should+v11+operate+today+as+an+international+engineering+trade%2C+research+intelligence%2C+investment+promotion%2C+video%2C+and+project+execution+team%3F+factory+proof+short+video"
+      },
+      {
+        "platform": "Douyin",
+        "keyword": "Indonesia infrastructure How should v11 operate today as an international engineering trade, research intelligence, investment promotion, video, and project execution team? factory proof short video",
+        "url": "https://www.douyin.com/search/Indonesia+infrastructure+How+should+v11+operate+today+as+an+international+engineering+trade%2C+research+intelligence%2C+investment+promotion%2C+video%2C+and+project+execution+team%3F+factory+proof+short+video"
+      },
+      {
+        "platform": "Google Video",
+        "keyword": "Indonesia infrastructure How should v11 operate today as an international engineering trade, research intelligence, investment promotion, video, and project execution team? factory proof short video",
+        "url": "https://www.google.com/search?q=Indonesia+infrastructure+How+should+v11+operate+today+as+an+international+engineering+trade%2C+research+intelligence%2C+investment+promotion%2C+video%2C+and+project+execution+team%3F+factory+proof+short+video+video"
+      }
+    ],
+    "script_templates": [
+      {
+        "name": "60-second project opportunity brief",
+        "structure": [
+          "hook with country/project fact",
+          "official evidence screenshot",
+          "market pain point",
+          "solution path",
+          "approval-safe call to discuss internally"
+        ]
+      },
+      {
+        "name": "risk explanation video",
+        "structure": [
+          "risk event",
+          "why it matters",
+          "what to verify",
+          "human approval boundary",
+          "next research task"
+        ]
+      },
+      {
+        "name": "country-style market explainer",
+        "structure": [
+          "local visual style",
+          "trade corridor",
+          "project pipeline",
+          "partner profile",
+          "draft-only close"
+        ]
+      }
+    ]
+  },
+  "action_board": {
+    "risk_gate": {
+      "blocked": true,
+      "status": "pending_owner",
+      "risk_level": "high",
+      "risk_score": 64,
+      "reasons": [
+        "major matter: Approve external use only after evidence and risk review.",
+        "evidence status: weak_signal_only"
+      ],
+      "blocked_actions": [
+        "external commitment",
+        "formal quotation",
+        "contract or payment approval",
+        "public publishing",
+        "customer delivery promise"
+      ]
+    },
+    "summary": {
+      "task_count": 6,
+      "blocked_count": 3,
+      "open_count": 3
+    },
+    "tasks": [
+      {
+        "id": "64ab92a4422393c0-trade",
+        "role": "trade_lead",
+        "role_label": "International trade lead",
+        "title": "Verify customs, HS/tariff, payment terms, Incoterms, and logistics route.",
+        "status": "open",
+        "risk_gate": "human_review_required",
+        "evidence_needed": [
+          "customs authority URL",
+          "tariff/HS evidence",
+          "payment term proof",
+          "logistics route proof"
+        ],
+        "output": "internal_draft"
+      },
+      {
+        "id": "64ab92a4422393c0-research",
+        "role": "research_analyst",
+        "role_label": "Research intelligence analyst",
+        "title": "Collect government, procurement, academic, and library evidence; grade each source.",
+        "status": "open",
+        "risk_gate": "evidence_required",
+        "evidence_needed": [
+          "government page",
+          "procurement page",
+          "paper/library source",
+          "source date"
+        ],
+        "output": "internal_draft"
+      },
+      {
+        "id": "64ab92a4422393c0-investment",
+        "role": "investment_promotion_lead",
+        "role_label": "Investment promotion lead",
+        "title": "Map owner, developer, investor candidates, incentive policy, and project packaging gaps.",
+        "status": "blocked",
+        "risk_gate": "blocked_before_external_use",
+        "evidence_needed": [
+          "official project owner proof",
+          "developer/investor proof",
+          "investment agency source"
+        ],
+        "output": "internal_draft"
+      },
+      {
+        "id": "64ab92a4422393c0-video",
+        "role": "video_media_producer",
+        "role_label": "Video and media producer",
+        "title": "Draft country-style video concept based on verified facts and comparable platform examples.",
+        "status": "blocked",
+        "risk_gate": "human_approval_before_publish",
+        "evidence_needed": [
+          "platform search links",
+          "country style notes",
+          "verified project facts"
+        ],
+        "output": "internal_draft"
+      },
+      {
+        "id": "64ab92a4422393c0-pm",
+        "role": "project_manager",
+        "role_label": "Project execution manager",
+        "title": "Prepare meeting agenda, owner decision queue, deadlines, and next internal follow-up.",
+        "status": "open",
+        "risk_gate": "owner_queue",
+        "evidence_needed": [
+          "meeting record",
+          "task owner",
+          "deadline",
+          "decision log"
+        ],
+        "output": "internal_draft"
+      },
+      {
+        "id": "64ab92a4422393c0-risk",
+        "role": "risk_approval_officer",
+        "role_label": "Risk and approval officer",
+        "title": "Keep formal outreach, quotation, payment, contract, and public publishing blocked until approval.",
+        "status": "pending_owner",
+        "risk_gate": "active",
+        "evidence_needed": [
+          "approval ticket",
+          "risk trigger",
+          "human decision",
+          "audit log line"
+        ],
+        "output": "internal_draft"
+      }
+    ]
+  },
+  "quality_score": {
+    "ok": true,
+    "created_at": "2026-06-30T11:33:42.785237+00:00",
+    "overall_score": 99,
+    "verdict": "excellent",
+    "dimensions": {
+      "accuracy": {
+        "score": 100,
+        "hits": [
+          "official",
+          "source",
+          "date",
+          "evidence",
+          "官方",
+          "核验"
+        ],
+        "label": "准确性"
+      },
+      "evidence": {
+        "score": 100,
+        "hits": [
+          "url",
+          "government",
+          "customs",
+          "report",
+          "source",
+          "证据",
+          "海关"
+        ],
+        "label": "证据"
+      },
+      "actionability": {
+        "score": 97,
+        "hits": [
+          "next step",
+          "checklist",
+          "清单",
+          "执行"
+        ],
+        "label": "可执行性"
+      },
+      "risk_judgment": {
+        "score": 100,
+        "hits": [
+          "risk",
+          "approval",
+          "sanction",
+          "export control",
+          "customs",
+          "风险",
+          "审批"
+        ],
+        "label": "风险判断"
+      },
+      "professional_depth": {
+        "score": 100,
+        "hits": [
+          "HS code",
+          "Incoterms",
+          "EPC",
+          "FIDIC",
+          "tariff",
+          "customs valuation",
+          "专业"
+        ],
+        "label": "专业深度"
+      }
+    },
+    "recommendations": [
+      "增加官方来源 URL 和发布日期或访问日期。",
+      "区分已核验事实、弱信号、假设和建议。",
+      "把结论转成下一步行动清单。",
+      "明确风险、人工审批边界和阻断动作。",
+      "使用行业术语时说明含义、证据和适用范围。"
+    ]
+  },
+  "approval_boundary": {
+    "draft_only": true,
+    "blocked_actions": [
+      "formal outreach",
+      "investment promotion publication",
+      "quotation",
+      "contract or payment approval",
+      "delivery or customs commitment"
+    ],
+    "human_approval_required": true
+  },
+  "rules": [
+    "像一个项目团队一样回答：结论、证据、行动、风险、审批边界。",
+    "论坛、社交、视频和聊天信号只能作为关注度线索，不能当作官方事实。",
+    "外联、报价、合同、付款、客户承诺和公开视频发布必须人工审批。"
+  ]
+}

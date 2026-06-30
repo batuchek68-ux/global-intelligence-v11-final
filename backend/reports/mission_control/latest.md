@@ -3,7 +3,7 @@
 DRAFT - internal operating brief, not approved for external sending
 
 - Status: human_review_required
-- Created: 2026-06-29T22:39:32.914703+00:00
+- Created: 2026-06-30T11:33:42.855524+00:00
 - Mission: vertical industry intelligence brain plus verified search plus project execution system
 
 ## Command Center
@@ -24,13 +24,13 @@ DRAFT - internal operating brief, not approved for external sending
 - Team execution reports: 4
 - Evidence dossiers: 4
 - Latest evidence status: partially_supported (84)
-- Action boards: 357
+- Action boards: 362
 - Latest action board: pending_owner (6 tasks)
-- Team responses: 32
+- Team responses: 36
 - Latest team response score: 99
-- War rooms: 16
+- War rooms: 18
 - Latest war room: score=99, roles=6, search=lead_only, promotion=lead_only
-- War room execution queues: 97
+- War room execution queues: 100
 - Latest execution queue: tasks=32, open=22, blocked=10, approval=13
 - Search confirmation gate: lead_only
 - Search manual/source entries: 11
