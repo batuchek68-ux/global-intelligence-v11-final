@@ -18,7 +18,7 @@
         "snippet": "daily operating cycle, project cases, evidence dossiers, action boards, video center, benchmark and owner approval queue",
         "source_type": "internal",
         "government_confirmed": false,
-        "collected_at": "2026-07-02T10:25:08.521860+00:00"
+        "collected_at": "2026-07-02T18:21:42.531495+00:00"
       }
     ],
     "stakeholders": {
@@ -35,7 +35,7 @@
       "Human approval required before external outreach, quotation, commitment, or publication.",
       "Government source confirmation required before investment promotion use."
     ],
-    "updated_at": "2026-07-02T10:25:08.522304+00:00",
+    "updated_at": "2026-07-02T18:21:42.531956+00:00",
     "official_source_status": "candidate_unverified",
     "project_record_status": "candidate_project",
     "verified_project_allowed": false,
@@ -143,7 +143,7 @@
         "snippet": "Official source describes owner, tender status, customs documents and engineering scope.",
         "source_type": "government",
         "government_confirmed": true,
-        "collected_at": "2026-07-02T10:25:07.286795+00:00"
+        "collected_at": "2026-07-02T18:21:41.180859+00:00"
       }
     ],
     "evidence": [
@@ -154,7 +154,7 @@
         "snippet": "Official source describes owner, tender status, customs documents and engineering scope.",
         "source_type": "government",
         "government_confirmed": true,
-        "collected_at": "2026-07-02T10:25:07.286795+00:00"
+        "collected_at": "2026-07-02T18:21:41.180859+00:00"
       }
     ],
     "stakeholders": {
@@ -171,7 +171,7 @@
       "Human approval required before external outreach, quotation, commitment, or publication.",
       "Government source confirmation required before investment promotion use."
     ],
-    "updated_at": "2026-07-02T10:25:07.287332+00:00",
+    "updated_at": "2026-07-02T18:21:41.181370+00:00",
     "official_source_status": "official_procurement_supported",
     "project_record_status": "candidate_project",
     "verified_project_allowed": false,
