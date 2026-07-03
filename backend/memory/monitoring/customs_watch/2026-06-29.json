@@ -1,0 +1,46 @@
+{
+  "date": "2026-06-29",
+  "generated_at": "2026-06-29T22:39:32+00:00",
+  "ports": [
+    "Alashankou port",
+    "Horgos port",
+    "Jeminay port",
+    "Yili Prefecture border ports",
+    "southern Xinjiang ports"
+  ],
+  "required_fields": [
+    "date_period",
+    "port",
+    "customs_district",
+    "trade_mode",
+    "logistics_mode",
+    "hs_code",
+    "commodity",
+    "quantity",
+    "value",
+    "unit_price",
+    "quality_or_grade",
+    "origin",
+    "destination",
+    "source_url",
+    "confidence",
+    "opportunity_signal",
+    "risk_signal"
+  ],
+  "records": [],
+  "source_status": {
+    "live_fetch": false,
+    "reason": "No authorized live news/customs/customs-data API is configured",
+    "allowed_sources": [
+      "official public pages",
+      "subscribed data APIs",
+      "approved search APIs"
+    ],
+    "blocked_sources": [
+      "unauthorized access",
+      "paywall bypass",
+      "website vulnerability exploitation"
+    ]
+  },
+  "next_action": "Configure official customs publication source, approved crawler, or subscribed customs-data API before daily volume statistics are treated as factual."
+}
