@@ -1,13 +1,13 @@
 {
-  "created_at": "2026-07-02T22:43:13+00:00",
+  "created_at": "2026-07-03T10:20:55+00:00",
   "project_count": 2,
   "case_count": 2,
   "approval_count": 1,
   "major_matter_count": 1,
   "resolved_major_matter_count": 0,
   "monitoring": {
-    "generated_at": "2026-07-02T22:43:13+00:00",
-    "date": "2026-07-02",
+    "generated_at": "2026-07-03T10:20:55+00:00",
+    "date": "2026-07-03",
     "draft_notice": "DRAFT - Not approved for sending",
     "source_status": {
       "live_fetch": false,
@@ -37,12 +37,12 @@
       "agricultural machinery, agricultural drones, organic and liquid fertilizer"
     ],
     "artifacts": {
-      "daily_log": "/home/runner/work/global-intelligence-v11-final/global-intelligence-v11-final/backend/reports/daily_logs/2026-07-02.md",
-      "news_update_markdown": "/home/runner/work/global-intelligence-v11-final/global-intelligence-v11-final/backend/reports/news_updates/2026-07-02.md",
-      "news_update_json": "/home/runner/work/global-intelligence-v11-final/global-intelligence-v11-final/backend/reports/news_updates/2026-07-02.json",
-      "project_library_report": "/home/runner/work/global-intelligence-v11-final/global-intelligence-v11-final/backend/reports/project_library/2026-07-02.md",
+      "daily_log": "/home/runner/work/global-intelligence-v11-final/global-intelligence-v11-final/backend/reports/daily_logs/2026-07-03.md",
+      "news_update_markdown": "/home/runner/work/global-intelligence-v11-final/global-intelligence-v11-final/backend/reports/news_updates/2026-07-03.md",
+      "news_update_json": "/home/runner/work/global-intelligence-v11-final/global-intelligence-v11-final/backend/reports/news_updates/2026-07-03.json",
+      "project_library_report": "/home/runner/work/global-intelligence-v11-final/global-intelligence-v11-final/backend/reports/project_library/2026-07-03.md",
       "project_library_database": "/home/runner/work/global-intelligence-v11-final/global-intelligence-v11-final/backend/projects/library/kazakhstan_xinjiang_projects.json",
-      "customs_watch": "/home/runner/work/global-intelligence-v11-final/global-intelligence-v11-final/backend/memory/monitoring/customs_watch/2026-07-02.json",
+      "customs_watch": "/home/runner/work/global-intelligence-v11-final/global-intelligence-v11-final/backend/memory/monitoring/customs_watch/2026-07-03.json",
       "latest_summary": "/home/runner/work/global-intelligence-v11-final/global-intelligence-v11-final/backend/memory/monitoring/kazakhstan_xinjiang_daily.json",
       "overview_report": "/home/runner/work/global-intelligence-v11-final/global-intelligence-v11-final/backend/reports/kazakhstan_xinjiang_monitoring.md"
     }
@@ -68,12 +68,12 @@
       "verdict": "usable"
     },
     "intelligence_brief": {
-      "path": "/home/runner/work/global-intelligence-v11-final/global-intelligence-v11-final/backend/reports/intelligence_briefs/2026-07-02.md",
+      "path": "/home/runner/work/global-intelligence-v11-final/global-intelligence-v11-final/backend/reports/intelligence_briefs/2026-07-03.md",
       "category_count": 9,
       "keyword_bank_path": "/home/runner/work/global-intelligence-v11-final/global-intelligence-v11-final/backend/memory/intelligence/keyword_bank.json"
     },
     "video_center": {
-      "path": "/home/runner/work/global-intelligence-v11-final/global-intelligence-v11-final/backend/reports/video_center/video_center_2026-07-02.json",
+      "path": "/home/runner/work/global-intelligence-v11-final/global-intelligence-v11-final/backend/reports/video_center/video_center_2026-07-03.json",
       "keyword_count": 80,
       "platform_search_count": 120
     },
@@ -113,20 +113,20 @@
       "latest_path": "/home/runner/work/global-intelligence-v11-final/global-intelligence-v11-final/backend/memory/evidence/latest.json"
     },
     "action_boards": {
-      "board_count": 392,
+      "board_count": 397,
       "latest_path": "/home/runner/work/global-intelligence-v11-final/global-intelligence-v11-final/backend/memory/action_boards/latest.json"
     },
     "team_response": {
-      "latest_path": "/home/runner/work/global-intelligence-v11-final/global-intelligence-v11-final/backend/memory/team_responses/3ef9961f47615cae.json",
-      "report_path": "/home/runner/work/global-intelligence-v11-final/global-intelligence-v11-final/backend/reports/team_responses/3ef9961f47615cae.md",
+      "latest_path": "/home/runner/work/global-intelligence-v11-final/global-intelligence-v11-final/backend/memory/team_responses/aceb082226e44cd3.json",
+      "report_path": "/home/runner/work/global-intelligence-v11-final/global-intelligence-v11-final/backend/reports/team_responses/aceb082226e44cd3.md",
       "overall_score": 99,
       "human_approval_required": true
     },
     "war_room": {
-      "latest_path": "/home/runner/work/global-intelligence-v11-final/global-intelligence-v11-final/backend/memory/war_room/4d987db3a65a05a8.json",
-      "report_path": "/home/runner/work/global-intelligence-v11-final/global-intelligence-v11-final/backend/reports/war_room/4d987db3a65a05a8.md",
-      "execution_queue_path": "/home/runner/work/global-intelligence-v11-final/global-intelligence-v11-final/backend/memory/war_room_execution/0849d864e7644e7c.json",
-      "execution_queue_report_path": "/home/runner/work/global-intelligence-v11-final/global-intelligence-v11-final/backend/reports/war_room_execution/0849d864e7644e7c.md",
+      "latest_path": "/home/runner/work/global-intelligence-v11-final/global-intelligence-v11-final/backend/memory/war_room/6c3a352f06477532.json",
+      "report_path": "/home/runner/work/global-intelligence-v11-final/global-intelligence-v11-final/backend/reports/war_room/6c3a352f06477532.md",
+      "execution_queue_path": "/home/runner/work/global-intelligence-v11-final/global-intelligence-v11-final/backend/memory/war_room_execution/cb1f3edf3417a53d.json",
+      "execution_queue_report_path": "/home/runner/work/global-intelligence-v11-final/global-intelligence-v11-final/backend/reports/war_room_execution/cb1f3edf3417a53d.md",
       "execution_queue_tasks": 32,
       "execution_queue_blocked": 10,
       "overall_score": 99,
@@ -144,7 +144,7 @@
   },
   "cases": [
     {
-      "created_at": "2026-07-02T22:43:13+00:00",
+      "created_at": "2026-07-03T10:20:55+00:00",
       "project": {
         "path": "/home/runner/work/global-intelligence-v11-final/global-intelligence-v11-final/backend/projects/active/demo-port-logistics.md",
         "title": "Demo Port Logistics Modernization",
@@ -184,7 +184,7 @@
       "video_path": "/home/runner/work/global-intelligence-v11-final/global-intelligence-v11-final/backend/media/drafts/demo-port-logistics-modernization.md",
       "outbox_path": "/home/runner/work/global-intelligence-v11-final/global-intelligence-v11-final/backend/comm/outbox/demo-port-logistics-modernization.json",
       "classification": {
-        "created_at": "2026-07-02T22:43:13+00:00",
+        "created_at": "2026-07-03T10:20:55+00:00",
         "project": "Demo Port Logistics Modernization",
         "mode": "human_decision_required",
         "is_major_matter": true,
@@ -211,7 +211,7 @@
         }
       },
       "business_flow": {
-        "created_at": "2026-07-02T22:43:13+00:00",
+        "created_at": "2026-07-03T10:20:55+00:00",
         "project": "Demo Port Logistics Modernization",
         "real_work_coverage": {
           "international_trade": [
@@ -283,7 +283,7 @@
       "evidence_dossier_id": "8292910b19c4dd94",
       "team_execution_package_id": "c64fe893deddda22",
       "execution": {
-        "created_at": "2026-07-02T22:43:13+00:00",
+        "created_at": "2026-07-03T10:20:55+00:00",
         "project": "Demo Port Logistics Modernization",
         "mode": "human_decision_required",
         "status": "waiting_for_owner",
@@ -325,11 +325,11 @@
         "created": false,
         "reason": "approval already waiting"
       },
-      "action_board_id": "cccfd396ae6444e6",
-      "action_board_path": "/home/runner/work/global-intelligence-v11-final/global-intelligence-v11-final/backend/reports/action_boards/cccfd396ae6444e6.md"
+      "action_board_id": "0bcbb141c4219160",
+      "action_board_path": "/home/runner/work/global-intelligence-v11-final/global-intelligence-v11-final/backend/reports/action_boards/0bcbb141c4219160.md"
     },
     {
-      "created_at": "2026-07-02T22:43:13+00:00",
+      "created_at": "2026-07-03T10:20:55+00:00",
       "project": {
         "path": "/home/runner/work/global-intelligence-v11-final/global-intelligence-v11-final/backend/projects/active/internal-brief-library.md",
         "title": "Internal Brief Library Cleanup",
@@ -360,7 +360,7 @@
       "video_path": "/home/runner/work/global-intelligence-v11-final/global-intelligence-v11-final/backend/media/drafts/internal-brief-library-cleanup.md",
       "outbox_path": null,
       "classification": {
-        "created_at": "2026-07-02T22:43:13+00:00",
+        "created_at": "2026-07-03T10:20:55+00:00",
         "project": "Internal Brief Library Cleanup",
         "mode": "autonomous_execution",
         "is_major_matter": false,
@@ -387,7 +387,7 @@
         }
       },
       "business_flow": {
-        "created_at": "2026-07-02T22:43:13+00:00",
+        "created_at": "2026-07-03T10:20:55+00:00",
         "project": "Internal Brief Library Cleanup",
         "real_work_coverage": {
           "international_trade": [
@@ -459,7 +459,7 @@
       "evidence_dossier_id": "45c6eabe5fc2ba53",
       "team_execution_package_id": "34b3ae73f65d4d44",
       "execution": {
-        "created_at": "2026-07-02T22:43:13+00:00",
+        "created_at": "2026-07-03T10:20:55+00:00",
         "project": "Internal Brief Library Cleanup",
         "mode": "autonomous_execution",
         "status": "autonomous_executed",
@@ -500,8 +500,8 @@
         "created": false,
         "reason": "approval not needed"
       },
-      "action_board_id": "3a89737ff25e7d42",
-      "action_board_path": "/home/runner/work/global-intelligence-v11-final/global-intelligence-v11-final/backend/reports/action_boards/3a89737ff25e7d42.md"
+      "action_board_id": "66ab764ddcb75c82",
+      "action_board_path": "/home/runner/work/global-intelligence-v11-final/global-intelligence-v11-final/backend/reports/action_boards/66ab764ddcb75c82.md"
     }
   ]
 }
