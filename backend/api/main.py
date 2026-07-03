@@ -53,13 +53,26 @@ from backend.comm.chat_gateway import build_chat_reply_draft, save_chat_reply_dr
 from backend.integrations.n8n_connector import N8NConnector
 from backend.workflows.system_integrity import run_integrity_check
 
+# ── v12 New Modules ──
+from backend.api.matching_routes import router as matching_router
+from backend.api.supply_chain_routes import router as supply_chain_router
+from backend.api.financial_routes import router as financial_router
+from backend.api.kg_routes import router as kg_router
+from backend.api.bi_routes import router as bi_router
+
 logger = logging.getLogger(__name__)
 
 app = FastAPI(
-    title="Global Intelligence v11",
-    version="11.0.0",
-    description="International engineering trade Cloud OS with SaaS, search, approval, and cloud automation gates.",
+    title="Global Intelligence v12",
+    version="12.0.0",
+    description="International Engineering Trade Cloud OS — full-stack AI-powered platform for cross-border B2B trade.",
 )
+
+app.include_router(matching_router)
+app.include_router(supply_chain_router)
+app.include_router(financial_router)
+app.include_router(kg_router)
+app.include_router(bi_router)
 
 app.add_middleware(
     CORSMiddleware,
@@ -113,8 +126,8 @@ async def add_process_time_header(request: Request, call_next):
 async def health_check() -> dict[str, Any]:
     return {
         "status": "healthy",
-        "version": "11.0.0",
-        "architecture": "v11-main",
+        "version": "12.0.0",
+        "architecture": "v12-full-stack",
         "agents": agent_pool.health_check(),
         "license": license_status(),
     }
