@@ -1,9 +1,9 @@
 {
   "ok": true,
-  "id": "23282682f9330db3",
-  "created_at": "2026-06-27T22:40:26.590281+00:00",
+  "id": "0849d864e7644e7c",
+  "created_at": "2026-07-02T22:43:13.553678+00:00",
   "mode": "war_room_execution_queue",
-  "war_room_id": "cbf988f37c2b1977",
+  "war_room_id": "4d987db3a65a05a8",
   "objective": "Daily v11 international engineering trade, research intelligence, investment promotion, video, customs, and project execution operating package",
   "country": "Indonesia",
   "summary": {
@@ -15,7 +15,7 @@
   },
   "tasks": [
     {
-      "id": "23282682f9330db3-01",
+      "id": "0849d864e7644e7c-01",
       "role": "research_analyst",
       "task": "Run and record source evidence for query: Daily v11 international engineering trade, research intelligence, investment promotion, video, customs, and project execution operating package Central Asia official government site:gov.kz",
       "source": "search_confirmation.government_confirmation",
@@ -33,7 +33,7 @@
       "output": "evidence_record"
     },
     {
-      "id": "23282682f9330db3-02",
+      "id": "0849d864e7644e7c-02",
       "role": "research_analyst",
       "task": "Run and record source evidence for query: Daily v11 international engineering trade, research intelligence, investment promotion, video, customs, and project execution operating package Central Asia official government site:gov.uz",
       "source": "search_confirmation.government_confirmation",
@@ -51,7 +51,7 @@
       "output": "evidence_record"
     },
     {
-      "id": "23282682f9330db3-03",
+      "id": "0849d864e7644e7c-03",
       "role": "research_analyst",
       "task": "Run and record source evidence for query: Daily v11 international engineering trade, research intelligence, investment promotion, video, customs, and project execution operating package Central Asia official government site:gov.kg",
       "source": "search_confirmation.government_confirmation",
@@ -69,7 +69,7 @@
       "output": "evidence_record"
     },
     {
-      "id": "23282682f9330db3-04",
+      "id": "0849d864e7644e7c-04",
       "role": "research_analyst",
       "task": "Run and record source evidence for query: Daily v11 international engineering trade, research intelligence, investment promotion, video, customs, and project execution operating package Central Asia official government site:tajinvest.tj",
       "source": "search_confirmation.government_confirmation",
@@ -87,7 +87,7 @@
       "output": "evidence_record"
     },
     {
-      "id": "23282682f9330db3-05",
+      "id": "0849d864e7644e7c-05",
       "role": "research_analyst",
       "task": "Run and record source evidence for query: Daily v11 international engineering trade, research intelligence, investment promotion, video, customs, and project execution operating package Central Asia ministry site:gov.kz",
       "source": "search_confirmation.government_confirmation",
@@ -105,7 +105,7 @@
       "output": "evidence_record"
     },
     {
-      "id": "23282682f9330db3-06",
+      "id": "0849d864e7644e7c-06",
       "role": "research_analyst",
       "task": "Run and record source evidence for query: Daily v11 international engineering trade, research intelligence, investment promotion, video, customs, and project execution operating package Central Asia ministry site:gov.uz",
       "source": "search_confirmation.government_confirmation",
@@ -123,7 +123,7 @@
       "output": "evidence_record"
     },
     {
-      "id": "23282682f9330db3-07",
+      "id": "0849d864e7644e7c-07",
       "role": "research_analyst",
       "task": "Run and record source evidence for query: Daily v11 international engineering trade, research intelligence, investment promotion, video, customs, and project execution operating package Central Asia ministry site:gov.kg",
       "source": "search_confirmation.government_confirmation",
@@ -141,7 +141,7 @@
       "output": "evidence_record"
     },
     {
-      "id": "23282682f9330db3-08",
+      "id": "0849d864e7644e7c-08",
       "role": "research_analyst",
       "task": "Run and record source evidence for query: Daily v11 international engineering trade, research intelligence, investment promotion, video, customs, and project execution operating package Central Asia ministry site:tajinvest.tj",
       "source": "search_confirmation.government_confirmation",
@@ -159,7 +159,7 @@
       "output": "evidence_record"
     },
     {
-      "id": "23282682f9330db3-09",
+      "id": "0849d864e7644e7c-09",
       "role": "risk_approval_officer",
       "task": "Upgrade evidence from lead-only or partial support to official confirmation before project confirmation.",
       "source": "evidence.verification_status",
@@ -186,7 +186,7 @@
       "output": "evidence_gap_report"
     },
     {
-      "id": "23282682f9330db3-10",
+      "id": "0849d864e7644e7c-10",
       "role": "project_manager",
       "task": "Open official government and procurement search URLs from the highest priority plan.",
       "source": "project_execution.next_actions",
@@ -213,7 +213,7 @@
       "output": "project_followup_item"
     },
     {
-      "id": "23282682f9330db3-11",
+      "id": "0849d864e7644e7c-11",
       "role": "project_manager",
       "task": "Attach official evidence with title, URL, snippet, source_type, and source date.",
       "source": "project_execution.next_actions",
@@ -240,7 +240,7 @@
       "output": "project_followup_item"
     },
     {
-      "id": "23282682f9330db3-12",
+      "id": "0849d864e7644e7c-12",
       "role": "project_manager",
       "task": "Confirm project owner, developer, responsible office/person, tender status, and customs impact.",
       "source": "project_execution.next_actions",
@@ -267,7 +267,7 @@
       "output": "project_followup_item"
     },
     {
-      "id": "23282682f9330db3-13",
+      "id": "0849d864e7644e7c-13",
       "role": "project_manager",
       "task": "Use the action board for team task assignment.",
       "source": "project_execution.next_actions",
@@ -294,7 +294,7 @@
       "output": "project_followup_item"
     },
     {
-      "id": "23282682f9330db3-14",
+      "id": "0849d864e7644e7c-14",
       "role": "project_manager",
       "task": "Request human approval before any external message or publication.",
       "source": "project_execution.next_actions",
@@ -321,7 +321,7 @@
       "output": "project_followup_item"
     },
     {
-      "id": "23282682f9330db3-15",
+      "id": "0849d864e7644e7c-15",
       "role": "trade_lead",
       "task": "收集海关官网、官方税则、清关文件、银行付款条件证据，并形成可执行 checklist。",
       "source": "team.roles.next_step",
@@ -337,7 +337,7 @@
       "output": "role_work_product"
     },
     {
-      "id": "23282682f9330db3-16",
+      "id": "0849d864e7644e7c-16",
       "role": "research_analyst",
       "task": "把证据分为政府/采购/企业/媒体/社交五级，记录 citation、URL、source date、relevance note。",
       "source": "team.roles.next_step",
@@ -353,7 +353,7 @@
       "output": "role_work_product"
     },
     {
-      "id": "23282682f9330db3-17",
+      "id": "0849d864e7644e7c-17",
       "role": "investment_promotion_lead",
       "task": "建立 owner/developer/investor/government authority 四类名单，并标注 evidence level。",
       "source": "team.roles.next_step",
@@ -369,7 +369,7 @@
       "output": "role_work_product"
     },
     {
-      "id": "23282682f9330db3-18",
+      "id": "0849d864e7644e7c-18",
       "role": "video_media_producer",
       "task": "生成 60 秒项目机会脚本、风险解释脚本和平台关键词，等待人工审批。",
       "source": "team.roles.next_step",
@@ -385,7 +385,7 @@
       "output": "role_work_product"
     },
     {
-      "id": "23282682f9330db3-19",
+      "id": "0849d864e7644e7c-19",
       "role": "project_manager",
       "task": "安排责任人、截止时间、会议议程、decision log 和复盘记录。",
       "source": "team.roles.next_step",
@@ -401,7 +401,7 @@
       "output": "role_work_product"
     },
     {
-      "id": "23282682f9330db3-20",
+      "id": "0849d864e7644e7c-20",
       "role": "risk_approval_officer",
       "task": "把高风险事项写入老板收件箱，审批前保持 DRAFT - Not approved for sending。",
       "source": "team.roles.next_step",
@@ -417,7 +417,7 @@
       "output": "role_work_product"
     },
     {
-      "id": "23282682f9330db3-21",
+      "id": "0849d864e7644e7c-21",
       "role": "trade_lead",
       "task": "Verify customs, HS/tariff, payment terms, Incoterms, and logistics route.",
       "source": "action_board.tasks",
@@ -434,7 +434,7 @@
       "output": "internal_draft"
     },
     {
-      "id": "23282682f9330db3-22",
+      "id": "0849d864e7644e7c-22",
       "role": "research_analyst",
       "task": "Collect government, procurement, academic, and library evidence; grade each source.",
       "source": "action_board.tasks",
@@ -451,7 +451,7 @@
       "output": "internal_draft"
     },
     {
-      "id": "23282682f9330db3-23",
+      "id": "0849d864e7644e7c-23",
       "role": "investment_promotion_lead",
       "task": "Map owner, developer, investor candidates, incentive policy, and project packaging gaps.",
       "source": "action_board.tasks",
@@ -477,7 +477,7 @@
       "output": "internal_draft"
     },
     {
-      "id": "23282682f9330db3-24",
+      "id": "0849d864e7644e7c-24",
       "role": "video_media_producer",
       "task": "Draft country-style video concept based on verified facts and comparable platform examples.",
       "source": "action_board.tasks",
@@ -503,7 +503,7 @@
       "output": "internal_draft"
     },
     {
-      "id": "23282682f9330db3-25",
+      "id": "0849d864e7644e7c-25",
       "role": "project_manager",
       "task": "Prepare meeting agenda, owner decision queue, deadlines, and next internal follow-up.",
       "source": "action_board.tasks",
@@ -520,7 +520,7 @@
       "output": "internal_draft"
     },
     {
-      "id": "23282682f9330db3-26",
+      "id": "0849d864e7644e7c-26",
       "role": "risk_approval_officer",
       "task": "Keep formal outreach, quotation, payment, contract, and public publishing blocked until approval.",
       "source": "action_board.tasks",
@@ -547,7 +547,7 @@
       "output": "internal_draft"
     },
     {
-      "id": "23282682f9330db3-27",
+      "id": "0849d864e7644e7c-27",
       "role": "video_media_producer",
       "task": "Study platform examples and draft original video angle for YouTube: Indonesia infrastructure Daily v11 international engineering trade, research intelligence, investment promotion, video, customs, and project execution operating package case study short video",
       "source": "video_center.platform_searches",
@@ -576,7 +576,7 @@
       "output": "draft_video_brief"
     },
     {
-      "id": "23282682f9330db3-28",
+      "id": "0849d864e7644e7c-28",
       "role": "video_media_producer",
       "task": "Study platform examples and draft original video angle for TikTok: Indonesia infrastructure Daily v11 international engineering trade, research intelligence, investment promotion, video, customs, and project execution operating package case study short video",
       "source": "video_center.platform_searches",
@@ -605,7 +605,7 @@
       "output": "draft_video_brief"
     },
     {
-      "id": "23282682f9330db3-29",
+      "id": "0849d864e7644e7c-29",
       "role": "video_media_producer",
       "task": "Study platform examples and draft original video angle for Douyin: Indonesia infrastructure Daily v11 international engineering trade, research intelligence, investment promotion, video, customs, and project execution operating package case study short video",
       "source": "video_center.platform_searches",
@@ -634,7 +634,7 @@
       "output": "draft_video_brief"
     },
     {
-      "id": "23282682f9330db3-30",
+      "id": "0849d864e7644e7c-30",
       "role": "video_media_producer",
       "task": "Study platform examples and draft original video angle for Google Video: Indonesia infrastructure Daily v11 international engineering trade, research intelligence, investment promotion, video, customs, and project execution operating package case study short video",
       "source": "video_center.platform_searches",
@@ -663,7 +663,7 @@
       "output": "draft_video_brief"
     },
     {
-      "id": "23282682f9330db3-31",
+      "id": "0849d864e7644e7c-31",
       "role": "video_media_producer",
       "task": "Study platform examples and draft original video angle for YouTube: Indonesia infrastructure Daily v11 international engineering trade, research intelligence, investment promotion, video, customs, and project execution operating package project progress short video",
       "source": "video_center.platform_searches",
@@ -692,7 +692,7 @@
       "output": "draft_video_brief"
     },
     {
-      "id": "23282682f9330db3-32",
+      "id": "0849d864e7644e7c-32",
       "role": "video_media_producer",
       "task": "Study platform examples and draft original video angle for TikTok: Indonesia infrastructure Daily v11 international engineering trade, research intelligence, investment promotion, video, customs, and project execution operating package project progress short video",
       "source": "video_center.platform_searches",
