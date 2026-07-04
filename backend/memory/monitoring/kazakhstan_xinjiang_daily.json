@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-04T13:21:27+00:00",
+  "generated_at": "2026-07-04T13:42:41+00:00",
   "date": "2026-07-04",
   "draft_notice": "DRAFT - Not approved for sending",
   "source_status": {
@@ -29,6 +29,95 @@
     "Xinjiang border port customs and freight monitoring",
     "agricultural machinery, agricultural drones, organic and liquid fertilizer"
   ],
+  "work_buddy_collection_matrix": [
+    {
+      "collector": "official_public_pages",
+      "cadence": "30min",
+      "scope": "government plans, procurement notices, investment agencies, port and energy authorities",
+      "allowed_methods": [
+        "public web pages",
+        "RSS",
+        "approved search APIs",
+        "subscribed data APIs"
+      ],
+      "blocked_methods": [
+        "paywall bypass",
+        "credential sharing",
+        "website vulnerability exploitation",
+        "unauthorized scraping"
+      ]
+    },
+    {
+      "collector": "customs_and_port_watch",
+      "cadence": "daily",
+      "scope": "Alashankou, Horgos, Jeminay, Yili Prefecture ports, southern Xinjiang ports, HS code and freight signals",
+      "allowed_methods": [
+        "official customs publications",
+        "approved API",
+        "licensed customs-data provider"
+      ],
+      "blocked_methods": [
+        "unlicensed database access",
+        "source impersonation",
+        "manual figure fabrication"
+      ]
+    },
+    {
+      "collector": "project_feasibility_intake",
+      "cadence": "daily",
+      "scope": "mining, metallurgy, thermal power, Caspian ports, oil refining, agriculture machinery and fertilizer",
+      "allowed_methods": [
+        "evidence dossier",
+        "source grading",
+        "owner/developer/procurement verification"
+      ],
+      "blocked_methods": [
+        "external commitment before approval",
+        "quotation before human decision",
+        "treating leads as confirmed projects"
+      ]
+    },
+    {
+      "collector": "content_draft_pipeline",
+      "cadence": "on demand",
+      "scope": "internal brief, feasibility draft, video/script draft and social media draft",
+      "allowed_methods": [
+        "DRAFT output",
+        "policy check",
+        "human approval queue"
+      ],
+      "blocked_methods": [
+        "automatic public publishing",
+        "external outreach",
+        "customer reply without approval"
+      ]
+    }
+  ],
+  "skill_assessment_items": [
+    "Search expansion quality across Chinese, English, Russian and Kazakhstan/Qazaqstan naming variants",
+    "Official-source recognition for government, customs, procurement, port, energy and investment agencies",
+    "Feasibility report structure: owner, scope, evidence, economics, logistics, compliance, risks and approval gate",
+    "Customs-data discipline: HS code, port, period, quantity, value, grade, origin/destination and source URL",
+    "Risk boundary discipline: sanctions, export control, customs conclusion, quotation, payment, contract and public publishing"
+  ],
+  "work_buddy_source_notes": [
+    "Imported planning concepts from Work Buddy docs: collection matrix, market analysis, architecture optimization and social draft pipeline.",
+    "Automatic publishing concepts are converted to draft-only internal workflow until human approval.",
+    "Cloud or GitHub Actions scheduling is required for operation while the local computer is powered off."
+  ],
+  "publication_policy": {
+    "mode": "draft_only",
+    "external_publish_allowed": false,
+    "human_approval_required_for": [
+      "public publishing",
+      "external outreach",
+      "quotation",
+      "payment",
+      "contract",
+      "customs conclusion",
+      "government or infrastructure commitment"
+    ]
+  },
   "artifacts": {
     "daily_log": "C:\\Users\\Surface\\Documents\\New project\\global-intelligence-v11\\backend\\reports\\daily_logs\\2026-07-04.md",
     "news_update_markdown": "C:\\Users\\Surface\\Documents\\New project\\global-intelligence-v11\\backend\\reports\\news_updates\\2026-07-04.md",
