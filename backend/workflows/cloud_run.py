@@ -127,16 +127,37 @@ def build_cloud_run(
 
     if upload:
         emit_progress("Uploading local project to GitHub and triggering acceptance workflow.")
-        upload_result = upload_and_trigger(
-            repository=repository,
-            token=token,
-            branch=branch,
-            confirm_upload=confirm_upload,
-            trigger=trigger,
-        )
+        try:
+            upload_result = upload_and_trigger(
+                repository=repository,
+                token=token,
+                branch=branch,
+                confirm_upload=confirm_upload,
+                trigger=trigger,
+            )
+        except KeyboardInterrupt:
+            emit_progress("Upload was interrupted before completion.")
+            upload_result = {
+                "ok": False,
+                "stage": "interrupted",
+                "repository": repository,
+                "branch": branch,
+                "reason": "Cloud upload was interrupted before completion.",
+            }
+        except Exception as exc:
+            emit_progress(f"Upload path raised an exception: {exc}")
+            upload_result = {
+                "ok": False,
+                "stage": "upload_exception",
+                "repository": repository,
+                "branch": branch,
+                "reason": f"Unexpected upload exception: {exc}",
+            }
         result["upload_and_acceptance"] = upload_result
         result["ok"] = bool(upload_result.get("ok"))
         result["stage"] = "accepted" if result["ok"] else "upload_or_acceptance_failed"
+        if not result["ok"] and not result.get("reason"):
+            result["reason"] = upload_result.get("reason")
         return result
 
     emit_progress("Connection is not ready for upload/trigger yet.")
