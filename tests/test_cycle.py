@@ -38,7 +38,7 @@ from core.operator import classify_matter
 from core.planner import plan_actions
 from core.report import build_headquarters_report, build_owner_inbox
 from comm.notification import approval_message, notify_major_matter
-from intelligence.kazakhstan_xinjiang_monitor import build_monitoring_summary
+from intelligence.kazakhstan_xinjiang_monitor import PROJECT_LEADS, build_monitoring_summary
 
 
 class OperatingCycleTests(unittest.TestCase):
@@ -250,7 +250,8 @@ class OperatingCycleTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as temp_dir:
             temp_root = Path(temp_dir)
             summary = build_monitoring_summary(temp_root)
-            self.assertEqual(summary["project_count"], 5)
+            self.assertEqual(summary["project_count"], len(PROJECT_LEADS))
+            self.assertGreaterEqual(summary["project_count"], 7)
             self.assertFalse(summary["source_status"]["live_fetch"])
             self.assertTrue((temp_root / "reports" / "daily_logs" / f"{summary['date']}.md").is_file())
             self.assertTrue((temp_root / "reports" / "news_updates" / f"{summary['date']}.json").is_file())
