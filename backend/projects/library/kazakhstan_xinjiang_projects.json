@@ -1,9 +1,5 @@
 {
-<<<<<<< HEAD
-  "generated_at": "2026-07-04T12:40:57+00:00",
-=======
-  "generated_at": "2026-07-04T09:31:13+00:00",
->>>>>>> cda5a5b39b23774ead0c8ff30edb3ceeb950362b
+  "generated_at": "2026-07-04T13:21:27+00:00",
   "draft_notice": "DRAFT - Not approved for sending",
   "source_status": {
     "live_fetch": false,
@@ -42,11 +38,7 @@
         "site:invest.gov.kz Kazakhstan mining metallurgy project",
         "Kazakhstan mine expansion ore logistics railway port EPC"
       ],
-<<<<<<< HEAD
-      "updated_at": "2026-07-04T12:40:57+00:00"
-=======
-      "updated_at": "2026-07-04T09:31:13+00:00"
->>>>>>> cda5a5b39b23774ead0c8ff30edb3ceeb950362b
+      "updated_at": "2026-07-04T13:21:27+00:00"
     },
     {
       "id": "KZ-MET-001",
@@ -70,11 +62,7 @@
         "site:invest.gov.kz Kazakhstan smelter steel plant investment",
         "Kazakhstan furnace raw material handling environmental retrofit"
       ],
-<<<<<<< HEAD
-      "updated_at": "2026-07-04T12:40:57+00:00"
-=======
-      "updated_at": "2026-07-04T09:31:13+00:00"
->>>>>>> cda5a5b39b23774ead0c8ff30edb3ceeb950362b
+      "updated_at": "2026-07-04T13:21:27+00:00"
     },
     {
       "id": "KZ-PWR-001",
@@ -99,11 +87,7 @@
         "site:primeminister.kz Kazakhstan power plant modernization",
         "Kazakhstan coal handling wagon tippler stacker conveyor power plant"
       ],
-<<<<<<< HEAD
-      "updated_at": "2026-07-04T12:40:57+00:00"
-=======
-      "updated_at": "2026-07-04T09:31:13+00:00"
->>>>>>> cda5a5b39b23774ead0c8ff30edb3ceeb950362b
+      "updated_at": "2026-07-04T13:21:27+00:00"
     },
     {
       "id": "KZ-CAS-001",
@@ -127,11 +111,7 @@
         "site:gov.kz Kuryk port infrastructure Kazakhstan",
         "Kazakhstan Caspian port bulk cargo ore loading equipment"
       ],
-<<<<<<< HEAD
-      "updated_at": "2026-07-04T12:40:57+00:00"
-=======
-      "updated_at": "2026-07-04T09:31:13+00:00"
->>>>>>> cda5a5b39b23774ead0c8ff30edb3ceeb950362b
+      "updated_at": "2026-07-04T13:21:27+00:00"
     },
     {
       "id": "KZ-OIL-001",
@@ -156,11 +136,7 @@
         "site:invest.gov.kz Kazakhstan petrochemical project",
         "Kazakhstan refinery storage loading utilities environmental equipment"
       ],
-<<<<<<< HEAD
-      "updated_at": "2026-07-04T12:40:57+00:00"
-=======
-      "updated_at": "2026-07-04T09:31:13+00:00"
->>>>>>> cda5a5b39b23774ead0c8ff30edb3ceeb950362b
+      "updated_at": "2026-07-04T13:21:27+00:00"
     },
     {
       "id": "KZ-INF-001",
@@ -185,11 +161,7 @@
         "site:primeminister.kz Kazakhstan infrastructure development plan",
         "Kazakhstan five year ten year plan railway energy port industrial park"
       ],
-<<<<<<< HEAD
-      "updated_at": "2026-07-04T12:40:57+00:00"
-=======
-      "updated_at": "2026-07-04T09:31:13+00:00"
->>>>>>> cda5a5b39b23774ead0c8ff30edb3ceeb950362b
+      "updated_at": "2026-07-04T13:21:27+00:00"
     },
     {
       "id": "KZ-AGR-001",
@@ -213,11 +185,7 @@
         "Kazakhstan agricultural drones fertilizer import demand",
         "Kazakhstan organic fertilizer liquid fertilizer plant growth regulator"
       ],
-<<<<<<< HEAD
-      "updated_at": "2026-07-04T12:40:57+00:00"
-=======
-      "updated_at": "2026-07-04T09:31:13+00:00"
->>>>>>> cda5a5b39b23774ead0c8ff30edb3ceeb950362b
+      "updated_at": "2026-07-04T13:21:27+00:00"
     }
   ],
   "customs_watch_fields": [
