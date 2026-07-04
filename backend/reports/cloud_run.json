@@ -8,7 +8,7 @@
     "connection_check": true,
     "create_repo": false,
     "upload": false,
-    "trigger": true
+    "trigger": false
   },
   "connection": {
     "ok": false,
