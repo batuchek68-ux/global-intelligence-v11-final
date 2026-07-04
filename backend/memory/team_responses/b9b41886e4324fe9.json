@@ -1,11 +1,7 @@
 {
   "ok": true,
   "id": "b9b41886e4324fe9",
-<<<<<<< HEAD
-  "created_at": "2026-07-04T12:40:56.965468+00:00",
-=======
-  "created_at": "2026-07-04T09:31:13.543866+00:00",
->>>>>>> cda5a5b39b23774ead0c8ff30edb3ceeb950362b
+  "created_at": "2026-07-04T13:14:31.486379+00:00",
   "question": "How should v11 operate today as an international engineering trade, research intelligence, investment promotion, video, and project execution team?",
   "country": "Indonesia",
   "industries": [
@@ -315,11 +311,7 @@
     },
     "tasks": [
       {
-<<<<<<< HEAD
-        "id": "5b2eb80785a68d35-trade",
-=======
-        "id": "62ce1406b7e68df6-trade",
->>>>>>> cda5a5b39b23774ead0c8ff30edb3ceeb950362b
+        "id": "da7d6bea0bfc7bae-trade",
         "role": "trade_lead",
         "role_label": "International trade lead",
         "title": "Verify customs, HS/tariff, payment terms, Incoterms, and logistics route.",
@@ -334,11 +326,7 @@
         "output": "internal_draft"
       },
       {
-<<<<<<< HEAD
-        "id": "5b2eb80785a68d35-research",
-=======
-        "id": "62ce1406b7e68df6-research",
->>>>>>> cda5a5b39b23774ead0c8ff30edb3ceeb950362b
+        "id": "da7d6bea0bfc7bae-research",
         "role": "research_analyst",
         "role_label": "Research intelligence analyst",
         "title": "Collect government, procurement, academic, and library evidence; grade each source.",
@@ -353,11 +341,7 @@
         "output": "internal_draft"
       },
       {
-<<<<<<< HEAD
-        "id": "5b2eb80785a68d35-investment",
-=======
-        "id": "62ce1406b7e68df6-investment",
->>>>>>> cda5a5b39b23774ead0c8ff30edb3ceeb950362b
+        "id": "da7d6bea0bfc7bae-investment",
         "role": "investment_promotion_lead",
         "role_label": "Investment promotion lead",
         "title": "Map owner, developer, investor candidates, incentive policy, and project packaging gaps.",
@@ -371,11 +355,7 @@
         "output": "internal_draft"
       },
       {
-<<<<<<< HEAD
-        "id": "5b2eb80785a68d35-video",
-=======
-        "id": "62ce1406b7e68df6-video",
->>>>>>> cda5a5b39b23774ead0c8ff30edb3ceeb950362b
+        "id": "da7d6bea0bfc7bae-video",
         "role": "video_media_producer",
         "role_label": "Video and media producer",
         "title": "Draft country-style video concept based on verified facts and comparable platform examples.",
@@ -389,11 +369,7 @@
         "output": "internal_draft"
       },
       {
-<<<<<<< HEAD
-        "id": "5b2eb80785a68d35-pm",
-=======
-        "id": "62ce1406b7e68df6-pm",
->>>>>>> cda5a5b39b23774ead0c8ff30edb3ceeb950362b
+        "id": "da7d6bea0bfc7bae-pm",
         "role": "project_manager",
         "role_label": "Project execution manager",
         "title": "Prepare meeting agenda, owner decision queue, deadlines, and next internal follow-up.",
@@ -408,11 +384,7 @@
         "output": "internal_draft"
       },
       {
-<<<<<<< HEAD
-        "id": "5b2eb80785a68d35-risk",
-=======
-        "id": "62ce1406b7e68df6-risk",
->>>>>>> cda5a5b39b23774ead0c8ff30edb3ceeb950362b
+        "id": "da7d6bea0bfc7bae-risk",
         "role": "risk_approval_officer",
         "role_label": "Risk and approval officer",
         "title": "Keep formal outreach, quotation, payment, contract, and public publishing blocked until approval.",
@@ -430,11 +402,7 @@
   },
   "quality_score": {
     "ok": true,
-<<<<<<< HEAD
-    "created_at": "2026-07-04T12:40:56.965468+00:00",
-=======
-    "created_at": "2026-07-04T09:31:13.543862+00:00",
->>>>>>> cda5a5b39b23774ead0c8ff30edb3ceeb950362b
+    "created_at": "2026-07-04T13:14:31.486379+00:00",
     "overall_score": 99,
     "verdict": "excellent",
     "dimensions": {
