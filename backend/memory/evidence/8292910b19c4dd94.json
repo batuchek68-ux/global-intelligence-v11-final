@@ -1,7 +1,11 @@
 {
   "ok": true,
   "id": "8292910b19c4dd94",
+<<<<<<< HEAD
   "created_at": "2026-07-04T12:40:56.424426+00:00",
+=======
+  "created_at": "2026-07-04T09:31:13.443721+00:00",
+>>>>>>> cda5a5b39b23774ead0c8ff30edb3ceeb950362b
   "project": "Demo Port Logistics Modernization",
   "country": "Indonesia",
   "claim": "Demo Port Logistics Modernization project status, stakeholders, customs and trade risk",
@@ -34,7 +38,11 @@
         "delivery",
         "customs"
       ],
+<<<<<<< HEAD
       "collected_at": "2026-07-04T12:40:56+00:00"
+=======
+      "collected_at": "2026-07-04T09:31:13+00:00"
+>>>>>>> cda5a5b39b23774ead0c8ff30edb3ceeb950362b
     }
   ],
   "decision_rule": "Official government/customs/procurement evidence is required before project confirmation, investment promotion, quotation, customer commitment, or public publishing.",
