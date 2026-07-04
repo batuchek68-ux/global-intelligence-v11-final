@@ -162,6 +162,51 @@ CUSTOMS_FIELDS = [
     "date_period", "port", "customs_district", "trade_mode", "logistics_mode", "hs_code", "commodity", "quantity", "value", "unit_price", "quality_or_grade", "origin", "destination", "source_url", "confidence", "opportunity_signal", "risk_signal",
 ]
 
+WORK_BUDDY_COLLECTION_MATRIX = [
+    {
+        "collector": "official_public_pages",
+        "cadence": "30min",
+        "scope": "government plans, procurement notices, investment agencies, port and energy authorities",
+        "allowed_methods": ["public web pages", "RSS", "approved search APIs", "subscribed data APIs"],
+        "blocked_methods": ["paywall bypass", "credential sharing", "website vulnerability exploitation", "unauthorized scraping"],
+    },
+    {
+        "collector": "customs_and_port_watch",
+        "cadence": "daily",
+        "scope": "Alashankou, Horgos, Jeminay, Yili Prefecture ports, southern Xinjiang ports, HS code and freight signals",
+        "allowed_methods": ["official customs publications", "approved API", "licensed customs-data provider"],
+        "blocked_methods": ["unlicensed database access", "source impersonation", "manual figure fabrication"],
+    },
+    {
+        "collector": "project_feasibility_intake",
+        "cadence": "daily",
+        "scope": "mining, metallurgy, thermal power, Caspian ports, oil refining, agriculture machinery and fertilizer",
+        "allowed_methods": ["evidence dossier", "source grading", "owner/developer/procurement verification"],
+        "blocked_methods": ["external commitment before approval", "quotation before human decision", "treating leads as confirmed projects"],
+    },
+    {
+        "collector": "content_draft_pipeline",
+        "cadence": "on demand",
+        "scope": "internal brief, feasibility draft, video/script draft and social media draft",
+        "allowed_methods": ["DRAFT output", "policy check", "human approval queue"],
+        "blocked_methods": ["automatic public publishing", "external outreach", "customer reply without approval"],
+    },
+]
+
+SKILL_ASSESSMENT_ITEMS = [
+    "Search expansion quality across Chinese, English, Russian and Kazakhstan/Qazaqstan naming variants",
+    "Official-source recognition for government, customs, procurement, port, energy and investment agencies",
+    "Feasibility report structure: owner, scope, evidence, economics, logistics, compliance, risks and approval gate",
+    "Customs-data discipline: HS code, port, period, quantity, value, grade, origin/destination and source URL",
+    "Risk boundary discipline: sanctions, export control, customs conclusion, quotation, payment, contract and public publishing",
+]
+
+WORK_BUDDY_SOURCE_NOTES = [
+    "Imported planning concepts from Work Buddy docs: collection matrix, market analysis, architecture optimization and social draft pipeline.",
+    "Automatic publishing concepts are converted to draft-only internal workflow until human approval.",
+    "Cloud or GitHub Actions scheduling is required for operation while the local computer is powered off.",
+]
+
 
 def _today() -> str:
     return datetime.now().date().isoformat()
@@ -176,6 +221,11 @@ def _append_audit(root: Path, action: str, result: str, note: str) -> None:
 
 
 def _render_daily_log(date: str, summary: dict[str, Any]) -> str:
+    matrix = "\n".join(
+        f"- {item['collector']} ({item['cadence']}): {item['scope']}"
+        for item in summary.get("work_buddy_collection_matrix", [])
+    )
+    assessments = "\n".join(f"- {item}" for item in summary.get("skill_assessment_items", []))
     return f"""# Kazakhstan and Xinjiang Daily Monitoring Log
 
 {DRAFT_NOTICE}
@@ -192,6 +242,15 @@ Build a daily unattended evidence chain for Kazakhstan project screening, Xinjia
 - Maintain Xinjiang customs watch fields for Alashankou, Horgos, Jeminay, Yili Prefecture ports and southern Xinjiang ports.
 - Record whether live news/customs APIs are configured before treating figures as current facts.
 - Keep all external-use outputs as drafts pending human review.
+- Reuse Work Buddy collection matrix for internal source planning, project intake and report drafting.
+
+## Work Buddy Collection Matrix
+
+{matrix}
+
+## Skill Assessment
+
+{assessments}
 
 ## Output Chain
 
@@ -205,6 +264,7 @@ Build a daily unattended evidence chain for Kazakhstan project screening, Xinjia
 def _render_news_update(summary: dict[str, Any]) -> str:
     live = summary["source_status"]
     sectors = "\n".join(f"- {item}" for item in FOCUS_SECTORS)
+    notes = "\n".join(f"- {item}" for item in summary.get("work_buddy_source_notes", []))
     return f"""# Kazakhstan / Xinjiang News and Market Update
 
 {DRAFT_NOTICE}
@@ -229,6 +289,10 @@ Generated: {summary["generated_at"]}
 ## Analyst Note
 
 Today's v11 chain creates the report and database even when no live feed is configured. Real-time statistics must come from official customs publications, subscribed customs-data providers, or approved APIs.
+
+## Work Buddy Integration Notes
+
+{notes}
 """
 
 
@@ -266,6 +330,7 @@ def build_monitoring_summary(root: Path) -> dict[str, Any]:
         "required_fields": CUSTOMS_FIELDS,
         "records": [],
         "source_status": source_status,
+        "work_buddy_collection_matrix": WORK_BUDDY_COLLECTION_MATRIX,
         "next_action": "Configure official customs publication source, approved crawler, or subscribed customs-data API before daily volume statistics are treated as factual.",
     }
     project_db_path = root / "projects" / "library" / "kazakhstan_xinjiang_projects.json"
@@ -280,6 +345,21 @@ def build_monitoring_summary(root: Path) -> dict[str, Any]:
         "projects": list(existing_projects.values()),
         "customs_watch_fields": CUSTOMS_FIELDS,
         "focus_ports": XINJIANG_PORTS,
+        "work_buddy_collection_matrix": WORK_BUDDY_COLLECTION_MATRIX,
+        "skill_assessment_items": SKILL_ASSESSMENT_ITEMS,
+        "publication_policy": {
+            "mode": "draft_only",
+            "external_publish_allowed": False,
+            "human_approval_required_for": [
+                "public publishing",
+                "external outreach",
+                "quotation",
+                "payment",
+                "contract",
+                "customs conclusion",
+                "government or infrastructure commitment",
+            ],
+        },
     }
     summary = {
         "generated_at": generated_at,
@@ -289,6 +369,10 @@ def build_monitoring_summary(root: Path) -> dict[str, Any]:
         "project_count": len(project_library["projects"]),
         "customs_port_count": len(XINJIANG_PORTS),
         "focus_sectors": FOCUS_SECTORS,
+        "work_buddy_collection_matrix": WORK_BUDDY_COLLECTION_MATRIX,
+        "skill_assessment_items": SKILL_ASSESSMENT_ITEMS,
+        "work_buddy_source_notes": WORK_BUDDY_SOURCE_NOTES,
+        "publication_policy": project_library["publication_policy"],
         "artifacts": {
             "daily_log": str(root / "reports" / "daily_logs" / f"{date}.md"),
             "news_update_markdown": str(root / "reports" / "news_updates" / f"{date}.md"),
