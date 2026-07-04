@@ -1,6 +1,10 @@
 {
   "ok": true,
+<<<<<<< HEAD
   "created_at": "2026-07-04T12:57:38.862788+00:00",
+=======
+  "created_at": "2026-07-04T09:31:13.616681+00:00",
+>>>>>>> cda5a5b39b23774ead0c8ff30edb3ceeb950362b
   "status": "human_review_required",
   "mission": "vertical industry intelligence brain plus verified search plus project execution system",
   "command_center": {
@@ -17,6 +21,7 @@
     "answer_score": 80,
     "answer_score_verdict": "usable",
     "intelligence_keywords": 211,
+<<<<<<< HEAD
     "latest_intelligence_brief": "C:\\Users\\Surface\\Documents\\New project\\global-intelligence-v11\\backend\\reports\\intelligence_briefs\\2026-07-04.md",
     "latest_video_center": "C:\\Users\\Surface\\Documents\\New project\\global-intelligence-v11\\backend\\reports\\video_center\\video_center_2026-07-04.json",
     "team_execution_reports": 4,
@@ -27,6 +32,18 @@
     "latest_action_board_status": "pending_owner",
     "latest_action_board_tasks": 6,
     "team_responses": 51,
+=======
+    "latest_intelligence_brief": "/home/runner/work/global-intelligence-v11-final/global-intelligence-v11-final/backend/reports/intelligence_briefs/2026-07-04.md",
+    "latest_video_center": "/home/runner/work/global-intelligence-v11-final/global-intelligence-v11-final/backend/reports/video_center/video_center_2026-07-04.json",
+    "team_execution_reports": 4,
+    "evidence_dossiers": 4,
+    "latest_evidence_status": "partially_supported",
+    "latest_evidence_confidence": 84,
+    "action_boards": 417,
+    "latest_action_board_status": "pending_owner",
+    "latest_action_board_tasks": 6,
+    "team_responses": 52,
+>>>>>>> cda5a5b39b23774ead0c8ff30edb3ceeb950362b
     "latest_team_response_score": 99,
     "latest_team_response_mode": "team_response_pack",
     "war_rooms": 26,
@@ -36,7 +53,11 @@
     "latest_war_room_search_gate": "lead_only",
     "latest_war_room_promotion_gate": "evidence_review_required",
     "latest_war_room_external_use": false,
+<<<<<<< HEAD
     "war_room_execution_queues": 134,
+=======
+    "war_room_execution_queues": 133,
+>>>>>>> cda5a5b39b23774ead0c8ff30edb3ceeb950362b
     "latest_war_room_queue_mode": "war_room_execution_queue",
     "latest_war_room_queue_tasks": 31,
     "latest_war_room_queue_open": 22,
