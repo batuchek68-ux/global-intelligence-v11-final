@@ -1,11 +1,11 @@
-# v11 Team Response Pack: Kazakhstan engineering trade project customs investment promotion video
+# v11 Team Response Pack: 如何确认哈萨克斯坦工程贸易项目的海关信息、项目负责人、招商价值和视频传播方案？
 
 DRAFT - internal team response, not approved for external sending
 
 ## Executive Answer
 
 结论: 可以作为内部推进依据；对外使用仍需要人工审批。
-问题: Kazakhstan engineering trade project customs investment promotion video
+问题: 如何确认哈萨克斯坦工程贸易项目的海关信息、项目负责人、招商价值和视频传播方案？
 国家/地区: Kazakhstan
 证据状态: officially_supported；置信度 98；官方证据 1 条。
 任务状态: pending_owner；需要处理 6 项任务；阻断 3 项高风险动作。
@@ -20,7 +20,7 @@ DRAFT - internal team response, not approved for external sending
 - Next step: 收集海关官网、官方税则、清关文件、银行付款条件证据，并形成可执行 checklist。
 
 ### 科研情报分析
-- Contribution: 优先搜索 official government、procurement、academic paper、library report 来源；第一条官方检索式: Kazakhstan engineering trade project customs investment promotion video Kazakhstan EPC site:gov.kz
+- Contribution: 优先搜索 official government、procurement、academic paper、library report 来源；第一条官方检索式: 如何确认哈萨克斯坦工程贸易项目的海关信息、项目负责人、招商价值和视频传播方案？ Kazakhstan EPC site:gov.kz
 - Next step: 把证据分为政府/采购/企业/媒体/社交五级，记录 citation、URL、source date、relevance note。
 
 ### 招商引资负责人
