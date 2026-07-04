@@ -1,9 +1,15 @@
 # GitHub Cloud Acceptance
 
 - Status: PASS
+<<<<<<< HEAD
 - Generated: 2026-07-04T12:54:47.618341+00:00
 - Repository: local
 - Run id: local
+=======
+- Generated: 2026-07-04T09:31:13.743847+00:00
+- Repository: batuchek68-ux/global-intelligence-v11-final
+- Run id: 28701990870
+>>>>>>> cda5a5b39b23774ead0c8ff30edb3ceeb950362b
 
 ## Command Model
 
@@ -29,6 +35,7 @@
 - video_center_files: 12
 - team_execution_reports: 4
 - evidence_dossiers: 4
+<<<<<<< HEAD
 - latest_evidence_status: officially_supported
 - action_boards: 418
 - latest_action_board_status: pending_owner
@@ -38,6 +45,17 @@
 - war_room_execution_queues: 133
 - latest_war_room_queue_tasks: 31
 - latest_war_room_queue_blocked: 9
+=======
+- latest_evidence_status: partially_supported
+- action_boards: 417
+- latest_action_board_status: pending_owner
+- team_responses: 52
+- latest_team_response_score: 99
+- war_rooms: 26
+- war_room_execution_queues: 133
+- latest_war_room_queue_tasks: 32
+- latest_war_room_queue_blocked: 10
+>>>>>>> cda5a5b39b23774ead0c8ff30edb3ceeb950362b
 - latest_war_room_score: 99
 - latest_war_room_mode: industry_war_room
 - search_source_entries: 11
@@ -101,6 +119,7 @@
 - PASS `v11_intelligence:keyword_bank_and_brief` - keywords=211, briefs=12
 - PASS `v11_video:center_generated` - video_files=12, platform_searches=120
 - PASS `v11_team_execution:packages_generated` - team_reports=4, team_memory=4, cases=2
+<<<<<<< HEAD
 - PASS `v11_evidence:verification_dossiers` - evidence_json=5, evidence_reports=5, latest_status=officially_supported
 - PASS `v11_action_board:execution_tasks` - action_json=419, action_reports=419, latest_tasks=6, latest_status=pending_owner
 - PASS `v11_team_response:team_answer_pack` - team_response_json=52, score=99, roles=6
@@ -109,3 +128,13 @@
 - PASS `v11_war_room:vertical_team_operating_package` - latest=industry_war_room, saved_json=26, saved_reports=26, mode=industry_war_room, search_gate=lead_only, promotion=lead_only, roles=6, video=12, score=99
 - PASS `v11_war_room_execution:queue_tracks_work` - queues=133, reports=133, mode=war_room_execution_queue, tasks=31, open=22, blocked=9, approval=12
 - PASS `v11_mission_control:operating_brief` - status=human_review_required, benchmark=50, customs=True, evidence=4, boards=416, responses=50, war_rooms=25, queues=131, queue_tasks=32, war_score=99, search_gate=lead_only, promotion_gate=draft_promotion_ready
+=======
+- PASS `v11_evidence:verification_dossiers` - evidence_json=5, evidence_reports=5, latest_status=partially_supported
+- PASS `v11_action_board:execution_tasks` - action_json=418, action_reports=418, latest_tasks=6, latest_status=pending_owner
+- PASS `v11_team_response:team_answer_pack` - team_response_json=53, score=99, roles=6
+- PASS `v11_search:source_readiness_and_confirmation_gate` - sources=11, manual=11, gate=lead_only, required=customs_trade,government_confirmation,procurement_tender, blocked=6
+- PASS `v11_project:promotion_readiness_gate` - weak=lead_only, official=draft_promotion_ready, external=False, library_total=2, draft_ready=0, lead_only=1
+- PASS `v11_war_room:vertical_team_operating_package` - latest=industry_war_room, saved_json=26, saved_reports=26, mode=industry_war_room, search_gate=lead_only, promotion=lead_only, roles=6, video=12, score=99
+- PASS `v11_war_room_execution:queue_tracks_work` - queues=133, reports=133, mode=war_room_execution_queue, tasks=32, open=22, blocked=10, approval=13
+- PASS `v11_mission_control:operating_brief` - status=human_review_required, benchmark=50, customs=True, evidence=4, boards=417, responses=52, war_rooms=26, queues=133, queue_tasks=32, war_score=99, search_gate=lead_only, promotion_gate=draft_promotion_ready
+>>>>>>> cda5a5b39b23774ead0c8ff30edb3ceeb950362b
