@@ -20,6 +20,10 @@ REPORT_RELATIVE = "reports/cloud_run.json"
 REPORT = ROOT / REPORT_RELATIVE
 
 
+def emit_progress(message: str) -> None:
+    print(f"[cloud-run] {message}", flush=True)
+
+
 def missing_configuration(repository: str | None, token: str | None, token_source_name: str = "unknown") -> dict:
     missing = []
     if not token:
@@ -73,9 +77,12 @@ def build_cloud_run(
         },
     }
 
+    emit_progress(f"Starting cloud run for {repository} on branch {branch}.")
+    emit_progress("Running GitHub connection check.")
     connection = build_connection_check(repository, token, token_source_name=token_source_name)
     result["connection"] = connection
     if not connection.get("ok") and connection.get("stage") == "token":
+        emit_progress("Authentication failed during GitHub connection check.")
         result["ok"] = False
         result["stage"] = "authentication_failed"
         result["reason"] = (
@@ -83,8 +90,13 @@ def build_cloud_run(
             "or lacks access. Run with -PromptToken and paste a newly generated token."
         )
         return result
+    if not connection.get("ok"):
+        emit_progress(f"Connection check blocked at stage: {connection.get('stage')}.")
+    else:
+        emit_progress("GitHub connection check passed.")
 
     if connection.get("ok") and trigger and not upload and not create_repo:
+        emit_progress("Dispatching cloud acceptance workflow without upload.")
         acceptance = trigger_cloud_acceptance(repository=repository, token=token, ref=branch)
         result["acceptance"] = acceptance
         result["ok"] = bool(acceptance.get("ok"))
@@ -92,11 +104,13 @@ def build_cloud_run(
         return result
 
     if connection.get("ok") and not trigger and not upload and not create_repo:
+        emit_progress("Connection is ready. No upload or workflow trigger requested.")
         result["ok"] = True
         result["stage"] = "ready"
         return result
 
     if create_repo:
+        emit_progress("Creating repository if needed, then uploading and triggering acceptance.")
         create_upload = create_upload_and_trigger(
             repository=repository,
             token=token,
@@ -112,6 +126,7 @@ def build_cloud_run(
         return result
 
     if upload:
+        emit_progress("Uploading local project to GitHub and triggering acceptance workflow.")
         upload_result = upload_and_trigger(
             repository=repository,
             token=token,
@@ -124,6 +139,7 @@ def build_cloud_run(
         result["stage"] = "accepted" if result["ok"] else "upload_or_acceptance_failed"
         return result
 
+    emit_progress("Connection is not ready for upload/trigger yet.")
     result["stage"] = connection.get("stage", "connection_failed")
     result["reason"] = (
         "Cloud connection is not ready. Use --upload --confirm-upload for an existing repo, "
@@ -218,6 +234,7 @@ def parse_args() -> argparse.Namespace:
 def main() -> None:
     args = parse_args()
     token, source = configured_token_info(os.getenv("GITHUB_TOKEN") or os.getenv("GH_TOKEN"))
+    emit_progress("Collecting configuration and starting workflow.")
     result = build_cloud_run(
         repository=args.repository,
         token=token,
@@ -230,6 +247,7 @@ def main() -> None:
         token_source_name=source,
     )
     write_report(result)
+    emit_progress(f"Finished with stage={result.get('stage')} ok={bool(result.get('ok'))}.")
     print(render_summary(result))
     if not result.get("ok"):
         raise SystemExit(1 if result.get("stage") != "configuration" else 2)
