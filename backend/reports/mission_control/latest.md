@@ -2,35 +2,35 @@
 
 DRAFT - internal operating brief, not approved for external sending
 
-- Status: human_review_required
-- Created: 2026-07-04T12:57:38.862788+00:00
+- Status: operating
+- Created: 2026-07-04T13:13:17.179994+00:00
 - Mission: vertical industry intelligence brain plus verified search plus project execution system
 
 ## Command Center
 
-- Projects: 2
-- Cases: 2
-- Major matters: 1
-- Waiting for owner: 1
-- Autonomous cases: 1
+- Projects: 0
+- Cases: 0
+- Major matters: 0
+- Waiting for owner: 0
+- Autonomous cases: 0
 
 ## Capability Evidence
 
-- Knowledge domains: 7
-- Customs information domain: True
-- Benchmark questions: 50
-- Answer score: 80 (usable)
-- Intelligence keywords: 211
+- Knowledge domains: 0
+- Customs information domain: False
+- Benchmark questions: 0
+- Answer score: 0 (missing)
+- Intelligence keywords: 52
 - Team execution reports: 4
 - Evidence dossiers: 4
 - Latest evidence status: officially_supported (98)
-- Action boards: 420
+- Action boards: 431
 - Latest action board: pending_owner (6 tasks)
-- Team responses: 51
+- Team responses: 52
 - Latest team response score: 99
 - War rooms: 26
 - Latest war room: score=99, roles=6, search=lead_only, promotion=evidence_review_required
-- War room execution queues: 134
+- War room execution queues: 141
 - Latest execution queue: tasks=31, open=22, blocked=9, approval=12
 - Search confirmation gate: lead_only
 - Search manual/source entries: 11
@@ -39,24 +39,24 @@ DRAFT - internal operating brief, not approved for external sending
 
 ## Priority Queue
 
-- Demo Port Logistics Modernization | Indonesia | risk=high | decision=Decide whether to submit a formal delivery commitment this week.
+- No major matter waiting for owner decision.
 
 ## Autonomous Work
 
-- Internal Brief Library Cleanup | autonomous_executed | Codex executed the reversible low-risk operating step.
+- No autonomous cases recorded in the latest run.
 
 ## Search And Learning
 
-- Indonesia energy Demo Port Logistics Modernization export control
-- Indonesia energy Demo Port Logistics Modernization payment risk
-- Indonesia energy Demo Port Logistics Modernization sanctions
-- Indonesia infrastructure Demo Port Logistics Modernization AI
-- Indonesia infrastructure Demo Port Logistics Modernization Douyin
-- Indonesia infrastructure Demo Port Logistics Modernization EIA report
-- Indonesia infrastructure Demo Port Logistics Modernization EPC
-- Indonesia infrastructure Demo Port Logistics Modernization PPP
-- Indonesia infrastructure Demo Port Logistics Modernization ROI
-- Indonesia infrastructure Demo Port Logistics Modernization TikTok
+- None None Kazakhstan engineering trade investment pipeline AI
+- None None Kazakhstan engineering trade investment pipeline Douyin
+- None None Kazakhstan engineering trade investment pipeline EIA report
+- None None Kazakhstan engineering trade investment pipeline EPC
+- None None Kazakhstan engineering trade investment pipeline PPP
+- None None Kazakhstan engineering trade investment pipeline ROI
+- None None Kazakhstan engineering trade investment pipeline TikTok
+- None None Kazakhstan engineering trade investment pipeline YouTube
+- None None Kazakhstan engineering trade investment pipeline cabinet
+- None None Kazakhstan engineering trade investment pipeline case video
 
 ## Rules
 
