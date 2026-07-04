@@ -1,6 +1,7 @@
-from __future__ import annotations
+﻿from __future__ import annotations
 
 import json
+import socket
 import shutil
 import subprocess
 import time
@@ -14,6 +15,11 @@ REQUEST_TIMEOUT = 60
 
 
 class DecisionHubServerTests(unittest.TestCase):
+    def _free_port(self) -> int:
+        with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as sock:
+            sock.bind(("127.0.0.1", 0))
+            return int(sock.getsockname()[1])
+
     def _start_server(self, port: int) -> subprocess.Popen:
         script = ROOT / "apps" / "decision-hub" / "server.ps1"
         powershell = shutil.which("pwsh") or shutil.which("powershell.exe")
@@ -37,9 +43,12 @@ class DecisionHubServerTests(unittest.TestCase):
         deadline = time.time() + 20
         last_error: Exception | None = None
         while time.time() < deadline:
+            if process.poll() is not None:
+                break
             try:
-                with urlopen(f"http://127.0.0.1:{port}/", timeout=2) as response:
-                    if response.status == 200:
+                with urlopen(f"http://127.0.0.1:{port}/api/license/status", timeout=2) as response:
+                    data = json.loads(response.read().decode("utf-8"))
+                    if response.status == 200 and "license" in data:
                         return process
             except Exception as exc:  # pragma: no cover - startup timing
                 last_error = exc
@@ -48,7 +57,7 @@ class DecisionHubServerTests(unittest.TestCase):
         raise AssertionError(f"Decision Hub did not start: {last_error}")
 
     def test_local_search_returns_v11_classified_plan(self) -> None:
-        port = 8898
+        port = self._free_port()
         process = self._start_server(port)
         try:
             payload = json.dumps({"query": "哈萨克斯坦工程贸易 海关 招商 视频", "sources": []}).encode("utf-8")
@@ -84,7 +93,7 @@ class DecisionHubServerTests(unittest.TestCase):
                 process.kill()
 
     def test_project_pipeline_endpoint_returns_execution_package(self) -> None:
-        port = 8897
+        port = self._free_port()
         process = self._start_server(port)
         try:
             payload = json.dumps({"topic": "哈萨克斯坦工程贸易", "country": "Kazakhstan", "evidence": []}).encode("utf-8")
@@ -113,7 +122,7 @@ class DecisionHubServerTests(unittest.TestCase):
                 process.kill()
 
     def test_project_library_endpoint_returns_classified_summary(self) -> None:
-        port = 8892
+        port = self._free_port()
         process = self._start_server(port)
         try:
             request = Request(f"http://127.0.0.1:{port}/api/projects/library", method="GET")
@@ -137,7 +146,7 @@ class DecisionHubServerTests(unittest.TestCase):
                 process.kill()
 
     def test_team_execute_endpoint_returns_six_role_package(self) -> None:
-        port = 8896
+        port = self._free_port()
         process = self._start_server(port)
         try:
             payload = json.dumps(
@@ -179,7 +188,7 @@ class DecisionHubServerTests(unittest.TestCase):
                 process.kill()
 
     def test_video_center_endpoint_returns_draft_production_pack(self) -> None:
-        port = 8891
+        port = self._free_port()
         process = self._start_server(port)
         try:
             payload = json.dumps(
@@ -215,7 +224,7 @@ class DecisionHubServerTests(unittest.TestCase):
                 process.kill()
 
     def test_intelligence_brief_endpoint_returns_internal_draft(self) -> None:
-        port = 8890
+        port = self._free_port()
         process = self._start_server(port)
         try:
             payload = json.dumps(
@@ -257,7 +266,7 @@ class DecisionHubServerTests(unittest.TestCase):
                 process.kill()
 
     def test_quality_score_and_compare_endpoints_work_from_desktop(self) -> None:
-        port = 8895
+        port = self._free_port()
         process = self._start_server(port)
         try:
             score_payload = json.dumps(
@@ -311,7 +320,7 @@ class DecisionHubServerTests(unittest.TestCase):
                 process.kill()
 
     def test_team_response_endpoint_works_from_desktop(self) -> None:
-        port = 8899
+        port = self._free_port()
         process = self._start_server(port)
         try:
             payload = json.dumps(
@@ -355,7 +364,7 @@ class DecisionHubServerTests(unittest.TestCase):
                 process.kill()
 
     def test_war_room_endpoint_works_from_desktop(self) -> None:
-        port = 8898
+        port = self._free_port()
         process = self._start_server(port)
         try:
             payload = json.dumps(
@@ -408,7 +417,7 @@ class DecisionHubServerTests(unittest.TestCase):
                 process.kill()
 
     def test_social_reply_draft_endpoint_blocks_sending(self) -> None:
-        port = 8894
+        port = self._free_port()
         process = self._start_server(port)
         try:
             analyze_payload = json.dumps(
@@ -463,7 +472,7 @@ class DecisionHubServerTests(unittest.TestCase):
                 process.kill()
 
     def test_evidence_verify_endpoint_returns_dossier(self) -> None:
-        port = 8893
+        port = self._free_port()
         process = self._start_server(port)
         try:
             payload = json.dumps(
@@ -507,3 +516,4 @@ class DecisionHubServerTests(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
