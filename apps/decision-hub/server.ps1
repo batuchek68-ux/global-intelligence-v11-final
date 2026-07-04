@@ -1973,8 +1973,9 @@ function Handle-ApiRequest {
       return New-JsonResponse @{ error = "Search query is required." } 400
     }
     $v11Plan = Get-V11SearchPlan $query
+    $hasSourcesProperty = $body.PSObject.Properties.Name -contains "sources"
     $sources = @($body.sources)
-    if ($sources.Count -eq 0) { $sources = @("bing", "google", "yandex", "social", "academic", "library") }
+    if (!$hasSourcesProperty -and $sources.Count -eq 0) { $sources = @("bing", "google", "yandex", "social", "academic", "library") }
     $results = @()
     if ($sources -contains "bing") { $results += Search-Bing $query }
     if ($sources -contains "google") { $results += Search-Google $query }
@@ -2364,3 +2365,4 @@ try {
 } finally {
   $listener.Stop()
 }
+
