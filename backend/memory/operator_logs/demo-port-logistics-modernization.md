@@ -1,10 +1,6 @@
 # Operator Log: Demo Port Logistics Modernization
 
-<<<<<<< HEAD
-Created: 2026-07-04T12:40:56+00:00
-=======
-Created: 2026-07-04T09:31:13+00:00
->>>>>>> cda5a5b39b23774ead0c8ff30edb3ceeb950362b
+Created: 2026-07-04T13:14:30+00:00
 
 ## Command Model
 
