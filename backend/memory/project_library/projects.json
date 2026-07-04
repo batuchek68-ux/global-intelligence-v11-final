@@ -1,139 +1,5 @@
 [
   {
-    "id": "43ba37ae6d9d906b",
-    "title": "Daily cycle operating evidence",
-    "topic": "Daily v11 international engineering trade, research intelligence, investment promotion, video, customs, and project execution operating package",
-    "country": "Indonesia",
-    "category": "unknown",
-    "category_label": "待确认项目",
-    "status_evidence": [],
-    "confirmation_level": "unverified_or_secondary",
-    "confidence": 60,
-    "government_sources": [],
-    "evidence": [
-      {
-        "title": "Daily cycle operating evidence",
-        "url": "C:\\Users\\Surface\\AppData\\Local\\Temp\\tmpway39oe1\\memory\\last_run.json",
-        "domain": "",
-        "snippet": "daily operating cycle, project cases, evidence dossiers, action boards, video center, benchmark and owner approval queue",
-        "source_type": "internal",
-        "government_confirmed": false,
-<<<<<<< HEAD
-        "collected_at": "2026-07-04T12:54:51.871533+00:00"
-=======
-        "collected_at": "2026-07-04T09:31:13.547632+00:00"
->>>>>>> cda5a5b39b23774ead0c8ff30edb3ceeb950362b
-      }
-    ],
-    "stakeholders": {
-      "project_owner": [
-        "Daily v11 international engineering trade, research intelligence, investment promotion, video, customs, and project execution operating package Indonesia Daily cycle operating evidence daily operating cycle, project case"
-      ]
-    },
-    "owner_candidates": [
-      "Daily v11 international engineering trade, research intelligence, investment promotion, video, customs, and project execution operating package Indonesia Daily cycle operating evidence daily operating cycle, project case"
-    ],
-    "developer_candidates": [],
-    "responsible_person_candidates": [],
-    "risk_flags": [
-      "Human approval required before external outreach, quotation, commitment, or publication.",
-      "Government source confirmation required before investment promotion use."
-    ],
-<<<<<<< HEAD
-    "updated_at": "2026-07-04T12:54:51.872534+00:00",
-=======
-    "updated_at": "2026-07-04T09:31:13.548055+00:00",
->>>>>>> cda5a5b39b23774ead0c8ff30edb3ceeb950362b
-    "official_source_status": "candidate_unverified",
-    "project_record_status": "candidate_project",
-    "verified_project_allowed": false,
-    "candidate_to_verified_gate": {
-      "status": "candidate_project",
-      "verified_project_allowed": false,
-      "official_source_status": "candidate_unverified",
-      "required_before_verified_project": [
-        "At least one Tier 1 official government, procurement, customs, regulator, or authority source is required.",
-        "Project stage must be planned or under_construction.",
-        "Confidence must be 90 or higher.",
-        "Owner or responsible authority candidate must be identified.",
-        "Developer, investor, or contractor candidate must be identified.",
-        "External promotion, quotation, publication, outreach, and commitment still require human approval."
-      ],
-      "missing_requirements": [
-        "Missing Tier 1 official government, procurement, customs, regulator, or authority evidence.",
-        "Project stage must be planned or under_construction.",
-        "Project confidence is below 90.",
-        "Developer, investor, or contractor candidate is missing."
-      ],
-      "evidence_grade_summary": {
-        "tier1_official_sources": 0,
-        "tier2_supporting_sources": 0,
-        "weak_signal_sources": 0,
-        "unknown_sources": 1,
-        "by_source_type": {
-          "internal": 1
-        },
-        "rules": {
-          "tier1": "Government, customs, regulator, or official procurement evidence can confirm the project when stage and stakeholders are also present.",
-          "tier2": "Official company or academic evidence can support screening but cannot verify a project by itself.",
-          "weak": "Social, forum, and video sources are attention signals only and never verify a project."
-        }
-      },
-      "evidence_rules": {
-        "government_official": "Tier 1: confirms project existence, stage, authority, and public authorization facts.",
-        "procurement_official": "Tier 1: confirms tender, procurement, award, EPC, or contractor status.",
-        "official_company": "Tier 2: supports developer or investor screening, but cannot verify a project alone.",
-        "social_video_forum": "Tier 4: attention and lead signal only; never confirms project facts."
-      },
-      "human_approval_required_for_external_use": true
-    },
-    "evidence_grade_summary": {
-      "tier1_official_sources": 0,
-      "tier2_supporting_sources": 0,
-      "weak_signal_sources": 0,
-      "unknown_sources": 1,
-      "by_source_type": {
-        "internal": 1
-      },
-      "rules": {
-        "tier1": "Government, customs, regulator, or official procurement evidence can confirm the project when stage and stakeholders are also present.",
-        "tier2": "Official company or academic evidence can support screening but cannot verify a project by itself.",
-        "weak": "Social, forum, and video sources are attention signals only and never verify a project."
-      }
-    },
-    "promotion_readiness": {
-      "status": "lead_only",
-      "label": "Lead only",
-      "can_create_lead_record": true,
-      "can_generate_internal_promotion_draft": false,
-      "approved_for_external_use": false,
-      "human_approval_required_for_external_use": true,
-      "allowed_internal_actions": [
-        "Internal search and evidence collection only",
-        "Do not use as an investment-promotion project"
-      ],
-      "blocked_actions": [
-        "正式招商发布",
-        "formal investment-promotion publication",
-        "customer or investor outreach",
-        "quotation",
-        "contract or payment commitment",
-        "delivery or customs-clearance commitment",
-        "public video publishing"
-      ],
-      "missing_requirements": [
-        "Missing Tier 1 official government, procurement, customs, regulator, or authority evidence.",
-        "Project stage is not confirmed as planned or under_construction.",
-        "Confidence is below 90.",
-        "Developer, investor, or contractor candidate is missing.",
-        "Project stage must be planned or under_construction.",
-        "Project confidence is below 90."
-      ],
-      "official_source_status": "candidate_unverified",
-      "verified_project_allowed": false
-    }
-  },
-  {
     "id": "13648f12a9cbd993",
     "title": "Official procurement page",
     "topic": "Kazakhstan engineering trade project customs investment promotion video",
@@ -151,11 +17,7 @@
         "snippet": "Official source describes owner, tender status, customs documents and engineering scope.",
         "source_type": "government",
         "government_confirmed": true,
-<<<<<<< HEAD
-        "collected_at": "2026-07-04T12:57:32.619032+00:00"
-=======
-        "collected_at": "2026-07-04T09:31:12.216415+00:00"
->>>>>>> cda5a5b39b23774ead0c8ff30edb3ceeb950362b
+        "collected_at": "2026-07-04T13:07:44.810563+00:00"
       }
     ],
     "evidence": [
@@ -166,11 +28,7 @@
         "snippet": "Official source describes owner, tender status, customs documents and engineering scope.",
         "source_type": "government",
         "government_confirmed": true,
-<<<<<<< HEAD
-        "collected_at": "2026-07-04T12:57:32.619032+00:00"
-=======
-        "collected_at": "2026-07-04T09:31:12.216415+00:00"
->>>>>>> cda5a5b39b23774ead0c8ff30edb3ceeb950362b
+        "collected_at": "2026-07-04T13:07:44.810563+00:00"
       }
     ],
     "stakeholders": {
@@ -187,11 +45,7 @@
       "Human approval required before external outreach, quotation, commitment, or publication.",
       "Government source confirmation required before investment promotion use."
     ],
-<<<<<<< HEAD
-    "updated_at": "2026-07-04T12:57:32.621031+00:00",
-=======
-    "updated_at": "2026-07-04T09:31:12.216940+00:00",
->>>>>>> cda5a5b39b23774ead0c8ff30edb3ceeb950362b
+    "updated_at": "2026-07-04T13:07:44.813534+00:00",
     "official_source_status": "official_procurement_supported",
     "project_record_status": "candidate_project",
     "verified_project_allowed": false,
