@@ -36,6 +36,10 @@ TRANSIENT_ERROR_MARKERS = (
 )
 
 
+def emit_progress(message: str) -> None:
+    print(f"[cloud-upload] {message}", flush=True)
+
+
 def github_contents_request(
     method: str,
     repository: str,
@@ -78,6 +82,7 @@ def github_contents_request(
         except Exception as exc:
             detail = str(exc)
             if attempt < 3 and any(marker in detail for marker in TRANSIENT_ERROR_MARKERS):
+                emit_progress(f"Transient GitHub contents error on attempt {attempt}/3: {detail}. Retrying.")
                 time.sleep(attempt * 2)
                 continue
             return 0, detail
@@ -182,21 +187,29 @@ def upload_repository(
         files = files[:max_files]
     results = []
     auth_failed = False
+    network_failed = False
+    emit_progress(f"Preparing to upload {len(files)} files to {repository}@{branch}.")
     for index, path in enumerate(files, start=1):
+        emit_progress(f"[{index}/{len(files)}] {path.relative_to(ROOT).as_posix()}")
         result = upload_file(repository, token, path, branch, message_prefix)
         results.append(result)
         if result["status"] == 401:
             auth_failed = True
             break
+        if result["status"] == 0:
+            network_failed = True
+            break
         if index % 10 == 0:
             time.sleep(1)
     return {
         "ok": len(results) == len(files) and all(item["ok"] for item in results),
-        "stage": "authentication_failed" if auth_failed else "uploaded",
+        "stage": "authentication_failed" if auth_failed else "network_failed" if network_failed else "uploaded",
         "reason": (
             "GitHub returned 401 Bad credentials during upload. Generate a new token, "
             "make sure it has Contents: Read and write plus Actions: Read and write, then rerun."
             if auth_failed
+            else "GitHub contents API timed out or the network connection was interrupted during upload. Rerun the cloud test and check the failed upload details."
+            if network_failed
             else None
         ),
         "file_count": len(files),
@@ -274,14 +287,31 @@ def main() -> None:
         print(json.dumps(result, ensure_ascii=False, indent=2))
         raise SystemExit(2)
 
-    result = upload_and_trigger(
-        repository=args.repository,
-        token=token,
-        branch=args.branch,
-        confirm_upload=args.confirm_upload,
-        trigger=not args.no_trigger,
-        max_files=args.max_files,
-    )
+    try:
+        result = upload_and_trigger(
+            repository=args.repository,
+            token=token,
+            branch=args.branch,
+            confirm_upload=args.confirm_upload,
+            trigger=not args.no_trigger,
+            max_files=args.max_files,
+        )
+    except KeyboardInterrupt:
+        result = {
+            "ok": False,
+            "stage": "interrupted",
+            "repository": args.repository,
+            "branch": args.branch,
+            "reason": "Cloud upload was interrupted before completion.",
+        }
+    except Exception as exc:
+        result = {
+            "ok": False,
+            "stage": "upload_exception",
+            "repository": args.repository,
+            "branch": args.branch,
+            "reason": f"Unexpected upload exception: {exc}",
+        }
     write_report(result)
     print(json.dumps(result, ensure_ascii=False, indent=2))
     if not result.get("ok"):
