@@ -13,12 +13,12 @@
     "evidence": [
       {
         "title": "Daily cycle operating evidence",
-        "url": "C:\\Users\\Surface\\AppData\\Local\\Temp\\tmpn9fxuczz\\memory\\last_run.json",
+        "url": "C:\\Users\\Surface\\AppData\\Local\\Temp\\tmpway39oe1\\memory\\last_run.json",
         "domain": "",
         "snippet": "daily operating cycle, project cases, evidence dossiers, action boards, video center, benchmark and owner approval queue",
         "source_type": "internal",
         "government_confirmed": false,
-        "collected_at": "2026-07-04T12:48:11.127131+00:00"
+        "collected_at": "2026-07-04T12:54:51.871533+00:00"
       }
     ],
     "stakeholders": {
@@ -35,7 +35,7 @@
       "Human approval required before external outreach, quotation, commitment, or publication.",
       "Government source confirmation required before investment promotion use."
     ],
-    "updated_at": "2026-07-04T12:48:11.129133+00:00",
+    "updated_at": "2026-07-04T12:54:51.872534+00:00",
     "official_source_status": "candidate_unverified",
     "project_record_status": "candidate_project",
     "verified_project_allowed": false,
