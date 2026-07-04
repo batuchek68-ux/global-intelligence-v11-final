@@ -1,29 +1,29 @@
 {
   "ok": true,
-  "created_at": "2026-07-04T13:13:17.179994+00:00",
-  "status": "operating",
+  "created_at": "2026-07-04T13:24:35.583637+00:00",
+  "status": "human_review_required",
   "mission": "vertical industry intelligence brain plus verified search plus project execution system",
   "command_center": {
-    "project_count": 0,
-    "case_count": 0,
-    "major_matter_count": 0,
-    "waiting_for_owner": 0,
-    "autonomous_cases": 0
+    "project_count": 2,
+    "case_count": 2,
+    "major_matter_count": 1,
+    "waiting_for_owner": 1,
+    "autonomous_cases": 1
   },
   "capability_evidence": {
-    "knowledge_domains": 0,
-    "customs_information_domain": false,
-    "benchmark_questions": 0,
-    "answer_score": 0,
-    "answer_score_verdict": "missing",
-    "intelligence_keywords": 52,
+    "knowledge_domains": 7,
+    "customs_information_domain": true,
+    "benchmark_questions": 50,
+    "answer_score": 80,
+    "answer_score_verdict": "usable",
+    "intelligence_keywords": 211,
     "latest_intelligence_brief": "C:\\Users\\Surface\\Documents\\New project\\global-intelligence-v11\\backend\\reports\\intelligence_briefs\\2026-07-04.md",
     "latest_video_center": "C:\\Users\\Surface\\Documents\\New project\\global-intelligence-v11\\backend\\reports\\video_center\\video_center_2026-07-04.json",
     "team_execution_reports": 4,
     "evidence_dossiers": 4,
     "latest_evidence_status": "officially_supported",
     "latest_evidence_confidence": 98,
-    "action_boards": 431,
+    "action_boards": 439,
     "latest_action_board_status": "pending_owner",
     "latest_action_board_tasks": 6,
     "team_responses": 52,
@@ -36,7 +36,7 @@
     "latest_war_room_search_gate": "lead_only",
     "latest_war_room_promotion_gate": "evidence_review_required",
     "latest_war_room_external_use": false,
-    "war_room_execution_queues": 141,
+    "war_room_execution_queues": 145,
     "latest_war_room_queue_mode": "war_room_execution_queue",
     "latest_war_room_queue_tasks": 31,
     "latest_war_room_queue_open": 22,
@@ -91,22 +91,47 @@
       ]
     }
   },
-  "priority_queue": [],
-  "autonomous_work": [],
+  "priority_queue": [
+    {
+      "project": "Demo Port Logistics Modernization",
+      "country": "Indonesia",
+      "risk_level": "high",
+      "triggers": [
+        "customs",
+        "compliance",
+        "payment",
+        "amount>=100000"
+      ],
+      "required_decision": "Decide whether to submit a formal delivery commitment this week.",
+      "blocked_actions": [
+        "external commitment",
+        "formal quotation",
+        "contract or payment approval",
+        "public publishing"
+      ]
+    }
+  ],
+  "autonomous_work": [
+    {
+      "project": "Internal Brief Library Cleanup",
+      "status": "autonomous_executed",
+      "result": "Codex executed the reversible low-risk operating step."
+    }
+  ],
   "search_and_learning": {
     "top_keywords": [
-      "None None Kazakhstan engineering trade investment pipeline AI",
-      "None None Kazakhstan engineering trade investment pipeline Douyin",
-      "None None Kazakhstan engineering trade investment pipeline EIA report",
-      "None None Kazakhstan engineering trade investment pipeline EPC",
-      "None None Kazakhstan engineering trade investment pipeline PPP",
-      "None None Kazakhstan engineering trade investment pipeline ROI",
-      "None None Kazakhstan engineering trade investment pipeline TikTok",
-      "None None Kazakhstan engineering trade investment pipeline YouTube",
-      "None None Kazakhstan engineering trade investment pipeline cabinet",
-      "None None Kazakhstan engineering trade investment pipeline case video",
-      "None None Kazakhstan engineering trade investment pipeline contract dispute",
-      "None None Kazakhstan engineering trade investment pipeline customs"
+      "Indonesia energy Demo Port Logistics Modernization export control",
+      "Indonesia energy Demo Port Logistics Modernization payment risk",
+      "Indonesia energy Demo Port Logistics Modernization sanctions",
+      "Indonesia infrastructure Demo Port Logistics Modernization AI",
+      "Indonesia infrastructure Demo Port Logistics Modernization Douyin",
+      "Indonesia infrastructure Demo Port Logistics Modernization EIA report",
+      "Indonesia infrastructure Demo Port Logistics Modernization EPC",
+      "Indonesia infrastructure Demo Port Logistics Modernization PPP",
+      "Indonesia infrastructure Demo Port Logistics Modernization ROI",
+      "Indonesia infrastructure Demo Port Logistics Modernization TikTok",
+      "Indonesia infrastructure Demo Port Logistics Modernization YouTube",
+      "Indonesia infrastructure Demo Port Logistics Modernization cabinet"
     ],
     "benchmark_targets": [
       "v11",
