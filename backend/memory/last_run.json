@@ -1,12 +1,12 @@
 {
-  "created_at": "2026-07-04T13:21:27+00:00",
+  "created_at": "2026-07-04T13:42:41+00:00",
   "project_count": 2,
   "case_count": 2,
   "approval_count": 1,
   "major_matter_count": 1,
   "resolved_major_matter_count": 0,
   "monitoring": {
-    "generated_at": "2026-07-04T13:21:27+00:00",
+    "generated_at": "2026-07-04T13:42:41+00:00",
     "date": "2026-07-04",
     "draft_notice": "DRAFT - Not approved for sending",
     "source_status": {
@@ -36,6 +36,95 @@
       "Xinjiang border port customs and freight monitoring",
       "agricultural machinery, agricultural drones, organic and liquid fertilizer"
     ],
+    "work_buddy_collection_matrix": [
+      {
+        "collector": "official_public_pages",
+        "cadence": "30min",
+        "scope": "government plans, procurement notices, investment agencies, port and energy authorities",
+        "allowed_methods": [
+          "public web pages",
+          "RSS",
+          "approved search APIs",
+          "subscribed data APIs"
+        ],
+        "blocked_methods": [
+          "paywall bypass",
+          "credential sharing",
+          "website vulnerability exploitation",
+          "unauthorized scraping"
+        ]
+      },
+      {
+        "collector": "customs_and_port_watch",
+        "cadence": "daily",
+        "scope": "Alashankou, Horgos, Jeminay, Yili Prefecture ports, southern Xinjiang ports, HS code and freight signals",
+        "allowed_methods": [
+          "official customs publications",
+          "approved API",
+          "licensed customs-data provider"
+        ],
+        "blocked_methods": [
+          "unlicensed database access",
+          "source impersonation",
+          "manual figure fabrication"
+        ]
+      },
+      {
+        "collector": "project_feasibility_intake",
+        "cadence": "daily",
+        "scope": "mining, metallurgy, thermal power, Caspian ports, oil refining, agriculture machinery and fertilizer",
+        "allowed_methods": [
+          "evidence dossier",
+          "source grading",
+          "owner/developer/procurement verification"
+        ],
+        "blocked_methods": [
+          "external commitment before approval",
+          "quotation before human decision",
+          "treating leads as confirmed projects"
+        ]
+      },
+      {
+        "collector": "content_draft_pipeline",
+        "cadence": "on demand",
+        "scope": "internal brief, feasibility draft, video/script draft and social media draft",
+        "allowed_methods": [
+          "DRAFT output",
+          "policy check",
+          "human approval queue"
+        ],
+        "blocked_methods": [
+          "automatic public publishing",
+          "external outreach",
+          "customer reply without approval"
+        ]
+      }
+    ],
+    "skill_assessment_items": [
+      "Search expansion quality across Chinese, English, Russian and Kazakhstan/Qazaqstan naming variants",
+      "Official-source recognition for government, customs, procurement, port, energy and investment agencies",
+      "Feasibility report structure: owner, scope, evidence, economics, logistics, compliance, risks and approval gate",
+      "Customs-data discipline: HS code, port, period, quantity, value, grade, origin/destination and source URL",
+      "Risk boundary discipline: sanctions, export control, customs conclusion, quotation, payment, contract and public publishing"
+    ],
+    "work_buddy_source_notes": [
+      "Imported planning concepts from Work Buddy docs: collection matrix, market analysis, architecture optimization and social draft pipeline.",
+      "Automatic publishing concepts are converted to draft-only internal workflow until human approval.",
+      "Cloud or GitHub Actions scheduling is required for operation while the local computer is powered off."
+    ],
+    "publication_policy": {
+      "mode": "draft_only",
+      "external_publish_allowed": false,
+      "human_approval_required_for": [
+        "public publishing",
+        "external outreach",
+        "quotation",
+        "payment",
+        "contract",
+        "customs conclusion",
+        "government or infrastructure commitment"
+      ]
+    },
     "artifacts": {
       "daily_log": "C:\\Users\\Surface\\Documents\\New project\\global-intelligence-v11\\backend\\reports\\daily_logs\\2026-07-04.md",
       "news_update_markdown": "C:\\Users\\Surface\\Documents\\New project\\global-intelligence-v11\\backend\\reports\\news_updates\\2026-07-04.md",
@@ -113,7 +202,7 @@
       "latest_path": "C:\\Users\\Surface\\Documents\\New project\\global-intelligence-v11\\backend\\memory\\evidence\\latest.json"
     },
     "action_boards": {
-      "board_count": 437,
+      "board_count": 442,
       "latest_path": "C:\\Users\\Surface\\Documents\\New project\\global-intelligence-v11\\backend\\memory\\action_boards\\latest.json"
     },
     "team_response": {
@@ -125,8 +214,8 @@
     "war_room": {
       "latest_path": "C:\\Users\\Surface\\Documents\\New project\\global-intelligence-v11\\backend\\memory\\war_room\\0fc272e066ac0a8a.json",
       "report_path": "C:\\Users\\Surface\\Documents\\New project\\global-intelligence-v11\\backend\\reports\\war_room\\0fc272e066ac0a8a.md",
-      "execution_queue_path": "C:\\Users\\Surface\\Documents\\New project\\global-intelligence-v11\\backend\\memory\\war_room_execution\\5089102b6bb11a98.json",
-      "execution_queue_report_path": "C:\\Users\\Surface\\Documents\\New project\\global-intelligence-v11\\backend\\reports\\war_room_execution\\5089102b6bb11a98.md",
+      "execution_queue_path": "C:\\Users\\Surface\\Documents\\New project\\global-intelligence-v11\\backend\\memory\\war_room_execution\\99b7114671f56227.json",
+      "execution_queue_report_path": "C:\\Users\\Surface\\Documents\\New project\\global-intelligence-v11\\backend\\reports\\war_room_execution\\99b7114671f56227.md",
       "execution_queue_tasks": 32,
       "execution_queue_blocked": 10,
       "overall_score": 99,
@@ -144,7 +233,7 @@
   },
   "cases": [
     {
-      "created_at": "2026-07-04T13:21:25+00:00",
+      "created_at": "2026-07-04T13:42:39+00:00",
       "project": {
         "path": "C:\\Users\\Surface\\Documents\\New project\\global-intelligence-v11\\backend\\projects\\active\\demo-port-logistics.md",
         "title": "Demo Port Logistics Modernization",
@@ -184,7 +273,7 @@
       "video_path": "C:\\Users\\Surface\\Documents\\New project\\global-intelligence-v11\\backend\\media\\drafts\\demo-port-logistics-modernization.md",
       "outbox_path": "C:\\Users\\Surface\\Documents\\New project\\global-intelligence-v11\\backend\\comm\\outbox\\demo-port-logistics-modernization.json",
       "classification": {
-        "created_at": "2026-07-04T13:21:25+00:00",
+        "created_at": "2026-07-04T13:42:39+00:00",
         "project": "Demo Port Logistics Modernization",
         "mode": "human_decision_required",
         "is_major_matter": true,
@@ -211,7 +300,7 @@
         }
       },
       "business_flow": {
-        "created_at": "2026-07-04T13:21:25+00:00",
+        "created_at": "2026-07-04T13:42:38+00:00",
         "project": "Demo Port Logistics Modernization",
         "real_work_coverage": {
           "international_trade": [
@@ -283,7 +372,7 @@
       "evidence_dossier_id": "8292910b19c4dd94",
       "team_execution_package_id": "c64fe893deddda22",
       "execution": {
-        "created_at": "2026-07-04T13:21:25+00:00",
+        "created_at": "2026-07-04T13:42:39+00:00",
         "project": "Demo Port Logistics Modernization",
         "mode": "human_decision_required",
         "status": "waiting_for_owner",
@@ -325,11 +414,11 @@
         "created": false,
         "reason": "approval already waiting"
       },
-      "action_board_id": "9b4ea67480b1c442",
-      "action_board_path": "C:\\Users\\Surface\\Documents\\New project\\global-intelligence-v11\\backend\\reports\\action_boards\\9b4ea67480b1c442.md"
+      "action_board_id": "2d28dc82a7fcfdd0",
+      "action_board_path": "C:\\Users\\Surface\\Documents\\New project\\global-intelligence-v11\\backend\\reports\\action_boards\\2d28dc82a7fcfdd0.md"
     },
     {
-      "created_at": "2026-07-04T13:21:26+00:00",
+      "created_at": "2026-07-04T13:42:39+00:00",
       "project": {
         "path": "C:\\Users\\Surface\\Documents\\New project\\global-intelligence-v11\\backend\\projects\\active\\internal-brief-library.md",
         "title": "Internal Brief Library Cleanup",
@@ -360,7 +449,7 @@
       "video_path": "C:\\Users\\Surface\\Documents\\New project\\global-intelligence-v11\\backend\\media\\drafts\\internal-brief-library-cleanup.md",
       "outbox_path": null,
       "classification": {
-        "created_at": "2026-07-04T13:21:26+00:00",
+        "created_at": "2026-07-04T13:42:39+00:00",
         "project": "Internal Brief Library Cleanup",
         "mode": "autonomous_execution",
         "is_major_matter": false,
@@ -387,7 +476,7 @@
         }
       },
       "business_flow": {
-        "created_at": "2026-07-04T13:21:25+00:00",
+        "created_at": "2026-07-04T13:42:39+00:00",
         "project": "Internal Brief Library Cleanup",
         "real_work_coverage": {
           "international_trade": [
@@ -459,7 +548,7 @@
       "evidence_dossier_id": "45c6eabe5fc2ba53",
       "team_execution_package_id": "34b3ae73f65d4d44",
       "execution": {
-        "created_at": "2026-07-04T13:21:26+00:00",
+        "created_at": "2026-07-04T13:42:39+00:00",
         "project": "Internal Brief Library Cleanup",
         "mode": "autonomous_execution",
         "status": "autonomous_executed",
@@ -500,8 +589,8 @@
         "created": false,
         "reason": "approval not needed"
       },
-      "action_board_id": "ad72665b62bd7cf5",
-      "action_board_path": "C:\\Users\\Surface\\Documents\\New project\\global-intelligence-v11\\backend\\reports\\action_boards\\ad72665b62bd7cf5.md"
+      "action_board_id": "887590606afd5716",
+      "action_board_path": "C:\\Users\\Surface\\Documents\\New project\\global-intelligence-v11\\backend\\reports\\action_boards\\887590606afd5716.md"
     }
   ]
 }
