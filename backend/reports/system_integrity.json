@@ -1,5 +1,5 @@
 {
-  "created_at": "2026-07-04T13:13:23.264133+00:00",
+  "created_at": "2026-07-04T13:24:41.632329+00:00",
   "ok": true,
   "auto_fix": true,
   "repairs": [],
@@ -129,7 +129,7 @@
       "ok": true,
       "evidence": {
         "ok": true,
-        "scanned": 1654,
+        "scanned": 1678,
         "hits": []
       }
     },
