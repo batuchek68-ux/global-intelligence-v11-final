@@ -35,7 +35,10 @@ def write_json(path: Path, data: Any) -> Path:
 def read_json(path: Path, default: Any) -> Any:
     if not path.exists():
         return default
-    return json.loads(path.read_text(encoding="utf-8"))
+    try:
+        return json.loads(path.read_text(encoding="utf-8"))
+    except json.JSONDecodeError:
+        return default
 
 
 def write_text(path: Path, text: str) -> Path:
