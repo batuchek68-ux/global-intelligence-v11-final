@@ -1,11 +1,7 @@
 {
   "ok": true,
   "id": "c64fe893deddda22",
-<<<<<<< HEAD
-  "created_at": "2026-07-04T12:40:56.531022+00:00",
-=======
-  "created_at": "2026-07-04T09:31:13.464165+00:00",
->>>>>>> cda5a5b39b23774ead0c8ff30edb3ceeb950362b
+  "created_at": "2026-07-04T13:14:30.688509+00:00",
   "objective": "Demo Port Logistics Modernization international engineering trade and intelligence execution",
   "country": "Indonesia",
   "industries": [
@@ -4316,11 +4312,7 @@
   },
   "answer_quality_model": {
     "ok": true,
-<<<<<<< HEAD
-    "created_at": "2026-07-04T12:40:56.531022+00:00",
-=======
-    "created_at": "2026-07-04T09:31:13.464158+00:00",
->>>>>>> cda5a5b39b23774ead0c8ff30edb3ceeb950362b
+    "created_at": "2026-07-04T13:14:30.688509+00:00",
     "overall_score": 61,
     "verdict": "needs_improvement",
     "dimensions": {
