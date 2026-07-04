@@ -98,6 +98,7 @@ if (-not (Test-RepositoryName $Repository)) {
 $env:GITHUB_TOKEN = $Token
 $env:GITHUB_REPOSITORY = $Repository
 $env:GITHUB_REF_NAME = $Branch
+$env:PYTHONUNBUFFERED = "1"
 
 $argsList = @("workflows\cloud_run.py", "--repository", $Repository, "--branch", $Branch)
 
@@ -116,6 +117,22 @@ if ($Public) {
 if ($NoTrigger) {
     $argsList += "--no-trigger"
 }
+
+Write-Host ""
+Write-Host "Starting cloud test..." -ForegroundColor Cyan
+Write-Host "Repository: $Repository"
+Write-Host "Branch: $Branch"
+Write-Host "Mode: " -NoNewline
+if ($CreateRepo) {
+    Write-Host "create repo + upload + trigger"
+} elseif ($Upload) {
+    Write-Host "upload + trigger"
+} elseif ($NoTrigger) {
+    Write-Host "connection check only"
+} else {
+    Write-Host "trigger existing cloud workflow"
+}
+Write-Host ""
 
 python @argsList
 exit $LASTEXITCODE
