@@ -1,11 +1,7 @@
 {
   "ok": true,
   "id": "45c6eabe5fc2ba53",
-<<<<<<< HEAD
-  "created_at": "2026-07-04T12:40:56.576022+00:00",
-=======
-  "created_at": "2026-07-04T09:31:13.472887+00:00",
->>>>>>> cda5a5b39b23774ead0c8ff30edb3ceeb950362b
+  "created_at": "2026-07-04T13:14:30.784512+00:00",
   "project": "Internal Brief Library Cleanup",
   "country": "Internal",
   "claim": "Internal Brief Library Cleanup project status, stakeholders, customs and trade risk",
@@ -34,11 +30,7 @@
       "high_risk_hits": [
         "customs"
       ],
-<<<<<<< HEAD
-      "collected_at": "2026-07-04T12:40:56+00:00"
-=======
-      "collected_at": "2026-07-04T09:31:13+00:00"
->>>>>>> cda5a5b39b23774ead0c8ff30edb3ceeb950362b
+      "collected_at": "2026-07-04T13:14:30+00:00"
     }
   ],
   "decision_rule": "Official government/customs/procurement evidence is required before project confirmation, investment promotion, quotation, customer commitment, or public publishing.",
