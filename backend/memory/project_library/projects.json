@@ -17,7 +17,7 @@
         "snippet": "Official source describes owner, tender status, customs documents and engineering scope.",
         "source_type": "government",
         "government_confirmed": true,
-        "collected_at": "2026-07-04T13:10:35.784567+00:00"
+        "collected_at": "2026-07-04T13:13:11.000788+00:00"
       }
     ],
     "evidence": [
@@ -28,7 +28,7 @@
         "snippet": "Official source describes owner, tender status, customs documents and engineering scope.",
         "source_type": "government",
         "government_confirmed": true,
-        "collected_at": "2026-07-04T13:10:35.784567+00:00"
+        "collected_at": "2026-07-04T13:13:11.000788+00:00"
       }
     ],
     "stakeholders": {
@@ -45,7 +45,7 @@
       "Human approval required before external outreach, quotation, commitment, or publication.",
       "Government source confirmation required before investment promotion use."
     ],
-    "updated_at": "2026-07-04T13:10:35.792571+00:00",
+    "updated_at": "2026-07-04T13:13:11.006789+00:00",
     "official_source_status": "official_procurement_supported",
     "project_record_status": "candidate_project",
     "verified_project_allowed": false,
@@ -144,12 +144,12 @@
     "evidence": [
       {
         "title": "Daily cycle operating evidence",
-        "url": "C:\\Users\\Surface\\AppData\\Local\\Temp\\tmp92dlh_fl\\memory\\last_run.json",
+        "url": "C:\\Users\\Surface\\Documents\\New project\\global-intelligence-v11\\backend\\memory\\last_run.json",
         "domain": "",
         "snippet": "daily operating cycle, project cases, evidence dossiers, action boards, video center, benchmark and owner approval queue",
         "source_type": "internal",
         "government_confirmed": false,
-        "collected_at": "2026-07-04T13:11:18.526765+00:00"
+        "collected_at": "2026-07-04T13:14:31.519377+00:00"
       }
     ],
     "stakeholders": {
@@ -166,7 +166,7 @@
       "Human approval required before external outreach, quotation, commitment, or publication.",
       "Government source confirmation required before investment promotion use."
     ],
-    "updated_at": "2026-07-04T13:11:18.528766+00:00",
+    "updated_at": "2026-07-04T13:14:31.521378+00:00",
     "official_source_status": "candidate_unverified",
     "project_record_status": "candidate_project",
     "verified_project_allowed": false,
