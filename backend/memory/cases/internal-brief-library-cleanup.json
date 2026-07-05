@@ -1,5 +1,5 @@
 {
-  "created_at": "2026-07-05T09:56:51+00:00",
+  "created_at": "2026-07-05T16:37:46+00:00",
   "project": {
     "path": "/home/runner/work/global-intelligence-v11-final/global-intelligence-v11-final/backend/projects/active/internal-brief-library.md",
     "title": "Internal Brief Library Cleanup",
@@ -30,7 +30,7 @@
   "video_path": "/home/runner/work/global-intelligence-v11-final/global-intelligence-v11-final/backend/media/drafts/internal-brief-library-cleanup.md",
   "outbox_path": null,
   "classification": {
-    "created_at": "2026-07-05T09:56:51+00:00",
+    "created_at": "2026-07-05T16:37:46+00:00",
     "project": "Internal Brief Library Cleanup",
     "mode": "autonomous_execution",
     "is_major_matter": false,
@@ -57,7 +57,7 @@
     }
   },
   "business_flow": {
-    "created_at": "2026-07-05T09:56:51+00:00",
+    "created_at": "2026-07-05T16:37:46+00:00",
     "project": "Internal Brief Library Cleanup",
     "real_work_coverage": {
       "international_trade": [
@@ -129,7 +129,7 @@
   "evidence_dossier_id": "45c6eabe5fc2ba53",
   "team_execution_package_id": "34b3ae73f65d4d44",
   "execution": {
-    "created_at": "2026-07-05T09:56:51+00:00",
+    "created_at": "2026-07-05T16:37:46+00:00",
     "project": "Internal Brief Library Cleanup",
     "mode": "autonomous_execution",
     "status": "autonomous_executed",
@@ -170,6 +170,6 @@
     "created": false,
     "reason": "approval not needed"
   },
-  "action_board_id": "1ab8989d29286b72",
-  "action_board_path": "/home/runner/work/global-intelligence-v11-final/global-intelligence-v11-final/backend/reports/action_boards/1ab8989d29286b72.md"
+  "action_board_id": "f258d5ab45139e5c",
+  "action_board_path": "/home/runner/work/global-intelligence-v11-final/global-intelligence-v11-final/backend/reports/action_boards/f258d5ab45139e5c.md"
 }

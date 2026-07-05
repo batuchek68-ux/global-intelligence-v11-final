@@ -1,18 +1,17 @@
 {
   "ok": true,
-  "id": "02a8375a5dbc1ed1",
-  "created_at": "2026-07-05T16:37:46.434102+00:00",
-  "project": "Daily cycle operating evidence",
-  "country": "Indonesia",
-  "stage": "unknown",
+  "id": "f258d5ab45139e5c",
+  "created_at": "2026-07-05T16:37:46.391589+00:00",
+  "project": "Internal Brief Library Cleanup",
+  "country": "Internal",
+  "stage": "internal organization",
   "risk_gate": {
     "blocked": true,
-    "status": "pending_owner",
-    "risk_level": "high",
-    "risk_score": 90,
+    "status": "evidence_review_required",
+    "risk_level": "low",
+    "risk_score": 20,
     "reasons": [
-      "major matter: Approve evidence-based outreach or continue research?",
-      "evidence status: weak_signal_only"
+      "evidence status: partially_supported"
     ],
     "blocked_actions": [
       "external commitment",
@@ -23,9 +22,9 @@
     ]
   },
   "evidence": {
-    "status": "weak_signal_only",
-    "confidence": 37,
-    "dossier_id": "ab026153ae540214"
+    "status": "partially_supported",
+    "confidence": 84,
+    "dossier_id": "45c6eabe5fc2ba53"
   },
   "summary": {
     "task_count": 6,
@@ -34,7 +33,7 @@
   },
   "tasks": [
     {
-      "id": "02a8375a5dbc1ed1-trade",
+      "id": "f258d5ab45139e5c-trade",
       "role": "trade_lead",
       "role_label": "International trade lead",
       "title": "Verify customs, HS/tariff, payment terms, Incoterms, and logistics route.",
@@ -49,7 +48,7 @@
       "output": "internal_draft"
     },
     {
-      "id": "02a8375a5dbc1ed1-research",
+      "id": "f258d5ab45139e5c-research",
       "role": "research_analyst",
       "role_label": "Research intelligence analyst",
       "title": "Collect government, procurement, academic, and library evidence; grade each source.",
@@ -64,7 +63,7 @@
       "output": "internal_draft"
     },
     {
-      "id": "02a8375a5dbc1ed1-investment",
+      "id": "f258d5ab45139e5c-investment",
       "role": "investment_promotion_lead",
       "role_label": "Investment promotion lead",
       "title": "Map owner, developer, investor candidates, incentive policy, and project packaging gaps.",
@@ -78,7 +77,7 @@
       "output": "internal_draft"
     },
     {
-      "id": "02a8375a5dbc1ed1-video",
+      "id": "f258d5ab45139e5c-video",
       "role": "video_media_producer",
       "role_label": "Video and media producer",
       "title": "Draft country-style video concept based on verified facts and comparable platform examples.",
@@ -92,7 +91,7 @@
       "output": "internal_draft"
     },
     {
-      "id": "02a8375a5dbc1ed1-pm",
+      "id": "f258d5ab45139e5c-pm",
       "role": "project_manager",
       "role_label": "Project execution manager",
       "title": "Prepare meeting agenda, owner decision queue, deadlines, and next internal follow-up.",
@@ -107,7 +106,7 @@
       "output": "internal_draft"
     },
     {
-      "id": "02a8375a5dbc1ed1-risk",
+      "id": "f258d5ab45139e5c-risk",
       "role": "risk_approval_officer",
       "role_label": "Risk and approval officer",
       "title": "Keep formal outreach, quotation, payment, contract, and public publishing blocked until approval.",
