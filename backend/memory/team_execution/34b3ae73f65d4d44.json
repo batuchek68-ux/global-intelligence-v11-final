@@ -1,7 +1,7 @@
 {
   "ok": true,
   "id": "34b3ae73f65d4d44",
-  "created_at": "2026-07-07T11:30:45.426319+00:00",
+  "created_at": "2026-07-07T12:14:09.151417+00:00",
   "objective": "Internal Brief Library Cleanup international engineering trade and intelligence execution",
   "country": "Internal",
   "industries": [
@@ -4312,7 +4312,7 @@
   },
   "answer_quality_model": {
     "ok": true,
-    "created_at": "2026-07-07T11:30:45.426312+00:00",
+    "created_at": "2026-07-07T12:14:09.151410+00:00",
     "overall_score": 61,
     "verdict": "needs_improvement",
     "dimensions": {
