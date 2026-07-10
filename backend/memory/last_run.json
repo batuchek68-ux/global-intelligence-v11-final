@@ -1,12 +1,12 @@
 {
-  "created_at": "2026-07-10T11:34:47+00:00",
+  "created_at": "2026-07-10T12:11:42+00:00",
   "project_count": 2,
   "case_count": 2,
   "approval_count": 1,
   "major_matter_count": 1,
   "resolved_major_matter_count": 0,
   "monitoring": {
-    "generated_at": "2026-07-10T11:34:47+00:00",
+    "generated_at": "2026-07-10T12:11:42+00:00",
     "date": "2026-07-10",
     "draft_notice": "DRAFT - Not approved for sending",
     "source_status": {
@@ -202,7 +202,7 @@
       "latest_path": "/home/runner/work/global-intelligence-v11-final/global-intelligence-v11-final/backend/memory/evidence/latest.json"
     },
     "action_boards": {
-      "board_count": 554,
+      "board_count": 559,
       "latest_path": "/home/runner/work/global-intelligence-v11-final/global-intelligence-v11-final/backend/memory/action_boards/latest.json"
     },
     "team_response": {
@@ -214,8 +214,8 @@
     "war_room": {
       "latest_path": "/home/runner/work/global-intelligence-v11-final/global-intelligence-v11-final/backend/memory/war_room/dd9fc0110161e244.json",
       "report_path": "/home/runner/work/global-intelligence-v11-final/global-intelligence-v11-final/backend/reports/war_room/dd9fc0110161e244.md",
-      "execution_queue_path": "/home/runner/work/global-intelligence-v11-final/global-intelligence-v11-final/backend/memory/war_room_execution/9bd8fae87f97af1d.json",
-      "execution_queue_report_path": "/home/runner/work/global-intelligence-v11-final/global-intelligence-v11-final/backend/reports/war_room_execution/9bd8fae87f97af1d.md",
+      "execution_queue_path": "/home/runner/work/global-intelligence-v11-final/global-intelligence-v11-final/backend/memory/war_room_execution/ea44d83b51341095.json",
+      "execution_queue_report_path": "/home/runner/work/global-intelligence-v11-final/global-intelligence-v11-final/backend/reports/war_room_execution/ea44d83b51341095.md",
       "execution_queue_tasks": 32,
       "execution_queue_blocked": 10,
       "overall_score": 99,
@@ -233,7 +233,7 @@
   },
   "cases": [
     {
-      "created_at": "2026-07-10T11:34:47+00:00",
+      "created_at": "2026-07-10T12:11:42+00:00",
       "project": {
         "path": "/home/runner/work/global-intelligence-v11-final/global-intelligence-v11-final/backend/projects/active/demo-port-logistics.md",
         "title": "Demo Port Logistics Modernization",
@@ -273,7 +273,7 @@
       "video_path": "/home/runner/work/global-intelligence-v11-final/global-intelligence-v11-final/backend/media/drafts/demo-port-logistics-modernization.md",
       "outbox_path": "/home/runner/work/global-intelligence-v11-final/global-intelligence-v11-final/backend/comm/outbox/demo-port-logistics-modernization.json",
       "classification": {
-        "created_at": "2026-07-10T11:34:47+00:00",
+        "created_at": "2026-07-10T12:11:42+00:00",
         "project": "Demo Port Logistics Modernization",
         "mode": "human_decision_required",
         "is_major_matter": true,
@@ -300,7 +300,7 @@
         }
       },
       "business_flow": {
-        "created_at": "2026-07-10T11:34:47+00:00",
+        "created_at": "2026-07-10T12:11:42+00:00",
         "project": "Demo Port Logistics Modernization",
         "real_work_coverage": {
           "international_trade": [
@@ -372,7 +372,7 @@
       "evidence_dossier_id": "8292910b19c4dd94",
       "team_execution_package_id": "c64fe893deddda22",
       "execution": {
-        "created_at": "2026-07-10T11:34:47+00:00",
+        "created_at": "2026-07-10T12:11:42+00:00",
         "project": "Demo Port Logistics Modernization",
         "mode": "human_decision_required",
         "status": "waiting_for_owner",
@@ -414,11 +414,11 @@
         "created": false,
         "reason": "approval already waiting"
       },
-      "action_board_id": "5d1f902b474934a2",
-      "action_board_path": "/home/runner/work/global-intelligence-v11-final/global-intelligence-v11-final/backend/reports/action_boards/5d1f902b474934a2.md"
+      "action_board_id": "7e789552f624aaac",
+      "action_board_path": "/home/runner/work/global-intelligence-v11-final/global-intelligence-v11-final/backend/reports/action_boards/7e789552f624aaac.md"
     },
     {
-      "created_at": "2026-07-10T11:34:47+00:00",
+      "created_at": "2026-07-10T12:11:42+00:00",
       "project": {
         "path": "/home/runner/work/global-intelligence-v11-final/global-intelligence-v11-final/backend/projects/active/internal-brief-library.md",
         "title": "Internal Brief Library Cleanup",
@@ -449,7 +449,7 @@
       "video_path": "/home/runner/work/global-intelligence-v11-final/global-intelligence-v11-final/backend/media/drafts/internal-brief-library-cleanup.md",
       "outbox_path": null,
       "classification": {
-        "created_at": "2026-07-10T11:34:47+00:00",
+        "created_at": "2026-07-10T12:11:42+00:00",
         "project": "Internal Brief Library Cleanup",
         "mode": "autonomous_execution",
         "is_major_matter": false,
@@ -476,7 +476,7 @@
         }
       },
       "business_flow": {
-        "created_at": "2026-07-10T11:34:47+00:00",
+        "created_at": "2026-07-10T12:11:42+00:00",
         "project": "Internal Brief Library Cleanup",
         "real_work_coverage": {
           "international_trade": [
@@ -548,7 +548,7 @@
       "evidence_dossier_id": "45c6eabe5fc2ba53",
       "team_execution_package_id": "34b3ae73f65d4d44",
       "execution": {
-        "created_at": "2026-07-10T11:34:47+00:00",
+        "created_at": "2026-07-10T12:11:42+00:00",
         "project": "Internal Brief Library Cleanup",
         "mode": "autonomous_execution",
         "status": "autonomous_executed",
@@ -589,8 +589,8 @@
         "created": false,
         "reason": "approval not needed"
       },
-      "action_board_id": "973604674ed22e51",
-      "action_board_path": "/home/runner/work/global-intelligence-v11-final/global-intelligence-v11-final/backend/reports/action_boards/973604674ed22e51.md"
+      "action_board_id": "4521a5cf8ad5515e",
+      "action_board_path": "/home/runner/work/global-intelligence-v11-final/global-intelligence-v11-final/backend/reports/action_boards/4521a5cf8ad5515e.md"
     }
   ]
 }
