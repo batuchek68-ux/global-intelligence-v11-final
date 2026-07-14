@@ -1,8 +1,8 @@
 {
   "ok": true,
-  "created_at": "2026-07-13T20:02:50.445932+00:00",
+  "created_at": "2026-07-14T03:47:39.347517+00:00",
   "repository": "batuchek68-ux/global-intelligence-v11-final",
-  "run_id": "29280769765",
+  "run_id": "29304330854",
   "command_model": {
     "github": "cloud AI headquarters",
     "codex": "24h autonomous executive",
@@ -21,17 +21,17 @@
     "benchmark_questions": 50,
     "answer_score": 80,
     "intelligence_keywords": 211,
-    "intelligence_briefs": 21,
-    "video_center_files": 21,
+    "intelligence_briefs": 22,
+    "video_center_files": 22,
     "team_execution_reports": 4,
     "evidence_dossiers": 4,
     "latest_evidence_status": "partially_supported",
-    "action_boards": 629,
+    "action_boards": 634,
     "latest_action_board_status": "pending_owner",
-    "team_responses": 88,
+    "team_responses": 92,
     "latest_team_response_score": 99,
-    "war_rooms": 44,
-    "war_room_execution_queues": 261,
+    "war_rooms": 46,
+    "war_room_execution_queues": 264,
     "latest_war_room_queue_tasks": 32,
     "latest_war_room_queue_blocked": 10,
     "latest_war_room_score": 99,
@@ -280,12 +280,12 @@
     {
       "name": "v11_intelligence:keyword_bank_and_brief",
       "ok": true,
-      "evidence": "keywords=211, briefs=21"
+      "evidence": "keywords=211, briefs=22"
     },
     {
       "name": "v11_video:center_generated",
       "ok": true,
-      "evidence": "video_files=21, platform_searches=120"
+      "evidence": "video_files=22, platform_searches=120"
     },
     {
       "name": "v11_team_execution:packages_generated",
@@ -300,12 +300,12 @@
     {
       "name": "v11_action_board:execution_tasks",
       "ok": true,
-      "evidence": "action_json=630, action_reports=630, latest_tasks=6, latest_status=pending_owner"
+      "evidence": "action_json=635, action_reports=635, latest_tasks=6, latest_status=pending_owner"
     },
     {
       "name": "v11_team_response:team_answer_pack",
       "ok": true,
-      "evidence": "team_response_json=89, score=99, roles=6"
+      "evidence": "team_response_json=93, score=99, roles=6"
     },
     {
       "name": "v11_search:source_readiness_and_confirmation_gate",
@@ -320,17 +320,17 @@
     {
       "name": "v11_war_room:vertical_team_operating_package",
       "ok": true,
-      "evidence": "latest=industry_war_room, saved_json=44, saved_reports=44, mode=industry_war_room, search_gate=lead_only, promotion=lead_only, roles=6, video=12, score=99"
+      "evidence": "latest=industry_war_room, saved_json=46, saved_reports=46, mode=industry_war_room, search_gate=lead_only, promotion=lead_only, roles=6, video=12, score=99"
     },
     {
       "name": "v11_war_room_execution:queue_tracks_work",
       "ok": true,
-      "evidence": "queues=261, reports=261, mode=war_room_execution_queue, tasks=32, open=22, blocked=10, approval=13"
+      "evidence": "queues=264, reports=264, mode=war_room_execution_queue, tasks=32, open=22, blocked=10, approval=13"
     },
     {
       "name": "v11_mission_control:operating_brief",
       "ok": true,
-      "evidence": "status=human_review_required, benchmark=50, customs=True, evidence=4, boards=629, responses=88, war_rooms=44, queues=261, queue_tasks=32, war_score=99, search_gate=lead_only, promotion_gate=draft_promotion_ready"
+      "evidence": "status=human_review_required, benchmark=50, customs=True, evidence=4, boards=634, responses=92, war_rooms=46, queues=264, queue_tasks=32, war_score=99, search_gate=lead_only, promotion_gate=draft_promotion_ready"
     }
   ]
 }
