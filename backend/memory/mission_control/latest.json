@@ -1,6 +1,6 @@
 {
   "ok": true,
-  "created_at": "2026-07-15T08:59:41.558183+00:00",
+  "created_at": "2026-07-15T14:25:35.373169+00:00",
   "status": "human_review_required",
   "mission": "vertical industry intelligence brain plus verified search plus project execution system",
   "command_center": {
@@ -23,7 +23,7 @@
     "evidence_dossiers": 4,
     "latest_evidence_status": "partially_supported",
     "latest_evidence_confidence": 84,
-    "action_boards": 669,
+    "action_boards": 674,
     "latest_action_board_status": "pending_owner",
     "latest_action_board_tasks": 6,
     "team_responses": 96,
@@ -36,7 +36,7 @@
     "latest_war_room_search_gate": "lead_only",
     "latest_war_room_promotion_gate": "lead_only",
     "latest_war_room_external_use": false,
-    "war_room_execution_queues": 285,
+    "war_room_execution_queues": 288,
     "latest_war_room_queue_mode": "war_room_execution_queue",
     "latest_war_room_queue_tasks": 32,
     "latest_war_room_queue_open": 22,
