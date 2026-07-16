@@ -1,8 +1,8 @@
-# v11 War Room Execution Queue: Daily v11 international engineering trade, research intelligence, investment promotion, video, customs, and project execution operating package
+# v11 War Room Execution Queue: Kazakhstan engineering trade project customs investment promotion video
 
 DRAFT - internal execution queue, not approved for external sending
 
-- Country: Indonesia
+- Country: Kazakhstan
 - Tasks: 32
 - Open: 22
 - Blocked: 10
@@ -11,63 +11,63 @@ DRAFT - internal execution queue, not approved for external sending
 
 ## Queue
 
-### 1c53ad0fe4bb42db-01 | research_analyst
+### afad546a47bdbfce-01 | research_analyst
 - Status: open
 - Risk gate: evidence_required
 - Source: search_confirmation.government_confirmation
-- Task: Run and record source evidence for query: Daily v11 international engineering trade, research intelligence, investment promotion, video, customs, and project execution operating package Central Asia official government site:gov.kz
+- Task: Run and record source evidence for query: Kazakhstan engineering trade project customs investment promotion video Kazakhstan official government site:gov.kz
 - Evidence needed: official URL; source date; source type; relevant excerpt; confidence note
 
-### 1c53ad0fe4bb42db-02 | research_analyst
+### afad546a47bdbfce-02 | research_analyst
 - Status: open
 - Risk gate: evidence_required
 - Source: search_confirmation.government_confirmation
-- Task: Run and record source evidence for query: Daily v11 international engineering trade, research intelligence, investment promotion, video, customs, and project execution operating package Central Asia official government site:gov.uz
+- Task: Run and record source evidence for query: Kazakhstan engineering trade project customs investment promotion video Kazakhstan official government site:primeminister.kz
 - Evidence needed: official URL; source date; source type; relevant excerpt; confidence note
 
-### 1c53ad0fe4bb42db-03 | research_analyst
+### afad546a47bdbfce-03 | research_analyst
 - Status: open
 - Risk gate: evidence_required
 - Source: search_confirmation.government_confirmation
-- Task: Run and record source evidence for query: Daily v11 international engineering trade, research intelligence, investment promotion, video, customs, and project execution operating package Central Asia official government site:gov.kg
+- Task: Run and record source evidence for query: Kazakhstan engineering trade project customs investment promotion video Kazakhstan official government site:invest.gov.kz
 - Evidence needed: official URL; source date; source type; relevant excerpt; confidence note
 
-### 1c53ad0fe4bb42db-04 | research_analyst
+### afad546a47bdbfce-04 | research_analyst
 - Status: open
 - Risk gate: evidence_required
 - Source: search_confirmation.government_confirmation
-- Task: Run and record source evidence for query: Daily v11 international engineering trade, research intelligence, investment promotion, video, customs, and project execution operating package Central Asia official government site:tajinvest.tj
+- Task: Run and record source evidence for query: Kazakhstan engineering trade project customs investment promotion video Kazakhstan official government site:adilet.zan.kz
 - Evidence needed: official URL; source date; source type; relevant excerpt; confidence note
 
-### 1c53ad0fe4bb42db-05 | research_analyst
+### afad546a47bdbfce-05 | research_analyst
 - Status: open
 - Risk gate: evidence_required
 - Source: search_confirmation.government_confirmation
-- Task: Run and record source evidence for query: Daily v11 international engineering trade, research intelligence, investment promotion, video, customs, and project execution operating package Central Asia ministry site:gov.kz
+- Task: Run and record source evidence for query: Kazakhstan engineering trade project customs investment promotion video Kazakhstan ministry site:gov.kz
 - Evidence needed: official URL; source date; source type; relevant excerpt; confidence note
 
-### 1c53ad0fe4bb42db-06 | research_analyst
+### afad546a47bdbfce-06 | research_analyst
 - Status: open
 - Risk gate: evidence_required
 - Source: search_confirmation.government_confirmation
-- Task: Run and record source evidence for query: Daily v11 international engineering trade, research intelligence, investment promotion, video, customs, and project execution operating package Central Asia ministry site:gov.uz
+- Task: Run and record source evidence for query: Kazakhstan engineering trade project customs investment promotion video Kazakhstan ministry site:primeminister.kz
 - Evidence needed: official URL; source date; source type; relevant excerpt; confidence note
 
-### 1c53ad0fe4bb42db-07 | research_analyst
+### afad546a47bdbfce-07 | research_analyst
 - Status: open
 - Risk gate: evidence_required
 - Source: search_confirmation.government_confirmation
-- Task: Run and record source evidence for query: Daily v11 international engineering trade, research intelligence, investment promotion, video, customs, and project execution operating package Central Asia ministry site:gov.kg
+- Task: Run and record source evidence for query: Kazakhstan engineering trade project customs investment promotion video Kazakhstan ministry site:invest.gov.kz
 - Evidence needed: official URL; source date; source type; relevant excerpt; confidence note
 
-### 1c53ad0fe4bb42db-08 | research_analyst
+### afad546a47bdbfce-08 | research_analyst
 - Status: open
 - Risk gate: evidence_required
 - Source: search_confirmation.government_confirmation
-- Task: Run and record source evidence for query: Daily v11 international engineering trade, research intelligence, investment promotion, video, customs, and project execution operating package Central Asia ministry site:tajinvest.tj
+- Task: Run and record source evidence for query: Kazakhstan engineering trade project customs investment promotion video Kazakhstan ministry site:adilet.zan.kz
 - Evidence needed: official URL; source date; source type; relevant excerpt; confidence note
 
-### 1c53ad0fe4bb42db-09 | risk_approval_officer
+### afad546a47bdbfce-09 | risk_approval_officer
 - Status: blocked
 - Risk gate: approval_required
 - Source: evidence.verification_status
@@ -75,7 +75,7 @@ DRAFT - internal execution queue, not approved for external sending
 - Evidence needed: government/customs/procurement URL; official company URL if relevant; collection date; contradiction check
 - Blocked actions: contract or payment approval; contract or payment commitment; delivery or customs commitment; external outreach; formal investment promotion publication; formal outreach; investment promotion publication; public video publication; quotation
 
-### 1c53ad0fe4bb42db-10 | project_manager
+### afad546a47bdbfce-10 | project_manager
 - Status: open
 - Risk gate: owner_review
 - Source: project_execution.next_actions
@@ -83,7 +83,7 @@ DRAFT - internal execution queue, not approved for external sending
 - Evidence needed: task owner; deadline; source link; decision log
 - Blocked actions: contract or payment approval; contract or payment commitment; delivery or customs commitment; external outreach; formal investment promotion publication; formal outreach; investment promotion publication; public video publication; quotation
 
-### 1c53ad0fe4bb42db-11 | project_manager
+### afad546a47bdbfce-11 | project_manager
 - Status: open
 - Risk gate: owner_review
 - Source: project_execution.next_actions
@@ -91,7 +91,7 @@ DRAFT - internal execution queue, not approved for external sending
 - Evidence needed: task owner; deadline; source link; decision log
 - Blocked actions: contract or payment approval; contract or payment commitment; delivery or customs commitment; external outreach; formal investment promotion publication; formal outreach; investment promotion publication; public video publication; quotation
 
-### 1c53ad0fe4bb42db-12 | project_manager
+### afad546a47bdbfce-12 | project_manager
 - Status: open
 - Risk gate: owner_review
 - Source: project_execution.next_actions
@@ -99,7 +99,7 @@ DRAFT - internal execution queue, not approved for external sending
 - Evidence needed: task owner; deadline; source link; decision log
 - Blocked actions: contract or payment approval; contract or payment commitment; delivery or customs commitment; external outreach; formal investment promotion publication; formal outreach; investment promotion publication; public video publication; quotation
 
-### 1c53ad0fe4bb42db-13 | project_manager
+### afad546a47bdbfce-13 | project_manager
 - Status: open
 - Risk gate: owner_review
 - Source: project_execution.next_actions
@@ -107,7 +107,7 @@ DRAFT - internal execution queue, not approved for external sending
 - Evidence needed: task owner; deadline; source link; decision log
 - Blocked actions: contract or payment approval; contract or payment commitment; delivery or customs commitment; external outreach; formal investment promotion publication; formal outreach; investment promotion publication; public video publication; quotation
 
-### 1c53ad0fe4bb42db-14 | project_manager
+### afad546a47bdbfce-14 | project_manager
 - Status: open
 - Risk gate: owner_review
 - Source: project_execution.next_actions
@@ -115,63 +115,63 @@ DRAFT - internal execution queue, not approved for external sending
 - Evidence needed: task owner; deadline; source link; decision log
 - Blocked actions: contract or payment approval; contract or payment commitment; delivery or customs commitment; external outreach; formal investment promotion publication; formal outreach; investment promotion publication; public video publication; quotation
 
-### 1c53ad0fe4bb42db-15 | trade_lead
+### afad546a47bdbfce-15 | trade_lead
 - Status: open
 - Risk gate: standard_review
 - Source: team.roles.next_step
 - Task: 收集海关官网、官方税则、清关文件、银行付款条件证据，并形成可执行 checklist。
 - Evidence needed: role output; review note; risk boundary
 
-### 1c53ad0fe4bb42db-16 | research_analyst
+### afad546a47bdbfce-16 | research_analyst
 - Status: open
 - Risk gate: standard_review
 - Source: team.roles.next_step
 - Task: 把证据分为政府/采购/企业/媒体/社交五级，记录 citation、URL、source date、relevance note。
 - Evidence needed: role output; review note; risk boundary
 
-### 1c53ad0fe4bb42db-17 | investment_promotion_lead
+### afad546a47bdbfce-17 | investment_promotion_lead
 - Status: open
 - Risk gate: standard_review
 - Source: team.roles.next_step
 - Task: 建立 owner/developer/investor/government authority 四类名单，并标注 evidence level。
 - Evidence needed: role output; review note; risk boundary
 
-### 1c53ad0fe4bb42db-18 | video_media_producer
+### afad546a47bdbfce-18 | video_media_producer
 - Status: open
 - Risk gate: standard_review
 - Source: team.roles.next_step
 - Task: 生成 60 秒项目机会脚本、风险解释脚本和平台关键词，等待人工审批。
 - Evidence needed: role output; review note; risk boundary
 
-### 1c53ad0fe4bb42db-19 | project_manager
+### afad546a47bdbfce-19 | project_manager
 - Status: open
 - Risk gate: standard_review
 - Source: team.roles.next_step
 - Task: 安排责任人、截止时间、会议议程、decision log 和复盘记录。
 - Evidence needed: role output; review note; risk boundary
 
-### 1c53ad0fe4bb42db-20 | risk_approval_officer
+### afad546a47bdbfce-20 | risk_approval_officer
 - Status: open
 - Risk gate: standard_review
 - Source: team.roles.next_step
 - Task: 把高风险事项写入老板收件箱，审批前保持 DRAFT - Not approved for sending。
 - Evidence needed: role output; review note; risk boundary
 
-### 1c53ad0fe4bb42db-21 | trade_lead
+### afad546a47bdbfce-21 | trade_lead
 - Status: open
 - Risk gate: human_review_required
 - Source: action_board.tasks
 - Task: Verify customs, HS/tariff, payment terms, Incoterms, and logistics route.
 - Evidence needed: customs authority URL; tariff/HS evidence; payment term proof; logistics route proof
 
-### 1c53ad0fe4bb42db-22 | research_analyst
+### afad546a47bdbfce-22 | research_analyst
 - Status: open
 - Risk gate: evidence_required
 - Source: action_board.tasks
 - Task: Collect government, procurement, academic, and library evidence; grade each source.
 - Evidence needed: government page; procurement page; paper/library source; source date
 
-### 1c53ad0fe4bb42db-23 | investment_promotion_lead
+### afad546a47bdbfce-23 | investment_promotion_lead
 - Status: blocked
 - Risk gate: blocked_before_external_use
 - Source: action_board.tasks
@@ -179,7 +179,7 @@ DRAFT - internal execution queue, not approved for external sending
 - Evidence needed: official project owner proof; developer/investor proof; investment agency source
 - Blocked actions: contract or payment approval; contract or payment commitment; delivery or customs commitment; external outreach; formal investment promotion publication; formal outreach; investment promotion publication; public video publication; quotation
 
-### 1c53ad0fe4bb42db-24 | video_media_producer
+### afad546a47bdbfce-24 | video_media_producer
 - Status: blocked
 - Risk gate: human_approval_before_publish
 - Source: action_board.tasks
@@ -187,14 +187,14 @@ DRAFT - internal execution queue, not approved for external sending
 - Evidence needed: platform search links; country style notes; verified project facts
 - Blocked actions: contract or payment approval; contract or payment commitment; delivery or customs commitment; external outreach; formal investment promotion publication; formal outreach; investment promotion publication; public video publication; quotation
 
-### 1c53ad0fe4bb42db-25 | project_manager
+### afad546a47bdbfce-25 | project_manager
 - Status: open
 - Risk gate: owner_queue
 - Source: action_board.tasks
 - Task: Prepare meeting agenda, owner decision queue, deadlines, and next internal follow-up.
 - Evidence needed: meeting record; task owner; deadline; decision log
 
-### 1c53ad0fe4bb42db-26 | risk_approval_officer
+### afad546a47bdbfce-26 | risk_approval_officer
 - Status: pending_owner
 - Risk gate: active
 - Source: action_board.tasks
@@ -202,51 +202,51 @@ DRAFT - internal execution queue, not approved for external sending
 - Evidence needed: approval ticket; risk trigger; human decision; audit log line
 - Blocked actions: contract or payment approval; contract or payment commitment; delivery or customs commitment; external outreach; formal investment promotion publication; formal outreach; investment promotion publication; public video publication; quotation
 
-### 1c53ad0fe4bb42db-27 | video_media_producer
+### afad546a47bdbfce-27 | video_media_producer
 - Status: blocked
 - Risk gate: blocked_before_external_use
 - Source: video_center.platform_searches
-- Task: Study platform examples and draft original video angle for YouTube: Indonesia infrastructure Daily v11 international engineering trade, research intelligence, investment promotion, video, customs, and project execution operating package case study short video
+- Task: Study platform examples and draft original video angle for YouTube: Kazakhstan infrastructure Kazakhstan engineering trade project customs investment promotion video case study short video
 - Evidence needed: reference links; style notes; original script outline; approval boundary
 - Blocked actions: contract or payment approval; contract or payment commitment; delivery or customs commitment; external outreach; formal investment promotion publication; formal outreach; investment promotion publication; public publishing; public video publication; quotation; unapproved outreach
 
-### 1c53ad0fe4bb42db-28 | video_media_producer
+### afad546a47bdbfce-28 | video_media_producer
 - Status: blocked
 - Risk gate: blocked_before_external_use
 - Source: video_center.platform_searches
-- Task: Study platform examples and draft original video angle for TikTok: Indonesia infrastructure Daily v11 international engineering trade, research intelligence, investment promotion, video, customs, and project execution operating package case study short video
+- Task: Study platform examples and draft original video angle for TikTok: Kazakhstan infrastructure Kazakhstan engineering trade project customs investment promotion video case study short video
 - Evidence needed: reference links; style notes; original script outline; approval boundary
 - Blocked actions: contract or payment approval; contract or payment commitment; delivery or customs commitment; external outreach; formal investment promotion publication; formal outreach; investment promotion publication; public publishing; public video publication; quotation; unapproved outreach
 
-### 1c53ad0fe4bb42db-29 | video_media_producer
+### afad546a47bdbfce-29 | video_media_producer
 - Status: blocked
 - Risk gate: blocked_before_external_use
 - Source: video_center.platform_searches
-- Task: Study platform examples and draft original video angle for Douyin: Indonesia infrastructure Daily v11 international engineering trade, research intelligence, investment promotion, video, customs, and project execution operating package case study short video
+- Task: Study platform examples and draft original video angle for Douyin: Kazakhstan infrastructure Kazakhstan engineering trade project customs investment promotion video case study short video
 - Evidence needed: reference links; style notes; original script outline; approval boundary
 - Blocked actions: contract or payment approval; contract or payment commitment; delivery or customs commitment; external outreach; formal investment promotion publication; formal outreach; investment promotion publication; public publishing; public video publication; quotation; unapproved outreach
 
-### 1c53ad0fe4bb42db-30 | video_media_producer
+### afad546a47bdbfce-30 | video_media_producer
 - Status: blocked
 - Risk gate: blocked_before_external_use
 - Source: video_center.platform_searches
-- Task: Study platform examples and draft original video angle for Google Video: Indonesia infrastructure Daily v11 international engineering trade, research intelligence, investment promotion, video, customs, and project execution operating package case study short video
+- Task: Study platform examples and draft original video angle for Google Video: Kazakhstan infrastructure Kazakhstan engineering trade project customs investment promotion video case study short video
 - Evidence needed: reference links; style notes; original script outline; approval boundary
 - Blocked actions: contract or payment approval; contract or payment commitment; delivery or customs commitment; external outreach; formal investment promotion publication; formal outreach; investment promotion publication; public publishing; public video publication; quotation; unapproved outreach
 
-### 1c53ad0fe4bb42db-31 | video_media_producer
+### afad546a47bdbfce-31 | video_media_producer
 - Status: blocked
 - Risk gate: blocked_before_external_use
 - Source: video_center.platform_searches
-- Task: Study platform examples and draft original video angle for YouTube: Indonesia infrastructure Daily v11 international engineering trade, research intelligence, investment promotion, video, customs, and project execution operating package project progress short video
+- Task: Study platform examples and draft original video angle for YouTube: Kazakhstan infrastructure Kazakhstan engineering trade project customs investment promotion video project progress short video
 - Evidence needed: reference links; style notes; original script outline; approval boundary
 - Blocked actions: contract or payment approval; contract or payment commitment; delivery or customs commitment; external outreach; formal investment promotion publication; formal outreach; investment promotion publication; public publishing; public video publication; quotation; unapproved outreach
 
-### 1c53ad0fe4bb42db-32 | video_media_producer
+### afad546a47bdbfce-32 | video_media_producer
 - Status: blocked
 - Risk gate: blocked_before_external_use
 - Source: video_center.platform_searches
-- Task: Study platform examples and draft original video angle for TikTok: Indonesia infrastructure Daily v11 international engineering trade, research intelligence, investment promotion, video, customs, and project execution operating package project progress short video
+- Task: Study platform examples and draft original video angle for TikTok: Kazakhstan infrastructure Kazakhstan engineering trade project customs investment promotion video project progress short video
 - Evidence needed: reference links; style notes; original script outline; approval boundary
 - Blocked actions: contract or payment approval; contract or payment commitment; delivery or customs commitment; external outreach; formal investment promotion publication; formal outreach; investment promotion publication; public publishing; public video publication; quotation; unapproved outreach
 
