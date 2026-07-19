@@ -1,11 +1,11 @@
 {
   "ok": true,
-  "id": "5c57fd277f316357",
-  "created_at": "2026-07-19T19:51:00.167469+00:00",
+  "id": "ab8a9a143700f034",
+  "created_at": "2026-07-19T19:50:59.674205+00:00",
   "mode": "war_room_execution_queue",
-  "war_room_id": "9c27615baddd179e",
-  "objective": "Daily v11 international engineering trade, research intelligence, investment promotion, video, customs, and project execution operating package",
-  "country": "Indonesia",
+  "war_room_id": "41f3303f0e577912",
+  "objective": "Kazakhstan engineering trade project customs investment promotion video",
+  "country": "Kazakhstan",
   "summary": {
     "task_count": 32,
     "open_count": 22,
@@ -15,9 +15,9 @@
   },
   "tasks": [
     {
-      "id": "5c57fd277f316357-01",
+      "id": "ab8a9a143700f034-01",
       "role": "research_analyst",
-      "task": "Run and record source evidence for query: Daily v11 international engineering trade, research intelligence, investment promotion, video, customs, and project execution operating package Central Asia official government site:gov.kz",
+      "task": "Run and record source evidence for query: Kazakhstan engineering trade project customs investment promotion video Kazakhstan official government site:gov.kz",
       "source": "search_confirmation.government_confirmation",
       "evidence_needed": [
         "official URL",
@@ -33,9 +33,9 @@
       "output": "evidence_record"
     },
     {
-      "id": "5c57fd277f316357-02",
+      "id": "ab8a9a143700f034-02",
       "role": "research_analyst",
-      "task": "Run and record source evidence for query: Daily v11 international engineering trade, research intelligence, investment promotion, video, customs, and project execution operating package Central Asia official government site:gov.uz",
+      "task": "Run and record source evidence for query: Kazakhstan engineering trade project customs investment promotion video Kazakhstan official government site:primeminister.kz",
       "source": "search_confirmation.government_confirmation",
       "evidence_needed": [
         "official URL",
@@ -51,9 +51,9 @@
       "output": "evidence_record"
     },
     {
-      "id": "5c57fd277f316357-03",
+      "id": "ab8a9a143700f034-03",
       "role": "research_analyst",
-      "task": "Run and record source evidence for query: Daily v11 international engineering trade, research intelligence, investment promotion, video, customs, and project execution operating package Central Asia official government site:gov.kg",
+      "task": "Run and record source evidence for query: Kazakhstan engineering trade project customs investment promotion video Kazakhstan official government site:invest.gov.kz",
       "source": "search_confirmation.government_confirmation",
       "evidence_needed": [
         "official URL",
@@ -69,9 +69,9 @@
       "output": "evidence_record"
     },
     {
-      "id": "5c57fd277f316357-04",
+      "id": "ab8a9a143700f034-04",
       "role": "research_analyst",
-      "task": "Run and record source evidence for query: Daily v11 international engineering trade, research intelligence, investment promotion, video, customs, and project execution operating package Central Asia official government site:tajinvest.tj",
+      "task": "Run and record source evidence for query: Kazakhstan engineering trade project customs investment promotion video Kazakhstan official government site:adilet.zan.kz",
       "source": "search_confirmation.government_confirmation",
       "evidence_needed": [
         "official URL",
@@ -87,9 +87,9 @@
       "output": "evidence_record"
     },
     {
-      "id": "5c57fd277f316357-05",
+      "id": "ab8a9a143700f034-05",
       "role": "research_analyst",
-      "task": "Run and record source evidence for query: Daily v11 international engineering trade, research intelligence, investment promotion, video, customs, and project execution operating package Central Asia ministry site:gov.kz",
+      "task": "Run and record source evidence for query: Kazakhstan engineering trade project customs investment promotion video Kazakhstan ministry site:gov.kz",
       "source": "search_confirmation.government_confirmation",
       "evidence_needed": [
         "official URL",
@@ -105,9 +105,9 @@
       "output": "evidence_record"
     },
     {
-      "id": "5c57fd277f316357-06",
+      "id": "ab8a9a143700f034-06",
       "role": "research_analyst",
-      "task": "Run and record source evidence for query: Daily v11 international engineering trade, research intelligence, investment promotion, video, customs, and project execution operating package Central Asia ministry site:gov.uz",
+      "task": "Run and record source evidence for query: Kazakhstan engineering trade project customs investment promotion video Kazakhstan ministry site:primeminister.kz",
       "source": "search_confirmation.government_confirmation",
       "evidence_needed": [
         "official URL",
@@ -123,9 +123,9 @@
       "output": "evidence_record"
     },
     {
-      "id": "5c57fd277f316357-07",
+      "id": "ab8a9a143700f034-07",
       "role": "research_analyst",
-      "task": "Run and record source evidence for query: Daily v11 international engineering trade, research intelligence, investment promotion, video, customs, and project execution operating package Central Asia ministry site:gov.kg",
+      "task": "Run and record source evidence for query: Kazakhstan engineering trade project customs investment promotion video Kazakhstan ministry site:invest.gov.kz",
       "source": "search_confirmation.government_confirmation",
       "evidence_needed": [
         "official URL",
@@ -141,9 +141,9 @@
       "output": "evidence_record"
     },
     {
-      "id": "5c57fd277f316357-08",
+      "id": "ab8a9a143700f034-08",
       "role": "research_analyst",
-      "task": "Run and record source evidence for query: Daily v11 international engineering trade, research intelligence, investment promotion, video, customs, and project execution operating package Central Asia ministry site:tajinvest.tj",
+      "task": "Run and record source evidence for query: Kazakhstan engineering trade project customs investment promotion video Kazakhstan ministry site:adilet.zan.kz",
       "source": "search_confirmation.government_confirmation",
       "evidence_needed": [
         "official URL",
@@ -159,7 +159,7 @@
       "output": "evidence_record"
     },
     {
-      "id": "5c57fd277f316357-09",
+      "id": "ab8a9a143700f034-09",
       "role": "risk_approval_officer",
       "task": "Upgrade evidence from lead-only or partial support to official confirmation before project confirmation.",
       "source": "evidence.verification_status",
@@ -186,7 +186,7 @@
       "output": "evidence_gap_report"
     },
     {
-      "id": "5c57fd277f316357-10",
+      "id": "ab8a9a143700f034-10",
       "role": "project_manager",
       "task": "Open official government and procurement search URLs from the highest priority plan.",
       "source": "project_execution.next_actions",
@@ -213,7 +213,7 @@
       "output": "project_followup_item"
     },
     {
-      "id": "5c57fd277f316357-11",
+      "id": "ab8a9a143700f034-11",
       "role": "project_manager",
       "task": "Attach official evidence with title, URL, snippet, source_type, and source date.",
       "source": "project_execution.next_actions",
@@ -240,7 +240,7 @@
       "output": "project_followup_item"
     },
     {
-      "id": "5c57fd277f316357-12",
+      "id": "ab8a9a143700f034-12",
       "role": "project_manager",
       "task": "Confirm project owner, developer, responsible office/person, tender status, and customs impact.",
       "source": "project_execution.next_actions",
@@ -267,7 +267,7 @@
       "output": "project_followup_item"
     },
     {
-      "id": "5c57fd277f316357-13",
+      "id": "ab8a9a143700f034-13",
       "role": "project_manager",
       "task": "Use the action board for team task assignment.",
       "source": "project_execution.next_actions",
@@ -294,7 +294,7 @@
       "output": "project_followup_item"
     },
     {
-      "id": "5c57fd277f316357-14",
+      "id": "ab8a9a143700f034-14",
       "role": "project_manager",
       "task": "Request human approval before any external message or publication.",
       "source": "project_execution.next_actions",
@@ -321,7 +321,7 @@
       "output": "project_followup_item"
     },
     {
-      "id": "5c57fd277f316357-15",
+      "id": "ab8a9a143700f034-15",
       "role": "trade_lead",
       "task": "收集海关官网、官方税则、清关文件、银行付款条件证据，并形成可执行 checklist。",
       "source": "team.roles.next_step",
@@ -337,7 +337,7 @@
       "output": "role_work_product"
     },
     {
-      "id": "5c57fd277f316357-16",
+      "id": "ab8a9a143700f034-16",
       "role": "research_analyst",
       "task": "把证据分为政府/采购/企业/媒体/社交五级，记录 citation、URL、source date、relevance note。",
       "source": "team.roles.next_step",
@@ -353,7 +353,7 @@
       "output": "role_work_product"
     },
     {
-      "id": "5c57fd277f316357-17",
+      "id": "ab8a9a143700f034-17",
       "role": "investment_promotion_lead",
       "task": "建立 owner/developer/investor/government authority 四类名单，并标注 evidence level。",
       "source": "team.roles.next_step",
@@ -369,7 +369,7 @@
       "output": "role_work_product"
     },
     {
-      "id": "5c57fd277f316357-18",
+      "id": "ab8a9a143700f034-18",
       "role": "video_media_producer",
       "task": "生成 60 秒项目机会脚本、风险解释脚本和平台关键词，等待人工审批。",
       "source": "team.roles.next_step",
@@ -385,7 +385,7 @@
       "output": "role_work_product"
     },
     {
-      "id": "5c57fd277f316357-19",
+      "id": "ab8a9a143700f034-19",
       "role": "project_manager",
       "task": "安排责任人、截止时间、会议议程、decision log 和复盘记录。",
       "source": "team.roles.next_step",
@@ -401,7 +401,7 @@
       "output": "role_work_product"
     },
     {
-      "id": "5c57fd277f316357-20",
+      "id": "ab8a9a143700f034-20",
       "role": "risk_approval_officer",
       "task": "把高风险事项写入老板收件箱，审批前保持 DRAFT - Not approved for sending。",
       "source": "team.roles.next_step",
@@ -417,7 +417,7 @@
       "output": "role_work_product"
     },
     {
-      "id": "5c57fd277f316357-21",
+      "id": "ab8a9a143700f034-21",
       "role": "trade_lead",
       "task": "Verify customs, HS/tariff, payment terms, Incoterms, and logistics route.",
       "source": "action_board.tasks",
@@ -434,7 +434,7 @@
       "output": "internal_draft"
     },
     {
-      "id": "5c57fd277f316357-22",
+      "id": "ab8a9a143700f034-22",
       "role": "research_analyst",
       "task": "Collect government, procurement, academic, and library evidence; grade each source.",
       "source": "action_board.tasks",
@@ -451,7 +451,7 @@
       "output": "internal_draft"
     },
     {
-      "id": "5c57fd277f316357-23",
+      "id": "ab8a9a143700f034-23",
       "role": "investment_promotion_lead",
       "task": "Map owner, developer, investor candidates, incentive policy, and project packaging gaps.",
       "source": "action_board.tasks",
@@ -477,7 +477,7 @@
       "output": "internal_draft"
     },
     {
-      "id": "5c57fd277f316357-24",
+      "id": "ab8a9a143700f034-24",
       "role": "video_media_producer",
       "task": "Draft country-style video concept based on verified facts and comparable platform examples.",
       "source": "action_board.tasks",
@@ -503,7 +503,7 @@
       "output": "internal_draft"
     },
     {
-      "id": "5c57fd277f316357-25",
+      "id": "ab8a9a143700f034-25",
       "role": "project_manager",
       "task": "Prepare meeting agenda, owner decision queue, deadlines, and next internal follow-up.",
       "source": "action_board.tasks",
@@ -520,7 +520,7 @@
       "output": "internal_draft"
     },
     {
-      "id": "5c57fd277f316357-26",
+      "id": "ab8a9a143700f034-26",
       "role": "risk_approval_officer",
       "task": "Keep formal outreach, quotation, payment, contract, and public publishing blocked until approval.",
       "source": "action_board.tasks",
@@ -547,9 +547,9 @@
       "output": "internal_draft"
     },
     {
-      "id": "5c57fd277f316357-27",
+      "id": "ab8a9a143700f034-27",
       "role": "video_media_producer",
-      "task": "Study platform examples and draft original video angle for YouTube: Indonesia infrastructure Daily v11 international engineering trade, research intelligence, investment promotion, video, customs, and project execution operating package case study short video",
+      "task": "Study platform examples and draft original video angle for YouTube: Kazakhstan infrastructure Kazakhstan engineering trade project customs investment promotion video case study short video",
       "source": "video_center.platform_searches",
       "evidence_needed": [
         "reference links",
@@ -576,9 +576,9 @@
       "output": "draft_video_brief"
     },
     {
-      "id": "5c57fd277f316357-28",
+      "id": "ab8a9a143700f034-28",
       "role": "video_media_producer",
-      "task": "Study platform examples and draft original video angle for TikTok: Indonesia infrastructure Daily v11 international engineering trade, research intelligence, investment promotion, video, customs, and project execution operating package case study short video",
+      "task": "Study platform examples and draft original video angle for TikTok: Kazakhstan infrastructure Kazakhstan engineering trade project customs investment promotion video case study short video",
       "source": "video_center.platform_searches",
       "evidence_needed": [
         "reference links",
@@ -605,9 +605,9 @@
       "output": "draft_video_brief"
     },
     {
-      "id": "5c57fd277f316357-29",
+      "id": "ab8a9a143700f034-29",
       "role": "video_media_producer",
-      "task": "Study platform examples and draft original video angle for Douyin: Indonesia infrastructure Daily v11 international engineering trade, research intelligence, investment promotion, video, customs, and project execution operating package case study short video",
+      "task": "Study platform examples and draft original video angle for Douyin: Kazakhstan infrastructure Kazakhstan engineering trade project customs investment promotion video case study short video",
       "source": "video_center.platform_searches",
       "evidence_needed": [
         "reference links",
@@ -634,9 +634,9 @@
       "output": "draft_video_brief"
     },
     {
-      "id": "5c57fd277f316357-30",
+      "id": "ab8a9a143700f034-30",
       "role": "video_media_producer",
-      "task": "Study platform examples and draft original video angle for Google Video: Indonesia infrastructure Daily v11 international engineering trade, research intelligence, investment promotion, video, customs, and project execution operating package case study short video",
+      "task": "Study platform examples and draft original video angle for Google Video: Kazakhstan infrastructure Kazakhstan engineering trade project customs investment promotion video case study short video",
       "source": "video_center.platform_searches",
       "evidence_needed": [
         "reference links",
@@ -663,9 +663,9 @@
       "output": "draft_video_brief"
     },
     {
-      "id": "5c57fd277f316357-31",
+      "id": "ab8a9a143700f034-31",
       "role": "video_media_producer",
-      "task": "Study platform examples and draft original video angle for YouTube: Indonesia infrastructure Daily v11 international engineering trade, research intelligence, investment promotion, video, customs, and project execution operating package project progress short video",
+      "task": "Study platform examples and draft original video angle for YouTube: Kazakhstan infrastructure Kazakhstan engineering trade project customs investment promotion video project progress short video",
       "source": "video_center.platform_searches",
       "evidence_needed": [
         "reference links",
@@ -692,9 +692,9 @@
       "output": "draft_video_brief"
     },
     {
-      "id": "5c57fd277f316357-32",
+      "id": "ab8a9a143700f034-32",
       "role": "video_media_producer",
-      "task": "Study platform examples and draft original video angle for TikTok: Indonesia infrastructure Daily v11 international engineering trade, research intelligence, investment promotion, video, customs, and project execution operating package project progress short video",
+      "task": "Study platform examples and draft original video angle for TikTok: Kazakhstan infrastructure Kazakhstan engineering trade project customs investment promotion video project progress short video",
       "source": "video_center.platform_searches",
       "evidence_needed": [
         "reference links",
