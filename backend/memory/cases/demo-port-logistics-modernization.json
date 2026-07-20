@@ -1,5 +1,5 @@
 {
-  "created_at": "2026-07-19T19:51:00+00:00",
+  "created_at": "2026-07-20T04:26:14+00:00",
   "project": {
     "path": "/home/runner/work/global-intelligence-v11-final/global-intelligence-v11-final/backend/projects/active/demo-port-logistics.md",
     "title": "Demo Port Logistics Modernization",
@@ -39,7 +39,7 @@
   "video_path": "/home/runner/work/global-intelligence-v11-final/global-intelligence-v11-final/backend/media/drafts/demo-port-logistics-modernization.md",
   "outbox_path": "/home/runner/work/global-intelligence-v11-final/global-intelligence-v11-final/backend/comm/outbox/demo-port-logistics-modernization.json",
   "classification": {
-    "created_at": "2026-07-19T19:51:00+00:00",
+    "created_at": "2026-07-20T04:26:14+00:00",
     "project": "Demo Port Logistics Modernization",
     "mode": "human_decision_required",
     "is_major_matter": true,
@@ -66,7 +66,7 @@
     }
   },
   "business_flow": {
-    "created_at": "2026-07-19T19:51:00+00:00",
+    "created_at": "2026-07-20T04:26:14+00:00",
     "project": "Demo Port Logistics Modernization",
     "real_work_coverage": {
       "international_trade": [
@@ -138,7 +138,7 @@
   "evidence_dossier_id": "8292910b19c4dd94",
   "team_execution_package_id": "c64fe893deddda22",
   "execution": {
-    "created_at": "2026-07-19T19:51:00+00:00",
+    "created_at": "2026-07-20T04:26:14+00:00",
     "project": "Demo Port Logistics Modernization",
     "mode": "human_decision_required",
     "status": "waiting_for_owner",
@@ -180,6 +180,6 @@
     "created": false,
     "reason": "approval already waiting"
   },
-  "action_board_id": "85fdfaeed5da111a",
-  "action_board_path": "/home/runner/work/global-intelligence-v11-final/global-intelligence-v11-final/backend/reports/action_boards/85fdfaeed5da111a.md"
+  "action_board_id": "e5339da3b29dd0a9",
+  "action_board_path": "/home/runner/work/global-intelligence-v11-final/global-intelligence-v11-final/backend/reports/action_boards/e5339da3b29dd0a9.md"
 }
