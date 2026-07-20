@@ -1,7 +1,7 @@
 {
   "ok": true,
   "id": "45c6eabe5fc2ba53",
-  "created_at": "2026-07-20T04:26:14.515952+00:00",
+  "created_at": "2026-07-20T04:56:46.361148+00:00",
   "project": "Internal Brief Library Cleanup",
   "country": "Internal",
   "claim": "Internal Brief Library Cleanup project status, stakeholders, customs and trade risk",
@@ -30,7 +30,7 @@
       "high_risk_hits": [
         "customs"
       ],
-      "collected_at": "2026-07-20T04:26:14+00:00"
+      "collected_at": "2026-07-20T04:56:46+00:00"
     }
   ],
   "decision_rule": "Official government/customs/procurement evidence is required before project confirmation, investment promotion, quotation, customer commitment, or public publishing.",
