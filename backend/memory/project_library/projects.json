@@ -17,7 +17,7 @@
         "snippet": "Official source describes owner, tender status, customs documents and engineering scope.",
         "source_type": "government",
         "government_confirmed": true,
-        "collected_at": "2026-07-21T14:38:04.163726+00:00"
+        "collected_at": "2026-07-21T20:05:50.987067+00:00"
       }
     ],
     "evidence": [
@@ -28,7 +28,7 @@
         "snippet": "Official source describes owner, tender status, customs documents and engineering scope.",
         "source_type": "government",
         "government_confirmed": true,
-        "collected_at": "2026-07-21T14:38:04.163726+00:00"
+        "collected_at": "2026-07-21T20:05:50.987067+00:00"
       }
     ],
     "stakeholders": {
@@ -45,7 +45,7 @@
       "Human approval required before external outreach, quotation, commitment, or publication.",
       "Government source confirmation required before investment promotion use."
     ],
-    "updated_at": "2026-07-21T14:38:04.164171+00:00",
+    "updated_at": "2026-07-21T20:05:50.987609+00:00",
     "official_source_status": "official_procurement_supported",
     "project_record_status": "candidate_project",
     "verified_project_allowed": false,
@@ -149,7 +149,7 @@
         "snippet": "daily operating cycle, project cases, evidence dossiers, action boards, video center, benchmark and owner approval queue",
         "source_type": "internal",
         "government_confirmed": false,
-        "collected_at": "2026-07-21T14:38:05.278635+00:00"
+        "collected_at": "2026-07-21T20:05:52.374856+00:00"
       }
     ],
     "stakeholders": {
@@ -166,7 +166,7 @@
       "Human approval required before external outreach, quotation, commitment, or publication.",
       "Government source confirmation required before investment promotion use."
     ],
-    "updated_at": "2026-07-21T14:38:05.278998+00:00",
+    "updated_at": "2026-07-21T20:05:52.375291+00:00",
     "official_source_status": "candidate_unverified",
     "project_record_status": "candidate_project",
     "verified_project_allowed": false,
