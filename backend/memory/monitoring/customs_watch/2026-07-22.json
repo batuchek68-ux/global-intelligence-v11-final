@@ -1,0 +1,110 @@
+{
+  "date": "2026-07-22",
+  "generated_at": "2026-07-22T04:00:52+00:00",
+  "ports": [
+    "Alashankou port",
+    "Horgos port",
+    "Jeminay port",
+    "Yili Prefecture border ports",
+    "southern Xinjiang ports"
+  ],
+  "required_fields": [
+    "date_period",
+    "port",
+    "customs_district",
+    "trade_mode",
+    "logistics_mode",
+    "hs_code",
+    "commodity",
+    "quantity",
+    "value",
+    "unit_price",
+    "quality_or_grade",
+    "origin",
+    "destination",
+    "source_url",
+    "confidence",
+    "opportunity_signal",
+    "risk_signal"
+  ],
+  "records": [],
+  "source_status": {
+    "live_fetch": false,
+    "reason": "No authorized live news/customs/customs-data API is configured",
+    "allowed_sources": [
+      "official public pages",
+      "subscribed data APIs",
+      "approved search APIs"
+    ],
+    "blocked_sources": [
+      "unauthorized access",
+      "paywall bypass",
+      "website vulnerability exploitation"
+    ]
+  },
+  "work_buddy_collection_matrix": [
+    {
+      "collector": "official_public_pages",
+      "cadence": "30min",
+      "scope": "government plans, procurement notices, investment agencies, port and energy authorities",
+      "allowed_methods": [
+        "public web pages",
+        "RSS",
+        "approved search APIs",
+        "subscribed data APIs"
+      ],
+      "blocked_methods": [
+        "paywall bypass",
+        "credential sharing",
+        "website vulnerability exploitation",
+        "unauthorized scraping"
+      ]
+    },
+    {
+      "collector": "customs_and_port_watch",
+      "cadence": "daily",
+      "scope": "Alashankou, Horgos, Jeminay, Yili Prefecture ports, southern Xinjiang ports, HS code and freight signals",
+      "allowed_methods": [
+        "official customs publications",
+        "approved API",
+        "licensed customs-data provider"
+      ],
+      "blocked_methods": [
+        "unlicensed database access",
+        "source impersonation",
+        "manual figure fabrication"
+      ]
+    },
+    {
+      "collector": "project_feasibility_intake",
+      "cadence": "daily",
+      "scope": "mining, metallurgy, thermal power, Caspian ports, oil refining, agriculture machinery and fertilizer",
+      "allowed_methods": [
+        "evidence dossier",
+        "source grading",
+        "owner/developer/procurement verification"
+      ],
+      "blocked_methods": [
+        "external commitment before approval",
+        "quotation before human decision",
+        "treating leads as confirmed projects"
+      ]
+    },
+    {
+      "collector": "content_draft_pipeline",
+      "cadence": "on demand",
+      "scope": "internal brief, feasibility draft, video/script draft and social media draft",
+      "allowed_methods": [
+        "DRAFT output",
+        "policy check",
+        "human approval queue"
+      ],
+      "blocked_methods": [
+        "automatic public publishing",
+        "external outreach",
+        "customer reply without approval"
+      ]
+    }
+  ],
+  "next_action": "Configure official customs publication source, approved crawler, or subscribed customs-data API before daily volume statistics are treated as factual."
+}
