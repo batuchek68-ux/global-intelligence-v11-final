@@ -1,0 +1,1380 @@
+{
+  "ok": true,
+  "id": "8f40b0192dffb58b",
+  "created_at": "2026-07-24T03:58:00.150681+00:00",
+  "mode": "industry_war_room",
+  "objective": "Kazakhstan engineering trade project customs investment promotion video",
+  "country": "Kazakhstan",
+  "industries": [
+    "infrastructure",
+    "logistics"
+  ],
+  "audience": "internal",
+  "executive_synthesis": "DRAFT - internal operating synthesis, not approved for external sending\nObjective: Kazakhstan engineering trade project customs investment promotion video\nEvidence status: officially_supported; confidence=98; official_sources=1.\nSearch confirmation gate: lead_only; confirmed_project_allowed=False.\nPromotion readiness: evidence_review_required; internal_draft=False; external_use=False.\nTeam answer quality: 99.\nDecision: treat unverified material as leads only. Build official evidence first, then project record, then internal promotion draft, then human approval before any external action.",
+  "search_confirmation": {
+    "source_readiness": {
+      "ok": false,
+      "configured_count": 11,
+      "live_adapter_count": 0,
+      "manual_entry_count": 11,
+      "missing_configuration": [
+        {
+          "source": "Bing",
+          "reason": "Missing environment variable BING_SEARCH_KEY"
+        }
+      ],
+      "explanation": "Live API keys improve automation, but manual official search URLs are still provided. A source being reachable does not confirm a project; evidence must be attached and verified."
+    },
+    "project_confirmation_gate": {
+      "status": "lead_only",
+      "can_create_confirmed_project_record": false,
+      "can_create_lead_record": true,
+      "required_before_confirmed_project": [
+        "政府官网或官方采购页面确认项目存在、阶段、主管部门。",
+        "海关或官方税则资料确认 HS code、关税、进口许可、清关文件。",
+        "官方企业、政府或采购资料确认业主、开发者、投资方或负责人候选。",
+        "证据进入 /v1/evidence/verify，置信度和风险边界通过后，再进入项目库确认。"
+      ],
+      "required_query_groups": {
+        "government_confirmation": [
+          {
+            "intent": "government_confirmation",
+            "label": "政府官网确认",
+            "query": "Kazakhstan engineering trade project customs investment promotion video Kazakhstan official government site:gov.kz",
+            "required": true,
+            "evidence_tier": "official",
+            "reason": "先确认项目是否真实存在、主管部门是谁、处于计划建设还是在建阶段。"
+          },
+          {
+            "intent": "government_confirmation",
+            "label": "政府官网确认",
+            "query": "Kazakhstan engineering trade project customs investment promotion video Kazakhstan official government site:primeminister.kz",
+            "required": true,
+            "evidence_tier": "official",
+            "reason": "先确认项目是否真实存在、主管部门是谁、处于计划建设还是在建阶段。"
+          },
+          {
+            "intent": "government_confirmation",
+            "label": "政府官网确认",
+            "query": "Kazakhstan engineering trade project customs investment promotion video Kazakhstan official government site:invest.gov.kz",
+            "required": true,
+            "evidence_tier": "official",
+            "reason": "先确认项目是否真实存在、主管部门是谁、处于计划建设还是在建阶段。"
+          },
+          {
+            "intent": "government_confirmation",
+            "label": "政府官网确认",
+            "query": "Kazakhstan engineering trade project customs investment promotion video Kazakhstan official government site:adilet.zan.kz",
+            "required": true,
+            "evidence_tier": "official",
+            "reason": "先确认项目是否真实存在、主管部门是谁、处于计划建设还是在建阶段。"
+          }
+        ],
+        "procurement_tender": [
+          {
+            "intent": "procurement_tender",
+            "label": "招标采购",
+            "query": "Kazakhstan engineering trade project customs investment promotion video Kazakhstan public tender site:gov.kz",
+            "required": true,
+            "evidence_tier": "official",
+            "reason": "判断采购阶段、总包/分包机会、招标变化和可参与窗口。"
+          },
+          {
+            "intent": "procurement_tender",
+            "label": "招标采购",
+            "query": "Kazakhstan engineering trade project customs investment promotion video Kazakhstan public tender site:primeminister.kz",
+            "required": true,
+            "evidence_tier": "official",
+            "reason": "判断采购阶段、总包/分包机会、招标变化和可参与窗口。"
+          },
+          {
+            "intent": "procurement_tender",
+            "label": "招标采购",
+            "query": "Kazakhstan engineering trade project customs investment promotion video Kazakhstan public tender site:invest.gov.kz",
+            "required": true,
+            "evidence_tier": "official",
+            "reason": "判断采购阶段、总包/分包机会、招标变化和可参与窗口。"
+          },
+          {
+            "intent": "procurement_tender",
+            "label": "招标采购",
+            "query": "Kazakhstan engineering trade project customs investment promotion video Kazakhstan public tender site:adilet.zan.kz",
+            "required": true,
+            "evidence_tier": "official",
+            "reason": "判断采购阶段、总包/分包机会、招标变化和可参与窗口。"
+          }
+        ],
+        "customs_trade": [
+          {
+            "intent": "customs_trade",
+            "label": "海关与贸易合规",
+            "query": "Kazakhstan engineering trade project customs investment promotion video Kazakhstan customs site:gov.kz",
+            "required": true,
+            "evidence_tier": "official",
+            "reason": "核验关税、清关文件、出口管制、制裁和付款交付风险。"
+          },
+          {
+            "intent": "customs_trade",
+            "label": "海关与贸易合规",
+            "query": "Kazakhstan engineering trade project customs investment promotion video Kazakhstan customs site:primeminister.kz",
+            "required": true,
+            "evidence_tier": "official",
+            "reason": "核验关税、清关文件、出口管制、制裁和付款交付风险。"
+          },
+          {
+            "intent": "customs_trade",
+            "label": "海关与贸易合规",
+            "query": "Kazakhstan engineering trade project customs investment promotion video Kazakhstan customs site:invest.gov.kz",
+            "required": true,
+            "evidence_tier": "official",
+            "reason": "核验关税、清关文件、出口管制、制裁和付款交付风险。"
+          },
+          {
+            "intent": "customs_trade",
+            "label": "海关与贸易合规",
+            "query": "Kazakhstan engineering trade project customs investment promotion video Kazakhstan customs site:adilet.zan.kz",
+            "required": true,
+            "evidence_tier": "official",
+            "reason": "核验关税、清关文件、出口管制、制裁和付款交付风险。"
+          }
+        ]
+      },
+      "blocked_until_confirmed": [
+        "招商引资正式发布",
+        "客户外联",
+        "报价",
+        "合同或付款承诺",
+        "交期或清关承诺",
+        "公开视频发布"
+      ]
+    },
+    "priority_queries": [
+      {
+        "intent": "government_confirmation",
+        "label": "政府官网确认",
+        "query": "Kazakhstan engineering trade project customs investment promotion video Kazakhstan official government site:gov.kz",
+        "required": true,
+        "evidence_tier": "official",
+        "reason": "先确认项目是否真实存在、主管部门是谁、处于计划建设还是在建阶段。"
+      },
+      {
+        "intent": "government_confirmation",
+        "label": "政府官网确认",
+        "query": "Kazakhstan engineering trade project customs investment promotion video Kazakhstan official government site:primeminister.kz",
+        "required": true,
+        "evidence_tier": "official",
+        "reason": "先确认项目是否真实存在、主管部门是谁、处于计划建设还是在建阶段。"
+      },
+      {
+        "intent": "government_confirmation",
+        "label": "政府官网确认",
+        "query": "Kazakhstan engineering trade project customs investment promotion video Kazakhstan official government site:invest.gov.kz",
+        "required": true,
+        "evidence_tier": "official",
+        "reason": "先确认项目是否真实存在、主管部门是谁、处于计划建设还是在建阶段。"
+      },
+      {
+        "intent": "government_confirmation",
+        "label": "政府官网确认",
+        "query": "Kazakhstan engineering trade project customs investment promotion video Kazakhstan official government site:adilet.zan.kz",
+        "required": true,
+        "evidence_tier": "official",
+        "reason": "先确认项目是否真实存在、主管部门是谁、处于计划建设还是在建阶段。"
+      },
+      {
+        "intent": "government_confirmation",
+        "label": "政府官网确认",
+        "query": "Kazakhstan engineering trade project customs investment promotion video Kazakhstan ministry site:gov.kz",
+        "required": true,
+        "evidence_tier": "official",
+        "reason": "先确认项目是否真实存在、主管部门是谁、处于计划建设还是在建阶段。"
+      },
+      {
+        "intent": "government_confirmation",
+        "label": "政府官网确认",
+        "query": "Kazakhstan engineering trade project customs investment promotion video Kazakhstan ministry site:primeminister.kz",
+        "required": true,
+        "evidence_tier": "official",
+        "reason": "先确认项目是否真实存在、主管部门是谁、处于计划建设还是在建阶段。"
+      },
+      {
+        "intent": "government_confirmation",
+        "label": "政府官网确认",
+        "query": "Kazakhstan engineering trade project customs investment promotion video Kazakhstan ministry site:invest.gov.kz",
+        "required": true,
+        "evidence_tier": "official",
+        "reason": "先确认项目是否真实存在、主管部门是谁、处于计划建设还是在建阶段。"
+      },
+      {
+        "intent": "government_confirmation",
+        "label": "政府官网确认",
+        "query": "Kazakhstan engineering trade project customs investment promotion video Kazakhstan ministry site:adilet.zan.kz",
+        "required": true,
+        "evidence_tier": "official",
+        "reason": "先确认项目是否真实存在、主管部门是谁、处于计划建设还是在建阶段。"
+      },
+      {
+        "intent": "government_confirmation",
+        "label": "政府官网确认",
+        "query": "Kazakhstan engineering trade project customs investment promotion video Kazakhstan akimat site:gov.kz",
+        "required": true,
+        "evidence_tier": "official",
+        "reason": "先确认项目是否真实存在、主管部门是谁、处于计划建设还是在建阶段。"
+      },
+      {
+        "intent": "government_confirmation",
+        "label": "政府官网确认",
+        "query": "Kazakhstan engineering trade project customs investment promotion video Kazakhstan akimat site:primeminister.kz",
+        "required": true,
+        "evidence_tier": "official",
+        "reason": "先确认项目是否真实存在、主管部门是谁、处于计划建设还是在建阶段。"
+      },
+      {
+        "intent": "government_confirmation",
+        "label": "政府官网确认",
+        "query": "Kazakhstan engineering trade project customs investment promotion video Kazakhstan akimat site:invest.gov.kz",
+        "required": true,
+        "evidence_tier": "official",
+        "reason": "先确认项目是否真实存在、主管部门是谁、处于计划建设还是在建阶段。"
+      },
+      {
+        "intent": "government_confirmation",
+        "label": "政府官网确认",
+        "query": "Kazakhstan engineering trade project customs investment promotion video Kazakhstan akimat site:adilet.zan.kz",
+        "required": true,
+        "evidence_tier": "official",
+        "reason": "先确认项目是否真实存在、主管部门是谁、处于计划建设还是在建阶段。"
+      }
+    ]
+  },
+  "evidence": {
+    "verification_status": "officially_supported",
+    "confidence": 98,
+    "summary": {
+      "total_evidence": 1,
+      "official_sources": 1,
+      "tier2_sources": 0,
+      "weak_signals": 0,
+      "high_risk_terms": [
+        "customs"
+      ]
+    },
+    "blocked_actions": [
+      "formal outreach",
+      "investment promotion publication",
+      "quotation",
+      "contract or payment approval",
+      "delivery or customs commitment"
+    ]
+  },
+  "project_execution": {
+    "project": {
+      "id": "13648f12a9cbd993",
+      "title": "Official procurement page",
+      "topic": "Kazakhstan engineering trade project customs investment promotion video",
+      "country": "Kazakhstan",
+      "category": "unknown",
+      "category_label": "待确认项目",
+      "status_evidence": [],
+      "confirmation_level": "government_confirmed",
+      "confidence": 90,
+      "government_sources": [
+        {
+          "title": "Official procurement page",
+          "url": "https://goszakup.gov.kz/example-project",
+          "domain": "goszakup.gov.kz",
+          "snippet": "Official source describes owner, tender status, customs documents and engineering scope.",
+          "source_type": "government",
+          "government_confirmed": true,
+          "collected_at": "2026-07-24T03:58:00.130175+00:00"
+        }
+      ],
+      "evidence": [
+        {
+          "title": "Official procurement page",
+          "url": "https://goszakup.gov.kz/example-project",
+          "domain": "goszakup.gov.kz",
+          "snippet": "Official source describes owner, tender status, customs documents and engineering scope.",
+          "source_type": "government",
+          "government_confirmed": true,
+          "collected_at": "2026-07-24T03:58:00.130175+00:00"
+        }
+      ],
+      "stakeholders": {
+        "project_owner": [
+          "Kazakhstan engineering trade project customs investment promotion video Kazakhstan Official procurement page Official source describes owner, tender status, customs documents and engineering scope"
+        ]
+      },
+      "owner_candidates": [
+        "Kazakhstan engineering trade project customs investment promotion video Kazakhstan Official procurement page Official source describes owner, tender status, customs documents and engineering scope"
+      ],
+      "developer_candidates": [],
+      "responsible_person_candidates": [],
+      "risk_flags": [
+        "Human approval required before external outreach, quotation, commitment, or publication.",
+        "Government source confirmation required before investment promotion use."
+      ],
+      "updated_at": "2026-07-24T03:58:00.130579+00:00",
+      "official_source_status": "official_procurement_supported",
+      "project_record_status": "candidate_project",
+      "verified_project_allowed": false,
+      "candidate_to_verified_gate": {
+        "status": "candidate_project",
+        "verified_project_allowed": false,
+        "official_source_status": "official_procurement_supported",
+        "required_before_verified_project": [
+          "At least one Tier 1 official government, procurement, customs, regulator, or authority source is required.",
+          "Project stage must be planned or under_construction.",
+          "Confidence must be 90 or higher.",
+          "Owner or responsible authority candidate must be identified.",
+          "Developer, investor, or contractor candidate must be identified.",
+          "External promotion, quotation, publication, outreach, and commitment still require human approval."
+        ],
+        "missing_requirements": [
+          "Project stage must be planned or under_construction.",
+          "Developer, investor, or contractor candidate is missing."
+        ],
+        "evidence_grade_summary": {
+          "tier1_official_sources": 1,
+          "tier2_supporting_sources": 0,
+          "weak_signal_sources": 0,
+          "unknown_sources": 0,
+          "by_source_type": {
+            "government": 1
+          },
+          "rules": {
+            "tier1": "Government, customs, regulator, or official procurement evidence can confirm the project when stage and stakeholders are also present.",
+            "tier2": "Official company or academic evidence can support screening but cannot verify a project by itself.",
+            "weak": "Social, forum, and video sources are attention signals only and never verify a project."
+          }
+        },
+        "evidence_rules": {
+          "government_official": "Tier 1: confirms project existence, stage, authority, and public authorization facts.",
+          "procurement_official": "Tier 1: confirms tender, procurement, award, EPC, or contractor status.",
+          "official_company": "Tier 2: supports developer or investor screening, but cannot verify a project alone.",
+          "social_video_forum": "Tier 4: attention and lead signal only; never confirms project facts."
+        },
+        "human_approval_required_for_external_use": true
+      },
+      "evidence_grade_summary": {
+        "tier1_official_sources": 1,
+        "tier2_supporting_sources": 0,
+        "weak_signal_sources": 0,
+        "unknown_sources": 0,
+        "by_source_type": {
+          "government": 1
+        },
+        "rules": {
+          "tier1": "Government, customs, regulator, or official procurement evidence can confirm the project when stage and stakeholders are also present.",
+          "tier2": "Official company or academic evidence can support screening but cannot verify a project by itself.",
+          "weak": "Social, forum, and video sources are attention signals only and never verify a project."
+        }
+      },
+      "promotion_readiness": {
+        "status": "evidence_review_required",
+        "label": "Evidence review required",
+        "can_create_lead_record": true,
+        "can_generate_internal_promotion_draft": false,
+        "approved_for_external_use": false,
+        "human_approval_required_for_external_use": true,
+        "allowed_internal_actions": [
+          "Keep as an internal project lead",
+          "Collect missing stage, owner, developer, customs, and procurement evidence"
+        ],
+        "blocked_actions": [
+          "正式招商发布",
+          "formal investment-promotion publication",
+          "customer or investor outreach",
+          "quotation",
+          "contract or payment commitment",
+          "delivery or customs-clearance commitment",
+          "public video publishing"
+        ],
+        "missing_requirements": [
+          "Project stage is not confirmed as planned or under_construction.",
+          "Developer, investor, or contractor candidate is missing.",
+          "Project stage must be planned or under_construction."
+        ],
+        "official_source_status": "official_procurement_supported",
+        "verified_project_allowed": false
+      }
+    },
+    "promotion_readiness": {
+      "status": "evidence_review_required",
+      "label": "Evidence review required",
+      "can_create_lead_record": true,
+      "can_generate_internal_promotion_draft": false,
+      "approved_for_external_use": false,
+      "human_approval_required_for_external_use": true,
+      "allowed_internal_actions": [
+        "Keep as an internal project lead",
+        "Collect missing stage, owner, developer, customs, and procurement evidence"
+      ],
+      "blocked_actions": [
+        "正式招商发布",
+        "formal investment-promotion publication",
+        "customer or investor outreach",
+        "quotation",
+        "contract or payment commitment",
+        "delivery or customs-clearance commitment",
+        "public video publishing"
+      ],
+      "missing_requirements": [
+        "Project stage is not confirmed as planned or under_construction.",
+        "Developer, investor, or contractor candidate is missing.",
+        "Project stage must be planned or under_construction."
+      ],
+      "official_source_status": "official_procurement_supported",
+      "verified_project_allowed": false
+    },
+    "project_library": {
+      "updated": true,
+      "path": "/home/runner/work/global-intelligence-v11-final/global-intelligence-v11-final/backend/memory/project_library/projects.json",
+      "rule": "Project records become promotion-ready only after official evidence and human approval."
+    },
+    "next_actions": [
+      "Open official government and procurement search URLs from the highest priority plan.",
+      "Attach official evidence with title, URL, snippet, source_type, and source date.",
+      "Confirm project owner, developer, responsible office/person, tender status, and customs impact.",
+      "Use the action board for team task assignment.",
+      "Request human approval before any external message or publication."
+    ],
+    "blocked_actions": [
+      "external outreach",
+      "formal investment promotion publication",
+      "quotation",
+      "contract or payment commitment",
+      "public video publication"
+    ]
+  },
+  "team": {
+    "mode": "team_response_pack",
+    "roles": [
+      {
+        "role": "trade_lead",
+        "label": "国际贸易负责人",
+        "contribution": "先核验 Kazakhstan 官方海关 source URL/date、HS code、tariff、customs valuation、Incoterms、payment risk 和物流路径；未核验前不承诺价格、交期或清关结果。",
+        "next_step": "收集海关官网、官方税则、清关文件、银行付款条件证据，并形成可执行 checklist。"
+      },
+      {
+        "role": "research_analyst",
+        "label": "科研情报分析",
+        "contribution": "优先搜索 official government、procurement、academic paper、library report 来源；第一条官方检索式: Kazakhstan engineering trade project customs investment promotion video Kazakhstan EPC site:gov.kz",
+        "next_step": "把证据分为政府/采购/企业/媒体/社交五级，记录 citation、URL、source date、relevance note。"
+      },
+      {
+        "role": "investment_promotion_lead",
+        "label": "招商引资负责人",
+        "contribution": "只有在项目业主、developer、investor、government authority、ROI、PPP/incentive 被官方证据确认后，才能形成招商材料草稿。",
+        "next_step": "建立 owner/developer/investor/government authority 四类名单，并标注 evidence level。"
+      },
+      {
+        "role": "video_media_producer",
+        "label": "视频传播负责人",
+        "contribution": "视频只做内部草稿，参考 YouTube 等平台的节奏、国家风格和证据镜头，不复制内容，不发布未经审批的承诺。",
+        "next_step": "生成 60 秒项目机会脚本、风险解释脚本和平台关键词，等待人工审批。"
+      },
+      {
+        "role": "project_manager",
+        "label": "项目经理",
+        "contribution": "任务板已生成 6 项，阻断 3 项；每项都要有 owner、deadline、evidence、next step。",
+        "next_step": "安排责任人、截止时间、会议议程、decision log 和复盘记录。"
+      },
+      {
+        "role": "risk_approval_officer",
+        "label": "风控审批负责人",
+        "contribution": "正式外联、quotation、contract、payment、sanction/export control、delivery promise、public publishing 全部进入 approval gate。",
+        "next_step": "把高风险事项写入老板收件箱，审批前保持 DRAFT - Not approved for sending。",
+        "blocked": true
+      }
+    ],
+    "quality_score": {
+      "ok": true,
+      "created_at": "2026-07-24T03:58:00.149765+00:00",
+      "overall_score": 99,
+      "verdict": "excellent",
+      "dimensions": {
+        "accuracy": {
+          "score": 100,
+          "hits": [
+            "official",
+            "source",
+            "date",
+            "evidence",
+            "官方",
+            "核验"
+          ],
+          "label": "准确性"
+        },
+        "evidence": {
+          "score": 100,
+          "hits": [
+            "url",
+            "government",
+            "customs",
+            "report",
+            "source",
+            "证据",
+            "海关"
+          ],
+          "label": "证据"
+        },
+        "actionability": {
+          "score": 97,
+          "hits": [
+            "next step",
+            "checklist",
+            "清单",
+            "执行"
+          ],
+          "label": "可执行性"
+        },
+        "risk_judgment": {
+          "score": 100,
+          "hits": [
+            "risk",
+            "approval",
+            "sanction",
+            "export control",
+            "customs",
+            "风险",
+            "审批"
+          ],
+          "label": "风险判断"
+        },
+        "professional_depth": {
+          "score": 100,
+          "hits": [
+            "HS code",
+            "Incoterms",
+            "EPC",
+            "FIDIC",
+            "tariff",
+            "customs valuation",
+            "专业"
+          ],
+          "label": "专业深度"
+        }
+      },
+      "recommendations": [
+        "增加官方来源 URL 和发布日期或访问日期。",
+        "区分已核验事实、弱信号、假设和建议。",
+        "把结论转成下一步行动清单。",
+        "明确风险、人工审批边界和阻断动作。",
+        "使用行业术语时说明含义、证据和适用范围。"
+      ]
+    },
+    "approval_boundary": {
+      "draft_only": true,
+      "blocked_actions": [
+        "formal outreach",
+        "investment promotion publication",
+        "quotation",
+        "contract or payment approval",
+        "delivery or customs commitment"
+      ],
+      "human_approval_required": true
+    }
+  },
+  "intelligence_system": {
+    "categories": [
+      {
+        "id": "project_pipeline",
+        "label": "Project pipeline",
+        "first_search_term": "Kazakhstan infrastructure Kazakhstan engineering trade project customs investment promotion video planned project",
+        "tracking_frequency": "daily; high-risk political and tender signals should be checked more often"
+      },
+      {
+        "id": "political_impact",
+        "label": "Political and policy impact",
+        "first_search_term": "Kazakhstan infrastructure Kazakhstan engineering trade project customs investment promotion video government policy",
+        "tracking_frequency": "daily; high-risk political and tender signals should be checked more often"
+      },
+      {
+        "id": "investment_value",
+        "label": "High value and high return",
+        "first_search_term": "Kazakhstan infrastructure Kazakhstan engineering trade project customs investment promotion video investment project",
+        "tracking_frequency": "daily; high-risk political and tender signals should be checked more often"
+      },
+      {
+        "id": "growth_sector",
+        "label": "Growth sectors",
+        "first_search_term": "Kazakhstan infrastructure Kazakhstan engineering trade project customs investment promotion video renewable energy",
+        "tracking_frequency": "daily; high-risk political and tender signals should be checked more often"
+      },
+      {
+        "id": "procurement_trade",
+        "label": "Procurement and trade",
+        "first_search_term": "Kazakhstan infrastructure Kazakhstan engineering trade project customs investment promotion video public tender",
+        "tracking_frequency": "daily; high-risk political and tender signals should be checked more often"
+      },
+      {
+        "id": "risk_compliance",
+        "label": "Risk and compliance",
+        "first_search_term": "Kazakhstan infrastructure Kazakhstan engineering trade project customs investment promotion video sanctions",
+        "tracking_frequency": "daily; high-risk political and tender signals should be checked more often"
+      },
+      {
+        "id": "forums_social",
+        "label": "Forums, chats, and social attention",
+        "first_search_term": "Kazakhstan infrastructure Kazakhstan engineering trade project customs investment promotion video forum",
+        "tracking_frequency": "daily; high-risk political and tender signals should be checked more often"
+      },
+      {
+        "id": "video_intelligence",
+        "label": "Video intelligence and production",
+        "first_search_term": "Kazakhstan infrastructure Kazakhstan engineering trade project customs investment promotion video YouTube",
+        "tracking_frequency": "daily; high-risk political and tender signals should be checked more often"
+      },
+      {
+        "id": "research_library",
+        "label": "Research and library",
+        "first_search_term": "Kazakhstan infrastructure Kazakhstan engineering trade project customs investment promotion video paper",
+        "tracking_frequency": "daily; high-risk political and tender signals should be checked more often"
+      }
+    ],
+    "source_groups": {
+      "government": [
+        "site:gov",
+        "site:gov.kz",
+        "site:gov.uz",
+        "site:primeminister.kz",
+        "site:invest.gov.kz"
+      ],
+      "procurement": [
+        "tender",
+        "procurement",
+        "EPC",
+        "contract awarded",
+        "public procurement"
+      ],
+      "forums": [
+        "site:reddit.com",
+        "site:quora.com",
+        "site:vc.ru",
+        "forum",
+        "discussion"
+      ],
+      "chatrooms": [
+        "site:t.me",
+        "Telegram channel",
+        "Discord",
+        "QQ group",
+        "WeChat group"
+      ],
+      "social": [
+        "site:linkedin.com",
+        "site:x.com",
+        "site:facebook.com",
+        "site:vk.com",
+        "site:toutiao.com"
+      ],
+      "video": [
+        "site:youtube.com",
+        "site:tiktok.com",
+        "site:douyin.com",
+        "site:bilibili.com",
+        "site:ixigua.com"
+      ],
+      "academic": [
+        "site:scholar.google.com",
+        "site:semanticscholar.org",
+        "site:researchgate.net",
+        "feasibility study",
+        "EIA"
+      ],
+      "library": [
+        "site:openlibrary.org",
+        "site:worldcat.org",
+        "report pdf",
+        "white paper"
+      ]
+    }
+  },
+  "video_center": {
+    "video_keywords": [
+      {
+        "keyword": "Kazakhstan infrastructure Kazakhstan engineering trade project customs investment promotion video case study short video",
+        "style_cues": [
+          "wide steppe opening",
+          "industrial rail logistics",
+          "bilingual Chinese/Russian captions",
+          "government-project visual proof"
+        ]
+      },
+      {
+        "keyword": "Kazakhstan infrastructure Kazakhstan engineering trade project customs investment promotion video project progress short video",
+        "style_cues": [
+          "wide steppe opening",
+          "industrial rail logistics",
+          "bilingual Chinese/Russian captions",
+          "government-project visual proof"
+        ]
+      },
+      {
+        "keyword": "Kazakhstan infrastructure Kazakhstan engineering trade project customs investment promotion video factory proof short video",
+        "style_cues": [
+          "wide steppe opening",
+          "industrial rail logistics",
+          "bilingual Chinese/Russian captions",
+          "government-project visual proof"
+        ]
+      },
+      {
+        "keyword": "Kazakhstan infrastructure Kazakhstan engineering trade project customs investment promotion video investment brief short video",
+        "style_cues": [
+          "wide steppe opening",
+          "industrial rail logistics",
+          "bilingual Chinese/Russian captions",
+          "government-project visual proof"
+        ]
+      },
+      {
+        "keyword": "Kazakhstan infrastructure Kazakhstan engineering trade project customs investment promotion video risk explanation short video",
+        "style_cues": [
+          "wide steppe opening",
+          "industrial rail logistics",
+          "bilingual Chinese/Russian captions",
+          "government-project visual proof"
+        ]
+      },
+      {
+        "keyword": "Kazakhstan infrastructure Kazakhstan engineering trade project customs investment promotion video country style short video",
+        "style_cues": [
+          "wide steppe opening",
+          "industrial rail logistics",
+          "bilingual Chinese/Russian captions",
+          "government-project visual proof"
+        ]
+      },
+      {
+        "keyword": "Kazakhstan logistics Kazakhstan engineering trade project customs investment promotion video case study short video",
+        "style_cues": [
+          "wide steppe opening",
+          "industrial rail logistics",
+          "bilingual Chinese/Russian captions",
+          "government-project visual proof"
+        ]
+      },
+      {
+        "keyword": "Kazakhstan logistics Kazakhstan engineering trade project customs investment promotion video project progress short video",
+        "style_cues": [
+          "wide steppe opening",
+          "industrial rail logistics",
+          "bilingual Chinese/Russian captions",
+          "government-project visual proof"
+        ]
+      },
+      {
+        "keyword": "Kazakhstan logistics Kazakhstan engineering trade project customs investment promotion video factory proof short video",
+        "style_cues": [
+          "wide steppe opening",
+          "industrial rail logistics",
+          "bilingual Chinese/Russian captions",
+          "government-project visual proof"
+        ]
+      },
+      {
+        "keyword": "Kazakhstan logistics Kazakhstan engineering trade project customs investment promotion video investment brief short video",
+        "style_cues": [
+          "wide steppe opening",
+          "industrial rail logistics",
+          "bilingual Chinese/Russian captions",
+          "government-project visual proof"
+        ]
+      },
+      {
+        "keyword": "Kazakhstan logistics Kazakhstan engineering trade project customs investment promotion video risk explanation short video",
+        "style_cues": [
+          "wide steppe opening",
+          "industrial rail logistics",
+          "bilingual Chinese/Russian captions",
+          "government-project visual proof"
+        ]
+      },
+      {
+        "keyword": "Kazakhstan logistics Kazakhstan engineering trade project customs investment promotion video country style short video",
+        "style_cues": [
+          "wide steppe opening",
+          "industrial rail logistics",
+          "bilingual Chinese/Russian captions",
+          "government-project visual proof"
+        ]
+      }
+    ],
+    "platform_searches": [
+      {
+        "platform": "YouTube",
+        "keyword": "Kazakhstan infrastructure Kazakhstan engineering trade project customs investment promotion video case study short video",
+        "url": "https://www.youtube.com/results?search_query=Kazakhstan+infrastructure+Kazakhstan+engineering+trade+project+customs+investment+promotion+video+case+study+short+video"
+      },
+      {
+        "platform": "TikTok",
+        "keyword": "Kazakhstan infrastructure Kazakhstan engineering trade project customs investment promotion video case study short video",
+        "url": "https://www.tiktok.com/search?q=Kazakhstan+infrastructure+Kazakhstan+engineering+trade+project+customs+investment+promotion+video+case+study+short+video"
+      },
+      {
+        "platform": "Douyin",
+        "keyword": "Kazakhstan infrastructure Kazakhstan engineering trade project customs investment promotion video case study short video",
+        "url": "https://www.douyin.com/search/Kazakhstan+infrastructure+Kazakhstan+engineering+trade+project+customs+investment+promotion+video+case+study+short+video"
+      },
+      {
+        "platform": "Google Video",
+        "keyword": "Kazakhstan infrastructure Kazakhstan engineering trade project customs investment promotion video case study short video",
+        "url": "https://www.google.com/search?q=Kazakhstan+infrastructure+Kazakhstan+engineering+trade+project+customs+investment+promotion+video+case+study+short+video+video"
+      },
+      {
+        "platform": "YouTube",
+        "keyword": "Kazakhstan infrastructure Kazakhstan engineering trade project customs investment promotion video project progress short video",
+        "url": "https://www.youtube.com/results?search_query=Kazakhstan+infrastructure+Kazakhstan+engineering+trade+project+customs+investment+promotion+video+project+progress+short+video"
+      },
+      {
+        "platform": "TikTok",
+        "keyword": "Kazakhstan infrastructure Kazakhstan engineering trade project customs investment promotion video project progress short video",
+        "url": "https://www.tiktok.com/search?q=Kazakhstan+infrastructure+Kazakhstan+engineering+trade+project+customs+investment+promotion+video+project+progress+short+video"
+      },
+      {
+        "platform": "Douyin",
+        "keyword": "Kazakhstan infrastructure Kazakhstan engineering trade project customs investment promotion video project progress short video",
+        "url": "https://www.douyin.com/search/Kazakhstan+infrastructure+Kazakhstan+engineering+trade+project+customs+investment+promotion+video+project+progress+short+video"
+      },
+      {
+        "platform": "Google Video",
+        "keyword": "Kazakhstan infrastructure Kazakhstan engineering trade project customs investment promotion video project progress short video",
+        "url": "https://www.google.com/search?q=Kazakhstan+infrastructure+Kazakhstan+engineering+trade+project+customs+investment+promotion+video+project+progress+short+video+video"
+      },
+      {
+        "platform": "YouTube",
+        "keyword": "Kazakhstan infrastructure Kazakhstan engineering trade project customs investment promotion video factory proof short video",
+        "url": "https://www.youtube.com/results?search_query=Kazakhstan+infrastructure+Kazakhstan+engineering+trade+project+customs+investment+promotion+video+factory+proof+short+video"
+      },
+      {
+        "platform": "TikTok",
+        "keyword": "Kazakhstan infrastructure Kazakhstan engineering trade project customs investment promotion video factory proof short video",
+        "url": "https://www.tiktok.com/search?q=Kazakhstan+infrastructure+Kazakhstan+engineering+trade+project+customs+investment+promotion+video+factory+proof+short+video"
+      },
+      {
+        "platform": "Douyin",
+        "keyword": "Kazakhstan infrastructure Kazakhstan engineering trade project customs investment promotion video factory proof short video",
+        "url": "https://www.douyin.com/search/Kazakhstan+infrastructure+Kazakhstan+engineering+trade+project+customs+investment+promotion+video+factory+proof+short+video"
+      },
+      {
+        "platform": "Google Video",
+        "keyword": "Kazakhstan infrastructure Kazakhstan engineering trade project customs investment promotion video factory proof short video",
+        "url": "https://www.google.com/search?q=Kazakhstan+infrastructure+Kazakhstan+engineering+trade+project+customs+investment+promotion+video+factory+proof+short+video+video"
+      }
+    ],
+    "script_templates": [
+      {
+        "name": "60-second project opportunity brief",
+        "structure": [
+          "hook with country/project fact",
+          "official evidence screenshot",
+          "market pain point",
+          "solution path",
+          "approval-safe call to discuss internally"
+        ]
+      },
+      {
+        "name": "risk explanation video",
+        "structure": [
+          "risk event",
+          "why it matters",
+          "what to verify",
+          "human approval boundary",
+          "next research task"
+        ]
+      },
+      {
+        "name": "country-style market explainer",
+        "structure": [
+          "local visual style",
+          "trade corridor",
+          "project pipeline",
+          "partner profile",
+          "draft-only close"
+        ]
+      }
+    ],
+    "rules": [
+      "Video drafts are internal until human approval.",
+      "Track leading videos to improve pacing, proof style, captions, and country-specific visual language.",
+      "Do not copy third-party scripts, footage, trademarks, or misleading claims."
+    ]
+  },
+  "action_board": {
+    "risk_gate": {
+      "blocked": true,
+      "status": "pending_owner",
+      "risk_level": "high",
+      "risk_score": 60,
+      "reasons": [
+        "major matter: Approve outreach only after official evidence and risk review.",
+        "evidence status: officially_supported"
+      ],
+      "blocked_actions": [
+        "external commitment",
+        "formal quotation",
+        "contract or payment approval",
+        "public publishing",
+        "customer delivery promise"
+      ]
+    },
+    "summary": {
+      "task_count": 6,
+      "blocked_count": 3,
+      "open_count": 3
+    },
+    "tasks": [
+      {
+        "id": "31e3e5fd05cf877c-trade",
+        "role": "trade_lead",
+        "role_label": "International trade lead",
+        "title": "Verify customs, HS/tariff, payment terms, Incoterms, and logistics route.",
+        "status": "open",
+        "risk_gate": "human_review_required",
+        "evidence_needed": [
+          "customs authority URL",
+          "tariff/HS evidence",
+          "payment term proof",
+          "logistics route proof"
+        ],
+        "output": "internal_draft"
+      },
+      {
+        "id": "31e3e5fd05cf877c-research",
+        "role": "research_analyst",
+        "role_label": "Research intelligence analyst",
+        "title": "Collect government, procurement, academic, and library evidence; grade each source.",
+        "status": "open",
+        "risk_gate": "evidence_required",
+        "evidence_needed": [
+          "government page",
+          "procurement page",
+          "paper/library source",
+          "source date"
+        ],
+        "output": "internal_draft"
+      },
+      {
+        "id": "31e3e5fd05cf877c-investment",
+        "role": "investment_promotion_lead",
+        "role_label": "Investment promotion lead",
+        "title": "Map owner, developer, investor candidates, incentive policy, and project packaging gaps.",
+        "status": "blocked",
+        "risk_gate": "blocked_before_external_use",
+        "evidence_needed": [
+          "official project owner proof",
+          "developer/investor proof",
+          "investment agency source"
+        ],
+        "output": "internal_draft"
+      },
+      {
+        "id": "31e3e5fd05cf877c-video",
+        "role": "video_media_producer",
+        "role_label": "Video and media producer",
+        "title": "Draft country-style video concept based on verified facts and comparable platform examples.",
+        "status": "blocked",
+        "risk_gate": "human_approval_before_publish",
+        "evidence_needed": [
+          "platform search links",
+          "country style notes",
+          "verified project facts"
+        ],
+        "output": "internal_draft"
+      },
+      {
+        "id": "31e3e5fd05cf877c-pm",
+        "role": "project_manager",
+        "role_label": "Project execution manager",
+        "title": "Prepare meeting agenda, owner decision queue, deadlines, and next internal follow-up.",
+        "status": "open",
+        "risk_gate": "owner_queue",
+        "evidence_needed": [
+          "meeting record",
+          "task owner",
+          "deadline",
+          "decision log"
+        ],
+        "output": "internal_draft"
+      },
+      {
+        "id": "31e3e5fd05cf877c-risk",
+        "role": "risk_approval_officer",
+        "role_label": "Risk and approval officer",
+        "title": "Keep formal outreach, quotation, payment, contract, and public publishing blocked until approval.",
+        "status": "pending_owner",
+        "risk_gate": "active",
+        "evidence_needed": [
+          "approval ticket",
+          "risk trigger",
+          "human decision",
+          "audit log line"
+        ],
+        "output": "internal_draft"
+      }
+    ]
+  },
+  "quality_score": {
+    "ok": true,
+    "created_at": "2026-07-24T03:58:00.150678+00:00",
+    "overall_score": 99,
+    "verdict": "excellent",
+    "dimensions": {
+      "accuracy": {
+        "score": 100,
+        "hits": [
+          "official",
+          "verified",
+          "source",
+          "date",
+          "evidence",
+          "官方",
+          "核验"
+        ],
+        "label": "准确性"
+      },
+      "evidence": {
+        "score": 100,
+        "hits": [
+          "url",
+          "government",
+          "customs",
+          "source",
+          "证据",
+          "海关"
+        ],
+        "label": "证据"
+      },
+      "actionability": {
+        "score": 97,
+        "hits": [
+          "next step",
+          "checklist",
+          "清单",
+          "执行"
+        ],
+        "label": "可执行性"
+      },
+      "risk_judgment": {
+        "score": 100,
+        "hits": [
+          "risk",
+          "approval",
+          "sanction",
+          "export control",
+          "customs",
+          "风险",
+          "审批"
+        ],
+        "label": "风险判断"
+      },
+      "professional_depth": {
+        "score": 100,
+        "hits": [
+          "HS code",
+          "EPC",
+          "FIDIC",
+          "tariff",
+          "customs valuation",
+          "专业"
+        ],
+        "label": "专业深度"
+      }
+    },
+    "recommendations": [
+      "增加官方来源 URL 和发布日期或访问日期。",
+      "区分已核验事实、弱信号、假设和建议。",
+      "把结论转成下一步行动清单。",
+      "明确风险、人工审批边界和阻断动作。",
+      "使用行业术语时说明含义、证据和适用范围。"
+    ]
+  },
+  "approval_boundary": {
+    "draft_only": true,
+    "external_use_allowed": false,
+    "human_approval_required": true,
+    "blocked_actions": [
+      "contract or payment approval",
+      "contract or payment commitment",
+      "delivery or customs commitment",
+      "external outreach",
+      "formal investment promotion publication",
+      "formal outreach",
+      "investment promotion publication",
+      "public video publication",
+      "quotation"
+    ]
+  },
+  "operating_rule": "v11 works as a vertical industry project team: evidence, search verification, execution, media draft, score, and approval gate in one package.",
+  "execution_queue": {
+    "id": "ff649ac6da7f7b2d",
+    "summary": {
+      "task_count": 31,
+      "open_count": 22,
+      "blocked_count": 9,
+      "evidence_required_count": 9,
+      "approval_required_count": 12
+    },
+    "tasks": [
+      {
+        "id": "ff649ac6da7f7b2d-01",
+        "role": "research_analyst",
+        "task": "Run and record source evidence for query: Kazakhstan engineering trade project customs investment promotion video Kazakhstan official government site:gov.kz",
+        "source": "search_confirmation.government_confirmation",
+        "evidence_needed": [
+          "official URL",
+          "source date",
+          "source type",
+          "relevant excerpt",
+          "confidence note"
+        ],
+        "status": "open",
+        "risk_gate": "evidence_required",
+        "blocked_actions": [],
+        "human_approval_required": false,
+        "output": "evidence_record"
+      },
+      {
+        "id": "ff649ac6da7f7b2d-02",
+        "role": "research_analyst",
+        "task": "Run and record source evidence for query: Kazakhstan engineering trade project customs investment promotion video Kazakhstan official government site:primeminister.kz",
+        "source": "search_confirmation.government_confirmation",
+        "evidence_needed": [
+          "official URL",
+          "source date",
+          "source type",
+          "relevant excerpt",
+          "confidence note"
+        ],
+        "status": "open",
+        "risk_gate": "evidence_required",
+        "blocked_actions": [],
+        "human_approval_required": false,
+        "output": "evidence_record"
+      },
+      {
+        "id": "ff649ac6da7f7b2d-03",
+        "role": "research_analyst",
+        "task": "Run and record source evidence for query: Kazakhstan engineering trade project customs investment promotion video Kazakhstan official government site:invest.gov.kz",
+        "source": "search_confirmation.government_confirmation",
+        "evidence_needed": [
+          "official URL",
+          "source date",
+          "source type",
+          "relevant excerpt",
+          "confidence note"
+        ],
+        "status": "open",
+        "risk_gate": "evidence_required",
+        "blocked_actions": [],
+        "human_approval_required": false,
+        "output": "evidence_record"
+      },
+      {
+        "id": "ff649ac6da7f7b2d-04",
+        "role": "research_analyst",
+        "task": "Run and record source evidence for query: Kazakhstan engineering trade project customs investment promotion video Kazakhstan official government site:adilet.zan.kz",
+        "source": "search_confirmation.government_confirmation",
+        "evidence_needed": [
+          "official URL",
+          "source date",
+          "source type",
+          "relevant excerpt",
+          "confidence note"
+        ],
+        "status": "open",
+        "risk_gate": "evidence_required",
+        "blocked_actions": [],
+        "human_approval_required": false,
+        "output": "evidence_record"
+      },
+      {
+        "id": "ff649ac6da7f7b2d-05",
+        "role": "research_analyst",
+        "task": "Run and record source evidence for query: Kazakhstan engineering trade project customs investment promotion video Kazakhstan ministry site:gov.kz",
+        "source": "search_confirmation.government_confirmation",
+        "evidence_needed": [
+          "official URL",
+          "source date",
+          "source type",
+          "relevant excerpt",
+          "confidence note"
+        ],
+        "status": "open",
+        "risk_gate": "evidence_required",
+        "blocked_actions": [],
+        "human_approval_required": false,
+        "output": "evidence_record"
+      },
+      {
+        "id": "ff649ac6da7f7b2d-06",
+        "role": "research_analyst",
+        "task": "Run and record source evidence for query: Kazakhstan engineering trade project customs investment promotion video Kazakhstan ministry site:primeminister.kz",
+        "source": "search_confirmation.government_confirmation",
+        "evidence_needed": [
+          "official URL",
+          "source date",
+          "source type",
+          "relevant excerpt",
+          "confidence note"
+        ],
+        "status": "open",
+        "risk_gate": "evidence_required",
+        "blocked_actions": [],
+        "human_approval_required": false,
+        "output": "evidence_record"
+      },
+      {
+        "id": "ff649ac6da7f7b2d-07",
+        "role": "research_analyst",
+        "task": "Run and record source evidence for query: Kazakhstan engineering trade project customs investment promotion video Kazakhstan ministry site:invest.gov.kz",
+        "source": "search_confirmation.government_confirmation",
+        "evidence_needed": [
+          "official URL",
+          "source date",
+          "source type",
+          "relevant excerpt",
+          "confidence note"
+        ],
+        "status": "open",
+        "risk_gate": "evidence_required",
+        "blocked_actions": [],
+        "human_approval_required": false,
+        "output": "evidence_record"
+      },
+      {
+        "id": "ff649ac6da7f7b2d-08",
+        "role": "research_analyst",
+        "task": "Run and record source evidence for query: Kazakhstan engineering trade project customs investment promotion video Kazakhstan ministry site:adilet.zan.kz",
+        "source": "search_confirmation.government_confirmation",
+        "evidence_needed": [
+          "official URL",
+          "source date",
+          "source type",
+          "relevant excerpt",
+          "confidence note"
+        ],
+        "status": "open",
+        "risk_gate": "evidence_required",
+        "blocked_actions": [],
+        "human_approval_required": false,
+        "output": "evidence_record"
+      },
+      {
+        "id": "ff649ac6da7f7b2d-09",
+        "role": "project_manager",
+        "task": "Open official government and procurement search URLs from the highest priority plan.",
+        "source": "project_execution.next_actions",
+        "evidence_needed": [
+          "task owner",
+          "deadline",
+          "source link",
+          "decision log"
+        ],
+        "status": "open",
+        "risk_gate": "owner_review",
+        "blocked_actions": [
+          "contract or payment approval",
+          "contract or payment commitment",
+          "delivery or customs commitment",
+          "external outreach",
+          "formal investment promotion publication",
+          "formal outreach",
+          "investment promotion publication",
+          "public video publication",
+          "quotation"
+        ],
+        "human_approval_required": true,
+        "output": "project_followup_item"
+      },
+      {
+        "id": "ff649ac6da7f7b2d-10",
+        "role": "project_manager",
+        "task": "Attach official evidence with title, URL, snippet, source_type, and source date.",
+        "source": "project_execution.next_actions",
+        "evidence_needed": [
+          "task owner",
+          "deadline",
+          "source link",
+          "decision log"
+        ],
+        "status": "open",
+        "risk_gate": "owner_review",
+        "blocked_actions": [
+          "contract or payment approval",
+          "contract or payment commitment",
+          "delivery or customs commitment",
+          "external outreach",
+          "formal investment promotion publication",
+          "formal outreach",
+          "investment promotion publication",
+          "public video publication",
+          "quotation"
+        ],
+        "human_approval_required": true,
+        "output": "project_followup_item"
+      },
+      {
+        "id": "ff649ac6da7f7b2d-11",
+        "role": "project_manager",
+        "task": "Confirm project owner, developer, responsible office/person, tender status, and customs impact.",
+        "source": "project_execution.next_actions",
+        "evidence_needed": [
+          "task owner",
+          "deadline",
+          "source link",
+          "decision log"
+        ],
+        "status": "open",
+        "risk_gate": "owner_review",
+        "blocked_actions": [
+          "contract or payment approval",
+          "contract or payment commitment",
+          "delivery or customs commitment",
+          "external outreach",
+          "formal investment promotion publication",
+          "formal outreach",
+          "investment promotion publication",
+          "public video publication",
+          "quotation"
+        ],
+        "human_approval_required": true,
+        "output": "project_followup_item"
+      },
+      {
+        "id": "ff649ac6da7f7b2d-12",
+        "role": "project_manager",
+        "task": "Use the action board for team task assignment.",
+        "source": "project_execution.next_actions",
+        "evidence_needed": [
+          "task owner",
+          "deadline",
+          "source link",
+          "decision log"
+        ],
+        "status": "open",
+        "risk_gate": "owner_review",
+        "blocked_actions": [
+          "contract or payment approval",
+          "contract or payment commitment",
+          "delivery or customs commitment",
+          "external outreach",
+          "formal investment promotion publication",
+          "formal outreach",
+          "investment promotion publication",
+          "public video publication",
+          "quotation"
+        ],
+        "human_approval_required": true,
+        "output": "project_followup_item"
+      }
+    ],
+    "rules": [
+      "Queue items are internal execution controls, not permission to contact external parties.",
+      "Official evidence is required before project confirmation, investment promotion, customs conclusions, or feasibility claims.",
+      "External replies, quotation, payment, contract, customer commitment, and public publishing require human approval."
+    ]
+  }
+}
