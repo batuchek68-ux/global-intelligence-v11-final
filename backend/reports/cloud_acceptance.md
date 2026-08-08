@@ -1,9 +1,9 @@
 # GitHub Cloud Acceptance
 
 - Status: PASS
-- Generated: 2026-08-08T03:01:27.692348+00:00
+- Generated: 2026-08-08T07:34:41.491131+00:00
 - Repository: batuchek68-ux/global-intelligence-v11-final
-- Run id: 31236278479
+- Run id: 31246445505
 
 ## Command Model
 
@@ -30,12 +30,12 @@
 - team_execution_reports: 4
 - evidence_dossiers: 4
 - latest_evidence_status: partially_supported
-- action_boards: 1259
+- action_boards: 1269
 - latest_action_board_status: pending_owner
 - team_responses: 192
 - latest_team_response_score: 99
 - war_rooms: 96
-- war_room_execution_queues: 639
+- war_room_execution_queues: 645
 - latest_war_room_queue_tasks: 32
 - latest_war_room_queue_blocked: 10
 - latest_war_room_score: 99
@@ -102,10 +102,10 @@
 - PASS `v11_video:center_generated` - video_files=47, platform_searches=120
 - PASS `v11_team_execution:packages_generated` - team_reports=4, team_memory=4, cases=2
 - PASS `v11_evidence:verification_dossiers` - evidence_json=5, evidence_reports=5, latest_status=partially_supported
-- PASS `v11_action_board:execution_tasks` - action_json=1260, action_reports=1260, latest_tasks=6, latest_status=pending_owner
+- PASS `v11_action_board:execution_tasks` - action_json=1270, action_reports=1270, latest_tasks=6, latest_status=pending_owner
 - PASS `v11_team_response:team_answer_pack` - team_response_json=193, score=99, roles=6
 - PASS `v11_search:source_readiness_and_confirmation_gate` - sources=11, manual=11, gate=lead_only, required=customs_trade,government_confirmation,procurement_tender, blocked=6
 - PASS `v11_project:promotion_readiness_gate` - weak=lead_only, official=draft_promotion_ready, external=False, library_total=2, draft_ready=0, lead_only=1
 - PASS `v11_war_room:vertical_team_operating_package` - latest=industry_war_room, saved_json=96, saved_reports=96, mode=industry_war_room, search_gate=lead_only, promotion=lead_only, roles=6, video=12, score=99
-- PASS `v11_war_room_execution:queue_tracks_work` - queues=639, reports=639, mode=war_room_execution_queue, tasks=32, open=22, blocked=10, approval=13
-- PASS `v11_mission_control:operating_brief` - status=human_review_required, benchmark=50, customs=True, evidence=4, boards=1259, responses=192, war_rooms=96, queues=639, queue_tasks=32, war_score=99, search_gate=lead_only, promotion_gate=draft_promotion_ready
+- PASS `v11_war_room_execution:queue_tracks_work` - queues=645, reports=645, mode=war_room_execution_queue, tasks=32, open=22, blocked=10, approval=13
+- PASS `v11_mission_control:operating_brief` - status=human_review_required, benchmark=50, customs=True, evidence=4, boards=1269, responses=192, war_rooms=96, queues=645, queue_tasks=32, war_score=99, search_gate=lead_only, promotion_gate=draft_promotion_ready
