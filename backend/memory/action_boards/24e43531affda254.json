@@ -1,9 +1,9 @@
 {
   "ok": true,
-  "id": "b7a3d6b21fc66297",
-  "created_at": "2026-08-13T03:34:28.583260+00:00",
-  "project": "Daily cycle operating evidence",
-  "country": "Indonesia",
+  "id": "24e43531affda254",
+  "created_at": "2026-08-13T03:34:27.184412+00:00",
+  "project": "Official procurement page",
+  "country": "Kazakhstan",
   "stage": "unknown",
   "risk_gate": {
     "blocked": true,
@@ -12,7 +12,7 @@
     "risk_score": 90,
     "reasons": [
       "major matter: Approve evidence-based outreach or continue research?",
-      "evidence status: weak_signal_only"
+      "evidence status: officially_supported"
     ],
     "blocked_actions": [
       "external commitment",
@@ -23,9 +23,9 @@
     ]
   },
   "evidence": {
-    "status": "weak_signal_only",
-    "confidence": 37,
-    "dossier_id": "ab026153ae540214"
+    "status": "officially_supported",
+    "confidence": 98,
+    "dossier_id": "f35ad7305557df54"
   },
   "summary": {
     "task_count": 6,
@@ -34,7 +34,7 @@
   },
   "tasks": [
     {
-      "id": "b7a3d6b21fc66297-trade",
+      "id": "24e43531affda254-trade",
       "role": "trade_lead",
       "role_label": "International trade lead",
       "title": "Verify customs, HS/tariff, payment terms, Incoterms, and logistics route.",
@@ -49,7 +49,7 @@
       "output": "internal_draft"
     },
     {
-      "id": "b7a3d6b21fc66297-research",
+      "id": "24e43531affda254-research",
       "role": "research_analyst",
       "role_label": "Research intelligence analyst",
       "title": "Collect government, procurement, academic, and library evidence; grade each source.",
@@ -64,7 +64,7 @@
       "output": "internal_draft"
     },
     {
-      "id": "b7a3d6b21fc66297-investment",
+      "id": "24e43531affda254-investment",
       "role": "investment_promotion_lead",
       "role_label": "Investment promotion lead",
       "title": "Map owner, developer, investor candidates, incentive policy, and project packaging gaps.",
@@ -78,7 +78,7 @@
       "output": "internal_draft"
     },
     {
-      "id": "b7a3d6b21fc66297-video",
+      "id": "24e43531affda254-video",
       "role": "video_media_producer",
       "role_label": "Video and media producer",
       "title": "Draft country-style video concept based on verified facts and comparable platform examples.",
@@ -92,7 +92,7 @@
       "output": "internal_draft"
     },
     {
-      "id": "b7a3d6b21fc66297-pm",
+      "id": "24e43531affda254-pm",
       "role": "project_manager",
       "role_label": "Project execution manager",
       "title": "Prepare meeting agenda, owner decision queue, deadlines, and next internal follow-up.",
@@ -107,7 +107,7 @@
       "output": "internal_draft"
     },
     {
-      "id": "b7a3d6b21fc66297-risk",
+      "id": "24e43531affda254-risk",
       "role": "risk_approval_officer",
       "role_label": "Risk and approval officer",
       "title": "Keep formal outreach, quotation, payment, contract, and public publishing blocked until approval.",
