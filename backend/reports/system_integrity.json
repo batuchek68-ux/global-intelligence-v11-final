@@ -1,8 +1,10 @@
 {
-  "created_at": "2026-08-26T21:13:26.025478+00:00",
+  "created_at": "2026-08-27T08:55:27.627873+00:00",
   "ok": true,
   "auto_fix": true,
-  "repairs": [],
+  "repairs": [
+    "created append-only audit log"
+  ],
   "checks": [
     {
       "name": "dir:backend/memory",
