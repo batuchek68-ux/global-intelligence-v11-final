@@ -1,6 +1,6 @@
 {
   "ok": true,
-  "created_at": "2026-09-10T06:05:43.128114+00:00",
+  "created_at": "2026-09-10T11:48:38.310347+00:00",
   "question": "如何确认进口设备海关信息？",
   "ranked": [
     {
@@ -17,7 +17,7 @@
   "scores": {
     "v11": {
       "ok": true,
-      "created_at": "2026-09-10T06:05:43.128047+00:00",
+      "created_at": "2026-09-10T11:48:38.310279+00:00",
       "overall_score": 78,
       "verdict": "usable",
       "dimensions": {
@@ -75,7 +75,7 @@
     },
     "generic": {
       "ok": true,
-      "created_at": "2026-09-10T06:05:43.128070+00:00",
+      "created_at": "2026-09-10T11:48:38.310313+00:00",
       "overall_score": 42,
       "verdict": "needs_improvement",
       "dimensions": {
