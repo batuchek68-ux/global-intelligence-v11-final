@@ -2,8 +2,8 @@
 
 - Status: ATTENTION
 - Reason: attention required
-- Last run: 2026-09-11T05:15:09+00:00
-- Last run age hours: 0.88
+- Last run: 2026-09-11T06:08:20+00:00
+- Last run age hours: 4.94
 - Max allowed age hours: 26
 - Waiting for owner: 1
 - Projects: 2
