@@ -1,8 +1,8 @@
 {
   "ok": true,
-  "created_at": "2026-09-16T06:09:36.859319+00:00",
+  "created_at": "2026-09-16T12:01:56.442764+00:00",
   "repository": "batuchek68-ux/global-intelligence-v11-final",
-  "run_id": "35062449517",
+  "run_id": "35093443599",
   "command_model": {
     "github": "cloud AI headquarters",
     "codex": "24h autonomous executive",
@@ -26,12 +26,12 @@
     "team_execution_reports": 4,
     "evidence_dossiers": 4,
     "latest_evidence_status": "partially_supported",
-    "action_boards": 2194,
+    "action_boards": 2204,
     "latest_action_board_status": "pending_owner",
     "team_responses": 348,
     "latest_team_response_score": 99,
     "war_rooms": 174,
-    "war_room_execution_queues": 1200,
+    "war_room_execution_queues": 1206,
     "latest_war_room_queue_tasks": 32,
     "latest_war_room_queue_blocked": 10,
     "latest_war_room_score": 99,
@@ -300,7 +300,7 @@
     {
       "name": "v11_action_board:execution_tasks",
       "ok": true,
-      "evidence": "action_json=2195, action_reports=2195, latest_tasks=6, latest_status=pending_owner"
+      "evidence": "action_json=2205, action_reports=2205, latest_tasks=6, latest_status=pending_owner"
     },
     {
       "name": "v11_team_response:team_answer_pack",
@@ -325,12 +325,12 @@
     {
       "name": "v11_war_room_execution:queue_tracks_work",
       "ok": true,
-      "evidence": "queues=1200, reports=1200, mode=war_room_execution_queue, tasks=32, open=22, blocked=10, approval=13"
+      "evidence": "queues=1206, reports=1206, mode=war_room_execution_queue, tasks=32, open=22, blocked=10, approval=13"
     },
     {
       "name": "v11_mission_control:operating_brief",
       "ok": true,
-      "evidence": "status=human_review_required, benchmark=50, customs=True, evidence=4, boards=2194, responses=348, war_rooms=174, queues=1200, queue_tasks=32, war_score=99, search_gate=lead_only, promotion_gate=draft_promotion_ready"
+      "evidence": "status=human_review_required, benchmark=50, customs=True, evidence=4, boards=2204, responses=348, war_rooms=174, queues=1206, queue_tasks=32, war_score=99, search_gate=lead_only, promotion_gate=draft_promotion_ready"
     }
   ]
 }
