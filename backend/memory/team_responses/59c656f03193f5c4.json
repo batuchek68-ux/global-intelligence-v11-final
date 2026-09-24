@@ -1,7 +1,7 @@
 {
   "ok": true,
   "id": "59c656f03193f5c4",
-  "created_at": "2026-09-24T05:24:07.213093+00:00",
+  "created_at": "2026-09-24T06:15:20.377765+00:00",
   "question": "Kazakhstan engineering trade project customs investment promotion video",
   "country": "Kazakhstan",
   "industries": [
@@ -307,7 +307,7 @@
     },
     "tasks": [
       {
-        "id": "4b8567c1921cfd1d-trade",
+        "id": "ad72e78df860b611-trade",
         "role": "trade_lead",
         "role_label": "International trade lead",
         "title": "Verify customs, HS/tariff, payment terms, Incoterms, and logistics route.",
@@ -322,7 +322,7 @@
         "output": "internal_draft"
       },
       {
-        "id": "4b8567c1921cfd1d-research",
+        "id": "ad72e78df860b611-research",
         "role": "research_analyst",
         "role_label": "Research intelligence analyst",
         "title": "Collect government, procurement, academic, and library evidence; grade each source.",
@@ -337,7 +337,7 @@
         "output": "internal_draft"
       },
       {
-        "id": "4b8567c1921cfd1d-investment",
+        "id": "ad72e78df860b611-investment",
         "role": "investment_promotion_lead",
         "role_label": "Investment promotion lead",
         "title": "Map owner, developer, investor candidates, incentive policy, and project packaging gaps.",
@@ -351,7 +351,7 @@
         "output": "internal_draft"
       },
       {
-        "id": "4b8567c1921cfd1d-video",
+        "id": "ad72e78df860b611-video",
         "role": "video_media_producer",
         "role_label": "Video and media producer",
         "title": "Draft country-style video concept based on verified facts and comparable platform examples.",
@@ -365,7 +365,7 @@
         "output": "internal_draft"
       },
       {
-        "id": "4b8567c1921cfd1d-pm",
+        "id": "ad72e78df860b611-pm",
         "role": "project_manager",
         "role_label": "Project execution manager",
         "title": "Prepare meeting agenda, owner decision queue, deadlines, and next internal follow-up.",
@@ -380,7 +380,7 @@
         "output": "internal_draft"
       },
       {
-        "id": "4b8567c1921cfd1d-risk",
+        "id": "ad72e78df860b611-risk",
         "role": "risk_approval_officer",
         "role_label": "Risk and approval officer",
         "title": "Keep formal outreach, quotation, payment, contract, and public publishing blocked until approval.",
@@ -398,7 +398,7 @@
   },
   "quality_score": {
     "ok": true,
-    "created_at": "2026-09-24T05:24:07.213089+00:00",
+    "created_at": "2026-09-24T06:15:20.377761+00:00",
     "overall_score": 99,
     "verdict": "excellent",
     "dimensions": {
