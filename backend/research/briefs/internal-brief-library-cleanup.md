@@ -1,6 +1,6 @@
 # Daily Intelligence Brief: Internal Brief Library Cleanup
 
-Generated: 2026-09-27T05:44:46+00:00
+Generated: 2026-09-27T06:39:45+00:00
 
 ## Focus
 
