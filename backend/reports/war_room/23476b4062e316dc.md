@@ -43,18 +43,18 @@ Decision: treat unverified material as leads only. Build official evidence first
 ## Execution Queue
 
 - Tasks: 32; open=22; blocked=10; approval=13
-- de3b54bb3b69ec07-01: research_analyst | open | Run and record source evidence for query: Daily v11 international engineering trade, research intelligence, investment promotion, video, customs, and project execution operating package Central Asia official government site:gov.kz
-- de3b54bb3b69ec07-02: research_analyst | open | Run and record source evidence for query: Daily v11 international engineering trade, research intelligence, investment promotion, video, customs, and project execution operating package Central Asia official government site:gov.uz
-- de3b54bb3b69ec07-03: research_analyst | open | Run and record source evidence for query: Daily v11 international engineering trade, research intelligence, investment promotion, video, customs, and project execution operating package Central Asia official government site:gov.kg
-- de3b54bb3b69ec07-04: research_analyst | open | Run and record source evidence for query: Daily v11 international engineering trade, research intelligence, investment promotion, video, customs, and project execution operating package Central Asia official government site:tajinvest.tj
-- de3b54bb3b69ec07-05: research_analyst | open | Run and record source evidence for query: Daily v11 international engineering trade, research intelligence, investment promotion, video, customs, and project execution operating package Central Asia ministry site:gov.kz
-- de3b54bb3b69ec07-06: research_analyst | open | Run and record source evidence for query: Daily v11 international engineering trade, research intelligence, investment promotion, video, customs, and project execution operating package Central Asia ministry site:gov.uz
-- de3b54bb3b69ec07-07: research_analyst | open | Run and record source evidence for query: Daily v11 international engineering trade, research intelligence, investment promotion, video, customs, and project execution operating package Central Asia ministry site:gov.kg
-- de3b54bb3b69ec07-08: research_analyst | open | Run and record source evidence for query: Daily v11 international engineering trade, research intelligence, investment promotion, video, customs, and project execution operating package Central Asia ministry site:tajinvest.tj
-- de3b54bb3b69ec07-09: risk_approval_officer | blocked | Upgrade evidence from lead-only or partial support to official confirmation before project confirmation.
-- de3b54bb3b69ec07-10: project_manager | open | Open official government and procurement search URLs from the highest priority plan.
-- de3b54bb3b69ec07-11: project_manager | open | Attach official evidence with title, URL, snippet, source_type, and source date.
-- de3b54bb3b69ec07-12: project_manager | open | Confirm project owner, developer, responsible office/person, tender status, and customs impact.
+- b54cf60aaae58a18-01: research_analyst | open | Run and record source evidence for query: Daily v11 international engineering trade, research intelligence, investment promotion, video, customs, and project execution operating package Central Asia official government site:gov.kz
+- b54cf60aaae58a18-02: research_analyst | open | Run and record source evidence for query: Daily v11 international engineering trade, research intelligence, investment promotion, video, customs, and project execution operating package Central Asia official government site:gov.uz
+- b54cf60aaae58a18-03: research_analyst | open | Run and record source evidence for query: Daily v11 international engineering trade, research intelligence, investment promotion, video, customs, and project execution operating package Central Asia official government site:gov.kg
+- b54cf60aaae58a18-04: research_analyst | open | Run and record source evidence for query: Daily v11 international engineering trade, research intelligence, investment promotion, video, customs, and project execution operating package Central Asia official government site:tajinvest.tj
+- b54cf60aaae58a18-05: research_analyst | open | Run and record source evidence for query: Daily v11 international engineering trade, research intelligence, investment promotion, video, customs, and project execution operating package Central Asia ministry site:gov.kz
+- b54cf60aaae58a18-06: research_analyst | open | Run and record source evidence for query: Daily v11 international engineering trade, research intelligence, investment promotion, video, customs, and project execution operating package Central Asia ministry site:gov.uz
+- b54cf60aaae58a18-07: research_analyst | open | Run and record source evidence for query: Daily v11 international engineering trade, research intelligence, investment promotion, video, customs, and project execution operating package Central Asia ministry site:gov.kg
+- b54cf60aaae58a18-08: research_analyst | open | Run and record source evidence for query: Daily v11 international engineering trade, research intelligence, investment promotion, video, customs, and project execution operating package Central Asia ministry site:tajinvest.tj
+- b54cf60aaae58a18-09: risk_approval_officer | blocked | Upgrade evidence from lead-only or partial support to official confirmation before project confirmation.
+- b54cf60aaae58a18-10: project_manager | open | Open official government and procurement search URLs from the highest priority plan.
+- b54cf60aaae58a18-11: project_manager | open | Attach official evidence with title, URL, snippet, source_type, and source date.
+- b54cf60aaae58a18-12: project_manager | open | Confirm project owner, developer, responsible office/person, tender status, and customs impact.
 
 ## Video Center
 
