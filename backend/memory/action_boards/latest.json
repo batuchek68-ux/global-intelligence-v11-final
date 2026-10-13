@@ -1,7 +1,7 @@
 {
   "ok": true,
-  "id": "08c05e737878a9e5",
-  "created_at": "2026-10-13T07:49:26.517176+00:00",
+  "id": "2f0655a6a435f502",
+  "created_at": "2026-10-13T14:34:14.852285+00:00",
   "project": "Daily cycle operating evidence",
   "country": "Indonesia",
   "stage": "unknown",
@@ -34,7 +34,7 @@
   },
   "tasks": [
     {
-      "id": "08c05e737878a9e5-trade",
+      "id": "2f0655a6a435f502-trade",
       "role": "trade_lead",
       "role_label": "International trade lead",
       "title": "Verify customs, HS/tariff, payment terms, Incoterms, and logistics route.",
@@ -49,7 +49,7 @@
       "output": "internal_draft"
     },
     {
-      "id": "08c05e737878a9e5-research",
+      "id": "2f0655a6a435f502-research",
       "role": "research_analyst",
       "role_label": "Research intelligence analyst",
       "title": "Collect government, procurement, academic, and library evidence; grade each source.",
@@ -64,7 +64,7 @@
       "output": "internal_draft"
     },
     {
-      "id": "08c05e737878a9e5-investment",
+      "id": "2f0655a6a435f502-investment",
       "role": "investment_promotion_lead",
       "role_label": "Investment promotion lead",
       "title": "Map owner, developer, investor candidates, incentive policy, and project packaging gaps.",
@@ -78,7 +78,7 @@
       "output": "internal_draft"
     },
     {
-      "id": "08c05e737878a9e5-video",
+      "id": "2f0655a6a435f502-video",
       "role": "video_media_producer",
       "role_label": "Video and media producer",
       "title": "Draft country-style video concept based on verified facts and comparable platform examples.",
@@ -92,7 +92,7 @@
       "output": "internal_draft"
     },
     {
-      "id": "08c05e737878a9e5-pm",
+      "id": "2f0655a6a435f502-pm",
       "role": "project_manager",
       "role_label": "Project execution manager",
       "title": "Prepare meeting agenda, owner decision queue, deadlines, and next internal follow-up.",
@@ -107,7 +107,7 @@
       "output": "internal_draft"
     },
     {
-      "id": "08c05e737878a9e5-risk",
+      "id": "2f0655a6a435f502-risk",
       "role": "risk_approval_officer",
       "role_label": "Risk and approval officer",
       "title": "Keep formal outreach, quotation, payment, contract, and public publishing blocked until approval.",
