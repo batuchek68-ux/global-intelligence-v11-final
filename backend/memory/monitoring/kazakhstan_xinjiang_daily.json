@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-13T23:07:12+00:00",
-  "date": "2026-10-13",
+  "generated_at": "2026-10-14T05:22:31+00:00",
+  "date": "2026-10-14",
   "draft_notice": "DRAFT - Not approved for sending",
   "source_status": {
     "live_fetch": false,
@@ -119,12 +119,12 @@
     ]
   },
   "artifacts": {
-    "daily_log": "/home/runner/work/global-intelligence-v11-final/global-intelligence-v11-final/backend/reports/daily_logs/2026-10-13.md",
-    "news_update_markdown": "/home/runner/work/global-intelligence-v11-final/global-intelligence-v11-final/backend/reports/news_updates/2026-10-13.md",
-    "news_update_json": "/home/runner/work/global-intelligence-v11-final/global-intelligence-v11-final/backend/reports/news_updates/2026-10-13.json",
-    "project_library_report": "/home/runner/work/global-intelligence-v11-final/global-intelligence-v11-final/backend/reports/project_library/2026-10-13.md",
+    "daily_log": "/home/runner/work/global-intelligence-v11-final/global-intelligence-v11-final/backend/reports/daily_logs/2026-10-14.md",
+    "news_update_markdown": "/home/runner/work/global-intelligence-v11-final/global-intelligence-v11-final/backend/reports/news_updates/2026-10-14.md",
+    "news_update_json": "/home/runner/work/global-intelligence-v11-final/global-intelligence-v11-final/backend/reports/news_updates/2026-10-14.json",
+    "project_library_report": "/home/runner/work/global-intelligence-v11-final/global-intelligence-v11-final/backend/reports/project_library/2026-10-14.md",
     "project_library_database": "/home/runner/work/global-intelligence-v11-final/global-intelligence-v11-final/backend/projects/library/kazakhstan_xinjiang_projects.json",
-    "customs_watch": "/home/runner/work/global-intelligence-v11-final/global-intelligence-v11-final/backend/memory/monitoring/customs_watch/2026-10-13.json",
+    "customs_watch": "/home/runner/work/global-intelligence-v11-final/global-intelligence-v11-final/backend/memory/monitoring/customs_watch/2026-10-14.json",
     "latest_summary": "/home/runner/work/global-intelligence-v11-final/global-intelligence-v11-final/backend/memory/monitoring/kazakhstan_xinjiang_daily.json",
     "overview_report": "/home/runner/work/global-intelligence-v11-final/global-intelligence-v11-final/backend/reports/kazakhstan_xinjiang_monitoring.md"
   }

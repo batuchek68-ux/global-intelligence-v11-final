@@ -1,9 +1,9 @@
 # GitHub Cloud Acceptance
 
 - Status: PASS
-- Generated: 2026-10-13T23:07:12.782754+00:00
+- Generated: 2026-10-14T05:22:31.688954+00:00
 - Repository: batuchek68-ux/global-intelligence-v11-final
-- Run id: 38482180756
+- Run id: 38516223667
 
 ## Command Model
 
@@ -25,17 +25,17 @@
 - benchmark_questions: 50
 - answer_score: 80
 - intelligence_keywords: 211
-- intelligence_briefs: 113
-- video_center_files: 113
+- intelligence_briefs: 114
+- video_center_files: 114
 - team_execution_reports: 4
 - evidence_dossiers: 4
 - latest_evidence_status: partially_supported
-- action_boards: 2804
+- action_boards: 2809
 - latest_action_board_status: pending_owner
-- team_responses: 456
+- team_responses: 460
 - latest_team_response_score: 99
-- war_rooms: 228
-- war_room_execution_queues: 1566
+- war_rooms: 230
+- war_room_execution_queues: 1569
 - latest_war_room_queue_tasks: 32
 - latest_war_room_queue_blocked: 10
 - latest_war_room_score: 99
@@ -98,14 +98,14 @@
 - PASS `v11_knowledge:domains_and_customs` - domains=7, customs=True
 - PASS `v11_benchmark:50_questions` - question_count=50
 - PASS `v11_answer_scorer:daily_quality_score` - overall_score=80, verdict=usable
-- PASS `v11_intelligence:keyword_bank_and_brief` - keywords=211, briefs=113
-- PASS `v11_video:center_generated` - video_files=113, platform_searches=120
+- PASS `v11_intelligence:keyword_bank_and_brief` - keywords=211, briefs=114
+- PASS `v11_video:center_generated` - video_files=114, platform_searches=120
 - PASS `v11_team_execution:packages_generated` - team_reports=4, team_memory=4, cases=2
 - PASS `v11_evidence:verification_dossiers` - evidence_json=5, evidence_reports=5, latest_status=partially_supported
-- PASS `v11_action_board:execution_tasks` - action_json=2805, action_reports=2805, latest_tasks=6, latest_status=pending_owner
-- PASS `v11_team_response:team_answer_pack` - team_response_json=457, score=99, roles=6
+- PASS `v11_action_board:execution_tasks` - action_json=2810, action_reports=2810, latest_tasks=6, latest_status=pending_owner
+- PASS `v11_team_response:team_answer_pack` - team_response_json=461, score=99, roles=6
 - PASS `v11_search:source_readiness_and_confirmation_gate` - sources=11, manual=11, gate=lead_only, required=customs_trade,government_confirmation,procurement_tender, blocked=6
 - PASS `v11_project:promotion_readiness_gate` - weak=lead_only, official=draft_promotion_ready, external=False, library_total=2, draft_ready=0, lead_only=1
-- PASS `v11_war_room:vertical_team_operating_package` - latest=industry_war_room, saved_json=228, saved_reports=228, mode=industry_war_room, search_gate=lead_only, promotion=lead_only, roles=6, video=12, score=99
-- PASS `v11_war_room_execution:queue_tracks_work` - queues=1566, reports=1566, mode=war_room_execution_queue, tasks=32, open=22, blocked=10, approval=13
-- PASS `v11_mission_control:operating_brief` - status=human_review_required, benchmark=50, customs=True, evidence=4, boards=2804, responses=456, war_rooms=228, queues=1566, queue_tasks=32, war_score=99, search_gate=lead_only, promotion_gate=draft_promotion_ready
+- PASS `v11_war_room:vertical_team_operating_package` - latest=industry_war_room, saved_json=230, saved_reports=230, mode=industry_war_room, search_gate=lead_only, promotion=lead_only, roles=6, video=12, score=99
+- PASS `v11_war_room_execution:queue_tracks_work` - queues=1569, reports=1569, mode=war_room_execution_queue, tasks=32, open=22, blocked=10, approval=13
+- PASS `v11_mission_control:operating_brief` - status=human_review_required, benchmark=50, customs=True, evidence=4, boards=2809, responses=460, war_rooms=230, queues=1569, queue_tasks=32, war_score=99, search_gate=lead_only, promotion_gate=draft_promotion_ready
