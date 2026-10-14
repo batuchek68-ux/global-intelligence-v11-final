@@ -2,7 +2,7 @@
 
 DRAFT - Not approved for sending
 
-Generated: 2026-10-14T12:22:15+00:00
+Generated: 2026-10-14T17:36:29+00:00
 
 ## Source Status
 
