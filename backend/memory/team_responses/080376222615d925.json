@@ -1,7 +1,7 @@
 {
   "ok": true,
   "id": "080376222615d925",
-  "created_at": "2026-10-15T17:21:11.406450+00:00",
+  "created_at": "2026-10-15T21:46:01.479206+00:00",
   "question": "How should v11 operate today as an international engineering trade, research intelligence, investment promotion, video, and project execution team?",
   "country": "Indonesia",
   "industries": [
@@ -311,7 +311,7 @@
     },
     "tasks": [
       {
-        "id": "b7872a13607dbb10-trade",
+        "id": "f3bbeedc8f2dd2ce-trade",
         "role": "trade_lead",
         "role_label": "International trade lead",
         "title": "Verify customs, HS/tariff, payment terms, Incoterms, and logistics route.",
@@ -326,7 +326,7 @@
         "output": "internal_draft"
       },
       {
-        "id": "b7872a13607dbb10-research",
+        "id": "f3bbeedc8f2dd2ce-research",
         "role": "research_analyst",
         "role_label": "Research intelligence analyst",
         "title": "Collect government, procurement, academic, and library evidence; grade each source.",
@@ -341,7 +341,7 @@
         "output": "internal_draft"
       },
       {
-        "id": "b7872a13607dbb10-investment",
+        "id": "f3bbeedc8f2dd2ce-investment",
         "role": "investment_promotion_lead",
         "role_label": "Investment promotion lead",
         "title": "Map owner, developer, investor candidates, incentive policy, and project packaging gaps.",
@@ -355,7 +355,7 @@
         "output": "internal_draft"
       },
       {
-        "id": "b7872a13607dbb10-video",
+        "id": "f3bbeedc8f2dd2ce-video",
         "role": "video_media_producer",
         "role_label": "Video and media producer",
         "title": "Draft country-style video concept based on verified facts and comparable platform examples.",
@@ -369,7 +369,7 @@
         "output": "internal_draft"
       },
       {
-        "id": "b7872a13607dbb10-pm",
+        "id": "f3bbeedc8f2dd2ce-pm",
         "role": "project_manager",
         "role_label": "Project execution manager",
         "title": "Prepare meeting agenda, owner decision queue, deadlines, and next internal follow-up.",
@@ -384,7 +384,7 @@
         "output": "internal_draft"
       },
       {
-        "id": "b7872a13607dbb10-risk",
+        "id": "f3bbeedc8f2dd2ce-risk",
         "role": "risk_approval_officer",
         "role_label": "Risk and approval officer",
         "title": "Keep formal outreach, quotation, payment, contract, and public publishing blocked until approval.",
@@ -402,7 +402,7 @@
   },
   "quality_score": {
     "ok": true,
-    "created_at": "2026-10-15T17:21:11.406446+00:00",
+    "created_at": "2026-10-15T21:46:01.479202+00:00",
     "overall_score": 99,
     "verdict": "excellent",
     "dimensions": {
