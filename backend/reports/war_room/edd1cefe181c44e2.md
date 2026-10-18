@@ -43,18 +43,18 @@ Decision: treat unverified material as leads only. Build official evidence first
 ## Execution Queue
 
 - Tasks: 31; open=22; blocked=9; approval=12
-- 12fce6d90b458725-01: research_analyst | open | Run and record source evidence for query: Kazakhstan engineering trade project customs investment promotion video Kazakhstan official government site:gov.kz
-- 12fce6d90b458725-02: research_analyst | open | Run and record source evidence for query: Kazakhstan engineering trade project customs investment promotion video Kazakhstan official government site:primeminister.kz
-- 12fce6d90b458725-03: research_analyst | open | Run and record source evidence for query: Kazakhstan engineering trade project customs investment promotion video Kazakhstan official government site:invest.gov.kz
-- 12fce6d90b458725-04: research_analyst | open | Run and record source evidence for query: Kazakhstan engineering trade project customs investment promotion video Kazakhstan official government site:adilet.zan.kz
-- 12fce6d90b458725-05: research_analyst | open | Run and record source evidence for query: Kazakhstan engineering trade project customs investment promotion video Kazakhstan ministry site:gov.kz
-- 12fce6d90b458725-06: research_analyst | open | Run and record source evidence for query: Kazakhstan engineering trade project customs investment promotion video Kazakhstan ministry site:primeminister.kz
-- 12fce6d90b458725-07: research_analyst | open | Run and record source evidence for query: Kazakhstan engineering trade project customs investment promotion video Kazakhstan ministry site:invest.gov.kz
-- 12fce6d90b458725-08: research_analyst | open | Run and record source evidence for query: Kazakhstan engineering trade project customs investment promotion video Kazakhstan ministry site:adilet.zan.kz
-- 12fce6d90b458725-09: project_manager | open | Open official government and procurement search URLs from the highest priority plan.
-- 12fce6d90b458725-10: project_manager | open | Attach official evidence with title, URL, snippet, source_type, and source date.
-- 12fce6d90b458725-11: project_manager | open | Confirm project owner, developer, responsible office/person, tender status, and customs impact.
-- 12fce6d90b458725-12: project_manager | open | Use the action board for team task assignment.
+- dee0444943ea171a-01: research_analyst | open | Run and record source evidence for query: Kazakhstan engineering trade project customs investment promotion video Kazakhstan official government site:gov.kz
+- dee0444943ea171a-02: research_analyst | open | Run and record source evidence for query: Kazakhstan engineering trade project customs investment promotion video Kazakhstan official government site:primeminister.kz
+- dee0444943ea171a-03: research_analyst | open | Run and record source evidence for query: Kazakhstan engineering trade project customs investment promotion video Kazakhstan official government site:invest.gov.kz
+- dee0444943ea171a-04: research_analyst | open | Run and record source evidence for query: Kazakhstan engineering trade project customs investment promotion video Kazakhstan official government site:adilet.zan.kz
+- dee0444943ea171a-05: research_analyst | open | Run and record source evidence for query: Kazakhstan engineering trade project customs investment promotion video Kazakhstan ministry site:gov.kz
+- dee0444943ea171a-06: research_analyst | open | Run and record source evidence for query: Kazakhstan engineering trade project customs investment promotion video Kazakhstan ministry site:primeminister.kz
+- dee0444943ea171a-07: research_analyst | open | Run and record source evidence for query: Kazakhstan engineering trade project customs investment promotion video Kazakhstan ministry site:invest.gov.kz
+- dee0444943ea171a-08: research_analyst | open | Run and record source evidence for query: Kazakhstan engineering trade project customs investment promotion video Kazakhstan ministry site:adilet.zan.kz
+- dee0444943ea171a-09: project_manager | open | Open official government and procurement search URLs from the highest priority plan.
+- dee0444943ea171a-10: project_manager | open | Attach official evidence with title, URL, snippet, source_type, and source date.
+- dee0444943ea171a-11: project_manager | open | Confirm project owner, developer, responsible office/person, tender status, and customs impact.
+- dee0444943ea171a-12: project_manager | open | Use the action board for team task assignment.
 
 ## Video Center
 
