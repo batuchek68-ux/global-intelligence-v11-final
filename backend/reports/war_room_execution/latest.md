@@ -11,63 +11,63 @@ DRAFT - internal execution queue, not approved for external sending
 
 ## Queue
 
-### 0af7f4dcf60d6cdb-01 | research_analyst
+### 0ddd65f132429839-01 | research_analyst
 - Status: open
 - Risk gate: evidence_required
 - Source: search_confirmation.government_confirmation
 - Task: Run and record source evidence for query: Daily v11 international engineering trade, research intelligence, investment promotion, video, customs, and project execution operating package Central Asia official government site:gov.kz
 - Evidence needed: official URL; source date; source type; relevant excerpt; confidence note
 
-### 0af7f4dcf60d6cdb-02 | research_analyst
+### 0ddd65f132429839-02 | research_analyst
 - Status: open
 - Risk gate: evidence_required
 - Source: search_confirmation.government_confirmation
 - Task: Run and record source evidence for query: Daily v11 international engineering trade, research intelligence, investment promotion, video, customs, and project execution operating package Central Asia official government site:gov.uz
 - Evidence needed: official URL; source date; source type; relevant excerpt; confidence note
 
-### 0af7f4dcf60d6cdb-03 | research_analyst
+### 0ddd65f132429839-03 | research_analyst
 - Status: open
 - Risk gate: evidence_required
 - Source: search_confirmation.government_confirmation
 - Task: Run and record source evidence for query: Daily v11 international engineering trade, research intelligence, investment promotion, video, customs, and project execution operating package Central Asia official government site:gov.kg
 - Evidence needed: official URL; source date; source type; relevant excerpt; confidence note
 
-### 0af7f4dcf60d6cdb-04 | research_analyst
+### 0ddd65f132429839-04 | research_analyst
 - Status: open
 - Risk gate: evidence_required
 - Source: search_confirmation.government_confirmation
 - Task: Run and record source evidence for query: Daily v11 international engineering trade, research intelligence, investment promotion, video, customs, and project execution operating package Central Asia official government site:tajinvest.tj
 - Evidence needed: official URL; source date; source type; relevant excerpt; confidence note
 
-### 0af7f4dcf60d6cdb-05 | research_analyst
+### 0ddd65f132429839-05 | research_analyst
 - Status: open
 - Risk gate: evidence_required
 - Source: search_confirmation.government_confirmation
 - Task: Run and record source evidence for query: Daily v11 international engineering trade, research intelligence, investment promotion, video, customs, and project execution operating package Central Asia ministry site:gov.kz
 - Evidence needed: official URL; source date; source type; relevant excerpt; confidence note
 
-### 0af7f4dcf60d6cdb-06 | research_analyst
+### 0ddd65f132429839-06 | research_analyst
 - Status: open
 - Risk gate: evidence_required
 - Source: search_confirmation.government_confirmation
 - Task: Run and record source evidence for query: Daily v11 international engineering trade, research intelligence, investment promotion, video, customs, and project execution operating package Central Asia ministry site:gov.uz
 - Evidence needed: official URL; source date; source type; relevant excerpt; confidence note
 
-### 0af7f4dcf60d6cdb-07 | research_analyst
+### 0ddd65f132429839-07 | research_analyst
 - Status: open
 - Risk gate: evidence_required
 - Source: search_confirmation.government_confirmation
 - Task: Run and record source evidence for query: Daily v11 international engineering trade, research intelligence, investment promotion, video, customs, and project execution operating package Central Asia ministry site:gov.kg
 - Evidence needed: official URL; source date; source type; relevant excerpt; confidence note
 
-### 0af7f4dcf60d6cdb-08 | research_analyst
+### 0ddd65f132429839-08 | research_analyst
 - Status: open
 - Risk gate: evidence_required
 - Source: search_confirmation.government_confirmation
 - Task: Run and record source evidence for query: Daily v11 international engineering trade, research intelligence, investment promotion, video, customs, and project execution operating package Central Asia ministry site:tajinvest.tj
 - Evidence needed: official URL; source date; source type; relevant excerpt; confidence note
 
-### 0af7f4dcf60d6cdb-09 | risk_approval_officer
+### 0ddd65f132429839-09 | risk_approval_officer
 - Status: blocked
 - Risk gate: approval_required
 - Source: evidence.verification_status
@@ -75,7 +75,7 @@ DRAFT - internal execution queue, not approved for external sending
 - Evidence needed: government/customs/procurement URL; official company URL if relevant; collection date; contradiction check
 - Blocked actions: contract or payment approval; contract or payment commitment; delivery or customs commitment; external outreach; formal investment promotion publication; formal outreach; investment promotion publication; public video publication; quotation
 
-### 0af7f4dcf60d6cdb-10 | project_manager
+### 0ddd65f132429839-10 | project_manager
 - Status: open
 - Risk gate: owner_review
 - Source: project_execution.next_actions
@@ -83,7 +83,7 @@ DRAFT - internal execution queue, not approved for external sending
 - Evidence needed: task owner; deadline; source link; decision log
 - Blocked actions: contract or payment approval; contract or payment commitment; delivery or customs commitment; external outreach; formal investment promotion publication; formal outreach; investment promotion publication; public video publication; quotation
 
-### 0af7f4dcf60d6cdb-11 | project_manager
+### 0ddd65f132429839-11 | project_manager
 - Status: open
 - Risk gate: owner_review
 - Source: project_execution.next_actions
@@ -91,7 +91,7 @@ DRAFT - internal execution queue, not approved for external sending
 - Evidence needed: task owner; deadline; source link; decision log
 - Blocked actions: contract or payment approval; contract or payment commitment; delivery or customs commitment; external outreach; formal investment promotion publication; formal outreach; investment promotion publication; public video publication; quotation
 
-### 0af7f4dcf60d6cdb-12 | project_manager
+### 0ddd65f132429839-12 | project_manager
 - Status: open
 - Risk gate: owner_review
 - Source: project_execution.next_actions
@@ -99,7 +99,7 @@ DRAFT - internal execution queue, not approved for external sending
 - Evidence needed: task owner; deadline; source link; decision log
 - Blocked actions: contract or payment approval; contract or payment commitment; delivery or customs commitment; external outreach; formal investment promotion publication; formal outreach; investment promotion publication; public video publication; quotation
 
-### 0af7f4dcf60d6cdb-13 | project_manager
+### 0ddd65f132429839-13 | project_manager
 - Status: open
 - Risk gate: owner_review
 - Source: project_execution.next_actions
@@ -107,7 +107,7 @@ DRAFT - internal execution queue, not approved for external sending
 - Evidence needed: task owner; deadline; source link; decision log
 - Blocked actions: contract or payment approval; contract or payment commitment; delivery or customs commitment; external outreach; formal investment promotion publication; formal outreach; investment promotion publication; public video publication; quotation
 
-### 0af7f4dcf60d6cdb-14 | project_manager
+### 0ddd65f132429839-14 | project_manager
 - Status: open
 - Risk gate: owner_review
 - Source: project_execution.next_actions
@@ -115,63 +115,63 @@ DRAFT - internal execution queue, not approved for external sending
 - Evidence needed: task owner; deadline; source link; decision log
 - Blocked actions: contract or payment approval; contract or payment commitment; delivery or customs commitment; external outreach; formal investment promotion publication; formal outreach; investment promotion publication; public video publication; quotation
 
-### 0af7f4dcf60d6cdb-15 | trade_lead
+### 0ddd65f132429839-15 | trade_lead
 - Status: open
 - Risk gate: standard_review
 - Source: team.roles.next_step
 - Task: 收集海关官网、官方税则、清关文件、银行付款条件证据，并形成可执行 checklist。
 - Evidence needed: role output; review note; risk boundary
 
-### 0af7f4dcf60d6cdb-16 | research_analyst
+### 0ddd65f132429839-16 | research_analyst
 - Status: open
 - Risk gate: standard_review
 - Source: team.roles.next_step
 - Task: 把证据分为政府/采购/企业/媒体/社交五级，记录 citation、URL、source date、relevance note。
 - Evidence needed: role output; review note; risk boundary
 
-### 0af7f4dcf60d6cdb-17 | investment_promotion_lead
+### 0ddd65f132429839-17 | investment_promotion_lead
 - Status: open
 - Risk gate: standard_review
 - Source: team.roles.next_step
 - Task: 建立 owner/developer/investor/government authority 四类名单，并标注 evidence level。
 - Evidence needed: role output; review note; risk boundary
 
-### 0af7f4dcf60d6cdb-18 | video_media_producer
+### 0ddd65f132429839-18 | video_media_producer
 - Status: open
 - Risk gate: standard_review
 - Source: team.roles.next_step
 - Task: 生成 60 秒项目机会脚本、风险解释脚本和平台关键词，等待人工审批。
 - Evidence needed: role output; review note; risk boundary
 
-### 0af7f4dcf60d6cdb-19 | project_manager
+### 0ddd65f132429839-19 | project_manager
 - Status: open
 - Risk gate: standard_review
 - Source: team.roles.next_step
 - Task: 安排责任人、截止时间、会议议程、decision log 和复盘记录。
 - Evidence needed: role output; review note; risk boundary
 
-### 0af7f4dcf60d6cdb-20 | risk_approval_officer
+### 0ddd65f132429839-20 | risk_approval_officer
 - Status: open
 - Risk gate: standard_review
 - Source: team.roles.next_step
 - Task: 把高风险事项写入老板收件箱，审批前保持 DRAFT - Not approved for sending。
 - Evidence needed: role output; review note; risk boundary
 
-### 0af7f4dcf60d6cdb-21 | trade_lead
+### 0ddd65f132429839-21 | trade_lead
 - Status: open
 - Risk gate: human_review_required
 - Source: action_board.tasks
 - Task: Verify customs, HS/tariff, payment terms, Incoterms, and logistics route.
 - Evidence needed: customs authority URL; tariff/HS evidence; payment term proof; logistics route proof
 
-### 0af7f4dcf60d6cdb-22 | research_analyst
+### 0ddd65f132429839-22 | research_analyst
 - Status: open
 - Risk gate: evidence_required
 - Source: action_board.tasks
 - Task: Collect government, procurement, academic, and library evidence; grade each source.
 - Evidence needed: government page; procurement page; paper/library source; source date
 
-### 0af7f4dcf60d6cdb-23 | investment_promotion_lead
+### 0ddd65f132429839-23 | investment_promotion_lead
 - Status: blocked
 - Risk gate: blocked_before_external_use
 - Source: action_board.tasks
@@ -179,7 +179,7 @@ DRAFT - internal execution queue, not approved for external sending
 - Evidence needed: official project owner proof; developer/investor proof; investment agency source
 - Blocked actions: contract or payment approval; contract or payment commitment; delivery or customs commitment; external outreach; formal investment promotion publication; formal outreach; investment promotion publication; public video publication; quotation
 
-### 0af7f4dcf60d6cdb-24 | video_media_producer
+### 0ddd65f132429839-24 | video_media_producer
 - Status: blocked
 - Risk gate: human_approval_before_publish
 - Source: action_board.tasks
@@ -187,14 +187,14 @@ DRAFT - internal execution queue, not approved for external sending
 - Evidence needed: platform search links; country style notes; verified project facts
 - Blocked actions: contract or payment approval; contract or payment commitment; delivery or customs commitment; external outreach; formal investment promotion publication; formal outreach; investment promotion publication; public video publication; quotation
 
-### 0af7f4dcf60d6cdb-25 | project_manager
+### 0ddd65f132429839-25 | project_manager
 - Status: open
 - Risk gate: owner_queue
 - Source: action_board.tasks
 - Task: Prepare meeting agenda, owner decision queue, deadlines, and next internal follow-up.
 - Evidence needed: meeting record; task owner; deadline; decision log
 
-### 0af7f4dcf60d6cdb-26 | risk_approval_officer
+### 0ddd65f132429839-26 | risk_approval_officer
 - Status: pending_owner
 - Risk gate: active
 - Source: action_board.tasks
@@ -202,7 +202,7 @@ DRAFT - internal execution queue, not approved for external sending
 - Evidence needed: approval ticket; risk trigger; human decision; audit log line
 - Blocked actions: contract or payment approval; contract or payment commitment; delivery or customs commitment; external outreach; formal investment promotion publication; formal outreach; investment promotion publication; public video publication; quotation
 
-### 0af7f4dcf60d6cdb-27 | video_media_producer
+### 0ddd65f132429839-27 | video_media_producer
 - Status: blocked
 - Risk gate: blocked_before_external_use
 - Source: video_center.platform_searches
@@ -210,7 +210,7 @@ DRAFT - internal execution queue, not approved for external sending
 - Evidence needed: reference links; style notes; original script outline; approval boundary
 - Blocked actions: contract or payment approval; contract or payment commitment; delivery or customs commitment; external outreach; formal investment promotion publication; formal outreach; investment promotion publication; public publishing; public video publication; quotation; unapproved outreach
 
-### 0af7f4dcf60d6cdb-28 | video_media_producer
+### 0ddd65f132429839-28 | video_media_producer
 - Status: blocked
 - Risk gate: blocked_before_external_use
 - Source: video_center.platform_searches
@@ -218,7 +218,7 @@ DRAFT - internal execution queue, not approved for external sending
 - Evidence needed: reference links; style notes; original script outline; approval boundary
 - Blocked actions: contract or payment approval; contract or payment commitment; delivery or customs commitment; external outreach; formal investment promotion publication; formal outreach; investment promotion publication; public publishing; public video publication; quotation; unapproved outreach
 
-### 0af7f4dcf60d6cdb-29 | video_media_producer
+### 0ddd65f132429839-29 | video_media_producer
 - Status: blocked
 - Risk gate: blocked_before_external_use
 - Source: video_center.platform_searches
@@ -226,7 +226,7 @@ DRAFT - internal execution queue, not approved for external sending
 - Evidence needed: reference links; style notes; original script outline; approval boundary
 - Blocked actions: contract or payment approval; contract or payment commitment; delivery or customs commitment; external outreach; formal investment promotion publication; formal outreach; investment promotion publication; public publishing; public video publication; quotation; unapproved outreach
 
-### 0af7f4dcf60d6cdb-30 | video_media_producer
+### 0ddd65f132429839-30 | video_media_producer
 - Status: blocked
 - Risk gate: blocked_before_external_use
 - Source: video_center.platform_searches
@@ -234,7 +234,7 @@ DRAFT - internal execution queue, not approved for external sending
 - Evidence needed: reference links; style notes; original script outline; approval boundary
 - Blocked actions: contract or payment approval; contract or payment commitment; delivery or customs commitment; external outreach; formal investment promotion publication; formal outreach; investment promotion publication; public publishing; public video publication; quotation; unapproved outreach
 
-### 0af7f4dcf60d6cdb-31 | video_media_producer
+### 0ddd65f132429839-31 | video_media_producer
 - Status: blocked
 - Risk gate: blocked_before_external_use
 - Source: video_center.platform_searches
@@ -242,7 +242,7 @@ DRAFT - internal execution queue, not approved for external sending
 - Evidence needed: reference links; style notes; original script outline; approval boundary
 - Blocked actions: contract or payment approval; contract or payment commitment; delivery or customs commitment; external outreach; formal investment promotion publication; formal outreach; investment promotion publication; public publishing; public video publication; quotation; unapproved outreach
 
-### 0af7f4dcf60d6cdb-32 | video_media_producer
+### 0ddd65f132429839-32 | video_media_producer
 - Status: blocked
 - Risk gate: blocked_before_external_use
 - Source: video_center.platform_searches
