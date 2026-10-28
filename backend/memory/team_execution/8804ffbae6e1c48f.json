@@ -1,7 +1,7 @@
 {
   "ok": true,
   "id": "8804ffbae6e1c48f",
-  "created_at": "2026-10-27T22:36:34.780530+00:00",
+  "created_at": "2026-10-28T06:16:27.763849+00:00",
   "objective": "Kazakhstan EPC customs investment promotion video execution",
   "country": "Kazakhstan",
   "industries": [
@@ -4214,7 +4214,7 @@
   },
   "answer_quality_model": {
     "ok": true,
-    "created_at": "2026-10-27T22:36:34.780522+00:00",
+    "created_at": "2026-10-28T06:16:27.763842+00:00",
     "overall_score": 64,
     "verdict": "needs_improvement",
     "dimensions": {
