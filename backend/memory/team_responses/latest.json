@@ -1,7 +1,7 @@
 {
   "ok": true,
   "id": "fb7833f148c4b4be",
-  "created_at": "2026-10-31T06:16:13.333424+00:00",
+  "created_at": "2026-10-31T07:05:34.492593+00:00",
   "question": "Daily v11 international engineering trade, research intelligence, investment promotion, video, customs, and project execution operating package",
   "country": "Indonesia",
   "industries": [
@@ -311,7 +311,7 @@
     },
     "tasks": [
       {
-        "id": "9c8aa389604c4dc3-trade",
+        "id": "e75b19b57e7d8690-trade",
         "role": "trade_lead",
         "role_label": "International trade lead",
         "title": "Verify customs, HS/tariff, payment terms, Incoterms, and logistics route.",
@@ -326,7 +326,7 @@
         "output": "internal_draft"
       },
       {
-        "id": "9c8aa389604c4dc3-research",
+        "id": "e75b19b57e7d8690-research",
         "role": "research_analyst",
         "role_label": "Research intelligence analyst",
         "title": "Collect government, procurement, academic, and library evidence; grade each source.",
@@ -341,7 +341,7 @@
         "output": "internal_draft"
       },
       {
-        "id": "9c8aa389604c4dc3-investment",
+        "id": "e75b19b57e7d8690-investment",
         "role": "investment_promotion_lead",
         "role_label": "Investment promotion lead",
         "title": "Map owner, developer, investor candidates, incentive policy, and project packaging gaps.",
@@ -355,7 +355,7 @@
         "output": "internal_draft"
       },
       {
-        "id": "9c8aa389604c4dc3-video",
+        "id": "e75b19b57e7d8690-video",
         "role": "video_media_producer",
         "role_label": "Video and media producer",
         "title": "Draft country-style video concept based on verified facts and comparable platform examples.",
@@ -369,7 +369,7 @@
         "output": "internal_draft"
       },
       {
-        "id": "9c8aa389604c4dc3-pm",
+        "id": "e75b19b57e7d8690-pm",
         "role": "project_manager",
         "role_label": "Project execution manager",
         "title": "Prepare meeting agenda, owner decision queue, deadlines, and next internal follow-up.",
@@ -384,7 +384,7 @@
         "output": "internal_draft"
       },
       {
-        "id": "9c8aa389604c4dc3-risk",
+        "id": "e75b19b57e7d8690-risk",
         "role": "risk_approval_officer",
         "role_label": "Risk and approval officer",
         "title": "Keep formal outreach, quotation, payment, contract, and public publishing blocked until approval.",
@@ -402,7 +402,7 @@
   },
   "quality_score": {
     "ok": true,
-    "created_at": "2026-10-31T06:16:13.333421+00:00",
+    "created_at": "2026-10-31T07:05:34.492589+00:00",
     "overall_score": 99,
     "verdict": "excellent",
     "dimensions": {
