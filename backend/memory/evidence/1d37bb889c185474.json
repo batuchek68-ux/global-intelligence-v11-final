@@ -1,7 +1,7 @@
 {
   "ok": true,
   "id": "1d37bb889c185474",
-  "created_at": "2026-11-08T06:41:15.480833+00:00",
+  "created_at": "2026-11-08T07:30:00.949508+00:00",
   "project": "Kazakhstan logistics hub",
   "country": "Kazakhstan",
   "claim": "Kazakhstan logistics EPC project owner and customs documents are confirmed",
@@ -32,7 +32,7 @@
         "contract",
         "customs"
       ],
-      "collected_at": "2026-11-08T06:41:15.480804+00:00"
+      "collected_at": "2026-11-08T07:30:00.949459+00:00"
     }
   ],
   "decision_rule": "Official government/customs/procurement evidence is required before project confirmation, investment promotion, quotation, customer commitment, or public publishing.",
