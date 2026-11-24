@@ -338,6 +338,9 @@ def _run_daily_cycle(projects: list | None = None) -> dict:
         "waiting_for_owner": mission_control["snapshot"]["command_center"]["waiting_for_owner"],
     }
     write_json(ROOT / "memory" / "last_run.json", summary)
+    if os.getenv("CLOUD_OS_USE_DB", "0") == "1":
+        from backend.services.state_repository import persist_run_summary
+        persist_run_summary(summary)
     return summary
 
 

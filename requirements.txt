@@ -4,3 +4,4 @@ feedparser>=6.0
 requests>=2.31
 PyGithub>=2.3
 httpx2>=0.28
+sqlalchemy>=2.0
