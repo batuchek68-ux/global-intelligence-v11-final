@@ -1,0 +1,46 @@
+name: Event Orchestrator
+
+on:
+  repository_dispatch:
+    types: [intelligence_event]
+  workflow_dispatch:
+    inputs:
+      event_type:
+        description: "Event type to publish"
+        required: false
+        default: "daily.tick"
+      payload:
+        description: "JSON payload for the event"
+        required: false
+        default: "{}"
+
+permissions:
+  contents: write
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+      - name: Run event orchestrator
+        env:
+          CLOUD_OS_EVENT_TYPE: ${{ github.event.client_payload.event_type || inputs.event_type || 'daily.tick' }}
+          CLOUD_OS_EVENT_PAYLOAD: ${{ toJSON(github.event.client_payload.payload) || inputs.payload || '{}' }}
+          CLOUD_OS_USE_DB: "1"
+        run: python backend/workflows/event_orchestrator.py
+      - name: Persist results
+        run: |
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git fetch origin main
+          git reset --soft origin/main
+          git add memory reports comm/outbox research/briefs media/drafts
+          git commit -m "event orchestrator run ${{ github.run_id }}" || echo "no changes"
+          git push origin main

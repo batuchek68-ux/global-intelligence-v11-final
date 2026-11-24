@@ -341,6 +341,15 @@ def _run_daily_cycle(projects: list | None = None) -> dict:
     if os.getenv("CLOUD_OS_USE_DB", "0") == "1":
         from backend.services.state_repository import persist_run_summary
         persist_run_summary(summary)
+    try:
+        from backend.services.event_bus import publish
+        publish("daily_cycle.finished", {
+            "project_count": summary.get("project_count"),
+            "case_count": summary.get("case_count"),
+            "major_matter_count": summary.get("major_matter_count"),
+        })
+    except Exception:
+        pass
     return summary
 
 
