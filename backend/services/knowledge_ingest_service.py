@@ -94,7 +94,8 @@ def _chunks(text: str) -> list[str]:
 def build_index(reset: bool = True, limit_per_source: int | None = None) -> dict[str, Any]:
     limit_per_source = limit_per_source if limit_per_source is not None else MAX_DOCS_PER_SOURCE
     collection = _collection(reset=reset)
-    print(f"[knowledge] building index at {_db_path()} (limit/source={limit_per_source}, chunk={CHUNK_SIZE})", flush=True)
+    existing = set(collection.get()["ids"]) if not reset else set()
+    print(f"[knowledge] building index at {_db_path()} (limit/source={limit_per_source}, chunk={CHUNK_SIZE}, existing={len(existing)})", flush=True)
     ids: list[str] = []
     documents: list[str] = []
     metadatas: list[dict[str, Any]] = []
@@ -112,7 +113,10 @@ def build_index(reset: bool = True, limit_per_source: int | None = None) -> dict
             except OSError:
                 continue
             for i, chunk in enumerate(_chunks(_clean(raw))):
-                ids.append(f"{name}::{path.as_posix()}::{i}")
+                cid = f"{name}::{path.as_posix()}::{i}"
+                if cid in existing:
+                    continue
+                ids.append(cid)
                 documents.append(chunk)
                 metadatas.append({
                     "source": name,

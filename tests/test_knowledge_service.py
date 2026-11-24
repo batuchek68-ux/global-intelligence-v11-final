@@ -38,6 +38,15 @@ def test_build_and_query(knowledge_env):
     assert result["results"][0]["metadata"]["source"] == "demo"
 
 
+def test_incremental_build_skips_existing(knowledge_env):
+    first = kis.build_index(reset=True, limit_per_source=2)
+    before = kis.stats()["count"]
+    second = kis.build_index(reset=False, limit_per_source=2)
+    assert second["chunks"] == 0
+    assert kis.stats()["count"] == before
+    assert first["ok"] is True
+
+
 def test_evaluate(knowledge_env):
     kis.build_index(reset=True)
     report = kis.evaluate([
