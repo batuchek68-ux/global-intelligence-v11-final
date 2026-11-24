@@ -9,6 +9,7 @@ from typing import Any
 from urllib.parse import quote_plus
 
 from backend.services.audit_service import append_audit
+from backend.services.llm_service import enhance_brief as llm_enhance_brief
 
 
 BACKEND_ROOT = Path(__file__).resolve().parents[1]
@@ -318,15 +319,26 @@ def generate_intelligence_brief(
         ]
     )
     content = "\n".join(lines) + "\n"
+    content, generated_by = llm_enhance_brief(
+        content, ", ".join(system["topics"] + system["countries"] + system["industries"])
+    )
     path.write_text(content, encoding="utf-8")
     append_audit(
         "INTELLIGENCE_BRIEF_GENERATED",
         "DONE",
-        f"Generated daily intelligence brief for topics={','.join(system['topics'])}; external sending blocked.",
+        f"Generated daily intelligence brief for topics={','.join(system['topics'])}; "
+        f"generated_by={generated_by}; external sending blocked.",
         confidence=90,
         risk="MEDIUM",
     )
-    return {"ok": True, "path": str(path), "content": content, "search_system": system, "classified": classified}
+    return {
+        "ok": True,
+        "path": str(path),
+        "content": content,
+        "generated_by": generated_by,
+        "search_system": system,
+        "classified": classified,
+    }
 
 
 def build_video_production_center(
