@@ -685,6 +685,13 @@ async def list_alerts(limit: int = 50) -> dict[str, Any]:
     return {"ok": True, "alerts": alerts(limit)}
 
 
+@app.post("/v1/knowledge/benchmark")
+async def knowledge_benchmark(n: int = 5) -> dict[str, Any]:
+    _require_core_allowed()
+    from backend.services.rag_benchmark_service import evaluate
+    return evaluate(n)
+
+
 if __name__ == "__main__":
     import uvicorn
 
