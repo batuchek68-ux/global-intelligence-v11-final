@@ -1,6 +1,9 @@
 name: Event Orchestrator
 
 on:
+  # single timer for the v12 operating loop
+  schedule:
+    - cron: "0 */6 * * *"
   repository_dispatch:
     types: [intelligence_event]
   workflow_dispatch:

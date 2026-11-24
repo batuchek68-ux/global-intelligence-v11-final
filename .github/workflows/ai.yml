@@ -1,8 +1,7 @@
 name: Global Intelligence Pipeline
 
 on:
-  schedule:
-    - cron: "0 */6 * * *"
+  # schedule retired 2026-11-24: event_orchestrator.yml is the single timer
   workflow_dispatch:
 
 permissions:
