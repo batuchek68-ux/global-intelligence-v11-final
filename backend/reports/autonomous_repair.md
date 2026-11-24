@@ -1,17 +1,18 @@
 # Codex / AI Autonomous Repair Report
 
-- Status: PASS
-- Generated: 2026-11-24T00:21:30.521682+00:00
+- Status: ATTENTION
+- Generated: 2026-11-24T10:25:21.491470+00:00
 
 ## Findings
 
-- No repair needed. All autonomous checks passed.
+- Unit tests failed; review stderr tail and repair code before cloud acceptance.
+- Python import/module path error detected.
 
 ## Steps
 
 - PASS `v11 system integrity self-check and low-risk repair`: `/opt/hostedtoolcache/Python/3.12.16/x64/bin/python workflows/system_integrity.py`
 - PASS `preflight`: `/opt/hostedtoolcache/Python/3.12.16/x64/bin/python workflows/preflight_check.py`
-- PASS `tests`: `/opt/hostedtoolcache/Python/3.12.16/x64/bin/python -m unittest discover -s tests`
+- FAIL `tests`: `/opt/hostedtoolcache/Python/3.12.16/x64/bin/python -m unittest discover -s tests`
 - PASS `daily operating cycle`: `/opt/hostedtoolcache/Python/3.12.16/x64/bin/python workflows/daily_job.py`
 - PASS `watchdog`: `/opt/hostedtoolcache/Python/3.12.16/x64/bin/python workflows/watchdog.py`
 - PASS `cloud acceptance`: `/opt/hostedtoolcache/Python/3.12.16/x64/bin/python workflows/cloud_acceptance.py`
