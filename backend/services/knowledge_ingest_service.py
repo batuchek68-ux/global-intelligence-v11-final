@@ -50,7 +50,40 @@ def _db_path() -> Path:
     return Path(os.getenv("KNOWLEDGE_CHROMA_DIR") or str(DEFAULT_DB))
 
 
+class OllamaEmbeddingFunction:
+    """Chroma embedding function backed by a local Ollama multilingual model."""
+
+    def __init__(self, model: str = "bge-m3", url: str = "http://127.0.0.1:11434/api/embed"):
+        self.model = model
+        self.url = url
+
+    def __call__(self, input):
+        import requests
+        texts = [input] if isinstance(input, str) else list(input)
+        response = requests.post(
+            self.url, json={"model": self.model, "input": texts}, timeout=120
+        )
+        response.raise_for_status()
+        data = response.json()
+        vectors = data.get("embeddings") or []
+        if len(vectors) != len(texts):
+            raise RuntimeError("Ollama embedding count mismatch")
+        return vectors
+
+    def name(self):
+        return f"ollama:{self.model}"
+
+
 def _embedding_function():
+    import os
+    model = os.getenv("KNOWLEDGE_EMBED_MODEL", "chroma-default")
+    if model != "chroma-default":
+        try:
+            fn = OllamaEmbeddingFunction(model=model)
+            fn([model])  # probe
+            return fn
+        except Exception:
+            pass
     from chromadb.utils.embedding_functions import DefaultEmbeddingFunction
     return DefaultEmbeddingFunction()
 

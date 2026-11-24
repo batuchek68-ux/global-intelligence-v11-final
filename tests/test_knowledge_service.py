@@ -8,6 +8,14 @@ import pytest
 from backend.services import knowledge_ingest_service as kis
 
 
+def test_embedding_function_default_is_offline_safe(monkeypatch):
+    monkeypatch.setenv("KNOWLEDGE_EMBED_MODEL", "chroma-default")
+    fn = kis._embedding_function()
+    vectors = fn(["hello"])
+    assert len(vectors) == 1
+    assert len(vectors[0]) > 0
+
+
 @pytest.fixture
 def knowledge_env(tmp_path: Path, monkeypatch):
     src = tmp_path / "sources"
