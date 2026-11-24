@@ -53,31 +53,59 @@ def _db_path() -> Path:
 class OllamaEmbeddingFunction:
     """Chroma embedding function backed by a local Ollama multilingual model."""
 
-    def __init__(self, model: str = "bge-m3", url: str = "http://127.0.0.1:11434/api/embed"):
+    def __init__(self, model: str = "bge-m3", url: str = "http://127.0.0.1:11434/api/embed", batch: int = 8, timeout: int = 120):
         self.model = model
         self.url = url
+        self.batch = batch
+        self.timeout = timeout
 
     def __call__(self, input):
         import requests
         texts = [input] if isinstance(input, str) else list(input)
-        response = requests.post(
-            self.url, json={"model": self.model, "input": texts}, timeout=120
-        )
-        response.raise_for_status()
-        data = response.json()
-        vectors = data.get("embeddings") or []
-        if len(vectors) != len(texts):
-            raise RuntimeError("Ollama embedding count mismatch")
+        vectors = []
+        for i in range(0, len(texts), self.batch):
+            chunk = texts[i:i + self.batch]
+            response = requests.post(
+                self.url, json={"model": self.model, "input": chunk}, timeout=self.timeout
+            )
+            response.raise_for_status()
+            data = response.json()
+            got = data.get("embeddings") or []
+            if len(got) != len(chunk):
+                raise RuntimeError("Ollama embedding count mismatch")
+            vectors.extend(got)
         return vectors
 
     def name(self):
         return f"ollama:{self.model}"
 
 
+class MultilingualEmbeddingFunction:
+    """Local multilingual ONNX via sentence-transformers (fast, offline after download)."""
+
+    MODEL = "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
+
+    def __init__(self, model: str | None = None):
+        from sentence_transformers import SentenceTransformer
+        self.model = SentenceTransformer(model or self.MODEL)
+
+    def __call__(self, input):
+        texts = [input] if isinstance(input, str) else list(input)
+        return self.model.encode(texts, batch_size=64, convert_to_numpy=True).tolist()
+
+    def name(self):
+        return "multilingual-minilm"
+
+
 def _embedding_function():
     import os
     model = os.getenv("KNOWLEDGE_EMBED_MODEL", "chroma-default")
-    if model != "chroma-default":
+    if model == "multilingual":
+        try:
+            return MultilingualEmbeddingFunction()
+        except Exception:
+            pass
+    if model not in ("chroma-default", "multilingual"):
         try:
             fn = OllamaEmbeddingFunction(model=model)
             fn([model])  # probe
