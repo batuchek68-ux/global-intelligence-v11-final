@@ -6,6 +6,8 @@ independent cron scripts toward event-driven orchestration.
 """
 from __future__ import annotations
 
+import json
+import os
 import secrets
 import time
 import threading
@@ -28,6 +30,20 @@ def subscribe(event_type: str, handler: Callable[[dict[str, Any]], None]) -> Non
         _SUBSCRIBERS.setdefault(event_type, []).append(handler)
 
 
+def _maybe_alert(event_type: str, payload: dict[str, Any]) -> None:
+    configured = {
+        t.strip() for t in os.getenv("CLOUD_OS_ALERT_EVENTS", "risk.detected").split(",") if t.strip()
+    }
+    if event_type not in configured:
+        return
+    try:
+        from backend.services.alert_service import send
+        send(f"Event: {event_type}", json.dumps(payload, ensure_ascii=False)[:600],
+             severity="warning", source="event_bus")
+    except Exception:
+        pass
+
+
 def publish(event_type: str, payload: dict[str, Any]) -> dict[str, Any]:
     event = {
         "id": secrets.token_hex(12),
@@ -37,6 +53,7 @@ def publish(event_type: str, payload: dict[str, Any]) -> dict[str, Any]:
         "status": "published",
     }
     save_state(f"{event_type}::{event['id']}", event, namespace=_NAMESPACE)
+    _maybe_alert(event_type, payload or {})
     with _LOCK:
         handlers = list(_SUBSCRIBERS.get(event_type, []))
     for handler in handlers:

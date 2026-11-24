@@ -487,6 +487,8 @@ async def approval_decision(request: Request) -> dict[str, Any]:
         role="Owner" if verified else "Codex",
         risk="HIGH",
     )
+    from backend.services.approval_receipt_service import issue_receipt
+    receipt = issue_receipt(project, clean_decision, approver, verified=verified, note=str(body.get("note") or ""))
     return {
         "ok": True,
         "status": "recorded_for_workflow",
@@ -495,6 +497,7 @@ async def approval_decision(request: Request) -> dict[str, Any]:
         "note": body.get("note", ""),
         "verified": verified,
         "approver": approver,
+        "receipt": receipt,
     }
 
 
@@ -650,6 +653,36 @@ async def record_outcome(request: Request) -> dict[str, Any]:
 async def learning_report() -> dict[str, Any]:
     from backend.services.learning_loop_service import report as _report
     return _report()
+
+
+@app.get("/v1/approvals/receipts")
+async def approval_receipts(limit: int = 50) -> dict[str, Any]:
+    from backend.services.approval_receipt_service import list_receipts
+    return {"ok": True, "receipts": list_receipts(limit)}
+
+
+@app.get("/v1/approvals/receipt/{receipt_id}")
+async def verify_approval_receipt(receipt_id: str) -> dict[str, Any]:
+    from backend.services.approval_receipt_service import verify_receipt
+    return verify_receipt(receipt_id)
+
+
+@app.post("/v1/alerts/send")
+async def send_alert(request: Request) -> dict[str, Any]:
+    _require_core_allowed()
+    body = await _json_body(request)
+    title = str(body.get("title") or "").strip()
+    if not title:
+        raise HTTPException(status_code=400, detail="title is required")
+    from backend.services.alert_service import send
+    return send(title, str(body.get("message") or ""), severity=str(body.get("severity") or "info"),
+                source=str(body.get("source") or "api"))
+
+
+@app.get("/v1/alerts")
+async def list_alerts(limit: int = 50) -> dict[str, Any]:
+    from backend.services.alert_service import alerts
+    return {"ok": True, "alerts": alerts(limit)}
 
 
 if __name__ == "__main__":
