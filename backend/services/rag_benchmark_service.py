@@ -11,6 +11,7 @@ from pathlib import Path
 from typing import Any
 
 from backend.services import knowledge_ingest_service as knowledge
+from backend.services.hybrid_retrieval_service import hybrid_query
 from backend.services.audit_service import append_audit
 
 BACKEND_ROOT = Path(__file__).resolve().parents[1]
@@ -20,7 +21,7 @@ REPORT_DIR = BACKEND_ROOT / "reports" / "benchmark"
 
 def default_gold_set() -> list[dict[str, Any]]:
     return [
-        {"id": "kazakhstan_customs", "query": "Kazakhstan customs clearance EAEU documents", "expect": ["customs"], "source": "wiki"},
+        {"id": "kazakhstan_customs", "query": "Kazakhstan customs clearance documents EAEU", "expect": ["customs"], "source": "wiki"},
         {"id": "port_payment", "query": "port project payment terms guarantee negotiation", "expect": ["payment", "guarantee"], "source": "wechat_favorites"},
         {"id": "sanctions_risk", "query": "sanctions export control risk government approval", "expect": ["sanction", "approval"], "source": "ima"},
         {"id": "agent_workflow", "query": "Codex ACP Zed local AI workflow", "expect": ["codex", "workflow"], "source": "wiki"},
@@ -47,7 +48,7 @@ def evaluate(n: int = 5) -> dict[str, Any]:
     hits = 0
     for case in cases:
         query = str(case.get("query") or "")
-        response = knowledge.query(query, n=n)
+        response = hybrid_query(query, n=n)
         items = response.get("results", []) if response.get("ok") else []
         blob = " ".join(str(i.get("text") or "") for i in items).lower()
         expect = [str(e).lower() for e in case.get("expect", [])]

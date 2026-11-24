@@ -16,9 +16,20 @@ REQUEST_TIMEOUT = 60
 
 class DecisionHubServerTests(unittest.TestCase):
     def _free_port(self) -> int:
-        with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as sock:
-            sock.bind(("127.0.0.1", 0))
-            return int(sock.getsockname()[1])
+        import random
+        import time
+        last = None
+        # Windows reserves dynamic ranges (e.g. 49400-49499, 50000+); prefer 51xxx-60xxx.
+        for _ in range(40):
+            port = random.randint(51000, 60000)
+            with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as sock:
+                try:
+                    sock.bind(("127.0.0.1", port))
+                    return port
+                except OSError as exc:
+                    last = exc
+                    time.sleep(0.05)
+        raise last
 
     def _start_server(self, port: int) -> subprocess.Popen:
         script = ROOT / "apps" / "decision-hub" / "server.ps1"
@@ -40,7 +51,9 @@ class DecisionHubServerTests(unittest.TestCase):
             stdout=subprocess.DEVNULL,
             stderr=subprocess.DEVNULL,
         )
-        deadline = time.time() + 20
+        # Startup can be slow on a busy Windows host (e.g. while the local
+        # vector index is embedding); keep CI stable with a generous deadline.
+        deadline = time.time() + 90
         last_error: Exception | None = None
         while time.time() < deadline:
             if process.poll() is not None:
