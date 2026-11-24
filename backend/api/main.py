@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import logging
+import os
 import sys
 import time
 from pathlib import Path
@@ -447,12 +448,38 @@ async def approval_decision(request: Request) -> dict[str, Any]:
     decision = str(body.get("decision") or "").strip().lower()
     if decision not in {"approve", "reject", "revise", "/approve", "/reject", "/revise"}:
         raise HTTPException(status_code=400, detail="decision must be approve, reject, or revise")
+    clean_decision = decision.removeprefix("/")
+    project = str(body.get("project") or "Unknown")
+    verified = False
+    approver = "unverified"
+    if os.getenv("CLOUD_OS_APPROVAL_SECRET"):
+        from backend.security.approval_gate import ApprovalGate
+        gate = ApprovalGate()
+        payload = gate.verify(
+            str(body.get("approval_token") or ""),
+            action="approval_decision",
+            project=project,
+        )
+        if not payload or payload.get("decision") != clean_decision:
+            raise HTTPException(status_code=403, detail="valid signed approval_token required")
+        verified = True
+        approver = str(payload.get("approver") or "unknown")
+    from backend.services.audit_service import append_audit
+    append_audit(
+        "OWNER_DECISION",
+        "DONE",
+        f"decision={clean_decision} project={project} verifier={approver}",
+        role="Owner" if verified else "Codex",
+        risk="HIGH",
+    )
     return {
         "ok": True,
         "status": "recorded_for_workflow",
-        "decision": decision.removeprefix("/"),
-        "project": body.get("project", "Unknown"),
+        "decision": clean_decision,
+        "project": project,
         "note": body.get("note", ""),
+        "verified": verified,
+        "approver": approver,
     }
 
 
