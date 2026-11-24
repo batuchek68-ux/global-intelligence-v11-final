@@ -22,7 +22,13 @@ DEFAULT_SOURCES = {
     "workbuddy": VAULT / "workbuddy",
     "ima": VAULT / "ima-知识库",
     "github": VAULT / "github",
+    "skill_store_index": None,  # set dynamically below
 }
+
+# Skill Store index is a JSON catalog (not a .md tree); include it when present.
+_SKILL_INDEX = Path("F:/Documents/Obsidian Vault/obsidian-codex/05-系统自动化/skill_store_index.json")
+if _SKILL_INDEX.exists():
+    DEFAULT_SOURCES["skill_store_index"] = _SKILL_INDEX.parent
 
 COLLECTION = "intelligence_knowledge"
 CHUNK_SIZE = 2500
@@ -91,6 +97,31 @@ def _chunks(text: str) -> list[str]:
     return out
 
 
+def _index_catalog_documents() -> list[Path]:
+    """Synthesize markdown documents from JSON catalogs that are not .md files."""
+    docs = []
+    catalog = Path("F:/Documents/Obsidian Vault/obsidian-codex/05-系统自动化/skill_store_index.json")
+    if catalog.exists():
+        out = catalog.parent / "_skill_catalog.md"
+        try:
+            data = json.loads(catalog.read_text(encoding="utf-8"))
+            lines = ["# Internal Skill Store Catalog", ""]
+            for e in data.get("entries", []):
+                lines.append(
+                    f"## {e.get('name')}\n"
+                    f"- source: {e.get('source')}\n"
+                    f"- version: {e.get('version')}\n"
+                    f"- license: {e.get('license')}\n"
+                    f"- tags: {', '.join(e.get('tags') or [])}\n"
+                    f"- description: {e.get('description')}\n"
+                )
+            out.write_text("\n".join(lines), encoding="utf-8")
+            docs.append(out)
+        except Exception:
+            pass
+    return docs
+
+
 def build_index(reset: bool = True, limit_per_source: int | None = None) -> dict[str, Any]:
     limit_per_source = limit_per_source if limit_per_source is not None else MAX_DOCS_PER_SOURCE
     collection = _collection(reset=reset)
@@ -101,9 +132,13 @@ def build_index(reset: bool = True, limit_per_source: int | None = None) -> dict
     metadatas: list[dict[str, Any]] = []
     per_source: dict[str, int] = {}
     for name, root in _sources().items():
-        if not root.exists():
+        extra = _index_catalog_documents() if name == "skill_store_index" else []
+        if not root.exists() and not extra:
             continue
-        files = sorted(root.rglob("*.md"))
+        files = sorted(root.rglob("*.md")) if root.exists() else []
+        extra_paths = {p.resolve() for p in extra}
+        files = [p for p in files if p.resolve() not in extra_paths]
+        files = extra + files
         if limit_per_source:
             files = files[:limit_per_source]
         count = 0
