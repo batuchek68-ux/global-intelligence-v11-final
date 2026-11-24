@@ -604,6 +604,54 @@ async def get_insight(execution_id: str, org_id: str = "owner") -> dict[str, Any
     }
 
 
+@app.post("/v1/events/publish")
+async def publish_event(request: Request) -> dict[str, Any]:
+    _require_core_allowed()
+    body = await _json_body(request)
+    event_type = str(body.get("event_type") or body.get("type") or "").strip()
+    if not event_type:
+        raise HTTPException(status_code=400, detail="event_type is required")
+    from backend.services.event_bus import publish
+    return publish(event_type, body.get("payload") if isinstance(body.get("payload"), dict) else {})
+
+
+@app.get("/v1/events")
+async def list_events(event_type: str | None = None, limit: int = 50) -> dict[str, Any]:
+    from backend.services.event_bus import list_events as _list
+    return {"ok": True, "events": _list(event_type, limit)}
+
+
+@app.post("/v1/agents/debate")
+async def agent_debate(request: Request) -> dict[str, Any]:
+    _require_core_allowed()
+    body = await _json_body(request)
+    claim = str(body.get("claim") or "").strip()
+    if not claim:
+        raise HTTPException(status_code=400, detail="claim is required")
+    from backend.services.agent_debate_service import debate
+    evidence = body.get("evidence") if isinstance(body.get("evidence"), list) else []
+    return debate(claim, [str(e) for e in evidence], str(body.get("risk") or "medium"))
+
+
+@app.post("/v1/learning/outcome")
+async def record_outcome(request: Request) -> dict[str, Any]:
+    _require_core_allowed()
+    body = await _json_body(request)
+    project = str(body.get("project") or "").strip()
+    if not project:
+        raise HTTPException(status_code=400, detail="project is required")
+    from backend.services.learning_loop_service import record_outcome as _record
+    return _record(project, str(body.get("decision") or ""), str(body.get("outcome") or ""),
+                   correct=body.get("correct"), score=float(body.get("score") or 0),
+                   note=str(body.get("note") or ""))
+
+
+@app.get("/v1/learning/report")
+async def learning_report() -> dict[str, Any]:
+    from backend.services.learning_loop_service import report as _report
+    return _report()
+
+
 if __name__ == "__main__":
     import uvicorn
 
