@@ -1,7 +1,7 @@
 # v11 System Integrity Report
 
 - Status: PASS
-- Generated: 2026-11-25T09:08:24.351646+00:00
+- Generated: 2026-11-25T21:58:52.004654+00:00
 - Auto fix: True
 
 ## Repairs
