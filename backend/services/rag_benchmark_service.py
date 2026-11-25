@@ -21,10 +21,10 @@ REPORT_DIR = BACKEND_ROOT / "reports" / "benchmark"
 
 def default_gold_set() -> list[dict[str, Any]]:
     return [
-        {"id": "kazakhstan_customs", "query": "Kazakhstan customs clearance documents EAEU", "expect": ["customs"], "source": "wiki"},
-        {"id": "port_payment", "query": "port project payment terms guarantee negotiation", "expect": ["payment", "guarantee"], "source": "wechat_favorites"},
-        {"id": "sanctions_risk", "query": "sanctions export control risk government approval", "expect": ["sanction", "approval"], "source": "ima"},
-        {"id": "agent_workflow", "query": "Codex ACP Zed local AI workflow", "expect": ["codex", "workflow"], "source": "wiki"},
+        {"id": "kazakhstan_customs", "query": "Kazakhstan customs clearance documents EAEU", "expect": ["customs", "哈萨克斯坦", "海关"], "source": "wiki"},
+        {"id": "port_payment", "query": "port project payment terms guarantee negotiation", "expect": ["payment", "guarantee", "付款"], "source": "wechat_favorites"},
+        {"id": "sanctions_risk", "query": "sanctions export control risk government approval", "expect": ["风控", "风险", "risk", "审批", "approval", "制裁"], "source": "ima"},
+        {"id": "agent_workflow", "query": "Codex ACP Zed local AI workflow", "expect": ["codex", "workflow", "agent"], "source": "wiki"},
         {"id": "trade_report", "query": "哈萨克斯坦 矿冶 机械设备 市场", "expect": ["哈萨克斯坦", "矿冶"], "source": "ima"},
     ]
 

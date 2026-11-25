@@ -96,6 +96,12 @@ class MultilingualEmbeddingFunction:
     def name(self):
         return "multilingual-minilm"
 
+    def embed_query(self, input):
+        return self(input)
+
+    def embed_documents(self, input):
+        return self(input)
+
 
 def _embedding_function():
     import os
