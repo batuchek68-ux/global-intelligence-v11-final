@@ -5,9 +5,13 @@ Sources are read-only. The vector index is persisted under backend/memory/chroma
 """
 from __future__ import annotations
 
+import gc
 import json
+import multiprocessing as mp
 import os
 import re
+import threading
+import time
 from pathlib import Path
 from typing import Any
 
@@ -80,18 +84,175 @@ class OllamaEmbeddingFunction:
         return f"ollama:{self.model}"
 
 
+# 共享单例 + 空闲卸载：避免 Chroma 集合持有模型导致 600MB+ 常驻。
+# EMBED_IDLE_UNLOAD_SECONDS=0 表示保持常驻（不自动卸载）。
+_MODEL_LOCK = threading.Lock()
+_MODEL_REF = None
+_MODEL_LAST_USED = 0.0
+_MODEL_TIMER = None
+
+
+def _idle_unload_seconds() -> int:
+    try:
+        return max(0, int(os.getenv("EMBED_IDLE_UNLOAD_SECONDS", "300")))
+    except (TypeError, ValueError):
+        return 300
+
+
+def _unload_model_if_idle() -> None:
+    global _MODEL_REF, _MODEL_TIMER
+    with _MODEL_LOCK:
+        idle = _idle_unload_seconds()
+        if idle <= 0 or _MODEL_REF is None:
+            return
+        remaining = idle - (time.time() - _MODEL_LAST_USED)
+        if remaining > 0:
+            _MODEL_TIMER = threading.Timer(remaining, _unload_model_if_idle)
+            _MODEL_TIMER.daemon = True
+            _MODEL_TIMER.start()
+            return
+        _MODEL_REF = None
+        _MODEL_TIMER = None
+    gc.collect()
+    try:
+        import torch
+        if torch.cuda.is_available():
+            torch.cuda.empty_cache()
+    except Exception:
+        pass
+
+
+def _shared_model():
+    global _MODEL_REF, _MODEL_LAST_USED, _MODEL_TIMER
+    with _MODEL_LOCK:
+        _MODEL_LAST_USED = time.time()
+        if _MODEL_REF is None:
+            from sentence_transformers import SentenceTransformer
+            name = os.getenv(
+                "KNOWLEDGE_MULTILINGUAL_MODEL",
+                "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+            )
+            _MODEL_REF = SentenceTransformer(name)
+        idle = _idle_unload_seconds()
+        if idle > 0:
+            if _MODEL_TIMER is not None:
+                _MODEL_TIMER.cancel()
+            _MODEL_TIMER = threading.Timer(idle, _unload_model_if_idle)
+            _MODEL_TIMER.daemon = True
+            _MODEL_TIMER.start()
+        return _MODEL_REF
+
+
+# 子进程隔离：模型只在 worker 里加载，空闲后终止 worker，主进程 RSS 不会被
+# PyTorch 的 CPU allocator 永久占用。EMBED_WORKER=0 可退回主进程共享单例模式。
+_WORKER = None
+_WORKER_LOCK = threading.Lock()
+_WORKER_TIMER = None
+_WORKER_LAST_USED = 0.0
+
+
+def _worker_main(conn) -> None:
+    try:
+        os.environ.setdefault("HF_HUB_OFFLINE", "1")
+        from sentence_transformers import SentenceTransformer
+        name = os.getenv(
+            "KNOWLEDGE_MULTILINGUAL_MODEL",
+            "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+        )
+        model = SentenceTransformer(name)
+        conn.send(("READY", None))
+        while True:
+            cmd = conn.recv()
+            if cmd == "__STOP__":
+                break
+            vectors = model.encode(cmd, batch_size=64, convert_to_numpy=True).tolist()
+            conn.send(("OK", vectors))
+    except Exception as exc:
+        try:
+            conn.send(("ERR", str(exc)))
+        except Exception:
+            pass
+    finally:
+        try:
+            conn.close()
+        except Exception:
+            pass
+
+
+def _get_worker():
+    global _WORKER
+    with _WORKER_LOCK:
+        if _WORKER is None or not _WORKER[0].is_alive():
+            parent, child = mp.Pipe()
+            proc = mp.Process(target=_worker_main, args=(child,), daemon=True)
+            proc.start()
+            tag, payload = parent.recv()
+            if tag != "READY":
+                raise RuntimeError("embedding worker failed: " + str(payload))
+            _WORKER = (proc, parent)
+        return _WORKER
+
+
+def _worker_touch() -> None:
+    global _WORKER_LAST_USED, _WORKER_TIMER
+    with _WORKER_LOCK:
+        _WORKER_LAST_USED = time.time()
+        idle = _idle_unload_seconds()
+        if idle <= 0:
+            return
+        if _WORKER_TIMER is not None:
+            _WORKER_TIMER.cancel()
+        _WORKER_TIMER = threading.Timer(idle, _worker_stop_if_idle)
+        _WORKER_TIMER.daemon = True
+        _WORKER_TIMER.start()
+
+
+def _worker_stop_if_idle() -> None:
+    global _WORKER, _WORKER_TIMER
+    with _WORKER_LOCK:
+        idle = _idle_unload_seconds()
+        remaining = idle - (time.time() - _WORKER_LAST_USED)
+        if remaining > 0:
+            _WORKER_TIMER = threading.Timer(remaining, _worker_stop_if_idle)
+            _WORKER_TIMER.daemon = True
+            _WORKER_TIMER.start()
+            return
+        if _WORKER is None:
+            return
+        proc, conn = _WORKER
+        _WORKER = None
+    try:
+        conn.send("__STOP__")
+    except Exception:
+        pass
+    try:
+        proc.join(timeout=5)
+    except Exception:
+        pass
+    if proc.is_alive():
+        proc.terminate()
+
+
 class MultilingualEmbeddingFunction:
-    """Local multilingual ONNX via sentence-transformers (fast, offline after download)."""
+    """Multilingual embeddings via an idle-recyclable child process."""
 
     MODEL = "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
 
     def __init__(self, model: str | None = None):
-        from sentence_transformers import SentenceTransformer
-        self.model = SentenceTransformer(model or self.MODEL)
+        self.model_name = model or self.MODEL
 
     def __call__(self, input):
         texts = [input] if isinstance(input, str) else list(input)
-        return self.model.encode(texts, batch_size=64, convert_to_numpy=True).tolist()
+        if os.getenv("EMBED_WORKER", "1") == "1":
+            _, conn = _get_worker()
+            conn.send(texts)
+            tag, vectors = conn.recv()
+            if tag != "OK":
+                raise RuntimeError("embedding worker error: " + str(vectors))
+            _worker_touch()
+            return vectors
+        model = _shared_model()
+        return model.encode(texts, batch_size=64, convert_to_numpy=True).tolist()
 
     def name(self):
         return "multilingual-minilm"
