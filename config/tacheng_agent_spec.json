@@ -1,0 +1,118 @@
+{
+  "system": "中亚—塔城双向业务系统",
+  "version": "0.1.0",
+  "generated": "2026-11-26",
+  "stage": "初步搭建与知识积累",
+  "boundary": {
+    "no_transactions": true,
+    "no_legal_or_tax_advice": true,
+    "no_human_approval_replacement": true,
+    "allowed_output_types": ["information", "summary", "comparison", "suggestion"],
+    "forbidden_output_types": ["legal_advice", "tax_advice", "investment_advice"],
+    "enforcement": "opinion_type field validation + HMAC approval gate for any external action"
+  },
+  "unified_fields": [
+    {"name": "id", "type": "string", "required": true},
+    {"name": "agent", "type": "enum", "values": ["policy", "macro_industry", "tacheng_local", "business"], "required": true},
+    {"name": "topic", "type": "string", "required": true},
+    {"name": "title", "type": "string", "required": true},
+    {"name": "content", "type": "text", "required": true},
+    {"name": "source_urls", "type": "array", "required": true, "min_items": 1},
+    {"name": "source_name", "type": "string", "required": true},
+    {"name": "source_lang", "type": "enum", "values": ["ru", "kk", "zh", "en"], "required": true},
+    {"name": "published_at", "type": "date", "required": false, "note": "null + pending_verify if unknown"},
+    {"name": "collected_at", "type": "datetime", "required": true, "auto": true},
+    {"name": "freshness", "type": "enum", "values": ["current", "may_be_stale", "unknown"], "required": true},
+    {"name": "credibility", "type": "enum", "values": ["official", "trusted_media", "weak_signal"], "required": true},
+    {"name": "confidence", "type": "float", "min": 0, "max": 1, "required": true},
+    {"name": "risk_flags", "type": "array", "values": ["sanctions", "grey_customs", "fx", "policy_shift", "contract_enforcement"], "required": false},
+    {"name": "triple_scenario", "type": "object", "required_when": "investment or compliance judgment", "keys": ["optimistic", "neutral", "pessimistic"]},
+    {"name": "opinion_type", "type": "enum", "values": ["information", "summary", "comparison", "suggestion"], "required": true},
+    {"name": "pending_verify", "type": "array", "required": false}
+  ],
+  "freshness_rule": {
+    "may_be_stale_if_published_before": "2025-06",
+    "note": "超 6 个月的政策默认标 may_be_stale"
+  },
+  "credibility_rule": {
+    "official": ["gov.kz", "kgd.gov.kz", "stat.gov.kz", "nationalbank.kz", "aifc.kz", "中国政府/海关官网"],
+    "trusted_media": ["grainunion.kz", "apk-news.kz", "Ranking.kz", "EnergyProm", "Zakon.kz", "经济日报", "新华社"],
+    "weak_signal": ["论坛", "社交媒体", "单一二手源"]
+  },
+  "agents": [
+    {
+      "id": "policy",
+      "name": "政策法规 Agent",
+      "duty": "法律、税收、政策更新",
+      "sources": ["gov.kz", "KGD", "Adilet", "AIFC", "Atameken", "中国商务部/海关总署", "grainunion.kz", "apk-news.kz"],
+      "extra_fields": ["law_number", "effective_date", "policy_topic"],
+      "quality_rules": [
+        "每条法条/税率须官方源或≥2独立可信源交叉",
+        "freshness=may_be_stale 不得进入现行有效结论",
+        "credibility=weak_signal 不得单独支撑判断",
+        "禁止输出法律适用性结论"
+      ],
+      "log_metrics": ["抓取成功率", "429/403次数", "法条号缺失率", "过期占比", "交叉验证覆盖率", "待核实项数"],
+      "interval_days": 3,
+      "event_triggered": true,
+      "cost": "免费"
+    },
+    {
+      "id": "macro_industry",
+      "name": "宏观经济与行业 Agent",
+      "duty": "经济指标、行业趋势、市场信息",
+      "sources": ["stat.gov.kz", "国家银行", "AIFC", "grainunion.kz", "apk-news.kz", "Ranking.kz", "EnergyProm", "World of NAN"],
+      "extra_fields": ["indicator_name", "value", "unit", "period", "industry"],
+      "quality_rules": [
+        "数字必须带单位与统计期",
+        "口径冲突并列标注不得择一",
+        "预估/预测值标 estimate",
+        "行业判断给三情形"
+      ],
+      "log_metrics": ["数字缺单位率", "口径冲突数", "行业源覆盖数", "预测值占比", "趋势反转告警"],
+      "interval_days": 3,
+      "event_triggered": true,
+      "cost": "免费"
+    },
+    {
+      "id": "tacheng_local",
+      "name": "塔城本地 Agent",
+      "duty": "本地统计数据、规划、政府项目",
+      "sources": ["塔城地区行署", "塔城市政府", "新疆统计局", "兵团统计", "经济日报/中国日报新疆", "园区公开资料"],
+      "extra_fields": ["local_industry", "project_name", "government_body", "planning_horizon"],
+      "quality_rules": [
+        "政府项目须有发布机构与日期",
+        "投资额/产能标口径（计划/在建/投产）",
+        "须与哈国侧对照才能形成机会"
+      ],
+      "log_metrics": ["本地源更新频率", "项目状态变化数", "对照命中数", "数据缺口"],
+      "interval_days": 3,
+      "event_triggered": false,
+      "cost": "免费"
+    },
+    {
+      "id": "business",
+      "name": "商业信息 Agent",
+      "duty": "企业、项目、合作意向、机会识别",
+      "sources": ["公开企业名录", "招投标公告", "AIFC项目库", "使领馆/商会", "公开新闻合作意向"],
+      "extra_fields": ["company_name", "project_stage", "intent_type", "match_basis", "next_action"],
+      "quality_rules": [
+        "合作意向须有可引用原文禁止推断",
+        "match_basis 须引用 Agent2/3 具体数据",
+        "机会须附可信度+风险",
+        "禁止生成承诺"
+      ],
+      "log_metrics": ["意向条目数", "原文引证率", "匹配依据缺失率", "风险标注覆盖率", "机会转化率"],
+      "interval_days": 3,
+      "event_triggered": true,
+      "cost": "免费"
+    }
+  ],
+  "storage": {
+    "structured": "SQLite/JSON (v12 transactional state store)",
+    "unstructured": "F:/Documents/Obsidian Vault (原文归档)",
+    "vector_index": "backend/memory/kb-core",
+    "reuse": ["问答 /v1/core/query", "跨Agent对比", "报告生成", "未来AI助理"]
+  },
+  "pending_confirmation": ["C1 可信度权重", "C2 法律解读红线", "C3 语言帽/汇总帽是否保留", "C5 机会判定阈值"]
+}
