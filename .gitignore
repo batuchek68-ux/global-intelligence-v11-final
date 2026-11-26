@@ -14,3 +14,29 @@ apps/desktop-cloud-os/node_modules/
 apps/desktop-cloud-os/build-resources/
 apps/desktop-cloud-os/work/
 work/
+
+# Runtime-generated state and artifacts (P3-3).
+# NOTE: historical tracked files are intentionally kept; these rules only stop NEW files.
+.tmp-benchmark/
+backend/memory/state.db
+backend/memory/audit.log
+backend/memory/chroma/
+backend/memory/chroma-ml/
+backend/memory/self_improvement/state.json
+backend/memory/action_boards/*.json
+backend/memory/evidence/*.json
+backend/memory/team_execution/*.json
+backend/memory/team_responses/*.json
+backend/memory/war_room/*.json
+backend/memory/war_room_execution/*.json
+backend/reports/**/latest.*
+backend/reports/action_boards/*.md
+backend/reports/benchmark/rag_quality.json
+backend/reports/evidence/*.md
+backend/reports/intelligence_briefs/*.md
+backend/reports/team_execution/*.md
+backend/reports/team_responses/*.md
+backend/reports/video_center/*.json
+backend/reports/war_room/*.md
+backend/reports/war_room_execution/*.md
+!**/.gitkeep
