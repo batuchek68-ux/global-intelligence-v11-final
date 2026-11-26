@@ -72,7 +72,14 @@ def check_secret_leaks() -> dict:
             continue
         if any(part in {".git", "node_modules", "dist", "work", "__pycache__"} for part in path.parts):
             continue
-        if path.suffix.lower() in {".png", ".ico", ".zip", ".exe", ".msi"}:
+        # 二进制/数据文件不是源码，明文密钥不会以源码形式存在其中；
+        # 把它们当文本读会把向量库里的示例字符串（如 sk-..._value）误报为密钥。
+        if path.suffix.lower() in {
+            ".png", ".jpg", ".jpeg", ".gif", ".ico", ".webp", ".pdf",
+            ".zip", ".gz", ".tar", ".7z", ".exe", ".msi", ".dll", ".so",
+            ".pyc", ".pyo", ".db", ".db-wal", ".db-shm", ".sqlite",
+            ".sqlite3", ".bin", ".parquet", ".onnx", ".wasm", ".woff", ".woff2",
+        }:
             continue
         scanned += 1
         text = path.read_text(encoding="utf-8", errors="ignore")
