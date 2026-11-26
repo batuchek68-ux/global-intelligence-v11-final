@@ -24,6 +24,7 @@ from backend.services.cloud_service import cloud_check, cloud_run_requested, clo
 from backend.services.evidence_verification_service import verify_claim
 from backend.services.license_service import core_allowed, license_status
 from backend.services import knowledge_ingest_service
+from backend.services import core_retrieval_service
 from backend.services.intelligence_center_service import (
     build_intelligence_search_system,
     build_video_production_center,
@@ -257,6 +258,21 @@ async def knowledge_query(request: Request) -> dict[str, Any]:
     except (TypeError, ValueError):
         n = 5
     return await offload(knowledge_ingest_service.query, query_text, n=n)
+
+
+@app.post("/v1/core/query")
+async def core_query(request: Request) -> dict[str, Any]:
+    """Two-stage retrieval over curated kb-core with reranking (+ legacy fallback)."""
+    _require_core_allowed()
+    body = await _json_body(request)
+    query_text = str(body.get("query") or "").strip()
+    if not query_text:
+        raise HTTPException(status_code=400, detail="query is required")
+    try:
+        n = int(body.get("n", 5))
+    except (TypeError, ValueError):
+        n = 5
+    return await offload(core_retrieval_service.retrieve, query_text, n=n)
 
 
 @app.post("/v1/benchmark/build")
