@@ -60,7 +60,7 @@
     {
       "id": "macro_industry",
       "name": "宏观经济与行业 Agent",
-      "duty": "经济指标、行业趋势、市场信息",
+      "duty": "经济指标、行业趋势、市场信息（含矿冶设备：火电厂/炼钢厂/炼铜/熔炉/码头建设/矿山装卸）",
       "sources": ["stat.gov.kz", "国家银行", "AIFC", "grainunion.kz", "apk-news.kz", "Ranking.kz", "EnergyProm", "World of NAN"],
       "extra_fields": ["indicator_name", "value", "unit", "period", "industry"],
       "quality_rules": [
