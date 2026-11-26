@@ -78,6 +78,13 @@ app = FastAPI(
     description="International Engineering Trade Cloud OS — full-stack AI-powered platform for cross-border B2B trade.",
 )
 
+@app.on_event("startup")
+async def _warm_core_retrieval():
+    """Warm the multilingual embedding model in a dedicated thread at startup."""
+    import threading
+    threading.Thread(target=core_retrieval_service.warmup, daemon=True, name="core-warmup").start()
+
+
 app.include_router(matching_router)
 app.include_router(supply_chain_router)
 app.include_router(financial_router)

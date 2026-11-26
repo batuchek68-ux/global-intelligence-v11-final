@@ -39,8 +39,27 @@ def _embedding_function():
             return "multilingual-minilm"
 
     from sentence_transformers import SentenceTransformer
-    _ef = EF(SentenceTransformer(MODEL))
+    # 优先用本地快照路径，避开 huggingface_hub 的联网校验（offline 下仍会重试 5 次）
+    local = Path(os.getenv(
+        "CORE_EMBED_LOCAL_PATH",
+        "C:/Users/Surface/.cache/huggingface/hub/models--sentence-transformers--paraphrase-multilingual-MiniLM-L12-v2/snapshots/e8f8c211226b894fcb81acc59f3b34ba3efd5f42",
+    ))
+    model_id = str(local) if (local / "config.json").exists() else MODEL
+    _ef = EF(SentenceTransformer(model_id))
     return _ef
+
+
+def warmup() -> bool:
+    """Preload the embedding model on the main thread at API startup.
+
+    sentence-transformers' first load inside asyncio.to_thread worker can stall;
+    doing it here (startup, main thread) makes later offloaded queries fast.
+    """
+    try:
+        _embedding_function()
+        return True
+    except Exception:
+        return False
 
 
 def _get_reranker():
