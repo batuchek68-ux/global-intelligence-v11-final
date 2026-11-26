@@ -1,0 +1,43 @@
+name: rag-benchmark
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  benchmark:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install dependencies
+        run: python -m pip install -r requirements.txt
+      - name: "Run RAG gold-set benchmark (thresholds: accuracy>=0.75, citation>=0.95)"
+        env:
+          RAG_ACC_MIN: "0.75"
+          RAG_CITATION_MIN: "0.95"
+          HF_HUB_OFFLINE: "0"
+        run: python scripts/check_rag_benchmark.py
+      - name: Publish summary
+        if: always()
+        run: |
+          echo "## RAG Benchmark" >> "$GITHUB_STEP_SUMMARY"
+          if [ -f backend/reports/benchmark/rag_quality.json ]; then
+            python -c "import json;d=json.load(open('backend/reports/benchmark/rag_quality.json'));print('accuracy:',d['accuracy'],'citation:',d['citation_accuracy'],'hits:',str(d['hits'])+'/'+str(d['total']))" >> "$GITHUB_STEP_SUMMARY"
+          else
+            echo "no report generated" >> "$GITHUB_STEP_SUMMARY"
+          fi
+      - name: Upload report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: rag-benchmark-${{ github.run_id }}
+          path: backend/reports/benchmark/rag_quality.json
+          if-no-files-found: ignore
