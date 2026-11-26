@@ -3,7 +3,7 @@
 DRAFT - internal operating brief, not approved for external sending
 
 - Status: human_review_required
-- Created: 2026-11-26T08:53:38.497501+00:00
+- Created: 2026-11-26T21:55:16.211267+00:00
 - Mission: vertical industry intelligence brain plus verified search plus project execution system
 
 ## Command Center
