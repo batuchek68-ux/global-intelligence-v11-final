@@ -16,10 +16,10 @@ def test_evaluate_uses_local_index(monkeypatch):
     monkeypatch.setattr(bench.knowledge, "stats", lambda: {"ok": True, "count": 10})
     monkeypatch.setattr(
         bench.knowledge, "query",
-        lambda q, n: {"ok": True, "results": [{"text": "kazakhstan customs documents", "metadata": {"source": "wiki"}}]},
+        lambda q, n: {"ok": True, "results": [{"text": "kazakhstan customs documents", "metadata": {"source": "wiki", "path": "wiki/test.md"}}]},
     )
     report = bench.evaluate()
     assert report["ok"] is True
-    assert report["total"] == len(bench.default_gold_set())
+    assert report["total"] == len(bench.load_gold_set())
     assert 0 <= report["accuracy"] <= 1
     assert report["index"]["count"] == 10
