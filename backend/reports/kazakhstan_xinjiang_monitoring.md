@@ -2,12 +2,14 @@
 
 DRAFT - Not approved for sending
 
-Generated: 2026-11-27T09:04:06+00:00
+Generated: 2026-11-27T22:29:43+00:00
 
 ## Source Status
 
-- Live fetch: false
-- Reason: No authorized live news/customs/customs-data API is configured
+- Live fetch: true
+- Reason: Authorized sources configured: 4 RSS feed(s); GDELT API on
+- Strategy: hybrid
+- Configured sources: 5
 - Boundary: public, official or subscribed sources only; no unauthorized access or paywall bypass.
 
 ## Monitoring Sectors

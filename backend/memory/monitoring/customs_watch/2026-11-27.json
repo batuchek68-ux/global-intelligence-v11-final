@@ -1,6 +1,6 @@
 {
   "date": "2026-11-27",
-  "generated_at": "2026-11-27T09:04:06+00:00",
+  "generated_at": "2026-11-27T22:29:43+00:00",
   "ports": [
     "Alashankou port",
     "Horgos port",
@@ -28,9 +28,8 @@
     "risk_signal"
   ],
   "records": [],
+  "rejected_records": [],
   "source_status": {
-    "live_fetch": false,
-    "reason": "No authorized live news/customs/customs-data API is configured",
     "allowed_sources": [
       "official public pages",
       "subscribed data APIs",
@@ -40,7 +39,17 @@
       "unauthorized access",
       "paywall bypass",
       "website vulnerability exploitation"
-    ]
+    ],
+    "live_fetch": true,
+    "reason": "Authorized sources configured: 4 RSS feed(s); GDELT API on",
+    "configured_sources": [
+      "astanatimes",
+      "anadolu_en",
+      "bbc",
+      "aljazeera"
+    ],
+    "source_count": 5,
+    "strategy": "hybrid"
   },
   "work_buddy_collection_matrix": [
     {
