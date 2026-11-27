@@ -1,6 +1,6 @@
 {
   "ok": true,
-  "created_at": "2026-11-26T21:55:16.211267+00:00",
+  "created_at": "2026-11-27T09:04:06.313438+00:00",
   "status": "human_review_required",
   "mission": "vertical industry intelligence brain plus verified search plus project execution system",
   "command_center": {
@@ -17,8 +17,8 @@
     "answer_score": 80,
     "answer_score_verdict": "usable",
     "intelligence_keywords": 211,
-    "latest_intelligence_brief": "/home/runner/work/global-intelligence-v11-final/global-intelligence-v11-final/backend/reports/intelligence_briefs/2026-11-26.md",
-    "latest_video_center": "/home/runner/work/global-intelligence-v11-final/global-intelligence-v11-final/backend/reports/video_center/video_center_2026-11-26.json",
+    "latest_intelligence_brief": "/home/runner/work/global-intelligence-v11-final/global-intelligence-v11-final/backend/reports/intelligence_briefs/2026-11-27.md",
+    "latest_video_center": "/home/runner/work/global-intelligence-v11-final/global-intelligence-v11-final/backend/reports/video_center/video_center_2026-11-27.json",
     "team_execution_reports": 4,
     "evidence_dossiers": 4,
     "latest_evidence_status": "partially_supported",
