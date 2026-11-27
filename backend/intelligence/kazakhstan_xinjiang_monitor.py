@@ -1,11 +1,53 @@
 from __future__ import annotations
 
+import json
 from datetime import datetime
 from pathlib import Path
 from typing import Any
 
 from core.models import now_iso
 from core.storage import read_json, write_json, write_text
+
+try:
+    from .compliant_acquisition import validate_provenance
+except ImportError:  # 直接脚本运行时
+    from backend.intelligence.compliant_acquisition import validate_provenance
+
+CONFIG_PATH = Path(__file__).resolve().parents[2] / "config" / "sources.json"
+
+
+def build_source_status(config_path: Path = CONFIG_PATH) -> dict[str, Any]:
+    """从采集器配置生成真实 source_status，替换原先硬编码的 live_fetch=False。"""
+    base = {
+        "allowed_sources": ["official public pages", "subscribed data APIs", "approved search APIs"],
+        "blocked_sources": ["unauthorized access", "paywall bypass", "website vulnerability exploitation"],
+    }
+    try:
+        config = json.loads(config_path.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError) as exc:
+        return {
+            **base,
+            "live_fetch": False,
+            "reason": f"sources.json unavailable: {type(exc).__name__}",
+            "configured_sources": [],
+            "strategy": "unknown",
+        }
+
+    feeds = [f["id"] for f in config.get("feeds", []) if f.get("enabled")]
+    api_on = bool(config.get("gdelt", {}).get("enabled"))
+    live = bool(feeds or api_on)
+    return {
+        **base,
+        "live_fetch": live,
+        "reason": (
+            f"Authorized sources configured: {len(feeds)} RSS feed(s); "
+            f"GDELT API {'on' if api_on else 'off'}"
+            if live else "No authorized live news/customs/customs-data API is configured"
+        ),
+        "configured_sources": feeds,
+        "source_count": len(feeds) + (1 if api_on else 0),
+        "strategy": config.get("strategy", "hybrid"),
+    }
 
 DRAFT_NOTICE = "DRAFT - Not approved for sending"
 
@@ -275,6 +317,8 @@ Generated: {summary["generated_at"]}
 
 - Live fetch: {str(live["live_fetch"]).lower()}
 - Reason: {live["reason"]}
+- Strategy: {live.get("strategy", "unknown")}
+- Configured sources: {live.get("source_count", 0)}
 - Boundary: public, official or subscribed sources only; no unauthorized access or paywall bypass.
 
 ## Monitoring Sectors
@@ -314,21 +358,23 @@ def _render_project_library(date: str, projects: list[dict[str, Any]]) -> str:
     return "\n".join(lines)
 
 
-def build_monitoring_summary(root: Path) -> dict[str, Any]:
+def build_monitoring_summary(root: Path, records: list[dict[str, Any]] | None = None) -> dict[str, Any]:
     date = _today()
     generated_at = now_iso()
-    source_status = {
-        "live_fetch": False,
-        "reason": "No authorized live news/customs/customs-data API is configured",
-        "allowed_sources": ["official public pages", "subscribed data APIs", "approved search APIs"],
-        "blocked_sources": ["unauthorized access", "paywall bypass", "website vulnerability exploitation"],
-    }
+    source_status = build_source_status()
+    accepted_records: list[dict[str, Any]] = []
+    rejected_records: list[str] = []
+    if records:
+        accepted_records, rejected_records = validate_provenance(records)
+        source_status["accepted_records"] = len(accepted_records)
+        source_status["rejected_records"] = len(rejected_records)
     customs_watch = {
         "date": date,
         "generated_at": generated_at,
         "ports": XINJIANG_PORTS,
         "required_fields": CUSTOMS_FIELDS,
-        "records": [],
+        "records": accepted_records,
+        "rejected_records": rejected_records,
         "source_status": source_status,
         "work_buddy_collection_matrix": WORK_BUDDY_COLLECTION_MATRIX,
         "next_action": "Configure official customs publication source, approved crawler, or subscribed customs-data API before daily volume statistics are treated as factual.",
