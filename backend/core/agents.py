@@ -2,6 +2,8 @@ from __future__ import annotations
 
 from typing import Any
 
+from backend.intelligence.compliant_acquisition import CompliantCollectorAgent
+
 
 def _contains_any(text: str, terms: list[str]) -> bool:
     lowered = text.lower()
@@ -179,6 +181,7 @@ class SynthesizerAgent(BaseAgent):
             "task_1": input_data.get("prev_task_1", {}),
             "task_2": input_data.get("prev_task_2", {}),
             "task_3": input_data.get("prev_task_3", {}),
+            "task_3b": input_data.get("prev_task_3b", {}),
             "task_4": input_data.get("prev_task_4", {}),
         }
         return self._done(await self.synthesize(results, str(input_data.get("query") or "")))
@@ -187,6 +190,7 @@ class SynthesizerAgent(BaseAgent):
         classifier = results.get("task_1", {})
         extracted = results.get("task_2", {})
         evidence = results.get("task_3", {})
+        collection = results.get("task_3b", {})
         risk = results.get("task_4", {})
         return self._done(
             {
@@ -196,6 +200,13 @@ class SynthesizerAgent(BaseAgent):
                 "countries": extracted.get("countries", []),
                 "evidence_plan": evidence.get("required_sources", []),
                 "search_queries": evidence.get("search_queries", []),
+                "collection": {
+                    "status": collection.get("status", "not_configured"),
+                    "item_count": collection.get("item_count", 0),
+                    "robots_denied": collection.get("robots_denied", 0),
+                    "items": collection.get("items", []),
+                    "fallback_log": collection.get("fallback_log", []),
+                },
                 "risk_gate": risk,
                 "team_next_steps": [
                     "Trade lead verifies customs, payment, Incoterms, logistics, and contract risk.",
@@ -220,6 +231,7 @@ class AgentPool:
             "classifier": ClassifierAgent(),
             "extractor": ExtractorAgent(),
             "evidence_planner": EvidencePlannerAgent(),
+            "collector": CompliantCollectorAgent(),
             "risk_gate": RiskGateAgent(),
             "synthesizer": SynthesizerAgent(),
         }

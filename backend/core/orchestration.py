@@ -121,18 +121,26 @@ class OrchestrationEngine:
                 dependencies=["task_1", "task_2"],
             ),
             Task(
+                id="task_3b",
+                name="compliant_collection",
+                agent_type="collector",
+                input_data=base_input,
+                dependencies=["task_3"],
+            ),
+            Task(
                 id="task_4",
                 name="approval_risk_gate",
                 agent_type="risk_gate",
                 input_data=base_input,
-                dependencies=["task_2", "task_3"],
+                # 保留 task_3：RiskGateAgent 依赖 prev_task_3.required_sources
+                dependencies=["task_2", "task_3", "task_3b"],
             ),
             Task(
                 id="task_5",
                 name="team_synthesis",
                 agent_type="synthesizer",
                 input_data=base_input,
-                dependencies=["task_1", "task_2", "task_3", "task_4"],
+                dependencies=["task_1", "task_2", "task_3", "task_3b", "task_4"],
             ),
         ]
 
