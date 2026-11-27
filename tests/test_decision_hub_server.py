@@ -52,8 +52,9 @@ class DecisionHubServerTests(unittest.TestCase):
             stderr=subprocess.DEVNULL,
         )
         # Startup can be slow on a busy Windows host (e.g. while the local
-        # vector index is embedding); keep CI stable with a generous deadline.
-        deadline = time.time() + 90
+        # vector index is embedding, or when the full suite has left many
+        # processes running); keep CI stable with a generous deadline.
+        deadline = time.time() + 180
         last_error: Exception | None = None
         while time.time() < deadline:
             if process.poll() is not None:
