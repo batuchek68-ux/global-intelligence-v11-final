@@ -1,0 +1,32 @@
+{
+  "strategy": "hybrid",
+  "user_agent": "global-intelligence-v11-collector/1.0 (+compliance-first)",
+  "rate_limits": {
+    "default_interval_seconds": 2.0,
+    "gdelt_interval_seconds": 5.0,
+    "global_interval_seconds": 0.2,
+    "domains": {}
+  },
+  "cache": {
+    "root": "data/acquisition_cache",
+    "ttl": {"api": 900, "rss": 600, "page": 86400}
+  },
+  "gdelt": {
+    "enabled": true,
+    "max_records": 75,
+    "default_timespan": "24h",
+    "default_language": "english"
+  },
+  "feeds": [
+    {"id": "astanatimes", "url": "https://astanatimes.com/feed/atom", "region": "kazakhstan", "language": "english", "license": "public-rss", "enabled": true},
+    {"id": "time_kz", "url": "https://time.kz/rss", "region": "kazakhstan", "language": "russian", "license": "unknown-verify", "enabled": false},
+    {"id": "informburo", "url": "https://informburo.kz/rss/pubsubhubbub", "region": "kazakhstan", "language": "russian", "license": "unknown-verify", "enabled": false},
+    {"id": "anadolu_en", "url": "https://www.aa.com.tr/en/rss/defaultaspx/rss/en", "region": "turkey", "language": "english", "license": "public-rss", "enabled": true},
+    {"id": "bbc", "url": "https://feeds.bbci.co.uk/news/rss.xml", "region": "global", "language": "english", "license": "public-rss", "enabled": true},
+    {"id": "aljazeera", "url": "https://www.aljazeera.com/xml/rss/all.xml", "region": "global", "language": "english", "license": "public-rss", "enabled": true}
+  ],
+  "body_fetch": {
+    "allowed_licenses": ["owned", "authorized", "subscribed"],
+    "rule": "仅抓自有或已授权源正文；其余只存标题、摘要、链接、来源、时间"
+  }
+}
