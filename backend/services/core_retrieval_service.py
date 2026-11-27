@@ -91,7 +91,7 @@ def _fallback(text: str, n: int) -> dict[str, Any]:
     return hybrid_query(text, n=n)
 
 
-def retrieve(text: str, n: int = 5, pool: int = 30, min_score: float = 0.35) -> dict[str, Any]:
+def retrieve(text: str, n: int = 5, pool: int = 80, min_score: float = 0.30) -> dict[str, Any]:
     """Retrieve from kb-core, rerank, filter by absolute similarity threshold."""
     if not (CORE_DIR / "chroma.sqlite3").exists():
         return _fallback(text, n)
