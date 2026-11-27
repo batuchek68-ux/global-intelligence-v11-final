@@ -7,6 +7,7 @@ the legacy index so the API never breaks.
 from __future__ import annotations
 
 import os
+import re
 from pathlib import Path
 from typing import Any
 
@@ -103,6 +104,33 @@ def retrieve(text: str, n: int = 5, pool: int = 80, min_score: float = 0.30) -> 
             return _fallback(text, n)
         res = col.query(query_texts=[text], n_results=min(pool, col.count()))
         candidates = []
+        # 标题关键词精确命中：短文档（买家线索/可行报告）块少，向量相似度竞争不过长文档，
+        # 但用户按标题词查询时，标题精确命中应优先返回。
+        title_hits = []
+        query_lower = text.lower()
+        all_meta = col.get(include=["metadatas", "documents"])
+        for meta, doc in zip(all_meta["metadatas"], all_meta["documents"]):
+            title = str((meta or {}).get("title") or "")
+            # 去掉通用国别前缀，取标题核心词（至少 4 字）做精确匹配，避免"哈萨克斯坦矿"误命中
+            core_title = re.sub(r"^(哈萨克斯坦|哈萨克斯坦共和国|哈萨克斯坦市场进入资料[:：]?|哈萨克斯坦市场进入资料)", "", title).strip(" _-—:：")
+            key = core_title[:8]
+            if len(key) >= 4 and key.lower() in query_lower:
+                title_hits.append({
+                    "text": doc,
+                    "metadata": meta,
+                    "distance": None,
+                    "similarity": 1.0,
+                    "match": "title_exact",
+                })
+        if title_hits:
+            return {
+                "ok": True,
+                "results": title_hits[:n],
+                "index": "kb_core",
+                "reranked": False,
+                "total_candidates": len(title_hits),
+                "note": "title_exact_match",
+            }
         for doc, meta, dist in zip(res["documents"][0], res["metadatas"][0], res["distances"][0]):
             sim = 1.0 - float(dist or 1.0)  # cosine space
             if sim < min_score:
