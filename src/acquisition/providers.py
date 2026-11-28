@@ -8,6 +8,7 @@ from __future__ import annotations
 import json
 import time
 import xml.etree.ElementTree as ET
+from datetime import datetime, timezone
 from email.utils import parsedate_to_datetime
 from typing import Any, Callable
 from urllib.parse import urlencode
@@ -15,6 +16,23 @@ from urllib.parse import urlencode
 from .models import RawItem, SourceTier
 
 Fetcher = Callable[[str, dict[str, str], dict[str, str]], tuple[int, str, dict[str, str]]]
+
+
+def _parse_datetime(value: str) -> datetime | None:
+    """兼容 RSS 的 RFC 2822 与 Atom 的 ISO 8601 时间。"""
+    value = (value or "").strip()
+    if not value:
+        return None
+    try:
+        return parsedate_to_datetime(value)
+    except (TypeError, ValueError):
+        pass
+    iso = value[:-1] + "+00:00" if value.endswith("Z") else value
+    try:
+        parsed = datetime.fromisoformat(iso)
+    except ValueError:
+        return None
+    return parsed if parsed.tzinfo else parsed.replace(tzinfo=timezone.utc)
 
 
 class GdeltProvider:
@@ -61,7 +79,7 @@ class GdeltProvider:
                 self._sleep(min(10 * (attempt + 1), 60))
                 continue
             return [self._to_item(a) for a in payload.get("articles", [])]
-        raise RuntimeError("GDELT 连续限流，已退避 8 次")
+        raise RuntimeError(f"GDELT 连续限流，已退避 {retries} 次")
 
     @staticmethod
     def _to_item(a: dict[str, Any]) -> RawItem:
@@ -142,12 +160,7 @@ class RssProvider:
             title = text("title", "atom:title")
             summary = text("description", "atom:summary", "content:encoded", "atom:content")
             pub = text("pubDate", "published", "atom:published", "atom:updated")
-            published = None
-            if pub:
-                try:
-                    published = parsedate_to_datetime(pub)
-                except (TypeError, ValueError):
-                    published = None
+            published = _parse_datetime(pub)
             try:
                 out.append(RawItem(
                     url=url, title=title, summary=summary[:500], published_at=published,
