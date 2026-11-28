@@ -185,5 +185,34 @@ class WiringTests(unittest.TestCase):
             fni._http_fetch = old
 
 
+class ProviderParsingTests(unittest.TestCase):
+    """回归：Atom ISO 时间解析 + GDELT 退避提示如实反映重试次数。"""
+
+    def test_atom_iso_published_at(self):
+        body = """<feed xmlns="http://www.w3.org/2005/Atom">
+          <entry>
+            <title>Kazakhstan port</title>
+            <link href="https://example.com/port"/>
+            <summary>Port investment</summary>
+            <published>2026-11-27T10:46:17Z</published>
+          </entry>
+        </feed>"""
+        items = RssProvider._parse(body, {"id": "astanatimes", "language": "english"})
+        self.assertEqual(len(items), 1)
+        pub = items[0].published_at
+        self.assertIsNotNone(pub)
+        self.assertEqual(pub.year, 2026)
+        self.assertIsNotNone(pub.tzinfo)
+
+    def test_gdelt_error_reports_actual_retries(self):
+        p = GdeltProvider(lambda url, headers, params: (429, "", {}),
+                          lambda key, interval: 0.0)
+        p._sleep = lambda seconds: None
+        with self.assertRaises(RuntimeError) as ctx:
+            p.search("test", retries=3)
+        self.assertIn("3 次", str(ctx.exception))
+        self.assertNotIn("8 次", str(ctx.exception))
+
+
 if __name__ == "__main__":
     unittest.main()
