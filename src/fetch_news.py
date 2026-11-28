@@ -37,17 +37,27 @@ def _load_config(path: Path = CONFIG_PATH) -> dict[str, Any]:
 HTTP_TIMEOUT_SECONDS = 15.0
 
 
-def _http_fetch(url: str, headers: dict[str, str], params: dict[str, str]) -> tuple[int, str, dict[str, str]]:
-    """使用仓库 requirements 中已有的 requests；失败时向上抛，由各层自行退避。"""
+def _http_fetch(url: str, headers: dict[str, str], params: dict[str, str],
+                timeout: float | None = None) -> tuple[int, str, dict[str, str]]:
+    """使用仓库 requirements 中已有的 requests；失败时向上抛，由各层自行退避。
+
+    timeout=None 时走全局 HTTP_TIMEOUT_SECONDS；不显式传该关键字是为了
+    兼容测试里 monkeypatch 的三参数 fetcher。
+    """
     import requests  # 延迟导入，便于无依赖环境下测试其他模块
-    resp = requests.get(url, headers=headers, params=params or None,
-                        timeout=HTTP_TIMEOUT_SECONDS)
+    if timeout is None:
+        resp = requests.get(url, headers=headers, params=params or None,
+                            timeout=HTTP_TIMEOUT_SECONDS)
+    else:
+        resp = requests.get(url, headers=headers, params=params or None,
+                            timeout=timeout)
     return resp.status_code, resp.text, dict(resp.headers)
 
 
 def build_resolver(config: dict[str, Any], cache_root: Path | None = None) -> SourceResolver:
     global HTTP_TIMEOUT_SECONDS
-    HTTP_TIMEOUT_SECONDS = float(config.get("http", {}).get("timeout_seconds", 15.0))
+    http_cfg = config.get("http", {})
+    HTTP_TIMEOUT_SECONDS = float(http_cfg.get("timeout_seconds", 15.0))
     limits = config.get("rate_limits", {})
     limiter = RateLimiter(
         default_interval=limits.get("default_interval_seconds", 2.0),
@@ -67,7 +77,12 @@ def build_resolver(config: dict[str, Any], cache_root: Path | None = None) -> So
         backoff_base=gdelt_cfg.get("backoff_base_seconds"),
         backoff_cap=gdelt_cfg.get("backoff_cap_seconds"),
     )
-    rss = RssProvider(_http_fetch, limiter.acquire, config.get("feeds", []))
+    # RSS 源并发抓取：被代理阻断的源即使各卡 timeout 秒，总耗时也只是最慢的一个。
+    rss_cfg = config.get("rss", {})
+    rss = RssProvider(
+        _http_fetch, limiter.acquire, config.get("feeds", []),
+        max_workers=rss_cfg.get("max_workers", 4),
+    )
     cache_root = cache_root or Path(config.get("cache", {}).get("root", "data/acquisition_cache"))
     cache = CacheStore(cache_root)
     return SourceResolver(

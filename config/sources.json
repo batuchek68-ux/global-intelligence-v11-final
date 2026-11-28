@@ -23,10 +23,15 @@
   "collection": {
     "max_queries": 6,
     "max_concurrency": 3,
-    "query_timeout_seconds": 20.0
+    "query_timeout_seconds": 30.0,
+    "api_retries": 1,
+    "short_query_only": true
   },
   "http": {
-    "timeout_seconds": 15.0
+    "timeout_seconds": 6.0
+  },
+  "rss": {
+    "max_workers": 4
   },
   "feeds": [
     {"id": "astanatimes", "url": "https://astanatimes.com/feed/atom", "region": "kazakhstan", "language": "english", "license": "public-rss", "enabled": true},

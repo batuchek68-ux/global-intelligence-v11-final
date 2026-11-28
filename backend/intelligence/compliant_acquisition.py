@@ -38,6 +38,7 @@ class CompliantCollectorAgent:
         self.config = _load_config() if config_path is None else _load_config(__import__("pathlib").Path(config_path))
         self.metrics = {"executions": 0, "errors": 0, "items": 0}
         budget = self.config.get("collection", {})
+        self.budget = budget
         self.max_queries = max(1, int(budget.get("max_queries", self.DEFAULT_MAX_QUERIES)))
         self.max_concurrency = max(1, int(budget.get("max_concurrency", self.DEFAULT_MAX_CONCURRENCY)))
         self.query_timeout = max(0.1, float(budget.get("query_timeout_seconds", self.DEFAULT_QUERY_TIMEOUT)))
@@ -49,7 +50,23 @@ class CompliantCollectorAgent:
         if not queries:
             queries = [str(input_data.get("query") or "")]
         queries = queries[:self.max_queries]
-        timespan = self.config.get("gdelt", {}).get("default_timespan", "24h")
+        gdelt_cfg = self.config.get("gdelt", {})
+        timespan = gdelt_cfg.get("default_timespan", "24h")
+        language = gdelt_cfg.get("default_language", "english")
+        # planner 产出的 rss_query 是短查询；RSS 层只做关键词匹配，用它而非长模板。
+        # 老 planner 没有该字段时退化为逐条 query（RSS token 匹配仍能处理）。
+        rss_query = str(evidence.get("rss_query") or "").strip()
+        # 真实环境只有 planner 的短查询有召回（长模板查询在 RSS 上是零命中）。
+        # short_query_only 下只跑这一条，把预算留给单查询的完整降级链。
+        if rss_query and self.budget.get("short_query_only", False):
+            queries = [rss_query]
+        # API 路径对 GDELT 用更激进的重试上限：被限流时快速降级到 RSS，
+        # 避免 2 次退避 + 每次超时吃满单查询预算。fetch_news 独立运行仍用 config 默认值。
+        api_retries = self.budget.get("api_retries")
+        if api_retries is not None:
+            self.config = {**self.config, "gdelt": {
+                **self.config.get("gdelt", {}), "max_retries": api_retries,
+            }}
         resolver = build_resolver(self.config)
         seen_lock = asyncio.Lock()
         seen_urls: set[str] = set()                  # 跨 query 去重（resolver 只管单次）
@@ -67,7 +84,10 @@ class CompliantCollectorAgent:
             # wait_for 只缩短 API 等待；底层线程受 executor 有界约束，不会拖垮配额。
             try:
                 items = await asyncio.wait_for(
-                    loop.run_in_executor(executor, resolver.resolve, query, timespan),
+                    loop.run_in_executor(
+                        executor, resolver.resolve, query, timespan, language,
+                        rss_query or query,
+                    ),
                     timeout=self.query_timeout,
                 )
             except Exception:

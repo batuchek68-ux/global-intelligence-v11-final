@@ -31,10 +31,16 @@ class SourceResolver:
         self.fallback_log: list[dict[str, str]] = []
 
     def resolve(self, intent: str, timespan: str = "24h",
-                language: str = "english") -> list[EnrichedItem]:
+                language: str = "english",
+                rss_query: str | None = None) -> list[EnrichedItem]:
+        """rss_query 可为 RSS 层单独指定短查询；不传则沿用 intent。
+
+        API 层（GDELT）支持带限定词的检索语法，RSS 层只做关键词匹配，
+        两者对查询串的要求不同，因此需要分开传入。
+        """
         chain: list[tuple[SourceTier, Callable[[], list[RawItem]]]] = [
             (SourceTier.OFFICIAL_API, lambda: self.api.search(intent, timespan, language)),
-            (SourceTier.RSS, lambda: self.rss.search(intent)),
+            (SourceTier.RSS, lambda: self.rss.search(rss_query or intent)),
         ]
         if self.legacy and self.strategy != "compliance_first":
             chain.append((SourceTier.LEGACY, lambda: self.legacy(intent)))

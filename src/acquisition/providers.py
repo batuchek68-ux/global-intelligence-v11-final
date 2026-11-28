@@ -138,29 +138,77 @@ class GdeltProvider:
 class RssProvider:
     """RSS/Atom：仅取元数据（title/link/summary），不抓正文。"""
 
+    # 修饰词/连接词不参与匹配，否则长模板查询会被整串子串匹配判为 0 命中。
+    STOPWORDS = frozenset({
+        "official", "government", "project", "owner", "developer", "tender",
+        "procurement", "epc", "contractor", "customs", "hs", "code", "tariff",
+        "import", "documents", "investment", "promotion", "investor",
+        "feasibility", "study", "eia", "ministry", "akimat", "youtube",
+        "tiktok", "douyin", "telegram", "forum", "public", "attention",
+        "the", "and", "for", "with", "from", "of",
+    })
+
     def __init__(self, fetcher: Fetcher, acquire: Callable[[str, float | None], float],
-                 feeds: list[dict[str, Any]]):
+                 feeds: list[dict[str, Any]],
+                 max_workers: int = 4,
+                 fetch_timeout: float | None = None):
         self.fetch = fetcher
         self.acquire = acquire
         self.feeds = feeds
+        self.max_workers = max(1, int(max_workers or 1))
+        self.fetch_timeout = fetch_timeout
+        try:
+            import inspect
+            self._accepts_timeout = "timeout" in inspect.signature(fetcher).parameters
+        except (TypeError, ValueError):
+            self._accepts_timeout = False
 
     def search(self, query: str = "", source_ids: list[str] | None = None) -> list[RawItem]:
-        items: list[RawItem] = []
         targets = [f for f in self.feeds
                    if f.get("enabled", True) and (not source_ids or f["id"] in source_ids)]
-        for feed in targets:
+
+        def fetch_feed(feed: dict[str, Any]) -> list[RawItem]:
             self.acquire(f"rss:{feed['id']}", None)
             try:
-                status, body, _ = self.fetch(feed["url"], {}, {})
+                # 生产 fetcher 接受 timeout 关键字；测试用三参数 fetcher 时保持兼容。
+                # 用签名探测而不是 try/except TypeError，避免回调内部 false-positive。
+                if self.fetch_timeout is not None and self._accepts_timeout:
+                    status, body, _ = self.fetch(feed["url"], {}, {},
+                                                 timeout=self.fetch_timeout)
+                else:
+                    status, body, _ = self.fetch(feed["url"], {}, {})
             except Exception:
-                continue
-            if status != 200:
-                continue
-            items.extend(self._parse(body, feed))
+                return []
+            return self._parse(body, feed) if status == 200 else []
+
+        if len(targets) <= 1:
+            batches = [fetch_feed(f) for f in targets]
+        else:
+            # 并发抓取：代理阻断的源即使各卡 10s，总耗时也只是最慢的一个。
+            from concurrent.futures import ThreadPoolExecutor
+            with ThreadPoolExecutor(
+                max_workers=min(self.max_workers, len(targets)),
+                thread_name_prefix="gi-rss",
+            ) as executor:
+                batches = list(executor.map(fetch_feed, targets))
+        items: list[RawItem] = [i for batch in batches for i in batch]
         if query:
-            q = query.lower()
-            items = [i for i in items if q in (i.title + " " + i.summary).lower()]
+            terms = self._query_terms(query)
+            # 关键词 OR 命中：只要标题/摘要包含任一实词即召回。
+            # 空 terms（全是停用词）时不置空结果，避免误杀。
+            if terms:
+                items = [
+                    i for i in items
+                    if any(t in (i.title + " " + i.summary).lower() for t in terms)
+                ]
         return items
+
+    @classmethod
+    def _query_terms(cls, query: str) -> list[str]:
+        """从查询中抽取参与匹配的实词：去引号/标点、去停用词、保留 CJK。"""
+        import re
+        tokens = re.findall(r"[\w\u4e00-\u9fff]+", query.lower())
+        return [t for t in tokens if len(t) > 1 and t not in cls.STOPWORDS]
 
     @staticmethod
     def _parse(body: str, feed: dict[str, Any]) -> list[RawItem]:

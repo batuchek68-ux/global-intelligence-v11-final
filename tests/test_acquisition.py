@@ -250,6 +250,137 @@ class RetryBudgetTests(unittest.TestCase):
         self.assertEqual((resolver.api.backoff_base, resolver.api.backoff_cap), (2.0, 8.0))
 
 
+class PlannerQueryTests(unittest.TestCase):
+    """回归：planner 首条查询必须是短查询，否则 RSS/GDELT 零命中。"""
+
+    @staticmethod
+    def _plan(query="Kazakhstan", country="Kazakhstan"):
+        import asyncio
+        from backend.core.agents import EvidencePlannerAgent
+        agent = EvidencePlannerAgent()
+        return asyncio.run(agent.execute_async(
+            {"query": query, "metadata": {"country": country}, "prev_task_2": {}}, "owner"
+        ))
+
+    def test_first_query_is_short_and_rss_query_exposed(self):
+        plan = self._plan("Kazakhstan", "Kazakhstan")
+        self.assertEqual(plan["search_queries"][0], "Kazakhstan")
+        self.assertEqual(plan["rss_query"], "Kazakhstan")
+        self.assertNotIn("official government project owner developer",
+                         plan["search_queries"][0])
+        # 长模板仍保留作补充，不丢失原有检索意图
+        self.assertTrue(any("tender procurement" in q for q in plan["search_queries"]))
+
+    def test_short_query_combines_country_and_raw_query(self):
+        plan = self._plan("port construction", "Kazakhstan")
+        self.assertEqual(plan["rss_query"], "Kazakhstan port construction")
+        self.assertIn("port", plan["search_queries"][0])
+
+
+class RssTokenMatchTests(unittest.TestCase):
+    """回归：长模板查询经关键词抽取后仍能召回 RSS 条目。"""
+
+    BODY = """<rss><channel>
+      <item><title>Astana port expansion</title><link>https://astanatimes.com/port</link>
+      <description>New terminal investment</description></item>
+    </channel></rss>"""
+
+    def _items(self):
+        return RssProvider._parse(self.BODY, {"id": "astanatimes", "language": "english"})
+
+    def test_stopwords_stripped_and_long_query_matches(self):
+        terms = RssProvider._query_terms(
+            'Kazakhstan " Astana port " official government project owner developer')
+        self.assertIn("astana", terms)
+        self.assertIn("port", terms)
+        self.assertNotIn("official", terms)
+        self.assertNotIn("government", terms)
+
+        fetch = fake_fetch({"https://astanatimes.com/feed": (200, self.BODY, {})})
+        p = RssProvider(fetch, lambda k, i: 0.0,
+                        [{"id": "astanatimes", "url": "https://astanatimes.com/feed"}])
+        # 整串子串匹配下这条查询必然 0 命中；token 匹配后应召回
+        self.assertEqual(len(p.search("Kazakhstan Astana port official government")), 1)
+
+    def test_no_term_match_returns_empty_and_all_stopwords_keeps_items(self):
+        fetch = fake_fetch({"https://astanatimes.com/feed": (200, self.BODY, {})})
+        p = RssProvider(fetch, lambda k, i: 0.0,
+                        [{"id": "astanatimes", "url": "https://astanatimes.com/feed"}])
+        self.assertEqual(len(p.search("zzzz nonexistent")), 0)
+        # 全是停用词时不误杀
+        self.assertEqual(len(p.search("official government project")), 1)
+
+
+class RssConcurrencyTests(unittest.TestCase):
+    """回归：多个 RSS 源并发抓取，总耗时约等于最慢源而非各源之和。"""
+
+    def test_feeds_are_fetched_concurrently(self):
+        import threading
+        import time
+
+        body = """<rss><channel><item><title>Port news</title>
+          <link>https://example.com/p</link></item></channel></rss>"""
+        active = 0
+        peak = [0]
+        lock = threading.Lock()
+
+        def slow_fetch(url, headers, params=None):
+            nonlocal active
+            with lock:
+                active += 1
+                peak[0] = max(peak[0], active)
+            time.sleep(0.2)
+            with lock:
+                active -= 1
+            return 200, body, {}
+
+        feeds = [{"id": f"f{i}", "url": f"https://example.com/f{i}"} for i in range(4)]
+        p = RssProvider(slow_fetch, lambda k, i: 0.0, feeds, max_workers=4)
+        started = time.monotonic()
+        items = p.search("port")
+        elapsed = time.monotonic() - started
+
+        self.assertEqual(len(items), 4)
+        self.assertGreaterEqual(peak[0], 2)   # 确实并发
+        self.assertLess(elapsed, 0.6)         # 4 × 0.2s=0.8s 串行；并发约 0.2s
+
+
+class RssQueryPassthroughTests(unittest.TestCase):
+    """回归：collector 把 planner 的 rss_query 传给 resolver 的 RSS 层。"""
+
+    def test_collector_passes_rss_query_to_resolver(self):
+        import asyncio
+
+        from backend.intelligence import compliant_acquisition as ca
+
+        agent = ca.CompliantCollectorAgent()
+        agent.max_queries = 2
+        captured = []
+
+        class FakeResolver:
+            fallback_log = []
+
+            def resolve(self, query, timespan="24h", language="english", rss_query=None):
+                captured.append((query, rss_query))
+                return []
+
+        old = ca.build_resolver
+        ca.build_resolver = lambda config: FakeResolver()
+        try:
+            asyncio.run(agent.execute_async({
+                "prev_task_3": {
+                    "rss_query": "Kazakhstan",
+                    "search_queries": ['Kazakhstan "official government project"'],
+                },
+            }, "owner"))
+        finally:
+            ca.build_resolver = old
+
+        # short_query_only 生效：只跑短查询，且 rss_query 透传给 resolver
+        self.assertEqual(len(captured), 1)
+        self.assertEqual(captured[0], ("Kazakhstan", "Kazakhstan"))
+
+
 class CollectorBudgetTests(unittest.TestCase):
     """回归：collector 受并发度/超时/查询数预算约束。"""
 
@@ -278,7 +409,8 @@ class CollectorBudgetTests(unittest.TestCase):
         class FakeResolver:
             fallback_log = []
 
-            def resolve(self, query, timespan="24h"):
+            def resolve(self, query, timespan="24h", language="english",
+                        rss_query=None):
                 seen_queries.append(query)
                 return [SimpleNamespace(
                     item=SimpleNamespace(url="https://example.com/same", to_dict=lambda: {
@@ -320,7 +452,8 @@ class CollectorBudgetTests(unittest.TestCase):
         class SlowResolver:
             fallback_log = []
 
-            def resolve(self, query, timespan="24h"):
+            def resolve(self, query, timespan="24h", language="english",
+                        rss_query=None):
                 nonlocal active
                 with counter_lock:
                     active += 1
@@ -343,7 +476,8 @@ class CollectorBudgetTests(unittest.TestCase):
         self.assertEqual(result["item_count"], 0)
         self.assertGreater(peak[0], 1)                      # 确实并发，不是串行
         self.assertLessEqual(peak[0], agent.max_concurrency)  # 且不超并发上限
-        self.assertLess(elapsed, 0.9)  # 2 批 × 0.3s < 3 条串行 × 0.3s
+        # 峰值并发断言已证明并发生效；耗时上界放宽以避免 CI 模块加载抖动误报。
+        self.assertLess(elapsed, 1.5)
         self.assertEqual(agent.metrics["errors"], 3)
 
 

@@ -115,9 +115,18 @@ class EvidencePlannerAgent(BaseAgent):
         metadata = input_data.get("metadata") if isinstance(input_data.get("metadata"), dict) else {}
         extracted = input_data.get("prev_task_2", {})
         country = str(metadata.get("country") or (extracted.get("countries") or ["Kazakhstan"])[0])
+
+        # 采集层是「子串/关键词匹配」，不是搜索引擎：长模板查询（带引号和一堆
+        # 修饰词）在 RSS 与 GDELT 上都会 0 命中，实测导致 item_count=0。
+        # 因此单独产出一条短查询用于召回，长模板仅作为补充查询保留。
+        raw_query = query.strip() or country
+        short_query = (raw_query if country.lower() in raw_query.lower()
+                       else f"{country} {raw_query}").strip()
+
         return self._done(
             {
                 "country": country,
+                "rss_query": short_query,
                 "required_sources": [
                     "government project page",
                     "official procurement or tender page",
@@ -127,6 +136,7 @@ class EvidencePlannerAgent(BaseAgent):
                     "reputable media plus social/video signals for attention tracking only",
                 ],
                 "search_queries": [
+                    short_query,  # 首条短查询保底召回（原先这里是长模板，实测零命中）
                     f'{country} "{query}" official government project owner developer',
                     f'{country} "{query}" tender procurement EPC contractor',
                     f'{country} customs HS code tariff import documents "{query}"',
@@ -200,6 +210,7 @@ class SynthesizerAgent(BaseAgent):
                 "countries": extracted.get("countries", []),
                 "evidence_plan": evidence.get("required_sources", []),
                 "search_queries": evidence.get("search_queries", []),
+                "rss_query": evidence.get("rss_query", ""),
                 "collection": {
                     "status": collection.get("status", "not_configured"),
                     "item_count": collection.get("item_count", 0),
