@@ -15,7 +15,18 @@
     "enabled": true,
     "max_records": 75,
     "default_timespan": "24h",
-    "default_language": "english"
+    "default_language": "english",
+    "max_retries": 2,
+    "backoff_base_seconds": 2.0,
+    "backoff_cap_seconds": 8.0
+  },
+  "collection": {
+    "max_queries": 6,
+    "max_concurrency": 3,
+    "query_timeout_seconds": 20.0
+  },
+  "http": {
+    "timeout_seconds": 15.0
   },
   "feeds": [
     {"id": "astanatimes", "url": "https://astanatimes.com/feed/atom", "region": "kazakhstan", "language": "english", "license": "public-rss", "enabled": true},

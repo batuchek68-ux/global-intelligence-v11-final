@@ -13,6 +13,7 @@ EvidencePlannerAgent 目前只产出 search_queries 字符串，从不执行。
 from __future__ import annotations
 
 import asyncio
+from concurrent.futures import ThreadPoolExecutor
 from typing import Any
 
 try:  # 落地后 src/fetch_news.py 是替换后的文件名
@@ -22,36 +23,71 @@ except ModuleNotFoundError:  # 源包内仍叫 fetch_news_integrated.py
 
 
 class CompliantCollectorAgent:
-    """可作为 agent_type="collector" 注册进 AgentPool。"""
+    """可作为 agent_type="collector" 注册进 AgentPool。
+
+    查询预算（条数 / 并发度 / 单查询超时）来自 config/sources.json 的
+    collection 段，避免默认 6 条串行 + GDELT 长退避把 /v1/query 拖到超时。
+    """
+
+    DEFAULT_MAX_QUERIES = 6
+    DEFAULT_MAX_CONCURRENCY = 3
+    DEFAULT_QUERY_TIMEOUT = 20.0
 
     def __init__(self, config_path: str | None = None):
         self.name = "collector"
         self.config = _load_config() if config_path is None else _load_config(__import__("pathlib").Path(config_path))
         self.metrics = {"executions": 0, "errors": 0, "items": 0}
+        budget = self.config.get("collection", {})
+        self.max_queries = max(1, int(budget.get("max_queries", self.DEFAULT_MAX_QUERIES)))
+        self.max_concurrency = max(1, int(budget.get("max_concurrency", self.DEFAULT_MAX_CONCURRENCY)))
+        self.query_timeout = max(0.1, float(budget.get("query_timeout_seconds", self.DEFAULT_QUERY_TIMEOUT)))
 
     async def execute_async(self, input_data: dict[str, Any], org_id: str) -> dict[str, Any]:
+        del org_id
         evidence = input_data.get("prev_task_3", {}) or {}
         queries: list[str] = evidence.get("search_queries") or []
         if not queries:
             queries = [str(input_data.get("query") or "")]
+        queries = queries[:self.max_queries]
+        timespan = self.config.get("gdelt", {}).get("default_timespan", "24h")
         resolver = build_resolver(self.config)
-        collected: list[dict[str, Any]] = []
+        seen_lock = asyncio.Lock()
         seen_urls: set[str] = set()                  # 跨 query 去重（resolver 只管单次）
-        for q in queries[:6]:                       # 最多 6 条，避免打爆配额
+
+        # 并发上限必须落在「真正干活的线程」上。asyncio.Semaphore 只约束协程，
+        # wait_for 超时后槽位会释放但底层线程仍在跑，实际并发会突破上限。
+        # 有界 ThreadPoolExecutor 保证同时运行的 resolver.resolve 不超过 max_concurrency。
+        loop = asyncio.get_running_loop()
+        executor = ThreadPoolExecutor(
+            max_workers=self.max_concurrency,
+            thread_name_prefix="gi-collector",
+        )
+
+        async def collect_one(query: str) -> list[dict[str, Any]]:
+            # wait_for 只缩短 API 等待；底层线程受 executor 有界约束，不会拖垮配额。
             try:
-                # resolve 内含限流 sleep，放到线程里避免阻塞 FastAPI 事件循环
-                items = await asyncio.to_thread(
-                    resolver.resolve, q,
-                    self.config.get("gdelt", {}).get("default_timespan", "24h"),
+                items = await asyncio.wait_for(
+                    loop.run_in_executor(executor, resolver.resolve, query, timespan),
+                    timeout=self.query_timeout,
                 )
             except Exception:
                 self.metrics["errors"] += 1
-                continue
+                return []
+            out: list[dict[str, Any]] = []
             for e in items:
-                if e.item.url in seen_urls:
-                    continue
-                seen_urls.add(e.item.url)
-                collected.append(e.to_dict())
+                async with seen_lock:
+                    if e.item.url in seen_urls:
+                        continue
+                    seen_urls.add(e.item.url)
+                out.append(e.to_dict())
+            return out
+
+        try:
+            batches = await asyncio.gather(*(collect_one(q) for q in queries))
+        finally:
+            # 不等待超时后仍在跑的线程，避免 API 结束前被反向拖住。
+            executor.shutdown(wait=False, cancel_futures=True)
+        collected = [item for batch in batches for item in batch]
         # deny/unreachable 的条目已被 resolver 丢弃，只能从降级日志统计
         robots_denied = sum(
             1 for f in resolver.fallback_log
@@ -65,6 +101,11 @@ class CompliantCollectorAgent:
             "item_count": len(collected),
             "robots_denied": robots_denied,
             "fallback_log": resolver.fallback_log,
+            "collection_budget": {
+                "max_queries": self.max_queries,
+                "max_concurrency": self.max_concurrency,
+                "query_timeout_seconds": self.query_timeout,
+            },
             "required_sources": evidence.get("required_sources", []),
             "audit_hint": "Provenance attached; Judge must reject items without source_tier/robots_decision/fetched_at.",
         }

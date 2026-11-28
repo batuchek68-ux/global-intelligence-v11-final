@@ -206,6 +206,8 @@ class SynthesizerAgent(BaseAgent):
                     "robots_denied": collection.get("robots_denied", 0),
                     "items": collection.get("items", []),
                     "fallback_log": collection.get("fallback_log", []),
+                    # 透传采集预算，便于线上确认重试/并发/超时上限确实生效
+                    "collection_budget": collection.get("collection_budget", {}),
                 },
                 "risk_gate": risk,
                 "team_next_steps": [

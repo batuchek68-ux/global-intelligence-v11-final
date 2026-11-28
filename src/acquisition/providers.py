@@ -36,20 +36,47 @@ def _parse_datetime(value: str) -> datetime | None:
 
 
 class GdeltProvider:
-    """GDELT DOC 2.0：免费无 key，硬限制 1 请求/5 秒。"""
+    """GDELT DOC 2.0：免费无 key，硬限制 1 请求/5 秒。
+
+    重试预算必须可控：默认 8 次线性退避会累计 330 秒，足以拖垮 API 路径。
+    这里把重试上限与退避参数下沉到实例，由 config/sources.json 注入。
+    """
 
     ENDPOINT = "https://api.gdeltproject.org/api/v2/doc/doc"
     MAX_RECORDS = 75
     INTERVAL = 5.0
+    DEFAULT_MAX_RETRIES = 2
+    DEFAULT_BACKOFF_BASE = 2.0
+    DEFAULT_BACKOFF_CAP = 8.0
 
     def __init__(self, fetcher: Fetcher, acquire: Callable[[str, float | None], float],
-                 sleep_fn: Callable[[float], None] | None = None):
+                 sleep_fn: Callable[[float], None] | None = None,
+                 max_retries: int | None = None,
+                 backoff_base: float | None = None,
+                 backoff_cap: float | None = None):
         self.fetch = fetcher
         self.acquire = acquire
         self._sleep = sleep_fn or time.sleep
+        self.max_retries = max(1, int(max_retries or self.DEFAULT_MAX_RETRIES))
+        self.backoff_base = max(
+            0.0,
+            float(backoff_base if backoff_base is not None else self.DEFAULT_BACKOFF_BASE),
+        )
+        self.backoff_cap = max(
+            self.backoff_base,
+            float(backoff_cap if backoff_cap is not None else self.DEFAULT_BACKOFF_CAP),
+        )
+
+    def _backoff(self, attempt: int) -> None:
+        """指数退避：base * 2^attempt，封顶 backoff_cap。"""
+        delay = min(self.backoff_base * (2 ** attempt), self.backoff_cap)
+        if delay > 0:
+            self._sleep(delay)
 
     def search(self, query: str, timespan: str = "24h", language: str = "english",
-               retries: int = 8) -> list[RawItem]:
+               retries: int | None = None) -> list[RawItem]:
+        """retries=None 时使用实例上限；显式传值仅用于测试/验收覆盖。"""
+        attempts = self.max_retries if retries is None else max(1, int(retries))
         params = {
             "query": f"{query} sourcelang:{language}",
             "mode": "artlist",
@@ -58,28 +85,28 @@ class GdeltProvider:
             "timespan": timespan,
             "sort": "datedesc",
         }
-        for attempt in range(retries):
+        for attempt in range(attempts):
             self.acquire("gdelt", self.INTERVAL)
             try:
                 status, body, headers = self.fetch(self.ENDPOINT, {}, params)
             except Exception:
-                self._sleep(min(10 * (attempt + 1), 60))
+                self._backoff(attempt)
                 continue
 
             # GDELT 限流时可能返回纯文本而非 429 —— 必须防裸 json.loads
             if status == 429 or not body.lstrip().startswith("{"):
-                self._sleep(min(10 * (attempt + 1), 60))
+                self._backoff(attempt)
                 continue
             if status != 200:
-                self._sleep(min(10 * (attempt + 1), 60))
+                self._backoff(attempt)
                 continue
             try:
                 payload = json.loads(body)
             except json.JSONDecodeError:
-                self._sleep(min(10 * (attempt + 1), 60))
+                self._backoff(attempt)
                 continue
             return [self._to_item(a) for a in payload.get("articles", [])]
-        raise RuntimeError(f"GDELT 连续限流，已退避 {retries} 次")
+        raise RuntimeError(f"GDELT 连续限流，已退避 {attempts} 次")
 
     @staticmethod
     def _to_item(a: dict[str, Any]) -> RawItem:

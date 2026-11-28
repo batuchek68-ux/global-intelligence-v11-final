@@ -32,14 +32,22 @@ def _load_config(path: Path = CONFIG_PATH) -> dict[str, Any]:
     return json.loads(path.read_text(encoding="utf-8"))
 
 
+# 单次 HTTP 超时；由 build_resolver 从 config/sources.json 注入。
+# 30s 会让一次 GDELT 卡住就吃掉 API 的整个预算，这里默认收紧到 15s。
+HTTP_TIMEOUT_SECONDS = 15.0
+
+
 def _http_fetch(url: str, headers: dict[str, str], params: dict[str, str]) -> tuple[int, str, dict[str, str]]:
     """使用仓库 requirements 中已有的 requests；失败时向上抛，由各层自行退避。"""
     import requests  # 延迟导入，便于无依赖环境下测试其他模块
-    resp = requests.get(url, headers=headers, params=params or None, timeout=30)
+    resp = requests.get(url, headers=headers, params=params or None,
+                        timeout=HTTP_TIMEOUT_SECONDS)
     return resp.status_code, resp.text, dict(resp.headers)
 
 
 def build_resolver(config: dict[str, Any], cache_root: Path | None = None) -> SourceResolver:
+    global HTTP_TIMEOUT_SECONDS
+    HTTP_TIMEOUT_SECONDS = float(config.get("http", {}).get("timeout_seconds", 15.0))
     limits = config.get("rate_limits", {})
     limiter = RateLimiter(
         default_interval=limits.get("default_interval_seconds", 2.0),
@@ -52,7 +60,13 @@ def build_resolver(config: dict[str, Any], cache_root: Path | None = None) -> So
         return _http_fetch(url, headers, {})
 
     gate = RobotsGate(_robots_fetch, user_agent=config.get("user_agent", ""))
-    api = GdeltProvider(_http_fetch, limiter.acquire)
+    gdelt_cfg = config.get("gdelt", {})
+    api = GdeltProvider(
+        _http_fetch, limiter.acquire,
+        max_retries=gdelt_cfg.get("max_retries"),
+        backoff_base=gdelt_cfg.get("backoff_base_seconds"),
+        backoff_cap=gdelt_cfg.get("backoff_cap_seconds"),
+    )
     rss = RssProvider(_http_fetch, limiter.acquire, config.get("feeds", []))
     cache_root = cache_root or Path(config.get("cache", {}).get("root", "data/acquisition_cache"))
     cache = CacheStore(cache_root)

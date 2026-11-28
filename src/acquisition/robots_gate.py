@@ -52,7 +52,10 @@ class RobotsGate:
 
         entry = self._cache.get(host)
         now = time.time()
-        if entry is None or now - entry.cached_at >= self.cache_ttl:
+        # 是否复用缓存用「命中判定」表示，不能用 now - cached_at > 0：
+        # 同一时钟刻度内两次调用差值为 0，会让缓存命中被误报为未命中。
+        from_cache = entry is not None and now - entry.cached_at < self.cache_ttl
+        if not from_cache:
             entry = self._fetch_robots(host, entry)
             if entry is None:          # unreachable -> fail closed
                 return RobotsResult(
@@ -66,7 +69,7 @@ class RobotsGate:
                 decision=RobotsDecision.UNAVAILABLE,
                 crawl_delay=entry.crawl_delay,
                 matched_rule="robots.txt 4xx -> no rules apply",
-                cached=now - entry.cached_at > 0,
+                cached=from_cache,
             )
 
         allowed, rule = self._resolve(entry.rules, path)
@@ -74,7 +77,7 @@ class RobotsGate:
             decision=RobotsDecision.ALLOW if allowed else RobotsDecision.DENY,
             crawl_delay=entry.crawl_delay,
             matched_rule=rule,
-            cached=now - entry.cached_at > 0,
+            cached=from_cache,
         )
 
     def _fetch_robots(self, host: str, old: _CacheEntry | None) -> _CacheEntry | None:

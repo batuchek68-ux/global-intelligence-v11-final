@@ -214,5 +214,138 @@ class ProviderParsingTests(unittest.TestCase):
         self.assertNotIn("8 次", str(ctx.exception))
 
 
+class RetryBudgetTests(unittest.TestCase):
+    """回归：默认重试上限 2 + 指数退避封顶，杜绝 330s 累计退避。"""
+
+    def test_default_retries_is_two_and_backoff_is_capped(self):
+        sleeps = []
+        p = GdeltProvider(lambda url, headers, params: (429, "", {}),
+                          lambda key, interval: 0.0,
+                          sleep_fn=sleeps.append)
+        with self.assertRaises(RuntimeError) as ctx:
+            p.search("test")
+        self.assertIn("2 次", str(ctx.exception))
+        # 默认 base=2/cap=8：两次退避 2s + 4s，总计 6s（旧实现为 10+20=30s）
+        self.assertEqual(sleeps, [2.0, 4.0])
+        self.assertLessEqual(sum(sleeps), 8.0 * 2)
+
+    def test_explicit_retries_override_instance_default(self):
+        sleeps = []
+        p = GdeltProvider(lambda url, headers, params: (429, "", {}),
+                          lambda key, interval: 0.0,
+                          sleep_fn=sleeps.append, max_retries=2,
+                          backoff_base=1.0, backoff_cap=3.0)
+        with self.assertRaises(RuntimeError):
+            p.search("test", retries=4)
+        self.assertEqual(sleeps, [1.0, 2.0, 3.0, 3.0])
+
+    def test_build_resolver_injects_retry_budget_from_config(self):
+        try:
+            import fetch_news as fni
+        except ModuleNotFoundError:
+            import fetch_news_integrated as fni
+        cfg = fni._load_config()
+        resolver = fni.build_resolver(cfg)
+        self.assertEqual(resolver.api.max_retries, 2)
+        self.assertEqual((resolver.api.backoff_base, resolver.api.backoff_cap), (2.0, 8.0))
+
+
+class CollectorBudgetTests(unittest.TestCase):
+    """回归：collector 受并发度/超时/查询数预算约束。"""
+
+    @staticmethod
+    def _collector():
+        import backend.intelligence.compliant_acquisition as ca
+        return ca
+
+    def test_collector_reads_budget_from_config(self):
+        ca = self._collector()
+        agent = ca.CompliantCollectorAgent()
+        cfg = agent.config.get("collection", {})
+        self.assertEqual(agent.max_queries, cfg.get("max_queries", 6))
+        self.assertEqual(agent.max_concurrency, cfg.get("max_concurrency", 3))
+        self.assertEqual(agent.query_timeout, cfg.get("query_timeout_seconds", 20.0))
+        self.assertLessEqual(agent.max_concurrency, agent.max_queries)
+
+    def test_collector_caps_queries_and_dedups_across_queries(self):
+        import asyncio
+        from types import SimpleNamespace
+
+        ca = self._collector()
+        agent = ca.CompliantCollectorAgent()
+        seen_queries = []
+
+        class FakeResolver:
+            fallback_log = []
+
+            def resolve(self, query, timespan="24h"):
+                seen_queries.append(query)
+                return [SimpleNamespace(
+                    item=SimpleNamespace(url="https://example.com/same", to_dict=lambda: {
+                        "url": "https://example.com/same", "title": "shared",
+                    }),
+                    to_dict=lambda: {"url": "https://example.com/same", "title": "shared",
+                                     "provenance": {"source_tier": "rss"}},
+                )]
+
+        old = ca.build_resolver
+        ca.build_resolver = lambda config: FakeResolver()
+        try:
+            queries = [f"q{i}" for i in range(20)]
+            result = asyncio.run(agent.execute_async(
+                {"prev_task_3": {"search_queries": queries}}, "owner"))
+        finally:
+            ca.build_resolver = old
+
+        self.assertEqual(len(seen_queries), agent.max_queries)
+        self.assertEqual(result["item_count"], 1)  # 跨查询去重
+        self.assertIn("collection_budget", result)
+        self.assertEqual(result["collection_budget"]["max_queries"], agent.max_queries)
+
+    def test_collector_timeout_and_concurrency_respect_budget(self):
+        import asyncio
+        import threading
+        import time
+
+        ca = self._collector()
+        agent = ca.CompliantCollectorAgent()
+        agent.query_timeout = 0.1       # 远小于单查询真实耗时
+        agent.max_queries = 3
+        agent.max_concurrency = 2       # 只允许 2 条并行
+
+        active = 0
+        peak = [0]
+        counter_lock = threading.Lock()
+
+        class SlowResolver:
+            fallback_log = []
+
+            def resolve(self, query, timespan="24h"):
+                nonlocal active
+                with counter_lock:
+                    active += 1
+                    peak[0] = max(peak[0], active)
+                time.sleep(0.3)
+                with counter_lock:
+                    active -= 1
+                return []
+
+        old = ca.build_resolver
+        ca.build_resolver = lambda config: SlowResolver()
+        try:
+            started = time.monotonic()
+            result = asyncio.run(agent.execute_async(
+                {"prev_task_3": {"search_queries": ["a", "b", "c"]}}, "owner"))
+            elapsed = time.monotonic() - started
+        finally:
+            ca.build_resolver = old
+
+        self.assertEqual(result["item_count"], 0)
+        self.assertGreater(peak[0], 1)                      # 确实并发，不是串行
+        self.assertLessEqual(peak[0], agent.max_concurrency)  # 且不超并发上限
+        self.assertLess(elapsed, 0.9)  # 2 批 × 0.3s < 3 条串行 × 0.3s
+        self.assertEqual(agent.metrics["errors"], 3)
+
+
 if __name__ == "__main__":
     unittest.main()

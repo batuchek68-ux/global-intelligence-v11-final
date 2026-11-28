@@ -104,6 +104,12 @@ config = {
     "MAX_REQUESTS_PER_MINUTE": 100,
 }
 
+# /v1/query 端到端预算：超过即返回 504，避免慢采集把请求挂到网关超时。
+# 采集侧已有 GDELT 重试上限(2) + collector 并发(3) + 单查询超时(20s)，
+# 这里的整体上限取 60s 足以覆盖两批并发查询与后续 team response。
+QUERY_TIMEOUT_SECONDS = float(os.getenv("GI_QUERY_TIMEOUT_SECONDS", "60"))
+TEAM_RESPONSE_TIMEOUT_SECONDS = float(os.getenv("GI_TEAM_RESPONSE_TIMEOUT_SECONDS", "30"))
+
 agent_pool = AgentPool()
 orchestration_engine = OrchestrationEngine(config)
 tenant_manager = TenantIsolationManager(config)
@@ -164,19 +170,38 @@ async def query(request: Request) -> dict[str, Any]:
     if not _verify_tenant(org_id, user_id):
         raise HTTPException(status_code=403, detail="Unauthorized")
 
-    orchestration = await orchestration_engine.execute_query(
-        query=query_text,
-        org_id=org_id,
-        user_id=user_id,
-        metadata=metadata,
-    )
-    team_response = await offload(
-        build_team_response_pack,
-        query_text,
-        metadata=metadata,
-        evidence=body.get("evidence") if isinstance(body.get("evidence"), list) else [],
-        persist=True,
-    )
+    try:
+        orchestration = await asyncio.wait_for(
+            orchestration_engine.execute_query(
+                query=query_text,
+                org_id=org_id,
+                user_id=user_id,
+                metadata=metadata,
+            ),
+            timeout=QUERY_TIMEOUT_SECONDS,
+        )
+    except asyncio.TimeoutError:
+        raise HTTPException(
+            status_code=504,
+            detail=f"/v1/query 编排超时（>{QUERY_TIMEOUT_SECONDS}s）；请检查采集重试上限与并发预算",
+        )
+
+    try:
+        team_response = await asyncio.wait_for(
+            offload(
+                build_team_response_pack,
+                query_text,
+                metadata=metadata,
+                evidence=body.get("evidence") if isinstance(body.get("evidence"), list) else [],
+                persist=True,
+            ),
+            timeout=TEAM_RESPONSE_TIMEOUT_SECONDS,
+        )
+    except asyncio.TimeoutError:
+        raise HTTPException(
+            status_code=504,
+            detail=f"/v1/query team response 超时（>{TEAM_RESPONSE_TIMEOUT_SECONDS}s）",
+        )
     return {
         "execution_id": orchestration.get("execution_id"),
         "status": orchestration.get("status"),
