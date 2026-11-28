@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-27T22:29:43+00:00",
+  "generated_at": "2026-11-28T08:26:58+00:00",
   "draft_notice": "DRAFT - Not approved for sending",
   "source_status": {
     "allowed_sources": [
@@ -46,7 +46,7 @@
         "site:invest.gov.kz Kazakhstan mining metallurgy project",
         "Kazakhstan mine expansion ore logistics railway port EPC"
       ],
-      "updated_at": "2026-11-27T22:29:43+00:00"
+      "updated_at": "2026-11-28T08:26:58+00:00"
     },
     {
       "id": "KZ-MET-001",
@@ -70,7 +70,7 @@
         "site:invest.gov.kz Kazakhstan smelter steel plant investment",
         "Kazakhstan furnace raw material handling environmental retrofit"
       ],
-      "updated_at": "2026-11-27T22:29:43+00:00"
+      "updated_at": "2026-11-28T08:26:58+00:00"
     },
     {
       "id": "KZ-PWR-001",
@@ -95,7 +95,7 @@
         "site:primeminister.kz Kazakhstan power plant modernization",
         "Kazakhstan coal handling wagon tippler stacker conveyor power plant"
       ],
-      "updated_at": "2026-11-27T22:29:43+00:00"
+      "updated_at": "2026-11-28T08:26:58+00:00"
     },
     {
       "id": "KZ-CAS-001",
@@ -119,7 +119,7 @@
         "site:gov.kz Kuryk port infrastructure Kazakhstan",
         "Kazakhstan Caspian port bulk cargo ore loading equipment"
       ],
-      "updated_at": "2026-11-27T22:29:43+00:00"
+      "updated_at": "2026-11-28T08:26:58+00:00"
     },
     {
       "id": "KZ-OIL-001",
@@ -144,7 +144,7 @@
         "site:invest.gov.kz Kazakhstan petrochemical project",
         "Kazakhstan refinery storage loading utilities environmental equipment"
       ],
-      "updated_at": "2026-11-27T22:29:43+00:00"
+      "updated_at": "2026-11-28T08:26:58+00:00"
     },
     {
       "id": "KZ-INF-001",
@@ -169,7 +169,7 @@
         "site:primeminister.kz Kazakhstan infrastructure development plan",
         "Kazakhstan five year ten year plan railway energy port industrial park"
       ],
-      "updated_at": "2026-11-27T22:29:43+00:00"
+      "updated_at": "2026-11-28T08:26:58+00:00"
     },
     {
       "id": "KZ-AGR-001",
@@ -193,7 +193,7 @@
         "Kazakhstan agricultural drones fertilizer import demand",
         "Kazakhstan organic fertilizer liquid fertilizer plant growth regulator"
       ],
-      "updated_at": "2026-11-27T22:29:43+00:00"
+      "updated_at": "2026-11-28T08:26:58+00:00"
     }
   ],
   "customs_watch_fields": [
